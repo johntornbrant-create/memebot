@@ -1,28 +1,29 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-22T16:06:26+00:00`
+Updated `2026-09-22T16:12:41+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$500.00** |
-| Return | **+0.00%** (start $500.00) |
-| Cash | $470.00 |
-| Deployed | $30.00 (6.0%) |
-| Open positions | 2 / 8 |
+| Equity | **$497.73** |
+| Return | **-0.45%** (start $500.00) |
+| Cash | $462.53 |
+| Deployed | $35.19 (7.1%) |
+| Open positions | 3 / 8 |
 | Closed trades | 0 (0W / 0L, WR 0%) |
 | Profit factor | – |
-| Fees + slippage paid | $0.91 |
-| Ticks run | 1 |
+| Fees + slippage paid | $1.32 |
+| Ticks run | 2 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| SATOSHINU | solana | $15.00 | $14.54 | +0% | +0% | 0.0h |
-| CATEWALK | solana | $15.00 | $14.54 | +0% | +0% | 0.0h |
+| SATOSHINU | solana | $15.00 | $12.92 | -11% | +0% | 0.1h |
+| CATEWALK | solana | $15.00 | $14.80 | +2% | +2% | 0.1h |
+| TRUMPTV | solana | $7.47 | $7.06 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
@@ -49,12 +50,11 @@ _prior_
 
 ## Last run log
 ```
-tick #1  equity $500.00  cash $500.00  open 0
+tick #2  equity $500.00  cash $470.00  open 2
   scanning chains + news...
-  100 raw candidates across 5 chains, 158 headlines/posts
-  7 passed gates | rejected: liquidity too thin x49, too old x16, no h1 volume x15, already discovered x11, too new (bot war) x1
-  top: SATOSHINU 0.76 | CATEWALK 0.75 | LOOONGCAT 0.68 | KCAT 0.65 | JEANPHIL 0.63
-  BUY[exploit] SATOSHINU  $15.00 @ $0.001066  score 0.76  solana  liq $102,473
-  BUY[exploit] CATEWALK   $15.00 @ $0.001171  score 0.75  solana  liq $105,537
+  133 raw candidates across 7 chains, 158 headlines/posts
+  7 passed gates | rejected: liquidity too thin x73, no h1 volume x23, too old x18, already discovered x11, too few txns x1
+  top: CATEWALK 0.70 | LOOONGCAT 0.69 | SATOSHINU 0.65 | KCAT 0.64 | TRUMPTV 0.61
+  BUY[explore] TRUMPTV    $7.47 @ $8.953e-05  score 0.61  solana  liq $27,757
   shadow: tracking 7, closed 0 this tick (0 would have won)
 ```

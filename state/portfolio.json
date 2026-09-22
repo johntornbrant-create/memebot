@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-22T16:06:26+00:00",
-  "cash": 470.0,
-  "equity": 500.0,
+  "updated": "2026-09-22T16:12:41+00:00",
+  "cash": 462.5340875,
+  "equity": 497.7275,
   "positions": {
     "solana:HzaCANKGkhNcQGb1VWL8f4tHJYrCmaXrPWk9eHR7GYYX": {
       "id": "c1061227b0",
@@ -34,7 +34,7 @@
         "buzz": 0.0,
         "paid_boost": 1.0
       },
-      "last_price": 0.001066
+      "last_price": 0.0009473
     },
     "solana:BLSuVTxKYDL4vm4XmG3oEJfsSGfJZF3cgy98ri68pump": {
       "id": "3a137af962",
@@ -48,7 +48,7 @@
       "cost_usd": 15.0,
       "fees_usd": 0.4569,
       "realized_usd": 0.0,
-      "peak_gain": 0.0,
+      "peak_gain": 0.017933390264730953,
       "tp_hit": [],
       "entry_liq": 105537.22,
       "score": 0.7453,
@@ -66,7 +66,39 @@
         "buzz": 0.0,
         "paid_boost": 1.0
       },
-      "last_price": 0.001171
+      "last_price": 0.001192
+    },
+    "solana:D4sBdmPaDKxKThQW3Eh721R9M335VcCThn31w7CRtdkN": {
+      "id": "6e1791330e",
+      "chain": "solana",
+      "address": "D4sBdmPaDKxKThQW3Eh721R9M335VcCThn31w7CRtdkN",
+      "symbol": "TRUMPTV",
+      "opened": "2026-09-22T16:12:40+00:00",
+      "entry_price": 8.953e-05,
+      "tokens": 78876.84312249461,
+      "tokens_initial": 78876.84312249461,
+      "cost_usd": 7.4659125,
+      "fees_usd": 0.4041,
+      "realized_usd": 0.0,
+      "peak_gain": 0.0,
+      "tp_hit": [],
+      "entry_liq": 27756.62,
+      "score": 0.6091,
+      "features": {
+        "liq_quality": 0.4117,
+        "turnover": 0.4184,
+        "buy_pressure": 0.435,
+        "momentum_accel": 0.0,
+        "not_vertical": 1.0,
+        "age_sweet": 0.615,
+        "socials": 0.65,
+        "fdv_sanity": 1.0,
+        "txn_depth": 0.504,
+        "dip_in_uptrend": 0.0,
+        "buzz": 0.8333,
+        "paid_boost": 0.06
+      },
+      "last_price": 8.953e-05
     }
   },
   "blacklist": {},
@@ -77,15 +109,15 @@
     "day_equity": 500.0,
     "week": "2026-W39",
     "week_equity": 500.0,
-    "trades_today": 2
+    "trades_today": 3
   },
   "stats": {
-    "ticks": 1,
-    "opened": 2,
+    "ticks": 2,
+    "opened": 3,
     "closed": 0,
     "wins": 0,
     "losses": 0,
-    "fees_paid": 0.9138948881192959,
+    "fees_paid": 1.3179636233623528,
     "realized_pnl": 0.0
   }
 }
