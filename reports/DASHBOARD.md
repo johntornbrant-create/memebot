@@ -1,29 +1,29 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-22T17:24:06+00:00`
+Updated `2026-09-22T17:36:36+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$492.51** |
-| Return | **-1.50%** (start $500.00) |
+| Equity | **$494.68** |
+| Return | **-1.06%** (start $500.00) |
 | Cash | $459.22 |
-| Deployed | $33.28 (6.8%) |
+| Deployed | $35.45 (7.2%) |
 | Open positions | 3 / 8 |
 | Closed trades | 1 (0W / 1L, WR 0%) |
 | Profit factor | 0.00 |
 | Fees + slippage paid | $2.10 |
-| Ticks run | 7 |
+| Ticks run | 8 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| SATOSHINU | solana | $15.00 | $12.36 | -15% | +5% | 1.3h |
-| CATEWALK | solana | $15.00 | $13.54 | -7% | +0% | 1.3h |
-| BOP | solana | $7.39 | $6.98 | +0% | +0% | 0.0h |
+| SATOSHINU | solana | $15.00 | $11.68 | -20% | +5% | 1.5h |
+| CATEWALK | solana | $15.00 | $13.33 | -8% | +0% | 1.5h |
+| BOP | solana | $7.39 | $10.45 | +50% | +50% | 0.2h |
 
 ## Last closed trades
 
@@ -52,12 +52,11 @@ _prior_
 
 ## Last run log
 ```
-tick #7  equity $494.30  cash $462.54  open 3
-  SELL TRUMPTV    100% @ $6.094e-05  ->  $4.07   [stop loss -37%]
+tick #8  equity $492.51  cash $459.22  open 3
   scanning chains + news...
-  109 raw candidates across 7 chains, 158 headlines/posts
-  5 passed gates | rejected: liquidity too thin x80, no h1 volume x15, too old x4, too new (bot war) x2, sell pressure x1
-  top: PCAT 0.74 | LOOONGCAT 0.72 | BOP 0.67 | CATEWALK 0.63 | MARSCZ 0.61
-  BUY[explore] BOP        $7.39 @ $0.0001243  score 0.67  solana  liq $32,444
-  shadow: tracking 14, closed 0 this tick (0 would have won)
+  107 raw candidates across 5 chains, 158 headlines/posts
+  12 passed gates | rejected: liquidity too thin x70, no h1 volume x9, too old x9, already discovered x6, sell pressure x1
+  top: BOP 0.76 | LOOONGCAT 0.71 | CATEWALK 0.70 | JEANPHIL 0.69 | SI 0.64
+  no entries this tick
+  shadow: tracking 17, closed 0 this tick (0 would have won)
 ```
