@@ -1,30 +1,30 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-22T20:23:44+00:00`
+Updated `2026-09-22T20:37:53+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$511.62** |
-| Return | **+2.32%** (start $500.00) |
+| Equity | **$517.83** |
+| Return | **+3.57%** (start $500.00) |
 | Cash | $475.21 |
-| Deployed | $36.42 (7.1%) |
+| Deployed | $42.62 (8.2%) |
 | Open positions | 4 / 8 |
 | Closed trades | 2 (0W / 2L, WR 0%) |
 | Profit factor | 0.00 |
 | Fees + slippage paid | $4.55 |
-| Ticks run | 19 |
+| Ticks run | 20 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| CATEWALK | solana | $15.00 | $12.22 | -16% | +0% | 4.3h |
-| BOP | solana | $7.39 | $12.80 | +389% | +526% | 3.0h |
-| Habibi | bsc | $7.67 | $3.72 | +2% | +168% | 1.0h |
-| BITCOINU | solana | $7.67 | $7.27 | +0% | +0% | 0.0h |
+| CATEWALK | solana | $15.00 | $10.40 | -28% | +0% | 4.5h |
+| BOP | solana | $7.39 | $14.31 | +446% | +526% | 3.2h |
+| Habibi | bsc | $7.67 | $10.17 | +180% | +180% | 1.2h |
+| BITCOINU | solana | $7.67 | $7.75 | +7% | +7% | 0.2h |
 
 ## Last closed trades
 
@@ -54,12 +54,11 @@ _prior_
 
 ## Last run log
 ```
-tick #19  equity $522.39  cash $475.01  open 4
-  SELL SATOSHINU  100% @ $0.0006073  ->  $7.88   [stop loss -43%]
+tick #20  equity $511.62  cash $475.21  open 4
   scanning chains + news...
-  81 raw candidates across 6 chains, 158 headlines/posts
-  7 passed gates | rejected: liquidity too thin x41, no h1 volume x28, too old x3, already discovered x2
-  top: CATEWALK 0.73 | fomopay 0.71 | SCHRÖDINGER 0.66 | SATOSHINU 0.65 | Archi 0.64
-  BUY[explore] BITCOINU   $7.67 @ $0.0001405  score 0.55  solana  liq $32,988
-  shadow: tracking 34, closed 0 this tick (0 would have won)
+  98 raw candidates across 7 chains, 158 headlines/posts
+  7 passed gates | rejected: liquidity too thin x60, no h1 volume x24, already discovered x5, sell pressure x1, too old x1
+  top: CATEWALK 0.74 | SOL 0.73 | SATOSHINU 0.68 | Archi 0.67 | fomopay 0.60
+  no entries this tick
+  shadow: tracking 36, closed 0 this tick (0 would have won)
 ```
