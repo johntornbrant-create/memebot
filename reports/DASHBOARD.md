@@ -1,34 +1,35 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-22T22:23:33+00:00`
+Updated `2026-09-22T22:36:30+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$513.42** |
-| Return | **+2.68%** (start $500.00) |
-| Cash | $482.14 |
-| Deployed | $31.28 (6.1%) |
+| Equity | **$514.57** |
+| Return | **+2.91%** (start $500.00) |
+| Cash | $483.00 |
+| Deployed | $31.57 (6.1%) |
 | Open positions | 3 / 8 |
-| Closed trades | 5 (2W / 3L, WR 40%) |
-| Profit factor | 1.77 |
-| Fees + slippage paid | $7.04 |
-| Ticks run | 27 |
+| Closed trades | 6 (2W / 4L, WR 33%) |
+| Profit factor | 1.28 |
+| Fees + slippage paid | $8.33 |
+| Ticks run | 28 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| BITCOINU | solana | $7.67 | $9.08 | +25% | +25% | 2.0h |
-| KCAT | solana | $15.48 | $10.92 | -27% | +11% | 1.5h |
-| Archi | solana | $7.66 | $11.28 | +55% | +55% | 0.6h |
+| BITCOINU | solana | $7.67 | $8.51 | +17% | +25% | 2.2h |
+| Archi | solana | $7.66 | $7.63 | +110% | +110% | 0.8h |
+| MORE | solana | $15.44 | $14.98 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| KCAT | $-6.40 | -41% | 1.7h | stop loss -37% |
 | Habibi | $+11.26 | +147% | 2.4h | trailing stop from +394% |
 | BOP | $+18.46 | +250% | 4.4h | trailing stop from +526% |
 | CATEWALK | $-6.25 | -42% | 4.7h | stop loss -37% |
@@ -56,11 +57,13 @@ _prior_
 
 ## Last run log
 ```
-tick #27  equity $508.87  cash $482.14  open 3
+tick #28  equity $513.42  cash $482.14  open 3
+  SELL KCAT       100% @ $0.0001102  ->  $9.08   [stop loss -37%]
+  SELL Archi      50% @ $0.0005831  ->  $7.22   [take profit +80% (sold 50%)]
   scanning chains + news...
-  156 raw candidates across 9 chains, 158 headlines/posts
-  12 passed gates | rejected: liquidity too thin x64, no h1 volume x50, too old x19, already discovered x10, too new (bot war) x1
-  top: UPTOBER 0.74 | Archi 0.74 | TIKCAT 0.73 | BITCOINU 0.70 | CLIP 0.68
-  no entries this tick
-  shadow: tracking 47, closed 0 this tick (0 would have won)
+  114 raw candidates across 7 chains, 158 headlines/posts
+  12 passed gates | rejected: liquidity too thin x50, no h1 volume x28, too old x12, already discovered x10, too new (bot war) x2
+  top: MORE 0.74 | BITCOINU 0.71 | CLIP 0.71 | Archi 0.68 | SATOSHINU 0.68
+  BUY[exploit] MORE       $15.44 @ $0.0001164  score 0.74  solana  liq $36,518
+  shadow: tracking 48, closed 0 this tick (0 would have won)
 ```
