@@ -1,4 +1,5 @@
 name: memebot weekly refit
+# trains only on the bot own closed trades + shadow outcomes
 
 on:
   schedule:
