@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-22T19:04:57+00:00",
-  "cash": 475.8537888357909,
-  "equity": 513.9422,
+  "updated": "2026-09-22T19:22:55+00:00",
+  "cash": 468.1806153357909,
+  "equity": 511.5449,
   "positions": {
     "solana:HzaCANKGkhNcQGb1VWL8f4tHJYrCmaXrPWk9eHR7GYYX": {
       "id": "c1061227b0",
@@ -34,7 +34,7 @@
         "buzz": 0.0,
         "paid_boost": 1.0
       },
-      "last_price": 0.0007816
+      "last_price": 0.0009503
     },
     "solana:BLSuVTxKYDL4vm4XmG3oEJfsSGfJZF3cgy98ri68pump": {
       "id": "3a137af962",
@@ -66,7 +66,7 @@
         "buzz": 0.0,
         "paid_boost": 1.0
       },
-      "last_price": 0.0009621
+      "last_price": 0.000947
     },
     "solana:527PdUTGwcFxVEMXt8tyRJA1nYbVedgSiSfh4s2LWTWz": {
       "id": "e6acdcfea2",
@@ -101,7 +101,39 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0007345
+      "last_price": 0.0005204
+    },
+    "bsc:0xD4282f79E89545eE691419Fe6E7e1a496446894D": {
+      "id": "3c6be93311",
+      "chain": "bsc",
+      "address": "0xD4282f79E89545eE691419Fe6E7e1a496446894D",
+      "symbol": "Habibi",
+      "opened": "2026-09-22T19:22:54+00:00",
+      "entry_price": 0.0005059,
+      "tokens": 14366.74844880409,
+      "tokens_initial": 14366.74844880409,
+      "cost_usd": 7.6731735,
+      "fees_usd": 0.405,
+      "realized_usd": 0.0,
+      "peak_gain": 0.0,
+      "tp_hit": [],
+      "entry_liq": 40045.36,
+      "score": 0.7392,
+      "features": {
+        "liq_quality": 0.5806,
+        "turnover": 0.6879,
+        "buy_pressure": 0.9862,
+        "momentum_accel": 1.0,
+        "not_vertical": 0.0,
+        "age_sweet": 0.2426,
+        "socials": 1.0,
+        "fdv_sanity": 0.8303,
+        "txn_depth": 0.7961,
+        "dip_in_uptrend": 1.0,
+        "buzz": 0.0,
+        "paid_boost": 0.0
+      },
+      "last_price": 0.0005059
     }
   },
   "blacklist": {
@@ -114,15 +146,15 @@
     "day_equity": 500.0,
     "week": "2026-W39",
     "week_equity": 500.0,
-    "trades_today": 4
+    "trades_today": 5
   },
   "stats": {
-    "ticks": 14,
-    "opened": 4,
+    "ticks": 15,
+    "opened": 5,
     "closed": 1,
     "wins": 0,
     "losses": 1,
-    "fees_paid": 2.9280257211322716,
+    "fees_paid": 3.3330611808822828,
     "realized_pnl": -3.3881596065438124
   }
 }
