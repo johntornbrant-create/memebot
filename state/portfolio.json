@@ -1,41 +1,9 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-22T20:37:53+00:00",
-  "cash": 475.2076661158934,
-  "equity": 517.8316,
+  "updated": "2026-09-22T20:51:13+00:00",
+  "cash": 468.47687893211696,
+  "equity": 515.8999,
   "positions": {
-    "solana:BLSuVTxKYDL4vm4XmG3oEJfsSGfJZF3cgy98ri68pump": {
-      "id": "3a137af962",
-      "chain": "solana",
-      "address": "BLSuVTxKYDL4vm4XmG3oEJfsSGfJZF3cgy98ri68pump",
-      "symbol": "CATEWALK",
-      "opened": "2026-09-22T16:06:26+00:00",
-      "entry_price": 0.001171,
-      "tokens": 12419.369125234534,
-      "tokens_initial": 12419.369125234534,
-      "cost_usd": 15.0,
-      "fees_usd": 0.4569,
-      "realized_usd": 0.0,
-      "peak_gain": 0.0,
-      "tp_hit": [],
-      "entry_liq": 105537.22,
-      "score": 0.7453,
-      "features": {
-        "liq_quality": 0.9622,
-        "turnover": 0.4631,
-        "buy_pressure": 0.3129,
-        "momentum_accel": 0.1235,
-        "not_vertical": 1.0,
-        "age_sweet": 0.7949,
-        "socials": 0.65,
-        "fdv_sanity": 0.866,
-        "txn_depth": 0.0147,
-        "dip_in_uptrend": 1.0,
-        "buzz": 0.0,
-        "paid_boost": 1.0
-      },
-      "last_price": 0.0008374
-    },
     "solana:527PdUTGwcFxVEMXt8tyRJA1nYbVedgSiSfh4s2LWTWz": {
       "id": "e6acdcfea2",
       "chain": "solana",
@@ -69,7 +37,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.000679
+      "last_price": 0.0006898
     },
     "bsc:0xD4282f79E89545eE691419Fe6E7e1a496446894D": {
       "id": "3c6be93311",
@@ -83,7 +51,7 @@
       "cost_usd": 7.6731735,
       "fees_usd": 0.8064185282795535,
       "realized_usd": 6.825055941468904,
-      "peak_gain": 1.798972128879225,
+      "peak_gain": 1.8128088555050406,
       "tp_hit": [
         0
       ],
@@ -103,7 +71,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.001416
+      "last_price": 0.001423
     },
     "solana:Et2uyA1repr77VjXLZELaCCsEbUENaqYncwaciUupump": {
       "id": "91a4bfe5dd",
@@ -135,12 +103,45 @@
         "buzz": 0.0,
         "paid_boost": 0.1
       },
-      "last_price": 0.0001497
+      "last_price": 0.0001389
+    },
+    "solana:MboMMGXjGDi45hfjCVzYru32kEM5nw7VzCqCofZpump": {
+      "id": "7e4230ad86",
+      "chain": "solana",
+      "address": "MboMMGXjGDi45hfjCVzYru32kEM5nw7VzCqCofZpump",
+      "symbol": "KCAT",
+      "opened": "2026-09-22T20:51:12+00:00",
+      "entry_price": 0.0001742,
+      "tokens": 86201.00970536425,
+      "tokens_initial": 86201.00970536425,
+      "cost_usd": 15.48,
+      "fees_usd": 0.4638,
+      "realized_usd": 0.0,
+      "peak_gain": 0.0,
+      "tp_hit": [],
+      "entry_liq": 39760.88,
+      "score": 0.7674,
+      "features": {
+        "liq_quality": 0.5772,
+        "turnover": 0.6791,
+        "buy_pressure": 0.1139,
+        "momentum_accel": 0.8227,
+        "not_vertical": 1.0,
+        "age_sweet": 0.8897,
+        "socials": 0.65,
+        "fdv_sanity": 1.0,
+        "txn_depth": 0.5946,
+        "dip_in_uptrend": 1.0,
+        "buzz": 0.0,
+        "paid_boost": 0.1
+      },
+      "last_price": 0.0001742
     }
   },
   "blacklist": {
     "solana:D4sBdmPaDKxKThQW3Eh721R9M335VcCThn31w7CRtdkN": "2026-09-22T17:22:35+00:00",
-    "solana:HzaCANKGkhNcQGb1VWL8f4tHJYrCmaXrPWk9eHR7GYYX": "2026-09-22T20:22:15+00:00"
+    "solana:HzaCANKGkhNcQGb1VWL8f4tHJYrCmaXrPWk9eHR7GYYX": "2026-09-22T20:22:15+00:00",
+    "solana:BLSuVTxKYDL4vm4XmG3oEJfsSGfJZF3cgy98ri68pump": "2026-09-22T20:49:44+00:00"
   },
   "halted": false,
   "halt_reason": "",
@@ -149,15 +150,15 @@
     "day_equity": 500.0,
     "week": "2026-W39",
     "week_equity": 500.0,
-    "trades_today": 6
+    "trades_today": 7
   },
   "stats": {
-    "ticks": 20,
-    "opened": 6,
-    "closed": 2,
+    "ticks": 21,
+    "opened": 7,
+    "closed": 3,
     "wins": 0,
-    "losses": 2,
-    "fees_paid": 4.548599772849715,
-    "realized_pnl": -10.51179426791023
+    "losses": 3,
+    "fees_paid": 5.42742354346222,
+    "realized_pnl": -16.762581451686625
   }
 }
