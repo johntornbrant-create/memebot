@@ -1,16 +1,16 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-22T16:12:41+00:00`
+Updated `2026-09-22T16:14:28+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$497.73** |
-| Return | **-0.45%** (start $500.00) |
-| Cash | $462.53 |
-| Deployed | $35.19 (7.1%) |
+| Equity | **$497.14** |
+| Return | **-0.57%** (start $500.00) |
+| Cash | $462.54 |
+| Deployed | $34.59 (7.0%) |
 | Open positions | 3 / 8 |
 | Closed trades | 0 (0W / 0L, WR 0%) |
 | Profit factor | – |
@@ -21,9 +21,9 @@ Updated `2026-09-22T16:12:41+00:00`
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| SATOSHINU | solana | $15.00 | $12.92 | -11% | +0% | 0.1h |
-| CATEWALK | solana | $15.00 | $14.80 | +2% | +2% | 0.1h |
-| TRUMPTV | solana | $7.47 | $7.06 | +0% | +0% | 0.0h |
+| SATOSHINU | solana | $15.00 | $12.84 | -12% | +0% | 0.1h |
+| CATEWALK | solana | $15.00 | $14.29 | -2% | +0% | 0.1h |
+| TRUMPTV | solana | $7.46 | $7.05 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
@@ -52,9 +52,9 @@ _prior_
 ```
 tick #2  equity $500.00  cash $470.00  open 2
   scanning chains + news...
-  133 raw candidates across 7 chains, 158 headlines/posts
-  7 passed gates | rejected: liquidity too thin x73, no h1 volume x23, too old x18, already discovered x11, too few txns x1
-  top: CATEWALK 0.70 | LOOONGCAT 0.69 | SATOSHINU 0.65 | KCAT 0.64 | TRUMPTV 0.61
-  BUY[explore] TRUMPTV    $7.47 @ $8.953e-05  score 0.61  solana  liq $27,757
+  116 raw candidates across 7 chains, 158 headlines/posts
+  7 passed gates | rejected: liquidity too thin x48, no h1 volume x32, too old x16, already discovered x12, too few txns x1
+  top: LOOONGCAT 0.69 | SATOSHINU 0.65 | KCAT 0.64 | TRUMPTV 0.63 | CATEWALK 0.62
+  BUY[explore] TRUMPTV    $7.46 @ $9.657e-05  score 0.63  solana  liq $28,879
   shadow: tracking 7, closed 0 this tick (0 would have won)
 ```
