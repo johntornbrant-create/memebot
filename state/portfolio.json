@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-22T17:05:28+00:00",
-  "cash": 462.5429525,
-  "equity": 494.3029,
+  "updated": "2026-09-22T17:24:06+00:00",
+  "cash": 459.22426389345617,
+  "equity": 492.5051,
   "positions": {
     "solana:HzaCANKGkhNcQGb1VWL8f4tHJYrCmaXrPWk9eHR7GYYX": {
       "id": "c1061227b0",
@@ -34,7 +34,7 @@
         "buzz": 0.0,
         "paid_boost": 1.0
       },
-      "last_price": 0.0009718
+      "last_price": 0.0009057
     },
     "solana:BLSuVTxKYDL4vm4XmG3oEJfsSGfJZF3cgy98ri68pump": {
       "id": "3a137af962",
@@ -66,42 +66,44 @@
         "buzz": 0.0,
         "paid_boost": 1.0
       },
-      "last_price": 0.001062
+      "last_price": 0.00109
     },
-    "solana:D4sBdmPaDKxKThQW3Eh721R9M335VcCThn31w7CRtdkN": {
-      "id": "71498facbb",
+    "solana:527PdUTGwcFxVEMXt8tyRJA1nYbVedgSiSfh4s2LWTWz": {
+      "id": "e6acdcfea2",
       "chain": "solana",
-      "address": "D4sBdmPaDKxKThQW3Eh721R9M335VcCThn31w7CRtdkN",
-      "symbol": "TRUMPTV",
-      "opened": "2026-09-22T16:14:27+00:00",
-      "entry_price": 9.657e-05,
-      "tokens": 73036.29676915325,
-      "tokens_initial": 73036.29676915325,
-      "cost_usd": 7.4570475,
-      "fees_usd": 0.4039,
+      "address": "527PdUTGwcFxVEMXt8tyRJA1nYbVedgSiSfh4s2LWTWz",
+      "symbol": "BOP",
+      "opened": "2026-09-22T17:24:04+00:00",
+      "entry_price": 0.0001243,
+      "tokens": 56189.456887040156,
+      "tokens_initial": 56189.456887040156,
+      "cost_usd": 7.3875765,
+      "fees_usd": 0.4032,
       "realized_usd": 0.0,
       "peak_gain": 0.0,
       "tp_hit": [],
-      "entry_liq": 28878.9,
-      "score": 0.6285,
+      "entry_liq": 32443.54,
+      "score": 0.6651,
       "features": {
-        "liq_quality": 0.429,
-        "turnover": 0.412,
-        "buy_pressure": 0.4357,
-        "momentum_accel": 0.1491,
-        "not_vertical": 1.0,
-        "age_sweet": 0.6142,
-        "socials": 0.65,
+        "liq_quality": 0.4815,
+        "turnover": 0.3427,
+        "buy_pressure": 0.9658,
+        "momentum_accel": 1.0,
+        "not_vertical": 0.0,
+        "age_sweet": 0.8376,
+        "socials": 0.45,
         "fdv_sanity": 1.0,
-        "txn_depth": 0.5081,
-        "dip_in_uptrend": 0.0,
-        "buzz": 0.8333,
-        "paid_boost": 0.06
+        "txn_depth": 0.8345,
+        "dip_in_uptrend": 0.5,
+        "buzz": 0.0,
+        "paid_boost": 0.0
       },
-      "last_price": 7.274e-05
+      "last_price": 0.0001243
     }
   },
-  "blacklist": {},
+  "blacklist": {
+    "solana:D4sBdmPaDKxKThQW3Eh721R9M335VcCThn31w7CRtdkN": "2026-09-22T17:22:35+00:00"
+  },
   "halted": false,
   "halt_reason": "",
   "marks": {
@@ -109,15 +111,15 @@
     "day_equity": 500.0,
     "week": "2026-W39",
     "week_equity": 500.0,
-    "trades_today": 3
+    "trades_today": 4
   },
   "stats": {
-    "ticks": 6,
-    "opened": 3,
-    "closed": 0,
+    "ticks": 7,
+    "opened": 4,
+    "closed": 1,
     "wins": 0,
-    "losses": 0,
-    "fees_paid": 1.3178272091221657,
-    "realized_pnl": 0.0
+    "losses": 1,
+    "fees_paid": 2.102998249719085,
+    "realized_pnl": -3.3881596065438124
   }
 }
