@@ -1,0 +1,91 @@
+{
+  "started": "2026-09-22T16:04:55+00:00",
+  "updated": "2026-09-22T16:06:26+00:00",
+  "cash": 470.0,
+  "equity": 500.0,
+  "positions": {
+    "solana:HzaCANKGkhNcQGb1VWL8f4tHJYrCmaXrPWk9eHR7GYYX": {
+      "id": "c1061227b0",
+      "chain": "solana",
+      "address": "HzaCANKGkhNcQGb1VWL8f4tHJYrCmaXrPWk9eHR7GYYX",
+      "symbol": "SATOSHINU",
+      "opened": "2026-09-22T16:06:26+00:00",
+      "entry_price": 0.001066,
+      "tokens": 13642.611506783362,
+      "tokens_initial": 13642.611506783362,
+      "cost_usd": 15.0,
+      "fees_usd": 0.457,
+      "realized_usd": 0.0,
+      "peak_gain": 0.0,
+      "tp_hit": [],
+      "entry_liq": 102472.82,
+      "score": 0.7578,
+      "features": {
+        "liq_quality": 0.9557,
+        "turnover": 0.3096,
+        "buy_pressure": 0.2798,
+        "momentum_accel": 0.0,
+        "not_vertical": 1.0,
+        "age_sweet": 0.6323,
+        "socials": 0.45,
+        "fdv_sanity": 0.8798,
+        "txn_depth": 0.8146,
+        "dip_in_uptrend": 1.0,
+        "buzz": 0.0,
+        "paid_boost": 1.0
+      },
+      "last_price": 0.001066
+    },
+    "solana:BLSuVTxKYDL4vm4XmG3oEJfsSGfJZF3cgy98ri68pump": {
+      "id": "3a137af962",
+      "chain": "solana",
+      "address": "BLSuVTxKYDL4vm4XmG3oEJfsSGfJZF3cgy98ri68pump",
+      "symbol": "CATEWALK",
+      "opened": "2026-09-22T16:06:26+00:00",
+      "entry_price": 0.001171,
+      "tokens": 12419.369125234534,
+      "tokens_initial": 12419.369125234534,
+      "cost_usd": 15.0,
+      "fees_usd": 0.4569,
+      "realized_usd": 0.0,
+      "peak_gain": 0.0,
+      "tp_hit": [],
+      "entry_liq": 105537.22,
+      "score": 0.7453,
+      "features": {
+        "liq_quality": 0.9622,
+        "turnover": 0.4631,
+        "buy_pressure": 0.3129,
+        "momentum_accel": 0.1235,
+        "not_vertical": 1.0,
+        "age_sweet": 0.7949,
+        "socials": 0.65,
+        "fdv_sanity": 0.866,
+        "txn_depth": 0.0147,
+        "dip_in_uptrend": 1.0,
+        "buzz": 0.0,
+        "paid_boost": 1.0
+      },
+      "last_price": 0.001171
+    }
+  },
+  "blacklist": {},
+  "halted": false,
+  "halt_reason": "",
+  "marks": {
+    "day": "2026-09-22",
+    "day_equity": 500.0,
+    "week": "2026-W39",
+    "week_equity": 500.0,
+    "trades_today": 2
+  },
+  "stats": {
+    "ticks": 1,
+    "opened": 2,
+    "closed": 0,
+    "wins": 0,
+    "losses": 0,
+    "fees_paid": 0.9138948881192959,
+    "realized_pnl": 0.0
+  }
+}
