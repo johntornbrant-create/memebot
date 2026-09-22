@@ -1,29 +1,29 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-22T22:36:30+00:00`
+Updated `2026-09-22T22:49:52+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$514.57** |
-| Return | **+2.91%** (start $500.00) |
+| Equity | **$512.38** |
+| Return | **+2.48%** (start $500.00) |
 | Cash | $483.00 |
-| Deployed | $31.57 (6.1%) |
+| Deployed | $29.38 (5.7%) |
 | Open positions | 3 / 8 |
 | Closed trades | 6 (2W / 4L, WR 33%) |
 | Profit factor | 1.28 |
 | Fees + slippage paid | $8.33 |
-| Ticks run | 28 |
+| Ticks run | 29 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| BITCOINU | solana | $7.67 | $8.51 | +17% | +25% | 2.2h |
-| Archi | solana | $7.66 | $7.63 | +110% | +110% | 0.8h |
-| MORE | solana | $15.44 | $14.98 | +0% | +0% | 0.0h |
+| BITCOINU | solana | $7.67 | $8.33 | +15% | +25% | 2.4h |
+| Archi | solana | $7.66 | $6.40 | +76% | +110% | 1.0h |
+| MORE | solana | $15.44 | $14.65 | -2% | +0% | 0.2h |
 
 ## Last closed trades
 
@@ -57,13 +57,11 @@ _prior_
 
 ## Last run log
 ```
-tick #28  equity $513.42  cash $482.14  open 3
-  SELL KCAT       100% @ $0.0001102  ->  $9.08   [stop loss -37%]
-  SELL Archi      50% @ $0.0005831  ->  $7.22   [take profit +80% (sold 50%)]
+tick #29  equity $514.57  cash $483.00  open 3
   scanning chains + news...
-  114 raw candidates across 7 chains, 158 headlines/posts
-  12 passed gates | rejected: liquidity too thin x50, no h1 volume x28, too old x12, already discovered x10, too new (bot war) x2
-  top: MORE 0.74 | BITCOINU 0.71 | CLIP 0.71 | Archi 0.68 | SATOSHINU 0.68
-  BUY[exploit] MORE       $15.44 @ $0.0001164  score 0.74  solana  liq $36,518
+  102 raw candidates across 6 chains, 158 headlines/posts
+  11 passed gates | rejected: liquidity too thin x47, no h1 volume x27, too old x10, already discovered x6, too new (bot war) x1
+  top: MORE 0.78 | CATEWALK 0.76 | CLIP 0.71 | Archi 0.69 | UPTOBER 0.68
+  no entries this tick
   shadow: tracking 48, closed 0 this tick (0 would have won)
 ```

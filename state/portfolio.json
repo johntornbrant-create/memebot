@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-22T22:36:30+00:00",
+  "updated": "2026-09-22T22:49:52+00:00",
   "cash": 483.00061077061537,
-  "equity": 514.5733,
+  "equity": 512.3836,
   "positions": {
     "solana:Et2uyA1repr77VjXLZELaCCsEbUENaqYncwaciUupump": {
       "id": "91a4bfe5dd",
@@ -34,7 +34,7 @@
         "buzz": 0.0,
         "paid_boost": 0.1
       },
-      "last_price": 0.0001644
+      "last_price": 0.000161
     },
     "solana:BeUAXnAoF1ip3kMLCpgdJ8WRQFTzntDkgfyVYyMwpump": {
       "id": "eefbe92fc2",
@@ -68,7 +68,7 @@
         "buzz": 0.6667,
         "paid_boost": 0.02
       },
-      "last_price": 0.0005831
+      "last_price": 0.0004892
     },
     "solana:26j97ZBGjaEZNzqZ3eSqKqPLZwS45aYp5BobLRQVpump": {
       "id": "b0ffe8c6c6",
@@ -100,7 +100,7 @@
         "buzz": 0.3333,
         "paid_boost": 0.0
       },
-      "last_price": 0.0001164
+      "last_price": 0.0001139
     }
   },
   "blacklist": {
@@ -119,7 +119,7 @@
     "trades_today": 9
   },
   "stats": {
-    "ticks": 28,
+    "ticks": 29,
     "opened": 9,
     "closed": 6,
     "wins": 2,
