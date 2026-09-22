@@ -1,79 +1,9 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-22T21:36:43+00:00",
-  "cash": 472.0837905185217,
-  "equity": 514.8748,
+  "updated": "2026-09-22T21:50:32+00:00",
+  "cash": 482.13732447633487,
+  "equity": 510.9578,
   "positions": {
-    "solana:527PdUTGwcFxVEMXt8tyRJA1nYbVedgSiSfh4s2LWTWz": {
-      "id": "e6acdcfea2",
-      "chain": "solana",
-      "address": "527PdUTGwcFxVEMXt8tyRJA1nYbVedgSiSfh4s2LWTWz",
-      "symbol": "BOP",
-      "opened": "2026-09-22T17:24:04+00:00",
-      "entry_price": 0.0001243,
-      "tokens": 21071.046332640057,
-      "tokens_initial": 56189.456887040156,
-      "cost_usd": 7.3875765,
-      "fees_usd": 1.2282274714131867,
-      "realized_usd": 16.62952494233475,
-      "peak_gain": 5.26226870474658,
-      "tp_hit": [
-        0,
-        1
-      ],
-      "entry_liq": 32443.54,
-      "score": 0.6651,
-      "features": {
-        "liq_quality": 0.4815,
-        "turnover": 0.3427,
-        "buy_pressure": 0.9658,
-        "momentum_accel": 1.0,
-        "not_vertical": 0.0,
-        "age_sweet": 0.8376,
-        "socials": 0.45,
-        "fdv_sanity": 1.0,
-        "txn_depth": 0.8345,
-        "dip_in_uptrend": 0.5,
-        "buzz": 0.0,
-        "paid_boost": 0.0
-      },
-      "last_price": 0.0005743
-    },
-    "bsc:0xD4282f79E89545eE691419Fe6E7e1a496446894D": {
-      "id": "3c6be93311",
-      "chain": "bsc",
-      "address": "0xD4282f79E89545eE691419Fe6E7e1a496446894D",
-      "symbol": "Habibi",
-      "opened": "2026-09-22T19:22:54+00:00",
-      "entry_price": 0.0005059,
-      "tokens": 5387.530668301533,
-      "tokens_initial": 14366.74844880409,
-      "cost_usd": 7.6731735,
-      "fees_usd": 1.18448379286183,
-      "realized_usd": 10.431967527873661,
-      "peak_gain": 3.943664755880609,
-      "tp_hit": [
-        0,
-        1
-      ],
-      "entry_liq": 40045.36,
-      "score": 0.7392,
-      "features": {
-        "liq_quality": 0.5806,
-        "turnover": 0.6879,
-        "buy_pressure": 0.9862,
-        "momentum_accel": 1.0,
-        "not_vertical": 0.0,
-        "age_sweet": 0.2426,
-        "socials": 1.0,
-        "fdv_sanity": 0.8303,
-        "txn_depth": 0.7961,
-        "dip_in_uptrend": 1.0,
-        "buzz": 0.0,
-        "paid_boost": 0.0
-      },
-      "last_price": 0.001961
-    },
     "solana:Et2uyA1repr77VjXLZELaCCsEbUENaqYncwaciUupump": {
       "id": "91a4bfe5dd",
       "chain": "solana",
@@ -104,7 +34,7 @@
         "buzz": 0.0,
         "paid_boost": 0.1
       },
-      "last_price": 0.0001334
+      "last_price": 0.000144
     },
     "solana:MboMMGXjGDi45hfjCVzYru32kEM5nw7VzCqCofZpump": {
       "id": "7e4230ad86",
@@ -136,7 +66,39 @@
         "buzz": 0.0,
         "paid_boost": 0.1
       },
-      "last_price": 0.0001534
+      "last_price": 0.000159
+    },
+    "solana:BeUAXnAoF1ip3kMLCpgdJ8WRQFTzntDkgfyVYyMwpump": {
+      "id": "eefbe92fc2",
+      "chain": "solana",
+      "address": "BeUAXnAoF1ip3kMLCpgdJ8WRQFTzntDkgfyVYyMwpump",
+      "symbol": "Archi",
+      "opened": "2026-09-22T21:50:30+00:00",
+      "entry_price": 0.0002775,
+      "tokens": 26160.721152874525,
+      "tokens_initial": 26160.721152874525,
+      "cost_usd": 7.664367,
+      "fees_usd": 0.4048,
+      "realized_usd": 0.0,
+      "peak_gain": 0.0,
+      "tp_hit": [],
+      "entry_liq": 47359.8,
+      "score": 0.6746,
+      "features": {
+        "liq_quality": 0.6608,
+        "turnover": 0.8982,
+        "buy_pressure": 0.4109,
+        "momentum_accel": 0.2983,
+        "not_vertical": 0.7138,
+        "age_sweet": 0.747,
+        "socials": 0.0,
+        "fdv_sanity": 0.9851,
+        "txn_depth": 0.5971,
+        "dip_in_uptrend": 0.5,
+        "buzz": 0.6667,
+        "paid_boost": 0.02
+      },
+      "last_price": 0.0002775
     }
   },
   "blacklist": {
@@ -151,15 +113,15 @@
     "day_equity": 500.0,
     "week": "2026-W39",
     "week_equity": 500.0,
-    "trades_today": 7
+    "trades_today": 8
   },
   "stats": {
-    "ticks": 24,
-    "opened": 7,
-    "closed": 3,
-    "wins": 0,
+    "ticks": 25,
+    "opened": 8,
+    "closed": 5,
+    "wins": 2,
     "losses": 3,
-    "fees_paid": 5.805488808044497,
-    "realized_pnl": -16.762581451686625
+    "fees_paid": 7.042400369630681,
+    "realized_pnl": 12.956061976334993
   }
 }

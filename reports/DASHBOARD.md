@@ -1,35 +1,36 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-22T21:36:43+00:00`
+Updated `2026-09-22T21:50:32+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$514.87** |
-| Return | **+2.97%** (start $500.00) |
-| Cash | $472.08 |
-| Deployed | $42.79 (8.3%) |
-| Open positions | 4 / 8 |
-| Closed trades | 3 (0W / 3L, WR 0%) |
-| Profit factor | 0.00 |
-| Fees + slippage paid | $5.81 |
-| Ticks run | 24 |
+| Equity | **$510.96** |
+| Return | **+2.19%** (start $500.00) |
+| Cash | $482.14 |
+| Deployed | $28.82 (5.6%) |
+| Open positions | 3 / 8 |
+| Closed trades | 5 (2W / 3L, WR 40%) |
+| Profit factor | 1.77 |
+| Fees + slippage paid | $7.04 |
+| Ticks run | 25 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| BOP | solana | $7.39 | $12.10 | +362% | +526% | 4.2h |
-| Habibi | bsc | $7.67 | $10.56 | +288% | +394% | 2.2h |
-| BITCOINU | solana | $7.67 | $6.90 | -5% | +9% | 1.2h |
-| KCAT | solana | $15.48 | $13.22 | -12% | +11% | 0.8h |
+| BITCOINU | solana | $7.67 | $7.45 | +2% | +9% | 1.4h |
+| KCAT | solana | $15.48 | $13.71 | -9% | +11% | 1.0h |
+| Archi | solana | $7.66 | $7.26 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| Habibi | $+11.26 | +147% | 2.4h | trailing stop from +394% |
+| BOP | $+18.46 | +250% | 4.4h | trailing stop from +526% |
 | CATEWALK | $-6.25 | -42% | 4.7h | stop loss -37% |
 | SATOSHINU | $-7.12 | -47% | 4.3h | stop loss -43% |
 | TRUMPTV | $-3.39 | -45% | 1.1h | stop loss -37% |
@@ -55,11 +56,13 @@ _prior_
 
 ## Last run log
 ```
-tick #24  equity $519.68  cash $472.08  open 4
+tick #25  equity $514.87  cash $472.08  open 4
+  SELL BOP        100% @ $0.0004572  ->  $9.21   [trailing stop from +526%]
+  SELL Habibi     100% @ $0.001655  ->  $8.50   [trailing stop from +394%]
   scanning chains + news...
-  72 raw candidates across 4 chains, 158 headlines/posts
-  10 passed gates | rejected: liquidity too thin x32, no h1 volume x29, too old x1
-  top: CATEWALK 0.70 | SATOSHINU 0.69 | TIKCAT 0.67 | BAKARI 0.66 | APECAT 0.63
-  no entries this tick
+  54 raw candidates across 3 chains, 158 headlines/posts
+  8 passed gates | rejected: liquidity too thin x29, no h1 volume x16, too old x1
+  top: BITCOINU 0.73 | SATOSHINU 0.70 | Archi 0.67 | CATEWALK 0.67 | UPTOBER 0.61
+  BUY[explore] Archi      $7.66 @ $0.0002775  score 0.67  solana  liq $47,360
   shadow: tracking 42, closed 0 this tick (0 would have won)
 ```
