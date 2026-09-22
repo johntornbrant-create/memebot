@@ -53,35 +53,57 @@ at −35% and the bot stops opening anything.
 
 **Exits always run, even when halted.** A kill switch must never trap you in positions.
 
-## How "it develops its own tactics"
+## How it develops its own tactics
 
-`bot/learn.py`. Every trade stores its 12-feature vector at entry. Weekly, the bot fits a
-logistic regression (pure stdlib, no dependencies) on its own closed trades, labelling a
-win as **+15% net**, then:
+**It starts with zero opinions.** All 12 features begin at identical weight. Nothing is
+imported from research, from the internet, or from anyone else's strategy. Every opinion it
+ends up with, it earned from its own results.
 
-- rescales the fitted weights to the prior's magnitude,
-- **blends 50/50 with the prior** — small samples lie, so it never fully trusts itself,
-- moves the entry threshold: win rate under 25% → threshold up; over 45% → threshold down,
-- refuses to fit at all below **60 closed trades**.
+### 1. It explores on purpose
 
-The only teacher is our own realised PnL. No copied strategies, no web-sourced alpha.
+A bot that only buys what it already believes never discovers what it was wrong about. So
+a share of every tick is spent on deliberate exploration — a **random** pick among
+candidates that cleared the safety gates, score ignored completely, at half size.
 
-## Features and where they came from
+| Phase | Explore rate |
+|---|---|
+| First 80 closed trades | **60%** — mostly learning |
+| After that, forever | **20%** — never stops learning |
 
-| Feature | Prior weight | Source |
+### 2. The shadow book — it learns from what it did NOT buy
+
+This is the important one. A normal bot only ever sees the outcome of its own picks, so it
+can never find out that the coin it rejected went 40x. It repeats that miss forever.
+
+So **every candidate that clears the gates is tracked for 24 hours, bought or not.** It
+records the peak move, the final move, and whether it would have won. The dashboard shows
+its own mistake list: the biggest misses and what it scored them.
+
+That produces one number that tells you whether any of this works:
+
+> **Selection edge** = hit-rate of what it bought − hit-rate of what it skipped.
+> Above zero, it is picking better than its own reject pile. At or below zero, it is not
+> yet beating random, no matter what the equity curve says.
+
+### 3. It refits weekly on both
+
+| Training set | Volume | Why |
 |---|---|---|
-| `socials` | +0.18 | arXiv 2607.02823 — socials at mint = 17.4x lift, strongest known single feature |
-| `turnover` | +0.14 | h1 volume / liquidity |
-| `buy_pressure` | +0.13 | h1 buys / total |
-| `not_vertical` | +0.11 | "pullback, don't chase tops" |
-| `liq_quality` | +0.10 | bell curve centred on $150k |
-| `momentum_accel` | +0.09 | h1 outpacing h6 |
-| `age_sweet` | +0.08 | ~6h old: past the bot war, before full discovery |
-| `fdv_sanity` | +0.08 | FDV/liquidity ratio |
-| `dip_in_uptrend` | +0.07 | m5 red inside an h1 green |
-| `txn_depth` | +0.06 | organic trade sizes vs manufactured |
-| `buzz` | +0.04 | news/Reddit mentions |
-| `paid_boost` | **−0.05** | paid DexScreener boosts = someone buying attention |
+| Shadow outcomes | ~50–200/day | Learns from misses; enough data to actually fit |
+| Real closed trades | a handful/day | Ground truth — carries real friction and exit timing, weighted **3x** |
+
+Logistic regression, pure stdlib. Fitted weights get shrunk 50% toward flat, because small
+samples lie. Entry threshold moves on its own: real win rate under 20% raises the bar,
+over 40% lowers it.
+
+## Chains
+
+All 20 that DexScreener and GeckoTerminal cover between them — solana, base, ethereum, bsc,
+arbitrum, polygon, avalanche, sui, ton, tron, blast, optimism, hyperliquid, abstract,
+berachain, sonic, unichain, linea, mantle, cronos. GeckoTerminal network IDs are resolved
+at runtime from its own API, so new chains get picked up without a code change.
+
+Max 3 positions per chain, so one chain can't eat the book.
 
 ## Deploy
 

@@ -11,24 +11,10 @@ FEATURES = [
     "buzz", "paid_boost",
 ]
 
-# Prior weights. Sourced from our own research, not from the internet:
-#  - socials-at-mint is the strongest known single feature (arXiv 2607.02823: 17.4x lift)
-#  - "pullback not chase-tops" (AIBuildout notes) -> not_vertical + dip_in_uptrend positive
-#  - paid boosts = someone buying attention -> slight negative
-PRIOR_WEIGHTS = {
-    "liq_quality":    0.10,
-    "turnover":       0.14,
-    "buy_pressure":   0.13,
-    "momentum_accel": 0.09,
-    "not_vertical":   0.11,
-    "age_sweet":      0.08,
-    "socials":        0.18,
-    "fdv_sanity":     0.08,
-    "txn_depth":      0.06,
-    "dip_in_uptrend": 0.07,
-    "buzz":           0.04,
-    "paid_boost":    -0.05,
-}
+# NO PRIORS. Every feature starts at the same weight and the bot earns its own opinions
+# from its own closed trades and its own shadow book. Nothing here is imported from
+# research, from the internet, or from anyone else's strategy.
+PRIOR_WEIGHTS = {k: round(1.0 / len(FEATURES), 4) for k in FEATURES}
 
 
 def _clamp(x, lo=0.0, hi=1.0):

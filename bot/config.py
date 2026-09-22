@@ -11,7 +11,7 @@ MAX_POS_PCT       = 0.030       # 3.0% of equity per position  -> $15 on $500
 MIN_POS_USD       = 5.00        # below this, fees/slippage eat the trade
 MAX_CONCURRENT    = 8           # 8 x 3% = 24% max exposure at any instant
 MAX_DEPLOYED_PCT  = 0.35        # never more than 35% of equity out of cash
-MAX_PER_CHAIN     = 4           # concentration cap
+MAX_PER_CHAIN     = 3           # 20 chains - do not pile into one
 MAX_NEW_PER_TICK  = 2           # never chase a whole burst at once (sim died from this)
 
 # circuit breakers
@@ -44,7 +44,9 @@ MAX_AGE_H         = 72
 MIN_TXNS_H1       = 40
 MIN_BUYERS_RATIO  = 0.45        # buys / (buys+sells) in h1
 MAX_FDV_LIQ_RATIO = 60          # FDV 60x liquidity = exit liquidity trap
-CHAINS            = ["solana", "base", "ethereum", "bsc"]
+CHAINS = ["solana", "base", "ethereum", "bsc", "arbitrum", "polygon", "avalanche",
+          "sui", "ton", "tron", "blast", "optimism", "hyperliquid", "abstract",
+          "berachain", "sonic", "unichain", "linea", "mantle", "cronos"]
 
 # ---------- scoring ----------
 ENTRY_THRESHOLD   = 0.62        # score must clear this to trade
@@ -62,3 +64,20 @@ NEWS_FEEDS = [
     "https://news.google.com/rss/search?q=memecoin+OR+solana+OR+crypto&hl=en-US&gl=US&ceid=US:en",
 ]
 REDDIT_SUBS = ["CryptoCurrency", "solana", "CryptoMoonShots", "SatoshiStreetBets", "wallstreetbets"]
+
+
+# ---------- self-learning: explore vs exploit ----------
+# A bot that only buys what it already believes never finds out what it was wrong about.
+# A share of every tick is spent exploring: random picks among candidates that pass the
+# SAFETY gates, score ignored entirely.
+EXPLORE_RATE_COLD = 0.60        # before it has data, mostly explore
+EXPLORE_RATE_WARM = 0.20        # forever after - never stop learning
+COLD_TRADES       = 80          # closed trades before switching to warm
+
+# ---------- shadow book: learning from what it did NOT buy ----------
+# Every gate-passing candidate is tracked for 24h whether or not we bought it.
+# This is how it learns from misses, not only from its own losers.
+SHADOW_ENABLED    = True
+SHADOW_TRACK_H    = 24
+SHADOW_MAX_OPEN   = 240
+SHADOW_WIN_MOVE   = 0.50        # +50% peak in the window = "that was a good buy"

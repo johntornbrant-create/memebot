@@ -1,67 +1,85 @@
-"""Self-development: the bot refits its own weights on its OWN closed trades.
+"""Self-development. The bot's only teachers are its own wins, its own losses,
+and its own misses. Nothing is imported from research or from anyone else.
 
-No external strategies, no copied alpha - the only teacher is our realised PnL.
-Pure stdlib logistic regression so the workflow has zero dependencies.
+Two training sets:
+  1. SHADOW outcomes - every gate-passing candidate it ever saw, bought or not,
+     labelled by whether it moved +50% within 24h. This is the volume source, and it is
+     the only way to learn from the ones it skipped.
+  2. REAL closed trades - fewer, but they carry actual friction and actual exit timing.
+     Weighted 3x because they are the ground truth.
+
+Pure stdlib. No dependencies, nothing to break in CI.
 """
 import json, math, os
 from . import config
 from .features import FEATURES, PRIOR_WEIGHTS
 from .scoring import load_weights, save_weights
+from .shadow import read_outcomes
 
 TRADES = os.path.join(os.path.dirname(__file__), "..", "state", "trades.jsonl")
-WIN_THRESHOLD = 0.15          # a "win" is +15% net, not +0.01%
+REAL_TRADE_WEIGHT = 3.0
+WIN_THRESHOLD = 0.15
 
 
 def _read_trades():
     rows = []
     try:
         with open(TRADES) as fh:
-            for line in fh:
-                line = line.strip()
-                if line:
-                    rows.append(json.loads(line))
+            rows = [json.loads(l) for l in fh if l.strip()]
     except FileNotFoundError:
         pass
     return [r for r in rows if isinstance(r.get("features"), dict)]
 
 
-def _fit(X, y, l2=2.0, lr=0.35, epochs=1200):
+def build_dataset():
+    X, y, w = [], [], []
+    for r in read_outcomes():
+        X.append([float(r["features"].get(k, 0.0)) for k in FEATURES])
+        y.append(1.0 if r.get("win") else 0.0)
+        w.append(1.0)
+    for r in _read_trades():
+        X.append([float(r["features"].get(k, 0.0)) for k in FEATURES])
+        y.append(1.0 if r.get("pnl_pct", -1) >= WIN_THRESHOLD else 0.0)
+        w.append(REAL_TRADE_WEIGHT)
+    return X, y, w
+
+
+def _fit(X, y, sw, l2=2.0, lr=0.4, epochs=1500):
     n, d = len(X), len(FEATURES)
-    w = [0.0] * d
+    wt = [0.0] * d
     b = 0.0
+    tot = sum(sw) or 1.0
     for _ in range(epochs):
-        gw = [0.0] * d
-        gb = 0.0
-        for xi, yi in zip(X, y):
-            z = b + sum(w[j] * xi[j] for j in range(d))
+        gw, gb = [0.0] * d, 0.0
+        for xi, yi, si in zip(X, y, sw):
+            z = b + sum(wt[j] * xi[j] for j in range(d))
             p = 1 / (1 + math.exp(-max(-30, min(30, z))))
-            e = p - yi
+            e = (p - yi) * si
             for j in range(d):
                 gw[j] += e * xi[j]
             gb += e
         for j in range(d):
-            w[j] -= lr * (gw[j] / n + l2 * w[j] / n)
-        b -= lr * gb / n
-    return w, b
+            wt[j] -= lr * (gw[j] / tot + l2 * wt[j] / tot)
+        b -= lr * gb / tot
+    return wt
 
 
 def refit(force=False):
-    """Returns a human-readable report string."""
-    rows = _read_trades()
-    n = len(rows)
+    X, y, sw = build_dataset()
+    n = len(X)
+    n_real = len(_read_trades())
+    n_shadow = n - n_real
     if n < config.LEARN_MIN_TRADES and not force:
-        return f"learn: {n}/{config.LEARN_MIN_TRADES} closed trades - not enough. Weights unchanged."
+        return (f"learn: {n} observations ({n_shadow} shadow + {n_real} real), "
+                f"need {config.LEARN_MIN_TRADES}. Weights unchanged.")
 
-    X = [[float(r["features"].get(k, 0.0)) for k in FEATURES] for r in rows]
-    y = [1.0 if r.get("pnl_pct", -1) >= WIN_THRESHOLD else 0.0 for r in rows]
     wins = int(sum(y))
-    if wins < 5 or wins == n:
+    if wins < 8 or wins == n:
         return f"learn: {wins}/{n} wins - degenerate labels, weights unchanged."
 
-    w, _ = _fit(X, y)
-    fitted = dict(zip(FEATURES, w))
+    fitted = dict(zip(FEATURES, _fit(X, y, sw)))
 
-    # scale fitted weights to the prior's magnitude, then blend. Small samples lie.
+    # rescale to a sane magnitude, then shrink toward flat. Small samples lie.
     fs = sum(abs(v) for v in fitted.values()) or 1.0
     ps = sum(abs(v) for v in PRIOR_WEIGHTS.values())
     fitted = {k: v * ps / fs for k, v in fitted.items()}
@@ -69,27 +87,31 @@ def refit(force=False):
     new = {k: round(a * fitted[k] + (1 - a) * PRIOR_WEIGHTS[k], 4) for k in FEATURES}
 
     old, meta = load_weights()
-    wr = wins / n
-    # raise the bar when we are losing, relax it (never below prior) when we are winning
+    base_rate = wins / n
     thr = config.ENTRY_THRESHOLD
-    if wr < 0.25:
-        thr = min(0.80, config.ENTRY_THRESHOLD + 0.08)
-    elif wr > 0.45:
-        thr = max(0.55, config.ENTRY_THRESHOLD - 0.03)
+    real = _read_trades()
+    if len(real) >= 25:
+        rwr = sum(1 for r in real if r.get("pnl_pct", -1) >= WIN_THRESHOLD) / len(real)
+        if rwr < 0.20:
+            thr = min(0.82, thr + 0.08)
+        elif rwr > 0.40:
+            thr = max(0.52, thr - 0.04)
 
     meta = {
         "version": meta.get("version", 0) + 1,
-        "fitted_on": n, "win_rate": round(wr, 3), "threshold": round(thr, 3),
-        "note": f"refit on {n} closed trades, {wins} wins (>= +{WIN_THRESHOLD:.0%})",
+        "fitted_on": n, "n_shadow": n_shadow, "n_real": n_real,
+        "base_rate": round(base_rate, 3), "threshold": round(thr, 3),
+        "note": (f"refit on {n} observations ({n_shadow} shadow, {n_real} real), "
+                 f"{wins} winners ({base_rate:.0%} base rate)"),
         "prev_weights": old,
     }
     save_weights(new, meta)
 
-    moves = sorted(((k, new[k] - old.get(k, 0)) for k in FEATURES),
-                   key=lambda t: -abs(t[1]))[:4]
-    delta = ", ".join(f"{k} {d:+.3f}" for k, d in moves)
-    return (f"learn: refit v{meta['version']} on {n} trades (WR {wr:.0%}), "
-            f"threshold -> {thr:.2f}. Biggest moves: {delta}")
+    moves = sorted(((k, new[k] - old.get(k, 0)) for k in FEATURES), key=lambda t: -abs(t[1]))
+    up = ", ".join(f"{k} {d:+.3f}" for k, d in moves[:3])
+    dn = ", ".join(f"{k} {d:+.3f}" for k, d in moves[-2:])
+    return (f"learn: v{meta['version']} on {n} obs ({n_shadow}s/{n_real}r), base rate "
+            f"{base_rate:.0%}, threshold {thr:.2f}. Up: {up}. Down: {dn}")
 
 
 if __name__ == "__main__":

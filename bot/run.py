@@ -1,6 +1,6 @@
 """One tick of the bot. Idempotent-ish: safe to run on any schedule."""
-import sys, traceback
-from . import config, portfolio as pf_mod, risk, scoring, features
+import sys, random, traceback
+from . import config, portfolio as pf_mod, risk, scoring, features, shadow
 from .sources import onchain, buzz as buzzmod
 from .report import write_dashboard
 
@@ -45,7 +45,8 @@ def find_entries(pf):
     log("  scanning chains + news...")
     cands = onchain.discover()
     buzz = buzzmod.build()
-    log(f"  {len(cands)} raw candidates, {buzz['n_docs']} headlines/posts")
+    log(f"  {len(cands)} raw candidates across {len(set(c['chain'] for c in cands))} chains, "
+        f"{buzz['n_docs']} headlines/posts")
 
     scored, rejected = [], {}
     for c in cands:
@@ -54,8 +55,7 @@ def find_entries(pf):
             rejected[why] = rejected.get(why, 0) + 1
             continue
         f = features.extract(c, buzz)
-        s = scoring.score(f, weights)
-        scored.append((s, c, f))
+        scored.append((scoring.score(f, weights), c, f))
 
     scored.sort(key=lambda t: -t[0])
     log(f"  {len(scored)} passed gates | rejected: " +
@@ -63,15 +63,28 @@ def find_entries(pf):
     if scored:
         log("  top: " + " | ".join(f"{c['symbol']} {s:.2f}" for s, c, _ in scored[:5]))
 
-    opened = 0
-    for s, c, f in scored:
-        if opened >= config.MAX_NEW_PER_TICK:
+    # ---- explore vs exploit -------------------------------------------------
+    # Some slots go to the best-scoring candidate. Some go to a RANDOM gate-passer,
+    # score ignored, so the bot keeps discovering what its own model is blind to.
+    closed = pf["stats"]["closed"]
+    ex_rate = config.EXPLORE_RATE_COLD if closed < config.COLD_TRADES else config.EXPLORE_RATE_WARM
+
+    plan = []
+    pool = list(scored)
+    for _ in range(config.MAX_NEW_PER_TICK):
+        if not pool:
             break
-        pf_mod.log_signal({"t": pf_mod.now_iso(), "symbol": c["symbol"], "chain": c["chain"],
-                           "address": c["address"], "score": s, "features": f,
-                           "liq": c["liquidity"], "taken": False})
-        if s < thr:
-            break                                    # list is sorted; nothing below clears
+        if random.random() < ex_rate:
+            pick = pool.pop(random.randrange(len(pool)))
+            plan.append((pick, "explore"))
+        else:
+            best = pool[0]
+            if best[0] < thr:
+                break
+            plan.append((pool.pop(0), "exploit"))
+
+    opened, taken_keys = 0, set()
+    for (s, c, f), mode in plan:
         ok, reasons = risk.equity_curve_checks(pf)
         if not ok:
             log(f"  no entry: {'; '.join(reasons)}")
@@ -82,12 +95,28 @@ def find_entries(pf):
         size = risk.size_position(pf, c)
         if size < config.MIN_POS_USD:
             continue
-        p = pf_mod.open_position(pf, c, size, f, s)
+        if mode == "explore":
+            size = min(size, pf["equity"] * config.MAX_POS_PCT * 0.5)   # half-size the bets we know nothing about
+            if size < config.MIN_POS_USD:
+                continue
+        pf_mod.open_position(pf, c, size, f, s)
+        taken_keys.add(f"{c['chain']}:{c['address']}")
         opened += 1
-        log(f"  BUY  {c['symbol']:<10} ${size:.2f} @ ${c['price']:.8g}  score {s:.2f}  "
-            f"liq ${c['liquidity']:,.0f}  socials {c['socials']}")
+        log(f"  BUY[{mode}] {c['symbol']:<10} ${size:.2f} @ ${c['price']:.8g}  "
+            f"score {s:.2f}  {c['chain']}  liq ${c['liquidity']:,.0f}")
     if opened == 0:
         log("  no entries this tick")
+
+    # ---- shadow book: follow EVERYTHING it saw, bought or not ---------------
+    if config.SHADOW_ENABLED:
+        book = shadow.load()
+        for s, c, f in scored:
+            shadow.track(book, c, f, s, f"{c['chain']}:{c['address']}" in taken_keys)
+        done, wins = shadow.update(book)
+        shadow.save(book)
+        log(f"  shadow: tracking {len(book)}, closed {done} this tick ({wins} would have won)")
+        for m in shadow.missed_report(3):
+            log(f"    MISSED {m['symbol']:<10} peak {m['peak_gain']:+.0%}  (scored {m['score']:.2f})")
 
 
 def tick():

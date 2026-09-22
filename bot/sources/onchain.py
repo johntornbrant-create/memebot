@@ -5,7 +5,29 @@ from ..http import get_json
 
 DS = "https://api.dexscreener.com"
 GT = "https://api.geckoterminal.com/api/v2"
-GT_NET = {"solana": "solana", "base": "base", "ethereum": "eth", "bsc": "bsc"}
+# GeckoTerminal network ids differ from DexScreener chain ids and change as chains launch.
+# Resolve them from GT's own /networks endpoint instead of hardcoding guesses.
+_GT_ALIAS = {"ethereum": "eth", "bsc": "bsc", "avalanche": "avax", "polygon": "polygon_pos",
+             "cronos": "cro", "sui": "sui-network", "berachain": "berachain-bera"}
+_GT_CACHE = {}
+
+
+def gt_networks():
+    if _GT_CACHE:
+        return _GT_CACHE
+    ids = set()
+    for page in (1, 2, 3):
+        d = get_json(f"{GT}/networks?page={page}")
+        for n in (d or {}).get("data", []) or []:
+            if n.get("id"):
+                ids.add(n["id"])
+        time.sleep(2.2)
+    for chain in config.CHAINS:
+        for cand in (_GT_ALIAS.get(chain), chain, chain.replace("_", "-")):
+            if cand and cand in ids:
+                _GT_CACHE[chain] = cand
+                break
+    return _GT_CACHE
 
 
 def _f(x, d=0.0):
@@ -92,8 +114,8 @@ def from_dexscreener():
 def from_geckoterminal():
     """New + trending pools per chain. Hands addresses back to DexScreener for detail."""
     by_chain = {}
-    for chain in config.CHAINS:
-        net = GT_NET.get(chain)
+    nets = gt_networks()
+    for chain, net in nets.items():
         for ep in ("new_pools", "trending_pools"):
             d = get_json(f"{GT}/networks/{net}/{ep}?page=1")
             for item in (d or {}).get("data", []) or []:
@@ -133,3 +155,21 @@ def quote(chain, address):
         return None
     best = max(d, key=lambda p: _f((p.get("liquidity") or {}).get("usd")))
     return _norm_ds(best)
+
+
+def quote_many(keys):
+    """keys: ['chain:address', ...] -> {key: candidate or None}. Batched, 30 per request."""
+    by_chain = {}
+    for k in keys:
+        ch, _, ad = k.partition(":")
+        by_chain.setdefault(ch, []).append(ad)
+    out = {k: None for k in keys}
+    for ch, addrs in by_chain.items():
+        for p in _pairs_for_tokens(ch, addrs):
+            c = _norm_ds(p)
+            if not c:
+                continue
+            k = f"{c['chain']}:{c['address']}"
+            if k in out and (out[k] is None or c["liquidity"] > out[k]["liquidity"]):
+                out[k] = c
+    return out

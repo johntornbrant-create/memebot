@@ -2,6 +2,7 @@
 import json, os
 from . import config, portfolio as pf_mod
 from .scoring import load_weights
+from . import shadow
 
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 DASH = os.path.join(ROOT, "reports", "DASHBOARD.md")
