@@ -54,6 +54,7 @@ LEARN_MIN_TRADES  = 60          # do not refit weights on less than this
 LEARN_BLEND       = 0.50        # new weights = 50% fitted + 50% prior (anti-overfit)
 
 # ---------- sources ----------
+GT_CHAINS_PER_TICK = 8          # rotate GeckoTerminal deep-scan; DexScreener covers all
 HTTP_TIMEOUT      = 20
 USER_AGENT        = "memebot-paper/1.0 (research; no trading)"
 NEWS_FEEDS = [

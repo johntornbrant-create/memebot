@@ -115,7 +115,14 @@ def from_geckoterminal():
     """New + trending pools per chain. Hands addresses back to DexScreener for detail."""
     by_chain = {}
     nets = gt_networks()
-    for chain, net in nets.items():
+    # GeckoTerminal's free tier needs ~2.2s between calls, so scanning all 20 chains every
+    # tick costs 90s of pure sleeping. Rotate through them by the hour instead - DexScreener
+    # still covers every chain each tick, GT just deepens a different slice.
+    items = sorted(nets.items())
+    if items:
+        off = int(time.time() // 3600) % len(items)
+        items = (items + items)[off:off + config.GT_CHAINS_PER_TICK]
+    for chain, net in items:
         for ep in ("new_pools", "trending_pools"):
             d = get_json(f"{GT}/networks/{net}/{ep}?page=1")
             for item in (d or {}).get("data", []) or []:
