@@ -1,30 +1,30 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-22T19:22:55+00:00`
+Updated `2026-09-22T19:35:50+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$511.54** |
-| Return | **+2.31%** (start $500.00) |
+| Equity | **$516.42** |
+| Return | **+3.28%** (start $500.00) |
 | Cash | $468.18 |
-| Deployed | $43.36 (8.5%) |
+| Deployed | $48.24 (9.3%) |
 | Open positions | 4 / 8 |
 | Closed trades | 1 (0W / 1L, WR 0%) |
 | Profit factor | 0.00 |
 | Fees + slippage paid | $3.33 |
-| Ticks run | 15 |
+| Ticks run | 16 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| SATOSHINU | solana | $15.00 | $12.96 | -11% | +5% | 3.3h |
-| CATEWALK | solana | $15.00 | $11.76 | -19% | +0% | 3.3h |
-| BOP | solana | $7.39 | $10.97 | +319% | +526% | 2.0h |
-| Habibi | bsc | $7.67 | $7.27 | +0% | +0% | 0.0h |
+| SATOSHINU | solana | $15.00 | $11.88 | -18% | +5% | 3.5h |
+| CATEWALK | solana | $15.00 | $10.45 | -28% | +0% | 3.5h |
+| BOP | solana | $7.39 | $14.95 | +471% | +526% | 2.2h |
+| Habibi | bsc | $7.67 | $10.96 | +51% | +51% | 0.2h |
 
 ## Last closed trades
 
@@ -53,11 +53,11 @@ _prior_
 
 ## Last run log
 ```
-tick #15  equity $513.94  cash $475.85  open 3
+tick #16  equity $511.54  cash $468.18  open 4
   scanning chains + news...
-  104 raw candidates across 7 chains, 158 headlines/posts
-  5 passed gates | rejected: liquidity too thin x69, no h1 volume x21, already discovered x4, too new (bot war) x2, too old x2
-  top: LOOONGCAT 0.85 | SATOSHINU 0.76 | Habibi 0.74 | CATEWALK 0.72 | WHT  0.59
-  BUY[explore] Habibi     $7.67 @ $0.0005059  score 0.74  bsc  liq $40,045
-  shadow: tracking 23, closed 0 this tick (0 would have won)
+  68 raw candidates across 6 chains, 158 headlines/posts
+  3 passed gates | rejected: liquidity too thin x37, no h1 volume x21, too new (bot war) x2, sell pressure x2, too old x2
+  top: LOOONGCAT 0.81 | CATEWALK 0.72 | APEZCAT 0.48
+  no entries this tick
+  shadow: tracking 24, closed 0 this tick (0 would have won)
 ```
