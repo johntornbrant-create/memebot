@@ -29,13 +29,30 @@ jobs:
 
       - name: Commit state
         run: |
+          set -e
           git config user.name  "memebot"
           git config user.email "memebot@users.noreply.github.com"
-          git add state reports
-          if git diff --staged --quiet; then
-            echo "no state change"
-          else
-            git commit -m "tick $(date -u +'%Y-%m-%d %H:%M UTC')"
-            git pull --rebase --autostash origin ${{ github.ref_name }} || true
-            git push
-          fi
+
+          # State files are machine-generated snapshots. Two concurrent ticks produce two
+          # valid-but-divergent versions and git cannot merge them - a rebase just leaves a
+          # conflict and a detached HEAD, and the bot silently stops persisting.
+          # So: never rebase. Move HEAD to the remote tip, keep OUR files, commit on top.
+          # Last writer wins, which is correct for a snapshot.
+          for attempt in 1 2 3 4 5; do
+            git fetch -q origin "${{ github.ref_name }}"
+            git reset -q --soft "origin/${{ github.ref_name }}"
+            git add -A state reports
+            if git diff --staged --quiet; then
+              echo "no state change - nothing to commit"
+              exit 0
+            fi
+            git commit -q -m "tick $(date -u +'%Y-%m-%d %H:%M UTC')"
+            if git push -q origin "HEAD:${{ github.ref_name }}"; then
+              echo "state pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "push rejected (concurrent tick) - retrying"
+            sleep 5
+          done
+          echo "::error::could not persist state after 5 attempts"
+          exit 1
