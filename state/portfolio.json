@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-22T20:51:13+00:00",
-  "cash": 468.47687893211696,
-  "equity": 515.8999,
+  "updated": "2026-09-22T21:05:18+00:00",
+  "cash": 472.0837905185217,
+  "equity": 522.3704,
   "positions": {
     "solana:527PdUTGwcFxVEMXt8tyRJA1nYbVedgSiSfh4s2LWTWz": {
       "id": "e6acdcfea2",
@@ -37,7 +37,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0006898
+      "last_price": 0.000655
     },
     "bsc:0xD4282f79E89545eE691419Fe6E7e1a496446894D": {
       "id": "3c6be93311",
@@ -46,14 +46,15 @@
       "symbol": "Habibi",
       "opened": "2026-09-22T19:22:54+00:00",
       "entry_price": 0.0005059,
-      "tokens": 7183.374224402045,
+      "tokens": 5387.530668301533,
       "tokens_initial": 14366.74844880409,
       "cost_usd": 7.6731735,
-      "fees_usd": 0.8064185282795535,
-      "realized_usd": 6.825055941468904,
-      "peak_gain": 1.8128088555050406,
+      "fees_usd": 1.18448379286183,
+      "realized_usd": 10.431967527873661,
+      "peak_gain": 3.3862423403834754,
       "tp_hit": [
-        0
+        0,
+        1
       ],
       "entry_liq": 40045.36,
       "score": 0.7392,
@@ -71,7 +72,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.001423
+      "last_price": 0.002219
     },
     "solana:Et2uyA1repr77VjXLZELaCCsEbUENaqYncwaciUupump": {
       "id": "91a4bfe5dd",
@@ -85,7 +86,7 @@
       "cost_usd": 7.6743705,
       "fees_usd": 0.4053,
       "realized_usd": 0.0,
-      "peak_gain": 0.06548042704626345,
+      "peak_gain": 0.09181494661921707,
       "tp_hit": [],
       "entry_liq": 32987.94,
       "score": 0.55,
@@ -103,7 +104,7 @@
         "buzz": 0.0,
         "paid_boost": 0.1
       },
-      "last_price": 0.0001389
+      "last_price": 0.0001534
     },
     "solana:MboMMGXjGDi45hfjCVzYru32kEM5nw7VzCqCofZpump": {
       "id": "7e4230ad86",
@@ -117,7 +118,7 @@
       "cost_usd": 15.48,
       "fees_usd": 0.4638,
       "realized_usd": 0.0,
-      "peak_gain": 0.0,
+      "peak_gain": 0.10505166475315719,
       "tp_hit": [],
       "entry_liq": 39760.88,
       "score": 0.7674,
@@ -135,7 +136,7 @@
         "buzz": 0.0,
         "paid_boost": 0.1
       },
-      "last_price": 0.0001742
+      "last_price": 0.0001925
     }
   },
   "blacklist": {
@@ -153,12 +154,12 @@
     "trades_today": 7
   },
   "stats": {
-    "ticks": 21,
+    "ticks": 22,
     "opened": 7,
     "closed": 3,
     "wins": 0,
     "losses": 3,
-    "fees_paid": 5.42742354346222,
+    "fees_paid": 5.805488808044497,
     "realized_pnl": -16.762581451686625
   }
 }
