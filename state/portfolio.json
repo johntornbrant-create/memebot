@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-22T17:49:40+00:00",
-  "cash": 472.77876861344174,
-  "equity": 511.773,
+  "updated": "2026-09-22T18:06:31+00:00",
+  "cash": 475.8537888357909,
+  "equity": 509.5878,
   "positions": {
     "solana:HzaCANKGkhNcQGb1VWL8f4tHJYrCmaXrPWk9eHR7GYYX": {
       "id": "c1061227b0",
@@ -34,7 +34,7 @@
         "buzz": 0.0,
         "paid_boost": 1.0
       },
-      "last_price": 0.0008549
+      "last_price": 0.0007729
     },
     "solana:BLSuVTxKYDL4vm4XmG3oEJfsSGfJZF3cgy98ri68pump": {
       "id": "3a137af962",
@@ -66,7 +66,7 @@
         "buzz": 0.0,
         "paid_boost": 1.0
       },
-      "last_price": 0.001073
+      "last_price": 0.001034
     },
     "solana:527PdUTGwcFxVEMXt8tyRJA1nYbVedgSiSfh4s2LWTWz": {
       "id": "e6acdcfea2",
@@ -75,14 +75,15 @@
       "symbol": "BOP",
       "opened": "2026-09-22T17:24:04+00:00",
       "entry_price": 0.0001243,
-      "tokens": 28094.728443520078,
+      "tokens": 21071.046332640057,
       "tokens_initial": 56189.456887040156,
       "cost_usd": 7.3875765,
-      "fees_usd": 0.8539174091091892,
-      "realized_usd": 13.554504719985571,
+      "fees_usd": 1.2282274714131867,
+      "realized_usd": 16.62952494233475,
       "peak_gain": 3.0104585679806917,
       "tp_hit": [
-        0
+        0,
+        1
       ],
       "entry_liq": 32443.54,
       "score": 0.6651,
@@ -100,7 +101,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0004985
+      "last_price": 0.0004911
     }
   },
   "blacklist": {
@@ -116,12 +117,12 @@
     "trades_today": 4
   },
   "stats": {
-    "ticks": 9,
+    "ticks": 10,
     "opened": 4,
     "closed": 1,
     "wins": 0,
     "losses": 1,
-    "fees_paid": 2.553715658828274,
+    "fees_paid": 2.9280257211322716,
     "realized_pnl": -3.3881596065438124
   }
 }
