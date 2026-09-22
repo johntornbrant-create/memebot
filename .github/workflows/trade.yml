@@ -1,4 +1,5 @@
 name: memebot tick
+# paper trading only - no keys, no real orders
 
 on:
   schedule:
