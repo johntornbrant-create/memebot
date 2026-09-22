@@ -1,0 +1,33 @@
+name: memebot weekly refit
+
+on:
+  schedule:
+    - cron: "0 4 * * 1"        # Mondays 04:00 UTC
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Refit even below the minimum trade count"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  learn:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Refit weights on our own closed trades
+        env:
+          FORCE_REFIT: ${{ inputs.force && '1' || '0' }}
+        run: python -m bot.learn | tee refit.txt
+      - name: Commit weights
+        run: |
+          git config user.name  "memebot"
+          git config user.email "memebot@users.noreply.github.com"
+          git add state/weights.json
+          git diff --staged --quiet || { git commit -F refit.txt; git push; }
