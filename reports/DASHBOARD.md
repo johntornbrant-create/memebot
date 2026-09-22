@@ -1,29 +1,29 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-22T21:50:32+00:00`
+Updated `2026-09-22T22:05:27+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$510.96** |
-| Return | **+2.19%** (start $500.00) |
+| Equity | **$508.87** |
+| Return | **+1.77%** (start $500.00) |
 | Cash | $482.14 |
-| Deployed | $28.82 (5.6%) |
+| Deployed | $26.73 (5.3%) |
 | Open positions | 3 / 8 |
 | Closed trades | 5 (2W / 3L, WR 40%) |
 | Profit factor | 1.77 |
 | Fees + slippage paid | $7.04 |
-| Ticks run | 25 |
+| Ticks run | 26 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| BITCOINU | solana | $7.67 | $7.45 | +2% | +9% | 1.4h |
-| KCAT | solana | $15.48 | $13.71 | -9% | +11% | 1.0h |
-| Archi | solana | $7.66 | $7.26 | +0% | +0% | 0.0h |
+| BITCOINU | solana | $7.67 | $6.87 | -6% | +9% | 1.7h |
+| KCAT | solana | $15.48 | $10.65 | -29% | +11% | 1.2h |
+| Archi | solana | $7.66 | $9.21 | +27% | +27% | 0.2h |
 
 ## Last closed trades
 
@@ -56,13 +56,11 @@ _prior_
 
 ## Last run log
 ```
-tick #25  equity $514.87  cash $472.08  open 4
-  SELL BOP        100% @ $0.0004572  ->  $9.21   [trailing stop from +526%]
-  SELL Habibi     100% @ $0.001655  ->  $8.50   [trailing stop from +394%]
+tick #26  equity $510.96  cash $482.14  open 3
   scanning chains + news...
-  54 raw candidates across 3 chains, 158 headlines/posts
-  8 passed gates | rejected: liquidity too thin x29, no h1 volume x16, too old x1
-  top: BITCOINU 0.73 | SATOSHINU 0.70 | Archi 0.67 | CATEWALK 0.67 | UPTOBER 0.61
-  BUY[explore] Archi      $7.66 @ $0.0002775  score 0.67  solana  liq $47,360
-  shadow: tracking 42, closed 0 this tick (0 would have won)
+  115 raw candidates across 6 chains, 158 headlines/posts
+  12 passed gates | rejected: liquidity too thin x72, too old x13, no h1 volume x10, already discovered x6, too new (bot war) x2
+  top: SATOSHINU 0.70 | UPTOBER 0.70 | CATEWALK 0.67 | Archi 0.66 | BITCOINU 0.63
+  no entries this tick
+  shadow: tracking 45, closed 0 this tick (0 would have won)
 ```
