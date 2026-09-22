@@ -1,29 +1,29 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-22T22:05:27+00:00`
+Updated `2026-09-22T22:23:33+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$508.87** |
-| Return | **+1.77%** (start $500.00) |
+| Equity | **$513.42** |
+| Return | **+2.68%** (start $500.00) |
 | Cash | $482.14 |
-| Deployed | $26.73 (5.3%) |
+| Deployed | $31.28 (6.1%) |
 | Open positions | 3 / 8 |
 | Closed trades | 5 (2W / 3L, WR 40%) |
 | Profit factor | 1.77 |
 | Fees + slippage paid | $7.04 |
-| Ticks run | 26 |
+| Ticks run | 27 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| BITCOINU | solana | $7.67 | $6.87 | -6% | +9% | 1.7h |
-| KCAT | solana | $15.48 | $10.65 | -29% | +11% | 1.2h |
-| Archi | solana | $7.66 | $9.21 | +27% | +27% | 0.2h |
+| BITCOINU | solana | $7.67 | $9.08 | +25% | +25% | 2.0h |
+| KCAT | solana | $15.48 | $10.92 | -27% | +11% | 1.5h |
+| Archi | solana | $7.66 | $11.28 | +55% | +55% | 0.6h |
 
 ## Last closed trades
 
@@ -56,11 +56,11 @@ _prior_
 
 ## Last run log
 ```
-tick #26  equity $510.96  cash $482.14  open 3
+tick #27  equity $508.87  cash $482.14  open 3
   scanning chains + news...
-  115 raw candidates across 6 chains, 158 headlines/posts
-  12 passed gates | rejected: liquidity too thin x72, too old x13, no h1 volume x10, already discovered x6, too new (bot war) x2
-  top: SATOSHINU 0.70 | UPTOBER 0.70 | CATEWALK 0.67 | Archi 0.66 | BITCOINU 0.63
+  156 raw candidates across 9 chains, 158 headlines/posts
+  12 passed gates | rejected: liquidity too thin x64, no h1 volume x50, too old x19, already discovered x10, too new (bot war) x1
+  top: UPTOBER 0.74 | Archi 0.74 | TIKCAT 0.73 | BITCOINU 0.70 | CLIP 0.68
   no entries this tick
-  shadow: tracking 45, closed 0 this tick (0 would have won)
+  shadow: tracking 47, closed 0 this tick (0 would have won)
 ```
