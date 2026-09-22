@@ -1,41 +1,9 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-22T20:05:36+00:00",
-  "cash": 475.0056712772598,
-  "equity": 522.3949,
+  "updated": "2026-09-22T20:23:44+00:00",
+  "cash": 475.2076661158934,
+  "equity": 511.6247,
   "positions": {
-    "solana:HzaCANKGkhNcQGb1VWL8f4tHJYrCmaXrPWk9eHR7GYYX": {
-      "id": "c1061227b0",
-      "chain": "solana",
-      "address": "HzaCANKGkhNcQGb1VWL8f4tHJYrCmaXrPWk9eHR7GYYX",
-      "symbol": "SATOSHINU",
-      "opened": "2026-09-22T16:06:26+00:00",
-      "entry_price": 0.001066,
-      "tokens": 13642.611506783362,
-      "tokens_initial": 13642.611506783362,
-      "cost_usd": 15.0,
-      "fees_usd": 0.457,
-      "realized_usd": 0.0,
-      "peak_gain": 0.05159474671669795,
-      "tp_hit": [],
-      "entry_liq": 102472.82,
-      "score": 0.7578,
-      "features": {
-        "liq_quality": 0.9557,
-        "turnover": 0.3096,
-        "buy_pressure": 0.2798,
-        "momentum_accel": 0.0,
-        "not_vertical": 1.0,
-        "age_sweet": 0.6323,
-        "socials": 0.45,
-        "fdv_sanity": 0.8798,
-        "txn_depth": 0.8146,
-        "dip_in_uptrend": 1.0,
-        "buzz": 0.0,
-        "paid_boost": 1.0
-      },
-      "last_price": 0.0007772
-    },
     "solana:BLSuVTxKYDL4vm4XmG3oEJfsSGfJZF3cgy98ri68pump": {
       "id": "3a137af962",
       "chain": "solana",
@@ -66,7 +34,7 @@
         "buzz": 0.0,
         "paid_boost": 1.0
       },
-      "last_price": 0.001076
+      "last_price": 0.0009838
     },
     "solana:527PdUTGwcFxVEMXt8tyRJA1nYbVedgSiSfh4s2LWTWz": {
       "id": "e6acdcfea2",
@@ -101,7 +69,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.000649
+      "last_price": 0.0006075
     },
     "bsc:0xD4282f79E89545eE691419Fe6E7e1a496446894D": {
       "id": "3c6be93311",
@@ -135,11 +103,44 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.001357
+      "last_price": 0.0005184
+    },
+    "solana:Et2uyA1repr77VjXLZELaCCsEbUENaqYncwaciUupump": {
+      "id": "91a4bfe5dd",
+      "chain": "solana",
+      "address": "Et2uyA1repr77VjXLZELaCCsEbUENaqYncwaciUupump",
+      "symbol": "BITCOINU",
+      "opened": "2026-09-22T20:23:43+00:00",
+      "entry_price": 0.0001405,
+      "tokens": 51736.96132205034,
+      "tokens_initial": 51736.96132205034,
+      "cost_usd": 7.6743705,
+      "fees_usd": 0.4053,
+      "realized_usd": 0.0,
+      "peak_gain": 0.0,
+      "tp_hit": [],
+      "entry_liq": 32987.94,
+      "score": 0.55,
+      "features": {
+        "liq_quality": 0.4892,
+        "turnover": 0.0,
+        "buy_pressure": 1.0,
+        "momentum_accel": 0.0,
+        "not_vertical": 1.0,
+        "age_sweet": 0.3442,
+        "socials": 0.65,
+        "fdv_sanity": 1.0,
+        "txn_depth": 0.3576,
+        "dip_in_uptrend": 0.5,
+        "buzz": 0.0,
+        "paid_boost": 0.1
+      },
+      "last_price": 0.0001405
     }
   },
   "blacklist": {
-    "solana:D4sBdmPaDKxKThQW3Eh721R9M335VcCThn31w7CRtdkN": "2026-09-22T17:22:35+00:00"
+    "solana:D4sBdmPaDKxKThQW3Eh721R9M335VcCThn31w7CRtdkN": "2026-09-22T17:22:35+00:00",
+    "solana:HzaCANKGkhNcQGb1VWL8f4tHJYrCmaXrPWk9eHR7GYYX": "2026-09-22T20:22:15+00:00"
   },
   "halted": false,
   "halt_reason": "",
@@ -148,15 +149,15 @@
     "day_equity": 500.0,
     "week": "2026-W39",
     "week_equity": 500.0,
-    "trades_today": 5
+    "trades_today": 6
   },
   "stats": {
-    "ticks": 18,
-    "opened": 5,
-    "closed": 1,
+    "ticks": 19,
+    "opened": 6,
+    "closed": 2,
     "wins": 0,
-    "losses": 1,
-    "fees_paid": 3.7344797091618362,
-    "realized_pnl": -3.3881596065438124
+    "losses": 2,
+    "fees_paid": 4.548599772849715,
+    "realized_pnl": -10.51179426791023
   }
 }
