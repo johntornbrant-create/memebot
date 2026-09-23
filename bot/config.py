@@ -8,7 +8,7 @@ CURRENCY          = "USD"
 # Prior evidence: 58% of copied memecoin positions went to zero (copytrade sim 2026-08-19).
 # So every position is assumed to be a potential -100%. Sizing is built around that.
 MAX_POS_PCT       = 0.030       # 3.0% of equity per position  -> $15 on $500
-MIN_POS_USD       = 5.00        # below this, fees/slippage eat the trade
+MIN_POS_USD       = 8.00        # below this, flat gas is too big a % of the trade
 MAX_CONCURRENT    = 8           # 8 x 3% = 24% max exposure at any instant
 MAX_DEPLOYED_PCT  = 0.35        # never more than 35% of equity out of cash
 MAX_PER_CHAIN     = 3           # 20 chains - do not pile into one
@@ -22,16 +22,28 @@ MAX_TRADES_DAY    = 12          # activity cap
 
 # ---------- exits ----------
 STOP_LOSS         = -0.35       # memecoin noise eats tight stops
-TP_LADDER         = [(0.80, 0.50), (2.00, 0.25)]   # (+gain, fraction sold)
-TRAIL_AFTER       = 2.00        # after +200%, trail the runner
-TRAIL_PCT         = 0.40
+TP_LADDER         = [(1.00, 0.40)]   # one rung, not two - every sell costs a fee
+TRAIL_AFTER       = 1.00        # start trailing at +100%: winners peaked at +724%
+                                # and +248% then gapped down between 15-min checks
+TRAIL_PCT         = 0.30
 TIME_STOP_H       = 24          # flat in 24h if not up >10%
 TIME_STOP_MIN_GAIN= 0.10
 MAX_HOLD_H        = 96          # nothing lives past 4 days
 
 # ---------- execution realism ----------
 DEX_FEE           = 0.0030      # 0.30% swap fee
-PRIORITY_FEE_USD  = 0.35        # priority fee + gas, per side
+
+# Per-side gas/priority cost, by chain. A flat $0.35 was wrong by ~20x on Solana - where
+# ~85% of trades land - and it alone accounted for 85% of the first day's drawdown while
+# gross PnL was roughly flat. Fees must match the chain or the bot learns from fiction.
+PRIORITY_FEE_BY_CHAIN = {
+    "solana": 0.02, "base": 0.03, "arbitrum": 0.03, "optimism": 0.03, "blast": 0.03,
+    "linea": 0.03, "mantle": 0.03, "unichain": 0.03, "sonic": 0.03, "abstract": 0.03,
+    "berachain": 0.03, "hyperliquid": 0.03, "bsc": 0.05, "polygon": 0.04,
+    "avalanche": 0.05, "cronos": 0.05, "sui": 0.04, "ton": 0.05, "tron": 0.05,
+    "ethereum": 3.00,
+}
+PRIORITY_FEE_DEFAULT = 0.10
 SLIPPAGE_K        = 0.9         # slippage = K * (size / liquidity), both sides
 EXTRA_SLIP_FLOOR  = 0.004       # 0.4% minimum slippage - you never get the quote
 

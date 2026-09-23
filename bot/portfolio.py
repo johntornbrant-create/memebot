@@ -65,9 +65,14 @@ def _friction(notional, liquidity):
     return min(slip, 0.25) + config.DEX_FEE
 
 
+def _gas(chain):
+    """Flat per-side gas/priority cost for this chain."""
+    return config.PRIORITY_FEE_BY_CHAIN.get(chain, config.PRIORITY_FEE_DEFAULT)
+
+
 def open_position(pf, cand, notional, feats, score):
     frac = _friction(notional, cand["liquidity"])
-    fees = notional * frac + config.PRIORITY_FEE_USD
+    fees = notional * frac + _gas(cand["chain"])
     tokens = (notional - fees) / cand["price"]
     key = f"{cand['chain']}:{cand['address']}"
     pf["positions"][key] = {
@@ -90,7 +95,7 @@ def sell(pf, key, price, liquidity, fraction, reason):
     p = pf["positions"][key]
     tokens = p["tokens"] * fraction
     gross = tokens * price
-    fees = gross * _friction(gross, liquidity) + config.PRIORITY_FEE_USD
+    fees = gross * _friction(gross, liquidity) + _gas(p["chain"])
     net = max(gross - fees, 0.0)
     p["tokens"] -= tokens
     p["realized_usd"] += net

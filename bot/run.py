@@ -96,7 +96,7 @@ def find_entries(pf):
         if size < config.MIN_POS_USD:
             continue
         if mode == "explore":
-            size = min(size, pf["equity"] * config.MAX_POS_PCT * 0.5)   # half-size the bets we know nothing about
+            size = min(size, pf["equity"] * config.MAX_POS_PCT * 0.7)   # smaller bets on what we know nothing about
             if size < config.MIN_POS_USD:
                 continue
         pf_mod.open_position(pf, c, size, f, s)
