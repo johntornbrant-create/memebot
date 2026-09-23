@@ -1,30 +1,30 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-23T04:39:06+00:00`
+Updated `2026-09-23T04:51:49+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$521.76** |
-| Return | **+4.35%** (start $500.00) |
+| Equity | **$524.00** |
+| Return | **+4.80%** (start $500.00) |
 | Cash | $469.04 |
-| Deployed | $52.72 (10.1%) |
+| Deployed | $54.97 (10.5%) |
 | Open positions | 4 / 8 |
 | Closed trades | 11 (4W / 7L, WR 36%) |
 | Profit factor | 0.78 |
 | Fees + slippage paid | $14.72 |
-| Ticks run | 52 |
+| Ticks run | 53 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| BITCOINU | solana | $7.67 | $8.57 | +214% | +248% | 8.3h |
-| UPTOBER | solana | $15.04 | $18.85 | +29% | +71% | 4.8h |
-| 蝴蝶家园 | bsc | $14.96 | $14.60 | +1% | +9% | 1.0h |
-| LeoGuigna | solana | $7.46 | $10.71 | +304% | +304% | 0.8h |
+| BITCOINU | solana | $7.67 | $8.85 | +225% | +248% | 8.5h |
+| UPTOBER | solana | $15.04 | $19.50 | +34% | +71% | 5.1h |
+| 蝴蝶家园 | bsc | $14.96 | $16.00 | +10% | +10% | 1.2h |
+| LeoGuigna | solana | $7.46 | $10.61 | +301% | +304% | 1.0h |
 
 ## Last closed trades
 
@@ -63,12 +63,11 @@ _prior_
 
 ## Last run log
 ```
-tick #52  equity $518.94  cash $465.84  open 4
-  SELL LeoGuigna  25% @ $0.0004619  ->  $3.19   [take profit +200% (sold 25%)]
+tick #53  equity $521.76  cash $469.04  open 4
   scanning chains + news...
-  102 raw candidates across 7 chains, 160 headlines/posts
-  7 passed gates | rejected: liquidity too thin x41, no h1 volume x38, too old x9, already discovered x6, unknown age x1
-  top: based 0.72 | UPTOBER 0.72 | SATOSHINU 0.70 | LeoGuigna 0.64 | niketyson 0.60
+  75 raw candidates across 6 chains, 158 headlines/posts
+  7 passed gates | rejected: liquidity too thin x38, no h1 volume x27, too old x3
+  top: UPTOBER 0.78 | SATOSHINU 0.72 | based 0.72 | LeoGuigna 0.63 | niketyson 0.57
   no entries this tick
   shadow: tracking 66, closed 0 this tick (0 would have won)
 ```
