@@ -1,28 +1,29 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-22T23:48:45+00:00`
+Updated `2026-09-23T00:07:04+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$501.18** |
-| Return | **+0.24%** (start $500.00) |
-| Cash | $477.74 |
-| Deployed | $23.44 (4.7%) |
-| Open positions | 2 / 8 |
+| Equity | **$502.29** |
+| Return | **+0.46%** (start $500.00) |
+| Cash | $470.20 |
+| Deployed | $32.09 (6.4%) |
+| Open positions | 3 / 8 |
 | Closed trades | 8 (3W / 5L, WR 38%) |
 | Profit factor | 1.02 |
-| Fees + slippage paid | $9.57 |
-| Ticks run | 33 |
+| Fees + slippage paid | $9.97 |
+| Ticks run | 34 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| BITCOINU | solana | $7.67 | $8.40 | +16% | +25% | 3.4h |
-| UPTOBER | solana | $15.04 | $14.58 | +0% | +0% | 0.0h |
+| BITCOINU | solana | $7.67 | $7.81 | +7% | +25% | 3.7h |
+| UPTOBER | solana | $15.04 | $16.75 | +15% | +15% | 0.3h |
+| ACAT | solana | $7.53 | $7.13 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
@@ -58,13 +59,11 @@ _prior_
 
 ## Last run log
 ```
-tick #33  equity $505.61  cash $483.00  open 3
-  SELL Archi      100% @ $6.69e-05  ->  $0.52   [stop loss -76%]
-  SELL MORE       100% @ $7.521e-05  ->  $9.26   [stop loss -35%]
+tick #34  equity $501.18  cash $477.74  open 2
   scanning chains + news...
-  125 raw candidates across 7 chains, 158 headlines/posts
-  5 passed gates | rejected: liquidity too thin x70, no h1 volume x39, too old x9, too new (bot war) x1, already discovered x1
-  top: CATEWALK 0.82 | UPTOBER 0.76 | ACAT 0.65 | TIKCAT 0.56 | EMPLOYIM 0.55
-  BUY[exploit] UPTOBER    $15.04 @ $0.0001312  score 0.76  solana  liq $31,599
-  shadow: tracking 49, closed 0 this tick (0 would have won)
+  127 raw candidates across 7 chains, 158 headlines/posts
+  6 passed gates | rejected: liquidity too thin x71, no h1 volume x40, too old x8, too new (bot war) x1, already discovered x1
+  top: UPTOBER 0.83 | ACAT 0.72 | CATEWALK 0.64 | EMPLOYIM 0.63 | Archi 0.62
+  BUY[explore] ACAT       $7.53 @ $0.0005966  score 0.72  solana  liq $71,465
+  shadow: tracking 51, closed 0 this tick (0 would have won)
 ```
