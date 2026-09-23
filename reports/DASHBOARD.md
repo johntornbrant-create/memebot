@@ -1,34 +1,34 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-23T01:05:44+00:00`
+Updated `2026-09-23T01:23:35+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$499.27** |
-| Return | **-0.15%** (start $500.00) |
-| Cash | $462.71 |
-| Deployed | $36.56 (7.3%) |
-| Open positions | 3 / 8 |
-| Closed trades | 9 (3W / 6L, WR 33%) |
-| Profit factor | 0.81 |
-| Fees + slippage paid | $10.73 |
-| Ticks run | 38 |
+| Equity | **$498.42** |
+| Return | **-0.32%** (start $500.00) |
+| Cash | $466.26 |
+| Deployed | $32.17 (6.5%) |
+| Open positions | 2 / 8 |
+| Closed trades | 10 (3W / 7L, WR 30%) |
+| Profit factor | 0.73 |
+| Fees + slippage paid | $11.10 |
+| Ticks run | 39 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| BITCOINU | solana | $7.67 | $9.88 | +36% | +36% | 4.7h |
-| UPTOBER | solana | $15.04 | $19.19 | +32% | +32% | 1.3h |
-| SHIELD | solana | $7.49 | $7.09 | +0% | +0% | 0.0h |
+| BITCOINU | solana | $7.67 | $9.71 | +34% | +36% | 5.0h |
+| UPTOBER | solana | $15.04 | $22.46 | +54% | +54% | 1.6h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| SHIELD | $-3.94 | -53% | 0.3h | stop loss -45% |
 | ACAT | $-7.53 | -100% | 0.9h | stop loss -100% |
 | MORE | $-6.18 | -40% | 1.2h | stop loss -35% |
 | Archi | $+0.08 | +1% | 1.9h | stop loss -76% |
@@ -60,12 +60,12 @@ _prior_
 
 ## Last run log
 ```
-tick #38  equity $509.27  cash $470.20  open 3
-  SELL ACAT       100% @ $2.521e-06  ->  $0.00   [stop loss -100%]
+tick #39  equity $499.27  cash $462.71  open 3
+  SELL SHIELD     100% @ $6.959e-05  ->  $3.54   [stop loss -45%]
   scanning chains + news...
-  125 raw candidates across 6 chains, 160 headlines/posts
-  5 passed gates | rejected: liquidity too thin x80, no h1 volume x32, too old x7, unknown age x1
-  top: CATEWALK 0.82 | UPTOBER 0.71 | SATOSHINU 0.60 | HACKA 0.58 | SHIELD 0.49
-  BUY[explore] SHIELD     $7.49 @ $0.0001257  score 0.49  solana  liq $32,104
+  99 raw candidates across 5 chains, 158 headlines/posts
+  3 passed gates | rejected: liquidity too thin x60, no h1 volume x31, too old x4, too new (bot war) x1
+  top: CATEWALK 0.71 | UPTOBER 0.69 | SATOSHINU 0.61
+  no entries this tick
   shadow: tracking 53, closed 0 this tick (0 would have won)
 ```
