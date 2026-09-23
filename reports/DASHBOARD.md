@@ -1,35 +1,37 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-23T05:51:10+00:00`
+Updated `2026-09-23T06:06:41+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$518.24** |
-| Return | **+3.65%** (start $500.00) |
-| Cash | $464.76 |
-| Deployed | $53.48 (10.3%) |
-| Open positions | 4 / 8 |
-| Closed trades | 13 (6W / 7L, WR 46%) |
-| Profit factor | 1.45 |
-| Fees + slippage paid | $16.43 |
-| Ticks run | 57 |
+| Equity | **$517.38** |
+| Return | **+3.48%** (start $500.00) |
+| Cash | $444.30 |
+| Deployed | $73.08 (14.1%) |
+| Open positions | 5 / 8 |
+| Closed trades | 14 (6W / 8L, WR 43%) |
+| Profit factor | 1.29 |
+| Fees + slippage paid | $17.67 |
+| Ticks run | 58 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| UPTOBER | solana | $15.04 | $16.81 | +15% | +71% | 6.0h |
-| 蝴蝶家园 | bsc | $14.96 | $15.33 | +6% | +10% | 2.2h |
-| DURIAN | solana | $7.84 | $5.79 | -22% | +0% | 0.2h |
-| based | solana | $15.55 | $15.09 | +0% | +0% | 0.0h |
+| UPTOBER | solana | $15.04 | $16.32 | +12% | +71% | 6.3h |
+| 蝴蝶家园 | bsc | $14.96 | $14.61 | +1% | +10% | 2.5h |
+| based | solana | $15.55 | $18.87 | +25% | +25% | 0.3h |
+| 币安的守护者 | bsc | $7.76 | $7.36 | +0% | +0% | 0.0h |
+| MSTOCK | bsc | $15.52 | $15.06 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| DURIAN | $-5.02 | -64% | 0.5h | stop loss -57% |
 | LeoGuigna | $+19.66 | +263% | 2.0h | trailing stop from +724% |
 | BITCOINU | $+7.57 | +99% | 9.2h | trailing stop from +248% |
 | based | $+1.95 | +26% | 2.0h | stop loss -38% |
@@ -65,12 +67,13 @@ _prior_
 
 ## Last run log
 ```
-tick #57  equity $522.34  cash $467.18  open 4
-  SELL LeoGuigna  100% @ $0.0005861  ->  $13.14   [trailing stop from +724%]
+tick #58  equity $518.24  cash $464.76  open 4
+  SELL DURIAN     100% @ $0.0001358  ->  $2.82   [stop loss -57%]
   scanning chains + news...
-  118 raw candidates across 8 chains, 158 headlines/posts
-  7 passed gates | rejected: no h1 volume x52, liquidity too thin x44, too old x11, already discovered x3, too new (bot war) x1
-  top: based 0.76 | MSTOCK 0.71 | 币安的守护者 0.68 | SATOSHINU 0.66 | DURIAN 0.65
-  BUY[exploit] based      $15.55 @ $0.0002916  score 0.76  solana  liq $54,769
+  110 raw candidates across 6 chains, 158 headlines/posts
+  7 passed gates | rejected: liquidity too thin x54, no h1 volume x34, too old x11, already discovered x3, too new (bot war) x1
+  top: MSTOCK 0.76 | 币安的守护者 0.71 | based 0.70 | LeoGuigna 0.68 | SATOSHINU 0.66
+  BUY[explore] 币安的守护者     $7.76 @ $0.006679  score 0.71  bsc  liq $146,246
+  BUY[exploit] MSTOCK     $15.52 @ $0.005896  score 0.76  bsc  liq $137,487
   shadow: tracking 72, closed 0 this tick (0 would have won)
 ```
