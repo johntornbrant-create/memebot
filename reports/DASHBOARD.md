@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-23T13:10:13+00:00`
+Updated `2026-09-23T13:10:34+00:00`
 
 ## Equity
 
@@ -15,7 +15,7 @@ Updated `2026-09-23T13:10:13+00:00`
 | Closed trades | 21 (8W / 13L, WR 38%) |
 | Profit factor | 0.73 |
 | Fees + slippage paid | $21.77 |
-| Ticks run | 85 |
+| Ticks run | 86 |
 
 ## Open positions
 
@@ -64,7 +64,6 @@ _prior_
 
 ## Last run log
 ```
-tick #85  equity $475.79  cash $444.63  open 2
-  SELL UPTOBER    100% @ $0.0001581  ->  $17.42   [ratchet +25% (peak +71%)]
+tick #86  equity $477.06  cash $462.04  open 1
   entries blocked: daily trade cap reached
 ```
