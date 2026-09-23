@@ -1,28 +1,28 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-23T01:23:35+00:00`
+Updated `2026-09-23T01:36:43+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$498.42** |
-| Return | **-0.32%** (start $500.00) |
+| Equity | **$500.02** |
+| Return | **+0.00%** (start $500.00) |
 | Cash | $466.26 |
-| Deployed | $32.17 (6.5%) |
+| Deployed | $33.76 (6.8%) |
 | Open positions | 2 / 8 |
 | Closed trades | 10 (3W / 7L, WR 30%) |
 | Profit factor | 0.73 |
 | Fees + slippage paid | $11.10 |
-| Ticks run | 39 |
+| Ticks run | 40 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| BITCOINU | solana | $7.67 | $9.71 | +34% | +36% | 5.0h |
-| UPTOBER | solana | $15.04 | $22.46 | +54% | +54% | 1.6h |
+| BITCOINU | solana | $7.67 | $8.89 | +22% | +36% | 5.2h |
+| UPTOBER | solana | $15.04 | $24.87 | +71% | +71% | 1.8h |
 
 ## Last closed trades
 
@@ -60,12 +60,11 @@ _prior_
 
 ## Last run log
 ```
-tick #39  equity $499.27  cash $462.71  open 3
-  SELL SHIELD     100% @ $6.959e-05  ->  $3.54   [stop loss -45%]
+tick #40  equity $498.42  cash $466.26  open 2
   scanning chains + news...
-  99 raw candidates across 5 chains, 158 headlines/posts
-  3 passed gates | rejected: liquidity too thin x60, no h1 volume x31, too old x4, too new (bot war) x1
-  top: CATEWALK 0.71 | UPTOBER 0.69 | SATOSHINU 0.61
+  123 raw candidates across 6 chains, 160 headlines/posts
+  4 passed gates | rejected: liquidity too thin x78, no h1 volume x35, too old x5, unknown age x1
+  top: UPTOBER 0.75 | CATEWALK 0.75 | SATOSHINU 0.69 | based 0.53
   no entries this tick
-  shadow: tracking 53, closed 0 this tick (0 would have won)
+  shadow: tracking 54, closed 0 this tick (0 would have won)
 ```
