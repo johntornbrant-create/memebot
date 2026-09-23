@@ -1,28 +1,28 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-23T09:03:49+00:00`
+Updated `2026-09-23T09:23:58+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$475.60** |
-| Return | **-4.88%** (start $500.00) |
+| Equity | **$475.80** |
+| Return | **-4.84%** (start $500.00) |
 | Cash | $444.63 |
-| Deployed | $30.98 (6.5%) |
+| Deployed | $31.18 (6.6%) |
 | Open positions | 2 / 8 |
 | Closed trades | 20 (7W / 13L, WR 35%) |
 | Profit factor | 0.71 |
 | Fees + slippage paid | $21.62 |
-| Ticks run | 69 |
+| Ticks run | 70 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| UPTOBER | solana | $15.04 | $18.26 | +25% | +71% | 9.3h |
-| 蝴蝶家园 | bsc | $14.96 | $12.72 | -12% | +10% | 5.4h |
+| UPTOBER | solana | $15.04 | $18.81 | +29% | +71% | 9.6h |
+| 蝴蝶家园 | bsc | $14.96 | $12.36 | -15% | +10% | 5.8h |
 
 ## Last closed trades
 
@@ -65,6 +65,6 @@ _prior_
 
 ## Last run log
 ```
-tick #69  equity $475.15  cash $444.63  open 2
+tick #70  equity $475.60  cash $444.63  open 2
   entries blocked: daily trade cap reached
 ```
