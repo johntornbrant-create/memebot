@@ -1,36 +1,36 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-23T07:25:55+00:00`
+Updated `2026-09-23T07:38:42+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$515.07** |
-| Return | **+3.01%** (start $500.00) |
-| Cash | $453.95 |
-| Deployed | $61.12 (11.9%) |
-| Open positions | 5 / 8 |
-| Closed trades | 15 (6W / 9L, WR 40%) |
-| Profit factor | 1.13 |
-| Fees + slippage paid | $19.01 |
-| Ticks run | 62 |
+| Equity | **$497.69** |
+| Return | **-0.46%** (start $500.00) |
+| Cash | $457.69 |
+| Deployed | $40.01 (8.0%) |
+| Open positions | 3 / 8 |
+| Closed trades | 17 (6W / 11L, WR 35%) |
+| Profit factor | 0.82 |
+| Fees + slippage paid | $19.74 |
+| Ticks run | 63 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| UPTOBER | solana | $15.04 | $15.66 | +7% | +71% | 7.6h |
-| 蝴蝶家园 | bsc | $14.96 | $13.27 | -8% | +10% | 3.8h |
-| 币安的守护者 | bsc | $7.76 | $5.97 | -19% | +0% | 1.3h |
-| MSTOCK | bsc | $15.52 | $16.40 | +118% | +118% | 1.3h |
-| LeoGuigna | solana | $15.38 | $9.83 | -34% | +1% | 0.7h |
+| UPTOBER | solana | $15.04 | $15.04 | +3% | +71% | 7.8h |
+| 蝴蝶家园 | bsc | $14.96 | $13.44 | -7% | +10% | 4.0h |
+| MSTOCK | bsc | $15.52 | $11.52 | +53% | +118% | 1.5h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| LeoGuigna | $-15.38 | -100% | 0.8h | stop loss -99% |
+| 币安的守护者 | $-4.02 | -52% | 1.5h | stop loss -44% |
 | based | $-6.45 | -42% | 1.2h | stop loss -37% |
 | DURIAN | $-5.02 | -64% | 0.5h | stop loss -57% |
 | LeoGuigna | $+19.66 | +263% | 2.0h | trailing stop from +724% |
@@ -44,8 +44,6 @@ Updated `2026-09-23T07:25:55+00:00`
 | Habibi | $+11.26 | +147% | 2.4h | trailing stop from +394% |
 | BOP | $+18.46 | +250% | 4.4h | trailing stop from +526% |
 | CATEWALK | $-6.25 | -42% | 4.7h | stop loss -37% |
-| SATOSHINU | $-7.12 | -47% | 4.3h | stop loss -43% |
-| TRUMPTV | $-3.39 | -45% | 1.1h | stop loss -37% |
 
 ## Learned weights (v0)
 
@@ -68,12 +66,13 @@ _prior_
 
 ## Last run log
 ```
-tick #62  equity $514.41  cash $438.01  open 5
-  SELL MSTOCK     50% @ $0.01284  ->  $15.93   [take profit +80% (sold 50%)]
+tick #63  equity $515.07  cash $453.95  open 5
+  SELL 币安的守护者     100% @ $0.00374  ->  $3.74   [stop loss -44%]
+  SELL LeoGuigna  100% @ $2.958e-06  ->  $0.00   [stop loss -99%]
   scanning chains + news...
-  135 raw candidates across 5 chains, 157 headlines/posts
-  3 passed gates | rejected: liquidity too thin x80, no h1 volume x21, too old x15, already discovered x10, unknown age x3
-  top: LeoGuigna 0.65 | based 0.62 | UPTOBER 0.60
+  118 raw candidates across 4 chains, 160 headlines/posts
+  2 passed gates | rejected: liquidity too thin x80, no h1 volume x21, too old x7, already discovered x4, unknown age x2
+  top: based 0.70 | MOUSE 0.56
   no entries this tick
-  shadow: tracking 73, closed 0 this tick (0 would have won)
+  shadow: tracking 74, closed 0 this tick (0 would have won)
 ```
