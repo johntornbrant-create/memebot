@@ -1,29 +1,30 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-23T03:25:31+00:00`
+Updated `2026-09-23T03:38:53+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$500.34** |
-| Return | **+0.07%** (start $500.00) |
-| Cash | $472.87 |
-| Deployed | $27.47 (5.5%) |
-| Open positions | 3 / 8 |
+| Equity | **$498.55** |
+| Return | **-0.29%** (start $500.00) |
+| Cash | $457.91 |
+| Deployed | $40.63 (8.2%) |
+| Open positions | 4 / 8 |
 | Closed trades | 10 (3W / 7L, WR 30%) |
 | Profit factor | 0.73 |
-| Fees + slippage paid | $12.31 |
-| Ticks run | 47 |
+| Fees + slippage paid | $12.77 |
+| Ticks run | 48 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| BITCOINU | solana | $7.67 | $9.28 | +155% | +163% | 7.0h |
-| UPTOBER | solana | $15.04 | $14.93 | +2% | +71% | 3.6h |
-| based | solana | $7.48 | $3.26 | -8% | +133% | 1.6h |
+| BITCOINU | solana | $7.67 | $8.41 | +131% | +163% | 7.3h |
+| UPTOBER | solana | $15.04 | $14.62 | +0% | +71% | 3.8h |
+| based | solana | $7.48 | $2.64 | -25% | +133% | 1.8h |
+| 蝴蝶家园 | bsc | $14.96 | $14.50 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
@@ -61,11 +62,11 @@ _prior_
 
 ## Last run log
 ```
-tick #47  equity $503.52  cash $472.87  open 3
+tick #48  equity $500.34  cash $472.87  open 3
   scanning chains + news...
-  71 raw candidates across 5 chains, 158 headlines/posts
-  9 passed gates | rejected: liquidity too thin x31, no h1 volume x16, too old x8, already discovered x6, too new (bot war) x1
-  top: 蝴蝶家园 0.79 | CATEWALK 0.66 | BASEDDOG 0.65 | UPTOBER 0.58 | SATOSHINU 0.57
-  no entries this tick
+  172 raw candidates across 10 chains, 158 headlines/posts
+  7 passed gates | rejected: liquidity too thin x92, no h1 volume x63, too old x7, unknown age x1, already discovered x1
+  top: 蝴蝶家园 0.73 | CATEWALK 0.67 | PHAT 0.60 | UPTOBER 0.59 | LeoGuigna 0.49
+  BUY[exploit] 蝴蝶家园       $14.96 @ $0.0002308  score 0.73  bsc  liq $44,383
   shadow: tracking 62, closed 0 this tick (0 would have won)
 ```
