@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-23T07:38:42+00:00",
-  "cash": 457.6873121554771,
-  "equity": 497.6934,
+  "updated": "2026-09-23T07:52:07+00:00",
+  "cash": 450.2791361554771,
+  "equity": 493.8784,
   "positions": {
     "solana:8Vte25yt28L8BfLXm8DrzjSYEyaKX8yry6hRKRmX7FGd": {
       "id": "bc34cd14c6",
@@ -34,7 +34,7 @@
         "buzz": 0.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.0001354
+      "last_price": 0.0001381
     },
     "bsc:0x67b85B6bEDd3C7C7e01c95168583bD1078e47777": {
       "id": "da27a7de54",
@@ -66,7 +66,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0002139
+      "last_price": 0.0002302
     },
     "bsc:0x45f01b650902bDECdEa380F60D427Fd26227205E": {
       "id": "0509bff638",
@@ -100,7 +100,39 @@
         "buzz": 0.5,
         "paid_boost": 0.0
       },
-      "last_price": 0.009022
+      "last_price": 0.004998
+    },
+    "solana:8MPLzMvudX7ehD8VjKSDDWCS9bAu1N6KK3Ubg5xypump": {
+      "id": "ac00e80c02",
+      "chain": "solana",
+      "address": "8MPLzMvudX7ehD8VjKSDDWCS9bAu1N6KK3Ubg5xypump",
+      "symbol": "MOUSE",
+      "opened": "2026-09-23T07:52:05+00:00",
+      "entry_price": 0.0001321,
+      "tokens": 53027.38872540595,
+      "tokens_initial": 53027.38872540595,
+      "cost_usd": 7.408176,
+      "fees_usd": 0.4033,
+      "realized_usd": 0.0,
+      "peak_gain": 0.0,
+      "tp_hit": [],
+      "entry_liq": 35262.62,
+      "score": 0.5606,
+      "features": {
+        "liq_quality": 0.5202,
+        "turnover": 0.0,
+        "buy_pressure": 0.295,
+        "momentum_accel": 1.0,
+        "not_vertical": 0.1937,
+        "age_sweet": 0.1505,
+        "socials": 1.0,
+        "fdv_sanity": 1.0,
+        "txn_depth": 0.8681,
+        "dip_in_uptrend": 0.5,
+        "buzz": 0.0,
+        "paid_boost": 0.0
+      },
+      "last_price": 0.0001321
     }
   },
   "blacklist": {
@@ -123,15 +155,15 @@
     "day_equity": 501.1775,
     "week": "2026-W39",
     "week_equity": 500.0,
-    "trades_today": 10
+    "trades_today": 11
   },
   "stats": {
-    "ticks": 63,
-    "opened": 20,
+    "ticks": 64,
+    "opened": 21,
     "closed": 17,
     "wins": 6,
     "losses": 11,
-    "fees_paid": 19.744356369918943,
+    "fees_paid": 20.147614319292817,
     "realized_pnl": -12.724914723425318
   }
 }

@@ -1,29 +1,30 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-23T07:38:42+00:00`
+Updated `2026-09-23T07:52:07+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$497.69** |
-| Return | **-0.46%** (start $500.00) |
-| Cash | $457.69 |
-| Deployed | $40.01 (8.0%) |
-| Open positions | 3 / 8 |
+| Equity | **$493.88** |
+| Return | **-1.22%** (start $500.00) |
+| Cash | $450.28 |
+| Deployed | $43.60 (8.8%) |
+| Open positions | 4 / 8 |
 | Closed trades | 17 (6W / 11L, WR 35%) |
 | Profit factor | 0.82 |
-| Fees + slippage paid | $19.74 |
-| Ticks run | 63 |
+| Fees + slippage paid | $20.15 |
+| Ticks run | 64 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| UPTOBER | solana | $15.04 | $15.04 | +3% | +71% | 7.8h |
-| 蝴蝶家园 | bsc | $14.96 | $13.44 | -7% | +10% | 4.0h |
-| MSTOCK | bsc | $15.52 | $11.52 | +53% | +118% | 1.5h |
+| UPTOBER | solana | $15.04 | $15.34 | +5% | +71% | 8.1h |
+| 蝴蝶家园 | bsc | $14.96 | $14.46 | -0% | +10% | 4.2h |
+| MSTOCK | bsc | $15.52 | $6.38 | -15% | +118% | 1.8h |
+| MOUSE | solana | $7.41 | $7.00 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
@@ -66,13 +67,11 @@ _prior_
 
 ## Last run log
 ```
-tick #63  equity $515.07  cash $453.95  open 5
-  SELL 币安的守护者     100% @ $0.00374  ->  $3.74   [stop loss -44%]
-  SELL LeoGuigna  100% @ $2.958e-06  ->  $0.00   [stop loss -99%]
+tick #64  equity $497.69  cash $457.69  open 3
   scanning chains + news...
-  118 raw candidates across 4 chains, 160 headlines/posts
-  2 passed gates | rejected: liquidity too thin x80, no h1 volume x21, too old x7, already discovered x4, unknown age x2
-  top: based 0.70 | MOUSE 0.56
-  no entries this tick
-  shadow: tracking 74, closed 0 this tick (0 would have won)
+  137 raw candidates across 5 chains, 157 headlines/posts
+  4 passed gates | rejected: liquidity too thin x83, no h1 volume x19, too old x14, already discovered x11, unknown age x3
+  top: based 0.74 | UPTOBER 0.62 | GROKBOTIFY 0.59 | MOUSE 0.56
+  BUY[explore] MOUSE      $7.41 @ $0.0001321  score 0.56  solana  liq $35,263
+  shadow: tracking 75, closed 0 this tick (0 would have won)
 ```
