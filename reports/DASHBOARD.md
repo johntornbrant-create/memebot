@@ -1,35 +1,36 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-23T05:24:19+00:00`
+Updated `2026-09-23T05:37:20+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$531.40** |
-| Return | **+6.28%** (start $500.00) |
-| Cash | $469.04 |
-| Deployed | $62.36 (11.7%) |
+| Equity | **$522.34** |
+| Return | **+4.47%** (start $500.00) |
+| Cash | $467.18 |
+| Deployed | $55.16 (10.6%) |
 | Open positions | 4 / 8 |
-| Closed trades | 11 (4W / 7L, WR 36%) |
-| Profit factor | 0.78 |
-| Fees + slippage paid | $14.72 |
-| Ticks run | 55 |
+| Closed trades | 12 (5W / 7L, WR 42%) |
+| Profit factor | 0.96 |
+| Fees + slippage paid | $15.52 |
+| Ticks run | 56 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| BITCOINU | solana | $7.67 | $8.04 | +195% | +248% | 9.0h |
-| UPTOBER | solana | $15.04 | $17.16 | +18% | +71% | 5.6h |
-| 蝴蝶家园 | bsc | $14.96 | $15.36 | +6% | +10% | 1.8h |
-| LeoGuigna | solana | $7.46 | $21.81 | +724% | +724% | 1.5h |
+| UPTOBER | solana | $15.04 | $16.75 | +15% | +71% | 5.8h |
+| 蝴蝶家园 | bsc | $14.96 | $15.27 | +5% | +10% | 2.0h |
+| LeoGuigna | solana | $7.46 | $15.31 | +478% | +724% | 1.8h |
+| DURIAN | solana | $7.84 | $7.43 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| BITCOINU | $+7.57 | +99% | 9.2h | trailing stop from +248% |
 | based | $+1.95 | +26% | 2.0h | stop loss -38% |
 | SHIELD | $-3.94 | -53% | 0.3h | stop loss -45% |
 | ACAT | $-7.53 | -100% | 0.9h | stop loss -100% |
@@ -63,11 +64,12 @@ _prior_
 
 ## Last run log
 ```
-tick #55  equity $526.66  cash $469.04  open 4
+tick #56  equity $531.40  cash $469.04  open 4
+  SELL BITCOINU   100% @ $0.0003282  ->  $5.97   [trailing stop from +248%]
   scanning chains + news...
-  135 raw candidates across 7 chains, 158 headlines/posts
-  9 passed gates | rejected: liquidity too thin x58, no h1 volume x45, too old x14, already discovered x7, unknown age x2
-  top: niketyson 0.77 | MSTOCK 0.72 | based 0.72 | 币安的守护者 0.70 | SATOSHINU 0.68
-  no entries this tick
+  146 raw candidates across 7 chains, 158 headlines/posts
+  8 passed gates | rejected: liquidity too thin x67, no h1 volume x56, too old x12, already discovered x3
+  top: MSTOCK 0.76 | 币安的守护者 0.75 | niketyson 0.74 | based 0.71 | LeoGuigna 0.70
+  BUY[explore] DURIAN     $7.84 @ $0.0003162  score 0.49  solana  liq $50,779
   shadow: tracking 72, closed 0 this tick (0 would have won)
 ```
