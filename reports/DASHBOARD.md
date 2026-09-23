@@ -1,30 +1,30 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-23T05:05:04+00:00`
+Updated `2026-09-23T05:24:19+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$526.66** |
-| Return | **+5.33%** (start $500.00) |
+| Equity | **$531.40** |
+| Return | **+6.28%** (start $500.00) |
 | Cash | $469.04 |
-| Deployed | $57.62 (10.9%) |
+| Deployed | $62.36 (11.7%) |
 | Open positions | 4 / 8 |
 | Closed trades | 11 (4W / 7L, WR 36%) |
 | Profit factor | 0.78 |
 | Fees + slippage paid | $14.72 |
-| Ticks run | 54 |
+| Ticks run | 55 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| BITCOINU | solana | $7.67 | $7.91 | +190% | +248% | 8.7h |
-| UPTOBER | solana | $15.04 | $20.19 | +38% | +71% | 5.3h |
-| 蝴蝶家园 | bsc | $14.96 | $15.20 | +5% | +10% | 1.4h |
-| LeoGuigna | solana | $7.46 | $14.31 | +441% | +441% | 1.2h |
+| BITCOINU | solana | $7.67 | $8.04 | +195% | +248% | 9.0h |
+| UPTOBER | solana | $15.04 | $17.16 | +18% | +71% | 5.6h |
+| 蝴蝶家园 | bsc | $14.96 | $15.36 | +6% | +10% | 1.8h |
+| LeoGuigna | solana | $7.46 | $21.81 | +724% | +724% | 1.5h |
 
 ## Last closed trades
 
@@ -63,11 +63,11 @@ _prior_
 
 ## Last run log
 ```
-tick #54  equity $524.00  cash $469.04  open 4
+tick #55  equity $526.66  cash $469.04  open 4
   scanning chains + news...
-  207 raw candidates across 9 chains, 160 headlines/posts
-  9 passed gates | rejected: liquidity too thin x101, no h1 volume x66, too old x15, already discovered x10, unknown age x5
-  top: UPTOBER 0.76 | SATOSHINU 0.71 | based 0.71 | LeoGuigna 0.70 | MINECOIN 0.70
+  135 raw candidates across 7 chains, 158 headlines/posts
+  9 passed gates | rejected: liquidity too thin x58, no h1 volume x45, too old x14, already discovered x7, unknown age x2
+  top: niketyson 0.77 | MSTOCK 0.72 | based 0.72 | 币安的守护者 0.70 | SATOSHINU 0.68
   no entries this tick
-  shadow: tracking 68, closed 0 this tick (0 would have won)
+  shadow: tracking 72, closed 0 this tick (0 would have won)
 ```
