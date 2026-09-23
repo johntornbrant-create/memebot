@@ -1,31 +1,32 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-23T06:30:43+00:00`
+Updated `2026-09-23T06:46:48+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$516.39** |
-| Return | **+3.28%** (start $500.00) |
-| Cash | $444.30 |
-| Deployed | $72.10 (14.0%) |
-| Open positions | 5 / 8 |
+| Equity | **$512.65** |
+| Return | **+2.53%** (start $500.00) |
+| Cash | $428.92 |
+| Deployed | $83.73 (16.3%) |
+| Open positions | 6 / 8 |
 | Closed trades | 14 (6W / 8L, WR 43%) |
 | Profit factor | 1.29 |
-| Fees + slippage paid | $17.67 |
-| Ticks run | 59 |
+| Fees + slippage paid | $18.13 |
+| Ticks run | 60 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| UPTOBER | solana | $15.04 | $16.16 | +11% | +71% | 6.7h |
-| 蝴蝶家园 | bsc | $14.96 | $14.14 | -2% | +10% | 2.9h |
-| based | solana | $15.55 | $15.67 | +4% | +25% | 0.7h |
-| 币安的守护者 | bsc | $7.76 | $5.83 | -21% | +0% | 0.4h |
-| MSTOCK | bsc | $15.52 | $20.30 | +35% | +35% | 0.4h |
+| UPTOBER | solana | $15.04 | $15.31 | +5% | +71% | 7.0h |
+| 蝴蝶家园 | bsc | $14.96 | $14.16 | -2% | +10% | 3.1h |
+| based | solana | $15.55 | $11.42 | -24% | +25% | 0.9h |
+| 币安的守护者 | bsc | $7.76 | $7.26 | -1% | +0% | 0.7h |
+| MSTOCK | bsc | $15.52 | $20.20 | +34% | +35% | 0.7h |
+| LeoGuigna | solana | $15.38 | $14.92 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
@@ -67,11 +68,11 @@ _prior_
 
 ## Last run log
 ```
-tick #59  equity $517.38  cash $444.30  open 5
+tick #60  equity $516.39  cash $444.30  open 5
   scanning chains + news...
-  136 raw candidates across 6 chains, 158 headlines/posts
-  7 passed gates | rejected: liquidity too thin x79, no h1 volume x31, too old x11, already discovered x6, unknown age x1
-  top: based 0.77 | MSTOCK 0.71 | LeoGuigna 0.69 | 币安的守护者 0.66 | MAU 0.60
-  no entries this tick
+  121 raw candidates across 7 chains, 157 headlines/posts
+  5 passed gates | rejected: liquidity too thin x72, no h1 volume x38, too old x4, sell pressure x1, already discovered x1
+  top: MSTOCK 0.74 | LeoGuigna 0.68 | based 0.67 | 币安的守护者 0.67 | UPTOBER 0.59
+  BUY[exploit] LeoGuigna  $15.38 @ $0.0004355  score 0.68  solana  liq $62,451
   shadow: tracking 73, closed 0 this tick (0 would have won)
 ```
