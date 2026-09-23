@@ -1,30 +1,30 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-23T04:51:49+00:00`
+Updated `2026-09-23T05:05:04+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$524.00** |
-| Return | **+4.80%** (start $500.00) |
+| Equity | **$526.66** |
+| Return | **+5.33%** (start $500.00) |
 | Cash | $469.04 |
-| Deployed | $54.97 (10.5%) |
+| Deployed | $57.62 (10.9%) |
 | Open positions | 4 / 8 |
 | Closed trades | 11 (4W / 7L, WR 36%) |
 | Profit factor | 0.78 |
 | Fees + slippage paid | $14.72 |
-| Ticks run | 53 |
+| Ticks run | 54 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| BITCOINU | solana | $7.67 | $8.85 | +225% | +248% | 8.5h |
-| UPTOBER | solana | $15.04 | $19.50 | +34% | +71% | 5.1h |
-| 蝴蝶家园 | bsc | $14.96 | $16.00 | +10% | +10% | 1.2h |
-| LeoGuigna | solana | $7.46 | $10.61 | +301% | +304% | 1.0h |
+| BITCOINU | solana | $7.67 | $7.91 | +190% | +248% | 8.7h |
+| UPTOBER | solana | $15.04 | $20.19 | +38% | +71% | 5.3h |
+| 蝴蝶家园 | bsc | $14.96 | $15.20 | +5% | +10% | 1.4h |
+| LeoGuigna | solana | $7.46 | $14.31 | +441% | +441% | 1.2h |
 
 ## Last closed trades
 
@@ -63,11 +63,11 @@ _prior_
 
 ## Last run log
 ```
-tick #53  equity $521.76  cash $469.04  open 4
+tick #54  equity $524.00  cash $469.04  open 4
   scanning chains + news...
-  75 raw candidates across 6 chains, 158 headlines/posts
-  7 passed gates | rejected: liquidity too thin x38, no h1 volume x27, too old x3
-  top: UPTOBER 0.78 | SATOSHINU 0.72 | based 0.72 | LeoGuigna 0.63 | niketyson 0.57
+  207 raw candidates across 9 chains, 160 headlines/posts
+  9 passed gates | rejected: liquidity too thin x101, no h1 volume x66, too old x15, already discovered x10, unknown age x5
+  top: UPTOBER 0.76 | SATOSHINU 0.71 | based 0.71 | LeoGuigna 0.70 | MINECOIN 0.70
   no entries this tick
-  shadow: tracking 66, closed 0 this tick (0 would have won)
+  shadow: tracking 68, closed 0 this tick (0 would have won)
 ```
