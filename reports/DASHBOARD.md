@@ -1,29 +1,29 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-23T01:49:50+00:00`
+Updated `2026-09-23T02:05:46+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$498.57** |
-| Return | **-0.29%** (start $500.00) |
-| Cash | $458.78 |
-| Deployed | $39.79 (8.0%) |
+| Equity | **$507.01** |
+| Return | **+1.40%** (start $500.00) |
+| Cash | $466.39 |
+| Deployed | $40.62 (8.0%) |
 | Open positions | 3 / 8 |
 | Closed trades | 10 (3W / 7L, WR 30%) |
 | Profit factor | 0.73 |
-| Fees + slippage paid | $11.51 |
-| Ticks run | 41 |
+| Fees + slippage paid | $11.91 |
+| Ticks run | 42 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| BITCOINU | solana | $7.67 | $9.93 | +37% | +37% | 5.4h |
-| UPTOBER | solana | $15.04 | $22.38 | +54% | +71% | 2.0h |
-| based | solana | $7.48 | $7.07 | +0% | +0% | 0.0h |
+| BITCOINU | solana | $7.67 | $8.44 | +16% | +37% | 5.7h |
+| UPTOBER | solana | $15.04 | $24.17 | +66% | +71% | 2.3h |
+| based | solana | $7.48 | $8.02 | +127% | +127% | 0.3h |
 
 ## Last closed trades
 
@@ -61,11 +61,12 @@ _prior_
 
 ## Last run log
 ```
-tick #41  equity $500.02  cash $466.26  open 2
+tick #42  equity $498.57  cash $458.78  open 3
+  SELL based      50% @ $0.0004064  ->  $7.61   [take profit +80% (sold 50%)]
   scanning chains + news...
-  161 raw candidates across 7 chains, 158 headlines/posts
-  4 passed gates | rejected: liquidity too thin x85, no h1 volume x57, too old x9, already discovered x4, unknown age x2
-  top: CATEWALK 0.82 | UPTOBER 0.71 | SATOSHINU 0.70 | based 0.49
-  BUY[explore] based      $7.48 @ $0.0001793  score 0.49  solana  liq $38,226
+  154 raw candidates across 8 chains, 160 headlines/posts
+  4 passed gates | rejected: liquidity too thin x84, no h1 volume x49, too old x9, already discovered x7, unknown age x1
+  top: SATOSHINU 0.75 | CATEWALK 0.73 | UPTOBER 0.71 | based 0.52
+  no entries this tick
   shadow: tracking 54, closed 0 this tick (0 would have won)
 ```
