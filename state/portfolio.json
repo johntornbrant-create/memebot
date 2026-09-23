@@ -1,41 +1,9 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-23T12:57:36+00:00",
-  "cash": 444.6254671095077,
-  "equity": 475.7889,
+  "updated": "2026-09-23T13:10:13+00:00",
+  "cash": 462.04187475474856,
+  "equity": 477.0578,
   "positions": {
-    "solana:8Vte25yt28L8BfLXm8DrzjSYEyaKX8yry6hRKRmX7FGd": {
-      "id": "bc34cd14c6",
-      "chain": "solana",
-      "address": "8Vte25yt28L8BfLXm8DrzjSYEyaKX8yry6hRKRmX7FGd",
-      "symbol": "UPTOBER",
-      "opened": "2026-09-22T23:48:43+00:00",
-      "entry_price": 0.0001312,
-      "tokens": 111114.91872965007,
-      "tokens_initial": 111114.91872965007,
-      "cost_usd": 15.04,
-      "fees_usd": 0.4617,
-      "realized_usd": 0.0,
-      "peak_gain": 0.7057926829268293,
-      "tp_hit": [],
-      "entry_liq": 31598.96,
-      "score": 0.7607,
-      "features": {
-        "liq_quality": 0.4694,
-        "turnover": 0.6489,
-        "buy_pressure": 1.0,
-        "momentum_accel": 0.5685,
-        "not_vertical": 1.0,
-        "age_sweet": 0.9667,
-        "socials": 1.0,
-        "fdv_sanity": 1.0,
-        "txn_depth": 0.0,
-        "dip_in_uptrend": 0.5,
-        "buzz": 0.0,
-        "paid_boost": 0.2
-      },
-      "last_price": 0.0001542
-    },
     "bsc:0x67b85B6bEDd3C7C7e01c95168583bD1078e47777": {
       "id": "da27a7de54",
       "chain": "bsc",
@@ -66,7 +34,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0002233
+      "last_price": 0.000239
     }
   },
   "blacklist": {
@@ -94,12 +62,12 @@
     "trades_today": 12
   },
   "stats": {
-    "ticks": 84,
+    "ticks": 85,
     "opened": 22,
-    "closed": 20,
-    "wins": 7,
+    "closed": 21,
+    "wins": 8,
     "losses": 13,
-    "fees_paid": 21.61688394452777,
-    "realized_pnl": -25.374532890492166
+    "fees_paid": 21.767744950444612,
+    "realized_pnl": -22.99812524525133
   }
 }

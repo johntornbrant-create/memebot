@@ -1,33 +1,33 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-23T12:57:36+00:00`
+Updated `2026-09-23T13:10:13+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$475.79** |
-| Return | **-4.84%** (start $500.00) |
-| Cash | $444.63 |
-| Deployed | $31.16 (6.5%) |
-| Open positions | 2 / 8 |
-| Closed trades | 20 (7W / 13L, WR 35%) |
-| Profit factor | 0.71 |
-| Fees + slippage paid | $21.62 |
-| Ticks run | 84 |
+| Equity | **$477.06** |
+| Return | **-4.59%** (start $500.00) |
+| Cash | $462.04 |
+| Deployed | $15.02 (3.1%) |
+| Open positions | 1 / 8 |
+| Closed trades | 21 (8W / 13L, WR 38%) |
+| Profit factor | 0.73 |
+| Fees + slippage paid | $21.77 |
+| Ticks run | 85 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| UPTOBER | solana | $15.04 | $17.13 | +18% | +71% | 13.1h |
-| 蝴蝶家园 | bsc | $14.96 | $14.03 | -3% | +27% | 9.3h |
+| 蝴蝶家园 | bsc | $14.96 | $15.02 | +4% | +27% | 9.5h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| UPTOBER | $+2.38 | +16% | 13.4h | ratchet +25% (peak +71%) |
 | GROKBOTIFY | $-7.28 | -100% | 0.3h | stop loss -98% |
 | MSTOCK | $+2.04 | +13% | 2.3h | stop loss -74% |
 | MOUSE | $-7.41 | -100% | 0.2h | stop loss -96% |
@@ -42,7 +42,6 @@ Updated `2026-09-23T12:57:36+00:00`
 | ACAT | $-7.53 | -100% | 0.9h | stop loss -100% |
 | MORE | $-6.18 | -40% | 1.2h | stop loss -35% |
 | Archi | $+0.08 | +1% | 1.9h | stop loss -76% |
-| KCAT | $-6.40 | -41% | 1.7h | stop loss -37% |
 
 ## Learned weights (v0)
 
@@ -65,6 +64,7 @@ _prior_
 
 ## Last run log
 ```
-tick #84  equity $476.56  cash $444.63  open 2
+tick #85  equity $475.79  cash $444.63  open 2
+  SELL UPTOBER    100% @ $0.0001581  ->  $17.42   [ratchet +25% (peak +71%)]
   entries blocked: daily trade cap reached
 ```
