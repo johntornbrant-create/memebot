@@ -1,37 +1,37 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-23T06:46:48+00:00`
+Updated `2026-09-23T07:06:13+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$512.65** |
-| Return | **+2.53%** (start $500.00) |
-| Cash | $428.92 |
-| Deployed | $83.73 (16.3%) |
-| Open positions | 6 / 8 |
-| Closed trades | 14 (6W / 8L, WR 43%) |
-| Profit factor | 1.29 |
-| Fees + slippage paid | $18.13 |
-| Ticks run | 60 |
+| Equity | **$514.41** |
+| Return | **+2.88%** (start $500.00) |
+| Cash | $438.01 |
+| Deployed | $76.40 (14.9%) |
+| Open positions | 5 / 8 |
+| Closed trades | 15 (6W / 9L, WR 40%) |
+| Profit factor | 1.13 |
+| Fees + slippage paid | $18.55 |
+| Ticks run | 61 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| UPTOBER | solana | $15.04 | $15.31 | +5% | +71% | 7.0h |
-| 蝴蝶家园 | bsc | $14.96 | $14.16 | -2% | +10% | 3.1h |
-| based | solana | $15.55 | $11.42 | -24% | +25% | 0.9h |
-| 币安的守护者 | bsc | $7.76 | $7.26 | -1% | +0% | 0.7h |
-| MSTOCK | bsc | $15.52 | $20.20 | +34% | +35% | 0.7h |
-| LeoGuigna | solana | $15.38 | $14.92 | +0% | +0% | 0.0h |
+| UPTOBER | solana | $15.04 | $15.48 | +6% | +71% | 7.3h |
+| 蝴蝶家园 | bsc | $14.96 | $14.44 | -0% | +10% | 3.5h |
+| 币安的守护者 | bsc | $7.76 | $5.52 | -25% | +0% | 1.0h |
+| MSTOCK | bsc | $15.52 | $25.85 | +72% | +72% | 1.0h |
+| LeoGuigna | solana | $15.38 | $15.11 | +1% | +1% | 0.3h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| based | $-6.45 | -42% | 1.2h | stop loss -37% |
 | DURIAN | $-5.02 | -64% | 0.5h | stop loss -57% |
 | LeoGuigna | $+19.66 | +263% | 2.0h | trailing stop from +724% |
 | BITCOINU | $+7.57 | +99% | 9.2h | trailing stop from +248% |
@@ -68,11 +68,12 @@ _prior_
 
 ## Last run log
 ```
-tick #60  equity $516.39  cash $444.30  open 5
+tick #61  equity $512.65  cash $428.92  open 6
+  SELL based      100% @ $0.0001839  ->  $9.10   [stop loss -37%]
   scanning chains + news...
-  121 raw candidates across 7 chains, 157 headlines/posts
-  5 passed gates | rejected: liquidity too thin x72, no h1 volume x38, too old x4, sell pressure x1, already discovered x1
-  top: MSTOCK 0.74 | LeoGuigna 0.68 | based 0.67 | 币安的守护者 0.67 | UPTOBER 0.59
-  BUY[exploit] LeoGuigna  $15.38 @ $0.0004355  score 0.68  solana  liq $62,451
+  143 raw candidates across 6 chains, 157 headlines/posts
+  3 passed gates | rejected: liquidity too thin x65, no h1 volume x45, too old x16, already discovered x9, unknown age x2
+  top: based 0.67 | LeoGuigna 0.67 | UPTOBER 0.60
+  no entries this tick
   shadow: tracking 73, closed 0 this tick (0 would have won)
 ```
