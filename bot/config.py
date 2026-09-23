@@ -22,7 +22,17 @@ MAX_TRADES_DAY    = 12          # activity cap
 
 # ---------- exits ----------
 STOP_LOSS         = -0.35       # memecoin noise eats tight stops
-TP_LADDER         = [(1.00, 0.40)]   # one rung, not two - every sell costs a fee
+
+# RATCHET: once a gain has been earned, it is never fully given back. Measured need -
+# day 1 had a position peak at +59% and still close at -100%, and three more peak above
+# +110% and close near zero. Selection was finding runners; the exit handed them back.
+# (peak gain reached, stop floor from then on). Monotonic, never loosens.
+RATCHET           = [(0.40, 0.00), (0.70, 0.25), (1.00, 0.40)]
+
+# No take-profit ladder. Peaks were +724%, +526%, +394%, +248% - a rung sells the tail
+# that pays for everything else. The ratchet removes the downside instead, and each sell
+# skipped is a gas fee saved.
+TP_LADDER         = []
 TRAIL_AFTER       = 1.00        # start trailing at +100%: winners peaked at +724%
                                 # and +248% then gapped down between 15-min checks
 TRAIL_PCT         = 0.30

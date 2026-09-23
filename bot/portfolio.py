@@ -142,6 +142,18 @@ def mark_to_market(pf, quotes):
     return pf["equity"]
 
 
+def stop_floor(peak):
+    """The lowest gain we will now accept, given the best gain this position ever saw.
+    Monotonic in peak: earning a level locks it in."""
+    f = config.STOP_LOSS
+    for trigger, level in config.RATCHET:
+        if peak >= trigger:
+            f = max(f, level)
+    if peak >= config.TRAIL_AFTER:
+        f = max(f, (1.0 + peak) * (1.0 - config.TRAIL_PCT) - 1.0)
+    return f
+
+
 def exit_rules(p, price, liq):
     """-> list of (fraction, reason). Evaluated top-down, first match wins."""
     if price <= 0:
@@ -149,12 +161,13 @@ def exit_rules(p, price, liq):
     gain = price / p["entry_price"] - 1
     held = hours_since(p["opened"])
 
-    if gain <= config.STOP_LOSS:
+    floor = stop_floor(p["peak_gain"])
+    if gain <= floor:
+        if p["peak_gain"] >= config.RATCHET[0][0]:
+            return [(1.0, f"ratchet {floor:+.0%} (peak {p['peak_gain']:+.0%})")]
         return [(1.0, f"stop loss {gain:+.0%}")]
     if liq < config.MIN_LIQUIDITY_USD * 0.5:
         return [(1.0, "liquidity drained")]
-    if p["peak_gain"] >= config.TRAIL_AFTER and gain <= p["peak_gain"] * (1 - config.TRAIL_PCT):
-        return [(1.0, f"trailing stop from {p['peak_gain']:+.0%}")]
     for i, (trigger, frac) in enumerate(config.TP_LADDER):
         if gain >= trigger and i not in p["tp_hit"]:
             p["tp_hit"].append(i)
