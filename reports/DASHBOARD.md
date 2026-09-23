@@ -1,30 +1,30 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-23T04:25:47+00:00`
+Updated `2026-09-23T04:39:06+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$518.94** |
-| Return | **+3.79%** (start $500.00) |
-| Cash | $465.84 |
-| Deployed | $53.09 (10.2%) |
+| Equity | **$521.76** |
+| Return | **+4.35%** (start $500.00) |
+| Cash | $469.04 |
+| Deployed | $52.72 (10.1%) |
 | Open positions | 4 / 8 |
 | Closed trades | 11 (4W / 7L, WR 36%) |
 | Profit factor | 0.78 |
-| Fees + slippage paid | $14.35 |
-| Ticks run | 51 |
+| Fees + slippage paid | $14.72 |
+| Ticks run | 52 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| BITCOINU | solana | $7.67 | $9.50 | +248% | +248% | 8.0h |
-| UPTOBER | solana | $15.04 | $16.58 | +14% | +71% | 4.6h |
-| 蝴蝶家园 | bsc | $14.96 | $15.80 | +9% | +9% | 0.8h |
-| LeoGuigna | solana | $7.46 | $11.22 | +218% | +218% | 0.6h |
+| BITCOINU | solana | $7.67 | $8.57 | +214% | +248% | 8.3h |
+| UPTOBER | solana | $15.04 | $18.85 | +29% | +71% | 4.8h |
+| 蝴蝶家园 | bsc | $14.96 | $14.60 | +1% | +9% | 1.0h |
+| LeoGuigna | solana | $7.46 | $10.71 | +304% | +304% | 0.8h |
 
 ## Last closed trades
 
@@ -63,13 +63,12 @@ _prior_
 
 ## Last run log
 ```
-tick #51  equity $499.95  cash $452.26  open 4
-  SELL BITCOINU   25% @ $0.0004895  ->  $2.79   [take profit +200% (sold 25%)]
-  SELL LeoGuigna  50% @ $0.0003631  ->  $10.79   [take profit +80% (sold 50%)]
+tick #52  equity $518.94  cash $465.84  open 4
+  SELL LeoGuigna  25% @ $0.0004619  ->  $3.19   [take profit +200% (sold 25%)]
   scanning chains + news...
-  73 raw candidates across 6 chains, 158 headlines/posts
-  7 passed gates | rejected: liquidity too thin x37, no h1 volume x26, too old x3
-  top: UPTOBER 0.68 | LeoGuigna 0.67 | SATOSHINU 0.65 | niketyson 0.62 | based 0.58
+  102 raw candidates across 7 chains, 160 headlines/posts
+  7 passed gates | rejected: liquidity too thin x41, no h1 volume x38, too old x9, already discovered x6, unknown age x1
+  top: based 0.72 | UPTOBER 0.72 | SATOSHINU 0.70 | LeoGuigna 0.64 | niketyson 0.60
   no entries this tick
   shadow: tracking 66, closed 0 this tick (0 would have won)
 ```

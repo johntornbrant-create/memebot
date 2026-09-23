@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-23T04:25:47+00:00",
-  "cash": 465.84462640207875,
-  "equity": 518.9353,
+  "updated": "2026-09-23T04:39:06+00:00",
+  "cash": 469.03783570221515,
+  "equity": 521.7608,
   "positions": {
     "solana:Et2uyA1repr77VjXLZELaCCsEbUENaqYncwaciUupump": {
       "id": "91a4bfe5dd",
@@ -37,7 +37,7 @@
         "buzz": 0.0,
         "paid_boost": 0.1
       },
-      "last_price": 0.0004895
+      "last_price": 0.0004418
     },
     "solana:8Vte25yt28L8BfLXm8DrzjSYEyaKX8yry6hRKRmX7FGd": {
       "id": "bc34cd14c6",
@@ -69,7 +69,7 @@
         "buzz": 0.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.0001492
+      "last_price": 0.0001696
     },
     "bsc:0x67b85B6bEDd3C7C7e01c95168583bD1078e47777": {
       "id": "da27a7de54",
@@ -101,7 +101,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0002514
+      "last_price": 0.0002324
     },
     "solana:AgxyNjRhc2185eGATkQcanNG6J2pCQcdhxbaSrEXpump": {
       "id": "bc4145c6cb",
@@ -110,14 +110,15 @@
       "symbol": "LeoGuigna",
       "opened": "2026-09-23T03:51:35+00:00",
       "entry_price": 0.0001142,
-      "tokens": 30901.676396200346,
+      "tokens": 23176.25729715026,
       "tokens_initial": 61803.35279240069,
       "cost_usd": 7.461867,
-      "fees_usd": 0.8345023473829417,
-      "realized_usd": 10.789796352077403,
-      "peak_gain": 2.179509632224168,
+      "fees_usd": 1.209664129097768,
+      "realized_usd": 13.983005652213812,
+      "peak_gain": 3.0446584938704033,
       "tp_hit": [
-        0
+        0,
+        1
       ],
       "entry_liq": 29633.51,
       "score": 0.4933,
@@ -135,7 +136,7 @@
         "buzz": 0.0,
         "paid_boost": 0.06
       },
-      "last_price": 0.0003631
+      "last_price": 0.0004619
     }
   },
   "blacklist": {
@@ -157,12 +158,12 @@
     "trades_today": 5
   },
   "stats": {
-    "ticks": 51,
+    "ticks": 52,
     "opened": 15,
     "closed": 11,
     "wins": 4,
     "losses": 7,
-    "fees_paid": 14.345055285834809,
+    "fees_paid": 14.720217067549635,
     "realized_pnl": -9.084253151368593
   }
 }
