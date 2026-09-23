@@ -1,35 +1,36 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-23T03:38:53+00:00`
+Updated `2026-09-23T03:51:36+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$498.55** |
-| Return | **-0.29%** (start $500.00) |
-| Cash | $457.91 |
-| Deployed | $40.63 (8.2%) |
+| Equity | **$497.46** |
+| Return | **-0.51%** (start $500.00) |
+| Cash | $452.26 |
+| Deployed | $45.20 (9.1%) |
 | Open positions | 4 / 8 |
-| Closed trades | 10 (3W / 7L, WR 30%) |
-| Profit factor | 0.73 |
-| Fees + slippage paid | $12.77 |
-| Ticks run | 48 |
+| Closed trades | 11 (4W / 7L, WR 36%) |
+| Profit factor | 0.78 |
+| Fees + slippage paid | $13.54 |
+| Ticks run | 49 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| BITCOINU | solana | $7.67 | $8.41 | +131% | +163% | 7.3h |
-| UPTOBER | solana | $15.04 | $14.62 | +0% | +71% | 3.8h |
-| based | solana | $7.48 | $2.64 | -25% | +133% | 1.8h |
-| 蝴蝶家园 | bsc | $14.96 | $14.50 | +0% | +0% | 0.0h |
+| BITCOINU | solana | $7.67 | $8.89 | +144% | +163% | 7.5h |
+| UPTOBER | solana | $15.04 | $15.38 | +5% | +71% | 4.0h |
+| 蝴蝶家园 | bsc | $14.96 | $13.47 | -7% | +0% | 0.2h |
+| LeoGuigna | solana | $7.46 | $7.06 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| based | $+1.95 | +26% | 2.0h | stop loss -38% |
 | SHIELD | $-3.94 | -53% | 0.3h | stop loss -45% |
 | ACAT | $-7.53 | -100% | 0.9h | stop loss -100% |
 | MORE | $-6.18 | -40% | 1.2h | stop loss -35% |
@@ -62,11 +63,12 @@ _prior_
 
 ## Last run log
 ```
-tick #48  equity $500.34  cash $472.87  open 3
+tick #49  equity $498.55  cash $457.91  open 4
+  SELL based      100% @ $0.0001104  ->  $1.81   [stop loss -38%]
   scanning chains + news...
-  172 raw candidates across 10 chains, 158 headlines/posts
-  7 passed gates | rejected: liquidity too thin x92, no h1 volume x63, too old x7, unknown age x1, already discovered x1
-  top: 蝴蝶家园 0.73 | CATEWALK 0.67 | PHAT 0.60 | UPTOBER 0.59 | LeoGuigna 0.49
-  BUY[exploit] 蝴蝶家园       $14.96 @ $0.0002308  score 0.73  bsc  liq $44,383
-  shadow: tracking 62, closed 0 this tick (0 would have won)
+  81 raw candidates across 6 chains, 158 headlines/posts
+  5 passed gates | rejected: liquidity too thin x49, no h1 volume x17, too old x6, too new (bot war) x4
+  top: 蝴蝶家园 0.77 | UPTOBER 0.59 | LeoGuigna 0.49 | MINECOIN 0.48 | based 0.48
+  BUY[explore] LeoGuigna  $7.46 @ $0.0001142  score 0.49  solana  liq $29,634
+  shadow: tracking 63, closed 0 this tick (0 would have won)
 ```
