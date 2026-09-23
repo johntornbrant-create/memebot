@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-23T19:22:15+00:00`
+Updated `2026-09-23T19:35:48+00:00`
 
 ## Equity
 
@@ -15,13 +15,13 @@ Updated `2026-09-23T19:22:15+00:00`
 | Closed trades | 21 (8W / 13L, WR 38%) |
 | Profit factor | 0.73 |
 | Fees + slippage paid | $21.77 |
-| Ticks run | 111 |
+| Ticks run | 112 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| 蝴蝶家园 | bsc | $14.96 | $13.35 | -8% | +27% | 15.7h |
+| 蝴蝶家园 | bsc | $14.96 | $13.35 | -8% | +27% | 15.9h |
 
 ## Last closed trades
 
@@ -64,6 +64,6 @@ _prior_
 
 ## Last run log
 ```
-tick #111  equity $475.58  cash $462.04  open 1
+tick #112  equity $475.39  cash $462.04  open 1
   entries blocked: daily trade cap reached
 ```
