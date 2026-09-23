@@ -1,31 +1,31 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-23T07:06:13+00:00`
+Updated `2026-09-23T07:25:55+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$514.41** |
-| Return | **+2.88%** (start $500.00) |
-| Cash | $438.01 |
-| Deployed | $76.40 (14.9%) |
+| Equity | **$515.07** |
+| Return | **+3.01%** (start $500.00) |
+| Cash | $453.95 |
+| Deployed | $61.12 (11.9%) |
 | Open positions | 5 / 8 |
 | Closed trades | 15 (6W / 9L, WR 40%) |
 | Profit factor | 1.13 |
-| Fees + slippage paid | $18.55 |
-| Ticks run | 61 |
+| Fees + slippage paid | $19.01 |
+| Ticks run | 62 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| UPTOBER | solana | $15.04 | $15.48 | +6% | +71% | 7.3h |
-| 蝴蝶家园 | bsc | $14.96 | $14.44 | -0% | +10% | 3.5h |
-| 币安的守护者 | bsc | $7.76 | $5.52 | -25% | +0% | 1.0h |
-| MSTOCK | bsc | $15.52 | $25.85 | +72% | +72% | 1.0h |
-| LeoGuigna | solana | $15.38 | $15.11 | +1% | +1% | 0.3h |
+| UPTOBER | solana | $15.04 | $15.66 | +7% | +71% | 7.6h |
+| 蝴蝶家园 | bsc | $14.96 | $13.27 | -8% | +10% | 3.8h |
+| 币安的守护者 | bsc | $7.76 | $5.97 | -19% | +0% | 1.3h |
+| MSTOCK | bsc | $15.52 | $16.40 | +118% | +118% | 1.3h |
+| LeoGuigna | solana | $15.38 | $9.83 | -34% | +1% | 0.7h |
 
 ## Last closed trades
 
@@ -68,12 +68,12 @@ _prior_
 
 ## Last run log
 ```
-tick #61  equity $512.65  cash $428.92  open 6
-  SELL based      100% @ $0.0001839  ->  $9.10   [stop loss -37%]
+tick #62  equity $514.41  cash $438.01  open 5
+  SELL MSTOCK     50% @ $0.01284  ->  $15.93   [take profit +80% (sold 50%)]
   scanning chains + news...
-  143 raw candidates across 6 chains, 157 headlines/posts
-  3 passed gates | rejected: liquidity too thin x65, no h1 volume x45, too old x16, already discovered x9, unknown age x2
-  top: based 0.67 | LeoGuigna 0.67 | UPTOBER 0.60
+  135 raw candidates across 5 chains, 157 headlines/posts
+  3 passed gates | rejected: liquidity too thin x80, no h1 volume x21, too old x15, already discovered x10, unknown age x3
+  top: LeoGuigna 0.65 | based 0.62 | UPTOBER 0.60
   no entries this tick
   shadow: tracking 73, closed 0 this tick (0 would have won)
 ```

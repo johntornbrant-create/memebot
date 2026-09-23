@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-23T07:06:13+00:00",
-  "cash": 438.01496961077936,
-  "equity": 514.4131,
+  "updated": "2026-09-23T07:25:55+00:00",
+  "cash": 453.9471964896819,
+  "equity": 515.0718,
   "positions": {
     "solana:8Vte25yt28L8BfLXm8DrzjSYEyaKX8yry6hRKRmX7FGd": {
       "id": "bc34cd14c6",
@@ -34,7 +34,7 @@
         "buzz": 0.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.0001393
+      "last_price": 0.0001409
     },
     "bsc:0x67b85B6bEDd3C7C7e01c95168583bD1078e47777": {
       "id": "da27a7de54",
@@ -66,7 +66,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0002298
+      "last_price": 0.0002112
     },
     "bsc:0x24112F40562E4c77C0002eF5cCeA4D978cc180a2": {
       "id": "022b98294d",
@@ -98,7 +98,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.005014
+      "last_price": 0.005423
     },
     "bsc:0x45f01b650902bDECdEa380F60D427Fd26227205E": {
       "id": "0509bff638",
@@ -107,13 +107,15 @@
       "symbol": "MSTOCK",
       "opened": "2026-09-23T06:06:40+00:00",
       "entry_price": 0.005896,
-      "tokens": 2554.237320503497,
+      "tokens": 1277.1186602517485,
       "tokens_initial": 2554.237320503497,
       "cost_usd": 15.52,
-      "fees_usd": 0.4602,
-      "realized_usd": 0.0,
-      "peak_gain": 0.7164179104477613,
-      "tp_hit": [],
+      "fees_usd": 0.9261767187299126,
+      "realized_usd": 15.93222687890254,
+      "peak_gain": 1.1777476255088195,
+      "tp_hit": [
+        0
+      ],
       "entry_liq": 137486.74,
       "score": 0.7641,
       "features": {
@@ -130,7 +132,7 @@
         "buzz": 0.5,
         "paid_boost": 0.0
       },
-      "last_price": 0.01012
+      "last_price": 0.01284
     },
     "solana:AgxyNjRhc2185eGATkQcanNG6J2pCQcdhxbaSrEXpump": {
       "id": "50f6c74aaa",
@@ -162,7 +164,7 @@
         "buzz": 0.0,
         "paid_boost": 0.06
       },
-      "last_price": 0.0004411
+      "last_price": 0.0002869
     }
   },
   "blacklist": {
@@ -186,12 +188,12 @@
     "trades_today": 10
   },
   "stats": {
-    "ticks": 61,
+    "ticks": 62,
     "opened": 20,
     "closed": 15,
     "wins": 6,
     "losses": 9,
-    "fees_paid": 18.54869421727808,
+    "fees_paid": 19.01467093600799,
     "realized_pnl": 6.675653110779496
   }
 }
