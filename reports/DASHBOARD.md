@@ -1,35 +1,36 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-24T00:31:48+00:00`
+Updated `2026-09-24T00:53:52+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$485.34** |
-| Return | **-2.93%** (start $500.00) |
-| Cash | $431.73 |
-| Deployed | $53.61 (11.0%) |
+| Equity | **$505.67** |
+| Return | **+1.13%** (start $500.00) |
+| Cash | $425.56 |
+| Deployed | $80.11 (15.8%) |
 | Open positions | 4 / 8 |
-| Closed trades | 21 (8W / 13L, WR 38%) |
-| Profit factor | 0.73 |
-| Fees + slippage paid | $22.04 |
-| Ticks run | 131 |
+| Closed trades | 22 (8W / 14L, WR 36%) |
+| Profit factor | 0.69 |
+| Fees + slippage paid | $22.19 |
+| Ticks run | 132 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| 蝴蝶家园 | bsc | $14.96 | $15.64 | +8% | +27% | 20.9h |
-| GAYMF | solana | $10.06 | $7.73 | -22% | +0% | 0.4h |
-| familiars | solana | $10.06 | $20.05 | +101% | +101% | 0.4h |
-| UPTOBER | solana | $10.19 | $10.10 | +0% | +0% | 0.0h |
+| 蝴蝶家园 | bsc | $14.96 | $15.17 | +5% | +27% | 21.3h |
+| familiars | solana | $10.06 | $43.94 | +341% | +341% | 0.8h |
+| UPTOBER | solana | $10.19 | $10.38 | +3% | +3% | 0.4h |
+| BLUF | solana | $10.62 | $10.52 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| GAYMF | $-5.60 | -56% | 0.8h | stop loss -55% |
 | UPTOBER | $+2.38 | +16% | 13.4h | ratchet +25% (peak +71%) |
 | GROKBOTIFY | $-7.28 | -100% | 0.3h | stop loss -98% |
 | MSTOCK | $+2.04 | +13% | 2.3h | stop loss -74% |
@@ -44,7 +45,6 @@ Updated `2026-09-24T00:31:48+00:00`
 | SHIELD | $-3.94 | -53% | 0.3h | stop loss -45% |
 | ACAT | $-7.53 | -100% | 0.9h | stop loss -100% |
 | MORE | $-6.18 | -40% | 1.2h | stop loss -35% |
-| Archi | $+0.08 | +1% | 1.9h | stop loss -76% |
 
 ## Learned weights (v0)
 
@@ -67,13 +67,14 @@ _prior_
 
 ## Last run log
 ```
-tick #131  equity $479.14  cash $441.92  open 3
+tick #132  equity $485.34  cash $431.73  open 4
+  SELL GAYMF      100% @ $0.0002574  ->  $4.46   [stop loss -55%]
   scanning chains + news...
-  87 raw candidates across 7 chains, 158 headlines/posts
-  3 passed gates | rejected: liquidity too thin x43, no h1 volume x37, sell pressure x2, too new (bot war) x2
-  top: UPTOBER 0.71 | JEANCOIN 0.60 | parafactual 0.45
-  BUY[explore] UPTOBER    $10.19 @ $0.0001778  score 0.71  solana  liq $37,786
-  shadow: tracking 30, closed 2 this tick (1 would have won)
+  93 raw candidates across 4 chains, 160 headlines/posts
+  5 passed gates | rejected: liquidity too thin x35, no h1 volume x28, too old x12, already discovered x9, sell pressure x2
+  top: CHROME 0.69 | JEANCOIN 0.60 | BLUF 0.58 | UPTOBER 0.54 | parafactual 0.50
+  BUY[explore] BLUF       $10.62 @ $0.0003386  score 0.58  solana  liq $58,369
+  shadow: tracking 31, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
     MISSED JEANPHIL   peak +284%  (scored 0.63)

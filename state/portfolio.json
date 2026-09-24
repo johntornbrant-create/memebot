@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-24T00:31:48+00:00",
-  "cash": 431.7260206547486,
-  "equity": 485.3373,
+  "updated": "2026-09-24T00:53:52+00:00",
+  "cash": 425.56444552987404,
+  "equity": 505.6702,
   "positions": {
     "bsc:0x67b85B6bEDd3C7C7e01c95168583bD1078e47777": {
       "id": "da27a7de54",
@@ -34,39 +34,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0002489
-    },
-    "solana:74sHNXtVDHZVw4ADktjGFHPzNycV8iHvfHLPp6QZPdT4": {
-      "id": "3869aafae9",
-      "chain": "solana",
-      "address": "74sHNXtVDHZVw4ADktjGFHPzNycV8iHvfHLPp6QZPdT4",
-      "symbol": "GAYMF",
-      "opened": "2026-09-24T00:06:43+00:00",
-      "entry_price": 0.0005691,
-      "tokens": 17519.20491830685,
-      "tokens_initial": 17519.20491830685,
-      "cost_usd": 10.0618854,
-      "fees_usd": 0.0917,
-      "realized_usd": 0.0,
-      "peak_gain": 0.0,
-      "tp_hit": [],
-      "entry_liq": 71594.71,
-      "score": 0.4722,
-      "features": {
-        "liq_quality": 0.8432,
-        "turnover": 0.0338,
-        "buy_pressure": 0.2437,
-        "momentum_accel": 1.0,
-        "not_vertical": 0.0,
-        "age_sweet": 0.044,
-        "socials": 0.45,
-        "fdv_sanity": 0.9345,
-        "txn_depth": 0.7679,
-        "dip_in_uptrend": 0.5,
-        "buzz": 0.0,
-        "paid_boost": 0.0
-      },
-      "last_price": 0.0004412
+      "last_price": 0.0002414
     },
     "solana:2PENPmfgJfq6CG3k4byj4oWwHf8SerqakmYHMkUupump": {
       "id": "14a7a00d62",
@@ -80,7 +48,7 @@
       "cost_usd": 10.0618854,
       "fees_usd": 0.0916,
       "realized_usd": 0.0,
-      "peak_gain": 1.0111645216312608,
+      "peak_gain": 3.406884788339277,
       "tp_hit": [],
       "entry_liq": 75306.21,
       "score": 0.5016,
@@ -98,7 +66,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.001297
+      "last_price": 0.002842
     },
     "solana:8Vte25yt28L8BfLXm8DrzjSYEyaKX8yry6hRKRmX7FGd": {
       "id": "17b8b6be0c",
@@ -112,7 +80,7 @@
       "cost_usd": 10.1920833,
       "fees_usd": 0.0938,
       "realized_usd": 0.0,
-      "peak_gain": 0.0,
+      "peak_gain": 0.028121484814398023,
       "tp_hit": [],
       "entry_liq": 37786.16,
       "score": 0.7103,
@@ -130,7 +98,39 @@
         "buzz": 0.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.0001778
+      "last_price": 0.0001828
+    },
+    "solana:c4AtfqMRbC9FuHtVEHDhCm453tytU9E34MXXrp6bLuf": {
+      "id": "0f0782ffed",
+      "chain": "solana",
+      "address": "c4AtfqMRbC9FuHtVEHDhCm453tytU9E34MXXrp6bLuf",
+      "symbol": "BLUF",
+      "opened": "2026-09-24T00:53:51+00:00",
+      "entry_price": 0.0003386,
+      "tokens": 31077.973872581573,
+      "tokens_initial": 31077.973872581573,
+      "cost_usd": 10.6190742,
+      "fees_usd": 0.0961,
+      "realized_usd": 0.0,
+      "peak_gain": 0.0,
+      "tp_hit": [],
+      "entry_liq": 58369.28,
+      "score": 0.5804,
+      "features": {
+        "liq_quality": 0.7575,
+        "turnover": 0.4555,
+        "buy_pressure": 0.0348,
+        "momentum_accel": 0.0606,
+        "not_vertical": 1.0,
+        "age_sweet": 0.9391,
+        "socials": 0.65,
+        "fdv_sanity": 0.9868,
+        "txn_depth": 0.6044,
+        "dip_in_uptrend": 0.0,
+        "buzz": 0.0,
+        "paid_boost": 0.2
+      },
+      "last_price": 0.0003386
     }
   },
   "blacklist": {
@@ -146,7 +146,8 @@
     "bsc:0x24112F40562E4c77C0002eF5cCeA4D978cc180a2": "2026-09-23T07:37:09+00:00",
     "solana:AgxyNjRhc2185eGATkQcanNG6J2pCQcdhxbaSrEXpump": "2026-09-23T07:37:09+00:00",
     "solana:8MPLzMvudX7ehD8VjKSDDWCS9bAu1N6KK3Ubg5xypump": "2026-09-23T08:04:04+00:00",
-    "solana:CsB8SdZ2wFNqLpBJ5deuW1vnYv9nHDg5LfLTpEp5pump": "2026-09-23T08:25:15+00:00"
+    "solana:CsB8SdZ2wFNqLpBJ5deuW1vnYv9nHDg5LfLTpEp5pump": "2026-09-23T08:25:15+00:00",
+    "solana:74sHNXtVDHZVw4ADktjGFHPzNycV8iHvfHLPp6QZPdT4": "2026-09-24T00:52:21+00:00"
   },
   "halted": false,
   "halt_reason": "",
@@ -155,15 +156,15 @@
     "day_equity": 473.9478,
     "week": "2026-W39",
     "week_equity": 500.0,
-    "trades_today": 3
+    "trades_today": 4
   },
   "stats": {
-    "ticks": 131,
-    "opened": 25,
-    "closed": 21,
+    "ticks": 132,
+    "opened": 26,
+    "closed": 22,
     "wins": 8,
-    "losses": 13,
-    "fees_paid": 22.044912775766008,
-    "realized_pnl": -22.99812524525133
+    "losses": 14,
+    "fees_paid": 22.19292929335666,
+    "realized_pnl": -28.602511570125916
   }
 }
