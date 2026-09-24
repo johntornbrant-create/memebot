@@ -1,28 +1,28 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-24T13:52:21+00:00`
+Updated `2026-09-24T14:04:21+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$529.14** |
-| Return | **+5.83%** (start $500.00) |
+| Equity | **$524.42** |
+| Return | **+4.88%** (start $500.00) |
 | Cash | $448.85 |
-| Deployed | $80.29 (15.2%) |
+| Deployed | $75.57 (14.4%) |
 | Open positions | 2 / 8 |
 | Closed trades | 32 (11W / 21L, WR 34%) |
 | Profit factor | 0.75 |
 | Fees + slippage paid | $24.34 |
-| Ticks run | 182 |
+| Ticks run | 183 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| JEANCOIN | solana | $10.32 | $70.95 | +594% | +601% | 10.5h |
-| CATALYST | base | $10.26 | $9.34 | -8% | +10% | 10.2h |
+| JEANCOIN | solana | $10.32 | $66.23 | +548% | +601% | 10.7h |
+| CATALYST | base | $10.26 | $9.34 | -8% | +10% | 10.4h |
 
 ## Last closed trades
 
@@ -65,7 +65,6 @@ _prior_
 
 ## Last run log
 ```
-tick #182  equity $539.56  cash $442.43  open 3
-  SELL 蝴蝶家园       100% @ $0.0001037  ->  $6.42   [ratchet +0% (peak +57%)]
+tick #183  equity $529.14  cash $448.85  open 2
   entries blocked: daily trade cap reached
 ```
