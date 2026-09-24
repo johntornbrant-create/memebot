@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-24T03:05:15+00:00",
-  "cash": 423.91527230631294,
-  "equity": 498.1349,
+  "updated": "2026-09-24T03:25:02+00:00",
+  "cash": 419.5545715527567,
+  "equity": 491.3236,
   "positions": {
     "bsc:0x67b85B6bEDd3C7C7e01c95168583bD1078e47777": {
       "id": "da27a7de54",
@@ -34,39 +34,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0003337
-    },
-    "solana:8Vte25yt28L8BfLXm8DrzjSYEyaKX8yry6hRKRmX7FGd": {
-      "id": "17b8b6be0c",
-      "chain": "solana",
-      "address": "8Vte25yt28L8BfLXm8DrzjSYEyaKX8yry6hRKRmX7FGd",
-      "symbol": "UPTOBER",
-      "opened": "2026-09-24T00:31:46+00:00",
-      "entry_price": 0.0001778,
-      "tokens": 56795.63842466539,
-      "tokens_initial": 56795.63842466539,
-      "cost_usd": 10.1920833,
-      "fees_usd": 0.0938,
-      "realized_usd": 0.0,
-      "peak_gain": 0.028121484814398023,
-      "tp_hit": [],
-      "entry_liq": 37786.16,
-      "score": 0.7103,
-      "features": {
-        "liq_quality": 0.5529,
-        "turnover": 0.2378,
-        "buy_pressure": 0.7394,
-        "momentum_accel": 0.4263,
-        "not_vertical": 1.0,
-        "age_sweet": 0.3366,
-        "socials": 1.0,
-        "fdv_sanity": 1.0,
-        "txn_depth": 0.3402,
-        "dip_in_uptrend": 1.0,
-        "buzz": 0.0,
-        "paid_boost": 0.2
-      },
-      "last_price": 0.0001736
+      "last_price": 0.0003193
     },
     "solana:27XVtvjVVwBgZKDfBQfQ3L8TvWvBWCDYL7vBnFtjbdLc": {
       "id": "826c6fe9a6",
@@ -98,7 +66,7 @@
         "buzz": 0.0,
         "paid_boost": 0.02
       },
-      "last_price": 0.0006179
+      "last_price": 0.0005115
     },
     "bsc:0x0E75C4FDc17B54C5fC7c2320C3f70aA9Ce647777": {
       "id": "df155f0b52",
@@ -130,7 +98,7 @@
         "buzz": 0.0,
         "paid_boost": 0.1
       },
-      "last_price": 7.325e-05
+      "last_price": 6.803e-05
     },
     "bsc:0x7A552E43d09025814D32201046af58f305b36139": {
       "id": "76652117f0",
@@ -162,7 +130,39 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.002221
+      "last_price": 0.002586
+    },
+    "solana:4WECKfvfgEiojyZJq5Xm12Hvk76rhM4VHQAZGaELpump": {
+      "id": "b530da6347",
+      "chain": "solana",
+      "address": "4WECKfvfgEiojyZJq5Xm12Hvk76rhM4VHQAZGaELpump",
+      "symbol": "JEANCOIN",
+      "opened": "2026-09-24T03:25:00+00:00",
+      "entry_price": 0.0004872,
+      "tokens": 20985.37525796567,
+      "tokens_initial": 20985.37525796567,
+      "cost_usd": 10.3177956,
+      "fees_usd": 0.0937,
+      "realized_usd": 0.0,
+      "peak_gain": 0.0,
+      "tp_hit": [],
+      "entry_liq": 64036.15,
+      "score": 0.638,
+      "features": {
+        "liq_quality": 0.7978,
+        "turnover": 0.367,
+        "buy_pressure": 0.5675,
+        "momentum_accel": 0.3334,
+        "not_vertical": 1.0,
+        "age_sweet": 0.8831,
+        "socials": 0.65,
+        "fdv_sanity": 0.9445,
+        "txn_depth": 0.0303,
+        "dip_in_uptrend": 0.5,
+        "buzz": 0.0,
+        "paid_boost": 0.1
+      },
+      "last_price": 0.0004872
     }
   },
   "blacklist": {
@@ -181,7 +181,8 @@
     "solana:CsB8SdZ2wFNqLpBJ5deuW1vnYv9nHDg5LfLTpEp5pump": "2026-09-23T08:25:15+00:00",
     "solana:74sHNXtVDHZVw4ADktjGFHPzNycV8iHvfHLPp6QZPdT4": "2026-09-24T00:52:21+00:00",
     "solana:c4AtfqMRbC9FuHtVEHDhCm453tytU9E34MXXrp6bLuf": "2026-09-24T02:23:42+00:00",
-    "bsc:0xc2b283f62DfcaA4BF6179508C739D16f085C9fB3": "2026-09-24T02:23:42+00:00"
+    "bsc:0xc2b283f62DfcaA4BF6179508C739D16f085C9fB3": "2026-09-24T02:23:42+00:00",
+    "solana:8Vte25yt28L8BfLXm8DrzjSYEyaKX8yry6hRKRmX7FGd": "2026-09-24T03:23:32+00:00"
   },
   "halted": false,
   "halt_reason": "",
@@ -190,15 +191,15 @@
     "day_equity": 473.9478,
     "week": "2026-W39",
     "week_equity": 500.0,
-    "trades_today": 9
+    "trades_today": 10
   },
   "stats": {
-    "ticks": 141,
-    "opened": 31,
-    "closed": 26,
+    "ticks": 142,
+    "opened": 32,
+    "closed": 27,
     "wins": 10,
-    "losses": 16,
-    "fees_paid": 23.433604864937983,
-    "realized_pnl": -10.523870993687048
+    "losses": 17,
+    "fees_paid": 23.590568465827857,
+    "realized_pnl": -14.758859447243267
   }
 }
