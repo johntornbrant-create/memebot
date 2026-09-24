@@ -1,28 +1,28 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-24T22:49:40+00:00`
+Updated `2026-09-24T23:03:59+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$569.74** |
-| Return | **+13.95%** (start $500.00) |
+| Equity | **$570.00** |
+| Return | **+14.00%** (start $500.00) |
 | Cash | $448.85 |
-| Deployed | $120.89 (21.2%) |
+| Deployed | $121.16 (21.3%) |
 | Open positions | 2 / 8 |
 | Closed trades | 32 (11W / 21L, WR 34%) |
 | Profit factor | 0.75 |
 | Fees + slippage paid | $24.34 |
-| Ticks run | 218 |
+| Ticks run | 219 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| JEANCOIN | solana | $10.32 | $111.66 | +992% | +1004% | 19.4h |
-| CATALYST | base | $10.26 | $9.23 | -9% | +10% | 19.2h |
+| JEANCOIN | solana | $10.32 | $111.87 | +994% | +1004% | 19.6h |
+| CATALYST | base | $10.26 | $9.28 | -9% | +10% | 19.4h |
 
 ## Last closed trades
 
@@ -65,6 +65,6 @@ _prior_
 
 ## Last run log
 ```
-tick #218  equity $570.94  cash $448.85  open 2
+tick #219  equity $569.74  cash $448.85  open 2
   entries blocked: daily trade cap reached
 ```
