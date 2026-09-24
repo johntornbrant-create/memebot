@@ -1,36 +1,37 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-24T02:05:24+00:00`
+Updated `2026-09-24T02:25:07+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$515.60** |
-| Return | **+3.12%** (start $500.00) |
-| Cash | $441.79 |
-| Deployed | $73.81 (14.3%) |
-| Open positions | 5 / 8 |
-| Closed trades | 24 (10W / 14L, WR 42%) |
-| Profit factor | 0.98 |
-| Fees + slippage paid | $22.95 |
-| Ticks run | 137 |
+| Equity | **$501.33** |
+| Return | **+0.27%** (start $500.00) |
+| Cash | $439.01 |
+| Deployed | $62.33 (12.4%) |
+| Open positions | 4 / 8 |
+| Closed trades | 26 (10W / 16L, WR 38%) |
+| Profit factor | 0.90 |
+| Fees + slippage paid | $23.28 |
+| Ticks run | 138 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| 蝴蝶家园 | bsc | $14.96 | $17.47 | +20% | +38% | 22.4h |
-| UPTOBER | solana | $10.19 | $10.14 | +0% | +3% | 1.6h |
-| BLUF | solana | $10.62 | $8.50 | -19% | +4% | 1.2h |
-| PURRP | solana | $10.28 | $17.08 | +68% | +75% | 0.7h |
-| CZBUILDER | bsc | $10.51 | $20.62 | +98% | +98% | 0.5h |
+| 蝴蝶家园 | bsc | $14.96 | $18.44 | +27% | +38% | 22.8h |
+| UPTOBER | solana | $10.19 | $10.24 | +1% | +3% | 1.9h |
+| PURRP | solana | $10.28 | $18.61 | +83% | +83% | 1.0h |
+| 币安协议 | bsc | $15.04 | $14.88 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| CZBUILDER | $-4.25 | -40% | 0.8h | ratchet +25% (peak +98%) |
+| BLUF | $-4.62 | -44% | 1.5h | stop loss -42% |
 | 币安女王 | $+12.82 | +121% | 1.0h | ratchet +148% (peak +254%) |
 | familiars | $+14.14 | +141% | 1.3h | ratchet +208% (peak +341%) |
 | GAYMF | $-5.60 | -56% | 0.8h | stop loss -55% |
@@ -44,8 +45,6 @@ Updated `2026-09-24T02:05:24+00:00`
 | DURIAN | $-5.02 | -64% | 0.5h | stop loss -57% |
 | LeoGuigna | $+19.66 | +263% | 2.0h | trailing stop from +724% |
 | BITCOINU | $+7.57 | +99% | 9.2h | trailing stop from +248% |
-| based | $+1.95 | +26% | 2.0h | stop loss -38% |
-| SHIELD | $-3.94 | -53% | 0.3h | stop loss -45% |
 
 ## Learned weights (v0)
 
@@ -68,14 +67,15 @@ _prior_
 
 ## Last run log
 ```
-tick #137  equity $526.10  cash $418.42  open 6
-  SELL 币安女王       100% @ $0.001534  ->  $23.37   [ratchet +148% (peak +254%)]
+tick #138  equity $515.60  cash $441.79  open 5
+  SELL BLUF       100% @ $0.000195  ->  $6.00   [stop loss -42%]
+  SELL CZBUILDER  100% @ $0.001091  ->  $6.26   [ratchet +25% (peak +98%)]
   scanning chains + news...
-  153 raw candidates across 7 chains, 158 headlines/posts
-  7 passed gates | rejected: liquidity too thin x95, no h1 volume x44, too old x2, already discovered x2, too new (bot war) x2
-  top: SHARTCOIN 0.69 | 币安女王 0.65 | PURRP 0.65 | JEANCOIN 0.58 | Trader 0.58
-  no entries this tick
-  shadow: tracking 37, closed 0 this tick (0 would have won)
+  154 raw candidates across 6 chains, 160 headlines/posts
+  8 passed gates | rejected: liquidity too thin x86, no h1 volume x32, too old x16, already discovered x11, unknown age x1
+  top: PURRP 0.73 | 币安协议 0.69 | SHARTCOIN 0.61 | JEANCOIN 0.61 | BLUF 0.61
+  BUY[exploit] 币安协议       $15.04 @ $8.396e-05  score 0.69  bsc  liq $27,041
+  shadow: tracking 38, closed 1 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
     MISSED JEANPHIL   peak +284%  (scored 0.63)
