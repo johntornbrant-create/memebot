@@ -1,37 +1,37 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-24T05:22:56+00:00`
+Updated `2026-09-24T05:36:21+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$496.79** |
-| Return | **-0.64%** (start $500.00) |
-| Cash | $412.86 |
-| Deployed | $83.92 (16.9%) |
-| Open positions | 6 / 8 |
-| Closed trades | 28 (11W / 17L, WR 39%) |
+| Equity | **$495.70** |
+| Return | **-0.86%** (start $500.00) |
+| Cash | $427.37 |
+| Deployed | $68.33 (13.8%) |
+| Open positions | 5 / 8 |
+| Closed trades | 29 (11W / 18L, WR 38%) |
 | Profit factor | 0.89 |
-| Fees + slippage paid | $23.91 |
-| Ticks run | 150 |
+| Fees + slippage paid | $24.06 |
+| Ticks run | 151 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| 蝴蝶家园 | bsc | $14.96 | $19.61 | +35% | +45% | 25.7h |
-| 币安协议 | bsc | $15.04 | $14.73 | -1% | +0% | 3.0h |
-| 币安女王 | bsc | $15.09 | $15.12 | +1% | +67% | 2.7h |
-| JEANCOIN | solana | $10.32 | $18.69 | +83% | +83% | 2.0h |
-| CATALYST | base | $10.26 | $8.51 | -16% | +0% | 1.7h |
-| PURRP | solana | $10.26 | $7.26 | -29% | +18% | 1.7h |
+| 蝴蝶家园 | bsc | $14.96 | $19.44 | +34% | +45% | 26.0h |
+| 币安协议 | bsc | $15.04 | $15.48 | +4% | +4% | 3.2h |
+| JEANCOIN | solana | $10.32 | $17.98 | +76% | +83% | 2.2h |
+| CATALYST | base | $10.26 | $8.51 | -16% | +0% | 2.0h |
+| PURRP | solana | $10.26 | $6.91 | -32% | +18% | 2.0h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| 币安女王 | $-0.58 | -4% | 3.0h | ratchet +0% (peak +67%) |
 | PURRP | $+3.56 | +35% | 2.2h | ratchet +41% (peak +101%) |
 | UPTOBER | $-4.23 | -42% | 2.9h | stop loss -40% |
 | CZBUILDER | $-4.25 | -40% | 0.8h | ratchet +25% (peak +98%) |
@@ -46,7 +46,6 @@ Updated `2026-09-24T05:22:56+00:00`
 | LeoGuigna | $-15.38 | -100% | 0.8h | stop loss -99% |
 | 币安的守护者 | $-4.02 | -52% | 1.5h | stop loss -44% |
 | based | $-6.45 | -42% | 1.2h | stop loss -37% |
-| DURIAN | $-5.02 | -64% | 0.5h | stop loss -57% |
 
 ## Learned weights (v0)
 
@@ -69,6 +68,7 @@ _prior_
 
 ## Last run log
 ```
-tick #150  equity $503.15  cash $412.86  open 6
+tick #151  equity $496.79  cash $412.86  open 6
+  SELL 币安女王       100% @ $0.002636  ->  $14.51   [ratchet +0% (peak +67%)]
   entries blocked: daily trade cap reached
 ```
