@@ -1,31 +1,31 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-24T02:38:29+00:00`
+Updated `2026-09-24T02:51:56+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$503.02** |
-| Return | **+0.60%** (start $500.00) |
+| Equity | **$501.75** |
+| Return | **+0.35%** (start $500.00) |
 | Cash | $423.92 |
-| Deployed | $79.11 (15.7%) |
+| Deployed | $77.83 (15.5%) |
 | Open positions | 5 / 8 |
 | Closed trades | 26 (10W / 16L, WR 38%) |
 | Profit factor | 0.90 |
 | Fees + slippage paid | $23.43 |
-| Ticks run | 139 |
+| Ticks run | 140 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| 蝴蝶家园 | bsc | $14.96 | $19.92 | +37% | +38% | 23.0h |
-| UPTOBER | solana | $10.19 | $9.91 | -2% | +3% | 2.1h |
-| PURRP | solana | $10.28 | $19.74 | +94% | +94% | 1.2h |
-| 币安协议 | bsc | $15.04 | $14.45 | -3% | +0% | 0.2h |
-| 币安女王 | bsc | $15.09 | $14.93 | +0% | +0% | 0.0h |
+| 蝴蝶家园 | bsc | $14.96 | $21.10 | +45% | +45% | 23.2h |
+| UPTOBER | solana | $10.19 | $9.98 | -1% | +3% | 2.3h |
+| PURRP | solana | $10.28 | $20.52 | +101% | +101% | 1.5h |
+| 币安协议 | bsc | $15.04 | $14.36 | -3% | +0% | 0.4h |
+| 币安女王 | bsc | $15.09 | $11.88 | -20% | +0% | 0.2h |
 
 ## Last closed trades
 
@@ -68,13 +68,13 @@ _prior_
 
 ## Last run log
 ```
-tick #139  equity $501.33  cash $439.01  open 4
+tick #140  equity $503.02  cash $423.92  open 5
   scanning chains + news...
-  154 raw candidates across 7 chains, 120 headlines/posts
-  8 passed gates | rejected: liquidity too thin x100, no h1 volume x42, too old x2, already discovered x2
-  top: 币安女王 0.72 | 币安协议 0.71 | PURRP 0.71 | SHARTCOIN 0.68 | BLUF 0.62
-  BUY[exploit] 币安女王       $15.09 @ $0.002684  score 0.72  bsc  liq $90,641
-  shadow: tracking 38, closed 0 this tick (0 would have won)
+  136 raw candidates across 5 chains, 158 headlines/posts
+  7 passed gates | rejected: liquidity too thin x85, no h1 volume x24, too old x12, already discovered x6, too new (bot war) x1
+  top: 币安协议 0.73 | PURRP 0.71 | CONDO 0.71 | BLUF 0.61 | JEANCOIN 0.58
+  no entries this tick
+  shadow: tracking 36, closed 3 this tick (2 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
     MISSED JEANPHIL   peak +284%  (scored 0.63)
