@@ -1,31 +1,31 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-24T02:51:56+00:00`
+Updated `2026-09-24T03:05:15+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$501.75** |
-| Return | **+0.35%** (start $500.00) |
+| Equity | **$498.13** |
+| Return | **-0.37%** (start $500.00) |
 | Cash | $423.92 |
-| Deployed | $77.83 (15.5%) |
+| Deployed | $74.22 (14.9%) |
 | Open positions | 5 / 8 |
 | Closed trades | 26 (10W / 16L, WR 38%) |
 | Profit factor | 0.90 |
 | Fees + slippage paid | $23.43 |
-| Ticks run | 140 |
+| Ticks run | 141 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| 蝴蝶家园 | bsc | $14.96 | $21.10 | +45% | +45% | 23.2h |
-| UPTOBER | solana | $10.19 | $9.98 | -1% | +3% | 2.3h |
-| PURRP | solana | $10.28 | $20.52 | +101% | +101% | 1.5h |
-| 币安协议 | bsc | $15.04 | $14.36 | -3% | +0% | 0.4h |
-| 币安女王 | bsc | $15.09 | $11.88 | -20% | +0% | 0.2h |
+| 蝴蝶家园 | bsc | $14.96 | $20.97 | +45% | +45% | 23.4h |
+| UPTOBER | solana | $10.19 | $9.86 | -2% | +3% | 2.6h |
+| PURRP | solana | $10.28 | $18.06 | +77% | +101% | 1.7h |
+| 币安协议 | bsc | $15.04 | $12.98 | -13% | +0% | 0.7h |
+| 币安女王 | bsc | $15.09 | $12.36 | -17% | +0% | 0.4h |
 
 ## Last closed trades
 
@@ -68,13 +68,13 @@ _prior_
 
 ## Last run log
 ```
-tick #140  equity $503.02  cash $423.92  open 5
+tick #141  equity $501.75  cash $423.92  open 5
   scanning chains + news...
-  136 raw candidates across 5 chains, 158 headlines/posts
-  7 passed gates | rejected: liquidity too thin x85, no h1 volume x24, too old x12, already discovered x6, too new (bot war) x1
-  top: 币安协议 0.73 | PURRP 0.71 | CONDO 0.71 | BLUF 0.61 | JEANCOIN 0.58
+  170 raw candidates across 6 chains, 160 headlines/posts
+  6 passed gates | rejected: liquidity too thin x89, no h1 volume x45, too old x16, already discovered x11, unknown age x1
+  top: 币安协议 0.73 | PURRP 0.72 | JEANCOIN 0.59 | BLUF 0.58 | UPTOBER 0.56
   no entries this tick
-  shadow: tracking 36, closed 3 this tick (2 would have won)
+  shadow: tracking 37, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
     MISSED JEANPHIL   peak +284%  (scored 0.63)
