@@ -1,34 +1,34 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-24T13:38:58+00:00`
+Updated `2026-09-24T13:52:21+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$539.56** |
-| Return | **+7.91%** (start $500.00) |
-| Cash | $442.43 |
-| Deployed | $97.13 (18.0%) |
-| Open positions | 3 / 8 |
-| Closed trades | 31 (11W / 20L, WR 35%) |
-| Profit factor | 0.81 |
-| Fees + slippage paid | $24.24 |
-| Ticks run | 181 |
+| Equity | **$529.14** |
+| Return | **+5.83%** (start $500.00) |
+| Cash | $448.85 |
+| Deployed | $80.29 (15.2%) |
+| Open positions | 2 / 8 |
+| Closed trades | 32 (11W / 21L, WR 34%) |
+| Profit factor | 0.75 |
+| Fees + slippage paid | $24.34 |
+| Ticks run | 182 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| 蝴蝶家园 | bsc | $14.96 | $16.03 | +11% | +57% | 34.0h |
-| JEANCOIN | solana | $10.32 | $71.71 | +601% | +601% | 10.2h |
-| CATALYST | base | $10.26 | $9.39 | -8% | +10% | 10.0h |
+| JEANCOIN | solana | $10.32 | $70.95 | +594% | +601% | 10.5h |
+| CATALYST | base | $10.26 | $9.34 | -8% | +10% | 10.2h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| 蝴蝶家园 | $-8.54 | -57% | 34.2h | ratchet +0% (peak +57%) |
 | 币安协议 | $-5.79 | -38% | 11.0h | stop loss -37% |
 | PURRP | $-4.46 | -43% | 2.2h | stop loss -42% |
 | 币安女王 | $-0.58 | -4% | 3.0h | ratchet +0% (peak +67%) |
@@ -43,7 +43,6 @@ Updated `2026-09-24T13:38:58+00:00`
 | GROKBOTIFY | $-7.28 | -100% | 0.3h | stop loss -98% |
 | MSTOCK | $+2.04 | +13% | 2.3h | stop loss -74% |
 | MOUSE | $-7.41 | -100% | 0.2h | stop loss -96% |
-| LeoGuigna | $-15.38 | -100% | 0.8h | stop loss -99% |
 
 ## Learned weights (v0)
 
@@ -66,6 +65,7 @@ _prior_
 
 ## Last run log
 ```
-tick #181  equity $537.16  cash $442.43  open 3
+tick #182  equity $539.56  cash $442.43  open 3
+  SELL 蝴蝶家园       100% @ $0.0001037  ->  $6.42   [ratchet +0% (peak +57%)]
   entries blocked: daily trade cap reached
 ```
