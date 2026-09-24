@@ -1,37 +1,37 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-24T01:51:57+00:00`
+Updated `2026-09-24T02:05:24+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$526.10** |
-| Return | **+5.22%** (start $500.00) |
-| Cash | $418.42 |
-| Deployed | $107.68 (20.5%) |
-| Open positions | 6 / 8 |
-| Closed trades | 23 (9W / 14L, WR 39%) |
-| Profit factor | 0.84 |
-| Fees + slippage paid | $22.73 |
-| Ticks run | 136 |
+| Equity | **$515.60** |
+| Return | **+3.12%** (start $500.00) |
+| Cash | $441.79 |
+| Deployed | $73.81 (14.3%) |
+| Open positions | 5 / 8 |
+| Closed trades | 24 (10W / 14L, WR 42%) |
+| Profit factor | 0.98 |
+| Fees + slippage paid | $22.95 |
+| Ticks run | 137 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| 蝴蝶家园 | bsc | $14.96 | $18.56 | +28% | +38% | 22.2h |
-| UPTOBER | solana | $10.19 | $9.80 | -3% | +3% | 1.3h |
-| BLUF | solana | $10.62 | $8.87 | -16% | +4% | 1.0h |
-| 币安女王 | bsc | $10.56 | $36.96 | +254% | +254% | 0.8h |
-| PURRP | solana | $10.28 | $17.85 | +75% | +75% | 0.5h |
-| CZBUILDER | bsc | $10.51 | $15.65 | +51% | +51% | 0.2h |
+| 蝴蝶家园 | bsc | $14.96 | $17.47 | +20% | +38% | 22.4h |
+| UPTOBER | solana | $10.19 | $10.14 | +0% | +3% | 1.6h |
+| BLUF | solana | $10.62 | $8.50 | -19% | +4% | 1.2h |
+| PURRP | solana | $10.28 | $17.08 | +68% | +75% | 0.7h |
+| CZBUILDER | bsc | $10.51 | $20.62 | +98% | +98% | 0.5h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| 币安女王 | $+12.82 | +121% | 1.0h | ratchet +148% (peak +254%) |
 | familiars | $+14.14 | +141% | 1.3h | ratchet +208% (peak +341%) |
 | GAYMF | $-5.60 | -56% | 0.8h | stop loss -55% |
 | UPTOBER | $+2.38 | +16% | 13.4h | ratchet +25% (peak +71%) |
@@ -46,7 +46,6 @@ Updated `2026-09-24T01:51:57+00:00`
 | BITCOINU | $+7.57 | +99% | 9.2h | trailing stop from +248% |
 | based | $+1.95 | +26% | 2.0h | stop loss -38% |
 | SHIELD | $-3.94 | -53% | 0.3h | stop loss -45% |
-| ACAT | $-7.53 | -100% | 0.9h | stop loss -100% |
 
 ## Learned weights (v0)
 
@@ -69,13 +68,14 @@ _prior_
 
 ## Last run log
 ```
-tick #136  equity $500.58  cash $418.42  open 6
+tick #137  equity $526.10  cash $418.42  open 6
+  SELL 币安女王       100% @ $0.001534  ->  $23.37   [ratchet +148% (peak +254%)]
   scanning chains + news...
-  100 raw candidates across 6 chains, 158 headlines/posts
-  5 passed gates | rejected: no h1 volume x40, liquidity too thin x37, too old x12, already discovered x4, sell pressure x1
-  top: JEANCOIN 0.67 | PURRP 0.62 | TradeTeeth 0.59 | 币安女王 0.57 | BLUF 0.56
+  153 raw candidates across 7 chains, 158 headlines/posts
+  7 passed gates | rejected: liquidity too thin x95, no h1 volume x44, too old x2, already discovered x2, too new (bot war) x2
+  top: SHARTCOIN 0.69 | 币安女王 0.65 | PURRP 0.65 | JEANCOIN 0.58 | Trader 0.58
   no entries this tick
-  shadow: tracking 34, closed 0 this tick (0 would have won)
+  shadow: tracking 37, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
     MISSED JEANPHIL   peak +284%  (scored 0.63)
