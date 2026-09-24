@@ -1,31 +1,32 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-24T01:23:53+00:00`
+Updated `2026-09-24T01:37:04+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$489.47** |
-| Return | **-2.11%** (start $500.00) |
-| Cash | $428.93 |
-| Deployed | $60.53 (12.4%) |
-| Open positions | 5 / 8 |
+| Equity | **$500.58** |
+| Return | **+0.12%** (start $500.00) |
+| Cash | $418.42 |
+| Deployed | $82.17 (16.4%) |
+| Open positions | 6 / 8 |
 | Closed trades | 23 (9W / 14L, WR 39%) |
 | Profit factor | 0.84 |
-| Fees + slippage paid | $22.61 |
-| Ticks run | 134 |
+| Fees + slippage paid | $22.73 |
+| Ticks run | 135 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| 蝴蝶家园 | bsc | $14.96 | $17.90 | +23% | +27% | 21.8h |
-| UPTOBER | solana | $10.19 | $10.23 | +1% | +3% | 0.9h |
-| BLUF | solana | $10.62 | $9.74 | -7% | +4% | 0.5h |
-| 币安女王 | bsc | $10.56 | $12.38 | +19% | +19% | 0.3h |
-| PURRP | solana | $10.28 | $10.19 | +0% | +0% | 0.0h |
+| 蝴蝶家园 | bsc | $14.96 | $19.99 | +38% | +38% | 22.0h |
+| UPTOBER | solana | $10.19 | $9.89 | -2% | +3% | 1.1h |
+| BLUF | solana | $10.62 | $9.51 | -10% | +4% | 0.7h |
+| 币安女王 | bsc | $10.56 | $19.93 | +91% | +91% | 0.5h |
+| PURRP | solana | $10.28 | $12.33 | +21% | +21% | 0.2h |
+| CZBUILDER | bsc | $10.51 | $10.39 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
@@ -68,14 +69,13 @@ _prior_
 
 ## Last run log
 ```
-tick #134  equity $502.67  cash $415.01  open 5
-  SELL familiars  100% @ $0.001578  ->  $24.20   [ratchet +208% (peak +341%)]
+tick #135  equity $489.47  cash $428.93  open 5
   scanning chains + news...
-  100 raw candidates across 5 chains, 158 headlines/posts
-  5 passed gates | rejected: liquidity too thin x46, no h1 volume x43, too old x4, sell pressure x1, already discovered x1
-  top: PURRP 0.68 | JEANCOIN 0.60 | BLUF 0.58 | CZBUILDER 0.58 | UPTOBER 0.55
-  BUY[explore] PURRP      $10.28 @ $0.0003485  score 0.68  solana  liq $54,607
-  shadow: tracking 34, closed 1 this tick (0 would have won)
+  122 raw candidates across 6 chains, 160 headlines/posts
+  5 passed gates | rejected: liquidity too thin x60, no h1 volume x47, too new (bot war) x4, too old x4, sell pressure x1
+  top: BLUF 0.74 | PURRP 0.62 | JEANCOIN 0.61 | CZBUILDER 0.59 | UPTOBER 0.53
+  BUY[explore] CZBUILDER  $10.51 @ $0.001784  score 0.59  bsc  liq $104,264
+  shadow: tracking 33, closed 1 this tick (1 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
     MISSED JEANPHIL   peak +284%  (scored 0.63)

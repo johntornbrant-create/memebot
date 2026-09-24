@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-24T01:23:53+00:00",
-  "cash": 428.93064543308816,
-  "equity": 489.4654,
+  "updated": "2026-09-24T01:37:04+00:00",
+  "cash": 418.4183730330882,
+  "equity": 500.5844,
   "positions": {
     "bsc:0x67b85B6bEDd3C7C7e01c95168583bD1078e47777": {
       "id": "da27a7de54",
@@ -16,7 +16,7 @@
       "cost_usd": 14.96,
       "fees_usd": 0.4593,
       "realized_usd": 0.0,
-      "peak_gain": 0.2677642980935875,
+      "peak_gain": 0.3786828422876949,
       "tp_hit": [],
       "entry_liq": 44382.63,
       "score": 0.7342,
@@ -34,7 +34,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0002849
+      "last_price": 0.0003182
     },
     "solana:8Vte25yt28L8BfLXm8DrzjSYEyaKX8yry6hRKRmX7FGd": {
       "id": "17b8b6be0c",
@@ -66,7 +66,7 @@
         "buzz": 0.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.0001802
+      "last_price": 0.0001742
     },
     "solana:c4AtfqMRbC9FuHtVEHDhCm453tytU9E34MXXrp6bLuf": {
       "id": "0f0782ffed",
@@ -98,7 +98,7 @@
         "buzz": 0.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.0003135
+      "last_price": 0.0003059
     },
     "bsc:0x7A552E43d09025814D32201046af58f305b36139": {
       "id": "730fcac5bc",
@@ -112,7 +112,7 @@
       "cost_usd": 10.5560595,
       "fees_usd": 0.1261,
       "realized_usd": 0.0,
-      "peak_gain": 0.18684559799439637,
+      "peak_gain": 0.9112225335496242,
       "tp_hit": [],
       "entry_liq": 45415.7,
       "score": 0.5424,
@@ -130,7 +130,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0008048
+      "last_price": 0.001296
     },
     "solana:27XVtvjVVwBgZKDfBQfQ3L8TvWvBWCDYL7vBnFtjbdLc": {
       "id": "826c6fe9a6",
@@ -144,7 +144,7 @@
       "cost_usd": 10.278773399999999,
       "fees_usd": 0.0937,
       "realized_usd": 0.0,
-      "peak_gain": 0.0,
+      "peak_gain": 0.2103299856527976,
       "tp_hit": [],
       "entry_liq": 54606.53,
       "score": 0.6848,
@@ -162,7 +162,39 @@
         "buzz": 0.0,
         "paid_boost": 0.02
       },
-      "last_price": 0.0003485
+      "last_price": 0.0004218
+    },
+    "bsc:0xc2b283f62DfcaA4BF6179508C739D16f085C9fB3": {
+      "id": "0f545162cd",
+      "chain": "bsc",
+      "address": "0xc2b283f62DfcaA4BF6179508C739D16f085C9fB3",
+      "symbol": "CZBUILDER",
+      "opened": "2026-09-24T01:37:03+00:00",
+      "entry_price": 0.001784,
+      "tokens": 5822.720064849844,
+      "tokens_initial": 5822.720064849844,
+      "cost_usd": 10.512272399999999,
+      "fees_usd": 0.1245,
+      "realized_usd": 0.0,
+      "peak_gain": 0.0,
+      "tp_hit": [],
+      "entry_liq": 104263.91,
+      "score": 0.5929,
+      "features": {
+        "liq_quality": 0.9596,
+        "turnover": 0.1162,
+        "buy_pressure": 1.0,
+        "momentum_accel": 0.0,
+        "not_vertical": 1.0,
+        "age_sweet": 0.6183,
+        "socials": 0.65,
+        "fdv_sanity": 0.7308,
+        "txn_depth": 0.7169,
+        "dip_in_uptrend": 0.0,
+        "buzz": 0.0,
+        "paid_boost": 0.0
+      },
+      "last_price": 0.001784
     }
   },
   "blacklist": {
@@ -188,15 +220,15 @@
     "day_equity": 473.9478,
     "week": "2026-W39",
     "week_equity": 500.0,
-    "trades_today": 6
+    "trades_today": 7
   },
   "stats": {
-    "ticks": 134,
-    "opened": 28,
+    "ticks": 135,
+    "opened": 29,
     "closed": 23,
     "wins": 9,
     "losses": 14,
-    "fees_paid": 22.607785779934908,
+    "fees_paid": 22.732325584242787,
     "realized_pnl": -14.463364166911786
   }
 }
