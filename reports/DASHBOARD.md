@@ -1,29 +1,30 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-24T00:06:45+00:00`
+Updated `2026-09-24T00:31:48+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$479.14** |
-| Return | **-4.17%** (start $500.00) |
-| Cash | $441.92 |
-| Deployed | $37.22 (7.8%) |
-| Open positions | 3 / 8 |
+| Equity | **$485.34** |
+| Return | **-2.93%** (start $500.00) |
+| Cash | $431.73 |
+| Deployed | $53.61 (11.0%) |
+| Open positions | 4 / 8 |
 | Closed trades | 21 (8W / 13L, WR 38%) |
 | Profit factor | 0.73 |
-| Fees + slippage paid | $21.95 |
-| Ticks run | 130 |
+| Fees + slippage paid | $22.04 |
+| Ticks run | 131 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| 蝴蝶家园 | bsc | $14.96 | $17.10 | +18% | +27% | 20.5h |
-| GAYMF | solana | $10.06 | $9.97 | +0% | +0% | 0.0h |
-| familiars | solana | $10.06 | $9.97 | +0% | +0% | 0.0h |
+| 蝴蝶家园 | bsc | $14.96 | $15.64 | +8% | +27% | 20.9h |
+| GAYMF | solana | $10.06 | $7.73 | -22% | +0% | 0.4h |
+| familiars | solana | $10.06 | $20.05 | +101% | +101% | 0.4h |
+| UPTOBER | solana | $10.19 | $10.10 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
@@ -66,14 +67,13 @@ _prior_
 
 ## Last run log
 ```
-tick #130  equity $473.95  cash $462.04  open 1
+tick #131  equity $479.14  cash $441.92  open 3
   scanning chains + news...
-  103 raw candidates across 6 chains, 158 headlines/posts
-  5 passed gates | rejected: liquidity too thin x51, no h1 volume x40, too new (bot war) x4, sell pressure x1, already discovered x1
-  top: UPTOBER 0.73 | JEANCOIN 0.69 | BLUF 0.57 | familiars 0.50 | GAYMF 0.47
-  BUY[explore] GAYMF      $10.06 @ $0.0005691  score 0.47  solana  liq $71,595
-  BUY[explore] familiars  $10.06 @ $0.0006449  score 0.50  solana  liq $75,306
-  shadow: tracking 30, closed 49 this tick (22 would have won)
+  87 raw candidates across 7 chains, 158 headlines/posts
+  3 passed gates | rejected: liquidity too thin x43, no h1 volume x37, sell pressure x2, too new (bot war) x2
+  top: UPTOBER 0.71 | JEANCOIN 0.60 | parafactual 0.45
+  BUY[explore] UPTOBER    $10.19 @ $0.0001778  score 0.71  solana  liq $37,786
+  shadow: tracking 30, closed 2 this tick (1 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
     MISSED JEANPHIL   peak +284%  (scored 0.63)
