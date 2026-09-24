@@ -1,30 +1,30 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-24T10:04:13+00:00`
+Updated `2026-09-24T10:24:24+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$531.61** |
-| Return | **+6.32%** (start $500.00) |
+| Equity | **$527.41** |
+| Return | **+5.48%** (start $500.00) |
 | Cash | $433.18 |
-| Deployed | $98.43 (18.5%) |
+| Deployed | $94.23 (17.9%) |
 | Open positions | 4 / 8 |
 | Closed trades | 30 (11W / 19L, WR 37%) |
 | Profit factor | 0.85 |
 | Fees + slippage paid | $24.12 |
-| Ticks run | 168 |
+| Ticks run | 169 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| 蝴蝶家园 | bsc | $14.96 | $20.21 | +39% | +57% | 30.4h |
-| 币安协议 | bsc | $15.04 | $13.87 | -7% | +36% | 7.7h |
-| JEANCOIN | solana | $10.32 | $53.18 | +420% | +420% | 6.7h |
-| CATALYST | base | $10.26 | $11.17 | +10% | +10% | 6.4h |
+| 蝴蝶家园 | bsc | $14.96 | $19.14 | +32% | +57% | 30.8h |
+| 币安协议 | bsc | $15.04 | $13.85 | -7% | +36% | 8.0h |
+| JEANCOIN | solana | $10.32 | $50.64 | +395% | +420% | 7.0h |
+| CATALYST | base | $10.26 | $10.60 | +4% | +10% | 6.8h |
 
 ## Last closed trades
 
@@ -67,6 +67,6 @@ _prior_
 
 ## Last run log
 ```
-tick #168  equity $531.19  cash $433.18  open 4
+tick #169  equity $531.61  cash $433.18  open 4
   entries blocked: daily trade cap reached
 ```
