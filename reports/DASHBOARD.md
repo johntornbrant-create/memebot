@@ -1,32 +1,32 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-24T05:03:45+00:00`
+Updated `2026-09-24T05:22:56+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$503.15** |
-| Return | **+0.63%** (start $500.00) |
+| Equity | **$496.79** |
+| Return | **-0.64%** (start $500.00) |
 | Cash | $412.86 |
-| Deployed | $90.29 (17.9%) |
+| Deployed | $83.92 (16.9%) |
 | Open positions | 6 / 8 |
 | Closed trades | 28 (11W / 17L, WR 39%) |
 | Profit factor | 0.89 |
 | Fees + slippage paid | $23.91 |
-| Ticks run | 149 |
+| Ticks run | 150 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| 蝴蝶家园 | bsc | $14.96 | $20.07 | +38% | +45% | 25.4h |
-| 币安协议 | bsc | $15.04 | $14.43 | -3% | +0% | 2.6h |
-| 币安女王 | bsc | $15.09 | $20.64 | +38% | +67% | 2.4h |
-| JEANCOIN | solana | $10.32 | $17.43 | +70% | +70% | 1.6h |
-| CATALYST | base | $10.26 | $8.62 | -15% | +0% | 1.4h |
-| PURRP | solana | $10.26 | $9.09 | -11% | +18% | 1.4h |
+| 蝴蝶家园 | bsc | $14.96 | $19.61 | +35% | +45% | 25.7h |
+| 币安协议 | bsc | $15.04 | $14.73 | -1% | +0% | 3.0h |
+| 币安女王 | bsc | $15.09 | $15.12 | +1% | +67% | 2.7h |
+| JEANCOIN | solana | $10.32 | $18.69 | +83% | +83% | 2.0h |
+| CATALYST | base | $10.26 | $8.51 | -16% | +0% | 1.7h |
+| PURRP | solana | $10.26 | $7.26 | -29% | +18% | 1.7h |
 
 ## Last closed trades
 
@@ -69,6 +69,6 @@ _prior_
 
 ## Last run log
 ```
-tick #149  equity $502.72  cash $412.86  open 6
+tick #150  equity $503.15  cash $412.86  open 6
   entries blocked: daily trade cap reached
 ```
