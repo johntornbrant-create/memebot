@@ -1,36 +1,38 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-24T03:25:02+00:00`
+Updated `2026-09-24T03:38:57+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$491.32** |
-| Return | **-1.74%** (start $500.00) |
-| Cash | $419.55 |
-| Deployed | $71.77 (14.6%) |
-| Open positions | 5 / 8 |
-| Closed trades | 27 (10W / 17L, WR 37%) |
-| Profit factor | 0.86 |
-| Fees + slippage paid | $23.59 |
-| Ticks run | 142 |
+| Equity | **$488.76** |
+| Return | **-2.25%** (start $500.00) |
+| Cash | $412.86 |
+| Deployed | $75.90 (15.5%) |
+| Open positions | 6 / 8 |
+| Closed trades | 28 (11W / 17L, WR 39%) |
+| Profit factor | 0.89 |
+| Fees + slippage paid | $23.91 |
+| Ticks run | 143 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| 蝴蝶家园 | bsc | $14.96 | $20.06 | +38% | +45% | 23.8h |
-| PURRP | solana | $10.28 | $14.95 | +47% | +101% | 2.0h |
-| 币安协议 | bsc | $15.04 | $12.05 | -19% | +0% | 1.0h |
-| 币安女王 | bsc | $15.09 | $14.39 | -4% | +0% | 0.8h |
-| JEANCOIN | solana | $10.32 | $10.22 | +0% | +0% | 0.0h |
+| 蝴蝶家园 | bsc | $14.96 | $20.58 | +42% | +45% | 24.0h |
+| 币安协议 | bsc | $15.04 | $12.05 | -19% | +0% | 1.2h |
+| 币安女王 | bsc | $15.09 | $12.30 | -18% | +0% | 1.0h |
+| JEANCOIN | solana | $10.32 | $10.44 | +2% | +2% | 0.2h |
+| CATALYST | base | $10.26 | $10.16 | +0% | +0% | 0.0h |
+| PURRP | solana | $10.26 | $10.17 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| PURRP | $+3.56 | +35% | 2.2h | ratchet +41% (peak +101%) |
 | UPTOBER | $-4.23 | -42% | 2.9h | stop loss -40% |
 | CZBUILDER | $-4.25 | -40% | 0.8h | ratchet +25% (peak +98%) |
 | BLUF | $-4.62 | -44% | 1.5h | stop loss -42% |
@@ -45,7 +47,6 @@ Updated `2026-09-24T03:25:02+00:00`
 | 币安的守护者 | $-4.02 | -52% | 1.5h | stop loss -44% |
 | based | $-6.45 | -42% | 1.2h | stop loss -37% |
 | DURIAN | $-5.02 | -64% | 0.5h | stop loss -57% |
-| LeoGuigna | $+19.66 | +263% | 2.0h | trailing stop from +724% |
 
 ## Learned weights (v0)
 
@@ -68,14 +69,15 @@ _prior_
 
 ## Last run log
 ```
-tick #142  equity $498.13  cash $423.92  open 5
-  SELL UPTOBER    100% @ $0.000106  ->  $5.96   [stop loss -40%]
+tick #143  equity $491.32  cash $419.55  open 5
+  SELL PURRP      100% @ $0.0004775  ->  $13.83   [ratchet +41% (peak +101%)]
   scanning chains + news...
-  122 raw candidates across 6 chains, 158 headlines/posts
-  6 passed gates | rejected: liquidity too thin x55, no h1 volume x38, too old x11, already discovered x9, sell pressure x2
-  top: BLUF 0.65 | JEANCOIN 0.64 | PURRP 0.55 | ACTSMUSE 0.52 | NPC 0.49
-  BUY[explore] JEANCOIN   $10.32 @ $0.0004872  score 0.64  solana  liq $64,036
-  shadow: tracking 38, closed 0 this tick (0 would have won)
+  138 raw candidates across 6 chains, 158 headlines/posts
+  5 passed gates | rejected: liquidity too thin x79, no h1 volume x38, too old x7, already discovered x6, too new (bot war) x2
+  top: PURRP 0.57 | BLUF 0.53 | JEANCOIN 0.53 | NPC 0.51 | CATALYST 0.36
+  BUY[explore] CATALYST   $10.26 @ $1.85  score 0.36  base  liq $1,153,658
+  BUY[explore] PURRP      $10.26 @ $0.0004775  score 0.57  solana  liq $63,371
+  shadow: tracking 34, closed 4 this tick (2 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
     MISSED JEANPHIL   peak +284%  (scored 0.63)
