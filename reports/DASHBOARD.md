@@ -1,36 +1,36 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-24T05:36:21+00:00`
+Updated `2026-09-24T05:49:49+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$495.70** |
-| Return | **-0.86%** (start $500.00) |
-| Cash | $427.37 |
-| Deployed | $68.33 (13.8%) |
-| Open positions | 5 / 8 |
-| Closed trades | 29 (11W / 18L, WR 38%) |
-| Profit factor | 0.89 |
-| Fees + slippage paid | $24.06 |
-| Ticks run | 151 |
+| Equity | **$494.13** |
+| Return | **-1.17%** (start $500.00) |
+| Cash | $433.18 |
+| Deployed | $60.95 (12.3%) |
+| Open positions | 4 / 8 |
+| Closed trades | 30 (11W / 19L, WR 37%) |
+| Profit factor | 0.85 |
+| Fees + slippage paid | $24.12 |
+| Ticks run | 152 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| 蝴蝶家园 | bsc | $14.96 | $19.44 | +34% | +45% | 26.0h |
-| 币安协议 | bsc | $15.04 | $15.48 | +4% | +4% | 3.2h |
-| JEANCOIN | solana | $10.32 | $17.98 | +76% | +83% | 2.2h |
-| CATALYST | base | $10.26 | $8.51 | -16% | +0% | 2.0h |
-| PURRP | solana | $10.26 | $6.91 | -32% | +18% | 2.0h |
+| 蝴蝶家园 | bsc | $14.96 | $18.84 | +30% | +45% | 26.2h |
+| 币安协议 | bsc | $15.04 | $15.42 | +4% | +4% | 3.4h |
+| JEANCOIN | solana | $10.32 | $17.95 | +76% | +83% | 2.4h |
+| CATALYST | base | $10.26 | $8.73 | -14% | +0% | 2.2h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| PURRP | $-4.46 | -43% | 2.2h | stop loss -42% |
 | 币安女王 | $-0.58 | -4% | 3.0h | ratchet +0% (peak +67%) |
 | PURRP | $+3.56 | +35% | 2.2h | ratchet +41% (peak +101%) |
 | UPTOBER | $-4.23 | -42% | 2.9h | stop loss -40% |
@@ -45,7 +45,6 @@ Updated `2026-09-24T05:36:21+00:00`
 | MOUSE | $-7.41 | -100% | 0.2h | stop loss -96% |
 | LeoGuigna | $-15.38 | -100% | 0.8h | stop loss -99% |
 | 币安的守护者 | $-4.02 | -52% | 1.5h | stop loss -44% |
-| based | $-6.45 | -42% | 1.2h | stop loss -37% |
 
 ## Learned weights (v0)
 
@@ -68,7 +67,7 @@ _prior_
 
 ## Last run log
 ```
-tick #151  equity $496.79  cash $412.86  open 6
-  SELL 币安女王       100% @ $0.002636  ->  $14.51   [ratchet +0% (peak +67%)]
+tick #152  equity $495.70  cash $427.37  open 5
+  SELL PURRP      100% @ $0.0002756  ->  $5.81   [stop loss -42%]
   entries blocked: daily trade cap reached
 ```
