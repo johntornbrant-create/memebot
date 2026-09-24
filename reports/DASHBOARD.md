@@ -1,27 +1,29 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-23T23:47:41+00:00`
+Updated `2026-09-24T00:06:45+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$473.95** |
-| Return | **-5.21%** (start $500.00) |
-| Cash | $462.04 |
-| Deployed | $11.91 (2.5%) |
-| Open positions | 1 / 8 |
+| Equity | **$479.14** |
+| Return | **-4.17%** (start $500.00) |
+| Cash | $441.92 |
+| Deployed | $37.22 (7.8%) |
+| Open positions | 3 / 8 |
 | Closed trades | 21 (8W / 13L, WR 38%) |
 | Profit factor | 0.73 |
-| Fees + slippage paid | $21.77 |
-| Ticks run | 129 |
+| Fees + slippage paid | $21.95 |
+| Ticks run | 130 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| 蝴蝶家园 | bsc | $14.96 | $11.91 | -18% | +27% | 20.1h |
+| 蝴蝶家园 | bsc | $14.96 | $17.10 | +18% | +27% | 20.5h |
+| GAYMF | solana | $10.06 | $9.97 | +0% | +0% | 0.0h |
+| familiars | solana | $10.06 | $9.97 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
@@ -64,6 +66,15 @@ _prior_
 
 ## Last run log
 ```
-tick #129  equity $474.32  cash $462.04  open 1
-  entries blocked: daily trade cap reached
+tick #130  equity $473.95  cash $462.04  open 1
+  scanning chains + news...
+  103 raw candidates across 6 chains, 158 headlines/posts
+  5 passed gates | rejected: liquidity too thin x51, no h1 volume x40, too new (bot war) x4, sell pressure x1, already discovered x1
+  top: UPTOBER 0.73 | JEANCOIN 0.69 | BLUF 0.57 | familiars 0.50 | GAYMF 0.47
+  BUY[explore] GAYMF      $10.06 @ $0.0005691  score 0.47  solana  liq $71,595
+  BUY[explore] familiars  $10.06 @ $0.0006449  score 0.50  solana  liq $75,306
+  shadow: tracking 30, closed 49 this tick (22 would have won)
+    MISSED GENIUS     peak +1642%  (scored 0.61)
+    MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
+    MISSED JEANPHIL   peak +284%  (scored 0.63)
 ```
