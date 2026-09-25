@@ -1,27 +1,27 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T17:24:41+00:00`
+Updated `2026-09-25T18:26:53+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$430.94** |
-| Return | **-13.81%** (start $500.00) |
+| Equity | **$426.91** |
+| Return | **-14.62%** (start $500.00) |
 | Cash | $410.29 |
-| Deployed | $20.65 (4.8%) |
+| Deployed | $16.62 (3.9%) |
 | Open positions | 1 / 8 |
 | Closed trades | 45 (13W / 32L, WR 29%) |
 | Profit factor | 0.60 |
 | Fees + slippage paid | $27.16 |
-| Ticks run | 303 |
+| Ticks run | 307 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| ARENA | solana | $17.10 | $20.65 | +62% | +62% | 17.3h |
+| ARENA | solana | $17.10 | $16.62 | +31% | +62% | 18.3h |
 
 ## Last closed trades
 
@@ -43,36 +43,36 @@ Updated `2026-09-25T17:24:41+00:00`
 | 蝴蝶家园 | $-8.54 | -57% | 34.2h | ratchet +0% (peak +57%) |
 | 币安协议 | $-5.79 | -38% | 11.0h | stop loss -37% |
 
-## Learned weights (v2)
+## Learned weights (v3)
 
-_refit on 140 observations (96 shadow, 44 real), 51 winners (36% base rate)_
+_refit on 141 observations (96 shadow, 45 real), 51 winners (36% base rate)_
 
 | Feature | Weight |
 |---|---|
-| buy_pressure | +0.129 |
+| buy_pressure | +0.130 |
 | dip_in_uptrend | +0.092 |
 | momentum_accel | +0.083 |
-| fdv_sanity | +0.056 |
+| fdv_sanity | +0.055 |
 | turnover | +0.054 |
-| not_vertical | -0.040 |
-| buzz | +0.019 |
-| age_sweet | +0.014 |
-| paid_boost | +0.005 |
+| not_vertical | -0.039 |
+| buzz | +0.021 |
+| age_sweet | +0.012 |
+| paid_boost | +0.004 |
 | socials | -0.001 |
-| liq_quality | +0.001 |
-| txn_depth | +0.000 |
+| txn_depth | +0.001 |
+| liq_quality | +0.000 |
 
 ## Last run log
 ```
-tick #303  equity $430.03  cash $410.29  open 1
+tick #307  equity $426.79  cash $410.29  open 1
   scanning chains + news...
-  106 raw candidates across 6 chains, 154 headlines/posts
-  9 passed gates | rejected: liquidity too thin x56, no h1 volume x25, too old x8, too new (bot war) x5, unknown age x1
-  top: KEK 0.92 | JEANWORK 0.90 | ARENA 0.85 | DOGRILLA 0.84 | DOCK 0.82
+  128 raw candidates across 6 chains, 154 headlines/posts
+  14 passed gates | rejected: liquidity too thin x56, no h1 volume x38, too old x14, already discovered x5, unknown age x1
+  top: PUMPCAT 0.82 | OnlyPump 0.82 | OnlyJeans 0.80 | DOGRILLA 0.79 | GROKBOOK 0.75
   no entries this tick
-  shadow: tracking 61, closed 0 this tick (0 would have won)
+  shadow: tracking 67, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED NPC        peak +1110%  (scored 0.49)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
-  entries blocked: daily loss -23.8% <= -6%; daily trade cap reached
+  entries blocked: daily loss -24.5% <= -6%; daily trade cap reached
 ```
