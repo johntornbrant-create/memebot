@@ -1,31 +1,31 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T01:50:08+00:00`
+Updated `2026-09-25T02:05:14+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$551.06** |
-| Return | **+10.21%** (start $500.00) |
+| Equity | **$547.79** |
+| Return | **+9.56%** (start $500.00) |
 | Cash | $379.17 |
-| Deployed | $171.89 (31.2%) |
+| Deployed | $168.62 (30.8%) |
 | Open positions | 5 / 8 |
 | Closed trades | 34 (11W / 23L, WR 32%) |
 | Profit factor | 0.63 |
 | Fees + slippage paid | $25.08 |
-| Ticks run | 229 |
+| Ticks run | 230 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| JEANCOIN | solana | $10.32 | $112.15 | +997% | +1041% | 22.4h |
-| CATALYST | base | $10.26 | $9.45 | -7% | +10% | 22.2h |
-| ARENA | solana | $17.10 | $16.00 | -6% | +0% | 1.7h |
-| BRAIN | solana | $11.53 | $17.91 | +57% | +57% | 0.4h |
-| COD | bsc | $16.42 | $16.38 | +1% | +1% | 0.2h |
+| JEANCOIN | solana | $10.32 | $114.54 | +1020% | +1041% | 22.7h |
+| CATALYST | base | $10.26 | $9.45 | -7% | +10% | 22.4h |
+| ARENA | solana | $17.10 | $16.10 | -5% | +0% | 2.0h |
+| BRAIN | solana | $11.53 | $16.38 | +43% | +57% | 0.7h |
+| COD | bsc | $16.42 | $12.14 | -25% | +1% | 0.5h |
 
 ## Last closed trades
 
@@ -68,13 +68,13 @@ _prior_
 
 ## Last run log
 ```
-tick #229  equity $547.48  cash $379.17  open 5
+tick #230  equity $551.06  cash $379.17  open 5
   scanning chains + news...
-  122 raw candidates across 6 chains, 154 headlines/posts
-  9 passed gates | rejected: liquidity too thin x72, no h1 volume x22, too old x13, already discovered x5, unknown age x1
-  top: ARENA 0.69 | COD 0.68 | OG 0.64 | REVS 0.63 | COLLECT 0.56
+  125 raw candidates across 5 chains, 154 headlines/posts
+  9 passed gates | rejected: liquidity too thin x55, no h1 volume x27, too old x21, already discovered x7, too new (bot war) x6
+  top: ARENA 0.75 | OG 0.71 | COD 0.69 | GOCAT 0.67 | REVS 0.67
   no entries this tick
-  shadow: tracking 23, closed 0 this tick (0 would have won)
+  shadow: tracking 24, closed 1 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
     MISSED GETF       peak +606%  (scored 0.66)
