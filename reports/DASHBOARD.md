@@ -1,27 +1,27 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T23:05:09+00:00`
+Updated `2026-09-25T23:22:47+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$436.58** |
-| Return | **-12.68%** (start $500.00) |
+| Equity | **$434.54** |
+| Return | **-13.09%** (start $500.00) |
 | Cash | $410.29 |
-| Deployed | $26.29 (6.0%) |
+| Deployed | $24.25 (5.6%) |
 | Open positions | 1 / 8 |
 | Closed trades | 45 (13W / 32L, WR 29%) |
 | Profit factor | 0.60 |
 | Fees + slippage paid | $27.16 |
-| Ticks run | 344 |
+| Ticks run | 346 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| ARENA | solana | $17.10 | $26.29 | +107% | +107% | 23.0h |
+| ARENA | solana | $17.10 | $24.25 | +91% | +123% | 23.3h |
 
 ## Last closed trades
 
@@ -64,15 +64,15 @@ _refit on 141 observations (96 shadow, 45 real), 51 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #344  equity $433.85  cash $410.29  open 1
+tick #346  equity $438.67  cash $410.29  open 1
   scanning chains + news...
-  125 raw candidates across 6 chains, 154 headlines/posts
-  12 passed gates | rejected: liquidity too thin x48, no h1 volume x42, too old x11, already discovered x9, sell pressure x3
-  top: SJP 0.83 | Arena 0.76 | ARENA 0.70 | NPC 0.50 | SWARM 0.45
+  178 raw candidates across 8 chains, 154 headlines/posts
+  16 passed gates | rejected: liquidity too thin x87, no h1 volume x47, too old x13, already discovered x12, sell pressure x2
+  top: SJP 0.86 | POI 0.85 | UBI 0.78 | ARENA 0.77 | Arena 0.73
   no entries this tick
-  shadow: tracking 88, closed 0 this tick (0 would have won)
+  shadow: tracking 92, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED NPC        peak +1110%  (scored 0.49)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
-  entries blocked: daily loss -22.8% <= -6%; daily trade cap reached
+  entries blocked: daily loss -23.2% <= -6%; daily trade cap reached
 ```
