@@ -1,30 +1,30 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T06:06:27+00:00`
+Updated `2026-09-25T06:30:42+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$562.35** |
-| Return | **+12.47%** (start $500.00) |
+| Equity | **$560.37** |
+| Return | **+12.07%** (start $500.00) |
 | Cash | $395.85 |
-| Deployed | $166.49 (29.6%) |
+| Deployed | $164.51 (29.4%) |
 | Open positions | 4 / 8 |
 | Closed trades | 40 (13W / 27L, WR 32%) |
 | Profit factor | 0.71 |
 | Fees + slippage paid | $26.47 |
-| Ticks run | 246 |
+| Ticks run | 247 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| JEANCOIN | solana | $10.32 | $113.80 | +1013% | +1041% | 26.7h |
-| ARENA | solana | $17.10 | $17.95 | +6% | +6% | 6.0h |
-| MDP | bsc | $11.41 | $15.15 | +34% | +35% | 3.7h |
-| Shurikane | solana | $16.84 | $19.59 | +17% | +17% | 0.5h |
+| JEANCOIN | solana | $10.32 | $112.52 | +1001% | +1041% | 27.1h |
+| ARENA | solana | $17.10 | $18.22 | +7% | +7% | 6.4h |
+| MDP | bsc | $11.41 | $14.66 | +30% | +35% | 4.1h |
+| Shurikane | solana | $16.84 | $19.11 | +14% | +17% | 0.9h |
 
 ## Last closed trades
 
@@ -67,13 +67,13 @@ _prior_
 
 ## Last run log
 ```
-tick #246  equity $563.10  cash $395.85  open 4
+tick #247  equity $562.35  cash $395.85  open 4
   scanning chains + news...
-  69 raw candidates across 6 chains, 154 headlines/posts
-  7 passed gates | rejected: liquidity too thin x36, no h1 volume x22, too old x3, already discovered x1
-  top: Shurikane 0.78 | IMU 0.77 | ARENA 0.70 | BRAIN 0.67 | SNDK 0.54
+  111 raw candidates across 7 chains, 154 headlines/posts
+  13 passed gates | rejected: liquidity too thin x49, no h1 volume x38, too old x5, already discovered x5, sell pressure x1
+  top: Shurikane 0.78 | TTP 0.75 | SI 0.72 | 币安月饼 0.67 | BRAIN 0.64
   no entries this tick
-  shadow: tracking 34, closed 0 this tick (0 would have won)
+  shadow: tracking 37, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED NPC        peak +1110%  (scored 0.49)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
