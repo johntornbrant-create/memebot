@@ -1,27 +1,27 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T16:41:05+00:00`
+Updated `2026-09-25T17:24:41+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$426.94** |
-| Return | **-14.61%** (start $500.00) |
-| Cash | $403.78 |
-| Deployed | $23.16 (5.4%) |
+| Equity | **$430.94** |
+| Return | **-13.81%** (start $500.00) |
+| Cash | $410.29 |
+| Deployed | $20.65 (4.8%) |
 | Open positions | 1 / 8 |
 | Closed trades | 45 (13W / 32L, WR 29%) |
 | Profit factor | 0.60 |
-| Fees + slippage paid | $27.10 |
-| Ticks run | 299 |
+| Fees + slippage paid | $27.16 |
+| Ticks run | 303 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| ARENA | solana | $17.10 | $23.16 | +37% | +37% | 16.6h |
+| ARENA | solana | $17.10 | $20.65 | +62% | +62% | 17.3h |
 
 ## Last closed trades
 
@@ -64,15 +64,15 @@ _refit on 140 observations (96 shadow, 44 real), 51 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #299  equity $426.93  cash $403.78  open 1
+tick #303  equity $430.03  cash $410.29  open 1
   scanning chains + news...
-  106 raw candidates across 7 chains, 154 headlines/posts
-  7 passed gates | rejected: liquidity too thin x39, no h1 volume x36, too old x13, already discovered x5, unknown age x3
-  top: DEBASE 0.84 | PUMPGO 0.83 | ARENA 0.82 | SI 0.66 | SWARM 0.47
+  106 raw candidates across 6 chains, 154 headlines/posts
+  9 passed gates | rejected: liquidity too thin x56, no h1 volume x25, too old x8, too new (bot war) x5, unknown age x1
+  top: KEK 0.92 | JEANWORK 0.90 | ARENA 0.85 | DOGRILLA 0.84 | DOCK 0.82
   no entries this tick
-  shadow: tracking 56, closed 0 this tick (0 would have won)
+  shadow: tracking 61, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED NPC        peak +1110%  (scored 0.49)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
-  entries blocked: daily loss -24.5% <= -6%; daily trade cap reached
+  entries blocked: daily loss -23.8% <= -6%; daily trade cap reached
 ```
