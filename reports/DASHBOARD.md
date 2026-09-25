@@ -1,27 +1,27 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T20:38:25+00:00`
+Updated `2026-09-25T20:52:11+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$432.54** |
-| Return | **-13.49%** (start $500.00) |
+| Equity | **$433.02** |
+| Return | **-13.40%** (start $500.00) |
 | Cash | $410.29 |
-| Deployed | $22.24 (5.1%) |
+| Deployed | $22.73 (5.2%) |
 | Open positions | 1 / 8 |
 | Closed trades | 45 (13W / 32L, WR 29%) |
 | Profit factor | 0.60 |
 | Fees + slippage paid | $27.16 |
-| Ticks run | 324 |
+| Ticks run | 326 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| ARENA | solana | $17.10 | $22.24 | +75% | +98% | 20.5h |
+| ARENA | solana | $17.10 | $22.73 | +79% | +98% | 20.8h |
 
 ## Last closed trades
 
@@ -64,15 +64,15 @@ _refit on 141 observations (96 shadow, 45 real), 51 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #324  equity $432.55  cash $410.29  open 1
+tick #326  equity $433.02  cash $410.29  open 1
   scanning chains + news...
-  117 raw candidates across 6 chains, 160 headlines/posts
-  8 passed gates | rejected: liquidity too thin x81, no h1 volume x20, too old x3, already discovered x2, sell pressure x1
-  top: GME 0.79 | Apu 0.76 | SWARM 0.51 | ARENA 0.44 | JEANWORK 0.37
+  115 raw candidates across 8 chains, 154 headlines/posts
+  10 passed gates | rejected: liquidity too thin x47, no h1 volume x38, too old x12, already discovered x5, sell pressure x2
+  top: GOCAT 0.90 | $PLAY 0.88 | merci 0.60 | SWARM 0.51 | ARENA 0.42
   no entries this tick
-  shadow: tracking 73, closed 0 this tick (0 would have won)
+  shadow: tracking 76, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED NPC        peak +1110%  (scored 0.49)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
-  entries blocked: daily loss -23.6% <= -6%; daily trade cap reached
+  entries blocked: daily loss -23.5% <= -6%; daily trade cap reached
 ```
