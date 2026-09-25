@@ -1,33 +1,33 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T16:27:00+00:00`
+Updated `2026-09-25T16:41:05+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$425.33** |
-| Return | **-14.93%** (start $500.00) |
-| Cash | $397.34 |
-| Deployed | $27.99 (6.6%) |
-| Open positions | 2 / 8 |
-| Closed trades | 44 (13W / 31L, WR 30%) |
-| Profit factor | 0.62 |
-| Fees + slippage paid | $27.03 |
-| Ticks run | 297 |
+| Equity | **$426.94** |
+| Return | **-14.61%** (start $500.00) |
+| Cash | $403.78 |
+| Deployed | $23.16 (5.4%) |
+| Open positions | 1 / 8 |
+| Closed trades | 45 (13W / 32L, WR 29%) |
+| Profit factor | 0.60 |
+| Fees + slippage paid | $27.10 |
+| Ticks run | 299 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| ARENA | solana | $17.10 | $19.78 | +17% | +28% | 16.3h |
-| BRAIN | solana | $11.85 | $8.21 | -30% | +30% | 9.0h |
+| ARENA | solana | $17.10 | $23.16 | +37% | +37% | 16.6h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| BRAIN | $-5.41 | -46% | 9.2h | stop loss -45% |
 | MDP | $-4.70 | -41% | 10.7h | stop loss -40% |
 | JEANCOIN | $-8.71 | -84% | 30.2h | ratchet +767% (peak +1139%) |
 | 币安月饼 | $-4.90 | -42% | 2.6h | stop loss -40% |
@@ -42,7 +42,6 @@ Updated `2026-09-25T16:27:00+00:00`
 | S&P500 | $-8.02 | -67% | 0.9h | stop loss -66% |
 | 蝴蝶家园 | $-8.54 | -57% | 34.2h | ratchet +0% (peak +57%) |
 | 币安协议 | $-5.79 | -38% | 11.0h | stop loss -37% |
-| PURRP | $-4.46 | -43% | 2.2h | stop loss -42% |
 
 ## Learned weights (v2)
 
@@ -65,15 +64,15 @@ _refit on 140 observations (96 shadow, 44 real), 51 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #297  equity $424.11  cash $397.34  open 2
+tick #299  equity $426.93  cash $403.78  open 1
   scanning chains + news...
-  97 raw candidates across 8 chains, 154 headlines/posts
-  4 passed gates | rejected: liquidity too thin x50, no h1 volume x34, too old x5, unknown age x2, too new (bot war) x1
-  top: ARENA 0.65 | BACKPACA 0.58 | SWARM 0.27 | BRAIN 0.15
+  106 raw candidates across 7 chains, 154 headlines/posts
+  7 passed gates | rejected: liquidity too thin x39, no h1 volume x36, too old x13, already discovered x5, unknown age x3
+  top: DEBASE 0.84 | PUMPGO 0.83 | ARENA 0.82 | SI 0.66 | SWARM 0.47
   no entries this tick
-  shadow: tracking 53, closed 0 this tick (0 would have won)
+  shadow: tracking 56, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED NPC        peak +1110%  (scored 0.49)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
-  entries blocked: daily loss -24.8% <= -6%; daily trade cap reached
+  entries blocked: daily loss -24.5% <= -6%; daily trade cap reached
 ```
