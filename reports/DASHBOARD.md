@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T21:51:41+00:00`
+Updated `2026-09-25T22:05:35+00:00`
 
 ## Equity
 
@@ -15,13 +15,13 @@ Updated `2026-09-25T21:51:41+00:00`
 | Closed trades | 45 (13W / 32L, WR 29%) |
 | Profit factor | 0.60 |
 | Fees + slippage paid | $27.16 |
-| Ticks run | 334 |
+| Ticks run | 336 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| ARENA | solana | $17.10 | $21.30 | +68% | +98% | 21.7h |
+| ARENA | solana | $17.10 | $21.30 | +67% | +98% | 22.0h |
 
 ## Last closed trades
 
@@ -64,13 +64,13 @@ _refit on 141 observations (96 shadow, 45 real), 51 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #334  equity $431.68  cash $410.29  open 1
+tick #336  equity $431.61  cash $410.29  open 1
   scanning chains + news...
-  66 raw candidates across 6 chains, 154 headlines/posts
-  9 passed gates | rejected: liquidity too thin x30, no h1 volume x21, too new (bot war) x2, sell pressure x2, too old x2
-  top: TRUMP 0.86 | e/acc 0.59 | ARENA 0.40 | BLUEPRINT 0.37 | JEANWORK 0.26
+  179 raw candidates across 8 chains, 154 headlines/posts
+  12 passed gates | rejected: liquidity too thin x89, no h1 volume x40, too old x20, already discovered x10, too new (bot war) x6
+  top: EON 0.82 | JEANTRUMP 0.79 | e/acc 0.59 | JEAN 0.46 | TRUMP 0.41
   no entries this tick
-  shadow: tracking 80, closed 0 this tick (0 would have won)
+  shadow: tracking 83, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED NPC        peak +1110%  (scored 0.49)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
