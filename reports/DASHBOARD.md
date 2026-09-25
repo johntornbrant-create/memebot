@@ -1,30 +1,31 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T01:23:49+00:00`
+Updated `2026-09-25T01:35:55+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$548.94** |
-| Return | **+9.79%** (start $500.00) |
-| Cash | $395.59 |
-| Deployed | $153.35 (27.9%) |
-| Open positions | 4 / 8 |
+| Equity | **$547.48** |
+| Return | **+9.50%** (start $500.00) |
+| Cash | $379.17 |
+| Deployed | $168.31 (30.7%) |
+| Open positions | 5 / 8 |
 | Closed trades | 34 (11W / 23L, WR 32%) |
 | Profit factor | 0.63 |
-| Fees + slippage paid | $24.91 |
-| Ticks run | 227 |
+| Fees + slippage paid | $25.08 |
+| Ticks run | 228 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| JEANCOIN | solana | $10.32 | $116.64 | +1041% | +1041% | 22.0h |
-| CATALYST | base | $10.26 | $9.45 | -7% | +10% | 21.7h |
-| ARENA | solana | $17.10 | $15.74 | -7% | +0% | 1.3h |
-| BRAIN | solana | $11.53 | $11.42 | +0% | +0% | 0.0h |
+| JEANCOIN | solana | $10.32 | $113.38 | +1009% | +1041% | 22.2h |
+| CATALYST | base | $10.26 | $9.45 | -7% | +10% | 22.0h |
+| ARENA | solana | $17.10 | $15.62 | -8% | +0% | 1.5h |
+| BRAIN | solana | $11.53 | $13.43 | +18% | +18% | 0.2h |
+| COD | bsc | $16.42 | $16.25 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
@@ -67,13 +68,12 @@ _prior_
 
 ## Last run log
 ```
-tick #227  equity $561.79  cash $406.87  open 4
-  SELL TUGGIN     100% @ $2.393e-06  ->  $0.25   [stop loss -98%]
+tick #228  equity $548.94  cash $395.59  open 4
   scanning chains + news...
-  86 raw candidates across 7 chains, 154 headlines/posts
-  9 passed gates | rejected: liquidity too thin x55, no h1 volume x20, too new (bot war) x1, too old x1
-  top: OG 0.64 | ARENA 0.64 | STREET 0.63 | COD 0.63 | REVS 0.58
-  BUY[explore] BRAIN      $11.53 @ $0.000211  score 0.49  solana  liq $43,649
+  83 raw candidates across 5 chains, 154 headlines/posts
+  9 passed gates | rejected: liquidity too thin x35, no h1 volume x21, too old x13, already discovered x4, too new (bot war) x1
+  top: COD 0.69 | ARENA 0.64 | STREET 0.63 | REVS 0.61 | OG 0.58
+  BUY[exploit] COD        $16.42 @ $0.001404  score 0.69  bsc  liq $114,686
   shadow: tracking 22, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
