@@ -1,28 +1,28 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T16:06:10+00:00`
+Updated `2026-09-25T16:27:00+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$425.07** |
-| Return | **-14.99%** (start $500.00) |
+| Equity | **$425.33** |
+| Return | **-14.93%** (start $500.00) |
 | Cash | $397.34 |
-| Deployed | $27.73 (6.5%) |
+| Deployed | $27.99 (6.6%) |
 | Open positions | 2 / 8 |
 | Closed trades | 44 (13W / 31L, WR 30%) |
 | Profit factor | 0.62 |
 | Fees + slippage paid | $27.03 |
-| Ticks run | 295 |
+| Ticks run | 297 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| ARENA | solana | $17.10 | $18.29 | +8% | +28% | 16.0h |
-| BRAIN | solana | $11.85 | $9.45 | -20% | +30% | 8.7h |
+| ARENA | solana | $17.10 | $19.78 | +17% | +28% | 16.3h |
+| BRAIN | solana | $11.85 | $8.21 | -30% | +30% | 9.0h |
 
 ## Last closed trades
 
@@ -65,15 +65,15 @@ _refit on 140 observations (96 shadow, 44 real), 51 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #295  equity $424.50  cash $397.34  open 2
+tick #297  equity $424.11  cash $397.34  open 2
   scanning chains + news...
-  168 raw candidates across 9 chains, 154 headlines/posts
-  6 passed gates | rejected: liquidity too thin x80, no h1 volume x54, too old x19, already discovered x6, unknown age x3
-  top: Moon 0.89 | HEDGE 0.67 | BACKPACA 0.51 | SWARM 0.47 | ARENA 0.44
+  97 raw candidates across 8 chains, 154 headlines/posts
+  4 passed gates | rejected: liquidity too thin x50, no h1 volume x34, too old x5, unknown age x2, too new (bot war) x1
+  top: ARENA 0.65 | BACKPACA 0.58 | SWARM 0.27 | BRAIN 0.15
   no entries this tick
   shadow: tracking 53, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED NPC        peak +1110%  (scored 0.49)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
-  entries blocked: daily loss -24.9% <= -6%; daily trade cap reached
+  entries blocked: daily loss -24.8% <= -6%; daily trade cap reached
 ```
