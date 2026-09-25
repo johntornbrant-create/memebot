@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-25T02:37:48+00:00",
+  "updated": "2026-09-25T02:51:36+00:00",
   "cash": 367.3422517671932,
-  "equity": 538.626,
+  "equity": 547.5989,
   "positions": {
     "solana:4WECKfvfgEiojyZJq5Xm12Hvk76rhM4VHQAZGaELpump": {
       "id": "b530da6347",
@@ -34,7 +34,7 @@
         "buzz": 0.0,
         "paid_boost": 0.1
       },
-      "last_price": 0.00518
+      "last_price": 0.005208
     },
     "base:0xcA7A1E31b36779cf32acb18714Ab26982CF36B05": {
       "id": "f1d9f6e9be",
@@ -98,7 +98,7 @@
         "buzz": 0.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.0003995
+      "last_price": 0.0004004
     },
     "bsc:0x8151Dc49f9bEE6A816B3B6dAc766Ca91606a4675": {
       "id": "9c42c77c8b",
@@ -130,7 +130,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.001107
+      "last_price": 0.00107
     },
     "bsc:0x7a67363885EBC01F1D2AEf95B238E39ca1587777": {
       "id": "08e09447bd",
@@ -144,7 +144,7 @@
       "cost_usd": 11.407349099999998,
       "fees_usd": 0.1334,
       "realized_usd": 0.0,
-      "peak_gain": 0.1233913701741105,
+      "peak_gain": 0.32248296744890226,
       "tp_hit": [],
       "entry_liq": 33361.82,
       "score": 0.659,
@@ -162,7 +162,7 @@
         "buzz": 0.0,
         "paid_boost": 0.02
       },
-      "last_price": 0.0001484
+      "last_price": 0.0001747
     },
     "bsc:0x862492e45d3aCD53f20E590D8C6e18f325c864C4": {
       "id": "5887f48409",
@@ -176,7 +176,7 @@
       "cost_usd": 11.311145999999999,
       "fees_usd": 0.1337,
       "realized_usd": 0.0,
-      "peak_gain": 0.0,
+      "peak_gain": 0.596339603457041,
       "tp_hit": [],
       "entry_liq": 25555.06,
       "score": 0.6863,
@@ -194,7 +194,7 @@
         "buzz": 0.5,
         "paid_boost": 0.0
       },
-      "last_price": 0.0001967
+      "last_price": 0.000314
     }
   },
   "blacklist": {
@@ -231,7 +231,7 @@
     "trades_today": 7
   },
   "stats": {
-    "ticks": 232,
+    "ticks": 233,
     "opened": 41,
     "closed": 35,
     "wins": 11,
