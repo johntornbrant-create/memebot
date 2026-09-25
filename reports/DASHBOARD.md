@@ -1,28 +1,28 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T14:40:31+00:00`
+Updated `2026-09-25T14:54:00+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$422.87** |
-| Return | **-15.43%** (start $500.00) |
+| Equity | **$424.29** |
+| Return | **-15.14%** (start $500.00) |
 | Cash | $397.34 |
-| Deployed | $25.53 (6.0%) |
+| Deployed | $26.95 (6.4%) |
 | Open positions | 2 / 8 |
 | Closed trades | 44 (13W / 31L, WR 30%) |
 | Profit factor | 0.62 |
 | Fees + slippage paid | $27.03 |
-| Ticks run | 283 |
+| Ticks run | 285 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| ARENA | solana | $17.10 | $17.74 | +5% | +28% | 14.6h |
-| BRAIN | solana | $11.85 | $7.79 | -34% | +30% | 7.2h |
+| ARENA | solana | $17.10 | $17.72 | +5% | +28% | 14.8h |
+| BRAIN | solana | $11.85 | $9.22 | -21% | +30% | 7.5h |
 
 ## Last closed trades
 
@@ -65,15 +65,15 @@ _refit on 140 observations (96 shadow, 44 real), 51 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #283  equity $423.85  cash $397.34  open 2
+tick #285  equity $423.32  cash $397.34  open 2
   scanning chains + news...
-  96 raw candidates across 8 chains, 160 headlines/posts
-  7 passed gates | rejected: liquidity too thin x53, no h1 volume x20, too old x8, already discovered x6, sell pressure x1
-  top: Poocoin 0.83 | BackInu 0.82 | SCAN 0.78 | Bagwork 0.71 | APE 0.65
+  98 raw candidates across 7 chains, 154 headlines/posts
+  6 passed gates | rejected: liquidity too thin x45, no h1 volume x26, already discovered x9, too old x7, unknown age x4
+  top: BONGO 0.83 | Poocoin 0.78 | Bagwork 0.62 | SWARM 0.58 | UPTOBER 0.39
   no entries this tick
-  shadow: tracking 45, closed 0 this tick (0 would have won)
+  shadow: tracking 46, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED NPC        peak +1110%  (scored 0.49)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
-  entries blocked: daily loss -25.3% <= -6%; weekly loss -15.4% <= -15%; daily trade cap reached
+  entries blocked: daily loss -25.0% <= -6%; weekly loss -15.1% <= -15%; daily trade cap reached
 ```
