@@ -1,28 +1,28 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T15:06:08+00:00`
+Updated `2026-09-25T15:26:44+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$425.19** |
-| Return | **-14.96%** (start $500.00) |
+| Equity | **$424.47** |
+| Return | **-15.11%** (start $500.00) |
 | Cash | $397.34 |
-| Deployed | $27.85 (6.6%) |
+| Deployed | $27.13 (6.4%) |
 | Open positions | 2 / 8 |
 | Closed trades | 44 (13W / 31L, WR 30%) |
 | Profit factor | 0.62 |
 | Fees + slippage paid | $27.03 |
-| Ticks run | 287 |
+| Ticks run | 289 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| ARENA | solana | $17.10 | $18.16 | +7% | +28% | 15.0h |
-| BRAIN | solana | $11.85 | $9.69 | -17% | +30% | 7.7h |
+| ARENA | solana | $17.10 | $18.05 | +6% | +28% | 15.3h |
+| BRAIN | solana | $11.85 | $9.08 | -23% | +30% | 8.0h |
 
 ## Last closed trades
 
@@ -65,15 +65,15 @@ _refit on 140 observations (96 shadow, 44 real), 51 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #287  equity $424.66  cash $397.34  open 2
+tick #289  equity $425.69  cash $397.34  open 2
   scanning chains + news...
-  99 raw candidates across 8 chains, 154 headlines/posts
-  5 passed gates | rejected: liquidity too thin x56, no h1 volume x29, too old x7, sell pressure x1, too new (bot war) x1
-  top: BONGO 0.88 | LFG 0.81 | Poocoin 0.63 | SWARM 0.59 | UPTOBER 0.38
+  108 raw candidates across 5 chains, 154 headlines/posts
+  8 passed gates | rejected: liquidity too thin x54, no h1 volume x17, too old x16, already discovered x8, unknown age x5
+  top: Mooncake 0.90 | BACKPACA 0.84 | AMD 0.80 | SWARM 0.75 | FUNDED 0.62
   no entries this tick
-  shadow: tracking 47, closed 0 this tick (0 would have won)
+  shadow: tracking 51, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED NPC        peak +1110%  (scored 0.49)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
-  entries blocked: daily loss -24.9% <= -6%; daily trade cap reached
+  entries blocked: daily loss -25.0% <= -6%; weekly loss -15.1% <= -15%; daily trade cap reached
 ```
