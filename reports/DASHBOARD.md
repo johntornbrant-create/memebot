@@ -1,27 +1,27 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T22:05:35+00:00`
+Updated `2026-09-25T22:24:37+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$431.59** |
-| Return | **-13.68%** (start $500.00) |
+| Equity | **$432.02** |
+| Return | **-13.60%** (start $500.00) |
 | Cash | $410.29 |
-| Deployed | $21.30 (4.9%) |
+| Deployed | $21.73 (5.0%) |
 | Open positions | 1 / 8 |
 | Closed trades | 45 (13W / 32L, WR 29%) |
 | Profit factor | 0.60 |
 | Fees + slippage paid | $27.16 |
-| Ticks run | 336 |
+| Ticks run | 338 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| ARENA | solana | $17.10 | $21.30 | +67% | +98% | 22.0h |
+| ARENA | solana | $17.10 | $21.73 | +71% | +98% | 22.3h |
 
 ## Last closed trades
 
@@ -64,15 +64,15 @@ _refit on 141 observations (96 shadow, 45 real), 51 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #336  equity $431.61  cash $410.29  open 1
+tick #338  equity $431.98  cash $410.29  open 1
   scanning chains + news...
-  179 raw candidates across 8 chains, 154 headlines/posts
-  12 passed gates | rejected: liquidity too thin x89, no h1 volume x40, too old x20, already discovered x10, too new (bot war) x6
-  top: EON 0.82 | JEANTRUMP 0.79 | e/acc 0.59 | JEAN 0.46 | TRUMP 0.41
+  98 raw candidates across 4 chains, 154 headlines/posts
+  12 passed gates | rejected: liquidity too thin x50, no h1 volume x20, too old x10, already discovered x3, too new (bot war) x2
+  top: GIFT 0.84 | JEANTRUMP 0.72 | TRUMP 0.68 | EON 0.65 | CATECOIN 0.64
   no entries this tick
-  shadow: tracking 83, closed 0 this tick (0 would have won)
+  shadow: tracking 86, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED NPC        peak +1110%  (scored 0.49)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
-  entries blocked: daily loss -23.7% <= -6%; daily trade cap reached
+  entries blocked: daily loss -23.6% <= -6%; daily trade cap reached
 ```
