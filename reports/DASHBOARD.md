@@ -1,28 +1,30 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-24T23:47:41+00:00`
+Updated `2026-09-25T00:07:10+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$565.81** |
-| Return | **+13.16%** (start $500.00) |
-| Cash | $448.85 |
-| Deployed | $116.97 (20.7%) |
-| Open positions | 2 / 8 |
+| Equity | **$570.11** |
+| Return | **+14.02%** (start $500.00) |
+| Cash | $419.78 |
+| Deployed | $150.33 (26.4%) |
+| Open positions | 4 / 8 |
 | Closed trades | 32 (11W / 21L, WR 34%) |
 | Profit factor | 0.75 |
-| Fees + slippage paid | $24.34 |
-| Ticks run | 222 |
+| Fees + slippage paid | $24.59 |
+| Ticks run | 223 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| JEANCOIN | solana | $10.32 | $107.74 | +954% | +1004% | 20.4h |
-| CATALYST | base | $10.26 | $9.23 | -9% | +10% | 20.1h |
+| JEANCOIN | solana | $10.32 | $111.98 | +995% | +1004% | 20.7h |
+| CATALYST | base | $10.26 | $9.28 | -9% | +10% | 20.5h |
+| S&P500 | solana | $11.97 | $11.86 | +0% | +0% | 0.0h |
+| ARENA | solana | $17.10 | $16.96 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
@@ -65,6 +67,15 @@ _prior_
 
 ## Last run log
 ```
-tick #222  equity $570.35  cash $448.85  open 2
-  entries blocked: daily trade cap reached
+tick #223  equity $565.81  cash $448.85  open 2
+  scanning chains + news...
+  115 raw candidates across 8 chains, 154 headlines/posts
+  5 passed gates | rejected: liquidity too thin x57, no h1 volume x36, too old x13, already discovered x3, sell pressure x1
+  top: ARENA 0.82 | LOUIS 0.60 | VEYRIN 0.56 | S&P500 0.50 | UPTOBER 0.50
+  BUY[explore] S&P500     $11.97 @ $0.0001213  score 0.50  solana  liq $33,112
+  BUY[exploit] ARENA      $17.10 @ $0.0004104  score 0.82  solana  liq $56,530
+  shadow: tracking 21, closed 17 this tick (6 would have won)
+    MISSED GENIUS     peak +1642%  (scored 0.61)
+    MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
+    MISSED JEANPHIL   peak +284%  (scored 0.63)
 ```
