@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-25T06:48:20+00:00",
+  "updated": "2026-09-25T07:06:24+00:00",
   "cash": 384.11837407507716,
-  "equity": 558.797,
+  "equity": 558.8648,
   "positions": {
     "solana:4WECKfvfgEiojyZJq5Xm12Hvk76rhM4VHQAZGaELpump": {
       "id": "b530da6347",
@@ -16,7 +16,7 @@
       "cost_usd": 10.3177956,
       "fees_usd": 0.0937,
       "realized_usd": 0.0,
-      "peak_gain": 10.551724137931034,
+      "peak_gain": 10.722085385878488,
       "tp_hit": [],
       "entry_liq": 64036.15,
       "score": 0.638,
@@ -34,7 +34,7 @@
         "buzz": 0.0,
         "paid_boost": 0.1
       },
-      "last_price": 0.005628
+      "last_price": 0.005711
     },
     "solana:4G5YDqDvwgwSS3nLPDGDpGuetbG7rZYzNSBb1U4Tqbzi": {
       "id": "28a9404ef5",
@@ -66,7 +66,7 @@
         "buzz": 0.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.0004375
+      "last_price": 0.0004387
     },
     "bsc:0x7a67363885EBC01F1D2AEf95B238E39ca1587777": {
       "id": "08e09447bd",
@@ -98,7 +98,7 @@
         "buzz": 0.0,
         "paid_boost": 0.02
       },
-      "last_price": 0.0001432
+      "last_price": 0.0001323
     },
     "solana:EXXR9Wt3mjxbjmzhPVj7EcA3zfxZd9uk1WhMioeipump": {
       "id": "682a7db413",
@@ -130,7 +130,7 @@
         "buzz": 0.0,
         "paid_boost": 0.06
       },
-      "last_price": 0.0004147
+      "last_price": 0.0003699
     },
     "bsc:0x4392cBaE887bb2CcF3d58bc4D04F782c76B47777": {
       "id": "69ed5f4a55",
@@ -144,7 +144,7 @@
       "cost_usd": 11.734736999999999,
       "fees_usd": 0.134,
       "realized_usd": 0.0,
-      "peak_gain": 0.0,
+      "peak_gain": 0.07858546168958758,
       "tp_hit": [],
       "entry_liq": 66312.24,
       "score": 0.6823,
@@ -162,7 +162,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0001018
+      "last_price": 0.0001098
     }
   },
   "blacklist": {
@@ -201,7 +201,7 @@
     "trades_today": 11
   },
   "stats": {
-    "ticks": 248,
+    "ticks": 249,
     "opened": 45,
     "closed": 40,
     "wins": 13,

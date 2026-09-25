@@ -1,31 +1,31 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T06:48:20+00:00`
+Updated `2026-09-25T07:06:24+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$558.80** |
-| Return | **+11.76%** (start $500.00) |
+| Equity | **$558.86** |
+| Return | **+11.77%** (start $500.00) |
 | Cash | $384.12 |
-| Deployed | $174.68 (31.3%) |
+| Deployed | $174.75 (31.3%) |
 | Open positions | 5 / 8 |
 | Closed trades | 40 (13W / 27L, WR 32%) |
 | Profit factor | 0.71 |
 | Fees + slippage paid | $26.60 |
-| Ticks run | 248 |
+| Ticks run | 249 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| JEANCOIN | solana | $10.32 | $118.11 | +1055% | +1055% | 27.4h |
-| ARENA | solana | $17.10 | $18.08 | +7% | +7% | 6.7h |
-| MDP | bsc | $11.41 | $12.22 | +8% | +35% | 4.4h |
-| Shurikane | solana | $16.84 | $14.54 | -13% | +17% | 1.2h |
-| 币安月饼 | bsc | $11.73 | $11.60 | +0% | +0% | 0.0h |
+| JEANCOIN | solana | $10.32 | $119.85 | +1072% | +1072% | 27.7h |
+| ARENA | solana | $17.10 | $18.12 | +7% | +7% | 7.0h |
+| MDP | bsc | $11.41 | $11.29 | +0% | +35% | 4.7h |
+| Shurikane | solana | $16.84 | $12.97 | -22% | +17% | 1.5h |
+| 币安月饼 | bsc | $11.73 | $12.51 | +8% | +8% | 0.3h |
 
 ## Last closed trades
 
@@ -68,12 +68,12 @@ _prior_
 
 ## Last run log
 ```
-tick #248  equity $560.37  cash $395.85  open 4
+tick #249  equity $558.80  cash $384.12  open 5
   scanning chains + news...
-  81 raw candidates across 7 chains, 160 headlines/posts
-  7 passed gates | rejected: liquidity too thin x44, no h1 volume x30
-  top: IMU 0.76 | Shurikane 0.72 | 币安月饼 0.68 | 拉布布 0.64 | BRAIN 0.61
-  BUY[explore] 币安月饼       $11.73 @ $0.0001018  score 0.68  bsc  liq $66,312
+  84 raw candidates across 7 chains, 154 headlines/posts
+  11 passed gates | rejected: liquidity too thin x36, no h1 volume x26, already discovered x5, too old x5, sell pressure x1
+  top: TTP 0.73 | Shurikane 0.72 | 币安月饼 0.69 | IMU 0.68 | 拉布布 0.64
+  no entries this tick
   shadow: tracking 37, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED NPC        peak +1110%  (scored 0.49)
