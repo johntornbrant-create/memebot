@@ -10,7 +10,10 @@ CURRENCY          = "USD"
 MAX_POS_PCT       = 0.020       # 2.0% of equity -> $10 on $500. Cut from 3% while the
                                 # strategy is unprofitable at this polling rate: extends runway
                                 # so the shadow book keeps collecting the data that matters.
-MIN_POS_USD       = 8.00        # below this, flat gas is too big a % of the trade
+MIN_POS_USD       = 5.00        # 2% of $425 is $8.50 and this floor was $8.00 - one bad
+                                # week and every trade would fall below the minimum and the
+                                # bot would silently stop trading. Gas is now ~$0.02 on
+                                # Solana, so $5 is fine (~1% round trip).
 MAX_CONCURRENT    = 8           # 8 x 3% = 24% max exposure at any instant
 MAX_DEPLOYED_PCT  = 0.35        # never more than 35% of equity out of cash
 MAX_PER_CHAIN     = 3           # 20 chains - do not pile into one
