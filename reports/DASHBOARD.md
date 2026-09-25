@@ -1,35 +1,36 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T05:24:48+00:00`
+Updated `2026-09-25T05:38:13+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$579.56** |
-| Return | **+15.91%** (start $500.00) |
-| Cash | $377.26 |
-| Deployed | $202.30 (34.9%) |
+| Equity | **$561.26** |
+| Return | **+12.25%** (start $500.00) |
+| Cash | $395.85 |
+| Deployed | $165.41 (29.5%) |
 | Open positions | 4 / 8 |
-| Closed trades | 39 (12W / 27L, WR 31%) |
-| Profit factor | 0.57 |
-| Fees + slippage paid | $26.04 |
-| Ticks run | 243 |
+| Closed trades | 40 (13W / 27L, WR 32%) |
+| Profit factor | 0.71 |
+| Fees + slippage paid | $26.47 |
+| Ticks run | 244 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| JEANCOIN | solana | $10.32 | $114.18 | +1017% | +1041% | 26.0h |
-| ARENA | solana | $17.10 | $17.89 | +6% | +6% | 5.3h |
-| MDP | bsc | $11.41 | $13.81 | +22% | +32% | 3.0h |
-| IMU | solana | $11.40 | $56.42 | +399% | +602% | 1.8h |
+| JEANCOIN | solana | $10.32 | $116.34 | +1038% | +1041% | 26.2h |
+| ARENA | solana | $17.10 | $17.90 | +6% | +6% | 5.5h |
+| MDP | bsc | $11.41 | $14.33 | +27% | +32% | 3.2h |
+| Shurikane | solana | $16.84 | $16.70 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| IMU | $+24.04 | +211% | 2.0h | ratchet +391% (peak +602%) |
 | COD | $+1.52 | +9% | 2.2h | ratchet +25% (peak +71%) |
 | CATALYST | $-1.08 | -10% | 24.2h | time stop 24h, only -9% |
 | OG | $-11.64 | -99% | 0.2h | stop loss -98% |
@@ -44,7 +45,6 @@ Updated `2026-09-25T05:24:48+00:00`
 | PURRP | $+3.56 | +35% | 2.2h | ratchet +41% (peak +101%) |
 | UPTOBER | $-4.23 | -42% | 2.9h | stop loss -40% |
 | CZBUILDER | $-4.25 | -40% | 0.8h | ratchet +25% (peak +98%) |
-| BLUF | $-4.62 | -44% | 1.5h | stop loss -42% |
 
 ## Learned weights (v0)
 
@@ -67,13 +67,14 @@ _prior_
 
 ## Last run log
 ```
-tick #243  equity $598.84  cash $377.26  open 4
+tick #244  equity $579.56  cash $377.26  open 4
+  SELL IMU        100% @ $0.000609  ->  $35.44   [ratchet +391% (peak +602%)]
   scanning chains + news...
-  120 raw candidates across 6 chains, 154 headlines/posts
-  10 passed gates | rejected: liquidity too thin x80, no h1 volume x18, already discovered x5, too old x5, too new (bot war) x1
-  top: Shurikane 0.70 | IMU 0.68 | BRAIN 0.67 | goon 0.67 | ARENA 0.66
-  no entries this tick
-  shadow: tracking 32, closed 0 this tick (0 would have won)
+  125 raw candidates across 7 chains, 160 headlines/posts
+  11 passed gates | rejected: liquidity too thin x77, no h1 volume x25, already discovered x5, too old x5, sell pressure x2
+  top: Shurikane 0.74 | ARENA 0.68 | BRAIN 0.67 | IMU 0.63 | NPC 0.56
+  BUY[exploit] Shurikane  $16.84 @ $0.0004762  score 0.74  solana  liq $64,509
+  shadow: tracking 34, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED NPC        peak +1110%  (scored 0.49)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
