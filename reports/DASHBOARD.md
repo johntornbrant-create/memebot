@@ -1,30 +1,31 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T06:30:42+00:00`
+Updated `2026-09-25T06:48:20+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$560.37** |
-| Return | **+12.07%** (start $500.00) |
-| Cash | $395.85 |
-| Deployed | $164.51 (29.4%) |
-| Open positions | 4 / 8 |
+| Equity | **$558.80** |
+| Return | **+11.76%** (start $500.00) |
+| Cash | $384.12 |
+| Deployed | $174.68 (31.3%) |
+| Open positions | 5 / 8 |
 | Closed trades | 40 (13W / 27L, WR 32%) |
 | Profit factor | 0.71 |
-| Fees + slippage paid | $26.47 |
-| Ticks run | 247 |
+| Fees + slippage paid | $26.60 |
+| Ticks run | 248 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| JEANCOIN | solana | $10.32 | $112.52 | +1001% | +1041% | 27.1h |
-| ARENA | solana | $17.10 | $18.22 | +7% | +7% | 6.4h |
-| MDP | bsc | $11.41 | $14.66 | +30% | +35% | 4.1h |
-| Shurikane | solana | $16.84 | $19.11 | +14% | +17% | 0.9h |
+| JEANCOIN | solana | $10.32 | $118.11 | +1055% | +1055% | 27.4h |
+| ARENA | solana | $17.10 | $18.08 | +7% | +7% | 6.7h |
+| MDP | bsc | $11.41 | $12.22 | +8% | +35% | 4.4h |
+| Shurikane | solana | $16.84 | $14.54 | -13% | +17% | 1.2h |
+| 币安月饼 | bsc | $11.73 | $11.60 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
@@ -67,12 +68,12 @@ _prior_
 
 ## Last run log
 ```
-tick #247  equity $562.35  cash $395.85  open 4
+tick #248  equity $560.37  cash $395.85  open 4
   scanning chains + news...
-  111 raw candidates across 7 chains, 154 headlines/posts
-  13 passed gates | rejected: liquidity too thin x49, no h1 volume x38, too old x5, already discovered x5, sell pressure x1
-  top: Shurikane 0.78 | TTP 0.75 | SI 0.72 | 币安月饼 0.67 | BRAIN 0.64
-  no entries this tick
+  81 raw candidates across 7 chains, 160 headlines/posts
+  7 passed gates | rejected: liquidity too thin x44, no h1 volume x30
+  top: IMU 0.76 | Shurikane 0.72 | 币安月饼 0.68 | 拉布布 0.64 | BRAIN 0.61
+  BUY[explore] 币安月饼       $11.73 @ $0.0001018  score 0.68  bsc  liq $66,312
   shadow: tracking 37, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED NPC        peak +1110%  (scored 0.49)
