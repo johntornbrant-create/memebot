@@ -1,28 +1,28 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T14:13:25+00:00`
+Updated `2026-09-25T14:21:48+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$425.19** |
-| Return | **-14.96%** (start $500.00) |
+| Equity | **$423.99** |
+| Return | **-15.20%** (start $500.00) |
 | Cash | $397.34 |
-| Deployed | $27.85 (6.5%) |
+| Deployed | $26.65 (6.3%) |
 | Open positions | 2 / 8 |
 | Closed trades | 44 (13W / 31L, WR 30%) |
 | Profit factor | 0.62 |
 | Fees + slippage paid | $27.03 |
-| Ticks run | 277 |
+| Ticks run | 278 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| ARENA | solana | $17.10 | $17.58 | +4% | +28% | 14.1h |
-| BRAIN | solana | $11.85 | $10.27 | -13% | +30% | 6.8h |
+| ARENA | solana | $17.10 | $17.58 | +4% | +28% | 14.2h |
+| BRAIN | solana | $11.85 | $9.07 | -23% | +30% | 6.9h |
 
 ## Last closed trades
 
@@ -44,36 +44,36 @@ Updated `2026-09-25T14:13:25+00:00`
 | 币安协议 | $-5.79 | -38% | 11.0h | stop loss -37% |
 | PURRP | $-4.46 | -43% | 2.2h | stop loss -42% |
 
-## Learned weights (v0)
+## Learned weights (v2)
 
-_prior_
+_refit on 140 observations (96 shadow, 44 real), 51 winners (36% base rate)_
 
 | Feature | Weight |
 |---|---|
-| liq_quality | +0.083 |
-| turnover | +0.083 |
-| buy_pressure | +0.083 |
+| buy_pressure | +0.129 |
+| dip_in_uptrend | +0.092 |
 | momentum_accel | +0.083 |
-| not_vertical | +0.083 |
-| age_sweet | +0.083 |
-| socials | +0.083 |
-| fdv_sanity | +0.083 |
-| txn_depth | +0.083 |
-| dip_in_uptrend | +0.083 |
-| buzz | +0.083 |
-| paid_boost | +0.083 |
+| fdv_sanity | +0.056 |
+| turnover | +0.054 |
+| not_vertical | -0.040 |
+| buzz | +0.019 |
+| age_sweet | +0.014 |
+| paid_boost | +0.005 |
+| socials | -0.001 |
+| liq_quality | +0.001 |
+| txn_depth | +0.000 |
 
 ## Last run log
 ```
-tick #277  equity $425.34  cash $397.34  open 2
+tick #278  equity $425.19  cash $397.34  open 2
   scanning chains + news...
-  112 raw candidates across 8 chains, 154 headlines/posts
-  3 passed gates | rejected: liquidity too thin x74, no h1 volume x24, already discovered x5, too old x3, too new (bot war) x2
-  top: SWARM 0.69 | WODL 0.64 | UPTOBER 0.48
+  181 raw candidates across 10 chains, 154 headlines/posts
+  5 passed gates | rejected: liquidity too thin x89, no h1 volume x53, too old x18, already discovered x9, unknown age x5
+  top: BackInu 0.80 | Poocoin 0.79 | SWARM 0.77 | WODL 0.41 | UPTOBER 0.19
   no entries this tick
-  shadow: tracking 39, closed 0 this tick (0 would have won)
+  shadow: tracking 41, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED NPC        peak +1110%  (scored 0.49)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
-  entries blocked: daily loss -24.9% <= -6%; daily trade cap reached
+  entries blocked: daily loss -25.1% <= -6%; weekly loss -15.2% <= -15%; daily trade cap reached
 ```
