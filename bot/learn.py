@@ -97,7 +97,7 @@ def refit(force=False):
     scores = sorted(score(r["features"], new) for r in read_outcomes())
     if len(scores) >= 40:
         thr = round(scores[int(len(scores) * 0.75)], 3)
-        thr = min(max(thr, 0.50), 0.90)
+        thr = min(max(thr, 0.60), config.THRESHOLD_MAX)
     else:
         thr = config.ENTRY_THRESHOLD
 
@@ -106,7 +106,7 @@ def refit(force=False):
     if len(real) >= 25:
         rwr = sum(1 for r in real if r.get("pnl_pct", -1) >= WIN_THRESHOLD) / len(real)
         if rwr < 0.20:
-            thr = min(0.92, thr + 0.05)
+            thr = min(config.THRESHOLD_MAX, thr + 0.03)
 
     meta = {
         "version": meta.get("version", 0) + 1,

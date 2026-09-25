@@ -119,7 +119,7 @@ def scan(pf, allow_entries=True):
             log(f"    MISSED {m['symbol']:<10} peak {m['peak_gain']:+.0%}  (scored {m['score']:.2f})")
 
 
-def tick():
+def tick(exits_only=False):
     pf = pf_mod.load()
     risk.roll_marks(pf)
     pf["stats"]["ticks"] += 1
@@ -130,6 +130,11 @@ def tick():
         manage_exits(pf)
     except Exception:
         log("  exit management failed:\n" + traceback.format_exc())
+
+    if exits_only:
+        pf_mod.save(pf)
+        log(f"exit sweep done. equity ${pf['equity']:.2f}")
+        return pf
 
     can, reasons = risk.equity_curve_checks(pf)
     try:
@@ -151,7 +156,7 @@ def tick():
 
 if __name__ == "__main__":
     try:
-        tick()
+        tick(exits_only="--exits-only" in sys.argv)
     except Exception:
         traceback.print_exc()
         sys.exit(1)

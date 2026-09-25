@@ -1,0 +1,50 @@
+name: memebot exit sweep
+
+# The stop IS the edge. Walk-forward on 96 shadow closures: with a stop that fills,
+# +24.6% per trade; without one, +0.8%. The full tick takes ~90s because it scans 20
+# chains, so it can only run every 15 min - and positions gapped straight through their
+# stops inside that window ($149 lost in one 24h period).
+# This job prices ONLY the open positions and fires exits. It takes seconds, so it can
+# run at GitHub's 5-minute cron floor: 3x the stop resolution, for free.
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: memebot
+  cancel-in-progress: false
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Sweep exits only
+        run: python -m bot.run --exits-only
+
+      - name: Commit state
+        run: |
+          set -e
+          git config user.name  "memebot"
+          git config user.email "memebot@users.noreply.github.com"
+          for attempt in 1 2 3 4 5; do
+            git fetch -q origin master
+            git reset -q --soft origin/master
+            git add -A state reports
+            if git diff --staged --quiet; then echo "no change"; exit 0; fi
+            git commit -q -m "exit sweep $(date -u +'%Y-%m-%d %H:%M UTC')"
+            if git push -q origin HEAD:master; then exit 0; fi
+            sleep 5
+          done
+          echo "::error::could not persist state"
+          exit 1

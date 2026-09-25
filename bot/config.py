@@ -40,7 +40,7 @@ RATCHET           = [(0.40, 0.00), (0.70, 0.25), (1.00, 0.40)]
 # Selling into strength is the only exit that does not need the price to come back to us.
 # Grid-searched over all 44 real closed trades; this was the best of 13 configurations
 # (-$42.19 vs -$73.65 actual). Every other config, including flat targets, did worse.
-TP_LADDER         = [(0.40, 0.25), (1.00, 0.25), (2.50, 0.25), (6.00, 0.15)]
+TP_LADDER         = [(0.50, 0.25), (1.50, 0.25), (4.00, 0.25), (9.00, 0.25)]
 TRAIL_AFTER       = 1.00        # start trailing at +100%: winners peaked at +724%
                                 # and +248% then gapped down between 15-min checks
 TRAIL_PCT         = 0.30
@@ -79,7 +79,11 @@ CHAINS = ["solana", "base", "ethereum", "bsc", "arbitrum", "polygon", "avalanche
           "berachain", "sonic", "unichain", "linea", "mantle", "cronos"]
 
 # ---------- scoring ----------
-ENTRY_THRESHOLD   = 0.62        # score must clear this to trade
+ENTRY_THRESHOLD   = 0.70        # walk-forward tested: 0.70 held up out-of-sample
+                                # (+24.6%/trade), 0.79 collapsed to +1.4%. In-sample said
+                                # 0.85 was best - that was overfitting. Cap the adaptive
+                                # threshold near here.
+THRESHOLD_MAX     = 0.74
 LEARN_MIN_TRADES  = 60          # do not refit weights on less than this
 LEARN_BLEND       = 0.50        # new weights = 50% fitted + 50% prior (anti-overfit)
 
