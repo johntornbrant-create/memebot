@@ -1,30 +1,30 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T05:51:53+00:00`
+Updated `2026-09-25T06:06:27+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$563.10** |
-| Return | **+12.62%** (start $500.00) |
+| Equity | **$562.35** |
+| Return | **+12.47%** (start $500.00) |
 | Cash | $395.85 |
-| Deployed | $167.25 (29.7%) |
+| Deployed | $166.49 (29.6%) |
 | Open positions | 4 / 8 |
 | Closed trades | 40 (13W / 27L, WR 32%) |
 | Profit factor | 0.71 |
 | Fees + slippage paid | $26.47 |
-| Ticks run | 245 |
+| Ticks run | 246 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| JEANCOIN | solana | $10.32 | $115.76 | +1032% | +1041% | 26.4h |
-| ARENA | solana | $17.10 | $17.97 | +6% | +6% | 5.7h |
-| MDP | bsc | $11.41 | $15.22 | +35% | +35% | 3.5h |
-| Shurikane | solana | $16.84 | $18.31 | +10% | +10% | 0.2h |
+| JEANCOIN | solana | $10.32 | $113.80 | +1013% | +1041% | 26.7h |
+| ARENA | solana | $17.10 | $17.95 | +6% | +6% | 6.0h |
+| MDP | bsc | $11.41 | $15.15 | +34% | +35% | 3.7h |
+| Shurikane | solana | $16.84 | $19.59 | +17% | +17% | 0.5h |
 
 ## Last closed trades
 
@@ -67,11 +67,11 @@ _prior_
 
 ## Last run log
 ```
-tick #245  equity $561.26  cash $395.85  open 4
+tick #246  equity $563.10  cash $395.85  open 4
   scanning chains + news...
-  113 raw candidates across 7 chains, 154 headlines/posts
-  8 passed gates | rejected: liquidity too thin x84, no h1 volume x16, too old x2, already discovered x2, too new (bot war) x1
-  top: Shurikane 0.80 | ARENA 0.70 | IMU 0.68 | BRAIN 0.67 | UPTOBER 0.54
+  69 raw candidates across 6 chains, 154 headlines/posts
+  7 passed gates | rejected: liquidity too thin x36, no h1 volume x22, too old x3, already discovered x1
+  top: Shurikane 0.78 | IMU 0.77 | ARENA 0.70 | BRAIN 0.67 | SNDK 0.54
   no entries this tick
   shadow: tracking 34, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
