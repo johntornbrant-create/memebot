@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-25T16:27:00+00:00",
-  "cash": 397.3384122066175,
-  "equity": 425.3264,
+  "updated": "2026-09-25T16:37:25+00:00",
+  "cash": 403.7783667023115,
+  "equity": 426.9312,
   "positions": {
     "solana:4G5YDqDvwgwSS3nLPDGDpGuetbG7rZYzNSBb1U4Tqbzi": {
       "id": "28a9404ef5",
@@ -16,7 +16,7 @@
       "cost_usd": 17.1,
       "fees_usd": 0.1444,
       "realized_usd": 0.0,
-      "peak_gain": 0.28411306042885,
+      "peak_gain": 0.36549707602339176,
       "tp_hit": [],
       "entry_liq": 56530.41,
       "score": 0.8189,
@@ -34,39 +34,7 @@
         "buzz": 0.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.0004788
-    },
-    "solana:3znS89gifim2Hhhu8wjb2PfSgaCDdma187D5NMkDpump": {
-      "id": "27c99ba57a",
-      "chain": "solana",
-      "address": "3znS89gifim2Hhhu8wjb2PfSgaCDdma187D5NMkDpump",
-      "symbol": "BRAIN",
-      "opened": "2026-09-25T07:26:26+00:00",
-      "entry_price": 0.0004787,
-      "tokens": 24533.238543160835,
-      "tokens_initial": 24533.238543160835,
-      "cost_usd": 11.848819499999998,
-      "fees_usd": 0.1048,
-      "realized_usd": 0.0,
-      "peak_gain": 0.30039690829329446,
-      "tp_hit": [],
-      "entry_liq": 69560.67,
-      "score": 0.632,
-      "features": {
-        "liq_quality": 0.8319,
-        "turnover": 0.3642,
-        "buy_pressure": 0.0455,
-        "momentum_accel": 0.0,
-        "not_vertical": 1.0,
-        "age_sweet": 0.9847,
-        "socials": 0.65,
-        "fdv_sanity": 0.9612,
-        "txn_depth": 0.4842,
-        "dip_in_uptrend": 0.5,
-        "buzz": 0.0,
-        "paid_boost": 0.3
-      },
-      "last_price": 0.0003345
+      "last_price": 0.0005604
     }
   },
   "blacklist": {
@@ -97,7 +65,8 @@
     "solana:EXXR9Wt3mjxbjmzhPVj7EcA3zfxZd9uk1WhMioeipump": "2026-09-25T07:24:55+00:00",
     "bsc:0x4392cBaE887bb2CcF3d58bc4D04F782c76B47777": "2026-09-25T09:25:08+00:00",
     "solana:4WECKfvfgEiojyZJq5Xm12Hvk76rhM4VHQAZGaELpump": "2026-09-25T09:37:53+00:00",
-    "bsc:0x7a67363885EBC01F1D2AEf95B238E39ca1587777": "2026-09-25T13:05:48+00:00"
+    "bsc:0x7a67363885EBC01F1D2AEf95B238E39ca1587777": "2026-09-25T13:05:48+00:00",
+    "solana:3znS89gifim2Hhhu8wjb2PfSgaCDdma187D5NMkDpump": "2026-09-25T16:37:25+00:00"
   },
   "halted": false,
   "halt_reason": "",
@@ -109,12 +78,12 @@
     "trades_today": 12
   },
   "stats": {
-    "ticks": 297,
+    "ticks": 298,
     "opened": 46,
-    "closed": 44,
+    "closed": 45,
     "wins": 13,
-    "losses": 31,
-    "fees_paid": 27.03139695236491,
-    "realized_pnl": -73.71276829338241
+    "losses": 32,
+    "fees_paid": 27.097657318317157,
+    "realized_pnl": -79.1216332976884
   }
 }
