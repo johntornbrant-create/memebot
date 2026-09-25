@@ -1,27 +1,27 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T17:24:41+00:00`
+Updated `2026-09-25T17:52:31+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$430.94** |
-| Return | **-13.81%** (start $500.00) |
+| Equity | **$429.95** |
+| Return | **-14.01%** (start $500.00) |
 | Cash | $410.29 |
-| Deployed | $20.65 (4.8%) |
+| Deployed | $19.66 (4.6%) |
 | Open positions | 1 / 8 |
 | Closed trades | 45 (13W / 32L, WR 29%) |
 | Profit factor | 0.60 |
 | Fees + slippage paid | $27.16 |
-| Ticks run | 303 |
+| Ticks run | 305 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| ARENA | solana | $17.10 | $20.65 | +62% | +62% | 17.3h |
+| ARENA | solana | $17.10 | $19.66 | +55% | +62% | 17.8h |
 
 ## Last closed trades
 
@@ -64,15 +64,15 @@ _refit on 140 observations (96 shadow, 44 real), 51 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #303  equity $430.03  cash $410.29  open 1
+tick #305  equity $429.21  cash $410.29  open 1
   scanning chains + news...
-  106 raw candidates across 6 chains, 154 headlines/posts
-  9 passed gates | rejected: liquidity too thin x56, no h1 volume x25, too old x8, too new (bot war) x5, unknown age x1
-  top: KEK 0.92 | JEANWORK 0.90 | ARENA 0.85 | DOGRILLA 0.84 | DOCK 0.82
+  105 raw candidates across 6 chains, 154 headlines/posts
+  14 passed gates | rejected: liquidity too thin x46, no h1 volume x20, too old x17, already discovered x4, unknown age x2
+  top: OnlyPump 0.88 | OnlyJeans 0.88 | JEANWORK 0.83 | DOGRILLA 0.82 | AGI 0.75
   no entries this tick
-  shadow: tracking 61, closed 0 this tick (0 would have won)
+  shadow: tracking 67, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED NPC        peak +1110%  (scored 0.49)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
-  entries blocked: daily loss -23.8% <= -6%; daily trade cap reached
+  entries blocked: daily loss -24.0% <= -6%; daily trade cap reached
 ```
