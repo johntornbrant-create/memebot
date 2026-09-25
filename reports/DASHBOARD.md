@@ -1,31 +1,31 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T07:50:58+00:00`
+Updated `2026-09-25T08:04:12+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$559.19** |
-| Return | **+11.84%** (start $500.00) |
+| Equity | **$557.01** |
+| Return | **+11.40%** (start $500.00) |
 | Cash | $382.19 |
-| Deployed | $177.00 (31.7%) |
+| Deployed | $174.82 (31.4%) |
 | Open positions | 5 / 8 |
 | Closed trades | 41 (13W / 28L, WR 32%) |
 | Profit factor | 0.68 |
 | Fees + slippage paid | $26.80 |
-| Ticks run | 252 |
+| Ticks run | 253 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| JEANCOIN | solana | $10.32 | $121.74 | +1091% | +1139% | 28.4h |
-| ARENA | solana | $17.10 | $20.99 | +24% | +24% | 7.7h |
-| MDP | bsc | $11.41 | $11.20 | -1% | +35% | 5.4h |
-| 币安月饼 | bsc | $11.73 | $10.03 | -14% | +8% | 1.0h |
-| BRAIN | solana | $11.85 | $13.04 | +11% | +11% | 0.4h |
+| JEANCOIN | solana | $10.32 | $119.64 | +1070% | +1139% | 28.7h |
+| ARENA | solana | $17.10 | $21.77 | +28% | +28% | 8.0h |
+| MDP | bsc | $11.41 | $11.21 | -1% | +35% | 5.7h |
+| 币安月饼 | bsc | $11.73 | $9.92 | -14% | +8% | 1.3h |
+| BRAIN | solana | $11.85 | $12.28 | +5% | +11% | 0.6h |
 
 ## Last closed trades
 
@@ -68,6 +68,6 @@ _prior_
 
 ## Last run log
 ```
-tick #252  equity $561.63  cash $382.19  open 5
+tick #253  equity $559.19  cash $382.19  open 5
   entries blocked: daily trade cap reached
 ```
