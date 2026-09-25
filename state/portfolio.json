@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-25T17:05:14+00:00",
-  "cash": 403.7783667023115,
-  "equity": 427.4559,
+  "updated": "2026-09-25T17:21:58+00:00",
+  "cash": 410.29016205526415,
+  "equity": 430.0253,
   "positions": {
     "solana:4G5YDqDvwgwSS3nLPDGDpGuetbG7rZYzNSBb1U4Tqbzi": {
       "id": "28a9404ef5",
@@ -11,13 +11,15 @@
       "symbol": "ARENA",
       "opened": "2026-09-25T00:07:08+00:00",
       "entry_price": 0.0004104,
-      "tokens": 41314.92360439534,
+      "tokens": 30986.192703296507,
       "tokens_initial": 41314.92360439534,
       "cost_usd": 17.1,
-      "fees_usd": 0.1444,
-      "realized_usd": 0.0,
-      "peak_gain": 0.3964424951267056,
-      "tp_hit": [],
+      "fees_usd": 0.21097335795719546,
+      "realized_usd": 6.511795352952653,
+      "peak_gain": 0.5519005847953218,
+      "tp_hit": [
+        0
+      ],
       "entry_liq": 56530.41,
       "score": 0.8189,
       "features": {
@@ -34,7 +36,7 @@
         "buzz": 0.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.0005731
+      "last_price": 0.0006369
     }
   },
   "blacklist": {
@@ -78,12 +80,12 @@
     "trades_today": 12
   },
   "stats": {
-    "ticks": 301,
+    "ticks": 302,
     "opened": 46,
     "closed": 45,
     "wins": 13,
     "losses": 32,
-    "fees_paid": 27.097657318317157,
+    "fees_paid": 27.164230676274354,
     "realized_pnl": -79.1216332976884
   }
 }
