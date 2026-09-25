@@ -1,27 +1,27 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T20:52:11+00:00`
+Updated `2026-09-25T21:05:45+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$433.02** |
-| Return | **-13.40%** (start $500.00) |
+| Equity | **$431.56** |
+| Return | **-13.69%** (start $500.00) |
 | Cash | $410.29 |
-| Deployed | $22.73 (5.2%) |
+| Deployed | $21.27 (4.9%) |
 | Open positions | 1 / 8 |
 | Closed trades | 45 (13W / 32L, WR 29%) |
 | Profit factor | 0.60 |
 | Fees + slippage paid | $27.16 |
-| Ticks run | 326 |
+| Ticks run | 328 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| ARENA | solana | $17.10 | $22.73 | +79% | +98% | 20.8h |
+| ARENA | solana | $17.10 | $21.27 | +67% | +98% | 21.0h |
 
 ## Last closed trades
 
@@ -64,15 +64,15 @@ _refit on 141 observations (96 shadow, 45 real), 51 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #326  equity $433.02  cash $410.29  open 1
+tick #328  equity $431.65  cash $410.29  open 1
   scanning chains + news...
-  115 raw candidates across 8 chains, 154 headlines/posts
-  10 passed gates | rejected: liquidity too thin x47, no h1 volume x38, too old x12, already discovered x5, sell pressure x2
-  top: GOCAT 0.90 | $PLAY 0.88 | merci 0.60 | SWARM 0.51 | ARENA 0.42
+  88 raw candidates across 6 chains, 154 headlines/posts
+  10 passed gates | rejected: liquidity too thin x53, no h1 volume x17, sell pressure x2, too old x2, already discovered x2
+  top: GOCAT 0.80 | merci 0.75 | $PLAY 0.71 | ARENA 0.70 | JEANWORK 0.42
   no entries this tick
   shadow: tracking 76, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED NPC        peak +1110%  (scored 0.49)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
-  entries blocked: daily loss -23.5% <= -6%; daily trade cap reached
+  entries blocked: daily loss -23.7% <= -6%; daily trade cap reached
 ```
