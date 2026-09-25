@@ -1,35 +1,36 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T00:53:45+00:00`
+Updated `2026-09-25T01:05:44+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$566.76** |
-| Return | **+13.35%** (start $500.00) |
-| Cash | $419.78 |
-| Deployed | $146.99 (25.9%) |
+| Equity | **$561.79** |
+| Return | **+12.36%** (start $500.00) |
+| Cash | $406.87 |
+| Deployed | $154.92 (27.6%) |
 | Open positions | 4 / 8 |
-| Closed trades | 32 (11W / 21L, WR 34%) |
-| Profit factor | 0.75 |
-| Fees + slippage paid | $24.59 |
-| Ticks run | 225 |
+| Closed trades | 33 (11W / 22L, WR 33%) |
+| Profit factor | 0.71 |
+| Fees + slippage paid | $24.79 |
+| Ticks run | 226 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| JEANCOIN | solana | $10.32 | $114.77 | +1023% | +1023% | 21.5h |
-| CATALYST | base | $10.26 | $9.39 | -8% | +10% | 21.2h |
-| S&P500 | solana | $11.97 | $8.72 | -26% | +14% | 0.8h |
-| ARENA | solana | $17.10 | $14.10 | -17% | +0% | 0.8h |
+| JEANCOIN | solana | $10.32 | $114.69 | +1022% | +1023% | 21.7h |
+| CATALYST | base | $10.26 | $9.39 | -8% | +10% | 21.4h |
+| ARENA | solana | $17.10 | $13.99 | -17% | +0% | 1.0h |
+| TUGGIN | solana | $16.85 | $16.70 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| S&P500 | $-8.02 | -67% | 0.9h | stop loss -66% |
 | 蝴蝶家园 | $-8.54 | -57% | 34.2h | ratchet +0% (peak +57%) |
 | 币安协议 | $-5.79 | -38% | 11.0h | stop loss -37% |
 | PURRP | $-4.46 | -43% | 2.2h | stop loss -42% |
@@ -44,7 +45,6 @@ Updated `2026-09-25T00:53:45+00:00`
 | UPTOBER | $+2.38 | +16% | 13.4h | ratchet +25% (peak +71%) |
 | GROKBOTIFY | $-7.28 | -100% | 0.3h | stop loss -98% |
 | MSTOCK | $+2.04 | +13% | 2.3h | stop loss -74% |
-| MOUSE | $-7.41 | -100% | 0.2h | stop loss -96% |
 
 ## Learned weights (v0)
 
@@ -67,14 +67,15 @@ _prior_
 
 ## Last run log
 ```
-tick #225  equity $572.36  cash $419.78  open 4
+tick #226  equity $566.76  cash $419.78  open 4
+  SELL S&P500     100% @ $4.087e-05  ->  $3.95   [stop loss -66%]
   scanning chains + news...
-  92 raw candidates across 6 chains, 154 headlines/posts
-  4 passed gates | rejected: liquidity too thin x45, no h1 volume x25, too old x13, already discovered x4, sell pressure x1
-  top: TUGGIN 0.67 | UPTOBER 0.61 | ARENA 0.60 | BRAIN 0.55
-  no entries this tick
-  shadow: tracking 22, closed 0 this tick (0 would have won)
+  86 raw candidates across 7 chains, 154 headlines/posts
+  4 passed gates | rejected: liquidity too thin x59, no h1 volume x16, too new (bot war) x2, sell pressure x2, already discovered x2
+  top: TUGGIN 0.65 | UPTOBER 0.64 | ARENA 0.60 | BRAIN 0.56
+  BUY[exploit] TUGGIN     $16.85 @ $0.0001481  score 0.65  solana  liq $33,570
+  shadow: tracking 16, closed 6 this tick (3 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
-    MISSED JEANPHIL   peak +284%  (scored 0.63)
+    MISSED GETF       peak +606%  (scored 0.66)
 ```
