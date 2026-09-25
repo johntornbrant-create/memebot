@@ -1,27 +1,27 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T18:26:53+00:00`
+Updated `2026-09-25T18:40:25+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$426.91** |
-| Return | **-14.62%** (start $500.00) |
+| Equity | **$426.58** |
+| Return | **-14.68%** (start $500.00) |
 | Cash | $410.29 |
-| Deployed | $16.62 (3.9%) |
+| Deployed | $16.29 (3.8%) |
 | Open positions | 1 / 8 |
 | Closed trades | 45 (13W / 32L, WR 29%) |
 | Profit factor | 0.60 |
 | Fees + slippage paid | $27.16 |
-| Ticks run | 307 |
+| Ticks run | 308 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| ARENA | solana | $17.10 | $16.62 | +31% | +62% | 18.3h |
+| ARENA | solana | $17.10 | $16.29 | +28% | +62% | 18.6h |
 
 ## Last closed trades
 
@@ -64,15 +64,15 @@ _refit on 141 observations (96 shadow, 45 real), 51 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #307  equity $426.79  cash $410.29  open 1
+tick #308  equity $426.91  cash $410.29  open 1
   scanning chains + news...
-  128 raw candidates across 6 chains, 154 headlines/posts
-  14 passed gates | rejected: liquidity too thin x56, no h1 volume x38, too old x14, already discovered x5, unknown age x1
-  top: PUMPCAT 0.82 | OnlyPump 0.82 | OnlyJeans 0.80 | DOGRILLA 0.79 | GROKBOOK 0.75
+  151 raw candidates across 7 chains, 154 headlines/posts
+  13 passed gates | rejected: liquidity too thin x87, no h1 volume x41, too old x5, already discovered x2, too new (bot war) x2
+  top: BRF 0.88 | JEANWORK 0.81 | OnlyPump 0.79 | GROKBOOK 0.72 | OnlyJeans 0.64
   no entries this tick
-  shadow: tracking 67, closed 0 this tick (0 would have won)
+  shadow: tracking 68, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED NPC        peak +1110%  (scored 0.49)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
-  entries blocked: daily loss -24.5% <= -6%; daily trade cap reached
+  entries blocked: daily loss -24.6% <= -6%; daily trade cap reached
 ```
