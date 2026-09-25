@@ -1,36 +1,37 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T02:05:14+00:00`
+Updated `2026-09-25T02:24:18+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$547.79** |
-| Return | **+9.56%** (start $500.00) |
-| Cash | $379.17 |
-| Deployed | $168.62 (30.8%) |
+| Equity | **$543.21** |
+| Return | **+8.64%** (start $500.00) |
+| Cash | $378.65 |
+| Deployed | $164.55 (30.3%) |
 | Open positions | 5 / 8 |
-| Closed trades | 34 (11W / 23L, WR 32%) |
+| Closed trades | 35 (11W / 24L, WR 31%) |
 | Profit factor | 0.63 |
-| Fees + slippage paid | $25.08 |
-| Ticks run | 230 |
+| Fees + slippage paid | $25.31 |
+| Ticks run | 231 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| JEANCOIN | solana | $10.32 | $114.54 | +1020% | +1041% | 22.7h |
-| CATALYST | base | $10.26 | $9.45 | -7% | +10% | 22.4h |
-| ARENA | solana | $17.10 | $16.10 | -5% | +0% | 2.0h |
-| BRAIN | solana | $11.53 | $16.38 | +43% | +57% | 0.7h |
-| COD | bsc | $16.42 | $12.14 | -25% | +1% | 0.5h |
+| JEANCOIN | solana | $10.32 | $112.44 | +1000% | +1041% | 23.0h |
+| CATALYST | base | $10.26 | $9.28 | -9% | +10% | 22.8h |
+| ARENA | solana | $17.10 | $16.57 | -2% | +0% | 2.3h |
+| COD | bsc | $16.42 | $14.85 | -9% | +1% | 0.8h |
+| MDP | bsc | $11.41 | $11.27 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| BRAIN | $-0.64 | -6% | 1.0h | ratchet +0% (peak +57%) |
 | TUGGIN | $-16.60 | -99% | 0.3h | stop loss -98% |
 | S&P500 | $-8.02 | -67% | 0.9h | stop loss -66% |
 | 蝴蝶家园 | $-8.54 | -57% | 34.2h | ratchet +0% (peak +57%) |
@@ -45,7 +46,6 @@ Updated `2026-09-25T02:05:14+00:00`
 | familiars | $+14.14 | +141% | 1.3h | ratchet +208% (peak +341%) |
 | GAYMF | $-5.60 | -56% | 0.8h | stop loss -55% |
 | UPTOBER | $+2.38 | +16% | 13.4h | ratchet +25% (peak +71%) |
-| GROKBOTIFY | $-7.28 | -100% | 0.3h | stop loss -98% |
 
 ## Learned weights (v0)
 
@@ -68,13 +68,14 @@ _prior_
 
 ## Last run log
 ```
-tick #230  equity $551.06  cash $379.17  open 5
+tick #231  equity $547.79  cash $379.17  open 5
+  SELL BRAIN      100% @ $0.0002029  ->  $10.89   [ratchet +0% (peak +57%)]
   scanning chains + news...
-  125 raw candidates across 5 chains, 154 headlines/posts
-  9 passed gates | rejected: liquidity too thin x55, no h1 volume x27, too old x21, already discovered x7, too new (bot war) x6
-  top: ARENA 0.75 | OG 0.71 | COD 0.69 | GOCAT 0.67 | REVS 0.67
-  no entries this tick
-  shadow: tracking 24, closed 1 this tick (0 would have won)
+  134 raw candidates across 6 chains, 154 headlines/posts
+  9 passed gates | rejected: liquidity too thin x59, no h1 volume x31, too old x23, already discovered x10, sell pressure x1
+  top: ARENA 0.73 | MDP 0.66 | REVS 0.66 | OG 0.64 | TTP 0.63
+  BUY[explore] MDP        $11.41 @ $0.0001321  score 0.66  bsc  liq $33,362
+  shadow: tracking 23, closed 3 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
     MISSED GETF       peak +606%  (scored 0.66)
