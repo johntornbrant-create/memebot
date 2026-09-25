@@ -1,32 +1,33 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T03:05:48+00:00`
+Updated `2026-09-25T03:24:06+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$552.51** |
-| Return | **+10.50%** (start $500.00) |
-| Cash | $367.34 |
-| Deployed | $185.17 (33.5%) |
-| Open positions | 6 / 8 |
+| Equity | **$561.94** |
+| Return | **+12.39%** (start $500.00) |
+| Cash | $355.54 |
+| Deployed | $206.40 (36.7%) |
+| Open positions | 7 / 8 |
 | Closed trades | 35 (11W / 24L, WR 31%) |
 | Profit factor | 0.63 |
-| Fees + slippage paid | $25.44 |
-| Ticks run | 234 |
+| Fees + slippage paid | $25.55 |
+| Ticks run | 235 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| JEANCOIN | solana | $10.32 | $103.92 | +916% | +1041% | 23.7h |
-| CATALYST | base | $10.26 | $9.28 | -9% | +10% | 23.4h |
-| ARENA | solana | $17.10 | $17.41 | +3% | +3% | 3.0h |
-| COD | bsc | $16.42 | $13.86 | -15% | +1% | 1.5h |
-| MDP | bsc | $11.41 | $11.50 | +2% | +32% | 0.7h |
-| 币安女英雄 | bsc | $11.31 | $29.20 | +161% | +161% | 0.5h |
+| JEANCOIN | solana | $10.32 | $107.86 | +955% | +1041% | 24.0h |
+| CATALYST | base | $10.26 | $9.28 | -9% | +10% | 23.8h |
+| ARENA | solana | $17.10 | $17.82 | +5% | +5% | 3.3h |
+| COD | bsc | $16.42 | $21.88 | +35% | +35% | 1.8h |
+| MDP | bsc | $11.41 | $11.87 | +5% | +32% | 1.0h |
+| 币安女英雄 | bsc | $11.31 | $25.88 | +132% | +161% | 0.8h |
+| OG | solana | $11.80 | $11.69 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
@@ -69,13 +70,13 @@ _prior_
 
 ## Last run log
 ```
-tick #234  equity $547.60  cash $367.34  open 6
+tick #235  equity $552.51  cash $367.34  open 6
   scanning chains + news...
-  100 raw candidates across 5 chains, 160 headlines/posts
-  8 passed gates | rejected: liquidity too thin x61, no h1 volume x23, too old x3, already discovered x3, unknown age x1
-  top: 币安女英雄 0.76 | ARENA 0.73 | MDP 0.71 | BRAIN 0.66 | OG 0.58
-  no entries this tick
-  shadow: tracking 22, closed 2 this tick (1 would have won)
+  102 raw candidates across 6 chains, 154 headlines/posts
+  7 passed gates | rejected: liquidity too thin x69, no h1 volume x21, too old x2, unknown age x2, already discovered x1
+  top: ARENA 0.72 | 币安女英雄 0.69 | BRAIN 0.64 | Shurikane 0.60 | MDP 0.58
+  BUY[explore] OG         $11.80 @ $0.0001501  score 0.55  solana  liq $34,978
+  shadow: tracking 22, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
     MISSED GETF       peak +606%  (scored 0.66)
