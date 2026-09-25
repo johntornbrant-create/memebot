@@ -13,7 +13,7 @@ Pure stdlib. No dependencies, nothing to break in CI.
 import json, math, os
 from . import config
 from .features import FEATURES, PRIOR_WEIGHTS
-from .scoring import load_weights, save_weights
+from .scoring import load_weights, save_weights, score
 from .shadow import read_outcomes
 
 TRADES = os.path.join(os.path.dirname(__file__), "..", "state", "trades.jsonl")
@@ -88,14 +88,25 @@ def refit(force=False):
 
     old, meta = load_weights()
     base_rate = wins / n
-    thr = config.ENTRY_THRESHOLD
+
+    # ADAPTIVE THRESHOLD. A fixed number goes stale the moment the weights move, because
+    # refitting changes the whole score scale. So set the bar from the new model's own
+    # score distribution: trade roughly the top quartile of what the gates let through.
+    # Measured on 96 shadow closures: Q1 hit +50% 62.5% of the time with a +93% median
+    # peak, vs 29% / +9% for Q4. The top quartile is where the edge lives.
+    scores = sorted(score(r["features"], new) for r in read_outcomes())
+    if len(scores) >= 40:
+        thr = round(scores[int(len(scores) * 0.75)], 3)
+        thr = min(max(thr, 0.50), 0.90)
+    else:
+        thr = config.ENTRY_THRESHOLD
+
+    # ...but if the real trades are actually losing, raise the bar regardless.
     real = _read_trades()
     if len(real) >= 25:
         rwr = sum(1 for r in real if r.get("pnl_pct", -1) >= WIN_THRESHOLD) / len(real)
         if rwr < 0.20:
-            thr = min(0.82, thr + 0.08)
-        elif rwr > 0.40:
-            thr = max(0.52, thr - 0.04)
+            thr = min(0.92, thr + 0.05)
 
     meta = {
         "version": meta.get("version", 0) + 1,

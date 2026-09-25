@@ -100,7 +100,8 @@ REDDIT_SUBS = ["CryptoCurrency", "solana", "CryptoMoonShots", "SatoshiStreetBets
 # SAFETY gates, score ignored entirely.
 EXPLORE_RATE_COLD = 0.60        # before it has data, mostly explore
 EXPLORE_RATE_WARM = 0.20        # forever after - never stop learning
-COLD_TRADES       = 80          # closed trades before switching to warm
+COLD_TRADES       = 40          # we now have 140 labelled observations - stop burning
+                                # 60% of entries on random picks, drop to the 20% warm rate
 
 # ---------- shadow book: learning from what it did NOT buy ----------
 # Every gate-passing candidate is tracked for 24h whether or not we bought it.

@@ -3,7 +3,10 @@ name: memebot weekly refit
 
 on:
   schedule:
-    - cron: "0 4 * * 1"        # Mondays 04:00 UTC
+    - cron: "0 */6 * * *"      # every 6 hours. Weekly was far too slow for memecoins -
+                               # metas turn over in days, and the first scheduled refit was
+                               # missed entirely because the repo launched after that window,
+                               # so it traded 3 days on flat weights having learned nothing.
   workflow_dispatch:
     inputs:
       force:
