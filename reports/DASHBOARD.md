@@ -1,30 +1,30 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T03:50:30+00:00`
+Updated `2026-09-25T04:05:33+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$529.38** |
-| Return | **+5.88%** (start $500.00) |
+| Equity | **$540.24** |
+| Return | **+8.05%** (start $500.00) |
 | Cash | $377.26 |
-| Deployed | $152.13 (28.7%) |
+| Deployed | $162.98 (30.2%) |
 | Open positions | 4 / 8 |
 | Closed trades | 39 (12W / 27L, WR 31%) |
 | Profit factor | 0.57 |
 | Fees + slippage paid | $26.04 |
-| Ticks run | 237 |
+| Ticks run | 238 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| JEANCOIN | solana | $10.32 | $111.14 | +987% | +1041% | 24.4h |
-| ARENA | solana | $17.10 | $17.70 | +4% | +5% | 3.7h |
-| MDP | bsc | $11.41 | $12.38 | +10% | +32% | 1.4h |
-| IMU | solana | $11.40 | $10.91 | -3% | +0% | 0.2h |
+| JEANCOIN | solana | $10.32 | $115.04 | +1025% | +1041% | 24.7h |
+| ARENA | solana | $17.10 | $17.76 | +5% | +5% | 4.0h |
+| MDP | bsc | $11.41 | $12.12 | +7% | +32% | 1.7h |
+| IMU | solana | $11.40 | $18.06 | +60% | +60% | 0.4h |
 
 ## Last closed trades
 
@@ -67,8 +67,14 @@ _prior_
 
 ## Last run log
 ```
-tick #237  equity $542.86  cash $350.13  open 6
-  SELL CATALYST   100% @ $1.69  ->  $9.19   [time stop 24h, only -9%]
-  SELL COD        100% @ $0.001565  ->  $17.94   [ratchet +25% (peak +71%)]
-  entries blocked: daily loss -6.4% <= -6%
+tick #238  equity $529.38  cash $377.26  open 4
+  scanning chains + news...
+  181 raw candidates across 8 chains, 154 headlines/posts
+  10 passed gates | rejected: liquidity too thin x112, no h1 volume x32, too old x17, already discovered x9, too new (bot war) x1
+  top: BRAIN 0.75 | goon 0.71 | familiars 0.58 | NPC 0.58 | IMU 0.56
+  no entries this tick
+  shadow: tracking 27, closed 0 this tick (0 would have won)
+    MISSED GENIUS     peak +1642%  (scored 0.61)
+    MISSED NPC        peak +1110%  (scored 0.49)
+    MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
 ```
