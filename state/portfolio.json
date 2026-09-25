@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-25T12:45:59+00:00",
-  "cash": 390.63395059273165,
-  "equity": 426.0885,
+  "updated": "2026-09-25T13:05:48+00:00",
+  "cash": 397.3384122066175,
+  "equity": 423.0143,
   "positions": {
     "solana:4G5YDqDvwgwSS3nLPDGDpGuetbG7rZYzNSBb1U4Tqbzi": {
       "id": "28a9404ef5",
@@ -34,39 +34,7 @@
         "buzz": 0.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.0004247
-    },
-    "bsc:0x7a67363885EBC01F1D2AEf95B238E39ca1587777": {
-      "id": "08e09447bd",
-      "chain": "bsc",
-      "address": "0x7a67363885EBC01F1D2AEf95B238E39ca1587777",
-      "symbol": "MDP",
-      "opened": "2026-09-25T02:24:17+00:00",
-      "entry_price": 0.0001321,
-      "tokens": 85344.3392184901,
-      "tokens_initial": 85344.3392184901,
-      "cost_usd": 11.407349099999998,
-      "fees_usd": 0.1334,
-      "realized_usd": 0.0,
-      "peak_gain": 0.3497350492051474,
-      "tp_hit": [],
-      "entry_liq": 33361.82,
-      "score": 0.659,
-      "features": {
-        "liq_quality": 0.4944,
-        "turnover": 0.6175,
-        "buy_pressure": 0.5315,
-        "momentum_accel": 1.0,
-        "not_vertical": 0.4812,
-        "age_sweet": 0.2681,
-        "socials": 1.0,
-        "fdv_sanity": 1.0,
-        "txn_depth": 0.445,
-        "dip_in_uptrend": 0.5,
-        "buzz": 0.0,
-        "paid_boost": 0.02
-      },
-      "last_price": 0.000101
+      "last_price": 0.0004245
     },
     "solana:3znS89gifim2Hhhu8wjb2PfSgaCDdma187D5NMkDpump": {
       "id": "27c99ba57a",
@@ -98,7 +66,7 @@
         "buzz": 0.0,
         "paid_boost": 0.3
       },
-      "last_price": 0.0003786
+      "last_price": 0.0003317
     }
   },
   "blacklist": {
@@ -128,7 +96,8 @@
     "solana:D5qLnkRpzvuizsp4BfcrEWgUHiwrLoxVNZHoCx3Rpump": "2026-09-25T03:37:06+00:00",
     "solana:EXXR9Wt3mjxbjmzhPVj7EcA3zfxZd9uk1WhMioeipump": "2026-09-25T07:24:55+00:00",
     "bsc:0x4392cBaE887bb2CcF3d58bc4D04F782c76B47777": "2026-09-25T09:25:08+00:00",
-    "solana:4WECKfvfgEiojyZJq5Xm12Hvk76rhM4VHQAZGaELpump": "2026-09-25T09:37:53+00:00"
+    "solana:4WECKfvfgEiojyZJq5Xm12Hvk76rhM4VHQAZGaELpump": "2026-09-25T09:37:53+00:00",
+    "bsc:0x7a67363885EBC01F1D2AEf95B238E39ca1587777": "2026-09-25T13:05:48+00:00"
   },
   "halted": false,
   "halt_reason": "",
@@ -140,12 +109,12 @@
     "trades_today": 12
   },
   "stats": {
-    "ticks": 271,
+    "ticks": 272,
     "opened": 46,
-    "closed": 43,
+    "closed": 44,
     "wins": 13,
-    "losses": 30,
-    "fees_paid": 26.93220784375273,
-    "realized_pnl": -69.00988080726826
+    "losses": 31,
+    "fees_paid": 27.03139695236491,
+    "realized_pnl": -73.71276829338241
   }
 }
