@@ -1,36 +1,36 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T09:04:21+00:00`
+Updated `2026-09-25T09:25:08+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$554.15** |
-| Return | **+10.83%** (start $500.00) |
-| Cash | $382.19 |
-| Deployed | $171.96 (31.0%) |
-| Open positions | 5 / 8 |
-| Closed trades | 41 (13W / 28L, WR 32%) |
-| Profit factor | 0.68 |
-| Fees + slippage paid | $26.80 |
-| Ticks run | 257 |
+| Equity | **$538.47** |
+| Return | **+7.69%** (start $500.00) |
+| Cash | $389.02 |
+| Deployed | $149.45 (27.8%) |
+| Open positions | 4 / 8 |
+| Closed trades | 42 (13W / 29L, WR 31%) |
+| Profit factor | 0.66 |
+| Fees + slippage paid | $26.90 |
+| Ticks run | 258 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| JEANCOIN | solana | $10.32 | $122.22 | +1095% | +1139% | 29.7h |
-| ARENA | solana | $17.10 | $17.28 | +2% | +28% | 9.0h |
-| MDP | bsc | $11.41 | $10.81 | -4% | +35% | 6.7h |
-| 币安月饼 | bsc | $11.73 | $8.45 | -27% | +8% | 2.3h |
-| BRAIN | solana | $11.85 | $13.20 | +12% | +30% | 1.6h |
+| JEANCOIN | solana | $10.32 | $108.39 | +960% | +1139% | 30.0h |
+| ARENA | solana | $17.10 | $17.25 | +2% | +28% | 9.3h |
+| MDP | bsc | $11.41 | $12.77 | +13% | +35% | 7.0h |
+| BRAIN | solana | $11.85 | $11.04 | -6% | +30% | 2.0h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| 币安月饼 | $-4.90 | -42% | 2.6h | stop loss -40% |
 | Shurikane | $-6.92 | -41% | 1.8h | stop loss -40% |
 | IMU | $+24.04 | +211% | 2.0h | ratchet +391% (peak +602%) |
 | COD | $+1.52 | +9% | 2.2h | ratchet +25% (peak +71%) |
@@ -45,7 +45,6 @@ Updated `2026-09-25T09:04:21+00:00`
 | PURRP | $-4.46 | -43% | 2.2h | stop loss -42% |
 | 币安女王 | $-0.58 | -4% | 3.0h | ratchet +0% (peak +67%) |
 | PURRP | $+3.56 | +35% | 2.2h | ratchet +41% (peak +101%) |
-| UPTOBER | $-4.23 | -42% | 2.9h | stop loss -40% |
 
 ## Learned weights (v0)
 
@@ -68,6 +67,7 @@ _prior_
 
 ## Last run log
 ```
-tick #257  equity $547.56  cash $382.19  open 5
+tick #258  equity $554.15  cash $382.19  open 5
+  SELL 币安月饼       100% @ $6.084e-05  ->  $6.83   [stop loss -40%]
   entries blocked: daily trade cap reached
 ```
