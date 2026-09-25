@@ -1,32 +1,32 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T02:51:36+00:00`
+Updated `2026-09-25T03:05:48+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$547.60** |
-| Return | **+9.52%** (start $500.00) |
+| Equity | **$552.51** |
+| Return | **+10.50%** (start $500.00) |
 | Cash | $367.34 |
-| Deployed | $180.26 (32.9%) |
+| Deployed | $185.17 (33.5%) |
 | Open positions | 6 / 8 |
 | Closed trades | 35 (11W / 24L, WR 31%) |
 | Profit factor | 0.63 |
 | Fees + slippage paid | $25.44 |
-| Ticks run | 233 |
+| Ticks run | 234 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| JEANCOIN | solana | $10.32 | $109.29 | +969% | +1041% | 23.4h |
-| CATALYST | base | $10.26 | $9.28 | -9% | +10% | 23.2h |
-| ARENA | solana | $17.10 | $16.54 | -2% | +0% | 2.7h |
-| COD | bsc | $16.42 | $12.39 | -24% | +1% | 1.3h |
-| MDP | bsc | $11.41 | $14.91 | +32% | +32% | 0.5h |
-| 币安女英雄 | bsc | $11.31 | $17.84 | +60% | +60% | 0.2h |
+| JEANCOIN | solana | $10.32 | $103.92 | +916% | +1041% | 23.7h |
+| CATALYST | base | $10.26 | $9.28 | -9% | +10% | 23.4h |
+| ARENA | solana | $17.10 | $17.41 | +3% | +3% | 3.0h |
+| COD | bsc | $16.42 | $13.86 | -15% | +1% | 1.5h |
+| MDP | bsc | $11.41 | $11.50 | +2% | +32% | 0.7h |
+| 币安女英雄 | bsc | $11.31 | $29.20 | +161% | +161% | 0.5h |
 
 ## Last closed trades
 
@@ -69,13 +69,13 @@ _prior_
 
 ## Last run log
 ```
-tick #233  equity $538.63  cash $367.34  open 6
+tick #234  equity $547.60  cash $367.34  open 6
   scanning chains + news...
-  157 raw candidates across 7 chains, 160 headlines/posts
-  9 passed gates | rejected: liquidity too thin x92, no h1 volume x34, too old x15, already discovered x6, too new (bot war) x1
-  top: 币安女英雄 0.70 | ARENA 0.69 | MDP 0.68 | BRAIN 0.62 | OG 0.57
+  100 raw candidates across 5 chains, 160 headlines/posts
+  8 passed gates | rejected: liquidity too thin x61, no h1 volume x23, too old x3, already discovered x3, unknown age x1
+  top: 币安女英雄 0.76 | ARENA 0.73 | MDP 0.71 | BRAIN 0.66 | OG 0.58
   no entries this tick
-  shadow: tracking 23, closed 0 this tick (0 would have won)
+  shadow: tracking 22, closed 2 this tick (1 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
     MISSED GETF       peak +606%  (scored 0.66)
