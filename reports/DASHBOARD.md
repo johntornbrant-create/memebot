@@ -1,31 +1,31 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T07:26:27+00:00`
+Updated `2026-09-25T07:37:24+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$564.23** |
-| Return | **+12.85%** (start $500.00) |
+| Equity | **$561.63** |
+| Return | **+12.33%** (start $500.00) |
 | Cash | $382.19 |
-| Deployed | $182.04 (32.3%) |
+| Deployed | $179.44 (32.0%) |
 | Open positions | 5 / 8 |
 | Closed trades | 41 (13W / 28L, WR 32%) |
 | Profit factor | 0.68 |
 | Fees + slippage paid | $26.80 |
-| Ticks run | 250 |
+| Ticks run | 251 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| JEANCOIN | solana | $10.32 | $126.63 | +1139% | +1139% | 28.0h |
-| ARENA | solana | $17.10 | $20.79 | +23% | +23% | 7.3h |
-| MDP | bsc | $11.41 | $11.61 | +3% | +35% | 5.0h |
-| 币安月饼 | bsc | $11.73 | $11.17 | -4% | +8% | 0.6h |
-| BRAIN | solana | $11.85 | $11.74 | +0% | +0% | 0.0h |
+| JEANCOIN | solana | $10.32 | $124.90 | +1122% | +1139% | 28.2h |
+| ARENA | solana | $17.10 | $20.90 | +23% | +23% | 7.5h |
+| MDP | bsc | $11.41 | $11.18 | -1% | +35% | 5.2h |
+| 币安月饼 | bsc | $11.73 | $10.60 | -9% | +8% | 0.8h |
+| BRAIN | solana | $11.85 | $11.85 | +1% | +1% | 0.2h |
 
 ## Last closed trades
 
@@ -68,16 +68,6 @@ _prior_
 
 ## Last run log
 ```
-tick #250  equity $558.86  cash $384.12  open 5
-  SELL Shurikane  100% @ $0.0002855  ->  $9.92   [stop loss -40%]
-  scanning chains + news...
-  82 raw candidates across 7 chains, 154 headlines/posts
-  6 passed gates | rejected: liquidity too thin x43, no h1 volume x31, too old x2
-  top: Shurikane 0.73 | 拉布布 0.73 | IMU 0.70 | BRAIN 0.63 | UPTOBER 0.55
-  BUY[explore] BRAIN      $11.85 @ $0.0004787  score 0.63  solana  liq $69,561
-  no entry: daily trade cap reached
-  shadow: tracking 37, closed 0 this tick (0 would have won)
-    MISSED GENIUS     peak +1642%  (scored 0.61)
-    MISSED NPC        peak +1110%  (scored 0.49)
-    MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
+tick #251  equity $564.23  cash $382.19  open 5
+  entries blocked: daily trade cap reached
 ```
