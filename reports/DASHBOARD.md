@@ -1,36 +1,37 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T07:06:24+00:00`
+Updated `2026-09-25T07:26:27+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$558.86** |
-| Return | **+11.77%** (start $500.00) |
-| Cash | $384.12 |
-| Deployed | $174.75 (31.3%) |
+| Equity | **$564.23** |
+| Return | **+12.85%** (start $500.00) |
+| Cash | $382.19 |
+| Deployed | $182.04 (32.3%) |
 | Open positions | 5 / 8 |
-| Closed trades | 40 (13W / 27L, WR 32%) |
-| Profit factor | 0.71 |
-| Fees + slippage paid | $26.60 |
-| Ticks run | 249 |
+| Closed trades | 41 (13W / 28L, WR 32%) |
+| Profit factor | 0.68 |
+| Fees + slippage paid | $26.80 |
+| Ticks run | 250 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| JEANCOIN | solana | $10.32 | $119.85 | +1072% | +1072% | 27.7h |
-| ARENA | solana | $17.10 | $18.12 | +7% | +7% | 7.0h |
-| MDP | bsc | $11.41 | $11.29 | +0% | +35% | 4.7h |
-| Shurikane | solana | $16.84 | $12.97 | -22% | +17% | 1.5h |
-| 币安月饼 | bsc | $11.73 | $12.51 | +8% | +8% | 0.3h |
+| JEANCOIN | solana | $10.32 | $126.63 | +1139% | +1139% | 28.0h |
+| ARENA | solana | $17.10 | $20.79 | +23% | +23% | 7.3h |
+| MDP | bsc | $11.41 | $11.61 | +3% | +35% | 5.0h |
+| 币安月饼 | bsc | $11.73 | $11.17 | -4% | +8% | 0.6h |
+| BRAIN | solana | $11.85 | $11.74 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| Shurikane | $-6.92 | -41% | 1.8h | stop loss -40% |
 | IMU | $+24.04 | +211% | 2.0h | ratchet +391% (peak +602%) |
 | COD | $+1.52 | +9% | 2.2h | ratchet +25% (peak +71%) |
 | CATALYST | $-1.08 | -10% | 24.2h | time stop 24h, only -9% |
@@ -45,7 +46,6 @@ Updated `2026-09-25T07:06:24+00:00`
 | 币安女王 | $-0.58 | -4% | 3.0h | ratchet +0% (peak +67%) |
 | PURRP | $+3.56 | +35% | 2.2h | ratchet +41% (peak +101%) |
 | UPTOBER | $-4.23 | -42% | 2.9h | stop loss -40% |
-| CZBUILDER | $-4.25 | -40% | 0.8h | ratchet +25% (peak +98%) |
 
 ## Learned weights (v0)
 
@@ -68,12 +68,14 @@ _prior_
 
 ## Last run log
 ```
-tick #249  equity $558.80  cash $384.12  open 5
+tick #250  equity $558.86  cash $384.12  open 5
+  SELL Shurikane  100% @ $0.0002855  ->  $9.92   [stop loss -40%]
   scanning chains + news...
-  84 raw candidates across 7 chains, 154 headlines/posts
-  11 passed gates | rejected: liquidity too thin x36, no h1 volume x26, already discovered x5, too old x5, sell pressure x1
-  top: TTP 0.73 | Shurikane 0.72 | 币安月饼 0.69 | IMU 0.68 | 拉布布 0.64
-  no entries this tick
+  82 raw candidates across 7 chains, 154 headlines/posts
+  6 passed gates | rejected: liquidity too thin x43, no h1 volume x31, too old x2
+  top: Shurikane 0.73 | 拉布布 0.73 | IMU 0.70 | BRAIN 0.63 | UPTOBER 0.55
+  BUY[explore] BRAIN      $11.85 @ $0.0004787  score 0.63  solana  liq $69,561
+  no entry: daily trade cap reached
   shadow: tracking 37, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED NPC        peak +1110%  (scored 0.49)
