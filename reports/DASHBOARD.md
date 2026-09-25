@@ -1,27 +1,27 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T21:38:09+00:00`
+Updated `2026-09-25T21:51:41+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$431.39** |
-| Return | **-13.72%** (start $500.00) |
+| Equity | **$431.59** |
+| Return | **-13.68%** (start $500.00) |
 | Cash | $410.29 |
-| Deployed | $21.10 (4.9%) |
+| Deployed | $21.30 (4.9%) |
 | Open positions | 1 / 8 |
 | Closed trades | 45 (13W / 32L, WR 29%) |
 | Profit factor | 0.60 |
 | Fees + slippage paid | $27.16 |
-| Ticks run | 332 |
+| Ticks run | 334 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| ARENA | solana | $17.10 | $21.10 | +66% | +98% | 21.5h |
+| ARENA | solana | $17.10 | $21.30 | +68% | +98% | 21.7h |
 
 ## Last closed trades
 
@@ -64,15 +64,15 @@ _refit on 141 observations (96 shadow, 45 real), 51 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #332  equity $431.41  cash $410.29  open 1
+tick #334  equity $431.68  cash $410.29  open 1
   scanning chains + news...
-  122 raw candidates across 8 chains, 154 headlines/posts
-  10 passed gates | rejected: liquidity too thin x68, no h1 volume x23, too old x12, already discovered x6, sell pressure x3
-  top: TRUMP 0.85 | IMDSTR 0.78 | e/acc 0.58 | GME 0.41 | ARENA 0.40
+  66 raw candidates across 6 chains, 154 headlines/posts
+  9 passed gates | rejected: liquidity too thin x30, no h1 volume x21, too new (bot war) x2, sell pressure x2, too old x2
+  top: TRUMP 0.86 | e/acc 0.59 | ARENA 0.40 | BLUEPRINT 0.37 | JEANWORK 0.26
   no entries this tick
   shadow: tracking 80, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED NPC        peak +1110%  (scored 0.49)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
-  entries blocked: daily loss -23.8% <= -6%; daily trade cap reached
+  entries blocked: daily loss -23.7% <= -6%; daily trade cap reached
 ```
