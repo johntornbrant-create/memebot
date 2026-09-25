@@ -1,30 +1,30 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T00:07:10+00:00`
+Updated `2026-09-25T00:33:07+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$570.11** |
-| Return | **+14.02%** (start $500.00) |
+| Equity | **$572.36** |
+| Return | **+14.47%** (start $500.00) |
 | Cash | $419.78 |
-| Deployed | $150.33 (26.4%) |
+| Deployed | $152.58 (26.7%) |
 | Open positions | 4 / 8 |
 | Closed trades | 32 (11W / 21L, WR 34%) |
 | Profit factor | 0.75 |
 | Fees + slippage paid | $24.59 |
-| Ticks run | 223 |
+| Ticks run | 224 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| JEANCOIN | solana | $10.32 | $111.98 | +995% | +1004% | 20.7h |
-| CATALYST | base | $10.26 | $9.28 | -9% | +10% | 20.5h |
-| S&P500 | solana | $11.97 | $11.86 | +0% | +0% | 0.0h |
-| ARENA | solana | $17.10 | $16.96 | +0% | +0% | 0.0h |
+| JEANCOIN | solana | $10.32 | $113.15 | +1007% | +1007% | 21.1h |
+| CATALYST | base | $10.26 | $9.28 | -9% | +10% | 20.9h |
+| S&P500 | solana | $11.97 | $13.56 | +14% | +14% | 0.4h |
+| ARENA | solana | $17.10 | $16.59 | -2% | +0% | 0.4h |
 
 ## Last closed trades
 
@@ -67,14 +67,13 @@ _prior_
 
 ## Last run log
 ```
-tick #223  equity $565.81  cash $448.85  open 2
+tick #224  equity $570.11  cash $419.78  open 4
   scanning chains + news...
-  115 raw candidates across 8 chains, 154 headlines/posts
-  5 passed gates | rejected: liquidity too thin x57, no h1 volume x36, too old x13, already discovered x3, sell pressure x1
-  top: ARENA 0.82 | LOUIS 0.60 | VEYRIN 0.56 | S&P500 0.50 | UPTOBER 0.50
-  BUY[explore] S&P500     $11.97 @ $0.0001213  score 0.50  solana  liq $33,112
-  BUY[exploit] ARENA      $17.10 @ $0.0004104  score 0.82  solana  liq $56,530
-  shadow: tracking 21, closed 17 this tick (6 would have won)
+  116 raw candidates across 8 chains, 154 headlines/posts
+  3 passed gates | rejected: liquidity too thin x73, no h1 volume x34, too new (bot war) x3, too old x1, sell pressure x1
+  top: ARENA 0.80 | BRAIN 0.53 | UPTOBER 0.50
+  no entries this tick
+  shadow: tracking 20, closed 2 this tick (2 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
     MISSED JEANPHIL   peak +284%  (scored 0.63)
