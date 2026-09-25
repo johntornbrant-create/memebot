@@ -1,30 +1,30 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T05:38:13+00:00`
+Updated `2026-09-25T05:51:53+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$561.26** |
-| Return | **+12.25%** (start $500.00) |
+| Equity | **$563.10** |
+| Return | **+12.62%** (start $500.00) |
 | Cash | $395.85 |
-| Deployed | $165.41 (29.5%) |
+| Deployed | $167.25 (29.7%) |
 | Open positions | 4 / 8 |
 | Closed trades | 40 (13W / 27L, WR 32%) |
 | Profit factor | 0.71 |
 | Fees + slippage paid | $26.47 |
-| Ticks run | 244 |
+| Ticks run | 245 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| JEANCOIN | solana | $10.32 | $116.34 | +1038% | +1041% | 26.2h |
-| ARENA | solana | $17.10 | $17.90 | +6% | +6% | 5.5h |
-| MDP | bsc | $11.41 | $14.33 | +27% | +32% | 3.2h |
-| Shurikane | solana | $16.84 | $16.70 | +0% | +0% | 0.0h |
+| JEANCOIN | solana | $10.32 | $115.76 | +1032% | +1041% | 26.4h |
+| ARENA | solana | $17.10 | $17.97 | +6% | +6% | 5.7h |
+| MDP | bsc | $11.41 | $15.22 | +35% | +35% | 3.5h |
+| Shurikane | solana | $16.84 | $18.31 | +10% | +10% | 0.2h |
 
 ## Last closed trades
 
@@ -67,13 +67,12 @@ _prior_
 
 ## Last run log
 ```
-tick #244  equity $579.56  cash $377.26  open 4
-  SELL IMU        100% @ $0.000609  ->  $35.44   [ratchet +391% (peak +602%)]
+tick #245  equity $561.26  cash $395.85  open 4
   scanning chains + news...
-  125 raw candidates across 7 chains, 160 headlines/posts
-  11 passed gates | rejected: liquidity too thin x77, no h1 volume x25, already discovered x5, too old x5, sell pressure x2
-  top: Shurikane 0.74 | ARENA 0.68 | BRAIN 0.67 | IMU 0.63 | NPC 0.56
-  BUY[exploit] Shurikane  $16.84 @ $0.0004762  score 0.74  solana  liq $64,509
+  113 raw candidates across 7 chains, 154 headlines/posts
+  8 passed gates | rejected: liquidity too thin x84, no h1 volume x16, too old x2, already discovered x2, too new (bot war) x1
+  top: Shurikane 0.80 | ARENA 0.70 | IMU 0.68 | BRAIN 0.67 | UPTOBER 0.54
+  no entries this tick
   shadow: tracking 34, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED NPC        peak +1110%  (scored 0.49)
