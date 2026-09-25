@@ -1,30 +1,30 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T00:33:07+00:00`
+Updated `2026-09-25T00:53:45+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$572.36** |
-| Return | **+14.47%** (start $500.00) |
+| Equity | **$566.76** |
+| Return | **+13.35%** (start $500.00) |
 | Cash | $419.78 |
-| Deployed | $152.58 (26.7%) |
+| Deployed | $146.99 (25.9%) |
 | Open positions | 4 / 8 |
 | Closed trades | 32 (11W / 21L, WR 34%) |
 | Profit factor | 0.75 |
 | Fees + slippage paid | $24.59 |
-| Ticks run | 224 |
+| Ticks run | 225 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| JEANCOIN | solana | $10.32 | $113.15 | +1007% | +1007% | 21.1h |
-| CATALYST | base | $10.26 | $9.28 | -9% | +10% | 20.9h |
-| S&P500 | solana | $11.97 | $13.56 | +14% | +14% | 0.4h |
-| ARENA | solana | $17.10 | $16.59 | -2% | +0% | 0.4h |
+| JEANCOIN | solana | $10.32 | $114.77 | +1023% | +1023% | 21.5h |
+| CATALYST | base | $10.26 | $9.39 | -8% | +10% | 21.2h |
+| S&P500 | solana | $11.97 | $8.72 | -26% | +14% | 0.8h |
+| ARENA | solana | $17.10 | $14.10 | -17% | +0% | 0.8h |
 
 ## Last closed trades
 
@@ -67,13 +67,13 @@ _prior_
 
 ## Last run log
 ```
-tick #224  equity $570.11  cash $419.78  open 4
+tick #225  equity $572.36  cash $419.78  open 4
   scanning chains + news...
-  116 raw candidates across 8 chains, 154 headlines/posts
-  3 passed gates | rejected: liquidity too thin x73, no h1 volume x34, too new (bot war) x3, too old x1, sell pressure x1
-  top: ARENA 0.80 | BRAIN 0.53 | UPTOBER 0.50
+  92 raw candidates across 6 chains, 154 headlines/posts
+  4 passed gates | rejected: liquidity too thin x45, no h1 volume x25, too old x13, already discovered x4, sell pressure x1
+  top: TUGGIN 0.67 | UPTOBER 0.61 | ARENA 0.60 | BRAIN 0.55
   no entries this tick
-  shadow: tracking 20, closed 2 this tick (2 would have won)
+  shadow: tracking 22, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
     MISSED JEANPHIL   peak +284%  (scored 0.63)
