@@ -38,7 +38,7 @@ def manage_exits(pf):
     pf_mod.mark_to_market(pf, quotes)
 
 
-def find_entries(pf):
+def scan(pf, allow_entries=True):
     weights, meta = scoring.load_weights()
     thr = float(meta.get("threshold", config.ENTRY_THRESHOLD))
 
@@ -84,7 +84,7 @@ def find_entries(pf):
             plan.append((pool.pop(0), "exploit"))
 
     opened, taken_keys = 0, set()
-    for (s, c, f), mode in plan:
+    for (s, c, f), mode in (plan if allow_entries else []):
         ok, reasons = risk.equity_curve_checks(pf)
         if not ok:
             log(f"  no entry: {'; '.join(reasons)}")
@@ -132,12 +132,14 @@ def tick():
         log("  exit management failed:\n" + traceback.format_exc())
 
     can, reasons = risk.equity_curve_checks(pf)
-    if can:
-        try:
-            find_entries(pf)
-        except Exception:
-            log("  entry scan failed:\n" + traceback.format_exc())
-    else:
+    try:
+        # Entries are gated by risk. The shadow book is NOT - it is pure research and it is
+        # the most valuable thing this bot produces, so it keeps collecting even when the
+        # kill switch has stopped all trading.
+        scan(pf, allow_entries=can)
+    except Exception:
+        log("  scan failed: " + traceback.format_exc())
+    if not can:
         log(f"  entries blocked: {'; '.join(reasons)}")
 
     pf_mod.save(pf)

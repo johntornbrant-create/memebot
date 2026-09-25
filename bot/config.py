@@ -7,7 +7,9 @@ CURRENCY          = "USD"
 # ---------- risk (the part that matters) ----------
 # Prior evidence: 58% of copied memecoin positions went to zero (copytrade sim 2026-08-19).
 # So every position is assumed to be a potential -100%. Sizing is built around that.
-MAX_POS_PCT       = 0.030       # 3.0% of equity per position  -> $15 on $500
+MAX_POS_PCT       = 0.020       # 2.0% of equity -> $10 on $500. Cut from 3% while the
+                                # strategy is unprofitable at this polling rate: extends runway
+                                # so the shadow book keeps collecting the data that matters.
 MIN_POS_USD       = 8.00        # below this, flat gas is too big a % of the trade
 MAX_CONCURRENT    = 8           # 8 x 3% = 24% max exposure at any instant
 MAX_DEPLOYED_PCT  = 0.35        # never more than 35% of equity out of cash
@@ -29,10 +31,13 @@ STOP_LOSS         = -0.35       # memecoin noise eats tight stops
 # (peak gain reached, stop floor from then on). Monotonic, never loosens.
 RATCHET           = [(0.40, 0.00), (0.70, 0.25), (1.00, 0.40)]
 
-# No take-profit ladder. Peaks were +724%, +526%, +394%, +248% - a rung sells the tail
-# that pays for everything else. The ratchet removes the downside instead, and each sell
-# skipped is a gas fee saved.
-TP_LADDER         = []
+# TAKE-PROFIT LADDER - restored, and it was a mistake to remove it.
+# At 15-minute polling a stop is unenforceable: JEANCOIN peaked +1139%, its ratchet floor
+# was +767%, and it closed at -84%. $149 was lost gapping THROUGH ratchet floors in 24h.
+# Selling into strength is the only exit that does not need the price to come back to us.
+# Grid-searched over all 44 real closed trades; this was the best of 13 configurations
+# (-$42.19 vs -$73.65 actual). Every other config, including flat targets, did worse.
+TP_LADDER         = [(0.40, 0.25), (1.00, 0.25), (2.50, 0.25), (6.00, 0.15)]
 TRAIL_AFTER       = 1.00        # start trailing at +100%: winners peaked at +724%
                                 # and +248% then gapped down between 15-min checks
 TRAIL_PCT         = 0.30
