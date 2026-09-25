@@ -1,27 +1,27 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T22:37:20+00:00`
+Updated `2026-09-25T22:51:22+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$433.01** |
-| Return | **-13.40%** (start $500.00) |
+| Equity | **$433.11** |
+| Return | **-13.38%** (start $500.00) |
 | Cash | $410.29 |
-| Deployed | $22.72 (5.2%) |
+| Deployed | $22.82 (5.3%) |
 | Open positions | 1 / 8 |
 | Closed trades | 45 (13W / 32L, WR 29%) |
 | Profit factor | 0.60 |
 | Fees + slippage paid | $27.16 |
-| Ticks run | 340 |
+| Ticks run | 342 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| ARENA | solana | $17.10 | $22.72 | +79% | +98% | 22.5h |
+| ARENA | solana | $17.10 | $22.82 | +79% | +98% | 22.7h |
 
 ## Last closed trades
 
@@ -64,11 +64,11 @@ _refit on 141 observations (96 shadow, 45 real), 51 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #340  equity $432.85  cash $410.29  open 1
+tick #342  equity $433.07  cash $410.29  open 1
   scanning chains + news...
-  199 raw candidates across 7 chains, 154 headlines/posts
-  12 passed gates | rejected: liquidity too thin x112, no h1 volume x44, too old x17, already discovered x8, too new (bot war) x3
-  top: JEANTRUMP 0.85 | SJP 0.84 | EON 0.71 | GIFT 0.70 | CATECOIN 0.70
+  132 raw candidates across 6 chains, 154 headlines/posts
+  10 passed gates | rejected: liquidity too thin x64, no h1 volume x29, too old x18, already discovered x9, sell pressure x1
+  top: SJP 0.82 | GIFT 0.79 | CATECOIN 0.71 | ARENA 0.55 | $PLAY 0.39
   no entries this tick
   shadow: tracking 87, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
