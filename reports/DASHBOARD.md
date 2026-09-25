@@ -1,27 +1,27 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T19:05:21+00:00`
+Updated `2026-09-25T19:23:06+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$427.11** |
-| Return | **-14.58%** (start $500.00) |
+| Equity | **$427.26** |
+| Return | **-14.55%** (start $500.00) |
 | Cash | $410.29 |
-| Deployed | $16.82 (3.9%) |
+| Deployed | $16.97 (4.0%) |
 | Open positions | 1 / 8 |
 | Closed trades | 45 (13W / 32L, WR 29%) |
 | Profit factor | 0.60 |
 | Fees + slippage paid | $27.16 |
-| Ticks run | 312 |
+| Ticks run | 314 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| ARENA | solana | $17.10 | $16.82 | +32% | +62% | 19.0h |
+| ARENA | solana | $17.10 | $16.97 | +33% | +62% | 19.3h |
 
 ## Last closed trades
 
@@ -64,11 +64,11 @@ _refit on 141 observations (96 shadow, 45 real), 51 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #312  equity $426.92  cash $410.29  open 1
+tick #314  equity $427.26  cash $410.29  open 1
   scanning chains + news...
-  123 raw candidates across 7 chains, 160 headlines/posts
-  11 passed gates | rejected: liquidity too thin x61, no h1 volume x33, too old x7, unknown age x5, already discovered x5
-  top: ARENA 0.79 | GROKBOOK 0.79 | JEANWORK 0.63 | SWARM 0.49 | DOGRILLA 0.40
+  141 raw candidates across 5 chains, 160 headlines/posts
+  11 passed gates | rejected: liquidity too thin x83, too old x17, no h1 volume x16, already discovered x8, unknown age x5
+  top: SWARM 0.74 | GROKBOOK 0.61 | OnlyJeans 0.45 | JEANWORK 0.44 | ARENA 0.42
   no entries this tick
   shadow: tracking 68, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
