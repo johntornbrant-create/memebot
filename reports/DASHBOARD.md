@@ -1,29 +1,29 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T12:05:23+00:00`
+Updated `2026-09-25T12:29:12+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$429.62** |
-| Return | **-14.08%** (start $500.00) |
+| Equity | **$430.75** |
+| Return | **-13.85%** (start $500.00) |
 | Cash | $390.63 |
-| Deployed | $38.99 (9.1%) |
+| Deployed | $40.12 (9.3%) |
 | Open positions | 3 / 8 |
 | Closed trades | 43 (13W / 30L, WR 30%) |
 | Profit factor | 0.63 |
 | Fees + slippage paid | $26.93 |
-| Ticks run | 269 |
+| Ticks run | 270 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| ARENA | solana | $17.10 | $17.58 | +4% | +28% | 12.0h |
-| MDP | bsc | $11.41 | $12.10 | +7% | +35% | 9.7h |
-| BRAIN | solana | $11.85 | $9.31 | -21% | +30% | 4.6h |
+| ARENA | solana | $17.10 | $17.39 | +3% | +28% | 12.4h |
+| MDP | bsc | $11.41 | $10.89 | -3% | +35% | 10.1h |
+| BRAIN | solana | $11.85 | $11.83 | +1% | +30% | 5.0h |
 
 ## Last closed trades
 
@@ -66,6 +66,6 @@ _prior_
 
 ## Last run log
 ```
-tick #269  equity $429.34  cash $390.63  open 3
-  entries blocked: daily loss -24.1% <= -6%; daily trade cap reached
+tick #270  equity $429.62  cash $390.63  open 3
+  entries blocked: daily loss -23.9% <= -6%; daily trade cap reached
 ```
