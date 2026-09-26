@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-26T21:29:32+00:00`
+Updated `2026-09-26T21:36:35+00:00`
 
 ## Equity
 
@@ -15,7 +15,7 @@ Updated `2026-09-26T21:29:32+00:00`
 | Closed trades | 48 (14W / 34L, WR 29%) |
 | Profit factor | 0.60 |
 | Fees + slippage paid | $33.51 |
-| Ticks run | 520 |
+| Ticks run | 522 |
 
 ## Open positions
 
@@ -62,13 +62,13 @@ _refit on 142 observations (96 shadow, 46 real), 52 winners (37% base rate)_
 
 ## Last run log
 ```
-tick #520  equity $415.23  cash $415.23  open 0
+tick #522  equity $415.23  cash $415.23  open 0
   scanning chains + news...
-  104 raw candidates across 6 chains, 120 headlines/posts
-  9 passed gates | rejected: liquidity too thin x63, no h1 volume x16, too old x12, already discovered x3, too new (bot war) x1
-  top: WIRED 0.79 | SWARM 0.44 | YAP 0.41 | ARENA 0.39 | KARDASHEV 0.36
+  96 raw candidates across 6 chains, 154 headlines/posts
+  3 passed gates | rejected: liquidity too thin x68, no h1 volume x16, too old x7, too new (bot war) x1, already discovered x1
+  top: SWARM 0.44 | ARENA 0.38 | NPC 0.21
   no entries this tick
-  shadow: tracking 124, closed 2 this tick (2 would have won)
+  shadow: tracking 124, closed 0 this tick (0 would have won)
     MISSED Moon       peak +2942%  (scored 0.86)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED TTP        peak +1244%  (scored 0.58)
