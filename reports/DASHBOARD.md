@@ -1,32 +1,31 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-26T01:23:08+00:00`
+Updated `2026-09-26T01:36:33+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$415.94** |
-| Return | **-16.81%** (start $500.00) |
-| Cash | $409.90 |
-| Deployed | $6.04 (1.5%) |
-| Open positions | 1 / 8 |
-| Closed trades | 47 (14W / 33L, WR 30%) |
-| Profit factor | 0.61 |
-| Fees + slippage paid | $33.45 |
-| Ticks run | 361 |
+| Equity | **$415.23** |
+| Return | **-16.95%** (start $500.00) |
+| Cash | $415.23 |
+| Deployed | $0.00 (0.0%) |
+| Open positions | 0 / 8 |
+| Closed trades | 48 (14W / 34L, WR 29%) |
+| Profit factor | 0.60 |
+| Fees + slippage paid | $33.51 |
+| Ticks run | 363 |
 
 ## Open positions
 
-| Token | Chain | Cost | Now | P&L | Peak | Held |
-|---|---|---|---|---|---|---|
-| SJP | solana | $8.54 | $6.04 | -29% | +11% | 1.3h |
+_flat_
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| SJP | $-3.21 | -38% | 1.4h | stop loss -36% |
 | CHIPS | $-8.54 | -100% | 0.9h | stop loss -100% |
 | ARENA | $+6.10 | +36% | 23.6h | ratchet +56% (peak +123%) |
 | BRAIN | $-5.41 | -46% | 9.2h | stop loss -45% |
@@ -41,7 +40,6 @@ Updated `2026-09-26T01:23:08+00:00`
 | 币安女英雄 | $-5.48 | -48% | 1.0h | ratchet +83% (peak +161%) |
 | BRAIN | $-0.64 | -6% | 1.0h | ratchet +0% (peak +57%) |
 | TUGGIN | $-16.60 | -99% | 0.3h | stop loss -98% |
-| S&P500 | $-8.02 | -67% | 0.9h | stop loss -66% |
 
 ## Learned weights (v4)
 
@@ -64,15 +62,15 @@ _refit on 142 observations (96 shadow, 46 real), 52 winners (37% base rate)_
 
 ## Last run log
 ```
-tick #361  equity $415.76  cash $409.90  open 1
+tick #363  equity $415.23  cash $415.23  open 0
   scanning chains + news...
-  144 raw candidates across 7 chains, 154 headlines/posts
-  7 passed gates | rejected: liquidity too thin x105, no h1 volume x28, too old x2, already discovered x2
-  top: TRUMP 0.83 | roon 0.62 | SJP 0.41 | Cream 0.33 | MINT 0.30
+  124 raw candidates across 7 chains, 154 headlines/posts
+  6 passed gates | rejected: liquidity too thin x88, no h1 volume x27, too old x3
+  top: Cream 0.76 | BLUEPRINT 0.69 | roon 0.60 | SJP 0.48 | ARENA 0.29
   no entries this tick
-  shadow: tracking 97, closed 0 this tick (0 would have won)
+  shadow: tracking 91, closed 6 this tick (4 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
+    MISSED TTP        peak +1244%  (scored 0.58)
     MISSED NPC        peak +1110%  (scored 0.49)
-    MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
-  entries blocked: weekly loss -16.8% <= -15%
+  entries blocked: weekly loss -17.0% <= -15%
 ```
