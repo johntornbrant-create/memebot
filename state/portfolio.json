@@ -1,42 +1,9 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-26T01:23:08+00:00",
-  "cash": 409.8972891721935,
-  "equity": 415.9391,
-  "positions": {
-    "solana:bGpXrniA1kzqubTCCexxR4Zh4Hrx8eoYY1Sqtt3pump": {
-      "id": "d389d7eda5",
-      "chain": "solana",
-      "address": "bGpXrniA1kzqubTCCexxR4Zh4Hrx8eoYY1Sqtt3pump",
-      "symbol": "SJP",
-      "opened": "2026-09-26T00:06:30+00:00",
-      "entry_price": 0.0003482,
-      "tokens": 24293.511172938186,
-      "tokens_initial": 24293.511172938186,
-      "cost_usd": 8.54,
-      "fees_usd": 0.081,
-      "realized_usd": 0.0,
-      "peak_gain": 0.10769672601952895,
-      "tp_hit": [],
-      "entry_liq": 53828.05,
-      "score": 0.8707,
-      "features": {
-        "liq_quality": 0.7208,
-        "turnover": 0.9148,
-        "buy_pressure": 0.9295,
-        "momentum_accel": 1.0,
-        "not_vertical": 0.6901,
-        "age_sweet": 0.6081,
-        "socials": 0.65,
-        "fdv_sanity": 0.9695,
-        "txn_depth": 0.3059,
-        "dip_in_uptrend": 0.5,
-        "buzz": 0.0,
-        "paid_boost": 0.2
-      },
-      "last_price": 0.0002487
-    }
-  },
+  "updated": "2026-09-26T01:32:05+00:00",
+  "cash": 415.22726057400325,
+  "equity": 415.2273,
+  "positions": {},
   "blacklist": {
     "solana:D4sBdmPaDKxKThQW3Eh721R9M335VcCThn31w7CRtdkN": "2026-09-22T17:22:35+00:00",
     "solana:HzaCANKGkhNcQGb1VWL8f4tHJYrCmaXrPWk9eHR7GYYX": "2026-09-22T20:22:15+00:00",
@@ -67,7 +34,8 @@
     "solana:4WECKfvfgEiojyZJq5Xm12Hvk76rhM4VHQAZGaELpump": "2026-09-25T09:37:53+00:00",
     "bsc:0x7a67363885EBC01F1D2AEf95B238E39ca1587777": "2026-09-25T13:05:48+00:00",
     "solana:3znS89gifim2Hhhu8wjb2PfSgaCDdma187D5NMkDpump": "2026-09-25T16:37:25+00:00",
-    "ethereum:0x85e6e6E7390513447e72b6B2966F26196dc7E785": "2026-09-26T01:00:46+00:00"
+    "ethereum:0x85e6e6E7390513447e72b6B2966F26196dc7E785": "2026-09-26T01:00:46+00:00",
+    "solana:bGpXrniA1kzqubTCCexxR4Zh4Hrx8eoYY1Sqtt3pump": "2026-09-26T01:32:05+00:00"
   },
   "halted": false,
   "halt_reason": "",
@@ -79,12 +47,12 @@
     "trades_today": 2
   },
   "stats": {
-    "ticks": 361,
+    "ticks": 362,
     "opened": 48,
-    "closed": 47,
+    "closed": 48,
     "wins": 14,
-    "losses": 33,
-    "fees_paid": 33.44833823579063,
-    "realized_pnl": -81.56271082780637
+    "losses": 34,
+    "fees_paid": 33.50666761213854,
+    "realized_pnl": -84.77273942599659
   }
 }
