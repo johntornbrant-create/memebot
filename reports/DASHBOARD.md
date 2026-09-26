@@ -1,13 +1,13 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-26T00:30:51+00:00`
+Updated `2026-09-26T00:46:43+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$424.20** |
+| Equity | **$424.19** |
 | Return | **-15.16%** (start $500.00) |
 | Cash | $409.90 |
 | Deployed | $14.30 (3.4%) |
@@ -15,14 +15,14 @@ Updated `2026-09-26T00:30:51+00:00`
 | Closed trades | 46 (14W / 32L, WR 30%) |
 | Profit factor | 0.63 |
 | Fees + slippage paid | $30.45 |
-| Ticks run | 354 |
+| Ticks run | 356 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| CHIPS | ethereum | $8.54 | $5.00 | -9% | +0% | 0.4h |
-| SJP | solana | $8.54 | $9.31 | +10% | +10% | 0.4h |
+| CHIPS | ethereum | $8.54 | $5.98 | +9% | +9% | 0.7h |
+| SJP | solana | $8.54 | $8.32 | -2% | +11% | 0.7h |
 
 ## Last closed trades
 
@@ -65,13 +65,13 @@ _refit on 142 observations (96 shadow, 46 real), 52 winners (37% base rate)_
 
 ## Last run log
 ```
-tick #354  equity $423.66  cash $409.90  open 2
+tick #356  equity $424.66  cash $409.90  open 2
   scanning chains + news...
-  108 raw candidates across 6 chains, 154 headlines/posts
-  9 passed gates | rejected: liquidity too thin x60, no h1 volume x22, too old x10, already discovered x5, sell pressure x1
-  top: SJP 0.70 | E/ACC 0.63 | MINT 0.53 | GME 0.42 | ARENA 0.37
+  164 raw candidates across 7 chains, 154 headlines/posts
+  14 passed gates | rejected: liquidity too thin x98, no h1 volume x27, too old x16, already discovered x8, sell pressure x1
+  top: SWARM 0.84 | SJP 0.66 | GME 0.56 | MINT 0.53 | Cream 0.48
   no entries this tick
-  shadow: tracking 94, closed 4 this tick (2 would have won)
+  shadow: tracking 95, closed 1 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED NPC        peak +1110%  (scored 0.49)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
