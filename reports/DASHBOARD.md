@@ -1,28 +1,28 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-26T00:06:34+00:00`
+Updated `2026-09-26T00:30:51+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$426.98** |
-| Return | **-14.60%** (start $500.00) |
+| Equity | **$424.20** |
+| Return | **-15.16%** (start $500.00) |
 | Cash | $409.90 |
-| Deployed | $17.08 (4.0%) |
+| Deployed | $14.30 (3.4%) |
 | Open positions | 2 / 8 |
 | Closed trades | 46 (14W / 32L, WR 30%) |
 | Profit factor | 0.63 |
 | Fees + slippage paid | $30.45 |
-| Ticks run | 352 |
+| Ticks run | 354 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| CHIPS | ethereum | $8.54 | $5.48 | +0% | +0% | 0.0h |
-| SJP | solana | $8.54 | $8.46 | +0% | +0% | 0.0h |
+| CHIPS | ethereum | $8.54 | $5.00 | -9% | +0% | 0.4h |
+| SJP | solana | $8.54 | $9.31 | +10% | +10% | 0.4h |
 
 ## Last closed trades
 
@@ -44,36 +44,36 @@ Updated `2026-09-26T00:06:34+00:00`
 | S&P500 | $-8.02 | -67% | 0.9h | stop loss -66% |
 | 蝴蝶家园 | $-8.54 | -57% | 34.2h | ratchet +0% (peak +57%) |
 
-## Learned weights (v3)
+## Learned weights (v4)
 
-_refit on 141 observations (96 shadow, 45 real), 51 winners (36% base rate)_
+_refit on 142 observations (96 shadow, 46 real), 52 winners (37% base rate)_
 
 | Feature | Weight |
 |---|---|
-| buy_pressure | +0.130 |
-| dip_in_uptrend | +0.092 |
-| momentum_accel | +0.083 |
-| fdv_sanity | +0.055 |
-| turnover | +0.054 |
-| not_vertical | -0.039 |
-| buzz | +0.021 |
-| age_sweet | +0.012 |
-| paid_boost | +0.004 |
-| socials | -0.001 |
-| txn_depth | +0.001 |
-| liq_quality | +0.000 |
+| buy_pressure | +0.134 |
+| dip_in_uptrend | +0.100 |
+| turnover | +0.072 |
+| momentum_accel | +0.070 |
+| fdv_sanity | +0.062 |
+| not_vertical | -0.029 |
+| buzz | +0.015 |
+| txn_depth | +0.014 |
+| socials | +0.013 |
+| paid_boost | +0.011 |
+| age_sweet | -0.004 |
+| liq_quality | +0.002 |
 
 ## Last run log
 ```
-tick #352  equity $426.98  cash $426.98  open 0
+tick #354  equity $423.66  cash $409.90  open 2
   scanning chains + news...
-  125 raw candidates across 5 chains, 154 headlines/posts
-  15 passed gates | rejected: liquidity too thin x60, no h1 volume x22, too old x14, already discovered x9, sell pressure x5
-  top: CHIPS 0.90 | SJP 0.87 | MCAT 0.76 | SWARM 0.76 | ASI 0.74
-  BUY[exploit] CHIPS      $8.54 @ $7.516e-05  score 0.90  ethereum  liq $35,404
-  BUY[exploit] SJP        $8.54 @ $0.0003482  score 0.87  solana  liq $53,828
-  shadow: tracking 98, closed 0 this tick (0 would have won)
+  108 raw candidates across 6 chains, 154 headlines/posts
+  9 passed gates | rejected: liquidity too thin x60, no h1 volume x22, too old x10, already discovered x5, sell pressure x1
+  top: SJP 0.70 | E/ACC 0.63 | MINT 0.53 | GME 0.42 | ARENA 0.37
+  no entries this tick
+  shadow: tracking 94, closed 4 this tick (2 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED NPC        peak +1110%  (scored 0.49)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
+  entries blocked: weekly loss -15.2% <= -15%
 ```
