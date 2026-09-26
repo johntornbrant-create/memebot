@@ -1,27 +1,27 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-26T01:04:45+00:00`
+Updated `2026-09-26T01:23:08+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$416.24** |
-| Return | **-16.75%** (start $500.00) |
+| Equity | **$415.94** |
+| Return | **-16.81%** (start $500.00) |
 | Cash | $409.90 |
-| Deployed | $6.34 (1.5%) |
+| Deployed | $6.04 (1.5%) |
 | Open positions | 1 / 8 |
 | Closed trades | 47 (14W / 33L, WR 30%) |
 | Profit factor | 0.61 |
 | Fees + slippage paid | $33.45 |
-| Ticks run | 359 |
+| Ticks run | 361 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| SJP | solana | $8.54 | $6.34 | -25% | +11% | 1.0h |
+| SJP | solana | $8.54 | $6.04 | -29% | +11% | 1.3h |
 
 ## Last closed trades
 
@@ -64,13 +64,13 @@ _refit on 142 observations (96 shadow, 46 real), 52 winners (37% base rate)_
 
 ## Last run log
 ```
-tick #359  equity $416.32  cash $409.90  open 1
+tick #361  equity $415.76  cash $409.90  open 1
   scanning chains + news...
-  106 raw candidates across 5 chains, 154 headlines/posts
-  6 passed gates | rejected: liquidity too thin x82, no h1 volume x11, too old x6, already discovered x1
-  top: Cream 0.63 | E/ACC 0.57 | SJP 0.33 | MINT 0.29 | BLUEPRINT 0.25
+  144 raw candidates across 7 chains, 154 headlines/posts
+  7 passed gates | rejected: liquidity too thin x105, no h1 volume x28, too old x2, already discovered x2
+  top: TRUMP 0.83 | roon 0.62 | SJP 0.41 | Cream 0.33 | MINT 0.30
   no entries this tick
-  shadow: tracking 95, closed 2 this tick (0 would have won)
+  shadow: tracking 97, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED NPC        peak +1110%  (scored 0.49)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
