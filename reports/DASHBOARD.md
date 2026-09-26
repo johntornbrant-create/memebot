@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-25T23:49:48+00:00`
+Updated `2026-09-26T00:06:34+00:00`
 
 ## Equity
 
@@ -9,17 +9,20 @@ Updated `2026-09-25T23:49:48+00:00`
 |---|---|
 | Equity | **$426.98** |
 | Return | **-14.60%** (start $500.00) |
-| Cash | $426.98 |
-| Deployed | $0.00 (0.0%) |
-| Open positions | 0 / 8 |
+| Cash | $409.90 |
+| Deployed | $17.08 (4.0%) |
+| Open positions | 2 / 8 |
 | Closed trades | 46 (14W / 32L, WR 30%) |
 | Profit factor | 0.63 |
-| Fees + slippage paid | $27.31 |
-| Ticks run | 350 |
+| Fees + slippage paid | $30.45 |
+| Ticks run | 352 |
 
 ## Open positions
 
-_flat_
+| Token | Chain | Cost | Now | P&L | Peak | Held |
+|---|---|---|---|---|---|---|
+| CHIPS | ethereum | $8.54 | $5.48 | +0% | +0% | 0.0h |
+| SJP | solana | $8.54 | $8.46 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
@@ -62,15 +65,15 @@ _refit on 141 observations (96 shadow, 45 real), 51 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #350  equity $426.98  cash $426.98  open 0
+tick #352  equity $426.98  cash $426.98  open 0
   scanning chains + news...
-  179 raw candidates across 8 chains, 154 headlines/posts
-  13 passed gates | rejected: liquidity too thin x89, no h1 volume x51, too old x13, already discovered x9, sell pressure x4
-  top: CHIPS 0.95 | MCAT 0.84 | ASI 0.81 | SJP 0.76 | MINT 0.70
-  no entries this tick
-  shadow: tracking 96, closed 0 this tick (0 would have won)
+  125 raw candidates across 5 chains, 154 headlines/posts
+  15 passed gates | rejected: liquidity too thin x60, no h1 volume x22, too old x14, already discovered x9, sell pressure x5
+  top: CHIPS 0.90 | SJP 0.87 | MCAT 0.76 | SWARM 0.76 | ASI 0.74
+  BUY[exploit] CHIPS      $8.54 @ $7.516e-05  score 0.90  ethereum  liq $35,404
+  BUY[exploit] SJP        $8.54 @ $0.0003482  score 0.87  solana  liq $53,828
+  shadow: tracking 98, closed 0 this tick (0 would have won)
     MISSED GENIUS     peak +1642%  (scored 0.61)
     MISSED NPC        peak +1110%  (scored 0.49)
     MISSED ⠁⠏⠑        peak +741%  (scored 0.54)
-  entries blocked: daily loss -24.5% <= -6%; daily trade cap reached
 ```
