@@ -1,33 +1,34 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-27T22:47:42+00:00`
+Updated `2026-09-27T22:51:26+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$415.23** |
-| Return | **-16.95%** (start $500.00) |
-| Cash | $398.63 |
-| Deployed | $16.60 (4.0%) |
+| Equity | **$409.78** |
+| Return | **-18.04%** (start $500.00) |
+| Cash | $397.35 |
+| Deployed | $12.43 (3.0%) |
 | Open positions | 2 / 8 |
-| Closed trades | 48 (14W / 34L, WR 29%) |
-| Profit factor | 0.60 |
-| Fees + slippage paid | $33.67 |
-| Ticks run | 718 |
+| Closed trades | 49 (14W / 35L, WR 29%) |
+| Profit factor | 0.59 |
+| Fees + slippage paid | $33.78 |
+| Ticks run | 719 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| CATSTR | solana | $8.30 | $8.22 | +0% | +0% | 0.0h |
-| wiffomo | solana | $8.30 | $8.22 | +0% | +0% | 0.0h |
+| CATSTR | solana | $8.30 | $6.69 | -19% | +0% | 0.1h |
+| CAKE | solana | $5.74 | $5.68 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| wiffomo | $-3.84 | -46% | 0.0h | stop loss -45% |
 | SJP | $-3.21 | -38% | 1.4h | stop loss -36% |
 | CHIPS | $-8.54 | -100% | 0.9h | stop loss -100% |
 | ARENA | $+6.10 | +36% | 23.6h | ratchet +56% (peak +123%) |
@@ -42,7 +43,6 @@ Updated `2026-09-27T22:47:42+00:00`
 | OG | $-11.64 | -99% | 0.2h | stop loss -98% |
 | 币安女英雄 | $-5.48 | -48% | 1.0h | ratchet +83% (peak +161%) |
 | BRAIN | $-0.64 | -6% | 1.0h | ratchet +0% (peak +57%) |
-| TUGGIN | $-16.60 | -99% | 0.3h | stop loss -98% |
 
 ## Learned weights (v9)
 
@@ -65,15 +65,15 @@ _refit on 352 observations (304 shadow, 48 real), 132 winners (38% base rate)_
 
 ## Last run log
 ```
-tick #718  equity $415.23  cash $415.23  open 0
+tick #719  equity $415.23  cash $398.63  open 2
+  SELL wiffomo    100% @ $0.0001847  ->  $4.46   [stop loss -45%]
   scanning chains + news...
-  99 raw candidates across 5 chains, 156 headlines/posts
-  9 passed gates | rejected: liquidity too thin x53, no h1 volume x25, too old x8, already discovered x3, too new (bot war) x1
-  top: CATSTR 0.82 | wiffomo 0.72 | JACK 0.48 | 20xx 0.32 | e/acc 0.24
-  tick bar 0.72 (top 30% of 9, floor 0.45)
-  BUY[exploit] CATSTR     $8.30 @ $0.0001929  score 0.82  solana  liq $39,281
-  BUY[exploit] wiffomo    $8.30 @ $0.0003365  score 0.72  solana  liq $61,179
-  shadow: tracking 103, closed 0 this tick (0 would have won)
+  117 raw candidates across 7 chains, 156 headlines/posts
+  8 passed gates | rejected: liquidity too thin x61, no h1 volume x29, too old x12, already discovered x4, too new (bot war) x2
+  top: CATSTR 0.84 | wiffomo 0.72 | 20xx 0.44 | e/acc 0.24 | Q4 0.19
+  tick bar 0.72 (top 30% of 8, floor 0.45)
+  BUY[explore] CAKE       $5.74 @ $0.0001691  score 0.13  solana  liq $45,563
+  shadow: tracking 102, closed 1 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED Moon       peak +2942%  (scored 0.86)
     MISSED GSTOCK     peak +2491%  (scored 0.88)
