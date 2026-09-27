@@ -25,7 +25,7 @@ def fresh():
         "positions": {}, "blacklist": {}, "halted": False, "halt_reason": "",
         "marks": {"day": "", "day_equity": config.START_EQUITY,
                   "week": "", "week_equity": config.START_EQUITY, "trades_today": 0},
-        "stats": {"ticks": 0, "opened": 0, "closed": 0, "wins": 0, "losses": 0,
+        "last_entry": "", "stats": {"ticks": 0, "opened": 0, "closed": 0, "wins": 0, "losses": 0,
                   "fees_paid": 0.0, "realized_pnl": 0.0},
     }
 
@@ -88,6 +88,7 @@ def open_position(pf, cand, notional, feats, score):
     pf["stats"]["opened"] += 1
     pf["stats"]["fees_paid"] += fees
     pf["marks"]["trades_today"] = pf["marks"].get("trades_today", 0) + 1
+    pf["last_entry"] = now_iso()
     return pf["positions"][key]
 
 

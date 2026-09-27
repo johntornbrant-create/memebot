@@ -89,29 +89,38 @@ def refit(force=False):
     old, meta = load_weights()
     base_rate = wins / n
 
-    # ADAPTIVE THRESHOLD. A fixed number goes stale the moment the weights move, because
-    # refitting changes the whole score scale. So set the bar from the new model's own
-    # score distribution: trade roughly the top quartile of what the gates let through.
-    # Measured on 96 shadow closures: Q1 hit +50% 62.5% of the time with a +93% median
-    # peak, vs 29% / +9% for Q4. The top quartile is where the edge lives.
-    scores = sorted(score(r["features"], new) for r in read_outcomes())
-    if len(scores) >= 40:
-        thr = round(scores[int(len(scores) * 0.75)], 3)
-        thr = min(max(thr, 0.60), config.THRESHOLD_MAX)
-    else:
-        thr = config.ENTRY_THRESHOLD
-
-    # ...but if the real trades are actually losing, raise the bar regardless.
+    # ADAPTIVE THRESHOLD - expressed as SELECTIVITY, never as an absolute number.
+    #
+    # Bug this replaces: the old rule bumped the threshold up whenever the real win rate
+    # was low, cumulatively, every 6h. Meanwhile refitting drifted the whole score scale
+    # DOWN. Within two days the bar sat above the 90th percentile of achievable scores and
+    # the bot silently stopped trading - 300 green runs, 4 trades, 0 positions.
+    #
+    # Fix: always set the bar at a percentile of the model's own recent scores. It cannot
+    # outrun the distribution, so the bot can never stop trading by accident.
+    # Walk-forward on 122 unseen closures: p80 (~0.65) = +28.0%/trade, the best tested.
+    sel_pct = 0.80
     real = _read_trades()
     if len(real) >= 25:
         rwr = sum(1 for r in real if r.get("pnl_pct", -1) >= WIN_THRESHOLD) / len(real)
         if rwr < 0.20:
-            thr = min(config.THRESHOLD_MAX, thr + 0.03)
+            sel_pct = 0.86        # be pickier, but still relative - still always trades
+        elif rwr > 0.40:
+            sel_pct = 0.72
+
+    recent = [score(r["features"], new) for r in read_outcomes()[-400:]]
+    if len(recent) >= 40:
+        recent.sort()
+        thr = round(recent[min(int(len(recent) * sel_pct), len(recent) - 1)], 3)
+        thr = min(max(thr, 0.40), 0.85)
+    else:
+        thr = config.ENTRY_THRESHOLD
 
     meta = {
         "version": meta.get("version", 0) + 1,
         "fitted_on": n, "n_shadow": n_shadow, "n_real": n_real,
         "base_rate": round(base_rate, 3), "threshold": round(thr, 3),
+        "selectivity_pct": sel_pct,
         "note": (f"refit on {n} observations ({n_shadow} shadow, {n_real} real), "
                  f"{wins} winners ({base_rate:.0%} base rate)"),
         "prev_weights": old,
