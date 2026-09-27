@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-27T23:23:40+00:00",
-  "cash": 394.84155073956634,
-  "equity": 418.3595,
+  "updated": "2026-09-27T23:23:50+00:00",
+  "cash": 395.07744241853527,
+  "equity": 419.6512,
   "positions": {
     "solana:BvnqdYwuFrvi9ds63EtwQLYME89ikJkULnJPAd83pump": {
       "id": "3622f980f0",
@@ -14,9 +14,9 @@
       "tokens": 31960.814944484817,
       "tokens_initial": 42614.41992597975,
       "cost_usd": 8.3,
-      "fees_usd": 0.1229578221737135,
-      "realized_usd": 3.2519021986026706,
-      "peak_gain": 0.6034214618973561,
+      "fees_usd": 0.12464153429209054,
+      "realized_usd": 3.487793877571631,
+      "peak_gain": 0.7190254017625712,
       "tp_hit": [
         0
       ],
@@ -36,7 +36,7 @@
         "buzz": 0.0,
         "paid_boost": 0.06
       },
-      "last_price": 0.0003093
+      "last_price": 0.0003316
     },
     "solana:DAemPFNc3RtibBDKkUA4eL2Ns11q9VRdbpptmqm8DGqN": {
       "id": "bfd450ff73",
@@ -50,7 +50,7 @@
       "cost_usd": 5.7368934000000005,
       "fees_usd": 0.0608,
       "realized_usd": 0.0,
-      "peak_gain": 0.43465405085748077,
+      "peak_gain": 0.4470727380248374,
       "tp_hit": [],
       "entry_liq": 45563.14,
       "score": 0.1316,
@@ -68,7 +68,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0002325
+      "last_price": 0.0002447
     },
     "solana:F1z5FQdToNDLQYJ72grqePaWJrcrf39HR4gaKA57ySUQ": {
       "id": "46971866ce",
@@ -82,7 +82,7 @@
       "cost_usd": 5.7610532,
       "fees_usd": 0.0614,
       "realized_usd": 0.0,
-      "peak_gain": 0.0225683407501589,
+      "peak_gain": 0.010913329095147306,
       "tp_hit": [],
       "entry_liq": 26873.68,
       "score": 0.711,
@@ -100,7 +100,7 @@
         "buzz": 1.0,
         "paid_boost": 0.2
       },
-      "last_price": 9.651e-05
+      "last_price": 9.541e-05
     }
   },
   "blacklist": {
@@ -152,7 +152,7 @@
     "closed": 49,
     "wins": 14,
     "losses": 35,
-    "fees_paid": 33.88295609768656,
+    "fees_paid": 33.88463980980494,
     "realized_pnl": -88.61240485903618
   },
   "last_entry": "2026-09-27T23:05:06+00:00",
