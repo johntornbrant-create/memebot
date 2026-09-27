@@ -7,6 +7,26 @@ def _now():
     return datetime.now(timezone.utc)
 
 
+def record_equity(pf):
+    """Keep a light equity history so drawdown can be measured over a rolling window."""
+    h = pf.setdefault("equity_history", [])
+    now = _now()
+    if not h or (now - datetime.fromisoformat(h[-1][0])).total_seconds() >= 3600:
+        h.append([now.isoformat(timespec="seconds"), round(pf["equity"], 2)])
+    cutoff = now - timedelta(days=9)
+    pf["equity_history"] = [e for e in h if datetime.fromisoformat(e[0]) >= cutoff][-250:]
+
+
+def rolling_ref(pf, days=7):
+    """Equity as of `days` ago, or the oldest we have. None if we have no history yet."""
+    h = pf.get("equity_history") or []
+    if not h:
+        return None
+    cutoff = _now() - timedelta(days=days)
+    older = [e for e in h if datetime.fromisoformat(e[0]) <= cutoff]
+    return (older[-1][1] if older else h[0][1]) or None
+
+
 def equity_curve_checks(pf):
     """Returns (can_enter, reasons[]). Breakers never block exits, only new entries."""
     reasons, ok = [], True
@@ -23,9 +43,13 @@ def equity_curve_checks(pf):
     if day_ref and (eq / day_ref - 1) <= config.DAILY_LOSS_HALT:
         ok = False; reasons.append(f"daily loss {eq/day_ref-1:+.1%} <= {config.DAILY_LOSS_HALT:.0%}")
 
-    wk_ref = pf["marks"].get("week_equity", config.START_EQUITY)
+    # ROLLING 7-day reference, not a calendar-week anchor. With a calendar anchor the
+    # reference was still $500 from launch week while equity was $415, so the breaker sat
+    # tripped and blocked every entry for days - the bot looked healthy and bought nothing.
+    # A rolling window protects exactly as much but heals as the drawdown ages out.
+    wk_ref = rolling_ref(pf, days=7)
     if wk_ref and (eq / wk_ref - 1) <= config.WEEKLY_LOSS_HALT:
-        ok = False; reasons.append(f"weekly loss {eq/wk_ref-1:+.1%} <= {config.WEEKLY_LOSS_HALT:.0%}")
+        ok = False; reasons.append(f"7d loss {eq/wk_ref-1:+.1%} <= {config.WEEKLY_LOSS_HALT:.0%}")
 
     if pf["marks"].get("trades_today", 0) >= config.MAX_TRADES_DAY:
         ok = False; reasons.append("daily trade cap reached")

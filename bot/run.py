@@ -134,6 +134,7 @@ def scan(pf, allow_entries=True):
 def tick(exits_only=False):
     pf = pf_mod.load()
     risk.roll_marks(pf)
+    risk.record_equity(pf)
     pf["stats"]["ticks"] += 1
     log(f"tick #{pf['stats']['ticks']}  equity ${pf['equity']:.2f}  "
         f"cash ${pf['cash']:.2f}  open {len(pf['positions'])}")
