@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-27T11:37:33+00:00`
+Updated `2026-09-27T11:50:32+00:00`
 
 ## Equity
 
@@ -15,7 +15,7 @@ Updated `2026-09-27T11:37:33+00:00`
 | Closed trades | 48 (14W / 34L, WR 29%) |
 | Profit factor | 0.60 |
 | Fees + slippage paid | $33.51 |
-| Ticks run | 630 |
+| Ticks run | 632 |
 
 ## Open positions
 
@@ -62,13 +62,13 @@ _refit on 274 observations (226 shadow, 48 real), 98 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #630  equity $415.23  cash $415.23  open 0
+tick #632  equity $415.23  cash $415.23  open 0
   scanning chains + news...
-  102 raw candidates across 6 chains, 154 headlines/posts
-  5 passed gates | rejected: liquidity too thin x59, no h1 volume x27, too old x5, already discovered x4, unknown age x2
-  top: lemon 0.65 | UNICEF 0.49 | mog 0.14 | boar 0.11 | ARENA 0.11
+  130 raw candidates across 5 chains, 154 headlines/posts
+  4 passed gates | rejected: liquidity too thin x80, no h1 volume x25, too old x13, already discovered x6, unknown age x2
+  top: lemon 0.78 | UNICEF 0.33 | boar 0.12 | ARENA 0.09
   no entries this tick
-  shadow: tracking 106, closed 3 this tick (2 would have won)
+  shadow: tracking 106, closed 0 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED Moon       peak +2942%  (scored 0.86)
     MISSED Cream      peak +1701%  (scored 0.48)
