@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-27T05:50:54+00:00`
+Updated `2026-09-27T06:29:43+00:00`
 
 ## Equity
 
@@ -15,7 +15,7 @@ Updated `2026-09-27T05:50:54+00:00`
 | Closed trades | 48 (14W / 34L, WR 29%) |
 | Profit factor | 0.60 |
 | Fees + slippage paid | $33.51 |
-| Ticks run | 586 |
+| Ticks run | 589 |
 
 ## Open positions
 
@@ -41,34 +41,34 @@ _flat_
 | BRAIN | $-0.64 | -6% | 1.0h | ratchet +0% (peak +57%) |
 | TUGGIN | $-16.60 | -99% | 0.3h | stop loss -98% |
 
-## Learned weights (v4)
+## Learned weights (v5)
 
-_refit on 142 observations (96 shadow, 46 real), 52 winners (37% base rate)_
+_refit on 274 observations (226 shadow, 48 real), 98 winners (36% base rate)_
 
 | Feature | Weight |
 |---|---|
-| buy_pressure | +0.134 |
-| dip_in_uptrend | +0.100 |
-| turnover | +0.072 |
-| momentum_accel | +0.070 |
-| fdv_sanity | +0.062 |
-| not_vertical | -0.029 |
-| buzz | +0.015 |
-| txn_depth | +0.014 |
-| socials | +0.013 |
-| paid_boost | +0.011 |
-| age_sweet | -0.004 |
-| liq_quality | +0.002 |
+| buy_pressure | +0.123 |
+| dip_in_uptrend | +0.102 |
+| not_vertical | -0.066 |
+| fdv_sanity | +0.058 |
+| momentum_accel | +0.044 |
+| turnover | +0.028 |
+| buzz | +0.026 |
+| socials | +0.018 |
+| liq_quality | -0.015 |
+| age_sweet | +0.006 |
+| paid_boost | -0.004 |
+| txn_depth | +0.002 |
 
 ## Last run log
 ```
-tick #586  equity $415.23  cash $415.23  open 0
+tick #589  equity $415.23  cash $415.23  open 0
   scanning chains + news...
-  129 raw candidates across 7 chains, 154 headlines/posts
-  3 passed gates | rejected: liquidity too thin x72, no h1 volume x45, already discovered x4, unknown age x3, too old x2
-  top: boar 0.56 | jizz 0.34 | ARENA 0.18
+  91 raw candidates across 7 chains, 154 headlines/posts
+  3 passed gates | rejected: liquidity too thin x49, no h1 volume x36, already discovered x3
+  top: MONEKO 0.18 | jizz 0.14 | ARENA 0.12
   no entries this tick
-  shadow: tracking 112, closed 0 this tick (0 would have won)
+  shadow: tracking 107, closed 5 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED Moon       peak +2942%  (scored 0.86)
     MISSED Cream      peak +1701%  (scored 0.48)
