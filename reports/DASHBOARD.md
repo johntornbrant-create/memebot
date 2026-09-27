@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-27T22:24:44+00:00`
+Updated `2026-09-27T22:33:37+00:00`
 
 ## Equity
 
@@ -15,7 +15,7 @@ Updated `2026-09-27T22:24:44+00:00`
 | Closed trades | 48 (14W / 34L, WR 29%) |
 | Profit factor | 0.60 |
 | Fees + slippage paid | $33.51 |
-| Ticks run | 712 |
+| Ticks run | 714 |
 
 ## Open positions
 
@@ -41,34 +41,34 @@ _flat_
 | BRAIN | $-0.64 | -6% | 1.0h | ratchet +0% (peak +57%) |
 | TUGGIN | $-16.60 | -99% | 0.3h | stop loss -98% |
 
-## Learned weights (v6)
+## Learned weights (v7)
 
-_refit on 301 observations (253 shadow, 48 real), 108 winners (36% base rate)_
+_refit on 352 observations (304 shadow, 48 real), 132 winners (38% base rate)_
 
 | Feature | Weight |
 |---|---|
-| buy_pressure | +0.133 |
-| dip_in_uptrend | +0.104 |
-| not_vertical | -0.059 |
-| fdv_sanity | +0.057 |
-| momentum_accel | +0.056 |
-| txn_depth | +0.022 |
-| turnover | +0.021 |
-| buzz | +0.018 |
-| age_sweet | +0.018 |
-| paid_boost | -0.011 |
-| socials | +0.009 |
-| liq_quality | -0.002 |
+| buy_pressure | +0.120 |
+| not_vertical | -0.091 |
+| momentum_accel | +0.090 |
+| dip_in_uptrend | +0.082 |
+| fdv_sanity | +0.055 |
+| turnover | +0.051 |
+| txn_depth | +0.026 |
+| socials | +0.026 |
+| liq_quality | +0.018 |
+| age_sweet | +0.012 |
+| paid_boost | -0.009 |
+| buzz | -0.000 |
 
 ## Last run log
 ```
-tick #712  equity $415.23  cash $415.23  open 0
+tick #714  equity $415.23  cash $415.23  open 0
   scanning chains + news...
-  109 raw candidates across 5 chains, 156 headlines/posts
-  9 passed gates | rejected: liquidity too thin x59, no h1 volume x25, too old x11, already discovered x4, unknown age x1
-  top: PKMN50 0.66 | wiffomo 0.65 | VBUCKS 0.53 | NEARPAD 0.50 | CAKE 0.46
+  107 raw candidates across 5 chains, 156 headlines/posts
+  9 passed gates | rejected: liquidity too thin x60, no h1 volume x27, too old x8, already discovered x2, sell pressure x1
+  top: wiffomo 0.81 | PKMN50 0.81 | VBUCKS 0.61 | MS70 0.55 | NEARPAD 0.51
   no entries this tick
-  shadow: tracking 101, closed 4 this tick (2 would have won)
+  shadow: tracking 103, closed 0 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED Moon       peak +2942%  (scored 0.86)
     MISSED GSTOCK     peak +2491%  (scored 0.88)
