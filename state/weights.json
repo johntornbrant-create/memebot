@@ -1,11 +1,11 @@
 {
-  "version": 8,
+  "version": 9,
   "fitted_on": 352,
   "n_shadow": 304,
   "n_real": 48,
   "base_rate": 0.375,
-  "threshold": 0.825,
-  "selectivity_pct": 0.78,
+  "threshold": 0.787,
+  "selectivity_pct": 0.68,
   "note": "refit on 352 observations (304 shadow, 48 real), 132 winners (38% base rate)",
   "prev_weights": {
     "liq_quality": 0.0184,

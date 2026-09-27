@@ -99,14 +99,14 @@ def refit(force=False):
     # Fix: always set the bar at a percentile of the model's own recent scores. It cannot
     # outrun the distribution, so the bot can never stop trading by accident.
     # Walk-forward on 122 unseen closures: p80 (~0.65) = +28.0%/trade, the best tested.
-    sel_pct = 0.78
+    sel_pct = 0.68
     real = _read_trades()
     if len(real) >= 25:
         rwr = sum(1 for r in real if r.get("pnl_pct", -1) >= WIN_THRESHOLD) / len(real)
         if rwr < 0.20:
-            sel_pct = 0.82        # pickier when losing, but only slightly - being too picky
+            sel_pct = 0.74        # pickier when losing, but only slightly - being too picky
         elif rwr > 0.40:           # starves the bot of both trades AND training data
-            sel_pct = 0.70
+            sel_pct = 0.62
 
     # Score the LIVE shadow book, not just 24h-old closed records. Closed outcomes describe
     # the market as it was yesterday; the in-flight book is what we are choosing from right
