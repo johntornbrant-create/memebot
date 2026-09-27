@@ -99,16 +99,25 @@ def refit(force=False):
     # Fix: always set the bar at a percentile of the model's own recent scores. It cannot
     # outrun the distribution, so the bot can never stop trading by accident.
     # Walk-forward on 122 unseen closures: p80 (~0.65) = +28.0%/trade, the best tested.
-    sel_pct = 0.80
+    sel_pct = 0.78
     real = _read_trades()
     if len(real) >= 25:
         rwr = sum(1 for r in real if r.get("pnl_pct", -1) >= WIN_THRESHOLD) / len(real)
         if rwr < 0.20:
-            sel_pct = 0.86        # be pickier, but still relative - still always trades
-        elif rwr > 0.40:
-            sel_pct = 0.72
+            sel_pct = 0.82        # pickier when losing, but only slightly - being too picky
+        elif rwr > 0.40:           # starves the bot of both trades AND training data
+            sel_pct = 0.70
 
-    recent = [score(r["features"], new) for r in read_outcomes()[-400:]]
+    # Score the LIVE shadow book, not just 24h-old closed records. Closed outcomes describe
+    # the market as it was yesterday; the in-flight book is what we are choosing from right
+    # now. Using stale records put the bar at 0.812 while live tops were 0.810 - no trades.
+    live = []
+    try:
+        with open(os.path.join(os.path.dirname(__file__), "..", "state", "shadow.json")) as fh:
+            live = [score(v["features"], new) for v in json.load(fh).values()]
+    except Exception:
+        pass
+    recent = live + [score(r["features"], new) for r in read_outcomes()[-200:]]
     if len(recent) >= 40:
         recent.sort()
         thr = round(recent[min(int(len(recent) * sel_pct), len(recent) - 1)], 3)
