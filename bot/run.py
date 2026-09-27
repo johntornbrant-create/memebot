@@ -63,6 +63,18 @@ def scan(pf, allow_entries=True):
     if scored:
         log("  top: " + " | ".join(f"{c['symbol']} {s:.2f}" for s, c, _ in scored[:5]))
 
+    # ---- rank WITHIN the tick, never against an absolute number --------------
+    # Every refit moves the weights, which moves the whole score scale: a candidate worth
+    # 0.81 under v8 scored 0.72 under v9. Any fixed or snapshot-derived threshold therefore
+    # goes stale within hours, and the bot silently stops trading - which is exactly what
+    # happened for 3 days. Ranking inside the tick is immune to that drift.
+    # The gates already reject ~95% of candidates; the score picks the best of the rest.
+    if scored:
+        cut = scored[max(0, int(len(scored) * config.TICK_TOP_FRACTION) - 1)][0]
+        thr = max(min(thr, cut), config.SCORE_FLOOR)
+        log(f"  tick bar {thr:.2f} (top {config.TICK_TOP_FRACTION:.0%} of {len(scored)}, "
+            f"floor {config.SCORE_FLOOR:.2f})")
+
     # ---- explore vs exploit -------------------------------------------------
     # Some slots go to the best-scoring candidate. Some go to a RANDOM gate-passer,
     # score ignored, so the bot keeps discovering what its own model is blind to.

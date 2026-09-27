@@ -84,6 +84,8 @@ ENTRY_THRESHOLD   = 0.70        # walk-forward tested: 0.70 held up out-of-sampl
                                 # 0.85 was best - that was overfitting. Cap the adaptive
                                 # threshold near here.
 THRESHOLD_MAX     = 0.74
+TICK_TOP_FRACTION = 0.30        # buy from the best 30% of THIS tick's gate-passers.
+SCORE_FLOOR       = 0.45        # ...but never buy outright garbage, whatever the ranking.
 LEARN_MIN_TRADES  = 60          # do not refit weights on less than this
 LEARN_BLEND       = 0.50        # new weights = 50% fitted + 50% prior (anti-overfit)
 
