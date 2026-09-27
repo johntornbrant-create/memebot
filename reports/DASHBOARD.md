@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-27T22:33:37+00:00`
+Updated `2026-09-27T22:36:47+00:00`
 
 ## Equity
 
@@ -15,7 +15,7 @@ Updated `2026-09-27T22:33:37+00:00`
 | Closed trades | 48 (14W / 34L, WR 29%) |
 | Profit factor | 0.60 |
 | Fees + slippage paid | $33.51 |
-| Ticks run | 714 |
+| Ticks run | 715 |
 
 ## Open positions
 
@@ -41,7 +41,7 @@ _flat_
 | BRAIN | $-0.64 | -6% | 1.0h | ratchet +0% (peak +57%) |
 | TUGGIN | $-16.60 | -99% | 0.3h | stop loss -98% |
 
-## Learned weights (v7)
+## Learned weights (v8)
 
 _refit on 352 observations (304 shadow, 48 real), 132 winners (38% base rate)_
 
@@ -62,11 +62,11 @@ _refit on 352 observations (304 shadow, 48 real), 132 winners (38% base rate)_
 
 ## Last run log
 ```
-tick #714  equity $415.23  cash $415.23  open 0
+tick #715  equity $415.23  cash $415.23  open 0
   scanning chains + news...
-  107 raw candidates across 5 chains, 156 headlines/posts
-  9 passed gates | rejected: liquidity too thin x60, no h1 volume x27, too old x8, already discovered x2, sell pressure x1
-  top: wiffomo 0.81 | PKMN50 0.81 | VBUCKS 0.61 | MS70 0.55 | NEARPAD 0.51
+  102 raw candidates across 5 chains, 156 headlines/posts
+  8 passed gates | rejected: liquidity too thin x52, no h1 volume x25, too old x11, already discovered x4, sell pressure x1
+  top: wiffomo 0.72 | PKMN50 0.72 | VBUCKS 0.47 | ZC 0.43 | 20xx 0.21
   no entries this tick
   shadow: tracking 103, closed 0 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
