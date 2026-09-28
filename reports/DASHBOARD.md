@@ -1,28 +1,28 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-28T06:33:54+00:00`
+Updated `2026-09-28T06:58:36+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$377.08** |
-| Return | **-24.58%** (start $500.00) |
+| Equity | **$376.34** |
+| Return | **-24.73%** (start $500.00) |
 | Cash | $367.81 |
-| Deployed | $9.27 (2.5%) |
+| Deployed | $8.53 (2.3%) |
 | Open positions | 2 / 8 |
 | Closed trades | 59 (17W / 42L, WR 29%) |
 | Profit factor | 0.55 |
 | Fees + slippage paid | $44.16 |
-| Ticks run | 771 |
+| Ticks run | 773 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| Q4 | solana | $5.76 | $5.57 | -2% | +10% | 7.5h |
-| ZC | ethereum | $7.98 | $3.70 | -25% | +34% | 3.5h |
+| Q4 | solana | $5.76 | $4.89 | -14% | +10% | 7.9h |
+| ZC | ethereum | $7.98 | $3.63 | -26% | +34% | 3.9h |
 
 ## Last closed trades
 
@@ -65,16 +65,16 @@ _refit on 397 observations (338 shadow, 59 real), 147 winners (37% base rate)_
 
 ## Last run log
 ```
-tick #771  equity $377.27  cash $367.81  open 2
+tick #773  equity $377.17  cash $367.81  open 2
   scanning chains + news...
-  258 raw candidates across 9 chains, 156 headlines/posts
-  13 passed gates | rejected: liquidity too thin x133, no h1 volume x78, too old x17, already discovered x12, too new (bot war) x3
-  top: QPEPE 0.87 | LEVERAGE 0.76 | GRAYCAT 0.44 | QNTCAT 0.43 | SNOWMOON 0.38
-  tick bar 0.45 (top 30% of 13, floor 0.45)
+  94 raw candidates across 6 chains, 156 headlines/posts
+  8 passed gates | rejected: liquidity too thin x50, no h1 volume x34, already discovered x2
+  top: LEVERAGE 0.71 | CROCS 0.61 | QNTCAT 0.48 | DELREY 0.42 | INSTA 0.37
+  tick bar 0.61 (top 30% of 8, floor 0.45)
   no entries this tick
-  shadow: tracking 108, closed 0 this tick (0 would have won)
+  shadow: tracking 106, closed 3 this tick (1 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED Moon       peak +2942%  (scored 0.86)
     MISSED GSTOCK     peak +2491%  (scored 0.88)
-  entries blocked: daily loss -9.3% <= -6%
+  entries blocked: daily loss -9.5% <= -6%
 ```
