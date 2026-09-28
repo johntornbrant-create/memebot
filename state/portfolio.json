@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-28T00:56:14+00:00",
+  "updated": "2026-09-28T01:01:59+00:00",
   "cash": 390.8430124670076,
-  "equity": 417.2727,
+  "equity": 414.2971,
   "positions": {
     "solana:DAemPFNc3RtibBDKkUA4eL2Ns11q9VRdbpptmqm8DGqN": {
       "id": "bfd450ff73",
@@ -38,7 +38,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0008577
+      "last_price": 0.00062
     },
     "solana:F1z5FQdToNDLQYJ72grqePaWJrcrf39HR4gaKA57ySUQ": {
       "id": "46971866ce",
@@ -70,7 +70,7 @@
         "buzz": 1.0,
         "paid_boost": 0.2
       },
-      "last_price": 9.826e-05
+      "last_price": 9.225e-05
     },
     "solana:BvnqdYwuFrvi9ds63EtwQLYME89ikJkULnJPAd83pump": {
       "id": "e67184d75d",
@@ -84,7 +84,7 @@
       "cost_usd": 8.35,
       "fees_usd": 0.0796,
       "realized_usd": 0.0,
-      "peak_gain": 0.0,
+      "peak_gain": 0.10071727435744182,
       "tp_hit": [],
       "entry_liq": 53999.02,
       "score": 0.8463,
@@ -102,7 +102,7 @@
         "buzz": 0.0,
         "paid_boost": 0.06
       },
-      "last_price": 0.0003346
+      "last_price": 0.0003683
     }
   },
   "blacklist": {
@@ -151,7 +151,7 @@
     "trades_today": 3
   },
   "stats": {
-    "ticks": 732,
+    "ticks": 733,
     "opened": 55,
     "closed": 52,
     "wins": 15,
