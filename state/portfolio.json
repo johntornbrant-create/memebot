@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-28T00:26:56+00:00",
-  "cash": 395.3426288483574,
-  "equity": 409.1808,
+  "updated": "2026-09-28T00:34:39+00:00",
+  "cash": 387.1626288483574,
+  "equity": 409.1051,
   "positions": {
     "solana:DAemPFNc3RtibBDKkUA4eL2Ns11q9VRdbpptmqm8DGqN": {
       "id": "bfd450ff73",
@@ -36,7 +36,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0003341
+      "last_price": 0.000325
     },
     "solana:F1z5FQdToNDLQYJ72grqePaWJrcrf39HR4gaKA57ySUQ": {
       "id": "46971866ce",
@@ -68,7 +68,39 @@
         "buzz": 1.0,
         "paid_boost": 0.2
       },
-      "last_price": 8.987e-05
+      "last_price": 9.241e-05
+    },
+    "solana:5cDPo1jjEEtxWf2y1HTx4WyMydVmErN3YnbYtxLVcmg9": {
+      "id": "ee34949fec",
+      "chain": "solana",
+      "address": "5cDPo1jjEEtxWf2y1HTx4WyMydVmErN3YnbYtxLVcmg9",
+      "symbol": "KUNO",
+      "opened": "2026-09-28T00:34:36+00:00",
+      "entry_price": 0.0001394,
+      "tokens": 58112.80430020579,
+      "tokens_initial": 58112.80430020579,
+      "cost_usd": 8.18,
+      "fees_usd": 0.0791,
+      "realized_usd": 0.0,
+      "peak_gain": 0.0,
+      "tp_hit": [],
+      "entry_liq": 33178.23,
+      "score": 0.7738,
+      "features": {
+        "liq_quality": 0.4918,
+        "turnover": 0.3953,
+        "buy_pressure": 0.4125,
+        "momentum_accel": 1.0,
+        "not_vertical": 0.0,
+        "age_sweet": 0.4072,
+        "socials": 0.65,
+        "fdv_sanity": 1.0,
+        "txn_depth": 0.5005,
+        "dip_in_uptrend": 0.5,
+        "buzz": 0.0,
+        "paid_boost": 0.0
+      },
+      "last_price": 0.0001394
     }
   },
   "blacklist": {
@@ -113,18 +145,18 @@
     "day_equity": 415.6648,
     "week": "2026-W40",
     "week_equity": 415.6648,
-    "trades_today": 1
+    "trades_today": 2
   },
   "stats": {
-    "ticks": 729,
-    "opened": 53,
+    "ticks": 730,
+    "opened": 54,
     "closed": 51,
     "wins": 15,
     "losses": 36,
-    "fees_paid": 34.086228599289065,
+    "fees_paid": 34.16530367984038,
     "realized_pnl": -95.39671928117187
   },
-  "last_entry": "2026-09-28T00:07:11+00:00",
+  "last_entry": "2026-09-28T00:34:36+00:00",
   "equity_history": [
     [
       "2026-09-27T22:46:06+00:00",
