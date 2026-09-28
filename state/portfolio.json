@@ -1,45 +1,9 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-28T01:06:13+00:00",
-  "cash": 390.8430124670076,
-  "equity": 414.9649,
+  "updated": "2026-09-28T01:20:25+00:00",
+  "cash": 397.76051493542724,
+  "equity": 412.7188,
   "positions": {
-    "solana:DAemPFNc3RtibBDKkUA4eL2Ns11q9VRdbpptmqm8DGqN": {
-      "id": "bfd450ff73",
-      "chain": "solana",
-      "address": "DAemPFNc3RtibBDKkUA4eL2Ns11q9VRdbpptmqm8DGqN",
-      "symbol": "CAKE",
-      "opened": "2026-09-27T22:51:23+00:00",
-      "entry_price": 0.0001691,
-      "tokens": 14160.841971850374,
-      "tokens_initial": 33566.44022957126,
-      "cost_usd": 5.7368934000000005,
-      "fees_usd": 0.19268065969702342,
-      "realized_usd": 10.083908081484413,
-      "peak_gain": 4.0721466587817865,
-      "tp_hit": [
-        0,
-        1,
-        2
-      ],
-      "entry_liq": 45563.14,
-      "score": 0.1316,
-      "features": {
-        "liq_quality": 0.6424,
-        "turnover": 0.3053,
-        "buy_pressure": 0.1995,
-        "momentum_accel": 0.0,
-        "not_vertical": 1.0,
-        "age_sweet": 0.519,
-        "socials": 0.65,
-        "fdv_sanity": 1.0,
-        "txn_depth": 0.4607,
-        "dip_in_uptrend": 0.0,
-        "buzz": 0.0,
-        "paid_boost": 0.0
-      },
-      "last_price": 0.0006161
-    },
     "solana:F1z5FQdToNDLQYJ72grqePaWJrcrf39HR4gaKA57ySUQ": {
       "id": "46971866ce",
       "chain": "solana",
@@ -70,7 +34,7 @@
         "buzz": 1.0,
         "paid_boost": 0.2
       },
-      "last_price": 9.174e-05
+      "last_price": 8.717e-05
     },
     "solana:BvnqdYwuFrvi9ds63EtwQLYME89ikJkULnJPAd83pump": {
       "id": "e67184d75d",
@@ -102,7 +66,7 @@
         "buzz": 0.0,
         "paid_boost": 0.06
       },
-      "last_price": 0.0003988
+      "last_price": 0.0003922
     }
   },
   "blacklist": {
@@ -151,13 +115,13 @@
     "trades_today": 3
   },
   "stats": {
-    "ticks": 734,
+    "ticks": 735,
     "opened": 55,
-    "closed": 52,
-    "wins": 15,
+    "closed": 53,
+    "wins": 16,
     "losses": 37,
-    "fees_paid": 34.39113262189284,
-    "realized_pnl": -99.39294901447663
+    "fees_paid": 34.46058958238417,
+    "realized_pnl": -88.12843186457258
   },
   "last_entry": "2026-09-28T00:56:12+00:00",
   "equity_history": [
