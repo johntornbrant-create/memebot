@@ -1,28 +1,28 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-28T08:08:00+00:00`
+Updated `2026-09-28T08:29:49+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$376.70** |
-| Return | **-24.66%** (start $500.00) |
+| Equity | **$376.88** |
+| Return | **-24.62%** (start $500.00) |
 | Cash | $367.81 |
-| Deployed | $8.89 (2.4%) |
+| Deployed | $9.07 (2.4%) |
 | Open positions | 2 / 8 |
 | Closed trades | 59 (17W / 42L, WR 29%) |
 | Profit factor | 0.55 |
 | Fees + slippage paid | $44.16 |
-| Ticks run | 781 |
+| Ticks run | 783 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| Q4 | solana | $5.76 | $5.47 | -4% | +10% | 9.0h |
-| ZC | ethereum | $7.98 | $3.42 | -31% | +34% | 5.0h |
+| Q4 | solana | $5.76 | $5.65 | -1% | +10% | 9.4h |
+| ZC | ethereum | $7.98 | $3.42 | -30% | +34% | 5.4h |
 
 ## Last closed trades
 
@@ -65,16 +65,16 @@ _refit on 397 observations (338 shadow, 59 real), 147 winners (37% base rate)_
 
 ## Last run log
 ```
-tick #781  equity $376.83  cash $367.81  open 2
+tick #783  equity $376.86  cash $367.81  open 2
   scanning chains + news...
-  122 raw candidates across 5 chains, 156 headlines/posts
-  4 passed gates | rejected: liquidity too thin x84, no h1 volume x21, too old x11, already discovered x2
-  top: AXIOM 0.72 | INSTA 0.39 | Q4 0.33 | XPAD 0.26
-  tick bar 0.72 (top 30% of 4, floor 0.45)
+  184 raw candidates across 8 chains, 160 headlines/posts
+  6 passed gates | rejected: liquidity too thin x104, no h1 volume x48, too old x18, already discovered x7, too few txns x1
+  top: AXIOM 0.61 | XPAD 0.31 | QPEPE 0.30 | SNOWMOON 0.30 | Q4 0.27
+  tick bar 0.61 (top 30% of 6, floor 0.45)
   no entries this tick
-  shadow: tracking 105, closed 0 this tick (0 would have won)
+  shadow: tracking 104, closed 1 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED Moon       peak +2942%  (scored 0.86)
     MISSED GSTOCK     peak +2491%  (scored 0.88)
-  entries blocked: daily loss -9.4% <= -6%
+  entries blocked: daily loss -9.3% <= -6%
 ```
