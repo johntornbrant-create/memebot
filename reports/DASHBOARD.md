@@ -1,30 +1,31 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-28T03:06:30+00:00`
+Updated `2026-09-28T03:27:38+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$398.98** |
-| Return | **-20.20%** (start $500.00) |
-| Cash | $365.65 |
-| Deployed | $33.32 (8.4%) |
-| Open positions | 4 / 8 |
+| Equity | **$401.07** |
+| Return | **-19.79%** (start $500.00) |
+| Cash | $360.04 |
+| Deployed | $41.04 (10.2%) |
+| Open positions | 5 / 8 |
 | Closed trades | 56 (16W / 40L, WR 29%) |
 | Profit factor | 0.56 |
-| Fees + slippage paid | $37.97 |
-| Ticks run | 748 |
+| Fees + slippage paid | $41.01 |
+| Ticks run | 750 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| Q4 | solana | $5.76 | $5.39 | -6% | +4% | 4.0h |
-| e/acc | solana | $8.06 | $9.43 | +18% | +30% | 1.2h |
-| XPAD | solana | $7.87 | $10.52 | +80% | +80% | 0.7h |
-| ZC | ethereum | $7.98 | $4.92 | +0% | +0% | 0.0h |
+| Q4 | solana | $5.76 | $5.72 | +0% | +4% | 4.4h |
+| e/acc | solana | $8.06 | $10.51 | +32% | +38% | 1.6h |
+| XPAD | solana | $7.87 | $14.37 | +146% | +146% | 1.0h |
+| ZC | ethereum | $7.98 | $4.82 | -2% | +0% | 0.4h |
+| QCAT | ethereum | $5.62 | $2.58 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
@@ -67,14 +68,14 @@ _refit on 364 observations (314 shadow, 50 real), 135 winners (37% base rate)_
 
 ## Last run log
 ```
-tick #748  equity $397.75  cash $373.63  open 3
+tick #750  equity $399.22  cash $365.65  open 4
   scanning chains + news...
-  72 raw candidates across 5 chains, 156 headlines/posts
-  9 passed gates | rejected: liquidity too thin x37, no h1 volume x22, too old x2, too new (bot war) x1, already discovered x1
-  top: ZC 0.82 | XPAD 0.78 | MT 0.69 | 20xx 0.64 | DELREY 0.51
-  tick bar 0.78 (top 30% of 9, floor 0.45)
-  BUY[exploit] ZC         $7.98 @ $0.0004643  score 0.82  ethereum  liq $81,199
-  shadow: tracking 99, closed 4 this tick (2 would have won)
+  83 raw candidates across 4 chains, 156 headlines/posts
+  10 passed gates | rejected: liquidity too thin x47, no h1 volume x21, too new (bot war) x3, already discovered x1, too old x1
+  top: all/inCat 0.81 | QCAT 0.77 | 20xx 0.65 | Q4 0.64 | MT 0.57
+  tick bar 0.65 (top 30% of 10, floor 0.45)
+  BUY[explore] QCAT       $5.62 @ $0.0001305  score 0.77  ethereum  liq $43,977
+  shadow: tracking 100, closed 2 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED Moon       peak +2942%  (scored 0.86)
     MISSED GSTOCK     peak +2491%  (scored 0.88)
