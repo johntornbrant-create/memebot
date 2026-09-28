@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-28T12:57:07+00:00`
+Updated `2026-09-28T13:08:36+00:00`
 
 ## Equity
 
@@ -15,7 +15,7 @@ Updated `2026-09-28T12:57:07+00:00`
 | Closed trades | 61 (17W / 44L, WR 28%) |
 | Profit factor | 0.53 |
 | Fees + slippage paid | $47.23 |
-| Ticks run | 811 |
+| Ticks run | 813 |
 
 ## Open positions
 
@@ -62,14 +62,14 @@ _refit on 417 observations (357 shadow, 60 real), 151 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #811  equity $372.93  cash $372.93  open 0
+tick #813  equity $372.93  cash $372.93  open 0
   scanning chains + news...
-  140 raw candidates across 7 chains, 157 headlines/posts
-  11 passed gates | rejected: liquidity too thin x85, no h1 volume x25, too old x10, already discovered x8, too new (bot war) x1
-  top: ZARVIS 0.68 | ZARVIS 0.67 | SNOWMOON 0.35 | WOOF 0.25 | swordstonk 0.24
-  tick bar 0.45 (top 30% of 11, floor 0.45)
+  110 raw candidates across 6 chains, 157 headlines/posts
+  13 passed gates | rejected: liquidity too thin x69, no h1 volume x18, too old x7, already discovered x2, sell pressure x1
+  top: Aeon 0.89 | ZARVIS 0.73 | ZARVIS 0.62 | e/acc 0.21 | bukangi 0.20
+  tick bar 0.62 (top 30% of 13, floor 0.45)
   no entries this tick
-  shadow: tracking 104, closed 1 this tick (1 would have won)
+  shadow: tracking 105, closed 0 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED Moon       peak +2942%  (scored 0.86)
     MISSED GSTOCK     peak +2491%  (scored 0.88)
