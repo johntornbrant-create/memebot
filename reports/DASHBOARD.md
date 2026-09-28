@@ -1,28 +1,28 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-28T05:39:59+00:00`
+Updated `2026-09-28T05:53:22+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$380.56** |
-| Return | **-23.89%** (start $500.00) |
+| Equity | **$378.43** |
+| Return | **-24.31%** (start $500.00) |
 | Cash | $367.81 |
-| Deployed | $12.75 (3.3%) |
+| Deployed | $10.62 (2.8%) |
 | Open positions | 2 / 8 |
 | Closed trades | 59 (17W / 42L, WR 29%) |
 | Profit factor | 0.55 |
 | Fees + slippage paid | $44.16 |
-| Ticks run | 765 |
+| Ticks run | 767 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| Q4 | solana | $5.76 | $6.13 | +8% | +9% | 6.6h |
-| ZC | ethereum | $7.98 | $6.62 | +34% | +34% | 2.6h |
+| Q4 | solana | $5.76 | $5.98 | +5% | +10% | 6.8h |
+| ZC | ethereum | $7.98 | $4.64 | -6% | +34% | 2.8h |
 
 ## Last closed trades
 
@@ -65,16 +65,16 @@ _refit on 364 observations (314 shadow, 50 real), 135 winners (37% base rate)_
 
 ## Last run log
 ```
-tick #765  equity $379.21  cash $367.81  open 2
+tick #767  equity $378.73  cash $367.81  open 2
   scanning chains + news...
-  128 raw candidates across 6 chains, 156 headlines/posts
-  13 passed gates | rejected: liquidity too thin x58, no h1 volume x30, too old x15, already discovered x6, unknown age x5
-  top: QPEPE 0.87 | NEARCAT 0.87 | GRAYCAT 0.80 | SIDEKINU 0.80 | GRAYMATTER 0.66
-  tick bar 0.80 (top 30% of 13, floor 0.45)
+  138 raw candidates across 6 chains, 160 headlines/posts
+  12 passed gates | rejected: liquidity too thin x55, no h1 volume x39, too old x16, already discovered x11, unknown age x5
+  top: GRAYCAT 0.92 | NEARCAT 0.84 | QCAT 0.65 | ZC 0.57 | FIM 0.51
+  tick bar 0.65 (top 30% of 12, floor 0.45)
   no entries this tick
   shadow: tracking 106, closed 0 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED Moon       peak +2942%  (scored 0.86)
     MISSED GSTOCK     peak +2491%  (scored 0.88)
-  entries blocked: daily loss -8.4% <= -6%
+  entries blocked: daily loss -9.0% <= -6%
 ```
