@@ -1,42 +1,9 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-28T12:32:55+00:00",
-  "cash": 367.8099790045726,
-  "equity": 374.4468,
-  "positions": {
-    "solana:F1z5FQdToNDLQYJ72grqePaWJrcrf39HR4gaKA57ySUQ": {
-      "id": "46971866ce",
-      "chain": "solana",
-      "address": "F1z5FQdToNDLQYJ72grqePaWJrcrf39HR4gaKA57ySUQ",
-      "symbol": "Q4",
-      "opened": "2026-09-27T23:05:06+00:00",
-      "entry_price": 9.438e-05,
-      "tokens": 60390.06466248226,
-      "tokens_initial": 60390.06466248226,
-      "cost_usd": 5.7610532,
-      "fees_usd": 0.0614,
-      "realized_usd": 0.0,
-      "peak_gain": 0.47806738715829633,
-      "tp_hit": [],
-      "entry_liq": 26873.68,
-      "score": 0.711,
-      "features": {
-        "liq_quality": 0.3978,
-        "turnover": 0.3908,
-        "buy_pressure": 0.5353,
-        "momentum_accel": 1.0,
-        "not_vertical": 1.0,
-        "age_sweet": 0.8635,
-        "socials": 1.0,
-        "fdv_sanity": 1.0,
-        "txn_depth": 0.4514,
-        "dip_in_uptrend": 1.0,
-        "buzz": 1.0,
-        "paid_boost": 0.2
-      },
-      "last_price": 0.0001099
-    }
-  },
+  "updated": "2026-09-28T12:44:29+00:00",
+  "cash": 372.9252457976979,
+  "equity": 372.9252,
+  "positions": {},
   "blacklist": {
     "solana:D4sBdmPaDKxKThQW3Eh721R9M335VcCThn31w7CRtdkN": "2026-09-22T17:22:35+00:00",
     "solana:HzaCANKGkhNcQGb1VWL8f4tHJYrCmaXrPWk9eHR7GYYX": "2026-09-22T20:22:15+00:00",
@@ -89,13 +56,13 @@
     "trades_today": 9
   },
   "stats": {
-    "ticks": 809,
+    "ticks": 810,
     "opened": 61,
-    "closed": 60,
+    "closed": 61,
     "wins": 17,
-    "losses": 43,
-    "fees_paid": 47.175852458249814,
-    "realized_pnl": -126.42896779542728
+    "losses": 44,
+    "fees_paid": 47.2329947034661,
+    "realized_pnl": -127.07475420230196
   },
   "last_entry": "2026-09-28T03:42:24+00:00",
   "equity_history": [
@@ -150,6 +117,10 @@
     [
       "2026-09-28T11:40:21+00:00",
       375.15
+    ],
+    [
+      "2026-09-28T12:44:28+00:00",
+      374.45
     ]
   ]
 }
