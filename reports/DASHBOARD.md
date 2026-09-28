@@ -1,27 +1,27 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-28T10:54:36+00:00`
+Updated `2026-09-28T11:06:32+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$375.45** |
-| Return | **-24.91%** (start $500.00) |
+| Equity | **$376.23** |
+| Return | **-24.75%** (start $500.00) |
 | Cash | $367.81 |
-| Deployed | $7.64 (2.0%) |
+| Deployed | $8.42 (2.2%) |
 | Open positions | 1 / 8 |
 | Closed trades | 60 (17W / 43L, WR 28%) |
 | Profit factor | 0.53 |
 | Fees + slippage paid | $47.18 |
-| Ticks run | 799 |
+| Ticks run | 801 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| Q4 | solana | $5.76 | $7.64 | +34% | +34% | 11.8h |
+| Q4 | solana | $5.76 | $8.42 | +48% | +48% | 12.0h |
 
 ## Last closed trades
 
@@ -64,16 +64,16 @@ _refit on 397 observations (338 shadow, 59 real), 147 winners (37% base rate)_
 
 ## Last run log
 ```
-tick #799  equity $375.37  cash $367.81  open 1
+tick #801  equity $376.23  cash $367.81  open 1
   scanning chains + news...
-  91 raw candidates across 4 chains, 157 headlines/posts
-  6 passed gates | rejected: liquidity too thin x55, no h1 volume x16, too old x11, already discovered x2, too new (bot war) x1
-  top: WOOF 0.91 | o 0.79 | XPAD 0.59 | Q4 0.47 | INSTA 0.24
-  tick bar 0.79 (top 30% of 6, floor 0.45)
+  95 raw candidates across 4 chains, 157 headlines/posts
+  9 passed gates | rejected: liquidity too thin x47, no h1 volume x27, too old x6, sell pressure x3, already discovered x3
+  top: o 0.82 | WOOF 0.80 | OATHWALL 0.62 | XPAD 0.54 | Q4 0.51
+  tick bar 0.79 (top 30% of 9, floor 0.45)
   no entries this tick
-  shadow: tracking 100, closed 1 this tick (0 would have won)
+  shadow: tracking 101, closed 1 this tick (1 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED Moon       peak +2942%  (scored 0.86)
     MISSED GSTOCK     peak +2491%  (scored 0.88)
-  entries blocked: daily loss -9.7% <= -6%
+  entries blocked: daily loss -9.5% <= -6%
 ```
