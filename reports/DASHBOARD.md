@@ -1,29 +1,30 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-28T02:40:25+00:00`
+Updated `2026-09-28T02:53:34+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$392.80** |
-| Return | **-21.44%** (start $500.00) |
-| Cash | $370.34 |
-| Deployed | $22.46 (5.7%) |
-| Open positions | 3 / 8 |
+| Equity | **$396.43** |
+| Return | **-20.71%** (start $500.00) |
+| Cash | $367.86 |
+| Deployed | $28.57 (7.2%) |
+| Open positions | 4 / 8 |
 | Closed trades | 56 (16W / 40L, WR 29%) |
 | Profit factor | 0.56 |
-| Fees + slippage paid | $34.87 |
-| Ticks run | 746 |
+| Fees + slippage paid | $35.00 |
+| Ticks run | 747 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| Q4 | solana | $5.76 | $5.40 | -5% | +4% | 3.6h |
-| e/acc | solana | $8.06 | $8.14 | +2% | +30% | 0.8h |
-| XPAD | solana | $7.87 | $8.92 | +14% | +14% | 0.2h |
+| Q4 | solana | $5.76 | $5.42 | -5% | +4% | 3.8h |
+| e/acc | solana | $8.06 | $8.25 | +3% | +30% | 1.0h |
+| XPAD | solana | $7.87 | $9.35 | +60% | +60% | 0.5h |
+| CASH | bsc | $5.55 | $5.46 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
@@ -66,14 +67,15 @@ _refit on 364 observations (314 shadow, 50 real), 135 winners (37% base rate)_
 
 ## Last run log
 ```
-tick #746  equity $391.68  cash $370.34  open 3
+tick #747  equity $392.80  cash $370.34  open 3
+  SELL XPAD       25% @ $0.0008403  ->  $3.07   [take profit +50% (sold 25%)]
   scanning chains + news...
-  85 raw candidates across 6 chains, 156 headlines/posts
-  9 passed gates | rejected: liquidity too thin x41, no h1 volume x26, too old x5, already discovered x4
-  top: XPAD 0.79 | e/acc 0.67 | Q4 0.54 | DELREY 0.41 | INSTA 0.39
-  tick bar 0.67 (top 30% of 9, floor 0.45)
-  no entries this tick
-  shadow: tracking 102, closed 0 this tick (0 would have won)
+  118 raw candidates across 9 chains, 156 headlines/posts
+  10 passed gates | rejected: no h1 volume x47, liquidity too thin x43, already discovered x9, too old x5, unknown age x3
+  top: XPAD 0.75 | INSTA 0.53 | Q4 0.53 | MT 0.46 | e/acc 0.38
+  tick bar 0.53 (top 30% of 10, floor 0.45)
+  BUY[explore] CASH       $5.55 @ $7.359e-05  score 0.38  bsc  liq $27,655
+  shadow: tracking 101, closed 2 this tick (2 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED Moon       peak +2942%  (scored 0.86)
     MISSED GSTOCK     peak +2491%  (scored 0.88)
