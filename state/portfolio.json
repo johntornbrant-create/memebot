@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-28T01:38:37+00:00",
-  "cash": 389.50051493542725,
-  "equity": 410.2829,
+  "updated": "2026-09-28T01:49:21+00:00",
+  "cash": 390.4968937588563,
+  "equity": 403.2397,
   "positions": {
     "solana:F1z5FQdToNDLQYJ72grqePaWJrcrf39HR4gaKA57ySUQ": {
       "id": "46971866ce",
@@ -34,7 +34,7 @@
         "buzz": 1.0,
         "paid_boost": 0.2
       },
-      "last_price": 8.376e-05
+      "last_price": 8.069e-05
     },
     "solana:BvnqdYwuFrvi9ds63EtwQLYME89ikJkULnJPAd83pump": {
       "id": "e67184d75d",
@@ -66,39 +66,7 @@
         "buzz": 0.0,
         "paid_boost": 0.06
       },
-      "last_price": 0.0003857
-    },
-    "solana:5EsadufesY7VSU7CRPLTuFZP35q1kiLfWw6t8spUpump": {
-      "id": "0f4d7cb052",
-      "chain": "solana",
-      "address": "5EsadufesY7VSU7CRPLTuFZP35q1kiLfWw6t8spUpump",
-      "symbol": "CatGPT",
-      "opened": "2026-09-28T01:25:19+00:00",
-      "entry_price": 0.0002902,
-      "tokens": 28190.644316065336,
-      "tokens_initial": 28190.644316065336,
-      "cost_usd": 8.26,
-      "fees_usd": 0.0791,
-      "realized_usd": 0.0,
-      "peak_gain": 0.0,
-      "tp_hit": [],
-      "entry_liq": 48927.4,
-      "score": 0.8818,
-      "features": {
-        "liq_quality": 0.6762,
-        "turnover": 0.0557,
-        "buy_pressure": 1.0,
-        "momentum_accel": 1.0,
-        "not_vertical": 0.0,
-        "age_sweet": 0.1089,
-        "socials": 1.0,
-        "fdv_sanity": 0.9793,
-        "txn_depth": 0.5083,
-        "dip_in_uptrend": 0.5,
-        "buzz": 0.0,
-        "paid_boost": 0.06
-      },
-      "last_price": 0.0002196
+      "last_price": 0.0003184
     }
   },
   "blacklist": {
@@ -135,7 +103,8 @@
     "solana:bGpXrniA1kzqubTCCexxR4Zh4Hrx8eoYY1Sqtt3pump": "2026-09-26T01:32:05+00:00",
     "solana:FJGWEmtCEtvyviC8w86twWNiTcXwn7YiAoHmJgxWpump": "2026-09-27T22:49:50+00:00",
     "solana:2pMyVuWtYh3SH44RNKPqqj6tiYqfMAFaKFkohS1npump": "2026-09-28T00:26:56+00:00",
-    "solana:5cDPo1jjEEtxWf2y1HTx4WyMydVmErN3YnbYtxLVcmg9": "2026-09-28T00:49:04+00:00"
+    "solana:5cDPo1jjEEtxWf2y1HTx4WyMydVmErN3YnbYtxLVcmg9": "2026-09-28T00:49:04+00:00",
+    "solana:5EsadufesY7VSU7CRPLTuFZP35q1kiLfWw6t8spUpump": "2026-09-28T01:49:21+00:00"
   },
   "halted": false,
   "halt_reason": "",
@@ -147,13 +116,13 @@
     "trades_today": 4
   },
   "stats": {
-    "ticks": 738,
+    "ticks": 739,
     "opened": 56,
-    "closed": 53,
+    "closed": 54,
     "wins": 16,
-    "losses": 37,
-    "fees_paid": 34.539664601862015,
-    "realized_pnl": -88.12843186457258
+    "losses": 38,
+    "fees_paid": 34.566888073549315,
+    "realized_pnl": -95.39205304114354
   },
   "last_entry": "2026-09-28T01:25:19+00:00",
   "equity_history": [
@@ -168,6 +137,10 @@
     [
       "2026-09-28T00:49:04+00:00",
       409.11
+    ],
+    [
+      "2026-09-28T01:49:21+00:00",
+      410.28
     ]
   ]
 }
