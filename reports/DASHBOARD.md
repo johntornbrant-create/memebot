@@ -1,34 +1,35 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-28T01:38:37+00:00`
+Updated `2026-09-28T01:51:49+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$410.28** |
-| Return | **-17.94%** (start $500.00) |
-| Cash | $389.50 |
-| Deployed | $20.78 (5.1%) |
+| Equity | **$403.21** |
+| Return | **-19.36%** (start $500.00) |
+| Cash | $382.44 |
+| Deployed | $20.78 (5.2%) |
 | Open positions | 3 / 8 |
-| Closed trades | 53 (16W / 37L, WR 30%) |
-| Profit factor | 0.61 |
-| Fees + slippage paid | $34.54 |
-| Ticks run | 738 |
+| Closed trades | 54 (16W / 38L, WR 30%) |
+| Profit factor | 0.59 |
+| Fees + slippage paid | $34.65 |
+| Ticks run | 740 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| Q4 | solana | $5.76 | $5.06 | -11% | +4% | 2.6h |
-| CATSTR | solana | $8.35 | $9.53 | +15% | +25% | 0.7h |
-| CatGPT | solana | $8.26 | $6.19 | -24% | +0% | 0.2h |
+| Q4 | solana | $5.76 | $4.98 | -13% | +4% | 2.8h |
+| CATSTR | solana | $8.35 | $7.73 | -6% | +25% | 0.9h |
+| e/acc | solana | $8.06 | $7.98 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| CatGPT | $-7.26 | -88% | 0.4h | stop loss -87% |
 | CAKE | $+11.26 | +196% | 2.5h | ratchet +255% (peak +407%) |
 | KUNO | $-4.00 | -49% | 0.2h | stop loss -48% |
 | poin | $-8.20 | -99% | 0.3h | stop loss -98% |
@@ -43,7 +44,6 @@ Updated `2026-09-28T01:38:37+00:00`
 | 币安月饼 | $-4.90 | -42% | 2.6h | stop loss -40% |
 | Shurikane | $-6.92 | -41% | 1.8h | stop loss -40% |
 | IMU | $+24.04 | +211% | 2.0h | ratchet +391% (peak +602%) |
-| COD | $+1.52 | +9% | 2.2h | ratchet +25% (peak +71%) |
 
 ## Learned weights (v10)
 
@@ -66,13 +66,13 @@ _refit on 364 observations (314 shadow, 50 real), 135 winners (37% base rate)_
 
 ## Last run log
 ```
-tick #738  equity $411.88  cash $389.50  open 3
+tick #740  equity $403.24  cash $390.50  open 2
   scanning chains + news...
-  104 raw candidates across 5 chains, 156 headlines/posts
-  13 passed gates | rejected: liquidity too thin x56, no h1 volume x31, too old x2, too new (bot war) x1, already discovered x1
-  top: x/acc 0.87 | CatGPT 0.85 | OMNINU 0.79 | BOB 0.69 | SUPERCAPY 0.68
-  tick bar 0.79 (top 30% of 13, floor 0.45)
-  no entries this tick
+  111 raw candidates across 6 chains, 156 headlines/posts
+  12 passed gates | rejected: liquidity too thin x61, no h1 volume x34, too old x3, already discovered x1
+  top: e/acc 0.87 | TOIN 0.83 | OMNINU 0.80 | x/acc 0.79 | SUPERCAPY 0.76
+  tick bar 0.80 (top 30% of 12, floor 0.45)
+  BUY[exploit] e/acc      $8.06 @ $0.0001533  score 0.87  solana  liq $34,533
   shadow: tracking 102, closed 2 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED Moon       peak +2942%  (scored 0.86)
