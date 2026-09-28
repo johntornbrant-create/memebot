@@ -1,30 +1,30 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-28T04:06:38+00:00`
+Updated `2026-09-28T04:27:48+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$385.84** |
-| Return | **-22.83%** (start $500.00) |
+| Equity | **$388.95** |
+| Return | **-22.21%** (start $500.00) |
 | Cash | $357.79 |
-| Deployed | $28.06 (7.3%) |
+| Deployed | $31.16 (8.0%) |
 | Open positions | 4 / 8 |
 | Closed trades | 57 (16W / 41L, WR 28%) |
 | Profit factor | 0.54 |
 | Fees + slippage paid | $44.04 |
-| Ticks run | 755 |
+| Ticks run | 757 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| Q4 | solana | $5.76 | $5.58 | -2% | +4% | 5.0h |
-| e/acc | solana | $8.06 | $7.78 | -2% | +38% | 2.2h |
-| XPAD | solana | $7.87 | $10.23 | +75% | +149% | 1.7h |
-| ZC | ethereum | $7.98 | $4.47 | -9% | +0% | 1.0h |
+| Q4 | solana | $5.76 | $5.98 | +5% | +5% | 5.4h |
+| e/acc | solana | $8.06 | $7.77 | -3% | +38% | 2.6h |
+| XPAD | solana | $7.87 | $12.87 | +120% | +149% | 2.0h |
+| ZC | ethereum | $7.98 | $4.54 | -8% | +0% | 1.4h |
 
 ## Last closed trades
 
@@ -67,16 +67,16 @@ _refit on 364 observations (314 shadow, 50 real), 135 winners (37% base rate)_
 
 ## Last run log
 ```
-tick #755  equity $384.91  cash $357.79  open 4
+tick #757  equity $388.59  cash $357.79  open 4
   scanning chains + news...
-  87 raw candidates across 7 chains, 156 headlines/posts
-  9 passed gates | rejected: liquidity too thin x48, no h1 volume x30
-  top: QPEPE 0.80 | two 0.54 | CLAUDECHAN 0.47 | ZSHIB  0.44 | MT 0.40
-  tick bar 0.54 (top 30% of 9, floor 0.45)
+  90 raw candidates across 7 chains, 156 headlines/posts
+  7 passed gates | rejected: liquidity too thin x51, no h1 volume x30, too new (bot war) x1, sell pressure x1
+  top: QPEPE 0.42 | MT 0.39 | DELREY 0.39 | XPAD 0.37 | CLAUDECHAN 0.36
+  tick bar 0.45 (top 30% of 7, floor 0.45)
   no entries this tick
   shadow: tracking 100, closed 0 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED Moon       peak +2942%  (scored 0.86)
     MISSED GSTOCK     peak +2491%  (scored 0.88)
-  entries blocked: daily loss -7.2% <= -6%
+  entries blocked: daily loss -6.4% <= -6%
 ```
