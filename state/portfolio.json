@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-28T09:57:51+00:00",
+  "updated": "2026-09-28T10:09:12+00:00",
   "cash": 367.8099790045726,
-  "equity": 373.8339,
+  "equity": 374.314,
   "positions": {
     "solana:F1z5FQdToNDLQYJ72grqePaWJrcrf39HR4gaKA57ySUQ": {
       "id": "46971866ce",
@@ -16,7 +16,7 @@
       "cost_usd": 5.7610532,
       "fees_usd": 0.0614,
       "realized_usd": 0.0,
-      "peak_gain": 0.09769018859927936,
+      "peak_gain": 0.14113159567705025,
       "tp_hit": [],
       "entry_liq": 26873.68,
       "score": 0.711,
@@ -34,7 +34,7 @@
         "buzz": 1.0,
         "paid_boost": 0.2
       },
-      "last_price": 9.975e-05
+      "last_price": 0.0001077
     }
   },
   "blacklist": {
@@ -89,7 +89,7 @@
     "trades_today": 9
   },
   "stats": {
-    "ticks": 792,
+    "ticks": 793,
     "opened": 61,
     "closed": 60,
     "wins": 17,

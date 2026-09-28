@@ -1,27 +1,27 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-28T09:44:51+00:00`
+Updated `2026-09-28T10:09:12+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$373.49** |
-| Return | **-25.30%** (start $500.00) |
+| Equity | **$374.31** |
+| Return | **-25.14%** (start $500.00) |
 | Cash | $367.81 |
-| Deployed | $5.68 (1.5%) |
+| Deployed | $6.50 (1.7%) |
 | Open positions | 1 / 8 |
 | Closed trades | 60 (17W / 43L, WR 28%) |
 | Profit factor | 0.53 |
 | Fees + slippage paid | $47.18 |
-| Ticks run | 791 |
+| Ticks run | 793 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| Q4 | solana | $5.76 | $5.68 | -0% | +10% | 10.7h |
+| Q4 | solana | $5.76 | $6.50 | +14% | +14% | 11.1h |
 
 ## Last closed trades
 
@@ -64,16 +64,16 @@ _refit on 397 observations (338 shadow, 59 real), 147 winners (37% base rate)_
 
 ## Last run log
 ```
-tick #791  equity $373.65  cash $367.81  open 1
+tick #793  equity $373.83  cash $367.81  open 1
   scanning chains + news...
-  76 raw candidates across 7 chains, 160 headlines/posts
-  4 passed gates | rejected: liquidity too thin x48, no h1 volume x22, unknown age x1, too old x1
-  top: 中国人飞往火星 0.40 | XPAD 0.33 | INSTA 0.24 | Q4 0.18
-  tick bar 0.45 (top 30% of 4, floor 0.45)
+  191 raw candidates across 7 chains, 160 headlines/posts
+  6 passed gates | rejected: liquidity too thin x109, no h1 volume x48, too old x17, already discovered x9, too new (bot war) x2
+  top: XPAD 0.38 | TOBEY 0.27 | Q4 0.26 | INSTA 0.24 | SNOWMOON 0.22
+  tick bar 0.45 (top 30% of 6, floor 0.45)
   no entries this tick
-  shadow: tracking 100, closed 1 this tick (0 would have won)
+  shadow: tracking 98, closed 3 this tick (1 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED Moon       peak +2942%  (scored 0.86)
     MISSED GSTOCK     peak +2491%  (scored 0.88)
-  entries blocked: daily loss -10.1% <= -6%
+  entries blocked: daily loss -9.9% <= -6%
 ```
