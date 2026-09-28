@@ -1,27 +1,27 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-28T10:28:28+00:00`
+Updated `2026-09-28T10:41:56+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$374.37** |
-| Return | **-25.13%** (start $500.00) |
+| Equity | **$374.59** |
+| Return | **-25.08%** (start $500.00) |
 | Cash | $367.81 |
-| Deployed | $6.56 (1.8%) |
+| Deployed | $6.78 (1.8%) |
 | Open positions | 1 / 8 |
 | Closed trades | 60 (17W / 43L, WR 28%) |
 | Profit factor | 0.53 |
 | Fees + slippage paid | $47.18 |
-| Ticks run | 795 |
+| Ticks run | 797 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| Q4 | solana | $5.76 | $6.56 | +15% | +15% | 11.4h |
+| Q4 | solana | $5.76 | $6.78 | +19% | +20% | 11.6h |
 
 ## Last closed trades
 
@@ -64,14 +64,14 @@ _refit on 397 observations (338 shadow, 59 real), 147 winners (37% base rate)_
 
 ## Last run log
 ```
-tick #795  equity $374.26  cash $367.81  open 1
+tick #797  equity $374.66  cash $367.81  open 1
   scanning chains + news...
-  135 raw candidates across 6 chains, 157 headlines/posts
-  7 passed gates | rejected: liquidity too thin x91, no h1 volume x20, too old x11, already discovered x4, too new (bot war) x2
-  top: WOOF 0.91 | o 0.83 | XPAD 0.43 | Q4 0.39 | TOBEY 0.29
-  tick bar 0.79 (top 30% of 7, floor 0.45)
+  109 raw candidates across 6 chains, 157 headlines/posts
+  8 passed gates | rejected: liquidity too thin x62, no h1 volume x22, too old x10, too new (bot war) x4, already discovered x2
+  top: WOOF 0.91 | swordcat 0.86 | o 0.84 | XPAD 0.56 | Q4 0.42
+  tick bar 0.79 (top 30% of 8, floor 0.45)
   no entries this tick
-  shadow: tracking 100, closed 0 this tick (0 would have won)
+  shadow: tracking 101, closed 0 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED Moon       peak +2942%  (scored 0.86)
     MISSED GSTOCK     peak +2491%  (scored 0.88)
