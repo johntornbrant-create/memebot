@@ -1,29 +1,29 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-28T01:25:21+00:00`
+Updated `2026-09-28T01:38:37+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$412.80** |
-| Return | **-17.44%** (start $500.00) |
+| Equity | **$410.28** |
+| Return | **-17.94%** (start $500.00) |
 | Cash | $389.50 |
-| Deployed | $23.30 (5.6%) |
+| Deployed | $20.78 (5.1%) |
 | Open positions | 3 / 8 |
 | Closed trades | 53 (16W / 37L, WR 30%) |
 | Profit factor | 0.61 |
 | Fees + slippage paid | $34.54 |
-| Ticks run | 736 |
+| Ticks run | 738 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| Q4 | solana | $5.76 | $4.87 | -15% | +4% | 2.3h |
-| CATSTR | solana | $8.35 | $10.17 | +23% | +23% | 0.5h |
-| CatGPT | solana | $8.26 | $8.18 | +0% | +0% | 0.0h |
+| Q4 | solana | $5.76 | $5.06 | -11% | +4% | 2.6h |
+| CATSTR | solana | $8.35 | $9.53 | +15% | +25% | 0.7h |
+| CatGPT | solana | $8.26 | $6.19 | -24% | +0% | 0.2h |
 
 ## Last closed trades
 
@@ -66,14 +66,14 @@ _refit on 364 observations (314 shadow, 50 real), 135 winners (37% base rate)_
 
 ## Last run log
 ```
-tick #736  equity $412.72  cash $397.76  open 2
+tick #738  equity $411.88  cash $389.50  open 3
   scanning chains + news...
-  148 raw candidates across 9 chains, 156 headlines/posts
-  13 passed gates | rejected: liquidity too thin x88, no h1 volume x42, too old x5
-  top: CatGPT 0.88 | SUPERCAPY 0.85 | x/acc 0.79 | BOB 0.68 | e/acc 0.61
+  104 raw candidates across 5 chains, 156 headlines/posts
+  13 passed gates | rejected: liquidity too thin x56, no h1 volume x31, too old x2, too new (bot war) x1, already discovered x1
+  top: x/acc 0.87 | CatGPT 0.85 | OMNINU 0.79 | BOB 0.69 | SUPERCAPY 0.68
   tick bar 0.79 (top 30% of 13, floor 0.45)
-  BUY[exploit] CatGPT     $8.26 @ $0.0002902  score 0.88  solana  liq $48,927
-  shadow: tracking 103, closed 2 this tick (1 would have won)
+  no entries this tick
+  shadow: tracking 102, closed 2 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED Moon       peak +2942%  (scored 0.86)
     MISSED GSTOCK     peak +2491%  (scored 0.88)
