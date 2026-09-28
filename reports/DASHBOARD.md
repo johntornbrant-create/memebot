@@ -1,28 +1,28 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-28T06:07:02+00:00`
+Updated `2026-09-28T06:33:54+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$377.63** |
-| Return | **-24.47%** (start $500.00) |
+| Equity | **$377.08** |
+| Return | **-24.58%** (start $500.00) |
 | Cash | $367.81 |
-| Deployed | $9.82 (2.6%) |
+| Deployed | $9.27 (2.5%) |
 | Open positions | 2 / 8 |
 | Closed trades | 59 (17W / 42L, WR 29%) |
 | Profit factor | 0.55 |
 | Fees + slippage paid | $44.16 |
-| Ticks run | 769 |
+| Ticks run | 771 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| Q4 | solana | $5.76 | $5.45 | -4% | +10% | 7.0h |
-| ZC | ethereum | $7.98 | $4.37 | -11% | +34% | 3.0h |
+| Q4 | solana | $5.76 | $5.57 | -2% | +10% | 7.5h |
+| ZC | ethereum | $7.98 | $3.70 | -25% | +34% | 3.5h |
 
 ## Last closed trades
 
@@ -44,37 +44,37 @@ Updated `2026-09-28T06:07:02+00:00`
 | ARENA | $+6.10 | +36% | 23.6h | ratchet +56% (peak +123%) |
 | BRAIN | $-5.41 | -46% | 9.2h | stop loss -45% |
 
-## Learned weights (v10)
+## Learned weights (v11)
 
-_refit on 364 observations (314 shadow, 50 real), 135 winners (37% base rate)_
+_refit on 397 observations (338 shadow, 59 real), 147 winners (37% base rate)_
 
 | Feature | Weight |
 |---|---|
-| buy_pressure | +0.123 |
-| momentum_accel | +0.088 |
-| dip_in_uptrend | +0.075 |
-| not_vertical | -0.067 |
-| turnover | +0.057 |
-| fdv_sanity | +0.051 |
-| txn_depth | +0.028 |
-| socials | +0.020 |
-| buzz | -0.005 |
-| paid_boost | -0.003 |
-| age_sweet | +0.003 |
-| liq_quality | +0.002 |
+| buy_pressure | +0.091 |
+| not_vertical | -0.082 |
+| momentum_accel | +0.074 |
+| fdv_sanity | +0.059 |
+| turnover | +0.048 |
+| buzz | -0.034 |
+| paid_boost | -0.033 |
+| dip_in_uptrend | +0.023 |
+| liq_quality | +0.022 |
+| socials | +0.019 |
+| txn_depth | +0.018 |
+| age_sweet | +0.005 |
 
 ## Last run log
 ```
-tick #769  equity $377.90  cash $367.81  open 2
+tick #771  equity $377.27  cash $367.81  open 2
   scanning chains + news...
-  124 raw candidates across 7 chains, 156 headlines/posts
-  9 passed gates | rejected: liquidity too thin x69, no h1 volume x41, already discovered x2, too old x2, too new (bot war) x1
-  top: GRAYCAT 0.88 | QCAT 0.67 | NEARCAT 0.65 | GRAYMATTER 0.56 | QNTCAT 0.48
-  tick bar 0.67 (top 30% of 9, floor 0.45)
+  258 raw candidates across 9 chains, 156 headlines/posts
+  13 passed gates | rejected: liquidity too thin x133, no h1 volume x78, too old x17, already discovered x12, too new (bot war) x3
+  top: QPEPE 0.87 | LEVERAGE 0.76 | GRAYCAT 0.44 | QNTCAT 0.43 | SNOWMOON 0.38
+  tick bar 0.45 (top 30% of 13, floor 0.45)
   no entries this tick
-  shadow: tracking 107, closed 0 this tick (0 would have won)
+  shadow: tracking 108, closed 0 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED Moon       peak +2942%  (scored 0.86)
     MISSED GSTOCK     peak +2491%  (scored 0.88)
-  entries blocked: daily loss -9.1% <= -6%
+  entries blocked: daily loss -9.3% <= -6%
 ```
