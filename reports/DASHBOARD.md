@@ -1,35 +1,35 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-28T04:27:48+00:00`
+Updated `2026-09-28T04:43:13+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$388.95** |
-| Return | **-22.21%** (start $500.00) |
-| Cash | $357.79 |
-| Deployed | $31.16 (8.0%) |
-| Open positions | 4 / 8 |
-| Closed trades | 57 (16W / 41L, WR 28%) |
-| Profit factor | 0.54 |
-| Fees + slippage paid | $44.04 |
-| Ticks run | 757 |
+| Equity | **$378.49** |
+| Return | **-24.30%** (start $500.00) |
+| Cash | $367.81 |
+| Deployed | $10.68 (2.8%) |
+| Open positions | 2 / 8 |
+| Closed trades | 59 (17W / 42L, WR 29%) |
+| Profit factor | 0.55 |
+| Fees + slippage paid | $44.16 |
+| Ticks run | 759 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| Q4 | solana | $5.76 | $5.98 | +5% | +5% | 5.4h |
-| e/acc | solana | $8.06 | $7.77 | -3% | +38% | 2.6h |
-| XPAD | solana | $7.87 | $12.87 | +120% | +149% | 2.0h |
-| ZC | ethereum | $7.98 | $4.54 | -8% | +0% | 1.4h |
+| Q4 | solana | $5.76 | $6.17 | +8% | +8% | 5.6h |
+| ZC | ethereum | $7.98 | $4.51 | -8% | +0% | 1.6h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| XPAD | $+5.34 | +68% | 2.2h | ratchet +74% (peak +149%) |
+| e/acc | $-7.96 | -99% | 2.8h | stop loss -98% |
 | QPEPE | $-7.87 | -99% | 0.2h | stop loss -37% |
 | x/acc | $-7.90 | -99% | 0.2h | stop loss -98% |
 | CATSTR | $-4.68 | -56% | 1.1h | stop loss -55% |
@@ -43,8 +43,6 @@ Updated `2026-09-28T04:27:48+00:00`
 | CHIPS | $-8.54 | -100% | 0.9h | stop loss -100% |
 | ARENA | $+6.10 | +36% | 23.6h | ratchet +56% (peak +123%) |
 | BRAIN | $-5.41 | -46% | 9.2h | stop loss -45% |
-| MDP | $-4.70 | -41% | 10.7h | stop loss -40% |
-| JEANCOIN | $-8.71 | -84% | 30.2h | ratchet +767% (peak +1139%) |
 
 ## Learned weights (v10)
 
@@ -67,16 +65,16 @@ _refit on 364 observations (314 shadow, 50 real), 135 winners (37% base rate)_
 
 ## Last run log
 ```
-tick #757  equity $388.59  cash $357.79  open 4
+tick #759  equity $378.35  cash $367.81  open 2
   scanning chains + news...
-  90 raw candidates across 7 chains, 156 headlines/posts
-  7 passed gates | rejected: liquidity too thin x51, no h1 volume x30, too new (bot war) x1, sell pressure x1
-  top: QPEPE 0.42 | MT 0.39 | DELREY 0.39 | XPAD 0.37 | CLAUDECHAN 0.36
-  tick bar 0.45 (top 30% of 7, floor 0.45)
+  109 raw candidates across 8 chains, 160 headlines/posts
+  8 passed gates | rejected: liquidity too thin x54, no h1 volume x44, too new (bot war) x1, too old x1, already discovered x1
+  top: QCAT 0.57 | XPAD 0.39 | DELREY 0.36 | QPEPE 0.33 | INSTA 0.32
+  tick bar 0.45 (top 30% of 8, floor 0.45)
   no entries this tick
-  shadow: tracking 100, closed 0 this tick (0 would have won)
+  shadow: tracking 101, closed 1 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED Moon       peak +2942%  (scored 0.86)
     MISSED GSTOCK     peak +2491%  (scored 0.88)
-  entries blocked: daily loss -6.4% <= -6%
+  entries blocked: daily loss -8.9% <= -6%
 ```
