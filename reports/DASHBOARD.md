@@ -1,29 +1,29 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-28T00:56:14+00:00`
+Updated `2026-09-28T01:06:13+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$417.27** |
-| Return | **-16.55%** (start $500.00) |
+| Equity | **$414.96** |
+| Return | **-17.01%** (start $500.00) |
 | Cash | $390.84 |
-| Deployed | $26.43 (6.3%) |
+| Deployed | $24.12 (5.8%) |
 | Open positions | 3 / 8 |
 | Closed trades | 52 (15W / 37L, WR 29%) |
 | Profit factor | 0.56 |
 | Fees + slippage paid | $34.39 |
-| Ticks run | 732 |
+| Ticks run | 734 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| CAKE | solana | $5.74 | $12.15 | +407% | +407% | 2.1h |
-| Q4 | solana | $5.76 | $5.93 | +4% | +4% | 1.9h |
-| CATSTR | solana | $8.35 | $8.27 | +0% | +0% | 0.0h |
+| CAKE | solana | $5.74 | $8.72 | +264% | +407% | 2.2h |
+| Q4 | solana | $5.76 | $5.54 | -3% | +4% | 2.0h |
+| CATSTR | solana | $8.35 | $9.86 | +19% | +19% | 0.2h |
 
 ## Last closed trades
 
@@ -66,15 +66,14 @@ _refit on 364 observations (314 shadow, 50 real), 135 winners (37% base rate)_
 
 ## Last run log
 ```
-tick #732  equity $412.60  cash $395.19  open 2
-  SELL CAKE       25% @ $0.0008577  ->  $4.00   [take profit +400% (sold 25%)]
+tick #734  equity $414.30  cash $390.84  open 3
   scanning chains + news...
-  139 raw candidates across 8 chains, 156 headlines/posts
-  7 passed gates | rejected: liquidity too thin x84, no h1 volume x37, too old x8, already discovered x3
-  top: CATSTR 0.85 | zmr 0.67 | e/acc 0.65 | Q4 0.55 | INSTA 0.47
-  tick bar 0.67 (top 30% of 7, floor 0.45)
-  BUY[exploit] CATSTR     $8.35 @ $0.0003346  score 0.85  solana  liq $53,999
-  shadow: tracking 100, closed 2 this tick (2 would have won)
+  122 raw candidates across 8 chains, 156 headlines/posts
+  8 passed gates | rejected: liquidity too thin x65, no h1 volume x45, too old x3, already discovered x1
+  top: e/acc 0.61 | CATSTR 0.59 | BOB 0.53 | Q4 0.35 | INSTA 0.33
+  tick bar 0.59 (top 30% of 8, floor 0.45)
+  no entries this tick
+  shadow: tracking 99, closed 2 this tick (2 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED Moon       peak +2942%  (scored 0.86)
     MISSED GSTOCK     peak +2491%  (scored 0.88)
