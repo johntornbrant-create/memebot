@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-28T06:58:36+00:00`
+Updated `2026-09-28T07:11:56+00:00`
 
 ## Equity
 
@@ -15,14 +15,14 @@ Updated `2026-09-28T06:58:36+00:00`
 | Closed trades | 59 (17W / 42L, WR 29%) |
 | Profit factor | 0.55 |
 | Fees + slippage paid | $44.16 |
-| Ticks run | 773 |
+| Ticks run | 775 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| Q4 | solana | $5.76 | $4.89 | -14% | +10% | 7.9h |
-| ZC | ethereum | $7.98 | $3.63 | -26% | +34% | 3.9h |
+| Q4 | solana | $5.76 | $4.91 | -14% | +10% | 8.1h |
+| ZC | ethereum | $7.98 | $3.63 | -26% | +34% | 4.1h |
 
 ## Last closed trades
 
@@ -65,14 +65,14 @@ _refit on 397 observations (338 shadow, 59 real), 147 winners (37% base rate)_
 
 ## Last run log
 ```
-tick #773  equity $377.17  cash $367.81  open 2
+tick #775  equity $376.31  cash $367.81  open 2
   scanning chains + news...
-  94 raw candidates across 6 chains, 156 headlines/posts
-  8 passed gates | rejected: liquidity too thin x50, no h1 volume x34, already discovered x2
-  top: LEVERAGE 0.71 | CROCS 0.61 | QNTCAT 0.48 | DELREY 0.42 | INSTA 0.37
-  tick bar 0.61 (top 30% of 8, floor 0.45)
+  148 raw candidates across 6 chains, 156 headlines/posts
+  9 passed gates | rejected: liquidity too thin x100, no h1 volume x30, already discovered x5, too old x2, too new (bot war) x1
+  top: LEVERAGE 0.78 | QNTCAT 0.49 | CROCS 0.47 | DELREY 0.46 | INSTA 0.39
+  tick bar 0.49 (top 30% of 9, floor 0.45)
   no entries this tick
-  shadow: tracking 106, closed 3 this tick (1 would have won)
+  shadow: tracking 106, closed 0 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED Moon       peak +2942%  (scored 0.86)
     MISSED GSTOCK     peak +2491%  (scored 0.88)
