@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-28T02:53:43+00:00",
-  "cash": 373.6323522710044,
-  "equity": 397.7508,
+  "updated": "2026-09-28T03:06:30+00:00",
+  "cash": 365.65235227100436,
+  "equity": 398.9754,
   "positions": {
     "solana:F1z5FQdToNDLQYJ72grqePaWJrcrf39HR4gaKA57ySUQ": {
       "id": "46971866ce",
@@ -34,7 +34,7 @@
         "buzz": 1.0,
         "paid_boost": 0.2
       },
-      "last_price": 9.374e-05
+      "last_price": 8.918e-05
     },
     "solana:A2r4WEaSpe4eDHriikS3xW5bgqdXbpA6bZFbJgjFpump": {
       "id": "5dcb5a7a07",
@@ -66,7 +66,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0001622
+      "last_price": 0.0001812
     },
     "solana:FFzTy32bZbPA8zRLbbiWoNzW2emGv86tUxaoqhz1pump": {
       "id": "3b7d62d02b",
@@ -80,7 +80,7 @@
       "cost_usd": 7.87,
       "fees_usd": 0.11937580537288248,
       "realized_usd": 3.293925638158141,
-      "peak_gain": 0.7127902550437764,
+      "peak_gain": 0.8001522649409973,
       "tp_hit": [
         0
       ],
@@ -100,7 +100,39 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0008999
+      "last_price": 0.0009458
+    },
+    "ethereum:0x4E67DB19044549fF420860834c91b45BaD298722": {
+      "id": "173e4c32eb",
+      "chain": "ethereum",
+      "address": "0x4E67DB19044549fF420860834c91b45BaD298722",
+      "symbol": "ZC",
+      "opened": "2026-09-28T03:06:27+00:00",
+      "entry_price": 0.0004643,
+      "tokens": 10603.993477749706,
+      "tokens_initial": 10603.993477749706,
+      "cost_usd": 7.98,
+      "fees_usd": 3.0566,
+      "realized_usd": 0.0,
+      "peak_gain": 0.0,
+      "tp_hit": [],
+      "entry_liq": 81198.73,
+      "score": 0.823,
+      "features": {
+        "liq_quality": 0.8892,
+        "turnover": 0.1453,
+        "buy_pressure": 0.959,
+        "momentum_accel": 1.0,
+        "not_vertical": 0.6125,
+        "age_sweet": 0.9307,
+        "socials": 0.65,
+        "fdv_sanity": 0.984,
+        "txn_depth": 0.8542,
+        "dip_in_uptrend": 0.5,
+        "buzz": 0.0,
+        "paid_boost": 0.02
+      },
+      "last_price": 0.0004643
     }
   },
   "blacklist": {
@@ -149,18 +181,18 @@
     "day_equity": 415.6648,
     "week": "2026-W40",
     "week_equity": 415.6648,
-    "trades_today": 7
+    "trades_today": 8
   },
   "stats": {
-    "ticks": 747,
-    "opened": 59,
+    "ticks": 748,
+    "opened": 60,
     "closed": 56,
     "wins": 16,
     "losses": 40,
-    "fees_paid": 34.90941882688623,
+    "fees_paid": 37.96598465516704,
     "realized_pnl": -107.97052016715364
   },
-  "last_entry": "2026-09-28T02:26:11+00:00",
+  "last_entry": "2026-09-28T03:06:27+00:00",
   "equity_history": [
     [
       "2026-09-27T22:46:06+00:00",

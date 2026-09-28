@@ -1,29 +1,30 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-28T02:40:25+00:00`
+Updated `2026-09-28T03:06:30+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$392.80** |
-| Return | **-21.44%** (start $500.00) |
-| Cash | $370.34 |
-| Deployed | $22.46 (5.7%) |
-| Open positions | 3 / 8 |
+| Equity | **$398.98** |
+| Return | **-20.20%** (start $500.00) |
+| Cash | $365.65 |
+| Deployed | $33.32 (8.4%) |
+| Open positions | 4 / 8 |
 | Closed trades | 56 (16W / 40L, WR 29%) |
 | Profit factor | 0.56 |
-| Fees + slippage paid | $34.87 |
-| Ticks run | 746 |
+| Fees + slippage paid | $37.97 |
+| Ticks run | 748 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| Q4 | solana | $5.76 | $5.40 | -5% | +4% | 3.6h |
-| e/acc | solana | $8.06 | $8.14 | +2% | +30% | 0.8h |
-| XPAD | solana | $7.87 | $8.92 | +14% | +14% | 0.2h |
+| Q4 | solana | $5.76 | $5.39 | -6% | +4% | 4.0h |
+| e/acc | solana | $8.06 | $9.43 | +18% | +30% | 1.2h |
+| XPAD | solana | $7.87 | $10.52 | +80% | +80% | 0.7h |
+| ZC | ethereum | $7.98 | $4.92 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
@@ -66,14 +67,14 @@ _refit on 364 observations (314 shadow, 50 real), 135 winners (37% base rate)_
 
 ## Last run log
 ```
-tick #746  equity $391.68  cash $370.34  open 3
+tick #748  equity $397.75  cash $373.63  open 3
   scanning chains + news...
-  85 raw candidates across 6 chains, 156 headlines/posts
-  9 passed gates | rejected: liquidity too thin x41, no h1 volume x26, too old x5, already discovered x4
-  top: XPAD 0.79 | e/acc 0.67 | Q4 0.54 | DELREY 0.41 | INSTA 0.39
-  tick bar 0.67 (top 30% of 9, floor 0.45)
-  no entries this tick
-  shadow: tracking 102, closed 0 this tick (0 would have won)
+  72 raw candidates across 5 chains, 156 headlines/posts
+  9 passed gates | rejected: liquidity too thin x37, no h1 volume x22, too old x2, too new (bot war) x1, already discovered x1
+  top: ZC 0.82 | XPAD 0.78 | MT 0.69 | 20xx 0.64 | DELREY 0.51
+  tick bar 0.78 (top 30% of 9, floor 0.45)
+  BUY[exploit] ZC         $7.98 @ $0.0004643  score 0.82  ethereum  liq $81,199
+  shadow: tracking 99, closed 4 this tick (2 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED Moon       peak +2942%  (scored 0.86)
     MISSED GSTOCK     peak +2491%  (scored 0.88)
