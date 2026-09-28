@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-28T02:00:43+00:00",
-  "cash": 382.4368937588563,
-  "equity": 403.425,
+  "updated": "2026-09-28T02:05:41+00:00",
+  "cash": 378.10044776154484,
+  "equity": 400.2686,
   "positions": {
     "solana:F1z5FQdToNDLQYJ72grqePaWJrcrf39HR4gaKA57ySUQ": {
       "id": "46971866ce",
@@ -34,39 +34,7 @@
         "buzz": 1.0,
         "paid_boost": 0.2
       },
-      "last_price": 8.031e-05
-    },
-    "solana:BvnqdYwuFrvi9ds63EtwQLYME89ikJkULnJPAd83pump": {
-      "id": "e67184d75d",
-      "chain": "solana",
-      "address": "BvnqdYwuFrvi9ds63EtwQLYME89ikJkULnJPAd83pump",
-      "symbol": "CATSTR",
-      "opened": "2026-09-28T00:56:12+00:00",
-      "entry_price": 0.0003346,
-      "tokens": 24717.238306168696,
-      "tokens_initial": 24717.238306168696,
-      "cost_usd": 8.35,
-      "fees_usd": 0.0796,
-      "realized_usd": 0.0,
-      "peak_gain": 0.2480573819485954,
-      "tp_hit": [],
-      "entry_liq": 53999.02,
-      "score": 0.8463,
-      "features": {
-        "liq_quality": 0.7222,
-        "turnover": 0.9114,
-        "buy_pressure": 0.795,
-        "momentum_accel": 1.0,
-        "not_vertical": 0.7531,
-        "age_sweet": 0.7578,
-        "socials": 0.65,
-        "fdv_sanity": 0.9757,
-        "txn_depth": 0.8448,
-        "dip_in_uptrend": 0.5,
-        "buzz": 0.0,
-        "paid_boost": 0.06
-      },
-      "last_price": 0.0002967
+      "last_price": 8.477e-05
     },
     "solana:A2r4WEaSpe4eDHriikS3xW5bgqdXbpA6bZFbJgjFpump": {
       "id": "5dcb5a7a07",
@@ -80,7 +48,7 @@
       "cost_usd": 8.06,
       "fees_usd": 0.0781,
       "realized_usd": 0.0,
-      "peak_gain": 0.10306588388780158,
+      "peak_gain": 0.13242009132420085,
       "tp_hit": [],
       "entry_liq": 34532.62,
       "score": 0.866,
@@ -98,7 +66,39 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0001691
+      "last_price": 0.0001736
+    },
+    "solana:C5zyCRUo23yLHDfcYWWTZNVh4yxWgQ8PFr1zx1Zrpump": {
+      "id": "a1edb586fb",
+      "chain": "solana",
+      "address": "C5zyCRUo23yLHDfcYWWTZNVh4yxWgQ8PFr1zx1Zrpump",
+      "symbol": "x/acc",
+      "opened": "2026-09-28T02:05:38+00:00",
+      "entry_price": 0.000153,
+      "tokens": 51845.014046378696,
+      "tokens_initial": 51845.014046378696,
+      "cost_usd": 8.01,
+      "fees_usd": 0.0777,
+      "realized_usd": 0.0,
+      "peak_gain": 0.0,
+      "tp_hit": [],
+      "entry_liq": 35148.71,
+      "score": 0.7764,
+      "features": {
+        "liq_quality": 0.5187,
+        "turnover": 0.0,
+        "buy_pressure": 1.0,
+        "momentum_accel": 0.8922,
+        "not_vertical": 1.0,
+        "age_sweet": 0.3463,
+        "socials": 0.65,
+        "fdv_sanity": 1.0,
+        "txn_depth": 0.2027,
+        "dip_in_uptrend": 1.0,
+        "buzz": 0.0,
+        "paid_boost": 0.1
+      },
+      "last_price": 0.000153
     }
   },
   "blacklist": {
@@ -136,7 +136,8 @@
     "solana:FJGWEmtCEtvyviC8w86twWNiTcXwn7YiAoHmJgxWpump": "2026-09-27T22:49:50+00:00",
     "solana:2pMyVuWtYh3SH44RNKPqqj6tiYqfMAFaKFkohS1npump": "2026-09-28T00:26:56+00:00",
     "solana:5cDPo1jjEEtxWf2y1HTx4WyMydVmErN3YnbYtxLVcmg9": "2026-09-28T00:49:04+00:00",
-    "solana:5EsadufesY7VSU7CRPLTuFZP35q1kiLfWw6t8spUpump": "2026-09-28T01:49:21+00:00"
+    "solana:5EsadufesY7VSU7CRPLTuFZP35q1kiLfWw6t8spUpump": "2026-09-28T01:49:21+00:00",
+    "solana:BvnqdYwuFrvi9ds63EtwQLYME89ikJkULnJPAd83pump": "2026-09-28T02:04:08+00:00"
   },
   "halted": false,
   "halt_reason": "",
@@ -145,18 +146,18 @@
     "day_equity": 415.6648,
     "week": "2026-W40",
     "week_equity": 415.6648,
-    "trades_today": 5
+    "trades_today": 6
   },
   "stats": {
-    "ticks": 741,
-    "opened": 57,
-    "closed": 54,
+    "ticks": 742,
+    "opened": 58,
+    "closed": 55,
     "wins": 16,
-    "losses": 38,
-    "fees_paid": 34.64500117531802,
-    "realized_pnl": -95.39205304114354
+    "losses": 39,
+    "fees_paid": 34.76910438861194,
+    "realized_pnl": -100.06849903845502
   },
-  "last_entry": "2026-09-28T01:51:47+00:00",
+  "last_entry": "2026-09-28T02:05:38+00:00",
   "equity_history": [
     [
       "2026-09-27T22:46:06+00:00",
