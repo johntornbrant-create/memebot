@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-28T08:58:23+00:00",
+  "updated": "2026-09-28T09:08:40+00:00",
   "cash": 367.8099790045726,
-  "equity": 376.9561,
+  "equity": 373.4999,
   "positions": {
     "solana:F1z5FQdToNDLQYJ72grqePaWJrcrf39HR4gaKA57ySUQ": {
       "id": "46971866ce",
@@ -34,39 +34,7 @@
         "buzz": 1.0,
         "paid_boost": 0.2
       },
-      "last_price": 9.463e-05
-    },
-    "ethereum:0x4E67DB19044549fF420860834c91b45BaD298722": {
-      "id": "173e4c32eb",
-      "chain": "ethereum",
-      "address": "0x4E67DB19044549fF420860834c91b45BaD298722",
-      "symbol": "ZC",
-      "opened": "2026-09-28T03:06:27+00:00",
-      "entry_price": 0.0004643,
-      "tokens": 10603.993477749706,
-      "tokens_initial": 10603.993477749706,
-      "cost_usd": 7.98,
-      "fees_usd": 3.0566,
-      "realized_usd": 0.0,
-      "peak_gain": 0.3441740254146026,
-      "tp_hit": [],
-      "entry_liq": 81198.73,
-      "score": 0.823,
-      "features": {
-        "liq_quality": 0.8892,
-        "turnover": 0.1453,
-        "buy_pressure": 0.959,
-        "momentum_accel": 1.0,
-        "not_vertical": 0.6125,
-        "age_sweet": 0.9307,
-        "socials": 0.65,
-        "fdv_sanity": 0.984,
-        "txn_depth": 0.8542,
-        "dip_in_uptrend": 0.5,
-        "buzz": 0.0,
-        "paid_boost": 0.02
-      },
-      "last_price": 0.0003236
+      "last_price": 9.422e-05
     }
   },
   "blacklist": {
@@ -108,7 +76,8 @@
     "solana:BvnqdYwuFrvi9ds63EtwQLYME89ikJkULnJPAd83pump": "2026-09-28T02:04:08+00:00",
     "solana:C5zyCRUo23yLHDfcYWWTZNVh4yxWgQ8PFr1zx1Zrpump": "2026-09-28T02:20:30+00:00",
     "ethereum:0x8B604C685605c48D75A150E7A1f59c76dE30aF9F": "2026-09-28T03:53:43+00:00",
-    "solana:A2r4WEaSpe4eDHriikS3xW5bgqdXbpA6bZFbJgjFpump": "2026-09-28T04:39:51+00:00"
+    "solana:A2r4WEaSpe4eDHriikS3xW5bgqdXbpA6bZFbJgjFpump": "2026-09-28T04:39:51+00:00",
+    "ethereum:0x4E67DB19044549fF420860834c91b45BaD298722": "2026-09-28T09:07:05+00:00"
   },
   "halted": false,
   "halt_reason": "",
@@ -120,13 +89,13 @@
     "trades_today": 9
   },
   "stats": {
-    "ticks": 786,
+    "ticks": 787,
     "opened": 61,
-    "closed": 59,
+    "closed": 60,
     "wins": 17,
-    "losses": 42,
-    "fees_paid": 44.15642357822637,
-    "realized_pnl": -118.44896779542728
+    "losses": 43,
+    "fees_paid": 47.175852458249814,
+    "realized_pnl": -126.42896779542728
   },
   "last_entry": "2026-09-28T03:42:24+00:00",
   "equity_history": [

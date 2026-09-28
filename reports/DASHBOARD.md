@@ -1,33 +1,33 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-28T08:57:09+00:00`
+Updated `2026-09-28T09:08:40+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$377.03** |
-| Return | **-24.59%** (start $500.00) |
+| Equity | **$373.50** |
+| Return | **-25.30%** (start $500.00) |
 | Cash | $367.81 |
-| Deployed | $9.22 (2.4%) |
-| Open positions | 2 / 8 |
-| Closed trades | 59 (17W / 42L, WR 29%) |
-| Profit factor | 0.55 |
-| Fees + slippage paid | $44.16 |
-| Ticks run | 785 |
+| Deployed | $5.69 (1.5%) |
+| Open positions | 1 / 8 |
+| Closed trades | 60 (17W / 43L, WR 28%) |
+| Profit factor | 0.53 |
+| Fees + slippage paid | $47.18 |
+| Ticks run | 787 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| Q4 | solana | $5.76 | $5.92 | +4% | +10% | 9.9h |
-| ZC | ethereum | $7.98 | $3.30 | -33% | +34% | 5.8h |
+| Q4 | solana | $5.76 | $5.69 | -0% | +10% | 10.1h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| ZC | $-7.98 | -100% | 6.0h | stop loss -44% |
 | XPAD | $+5.34 | +68% | 2.2h | ratchet +74% (peak +149%) |
 | e/acc | $-7.96 | -99% | 2.8h | stop loss -98% |
 | QPEPE | $-7.87 | -99% | 0.2h | stop loss -37% |
@@ -42,7 +42,6 @@ Updated `2026-09-28T08:57:09+00:00`
 | SJP | $-3.21 | -38% | 1.4h | stop loss -36% |
 | CHIPS | $-8.54 | -100% | 0.9h | stop loss -100% |
 | ARENA | $+6.10 | +36% | 23.6h | ratchet +56% (peak +123%) |
-| BRAIN | $-5.41 | -46% | 9.2h | stop loss -45% |
 
 ## Learned weights (v11)
 
@@ -65,16 +64,17 @@ _refit on 397 observations (338 shadow, 59 real), 147 winners (37% base rate)_
 
 ## Last run log
 ```
-tick #785  equity $376.96  cash $367.81  open 2
+tick #787  equity $376.96  cash $367.81  open 2
+  SELL ZC         100% @ $0.0002602  ->  $0.00   [stop loss -44%]
   scanning chains + news...
-  110 raw candidates across 7 chains, 156 headlines/posts
-  3 passed gates | rejected: liquidity too thin x57, no h1 volume x41, already discovered x5, too old x4
-  top: XPAD 0.57 | SNOWMOON 0.42 | INSTA 0.39
-  tick bar 0.57 (top 30% of 3, floor 0.45)
+  73 raw candidates across 6 chains, 160 headlines/posts
+  3 passed gates | rejected: liquidity too thin x44, no h1 volume x24, unknown age x1, too old x1
+  top: Q4 0.27 | XPAD 0.26 | INSTA 0.21
+  tick bar 0.45 (top 30% of 3, floor 0.45)
   no entries this tick
-  shadow: tracking 103, closed 1 this tick (0 would have won)
+  shadow: tracking 102, closed 1 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED Moon       peak +2942%  (scored 0.86)
     MISSED GSTOCK     peak +2491%  (scored 0.88)
-  entries blocked: daily loss -9.3% <= -6%
+  entries blocked: daily loss -10.1% <= -6%
 ```
