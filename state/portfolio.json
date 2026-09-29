@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-29T03:55:37+00:00",
-  "cash": 349.27260587726676,
-  "equity": 358.8453,
+  "updated": "2026-09-29T03:55:46+00:00",
+  "cash": 349.3626063598722,
+  "equity": 358.8262,
   "positions": {
     "solana:2d79yirWWZmzf249y7B4DMvgaSb7jgrCxrwTcweFpump": {
       "id": "cb35b964b8",
@@ -16,7 +16,7 @@
       "cost_usd": 5.2209528,
       "fees_usd": 0.09182913093788454,
       "realized_usd": 2.059363401159796,
-      "peak_gain": 0.8403854210305823,
+      "peak_gain": 0.8106409719312944,
       "tp_hit": [
         0
       ],
@@ -36,7 +36,7 @@
         "buzz": 0.3333,
         "paid_boost": 0.06
       },
-      "last_price": 0.0004393
+      "last_price": 0.0004322
     },
     "ethereum:0xA912C71c0e53701153cAd9ba73E9B7D854418eaE": {
       "id": "3120b99e43",
@@ -50,7 +50,7 @@
       "cost_usd": 5.076600200000001,
       "fees_usd": 3.0357,
       "realized_usd": 0.0,
-      "peak_gain": 0.19806763285024154,
+      "peak_gain": 0.20104050538833151,
       "tp_hit": [],
       "entry_liq": 119640.51,
       "score": 0.6133,
@@ -68,7 +68,7 @@
         "buzz": 0.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.0006448
+      "last_price": 0.0006464
     }
   },
   "blacklist": {
@@ -118,7 +118,7 @@
     "solana:4kgo11KazbCNd2DosYSLGpgSZhEtda1gGu4rbWJLGCJV": "2026-09-29T01:23:39+00:00",
     "solana:2sDeSDUigrzYKRhZBjjs8AJDyMYroRyVAsUzzq9D4sqr": "2026-09-29T01:51:43+00:00",
     "solana:4tvcXSyhPfb1vQQWunMmMzmVNCJGMYrXgtv3bEbSpump": "2026-09-29T02:17:51+00:00",
-    "solana:HGN8K3x5ZLfYNjvE8b1hCqqu7RwupuKU6EkEhemzpump": "2026-09-29T03:54:01+00:00"
+    "solana:HGN8K3x5ZLfYNjvE8b1hCqqu7RwupuKU6EkEhemzpump": "2026-09-29T03:55:46+00:00"
   },
   "halted": false,
   "halt_reason": "",
@@ -135,8 +135,8 @@
     "closed": 71,
     "wins": 20,
     "losses": 51,
-    "fees_paid": 57.84421068457832,
-    "realized_pnl": -142.48920452389285
+    "fees_paid": 57.84485734936724,
+    "realized_pnl": -142.39920404128742
   },
   "last_entry": "2026-09-29T02:52:34+00:00",
   "equity_history": [
