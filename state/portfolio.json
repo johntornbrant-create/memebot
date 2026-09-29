@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-29T10:07:29+00:00",
+  "updated": "2026-09-29T10:14:44+00:00",
   "cash": 358.41118826809526,
-  "equity": 361.5112,
+  "equity": 361.4628,
   "positions": {
     "ethereum:0xA912C71c0e53701153cAd9ba73E9B7D854418eaE": {
       "id": "3120b99e43",
@@ -36,7 +36,7 @@
         "buzz": 0.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.00109
+      "last_price": 0.001073
     }
   },
   "blacklist": {
@@ -98,7 +98,7 @@
     "trades_today": 12
   },
   "stats": {
-    "ticks": 956,
+    "ticks": 957,
     "opened": 73,
     "closed": 72,
     "wins": 21,
