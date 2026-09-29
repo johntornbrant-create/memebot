@@ -1,28 +1,28 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-29T06:32:07+00:00`
+Updated `2026-09-29T06:57:14+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$364.22** |
-| Return | **-27.16%** (start $500.00) |
+| Equity | **$362.46** |
+| Return | **-27.51%** (start $500.00) |
 | Cash | $352.36 |
-| Deployed | $11.86 (3.3%) |
+| Deployed | $10.10 (2.8%) |
 | Open positions | 2 / 8 |
 | Closed trades | 71 (20W / 51L, WR 28%) |
 | Profit factor | 0.52 |
-| Fees + slippage paid | $57.89 |
-| Ticks run | 932 |
+| Fees + slippage paid | $60.89 |
+| Ticks run | 935 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| STOCK | solana | $5.22 | $9.12 | +214% | +214% | 6.4h |
-| WOOF | ethereum | $5.08 | $2.74 | +34% | +39% | 4.1h |
+| STOCK | solana | $5.22 | $7.80 | +168% | +214% | 6.8h |
+| WOOF | ethereum | $5.08 | $2.30 | +50% | +50% | 4.5h |
 
 ## Last closed trades
 
@@ -65,15 +65,14 @@ _refit on 515 observations (444 shadow, 71 real), 185 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #932  equity $361.60  cash $349.36  open 2
-  SELL STOCK      25% @ $0.0007497  ->  $3.00   [take profit +150% (sold 25%)]
+tick #935  equity $362.52  cash $352.36  open 2
   scanning chains + news...
-  114 raw candidates across 5 chains, 156 headlines/posts
-  11 passed gates | rejected: liquidity too thin x50, no h1 volume x24, too old x21, already discovered x7, too new (bot war) x1
-  top: DOTS 0.84 | WOOF 0.66 | 企鹅 0.63 | INUINK 0.53 | MI 0.47
-  tick bar 0.63 (top 30% of 11, floor 0.45)
+  125 raw candidates across 5 chains, 156 headlines/posts
+  12 passed gates | rejected: liquidity too thin x63, no h1 volume x22, too old x19, already discovered x6, too new (bot war) x3
+  top: INUINK 0.62 | WOOF 0.50 | Mamesuke 0.49 | MI 0.48 | HOOKEDCAT 0.47
+  tick bar 0.49 (top 30% of 12, floor 0.45)
   no entries this tick
-  shadow: tracking 96, closed 1 this tick (1 would have won)
+  shadow: tracking 97, closed 1 this tick (1 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
