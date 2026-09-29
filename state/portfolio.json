@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-29T02:38:24+00:00",
-  "cash": 335.5484619774764,
-  "equity": 361.9639,
+  "updated": "2026-09-29T02:48:08+00:00",
+  "cash": 338.54278985963526,
+  "equity": 364.2353,
   "positions": {
     "solana:2d79yirWWZmzf249y7B4DMvgaSb7jgrCxrwTcweFpump": {
       "id": "cb35b964b8",
@@ -34,7 +34,7 @@
         "buzz": 0.3333,
         "paid_boost": 0.06
       },
-      "last_price": 0.0003188
+      "last_price": 0.0003111
     },
     "solana:HGN8K3x5ZLfYNjvE8b1hCqqu7RwupuKU6EkEhemzpump": {
       "id": "b6e5b8b3c2",
@@ -69,7 +69,7 @@
         "buzz": 0.0,
         "paid_boost": 0.1
       },
-      "last_price": 0.0004816
+      "last_price": 0.0003574
     },
     "ethereum:0xA912C71c0e53701153cAd9ba73E9B7D854418eaE": {
       "id": "3120b99e43",
@@ -83,7 +83,7 @@
       "cost_usd": 5.076600200000001,
       "fees_usd": 3.0357,
       "realized_usd": 0.0,
-      "peak_gain": 0.06930509104422145,
+      "peak_gain": 0.15756224451876633,
       "tp_hit": [],
       "entry_liq": 119640.51,
       "score": 0.6133,
@@ -101,7 +101,7 @@
         "buzz": 0.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.0005755
+      "last_price": 0.000623
     },
     "solana:2n3bPZcfbcUNgaP6Ktw8E1wYoycAhuR1sSHa7uB6pump": {
       "id": "fd6d32edd4",
@@ -110,13 +110,15 @@
       "symbol": "INKCHAN",
       "opened": "2026-09-29T02:38:22+00:00",
       "entry_price": 0.0001569,
-      "tokens": 45684.86168230526,
+      "tokens": 34263.64626172894,
       "tokens_initial": 45684.86168230526,
       "cost_usd": 7.24,
-      "fees_usd": 0.072,
-      "realized_usd": 0.0,
-      "peak_gain": 0.0,
-      "tp_hit": [],
+      "fees_usd": 0.1134311766302937,
+      "realized_usd": 2.994327882158891,
+      "peak_gain": 0.6940726577437859,
+      "tp_hit": [
+        0
+      ],
       "entry_liq": 34555.94,
       "score": 0.7241,
       "features": {
@@ -133,7 +135,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0001569
+      "last_price": 0.0002658
     }
   },
   "blacklist": {
@@ -194,12 +196,12 @@
     "trades_today": 11
   },
   "stats": {
-    "ticks": 907,
+    "ticks": 908,
     "opened": 72,
     "closed": 68,
     "wins": 18,
     "losses": 50,
-    "fees_paid": 57.52196269043644,
+    "fees_paid": 57.56339386706673,
     "realized_pnl": -147.2398018161757
   },
   "last_entry": "2026-09-29T02:38:22+00:00",
