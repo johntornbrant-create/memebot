@@ -1,44 +1,9 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-29T09:28:36+00:00",
-  "cash": 352.36216561773705,
-  "equity": 363.6471,
+  "updated": "2026-09-29T09:39:04+00:00",
+  "cash": 358.41118826809526,
+  "equity": 361.5425,
   "positions": {
-    "solana:2d79yirWWZmzf249y7B4DMvgaSb7jgrCxrwTcweFpump": {
-      "id": "cb35b964b8",
-      "chain": "solana",
-      "address": "2d79yirWWZmzf249y7B4DMvgaSb7jgrCxrwTcweFpump",
-      "symbol": "STOCK",
-      "opened": "2026-09-29T00:08:12+00:00",
-      "entry_price": 0.0002387,
-      "tokens": 12168.66786472051,
-      "tokens_initial": 21633.187315058683,
-      "cost_usd": 5.2209528,
-      "fees_usd": 0.1332199724666821,
-      "realized_usd": 5.058922659024653,
-      "peak_gain": 2.1407624633431084,
-      "tp_hit": [
-        0,
-        1
-      ],
-      "entry_liq": 43472.83,
-      "score": 0.4442,
-      "features": {
-        "liq_quality": 0.6199,
-        "turnover": 0.0,
-        "buy_pressure": 0.2173,
-        "momentum_accel": 1.0,
-        "not_vertical": 0.4812,
-        "age_sweet": 0.1627,
-        "socials": 0.65,
-        "fdv_sanity": 0.9891,
-        "txn_depth": 0.7904,
-        "dip_in_uptrend": 0.5,
-        "buzz": 0.3333,
-        "paid_boost": 0.06
-      },
-      "last_price": 0.0006766
-    },
     "ethereum:0xA912C71c0e53701153cAd9ba73E9B7D854418eaE": {
       "id": "3120b99e43",
       "chain": "ethereum",
@@ -51,7 +16,7 @@
       "cost_usd": 5.076600200000001,
       "fees_usd": 6.041072751645805,
       "realized_usd": 0.0,
-      "peak_gain": 1.0327015979189893,
+      "peak_gain": 1.0457079152731326,
       "tp_hit": [
         0
       ],
@@ -71,7 +36,7 @@
         "buzz": 0.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.001073
+      "last_price": 0.001101
     }
   },
   "blacklist": {
@@ -133,13 +98,13 @@
     "trades_today": 12
   },
   "stats": {
-    "ticks": 952,
+    "ticks": 953,
     "opened": 73,
-    "closed": 71,
-    "wins": 20,
+    "closed": 72,
+    "wins": 21,
     "losses": 51,
-    "fees_paid": 60.891620942541834,
-    "realized_pnl": -142.39920404128742
+    "fees_paid": 60.95492016063276,
+    "realized_pnl": -136.51221153190457
   },
   "last_entry": "2026-09-29T02:52:34+00:00",
   "equity_history": [
