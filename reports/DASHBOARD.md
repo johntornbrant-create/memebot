@@ -1,29 +1,30 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-29T01:53:08+00:00`
+Updated `2026-09-29T02:05:29+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$349.82** |
-| Return | **-30.04%** (start $500.00) |
-| Cash | $332.78 |
-| Deployed | $17.04 (4.9%) |
-| Open positions | 3 / 8 |
+| Equity | **$356.48** |
+| Return | **-28.70%** (start $500.00) |
+| Cash | $325.65 |
+| Deployed | $30.84 (8.7%) |
+| Open positions | 4 / 8 |
 | Closed trades | 66 (17W / 49L, WR 26%) |
 | Profit factor | 0.49 |
-| Fees + slippage paid | $53.97 |
-| Ticks run | 901 |
+| Fees + slippage paid | $54.04 |
+| Ticks run | 903 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| STOCK | solana | $5.22 | $6.55 | +27% | +41% | 1.7h |
-| SITRUMP | solana | $7.23 | $5.42 | -24% | +4% | 0.7h |
-| 鹅次元 | bsc | $7.13 | $5.06 | -28% | +11% | 0.3h |
+| STOCK | solana | $5.22 | $6.59 | +28% | +41% | 2.0h |
+| SITRUMP | solana | $7.23 | $7.29 | +2% | +4% | 0.9h |
+| 鹅次元 | bsc | $7.13 | $9.83 | +40% | +40% | 0.5h |
+| SNOWBALL | solana | $7.13 | $7.06 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
@@ -66,17 +67,15 @@ _refit on 417 observations (357 shadow, 60 real), 151 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #901  equity $355.24  cash $329.22  open 4
-  SELL Adventures 100% @ $0.0001408  ->  $3.56   [stop loss -49%]
+tick #903  equity $353.05  cash $332.78  open 3
   scanning chains + news...
-  120 raw candidates across 7 chains, 156 headlines/posts
-  12 passed gates | rejected: liquidity too thin x47, no h1 volume x35, too old x15, already discovered x11
-  top: SNOWBALL 0.76 | PARASITE 0.70 | Adventures 0.53 | SNOWMOON 0.51 | INUINK 0.45
-  tick bar 0.53 (top 30% of 12, floor 0.45)
-  no entries this tick
-  shadow: tracking 101, closed 3 this tick (1 would have won)
+  111 raw candidates across 5 chains, 156 headlines/posts
+  12 passed gates | rejected: liquidity too thin x63, no h1 volume x23, too old x7, already discovered x6
+  top: SNOWBALL 0.75 | PARASITE 0.75 | 鹅次元 0.64 | SNOWMOON 0.60 | Adventures 0.58
+  tick bar 0.64 (top 30% of 12, floor 0.45)
+  BUY[exploit] SNOWBALL   $7.13 @ $0.0001894  score 0.75  solana  liq $40,471
+  shadow: tracking 101, closed 0 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
-  entries blocked: daily loss -6.2% <= -6%; 7d loss -15.8% <= -15%
 ```
