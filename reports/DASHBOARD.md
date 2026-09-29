@@ -1,34 +1,34 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-29T03:42:07+00:00`
+Updated `2026-09-29T03:55:37+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$359.12** |
-| Return | **-28.18%** (start $500.00) |
-| Cash | $345.10 |
-| Deployed | $14.02 (3.9%) |
-| Open positions | 3 / 8 |
-| Closed trades | 70 (20W / 50L, WR 29%) |
-| Profit factor | 0.53 |
-| Fees + slippage paid | $57.79 |
-| Ticks run | 915 |
+| Equity | **$358.85** |
+| Return | **-28.23%** (start $500.00) |
+| Cash | $349.27 |
+| Deployed | $9.57 (2.7%) |
+| Open positions | 2 / 8 |
+| Closed trades | 71 (20W / 51L, WR 28%) |
+| Profit factor | 0.52 |
+| Fees + slippage paid | $57.84 |
+| Ticks run | 916 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| STOCK | solana | $5.22 | $6.51 | +68% | +68% | 3.6h |
-| WOOF | ethereum | $5.08 | $2.22 | +9% | +16% | 1.3h |
-| SNOWBALL | solana | $7.25 | $5.29 | -26% | +11% | 0.8h |
+| STOCK | solana | $5.22 | $7.13 | +84% | +84% | 3.8h |
+| WOOF | ethereum | $5.08 | $2.45 | +20% | +20% | 1.5h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| SNOWBALL | $-3.07 | -42% | 1.0h | stop loss -41% |
 | INKCHAN | $+0.60 | +8% | 1.0h | ratchet +0% (peak +69%) |
 | SNOWBALL | $+7.23 | +101% | 0.8h | ratchet +78% (peak +154%) |
 | 鹅次元 | $+3.43 | +48% | 0.9h | ratchet +88% (peak +168%) |
@@ -43,7 +43,6 @@ Updated `2026-09-29T03:42:07+00:00`
 | XPAD | $+5.34 | +68% | 2.2h | ratchet +74% (peak +149%) |
 | e/acc | $-7.96 | -99% | 2.8h | stop loss -98% |
 | QPEPE | $-7.87 | -99% | 0.2h | stop loss -37% |
-| x/acc | $-7.90 | -99% | 0.2h | stop loss -98% |
 
 ## Learned weights (v12)
 
@@ -66,14 +65,15 @@ _refit on 417 observations (357 shadow, 60 real), 151 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #915  equity $358.76  cash $345.10  open 3
+tick #916  equity $359.12  cash $345.10  open 3
+  SELL SNOWBALL   100% @ $0.0001958  ->  $4.18   [stop loss -41%]
   scanning chains + news...
-  142 raw candidates across 5 chains, 156 headlines/posts
-  10 passed gates | rejected: liquidity too thin x82, no h1 volume x23, too old x19, already discovered x6, exit-liquidity trap (FDV/liq) x1
-  top: BAU 0.92 | DUCKYOU 0.67 | BNBuilder 0.54 | INUINK 0.46 | SITRUMP 0.37
-  tick bar 0.54 (top 30% of 10, floor 0.45)
+  103 raw candidates across 4 chains, 160 headlines/posts
+  10 passed gates | rejected: liquidity too thin x47, no h1 volume x24, too old x11, already discovered x9, exit-liquidity trap (FDV/liq) x1
+  top: DUCKYOU 0.66 | INUINK 0.47 | BNBuilder 0.38 | SITRUMP 0.36 | TOBEY 0.28
+  tick bar 0.45 (top 30% of 10, floor 0.45)
   no entries this tick
-  shadow: tracking 103, closed 0 this tick (0 would have won)
+  shadow: tracking 99, closed 4 this tick (2 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
