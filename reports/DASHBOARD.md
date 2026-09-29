@@ -1,28 +1,28 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-29T05:54:29+00:00`
+Updated `2026-09-29T06:32:07+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$360.27** |
-| Return | **-27.95%** (start $500.00) |
-| Cash | $349.36 |
-| Deployed | $10.90 (3.0%) |
+| Equity | **$364.22** |
+| Return | **-27.16%** (start $500.00) |
+| Cash | $352.36 |
+| Deployed | $11.86 (3.3%) |
 | Open positions | 2 / 8 |
 | Closed trades | 71 (20W / 51L, WR 28%) |
 | Profit factor | 0.52 |
-| Fees + slippage paid | $57.84 |
-| Ticks run | 930 |
+| Fees + slippage paid | $57.89 |
+| Ticks run | 932 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| STOCK | solana | $5.22 | $8.70 | +125% | +139% | 5.8h |
-| WOOF | ethereum | $5.08 | $2.21 | +8% | +20% | 3.5h |
+| STOCK | solana | $5.22 | $9.12 | +214% | +214% | 6.4h |
+| WOOF | ethereum | $5.08 | $2.74 | +34% | +39% | 4.1h |
 
 ## Last closed trades
 
@@ -44,35 +44,36 @@ Updated `2026-09-29T05:54:29+00:00`
 | e/acc | $-7.96 | -99% | 2.8h | stop loss -98% |
 | QPEPE | $-7.87 | -99% | 0.2h | stop loss -37% |
 
-## Learned weights (v12)
+## Learned weights (v13)
 
-_refit on 417 observations (357 shadow, 60 real), 151 winners (36% base rate)_
+_refit on 515 observations (444 shadow, 71 real), 185 winners (36% base rate)_
 
 | Feature | Weight |
 |---|---|
-| buy_pressure | +0.094 |
-| not_vertical | -0.084 |
-| momentum_accel | +0.073 |
-| turnover | +0.054 |
-| fdv_sanity | +0.048 |
-| dip_in_uptrend | +0.025 |
-| paid_boost | -0.025 |
-| buzz | -0.021 |
-| liq_quality | +0.017 |
-| socials | +0.010 |
-| age_sweet | +0.007 |
-| txn_depth | +0.007 |
+| turnover | +0.072 |
+| buy_pressure | +0.068 |
+| not_vertical | -0.067 |
+| buzz | -0.066 |
+| momentum_accel | +0.066 |
+| fdv_sanity | +0.047 |
+| paid_boost | -0.037 |
+| age_sweet | +0.026 |
+| txn_depth | +0.023 |
+| dip_in_uptrend | +0.021 |
+| liq_quality | +0.015 |
+| socials | +0.006 |
 
 ## Last run log
 ```
-tick #930  equity $359.96  cash $349.36  open 2
+tick #932  equity $361.60  cash $349.36  open 2
+  SELL STOCK      25% @ $0.0007497  ->  $3.00   [take profit +150% (sold 25%)]
   scanning chains + news...
-  104 raw candidates across 7 chains, 116 headlines/posts
-  5 passed gates | rejected: liquidity too thin x56, no h1 volume x37, too old x3, already discovered x2, too new (bot war) x1
-  top: DOTS 0.83 | INUINK 0.76 | HOOKEDCAT 0.32 | CWC 0.28 | Mamesuke 0.13
-  tick bar 0.76 (top 30% of 5, floor 0.45)
+  114 raw candidates across 5 chains, 156 headlines/posts
+  11 passed gates | rejected: liquidity too thin x50, no h1 volume x24, too old x21, already discovered x7, too new (bot war) x1
+  top: DOTS 0.84 | WOOF 0.66 | 企鹅 0.63 | INUINK 0.53 | MI 0.47
+  tick bar 0.63 (top 30% of 11, floor 0.45)
   no entries this tick
-  shadow: tracking 93, closed 4 this tick (2 would have won)
+  shadow: tracking 96, closed 1 this tick (1 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
