@@ -1,27 +1,27 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-29T12:33:22+00:00`
+Updated `2026-09-29T12:58:36+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$362.33** |
-| Return | **-27.53%** (start $500.00) |
+| Equity | **$363.67** |
+| Return | **-27.27%** (start $500.00) |
 | Cash | $358.41 |
-| Deployed | $3.91 (1.1%) |
+| Deployed | $5.26 (1.4%) |
 | Open positions | 1 / 8 |
 | Closed trades | 72 (21W / 51L, WR 29%) |
 | Profit factor | 0.54 |
 | Fees + slippage paid | $63.96 |
-| Ticks run | 972 |
+| Ticks run | 974 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| WOOF | ethereum | $5.08 | $3.91 | +241% | +241% | 10.1h |
+| WOOF | ethereum | $5.08 | $5.26 | +358% | +358% | 10.6h |
 
 ## Last closed trades
 
@@ -64,14 +64,14 @@ _refit on 515 observations (444 shadow, 71 real), 185 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #972  equity $361.63  cash $358.41  open 1
+tick #974  equity $362.88  cash $358.41  open 1
   scanning chains + news...
-  119 raw candidates across 7 chains, 156 headlines/posts
-  10 passed gates | rejected: liquidity too thin x55, no h1 volume x40, too old x9, already discovered x5
-  top: 蝴蝶盛世 0.75 | BLINGBOY 0.71 | PARASITE 0.68 | swordcat 0.57 | INUINK 0.49
-  tick bar 0.68 (top 30% of 10, floor 0.45)
+  74 raw candidates across 6 chains, 155 headlines/posts
+  7 passed gates | rejected: liquidity too thin x43, no h1 volume x19, too old x2, already discovered x2, unknown age x1
+  top: INUINK 0.80 | POND 0.69 | BLINGBOY 0.66 | HOOKEDCAT 0.35 | STOCK 0.35
+  tick bar 0.69 (top 30% of 7, floor 0.45)
   no entries this tick
-  shadow: tracking 105, closed 3 this tick (0 would have won)
+  shadow: tracking 102, closed 4 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
