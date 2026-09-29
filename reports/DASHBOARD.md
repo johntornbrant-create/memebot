@@ -1,28 +1,28 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-29T08:57:33+00:00`
+Updated `2026-09-29T09:09:32+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$364.21** |
-| Return | **-27.16%** (start $500.00) |
+| Equity | **$364.23** |
+| Return | **-27.15%** (start $500.00) |
 | Cash | $352.36 |
-| Deployed | $11.84 (3.3%) |
+| Deployed | $11.87 (3.3%) |
 | Open positions | 2 / 8 |
 | Closed trades | 71 (20W / 51L, WR 28%) |
 | Profit factor | 0.52 |
 | Fees + slippage paid | $60.89 |
-| Ticks run | 948 |
+| Ticks run | 950 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| STOCK | solana | $5.22 | $9.02 | +211% | +214% | 8.8h |
-| WOOF | ethereum | $5.08 | $2.82 | +84% | +103% | 6.5h |
+| STOCK | solana | $5.22 | $8.86 | +205% | +214% | 9.0h |
+| WOOF | ethereum | $5.08 | $3.01 | +97% | +103% | 6.7h |
 
 ## Last closed trades
 
@@ -65,12 +65,12 @@ _refit on 515 observations (444 shadow, 71 real), 185 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #948  equity $363.94  cash $352.36  open 2
+tick #950  equity $364.28  cash $352.36  open 2
   scanning chains + news...
-  162 raw candidates across 6 chains, 156 headlines/posts
-  14 passed gates | rejected: liquidity too thin x100, no h1 volume x21, too old x16, already discovered x9, sell pressure x1
-  top: K/acc 0.60 | Mamesuke 0.59 | INUINK 0.55 | HOOKEDCAT 0.41 | BOPE 0.37
-  tick bar 0.45 (top 30% of 14, floor 0.45)
+  82 raw candidates across 5 chains, 156 headlines/posts
+  7 passed gates | rejected: liquidity too thin x63, no h1 volume x11, too old x1
+  top: Mamesuke 0.58 | BOPE 0.44 | INUINK 0.44 | 王者荣耀 0.40 | HOOKEDCAT 0.33
+  tick bar 0.45 (top 30% of 7, floor 0.45)
   no entries this tick
   shadow: tracking 103, closed 0 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
