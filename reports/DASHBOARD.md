@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-29T17:54:21+00:00`
+Updated `2026-09-29T18:08:32+00:00`
 
 ## Equity
 
@@ -15,7 +15,7 @@ Updated `2026-09-29T17:54:21+00:00`
 | Closed trades | 73 (21W / 52L, WR 29%) |
 | Profit factor | 0.53 |
 | Fees + slippage paid | $66.99 |
-| Ticks run | 1007 |
+| Ticks run | 1009 |
 
 ## Open positions
 
@@ -62,14 +62,14 @@ _refit on 515 observations (444 shadow, 71 real), 185 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #1007  equity $359.02  cash $359.02  open 0
+tick #1009  equity $359.02  cash $359.02  open 0
   scanning chains + news...
-  137 raw candidates across 9 chains, 155 headlines/posts
-  6 passed gates | rejected: liquidity too thin x70, no h1 volume x45, already discovered x9, too old x3, unknown age x2
-  top: SPEPE 0.86 | ZC 0.45 | HOOKEDCAT 0.40 | PARASITE 0.32 | INUINK 0.32
-  tick bar 0.71 (top 30% of 6, floor 0.45)
+  132 raw candidates across 10 chains, 155 headlines/posts
+  9 passed gates | rejected: liquidity too thin x64, no h1 volume x40, already discovered x13, too old x3, unknown age x2
+  top: SPEPE 0.75 | ZC 0.44 | HOOKEDCAT 0.39 | INUINK 0.36 | PARASITE 0.32
+  tick bar 0.45 (top 30% of 9, floor 0.45)
   no entries this tick
-  shadow: tracking 99, closed 1 this tick (0 would have won)
+  shadow: tracking 100, closed 1 this tick (1 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
