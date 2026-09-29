@@ -1,35 +1,35 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-29T03:27:25+00:00`
+Updated `2026-09-29T03:42:07+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$360.22** |
-| Return | **-27.96%** (start $500.00) |
-| Cash | $340.26 |
-| Deployed | $19.96 (5.5%) |
-| Open positions | 4 / 8 |
-| Closed trades | 69 (19W / 50L, WR 28%) |
-| Profit factor | 0.52 |
-| Fees + slippage paid | $57.74 |
-| Ticks run | 913 |
+| Equity | **$359.12** |
+| Return | **-28.18%** (start $500.00) |
+| Cash | $345.10 |
+| Deployed | $14.02 (3.9%) |
+| Open positions | 3 / 8 |
+| Closed trades | 70 (20W / 50L, WR 29%) |
+| Profit factor | 0.53 |
+| Fees + slippage paid | $57.79 |
+| Ticks run | 915 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| STOCK | solana | $5.22 | $6.18 | +59% | +62% | 3.3h |
-| WOOF | ethereum | $5.08 | $2.21 | +8% | +16% | 1.0h |
-| INKCHAN | solana | $7.24 | $6.03 | +12% | +69% | 0.8h |
-| SNOWBALL | solana | $7.25 | $5.54 | -23% | +11% | 0.6h |
+| STOCK | solana | $5.22 | $6.51 | +68% | +68% | 3.6h |
+| WOOF | ethereum | $5.08 | $2.22 | +9% | +16% | 1.3h |
+| SNOWBALL | solana | $7.25 | $5.29 | -26% | +11% | 0.8h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| INKCHAN | $+0.60 | +8% | 1.0h | ratchet +0% (peak +69%) |
 | SNOWBALL | $+7.23 | +101% | 0.8h | ratchet +78% (peak +154%) |
 | 鹅次元 | $+3.43 | +48% | 0.9h | ratchet +88% (peak +168%) |
 | SITRUMP | $-3.03 | -42% | 1.1h | stop loss -41% |
@@ -44,7 +44,6 @@ Updated `2026-09-29T03:27:25+00:00`
 | e/acc | $-7.96 | -99% | 2.8h | stop loss -98% |
 | QPEPE | $-7.87 | -99% | 0.2h | stop loss -37% |
 | x/acc | $-7.90 | -99% | 0.2h | stop loss -98% |
-| CATSTR | $-4.68 | -56% | 1.1h | stop loss -55% |
 
 ## Learned weights (v12)
 
@@ -67,14 +66,14 @@ _refit on 417 observations (357 shadow, 60 real), 151 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #913  equity $361.51  cash $340.26  open 4
+tick #915  equity $358.76  cash $345.10  open 3
   scanning chains + news...
-  108 raw candidates across 5 chains, 160 headlines/posts
-  8 passed gates | rejected: liquidity too thin x48, no h1 volume x25, too old x16, already discovered x6, unknown age x3
-  top: BNBuilder 0.64 | INUINK 0.47 | SITRUMP 0.41 | INKCHAN 0.25 | HOOKEDCAT 0.23
-  tick bar 0.47 (top 30% of 8, floor 0.45)
+  142 raw candidates across 5 chains, 156 headlines/posts
+  10 passed gates | rejected: liquidity too thin x82, no h1 volume x23, too old x19, already discovered x6, exit-liquidity trap (FDV/liq) x1
+  top: BAU 0.92 | DUCKYOU 0.67 | BNBuilder 0.54 | INUINK 0.46 | SITRUMP 0.37
+  tick bar 0.54 (top 30% of 10, floor 0.45)
   no entries this tick
-  shadow: tracking 101, closed 1 this tick (0 would have won)
+  shadow: tracking 103, closed 0 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
