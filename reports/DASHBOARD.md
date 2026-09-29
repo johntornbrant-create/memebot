@@ -1,28 +1,30 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-29T01:25:08+00:00`
+Updated `2026-09-29T01:37:56+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$356.61** |
-| Return | **-28.68%** (start $500.00) |
-| Cash | $343.48 |
-| Deployed | $13.13 (3.7%) |
-| Open positions | 2 / 8 |
+| Equity | **$356.74** |
+| Return | **-28.65%** (start $500.00) |
+| Cash | $329.22 |
+| Deployed | $27.53 (7.7%) |
+| Open positions | 4 / 8 |
 | Closed trades | 65 (17W / 48L, WR 26%) |
 | Profit factor | 0.50 |
-| Fees + slippage paid | $53.75 |
-| Ticks run | 897 |
+| Fees + slippage paid | $53.93 |
+| Ticks run | 899 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| STOCK | solana | $5.22 | $6.85 | +33% | +41% | 1.3h |
-| SITRUMP | solana | $7.23 | $6.28 | -12% | +4% | 0.3h |
+| STOCK | solana | $5.22 | $7.06 | +37% | +41% | 1.5h |
+| SITRUMP | solana | $7.23 | $6.21 | -13% | +4% | 0.5h |
+| 鹅次元 | bsc | $7.13 | $7.03 | +0% | +0% | 0.0h |
+| Adventures | solana | $7.13 | $7.06 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
@@ -65,15 +67,15 @@ _refit on 417 observations (357 shadow, 60 real), 151 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #897  equity $361.33  cash $339.84  open 3
-  SELL Murphy     100% @ $0.0001148  ->  $3.63   [stop loss -49%]
+tick #899  equity $355.81  cash $343.48  open 2
   scanning chains + news...
-  155 raw candidates across 7 chains, 160 headlines/posts
-  12 passed gates | rejected: liquidity too thin x72, no h1 volume x42, too old x13, already discovered x13, too new (bot war) x3
-  top: INUINK 0.49 | SNOWBALL 0.39 | SITRUMP 0.35 | SNOWMOON 0.34 | HOOKEDCAT 0.27
-  tick bar 0.45 (top 30% of 12, floor 0.45)
-  no entries this tick
-  shadow: tracking 107, closed 0 this tick (0 would have won)
+  123 raw candidates across 6 chains, 156 headlines/posts
+  12 passed gates | rejected: liquidity too thin x58, no h1 volume x28, too old x14, already discovered x11
+  top: 鹅次元 0.70 | Adventures 0.68 | INUINK 0.51 | SNOWMOON 0.49 | HOOKEDCAT 0.39
+  tick bar 0.51 (top 30% of 12, floor 0.45)
+  BUY[exploit] 鹅次元        $7.13 @ $8.629e-05  score 0.70  bsc  liq $26,346
+  BUY[exploit] Adventures $7.13 @ $0.0002758  score 0.68  solana  liq $52,066
+  shadow: tracking 103, closed 6 this tick (2 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
