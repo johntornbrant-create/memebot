@@ -1,35 +1,36 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-29T02:38:24+00:00`
+Updated `2026-09-29T02:52:36+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$361.96** |
-| Return | **-27.61%** (start $500.00) |
-| Cash | $335.55 |
-| Deployed | $26.42 (7.3%) |
+| Equity | **$362.59** |
+| Return | **-27.48%** (start $500.00) |
+| Cash | $338.20 |
+| Deployed | $24.40 (6.7%) |
 | Open positions | 4 / 8 |
-| Closed trades | 68 (18W / 50L, WR 26%) |
-| Profit factor | 0.50 |
-| Fees + slippage paid | $57.52 |
-| Ticks run | 907 |
+| Closed trades | 69 (19W / 50L, WR 28%) |
+| Profit factor | 0.52 |
+| Fees + slippage paid | $57.70 |
+| Ticks run | 909 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| STOCK | solana | $5.22 | $6.90 | +34% | +41% | 2.5h |
-| SNOWBALL | solana | $7.13 | $10.10 | +154% | +154% | 0.5h |
-| WOOF | ethereum | $5.08 | $2.18 | +7% | +7% | 0.2h |
-| INKCHAN | solana | $7.24 | $7.17 | +0% | +0% | 0.0h |
+| STOCK | solana | $5.22 | $6.90 | +34% | +41% | 2.7h |
+| WOOF | ethereum | $5.08 | $2.36 | +16% | +16% | 0.5h |
+| INKCHAN | solana | $7.24 | $7.88 | +47% | +69% | 0.2h |
+| SNOWBALL | solana | $7.25 | $7.18 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| SNOWBALL | $+7.23 | +101% | 0.8h | ratchet +78% (peak +154%) |
 | 鹅次元 | $+3.43 | +48% | 0.9h | ratchet +88% (peak +168%) |
 | SITRUMP | $-3.03 | -42% | 1.1h | stop loss -41% |
 | Adventures | $-3.57 | -50% | 0.2h | stop loss -49% |
@@ -44,7 +45,6 @@ Updated `2026-09-29T02:38:24+00:00`
 | QPEPE | $-7.87 | -99% | 0.2h | stop loss -37% |
 | x/acc | $-7.90 | -99% | 0.2h | stop loss -98% |
 | CATSTR | $-4.68 | -56% | 1.1h | stop loss -55% |
-| CatGPT | $-7.26 | -88% | 0.4h | stop loss -87% |
 
 ## Learned weights (v12)
 
@@ -67,15 +67,15 @@ _refit on 417 observations (357 shadow, 60 real), 151 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #907  equity $361.08  cash $339.47  open 3
-  SELL SNOWBALL   25% @ $0.0004816  ->  $3.32   [take profit +150% (sold 25%)]
+tick #909  equity $364.24  cash $338.54  open 4
+  SELL SNOWBALL   100% @ $0.0003326  ->  $6.90   [ratchet +78% (peak +154%)]
   scanning chains + news...
-  118 raw candidates across 7 chains, 160 headlines/posts
-  8 passed gates | rejected: liquidity too thin x77, no h1 volume x28, too old x3, already discovered x2
-  top: SNOWBALL 0.82 | INKCHAN 0.72 | WOOF 0.66 | INUINK 0.46 | SITRUMP 0.42
-  tick bar 0.72 (top 30% of 8, floor 0.45)
-  BUY[exploit] INKCHAN    $7.24 @ $0.0001569  score 0.72  solana  liq $34,556
-  shadow: tracking 101, closed 1 this tick (1 would have won)
+  85 raw candidates across 5 chains, 156 headlines/posts
+  7 passed gates | rejected: liquidity too thin x45, no h1 volume x29, too old x2, too new (bot war) x1, already discovered x1
+  top: INKCHAN 0.85 | SNOWBALL 0.56 | INUINK 0.46 | SITRUMP 0.36 | HOOKEDCAT 0.19
+  tick bar 0.56 (top 30% of 7, floor 0.45)
+  BUY[exploit] SNOWBALL   $7.25 @ $0.0003326  score 0.56  solana  liq $55,056
+  shadow: tracking 100, closed 1 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
