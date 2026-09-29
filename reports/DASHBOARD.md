@@ -1,27 +1,27 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-29T13:55:49+00:00`
+Updated `2026-09-29T14:08:09+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$362.56** |
-| Return | **-27.49%** (start $500.00) |
+| Equity | **$362.93** |
+| Return | **-27.41%** (start $500.00) |
 | Cash | $358.41 |
-| Deployed | $4.15 (1.1%) |
+| Deployed | $4.52 (1.2%) |
 | Open positions | 1 / 8 |
 | Closed trades | 72 (21W / 51L, WR 29%) |
 | Profit factor | 0.54 |
 | Fees + slippage paid | $63.96 |
-| Ticks run | 980 |
+| Ticks run | 982 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| WOOF | ethereum | $5.08 | $4.15 | +261% | +360% | 11.5h |
+| WOOF | ethereum | $5.08 | $4.52 | +294% | +360% | 11.7h |
 
 ## Last closed trades
 
@@ -64,14 +64,14 @@ _refit on 515 observations (444 shadow, 71 real), 185 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #980  equity $362.66  cash $358.41  open 1
+tick #982  equity $362.58  cash $358.41  open 1
   scanning chains + news...
-  76 raw candidates across 5 chains, 155 headlines/posts
-  8 passed gates | rejected: liquidity too thin x51, no h1 volume x13, already discovered x4
-  top: THESIS 0.64 | INUINK 0.57 | STOCK 0.36 | HOOKEDCAT 0.34 | inu 0.32
-  tick bar 0.57 (top 30% of 8, floor 0.45)
+  132 raw candidates across 7 chains, 155 headlines/posts
+  9 passed gates | rejected: liquidity too thin x73, no h1 volume x30, too old x12, already discovered x7, too new (bot war) x1
+  top: INUINK 0.40 | inu 0.38 | HOOKEDCAT 0.35 | STOCK 0.33 | PARASITE 0.26
+  tick bar 0.45 (top 30% of 9, floor 0.45)
   no entries this tick
-  shadow: tracking 102, closed 1 this tick (1 would have won)
+  shadow: tracking 100, closed 2 this tick (1 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
