@@ -1,28 +1,28 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-29T07:55:29+00:00`
+Updated `2026-09-29T08:08:15+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$363.45** |
-| Return | **-27.31%** (start $500.00) |
+| Equity | **$363.50** |
+| Return | **-27.30%** (start $500.00) |
 | Cash | $352.36 |
-| Deployed | $11.09 (3.1%) |
+| Deployed | $11.14 (3.1%) |
 | Open positions | 2 / 8 |
 | Closed trades | 71 (20W / 51L, WR 28%) |
 | Profit factor | 0.52 |
 | Fees + slippage paid | $60.89 |
-| Ticks run | 942 |
+| Ticks run | 944 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| STOCK | solana | $5.22 | $8.28 | +185% | +214% | 7.8h |
-| WOOF | ethereum | $5.08 | $2.81 | +84% | +86% | 5.5h |
+| STOCK | solana | $5.22 | $8.03 | +176% | +214% | 8.0h |
+| WOOF | ethereum | $5.08 | $3.11 | +103% | +103% | 5.7h |
 
 ## Last closed trades
 
@@ -65,12 +65,12 @@ _refit on 515 observations (444 shadow, 71 real), 185 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #942  equity $363.55  cash $352.36  open 2
+tick #944  equity $363.38  cash $352.36  open 2
   scanning chains + news...
-  105 raw candidates across 5 chains, 156 headlines/posts
-  10 passed gates | rejected: liquidity too thin x61, no h1 volume x28, too old x5, already discovered x1
-  top: SNOWMOON 0.66 | GFB 0.56 | INUINK 0.52 | 久留美 0.41 | HOOKEDCAT 0.36
-  tick bar 0.52 (top 30% of 10, floor 0.45)
+  102 raw candidates across 6 chains, 160 headlines/posts
+  10 passed gates | rejected: liquidity too thin x59, no h1 volume x20, too old x7, already discovered x6
+  top: GFB 0.75 | SNOWMOON 0.61 | INUINK 0.53 | 王者荣耀 0.45 | WOOF 0.37
+  tick bar 0.53 (top 30% of 10, floor 0.45)
   no entries this tick
   shadow: tracking 101, closed 1 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
