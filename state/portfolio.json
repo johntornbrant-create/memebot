@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-29T09:20:55+00:00",
+  "updated": "2026-09-29T09:28:36+00:00",
   "cash": 352.36216561773705,
-  "equity": 364.2696,
+  "equity": 363.6471,
   "positions": {
     "solana:2d79yirWWZmzf249y7B4DMvgaSb7jgrCxrwTcweFpump": {
       "id": "cb35b964b8",
@@ -37,7 +37,7 @@
         "buzz": 0.3333,
         "paid_boost": 0.06
       },
-      "last_price": 0.000735
+      "last_price": 0.0006766
     },
     "ethereum:0xA912C71c0e53701153cAd9ba73E9B7D854418eaE": {
       "id": "3120b99e43",
@@ -71,7 +71,7 @@
         "buzz": 0.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.001042
+      "last_price": 0.001073
     }
   },
   "blacklist": {
@@ -133,7 +133,7 @@
     "trades_today": 12
   },
   "stats": {
-    "ticks": 951,
+    "ticks": 952,
     "opened": 73,
     "closed": 71,
     "wins": 20,
@@ -270,6 +270,10 @@
     [
       "2026-09-29T08:24:51+00:00",
       363.5
+    ],
+    [
+      "2026-09-29T09:27:03+00:00",
+      364.27
     ]
   ]
 }
