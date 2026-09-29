@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-29T14:44:16+00:00",
+  "updated": "2026-09-29T14:44:29+00:00",
   "cash": 358.41118826809526,
-  "equity": 363.0569,
+  "equity": 362.9993,
   "positions": {
     "ethereum:0xA912C71c0e53701153cAd9ba73E9B7D854418eaE": {
       "id": "3120b99e43",
@@ -37,7 +37,7 @@
         "buzz": 0.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.002178
+      "last_price": 0.002151
     }
   },
   "blacklist": {
