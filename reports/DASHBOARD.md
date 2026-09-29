@@ -1,33 +1,35 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-29T00:08:15+00:00`
+Updated `2026-09-29T00:32:46+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$372.93** |
-| Return | **-25.41%** (start $500.00) |
-| Cash | $362.48 |
-| Deployed | $10.44 (2.8%) |
-| Open positions | 2 / 8 |
-| Closed trades | 61 (17W / 44L, WR 28%) |
-| Profit factor | 0.53 |
-| Fees + slippage paid | $47.35 |
-| Ticks run | 890 |
+| Equity | **$370.49** |
+| Return | **-25.90%** (start $500.00) |
+| Cash | $352.21 |
+| Deployed | $18.29 (4.9%) |
+| Open positions | 3 / 8 |
+| Closed trades | 62 (17W / 45L, WR 27%) |
+| Profit factor | 0.52 |
+| Fees + slippage paid | $50.49 |
+| Ticks run | 892 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| INUINK | solana | $5.22 | $5.16 | +0% | +0% | 0.0h |
-| STOCK | solana | $5.22 | $5.16 | +0% | +0% | 0.0h |
+| STOCK | solana | $5.22 | $5.69 | +10% | +10% | 0.4h |
+| PAIDINK | solana | $5.19 | $5.13 | +0% | +0% | 0.0h |
+| GAVCOIN | ethereum | $7.41 | $4.36 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| INUINK | $-2.90 | -56% | 0.4h | stop loss -54% |
 | Q4 | $-0.65 | -11% | 13.7h | ratchet +0% (peak +48%) |
 | ZC | $-7.98 | -100% | 6.0h | stop loss -44% |
 | XPAD | $+5.34 | +68% | 2.2h | ratchet +74% (peak +149%) |
@@ -42,7 +44,6 @@ Updated `2026-09-29T00:08:15+00:00`
 | CATSTR | $+1.41 | +17% | 1.2h | ratchet +25% (peak +84%) |
 | wiffomo | $-3.84 | -46% | 0.0h | stop loss -45% |
 | SJP | $-3.21 | -38% | 1.4h | stop loss -36% |
-| CHIPS | $-8.54 | -100% | 0.9h | stop loss -100% |
 
 ## Learned weights (v12)
 
@@ -65,15 +66,16 @@ _refit on 417 observations (357 shadow, 60 real), 151 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #890  equity $372.93  cash $372.93  open 0
+tick #892  equity $371.76  cash $362.48  open 2
+  SELL INUINK     100% @ $0.0006321  ->  $2.32   [stop loss -54%]
   scanning chains + news...
-  102 raw candidates across 8 chains, 156 headlines/posts
-  7 passed gates | rejected: liquidity too thin x49, no h1 volume x40, already discovered x4, too old x2
-  top: GAVCOIN 0.85 | MARVIN 0.61 | INUINK 0.58 | STOCK 0.44 | Q4 0.39
-  tick bar 0.61 (top 30% of 7, floor 0.45)
-  BUY[explore] INUINK     $5.22 @ $0.001384  score 0.58  solana  liq $109,871
-  BUY[explore] STOCK      $5.22 @ $0.0002387  score 0.44  solana  liq $43,473
-  shadow: tracking 104, closed 1 this tick (0 would have won)
+  181 raw candidates across 9 chains, 156 headlines/posts
+  12 passed gates | rejected: liquidity too thin x90, no h1 volume x59, already discovered x10, too old x4, too new (bot war) x3
+  top: GAVCOIN 0.81 | MARVIN 0.78 | OnlyCats 0.76 | SITRUMP 0.73 | PAIDINK 0.54
+  tick bar 0.76 (top 30% of 12, floor 0.45)
+  BUY[explore] PAIDINK    $5.19 @ $0.0001121  score 0.54  solana  liq $29,195
+  BUY[exploit] GAVCOIN    $7.41 @ $7.57e-05  score 0.81  ethereum  liq $30,630
+  shadow: tracking 108, closed 0 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
