@@ -1,28 +1,28 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-29T07:09:55+00:00`
+Updated `2026-09-29T07:28:45+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$361.83** |
-| Return | **-27.63%** (start $500.00) |
+| Equity | **$362.93** |
+| Return | **-27.41%** (start $500.00) |
 | Cash | $352.36 |
-| Deployed | $9.47 (2.6%) |
+| Deployed | $10.56 (2.9%) |
 | Open positions | 2 / 8 |
 | Closed trades | 71 (20W / 51L, WR 28%) |
 | Profit factor | 0.52 |
 | Fees + slippage paid | $60.89 |
-| Ticks run | 936 |
+| Ticks run | 938 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| STOCK | solana | $5.22 | $7.11 | +145% | +214% | 7.0h |
-| WOOF | ethereum | $5.08 | $2.36 | +54% | +54% | 4.8h |
+| STOCK | solana | $5.22 | $8.13 | +180% | +214% | 7.3h |
+| WOOF | ethereum | $5.08 | $2.43 | +59% | +59% | 5.1h |
 
 ## Last closed trades
 
@@ -65,14 +65,14 @@ _refit on 515 observations (444 shadow, 71 real), 185 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #936  equity $362.46  cash $352.36  open 2
+tick #938  equity $361.90  cash $352.36  open 2
   scanning chains + news...
-  167 raw candidates across 8 chains, 156 headlines/posts
-  11 passed gates | rejected: liquidity too thin x97, no h1 volume x40, too old x13, already discovered x6
-  top: INUINK 0.53 | Mamesuke 0.48 | HOOKEDCAT 0.46 | KOD 0.43 | 久留美 0.37
-  tick bar 0.46 (top 30% of 11, floor 0.45)
+  103 raw candidates across 5 chains, 156 headlines/posts
+  9 passed gates | rejected: liquidity too thin x49, no h1 volume x32, too old x8, already discovered x4, sell pressure x1
+  top: INUINK 0.79 | Mamesuke 0.49 | HOOKEDCAT 0.43 | 久留美 0.43 | GFB 0.40
+  tick bar 0.49 (top 30% of 9, floor 0.45)
   no entries this tick
-  shadow: tracking 98, closed 1 this tick (0 would have won)
+  shadow: tracking 99, closed 0 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
