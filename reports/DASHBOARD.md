@@ -1,30 +1,30 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-29T02:52:36+00:00`
+Updated `2026-09-29T03:06:01+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$362.59** |
-| Return | **-27.48%** (start $500.00) |
+| Equity | **$361.09** |
+| Return | **-27.78%** (start $500.00) |
 | Cash | $338.20 |
-| Deployed | $24.40 (6.7%) |
+| Deployed | $22.89 (6.3%) |
 | Open positions | 4 / 8 |
 | Closed trades | 69 (19W / 50L, WR 28%) |
 | Profit factor | 0.52 |
 | Fees + slippage paid | $57.70 |
-| Ticks run | 909 |
+| Ticks run | 911 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| STOCK | solana | $5.22 | $6.90 | +34% | +41% | 2.7h |
-| WOOF | ethereum | $5.08 | $2.36 | +16% | +16% | 0.5h |
-| INKCHAN | solana | $7.24 | $7.88 | +47% | +69% | 0.2h |
-| SNOWBALL | solana | $7.25 | $7.18 | +0% | +0% | 0.0h |
+| STOCK | solana | $5.22 | $7.20 | +39% | +41% | 3.0h |
+| WOOF | ethereum | $5.08 | $2.13 | +4% | +16% | 0.7h |
+| INKCHAN | solana | $7.24 | $6.91 | +28% | +69% | 0.5h |
+| SNOWBALL | solana | $7.25 | $6.66 | -7% | +11% | 0.2h |
 
 ## Last closed trades
 
@@ -67,16 +67,16 @@ _refit on 417 observations (357 shadow, 60 real), 151 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #909  equity $364.24  cash $338.54  open 4
-  SELL SNOWBALL   100% @ $0.0003326  ->  $6.90   [ratchet +78% (peak +154%)]
+tick #911  equity $361.26  cash $338.20  open 4
   scanning chains + news...
-  85 raw candidates across 5 chains, 156 headlines/posts
-  7 passed gates | rejected: liquidity too thin x45, no h1 volume x29, too old x2, too new (bot war) x1, already discovered x1
-  top: INKCHAN 0.85 | SNOWBALL 0.56 | INUINK 0.46 | SITRUMP 0.36 | HOOKEDCAT 0.19
-  tick bar 0.56 (top 30% of 7, floor 0.45)
-  BUY[exploit] SNOWBALL   $7.25 @ $0.0003326  score 0.56  solana  liq $55,056
-  shadow: tracking 100, closed 1 this tick (0 would have won)
+  123 raw candidates across 6 chains, 156 headlines/posts
+  11 passed gates | rejected: liquidity too thin x56, no h1 volume x32, too old x11, already discovered x10, unknown age x2
+  top: BNBuilder 0.67 | SNOWBALL 0.50 | INUINK 0.46 | LAP 0.38 | SITRUMP 0.35
+  tick bar 0.46 (top 30% of 11, floor 0.45)
+  no entries this tick
+  shadow: tracking 102, closed 0 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
+  entries blocked: daily trade cap reached
 ```
