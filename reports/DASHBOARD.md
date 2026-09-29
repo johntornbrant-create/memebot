@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-28T23:51:58+00:00`
+Updated `2026-09-29T00:08:15+00:00`
 
 ## Equity
 
@@ -9,17 +9,20 @@ Updated `2026-09-28T23:51:58+00:00`
 |---|---|
 | Equity | **$372.93** |
 | Return | **-25.41%** (start $500.00) |
-| Cash | $372.93 |
-| Deployed | $-0.00 (-0.0%) |
-| Open positions | 0 / 8 |
+| Cash | $362.48 |
+| Deployed | $10.44 (2.8%) |
+| Open positions | 2 / 8 |
 | Closed trades | 61 (17W / 44L, WR 28%) |
 | Profit factor | 0.53 |
-| Fees + slippage paid | $47.23 |
-| Ticks run | 888 |
+| Fees + slippage paid | $47.35 |
+| Ticks run | 890 |
 
 ## Open positions
 
-_flat_
+| Token | Chain | Cost | Now | P&L | Peak | Held |
+|---|---|---|---|---|---|---|
+| INUINK | solana | $5.22 | $5.16 | +0% | +0% | 0.0h |
+| STOCK | solana | $5.22 | $5.16 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
@@ -62,16 +65,16 @@ _refit on 417 observations (357 shadow, 60 real), 151 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #888  equity $372.93  cash $372.93  open 0
+tick #890  equity $372.93  cash $372.93  open 0
   scanning chains + news...
-  105 raw candidates across 6 chains, 156 headlines/posts
-  8 passed gates | rejected: liquidity too thin x48, no h1 volume x24, too old x14, already discovered x7, unknown age x2
-  top: TRUMINK 0.67 | INUINK 0.66 | STOCK 0.63 | MARVIN 0.53 | Q4 0.42
-  tick bar 0.66 (top 30% of 8, floor 0.45)
-  no entries this tick
-  shadow: tracking 104, closed 3 this tick (1 would have won)
+  102 raw candidates across 8 chains, 156 headlines/posts
+  7 passed gates | rejected: liquidity too thin x49, no h1 volume x40, already discovered x4, too old x2
+  top: GAVCOIN 0.85 | MARVIN 0.61 | INUINK 0.58 | STOCK 0.44 | Q4 0.39
+  tick bar 0.61 (top 30% of 7, floor 0.45)
+  BUY[explore] INUINK     $5.22 @ $0.001384  score 0.58  solana  liq $109,871
+  BUY[explore] STOCK      $5.22 @ $0.0002387  score 0.44  solana  liq $43,473
+  shadow: tracking 104, closed 1 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
-  entries blocked: daily loss -10.3% <= -6%
 ```
