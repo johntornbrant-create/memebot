@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-29T02:05:29+00:00",
-  "cash": 325.64589745882165,
-  "equity": 356.4822,
+  "updated": "2026-09-29T02:17:51+00:00",
+  "cash": 332.8260855867546,
+  "equity": 356.4616,
   "positions": {
     "solana:2d79yirWWZmzf249y7B4DMvgaSb7jgrCxrwTcweFpump": {
       "id": "cb35b964b8",
@@ -34,39 +34,7 @@
         "buzz": 0.3333,
         "paid_boost": 0.06
       },
-      "last_price": 0.0003045
-    },
-    "solana:4tvcXSyhPfb1vQQWunMmMzmVNCJGMYrXgtv3bEbSpump": {
-      "id": "104464eceb",
-      "chain": "solana",
-      "address": "4tvcXSyhPfb1vQQWunMmMzmVNCJGMYrXgtv3bEbSpump",
-      "symbol": "SITRUMP",
-      "opened": "2026-09-29T01:08:39+00:00",
-      "entry_price": 0.0001598,
-      "tokens": 44793.82905118191,
-      "tokens_initial": 44793.82905118191,
-      "cost_usd": 7.23,
-      "fees_usd": 0.0719,
-      "realized_usd": 0.0,
-      "peak_gain": 0.04317897371714641,
-      "tp_hit": [],
-      "entry_liq": 35210.68,
-      "score": 0.7141,
-      "features": {
-        "liq_quality": 0.5195,
-        "turnover": 0.4628,
-        "buy_pressure": 1.0,
-        "momentum_accel": 1.0,
-        "not_vertical": 0.6927,
-        "age_sweet": 0.3679,
-        "socials": 0.65,
-        "fdv_sanity": 1.0,
-        "txn_depth": 0.3779,
-        "dip_in_uptrend": 0.5,
-        "buzz": 1.0,
-        "paid_boost": 0.1
-      },
-      "last_price": 0.0001627
+      "last_price": 0.0003069
     },
     "bsc:0x46e30A14464d518869C596805e89b0e531597777": {
       "id": "fd1b47dc51",
@@ -75,13 +43,15 @@
       "symbol": "\u9e45\u6b21\u5143",
       "opened": "2026-09-29T01:37:54+00:00",
       "entry_price": 8.629e-05,
-      "tokens": 81450.38082191061,
+      "tokens": 61087.78561643296,
       "tokens_initial": 81450.38082191061,
       "cost_usd": 7.13,
-      "fees_usd": 0.1016,
-      "realized_usd": 0.0,
-      "peak_gain": 0.3987715841928381,
-      "tp_hit": [],
+      "fees_usd": 0.17318627683945909,
+      "realized_usd": 2.9787304849410936,
+      "peak_gain": 0.7360064897438869,
+      "tp_hit": [
+        0
+      ],
       "entry_liq": 26345.84,
       "score": 0.7007,
       "features": {
@@ -98,7 +68,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0001207
+      "last_price": 0.0001498
     },
     "solana:HGN8K3x5ZLfYNjvE8b1hCqqu7RwupuKU6EkEhemzpump": {
       "id": "b6e5b8b3c2",
@@ -112,7 +82,7 @@
       "cost_usd": 7.13,
       "fees_usd": 0.071,
       "realized_usd": 0.0,
-      "peak_gain": 0.0,
+      "peak_gain": 0.11140443505807807,
       "tp_hit": [],
       "entry_liq": 40470.8,
       "score": 0.7479,
@@ -130,7 +100,7 @@
         "buzz": 0.0,
         "paid_boost": 0.1
       },
-      "last_price": 0.0001894
+      "last_price": 0.0002105
     }
   },
   "blacklist": {
@@ -178,7 +148,8 @@
     "ethereum:0x27aa8DabfDaCAd9353744bE79B1FF8526FB36c64": "2026-09-29T00:57:32+00:00",
     "solana:A8MBwPZwR6msXrDBRzg8b1W7BpjjPch1WsTELQJzpump": "2026-09-29T01:07:05+00:00",
     "solana:4kgo11KazbCNd2DosYSLGpgSZhEtda1gGu4rbWJLGCJV": "2026-09-29T01:23:39+00:00",
-    "solana:2sDeSDUigrzYKRhZBjjs8AJDyMYroRyVAsUzzq9D4sqr": "2026-09-29T01:51:43+00:00"
+    "solana:2sDeSDUigrzYKRhZBjjs8AJDyMYroRyVAsUzzq9D4sqr": "2026-09-29T01:51:43+00:00",
+    "solana:4tvcXSyhPfb1vQQWunMmMzmVNCJGMYrXgtv3bEbSpump": "2026-09-29T02:17:51+00:00"
   },
   "halted": false,
   "halt_reason": "",
@@ -190,13 +161,13 @@
     "trades_today": 9
   },
   "stats": {
-    "ticks": 903,
+    "ticks": 904,
     "opened": 70,
-    "closed": 66,
+    "closed": 67,
     "wins": 17,
-    "losses": 49,
-    "fees_paid": 54.04400112992869,
-    "realized_pnl": -147.6431497411782
+    "losses": 50,
+    "fees_paid": 54.16596001731451,
+    "realized_pnl": -150.67169209818638
   },
   "last_entry": "2026-09-29T02:05:27+00:00",
   "equity_history": [
