@@ -1,27 +1,27 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-29T11:26:25+00:00`
+Updated `2026-09-29T11:06:09+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$362.05** |
-| Return | **-27.59%** (start $500.00) |
+| Equity | **$361.65** |
+| Return | **-27.67%** (start $500.00) |
 | Cash | $358.41 |
-| Deployed | $3.63 (1.0%) |
+| Deployed | $3.24 (0.9%) |
 | Open positions | 1 / 8 |
 | Closed trades | 72 (21W / 51L, WR 29%) |
 | Profit factor | 0.54 |
 | Fees + slippage paid | $63.96 |
-| Ticks run | 965 |
+| Ticks run | 963 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| WOOF | ethereum | $5.08 | $3.63 | +217% | +217% | 9.0h |
+| WOOF | ethereum | $5.08 | $3.24 | +182% | +184% | 8.7h |
 
 ## Last closed trades
 
@@ -64,14 +64,14 @@ _refit on 515 observations (444 shadow, 71 real), 185 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #965  equity $361.38  cash $358.41  open 1
+tick #963  equity $361.67  cash $358.41  open 1
   scanning chains + news...
-  107 raw candidates across 7 chains, 156 headlines/posts
-  8 passed gates | rejected: liquidity too thin x69, no h1 volume x22, too new (bot war) x4, too old x1, sell pressure x1
-  top: ETHERDOG 0.72 | rock 0.55 | PAYDAY 0.49 | INUINK 0.48 | HOOKEDCAT 0.34
-  tick bar 0.55 (top 30% of 8, floor 0.45)
+  117 raw candidates across 8 chains, 160 headlines/posts
+  10 passed gates | rejected: liquidity too thin x62, no h1 volume x26, too old x9, already discovered x7, sell pressure x2
+  top: HODL 0.68 | PAYDAY 0.67 | BNCDAO 0.62 | INUINK 0.59 | HOOKEDCAT 0.47
+  tick bar 0.62 (top 30% of 10, floor 0.45)
   no entries this tick
-  shadow: tracking 104, closed 3 this tick (0 would have won)
+  shadow: tracking 105, closed 0 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
