@@ -1,45 +1,9 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-29T15:00:07+00:00",
-  "cash": 358.41118826809526,
-  "equity": 362.2357,
-  "positions": {
-    "ethereum:0xA912C71c0e53701153cAd9ba73E9B7D854418eaE": {
-      "id": "3120b99e43",
-      "chain": "ethereum",
-      "address": "0xA912C71c0e53701153cAd9ba73E9B7D854418eaE",
-      "symbol": "WOOF",
-      "opened": "2026-09-29T02:24:34+00:00",
-      "entry_price": 0.0005382,
-      "tokens": 2133.0164389554716,
-      "tokens_initial": 3792.0292248097276,
-      "cost_usd": 5.076600200000001,
-      "fees_usd": 9.048074925590827,
-      "realized_usd": 0.0,
-      "peak_gain": 3.59866220735786,
-      "tp_hit": [
-        0,
-        1
-      ],
-      "entry_liq": 119640.51,
-      "score": 0.6133,
-      "features": {
-        "liq_quality": 0.9842,
-        "turnover": 0.0688,
-        "buy_pressure": 0.881,
-        "momentum_accel": 0.9909,
-        "not_vertical": 1.0,
-        "age_sweet": 0.6831,
-        "socials": 0.8,
-        "fdv_sanity": 1.0,
-        "txn_depth": 0.9457,
-        "dip_in_uptrend": 0.5,
-        "buzz": 0.0,
-        "paid_boost": 0.2
-      },
-      "last_price": 0.001793
-    }
-  },
+  "updated": "2026-09-29T15:12:50+00:00",
+  "cash": 359.0203523655718,
+  "equity": 359.0204,
+  "positions": {},
   "blacklist": {
     "solana:D4sBdmPaDKxKThQW3Eh721R9M335VcCThn31w7CRtdkN": "2026-09-22T17:22:35+00:00",
     "solana:HzaCANKGkhNcQGb1VWL8f4tHJYrCmaXrPWk9eHR7GYYX": "2026-09-22T20:22:15+00:00",
@@ -87,7 +51,8 @@
     "solana:4kgo11KazbCNd2DosYSLGpgSZhEtda1gGu4rbWJLGCJV": "2026-09-29T01:23:39+00:00",
     "solana:2sDeSDUigrzYKRhZBjjs8AJDyMYroRyVAsUzzq9D4sqr": "2026-09-29T01:51:43+00:00",
     "solana:4tvcXSyhPfb1vQQWunMmMzmVNCJGMYrXgtv3bEbSpump": "2026-09-29T02:17:51+00:00",
-    "solana:HGN8K3x5ZLfYNjvE8b1hCqqu7RwupuKU6EkEhemzpump": "2026-09-29T03:55:46+00:00"
+    "solana:HGN8K3x5ZLfYNjvE8b1hCqqu7RwupuKU6EkEhemzpump": "2026-09-29T03:55:46+00:00",
+    "ethereum:0xA912C71c0e53701153cAd9ba73E9B7D854418eaE": "2026-09-29T15:11:10+00:00"
   },
   "halted": false,
   "halt_reason": "",
@@ -99,13 +64,13 @@
     "trades_today": 12
   },
   "stats": {
-    "ticks": 987,
+    "ticks": 988,
     "opened": 73,
-    "closed": 72,
+    "closed": 73,
     "wins": 21,
-    "losses": 51,
-    "fees_paid": 63.96192233457778,
-    "realized_pnl": -136.51221153190457
+    "losses": 52,
+    "fees_paid": 66.98741824908136,
+    "realized_pnl": -140.97964763442803
   },
   "last_entry": "2026-09-29T02:52:34+00:00",
   "equity_history": [

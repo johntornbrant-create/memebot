@@ -1,32 +1,31 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-29T14:58:30+00:00`
+Updated `2026-09-29T15:12:50+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$362.41** |
-| Return | **-27.52%** (start $500.00) |
-| Cash | $358.41 |
-| Deployed | $4.00 (1.1%) |
-| Open positions | 1 / 8 |
-| Closed trades | 72 (21W / 51L, WR 29%) |
-| Profit factor | 0.54 |
-| Fees + slippage paid | $63.96 |
-| Ticks run | 986 |
+| Equity | **$359.02** |
+| Return | **-28.20%** (start $500.00) |
+| Cash | $359.02 |
+| Deployed | $0.00 (0.0%) |
+| Open positions | 0 / 8 |
+| Closed trades | 73 (21W / 52L, WR 29%) |
+| Profit factor | 0.53 |
+| Fees + slippage paid | $66.99 |
+| Ticks run | 988 |
 
 ## Open positions
 
-| Token | Chain | Cost | Now | P&L | Peak | Held |
-|---|---|---|---|---|---|---|
-| WOOF | ethereum | $5.08 | $4.00 | +248% | +360% | 12.6h |
+_flat_
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| WOOF | $-4.47 | -88% | 12.8h | ratchet +222% (peak +360%) |
 | STOCK | $+5.89 | +113% | 9.5h | ratchet +120% (peak +214%) |
 | SNOWBALL | $-2.98 | -41% | 1.1h | stop loss -40% |
 | INKCHAN | $+0.60 | +8% | 1.0h | ratchet +0% (peak +69%) |
@@ -41,7 +40,6 @@ Updated `2026-09-29T14:58:30+00:00`
 | Q4 | $-0.65 | -11% | 13.7h | ratchet +0% (peak +48%) |
 | ZC | $-7.98 | -100% | 6.0h | stop loss -44% |
 | XPAD | $+5.34 | +68% | 2.2h | ratchet +74% (peak +149%) |
-| e/acc | $-7.96 | -99% | 2.8h | stop loss -98% |
 
 ## Learned weights (v13)
 
@@ -64,14 +62,15 @@ _refit on 515 observations (444 shadow, 71 real), 185 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #986  equity $363.00  cash $358.41  open 1
+tick #988  equity $362.24  cash $358.41  open 1
+  SELL WOOF       100% @ $0.001704  ->  $0.61   [ratchet +222% (peak +360%)]
   scanning chains + news...
-  88 raw candidates across 5 chains, 160 headlines/posts
-  13 passed gates | rejected: liquidity too thin x46, no h1 volume x16, too old x10, already discovered x3
-  top: WOTF 0.90 | TIPPED 0.84 | POND 0.72 | PARASITE 0.66 | THESIS 0.58
-  tick bar 0.71 (top 30% of 13, floor 0.45)
+  92 raw candidates across 7 chains, 155 headlines/posts
+  9 passed gates | rejected: liquidity too thin x53, no h1 volume x25, too old x5
+  top: WOTF 0.90 | SNOWBALL 0.71 | ZPAD 0.65 | PARASITE 0.62 | INUINK 0.49
+  tick bar 0.71 (top 30% of 9, floor 0.45)
   no entries this tick
-  shadow: tracking 100, closed 3 this tick (2 would have won)
+  shadow: tracking 98, closed 3 this tick (1 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
