@@ -1,30 +1,30 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-29T03:06:01+00:00`
+Updated `2026-09-29T03:27:25+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$361.09** |
-| Return | **-27.78%** (start $500.00) |
-| Cash | $338.20 |
-| Deployed | $22.89 (6.3%) |
+| Equity | **$360.22** |
+| Return | **-27.96%** (start $500.00) |
+| Cash | $340.26 |
+| Deployed | $19.96 (5.5%) |
 | Open positions | 4 / 8 |
 | Closed trades | 69 (19W / 50L, WR 28%) |
 | Profit factor | 0.52 |
-| Fees + slippage paid | $57.70 |
-| Ticks run | 911 |
+| Fees + slippage paid | $57.74 |
+| Ticks run | 913 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| STOCK | solana | $5.22 | $7.20 | +39% | +41% | 3.0h |
-| WOOF | ethereum | $5.08 | $2.13 | +4% | +16% | 0.7h |
-| INKCHAN | solana | $7.24 | $6.91 | +28% | +69% | 0.5h |
-| SNOWBALL | solana | $7.25 | $6.66 | -7% | +11% | 0.2h |
+| STOCK | solana | $5.22 | $6.18 | +59% | +62% | 3.3h |
+| WOOF | ethereum | $5.08 | $2.21 | +8% | +16% | 1.0h |
+| INKCHAN | solana | $7.24 | $6.03 | +12% | +69% | 0.8h |
+| SNOWBALL | solana | $7.25 | $5.54 | -23% | +11% | 0.6h |
 
 ## Last closed trades
 
@@ -67,14 +67,14 @@ _refit on 417 observations (357 shadow, 60 real), 151 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #911  equity $361.26  cash $338.20  open 4
+tick #913  equity $361.51  cash $340.26  open 4
   scanning chains + news...
-  123 raw candidates across 6 chains, 156 headlines/posts
-  11 passed gates | rejected: liquidity too thin x56, no h1 volume x32, too old x11, already discovered x10, unknown age x2
-  top: BNBuilder 0.67 | SNOWBALL 0.50 | INUINK 0.46 | LAP 0.38 | SITRUMP 0.35
-  tick bar 0.46 (top 30% of 11, floor 0.45)
+  108 raw candidates across 5 chains, 160 headlines/posts
+  8 passed gates | rejected: liquidity too thin x48, no h1 volume x25, too old x16, already discovered x6, unknown age x3
+  top: BNBuilder 0.64 | INUINK 0.47 | SITRUMP 0.41 | INKCHAN 0.25 | HOOKEDCAT 0.23
+  tick bar 0.47 (top 30% of 8, floor 0.45)
   no entries this tick
-  shadow: tracking 102, closed 0 this tick (0 would have won)
+  shadow: tracking 101, closed 1 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
