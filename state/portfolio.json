@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-29T03:27:25+00:00",
-  "cash": 340.255321415532,
-  "equity": 360.2156,
+  "updated": "2026-09-29T03:38:25+00:00",
+  "cash": 345.0966834872997,
+  "equity": 358.7641,
   "positions": {
     "solana:2d79yirWWZmzf249y7B4DMvgaSb7jgrCxrwTcweFpump": {
       "id": "cb35b964b8",
@@ -36,7 +36,7 @@
         "buzz": 0.3333,
         "paid_boost": 0.06
       },
-      "last_price": 0.0003806
+      "last_price": 0.0003784
     },
     "ethereum:0xA912C71c0e53701153cAd9ba73E9B7D854418eaE": {
       "id": "3120b99e43",
@@ -68,41 +68,7 @@
         "buzz": 0.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.0005825
-    },
-    "solana:2n3bPZcfbcUNgaP6Ktw8E1wYoycAhuR1sSHa7uB6pump": {
-      "id": "fd6d32edd4",
-      "chain": "solana",
-      "address": "2n3bPZcfbcUNgaP6Ktw8E1wYoycAhuR1sSHa7uB6pump",
-      "symbol": "INKCHAN",
-      "opened": "2026-09-29T02:38:22+00:00",
-      "entry_price": 0.0001569,
-      "tokens": 34263.64626172894,
-      "tokens_initial": 45684.86168230526,
-      "cost_usd": 7.24,
-      "fees_usd": 0.1134311766302937,
-      "realized_usd": 2.994327882158891,
-      "peak_gain": 0.6940726577437859,
-      "tp_hit": [
-        0
-      ],
-      "entry_liq": 34555.94,
-      "score": 0.7241,
-      "features": {
-        "liq_quality": 0.5107,
-        "turnover": 0.0,
-        "buy_pressure": 1.0,
-        "momentum_accel": 1.0,
-        "not_vertical": 0.7691,
-        "age_sweet": 0.14,
-        "socials": 0.65,
-        "fdv_sanity": 1.0,
-        "txn_depth": 0.4454,
-        "dip_in_uptrend": 1.0,
-        "buzz": 0.0,
-        "paid_boost": 0.0
-      },
-      "last_price": 0.0001761
+      "last_price": 0.0005862
     },
     "solana:HGN8K3x5ZLfYNjvE8b1hCqqu7RwupuKU6EkEhemzpump": {
       "id": "ac5502c784",
@@ -134,7 +100,7 @@
         "buzz": 0.0,
         "paid_boost": 0.1
       },
-      "last_price": 0.0002568
+      "last_price": 0.0002458
     }
   },
   "blacklist": {
@@ -195,13 +161,13 @@
     "trades_today": 12
   },
   "stats": {
-    "ticks": 913,
+    "ticks": 914,
     "opened": 73,
-    "closed": 69,
-    "wins": 19,
+    "closed": 70,
+    "wins": 20,
     "losses": 50,
-    "fees_paid": 57.73933641460357,
-    "realized_pnl": -140.0108168677865
+    "fees_paid": 57.794249393636974,
+    "realized_pnl": -139.41512691385995
   },
   "last_entry": "2026-09-29T02:52:34+00:00",
   "equity_history": [
