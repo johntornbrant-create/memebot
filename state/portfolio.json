@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-29T00:32:46+00:00",
-  "cash": 352.20841747017283,
-  "equity": 370.4949,
+  "updated": "2026-09-29T00:37:24+00:00",
+  "cash": 354.2354115002961,
+  "equity": 370.2268,
   "positions": {
     "solana:2d79yirWWZmzf249y7B4DMvgaSb7jgrCxrwTcweFpump": {
       "id": "cb35b964b8",
@@ -16,7 +16,7 @@
       "cost_usd": 5.2209528,
       "fees_usd": 0.0571,
       "realized_usd": 0.0,
-      "peak_gain": 0.10180142438206952,
+      "peak_gain": 0.1499790532048597,
       "tp_hit": [],
       "entry_liq": 43472.83,
       "score": 0.4442,
@@ -34,7 +34,7 @@
         "buzz": 0.3333,
         "paid_boost": 0.06
       },
-      "last_price": 0.000263
+      "last_price": 0.0002745
     },
     "solana:A8MBwPZwR6msXrDBRzg8b1W7BpjjPch1WsTELQJzpump": {
       "id": "0691c46b32",
@@ -43,13 +43,15 @@
       "symbol": "PAIDINK",
       "opened": "2026-09-29T00:32:44+00:00",
       "entry_price": 0.0001121,
-      "tokens": 45760.844958588066,
+      "tokens": 34320.63371894105,
       "tokens_initial": 45760.844958588066,
       "cost_usd": 5.186928599999999,
-      "fees_usd": 0.0571,
-      "realized_usd": 0.0,
-      "peak_gain": 0.0,
-      "tp_hit": [],
+      "fees_usd": 0.09163203526115377,
+      "realized_usd": 2.0269940301232388,
+      "peak_gain": 0.607493309545049,
+      "tp_hit": [
+        0
+      ],
       "entry_liq": 29195.07,
       "score": 0.5353,
       "features": {
@@ -66,7 +68,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0001121
+      "last_price": 0.0001802
     },
     "ethereum:0x27aa8DabfDaCAd9353744bE79B1FF8526FB36c64": {
       "id": "0ba6a0515c",
@@ -98,7 +100,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 7.57e-05
+      "last_price": 6.722e-05
     }
   },
   "blacklist": {
@@ -154,12 +156,12 @@
     "trades_today": 4
   },
   "stats": {
-    "ticks": 892,
+    "ticks": 893,
     "opened": 65,
     "closed": 62,
     "wins": 17,
     "losses": 45,
-    "fees_paid": 50.49407482254003,
+    "fees_paid": 50.52860685780118,
     "realized_pnl": -129.97370112982702
   },
   "last_entry": "2026-09-29T00:32:44+00:00",
