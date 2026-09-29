@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-29T10:43:41+00:00",
+  "updated": "2026-09-29T10:52:24+00:00",
   "cash": 358.41118826809526,
-  "equity": 361.9264,
+  "equity": 361.4102,
   "positions": {
     "ethereum:0xA912C71c0e53701153cAd9ba73E9B7D854418eaE": {
       "id": "3120b99e43",
@@ -11,14 +11,15 @@
       "symbol": "WOOF",
       "opened": "2026-09-29T02:24:34+00:00",
       "entry_price": 0.0005382,
-      "tokens": 2844.0219186072954,
+      "tokens": 2133.0164389554716,
       "tokens_initial": 3792.0292248097276,
       "cost_usd": 5.076600200000001,
-      "fees_usd": 6.041072751645805,
+      "fees_usd": 9.048074925590827,
       "realized_usd": 0.0,
-      "peak_gain": 1.2965440356744704,
+      "peak_gain": 1.6124117428465254,
       "tp_hit": [
-        0
+        0,
+        1
       ],
       "entry_liq": 119640.51,
       "score": 0.6133,
@@ -36,7 +37,7 @@
         "buzz": 0.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.001236
+      "last_price": 0.001406
     }
   },
   "blacklist": {
@@ -98,12 +99,12 @@
     "trades_today": 12
   },
   "stats": {
-    "ticks": 960,
+    "ticks": 961,
     "opened": 73,
     "closed": 72,
     "wins": 21,
     "losses": 51,
-    "fees_paid": 60.95492016063276,
+    "fees_paid": 63.96192233457778,
     "realized_pnl": -136.51221153190457
   },
   "last_entry": "2026-09-29T02:52:34+00:00",
