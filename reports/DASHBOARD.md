@@ -1,27 +1,27 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-30T09:06:38+00:00`
+Updated `2026-09-30T09:28:08+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$347.11** |
-| Return | **-30.58%** (start $500.00) |
+| Equity | **$347.71** |
+| Return | **-30.46%** (start $500.00) |
 | Cash | $339.18 |
-| Deployed | $7.94 (2.3%) |
+| Deployed | $8.53 (2.5%) |
 | Open positions | 1 / 8 |
 | Closed trades | 77 (21W / 56L, WR 27%) |
 | Profit factor | 0.51 |
 | Fees + slippage paid | $67.55 |
-| Ticks run | 1109 |
+| Ticks run | 1111 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| SS | solana | $7.12 | $7.94 | +50% | +95% | 8.5h |
+| SS | solana | $7.12 | $8.53 | +61% | +95% | 8.9h |
 
 ## Last closed trades
 
@@ -64,16 +64,16 @@ _refit on 613 observations (537 shadow, 76 real), 219 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #1109  equity $347.48  cash $339.18  open 1
+tick #1111  equity $348.36  cash $339.18  open 1
   scanning chains + news...
-  65 raw candidates across 4 chains, 156 headlines/posts
-  7 passed gates | rejected: liquidity too thin x39, no h1 volume x13, already discovered x4, sell pressure x2
-  top: RESI 0.42 | SS 0.29 | AIRPAD 0.28 | Watermelinu 0.26 | STOCK 0.16
-  tick bar 0.45 (top 30% of 7, floor 0.45)
+  165 raw candidates across 9 chains, 156 headlines/posts
+  10 passed gates | rejected: liquidity too thin x84, no h1 volume x53, already discovered x10, too old x8
+  top: Watermelinu 0.75 | CSI 0.49 | APE 0.43 | SS 0.39 | AIRPAD 0.28
+  tick bar 0.45 (top 30% of 10, floor 0.45)
   no entries this tick
-  shadow: tracking 101, closed 1 this tick (0 would have won)
+  shadow: tracking 102, closed 0 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
-  entries blocked: 7d loss -16.4% <= -15%
+  entries blocked: 7d loss -16.3% <= -15%
 ```
