@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-09-30T05:27:53+00:00",
-  "cash": 343.38060743393333,
-  "equity": 352.2282,
+  "updated": "2026-09-30T05:41:07+00:00",
+  "cash": 336.31060743393334,
+  "equity": 353.4214,
   "positions": {
     "solana:BYaxkgDfkUApMgsXu4SiJ5yc6DTSfLxp6an3PvVVpump": {
       "id": "7f4cf78036",
@@ -16,7 +16,7 @@
       "cost_usd": 7.12,
       "fees_usd": 0.1089496517494242,
       "realized_usd": 2.6175792462050134,
-      "peak_gain": 0.6733830344549667,
+      "peak_gain": 0.8990529921418497,
       "tp_hit": [
         0
       ],
@@ -36,7 +36,39 @@
         "buzz": 0.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.001661
+      "last_price": 0.001885
+    },
+    "solana:9a2vQG6eQGmdJqvrVuAtXpvMQMokhLf7FHW1QJGHFvWi": {
+      "id": "4b28351e63",
+      "chain": "solana",
+      "address": "9a2vQG6eQGmdJqvrVuAtXpvMQMokhLf7FHW1QJGHFvWi",
+      "symbol": "NUTFLEX",
+      "opened": "2026-09-30T05:41:04+00:00",
+      "entry_price": 0.0001809,
+      "tokens": 38692.34198065294,
+      "tokens_initial": 38692.34198065294,
+      "cost_usd": 7.07,
+      "fees_usd": 0.0706,
+      "realized_usd": 0.0,
+      "peak_gain": 0.0,
+      "tp_hit": [],
+      "entry_liq": 42227.45,
+      "score": 0.5244,
+      "features": {
+        "liq_quality": 0.606,
+        "turnover": 0.8897,
+        "buy_pressure": 0.5312,
+        "momentum_accel": 0.0,
+        "not_vertical": 1.0,
+        "age_sweet": 0.9599,
+        "socials": 0.45,
+        "fdv_sanity": 1.0,
+        "txn_depth": 0.5759,
+        "dip_in_uptrend": 0.5,
+        "buzz": 0.0,
+        "paid_boost": 0.0
+      },
+      "last_price": 0.0001809
     }
   },
   "blacklist": {
@@ -99,18 +131,18 @@
     "day_equity": 359.0204,
     "week": "2026-W40",
     "week_equity": 415.6648,
-    "trades_today": 4
+    "trades_today": 5
   },
   "stats": {
-    "ticks": 1086,
-    "opened": 77,
+    "ticks": 1087,
+    "opened": 78,
     "closed": 76,
     "wins": 21,
     "losses": 55,
-    "fees_paid": 67.44281847827622,
+    "fees_paid": 67.5133738139761,
     "realized_pnl": -152.11697181227152
   },
-  "last_entry": "2026-09-30T00:58:40+00:00",
+  "last_entry": "2026-09-30T05:41:04+00:00",
   "equity_history": [
     [
       "2026-09-27T22:46:06+00:00",

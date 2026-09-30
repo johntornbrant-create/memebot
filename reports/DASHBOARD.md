@@ -1,27 +1,28 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-30T05:27:25+00:00`
+Updated `2026-09-30T05:41:07+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$352.17** |
-| Return | **-29.57%** (start $500.00) |
-| Cash | $343.38 |
-| Deployed | $8.79 (2.5%) |
-| Open positions | 1 / 8 |
+| Equity | **$353.42** |
+| Return | **-29.32%** (start $500.00) |
+| Cash | $336.31 |
+| Deployed | $17.11 (4.8%) |
+| Open positions | 2 / 8 |
 | Closed trades | 76 (21W / 55L, WR 28%) |
 | Profit factor | 0.51 |
-| Fees + slippage paid | $67.44 |
-| Ticks run | 1085 |
+| Fees + slippage paid | $67.51 |
+| Ticks run | 1087 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| SS | solana | $7.12 | $8.79 | +66% | +66% | 4.9h |
+| SS | solana | $7.12 | $10.04 | +90% | +90% | 5.1h |
+| NUTFLEX | solana | $7.07 | $7.00 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
@@ -64,16 +65,15 @@ _refit on 590 observations (517 shadow, 73 real), 210 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #1085  equity $351.50  cash $343.38  open 1
+tick #1087  equity $352.23  cash $343.38  open 1
   scanning chains + news...
-  107 raw candidates across 6 chains, 156 headlines/posts
-  10 passed gates | rejected: liquidity too thin x67, no h1 volume x23, sell pressure x2, already discovered x2, too new (bot war) x1
-  top: SS 0.52 | NUTFLEX 0.49 | RESI 0.43 | POTUS 0.26 | AIRPAD 0.26
-  tick bar 0.45 (top 30% of 10, floor 0.45)
-  no entries this tick
-  shadow: tracking 111, closed 0 this tick (0 would have won)
+  118 raw candidates across 6 chains, 160 headlines/posts
+  12 passed gates | rejected: liquidity too thin x77, no h1 volume x23, sell pressure x2, already discovered x2, too old x1
+  top: NUTFLEX 0.52 | RESI 0.41 | POTUS 0.35 | SS 0.35 | PARASITE 0.32
+  tick bar 0.45 (top 30% of 12, floor 0.45)
+  BUY[exploit] NUTFLEX    $7.07 @ $0.0001809  score 0.52  solana  liq $42,227
+  shadow: tracking 112, closed 0 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
-  entries blocked: 7d loss -15.2% <= -15%
 ```
