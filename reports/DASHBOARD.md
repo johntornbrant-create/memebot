@@ -1,27 +1,27 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-30T03:55:32+00:00`
+Updated `2026-09-30T04:06:41+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$348.18** |
-| Return | **-30.36%** (start $500.00) |
+| Equity | **$347.74** |
+| Return | **-30.45%** (start $500.00) |
 | Cash | $340.76 |
-| Deployed | $7.42 (2.1%) |
+| Deployed | $6.98 (2.0%) |
 | Open positions | 1 / 8 |
 | Closed trades | 76 (21W / 55L, WR 28%) |
 | Profit factor | 0.51 |
 | Fees + slippage paid | $67.40 |
-| Ticks run | 1074 |
+| Ticks run | 1076 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| SS | solana | $7.12 | $7.42 | +5% | +10% | 3.3h |
+| SS | solana | $7.12 | $6.98 | -1% | +10% | 3.5h |
 
 ## Last closed trades
 
@@ -64,16 +64,16 @@ _refit on 590 observations (517 shadow, 73 real), 210 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #1074  equity $347.97  cash $340.76  open 1
+tick #1076  equity $347.80  cash $340.76  open 1
   scanning chains + news...
-  114 raw candidates across 5 chains, 156 headlines/posts
-  12 passed gates | rejected: liquidity too thin x61, no h1 volume x36, sell pressure x2, too old x2, already discovered x1
-  top: BEE 0.68 | AIRPAD 0.63 | sendor 0.61 | 犇犇 0.44 | SS 0.38
-  tick bar 0.61 (top 30% of 12, floor 0.45)
+  144 raw candidates across 6 chains, 156 headlines/posts
+  13 passed gates | rejected: liquidity too thin x77, no h1 volume x31, too old x14, already discovered x6, sell pressure x2
+  top: AIRPAD 0.63 | sendor 0.62 | SI 0.54 | BEE 0.41 | SS 0.37
+  tick bar 0.54 (top 30% of 13, floor 0.45)
   no entries this tick
-  shadow: tracking 112, closed 2 this tick (0 would have won)
+  shadow: tracking 112, closed 1 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
-  entries blocked: 7d loss -16.1% <= -15%
+  entries blocked: 7d loss -16.3% <= -15%
 ```
