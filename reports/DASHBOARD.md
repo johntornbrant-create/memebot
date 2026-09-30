@@ -1,27 +1,27 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-30T08:47:35+00:00`
+Updated `2026-09-30T09:06:38+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$346.68** |
-| Return | **-30.66%** (start $500.00) |
+| Equity | **$347.11** |
+| Return | **-30.58%** (start $500.00) |
 | Cash | $339.18 |
-| Deployed | $7.51 (2.2%) |
+| Deployed | $7.94 (2.3%) |
 | Open positions | 1 / 8 |
 | Closed trades | 77 (21W / 56L, WR 27%) |
 | Profit factor | 0.51 |
 | Fees + slippage paid | $67.55 |
-| Ticks run | 1107 |
+| Ticks run | 1109 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| SS | solana | $7.12 | $7.51 | +42% | +95% | 8.2h |
+| SS | solana | $7.12 | $7.94 | +50% | +95% | 8.5h |
 
 ## Last closed trades
 
@@ -64,16 +64,16 @@ _refit on 613 observations (537 shadow, 76 real), 219 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #1107  equity $346.56  cash $339.18  open 1
+tick #1109  equity $347.48  cash $339.18  open 1
   scanning chains + news...
-  91 raw candidates across 6 chains, 156 headlines/posts
-  6 passed gates | rejected: liquidity too thin x53, no h1 volume x29, already discovered x2, sell pressure x1
-  top: RESI 0.41 | SS 0.30 | AIRPAD 0.27 | PARASITE 0.17 | STOCK 0.17
-  tick bar 0.45 (top 30% of 6, floor 0.45)
+  65 raw candidates across 4 chains, 156 headlines/posts
+  7 passed gates | rejected: liquidity too thin x39, no h1 volume x13, already discovered x4, sell pressure x2
+  top: RESI 0.42 | SS 0.29 | AIRPAD 0.28 | Watermelinu 0.26 | STOCK 0.16
+  tick bar 0.45 (top 30% of 7, floor 0.45)
   no entries this tick
-  shadow: tracking 102, closed 0 this tick (0 would have won)
+  shadow: tracking 101, closed 1 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
-  entries blocked: 7d loss -16.5% <= -15%
+  entries blocked: 7d loss -16.4% <= -15%
 ```
