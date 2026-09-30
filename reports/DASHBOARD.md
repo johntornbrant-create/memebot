@@ -1,27 +1,27 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-30T04:55:50+00:00`
+Updated `2026-09-30T05:07:01+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$350.96** |
-| Return | **-29.81%** (start $500.00) |
+| Equity | **$351.46** |
+| Return | **-29.71%** (start $500.00) |
 | Cash | $343.38 |
-| Deployed | $7.57 (2.2%) |
+| Deployed | $8.08 (2.3%) |
 | Open positions | 1 / 8 |
 | Closed trades | 76 (21W / 55L, WR 28%) |
 | Profit factor | 0.51 |
 | Fees + slippage paid | $67.44 |
-| Ticks run | 1082 |
+| Ticks run | 1083 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| SS | solana | $7.12 | $7.57 | +43% | +51% | 4.4h |
+| SS | solana | $7.12 | $8.08 | +53% | +53% | 4.5h |
 
 ## Last closed trades
 
@@ -64,16 +64,16 @@ _refit on 590 observations (517 shadow, 73 real), 210 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #1082  equity $350.84  cash $343.38  open 1
+tick #1083  equity $350.96  cash $343.38  open 1
   scanning chains + news...
-  98 raw candidates across 5 chains, 156 headlines/posts
-  11 passed gates | rejected: liquidity too thin x53, no h1 volume x21, too old x8, already discovered x3, sell pressure x1
-  top: SS 0.48 | RESI 0.46 | BEE 0.40 | SI 0.40 | PARASITE 0.33
-  tick bar 0.45 (top 30% of 11, floor 0.45)
+  122 raw candidates across 6 chains, 156 headlines/posts
+  12 passed gates | rejected: liquidity too thin x71, no h1 volume x26, too old x8, already discovered x4, sell pressure x1
+  top: RESI 0.58 | NUTFLEX 0.49 | SS 0.45 | BAGSPAY 0.42 | BEE 0.34
+  tick bar 0.45 (top 30% of 12, floor 0.45)
   no entries this tick
-  shadow: tracking 112, closed 0 this tick (0 would have won)
+  shadow: tracking 111, closed 1 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
-  entries blocked: 7d loss -15.5% <= -15%
+  entries blocked: 7d loss -15.4% <= -15%
 ```
