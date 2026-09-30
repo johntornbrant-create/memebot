@@ -1,33 +1,33 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-30T06:32:28+00:00`
+Updated `2026-09-30T06:57:44+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$348.16** |
-| Return | **-30.37%** (start $500.00) |
-| Cash | $336.31 |
-| Deployed | $11.85 (3.4%) |
-| Open positions | 2 / 8 |
-| Closed trades | 76 (21W / 55L, WR 28%) |
+| Equity | **$346.92** |
+| Return | **-30.62%** (start $500.00) |
+| Cash | $339.18 |
+| Deployed | $7.74 (2.2%) |
+| Open positions | 1 / 8 |
+| Closed trades | 77 (21W / 56L, WR 27%) |
 | Profit factor | 0.51 |
-| Fees + slippage paid | $67.51 |
-| Ticks run | 1092 |
+| Fees + slippage paid | $67.55 |
+| Ticks run | 1094 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| SS | solana | $7.12 | $7.25 | +37% | +95% | 6.0h |
-| NUTFLEX | solana | $7.07 | $4.59 | -34% | +0% | 0.9h |
+| SS | solana | $7.12 | $7.74 | +46% | +95% | 6.4h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| NUTFLEX | $-4.20 | -59% | 1.1h | stop loss -58% |
 | FKCANCER | $-2.88 | -41% | 0.8h | stop loss -39% |
 | SAI | $-3.50 | -49% | 1.5h | stop loss -48% |
 | ARTHUR | $-4.77 | -66% | 0.3h | stop loss -66% |
@@ -42,7 +42,6 @@ Updated `2026-09-30T06:32:28+00:00`
 | Murphy | $-3.60 | -50% | 0.2h | stop loss -49% |
 | PAIDINK | $-3.09 | -60% | 0.6h | ratchet +0% (peak +61%) |
 | GAVCOIN | $-7.41 | -100% | 0.4h | stop loss -48% |
-| INUINK | $-2.90 | -56% | 0.4h | stop loss -54% |
 
 ## Learned weights (v15)
 
@@ -65,16 +64,16 @@ _refit on 613 observations (537 shadow, 76 real), 219 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #1092  equity $348.70  cash $336.31  open 2
+tick #1094  equity $347.03  cash $339.18  open 1
   scanning chains + news...
-  74 raw candidates across 6 chains, 156 headlines/posts
-  7 passed gates | rejected: liquidity too thin x37, no h1 volume x24, too old x3, too new (bot war) x2, already discovered x1
-  top: SS 0.36 | PARASITE 0.28 | RESI 0.26 | SI 0.18 | AIRPAD 0.15
-  tick bar 0.45 (top 30% of 7, floor 0.45)
+  74 raw candidates across 7 chains, 156 headlines/posts
+  9 passed gates | rejected: liquidity too thin x36, no h1 volume x23, too old x5, already discovered x1
+  top: ASI 0.74 | PI 0.60 | FZ1073 0.54 | SS 0.33 | RESI 0.22
+  tick bar 0.60 (top 30% of 9, floor 0.45)
   no entries this tick
-  shadow: tracking 107, closed 4 this tick (0 would have won)
+  shadow: tracking 108, closed 2 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
-  entries blocked: 7d loss -16.2% <= -15%
+  entries blocked: 7d loss -16.5% <= -15%
 ```
