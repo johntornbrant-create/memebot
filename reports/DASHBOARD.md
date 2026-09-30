@@ -1,28 +1,28 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-30T05:54:37+00:00`
+Updated `2026-09-30T06:32:28+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$351.25** |
-| Return | **-29.75%** (start $500.00) |
+| Equity | **$348.16** |
+| Return | **-30.37%** (start $500.00) |
 | Cash | $336.31 |
-| Deployed | $14.94 (4.3%) |
+| Deployed | $11.85 (3.4%) |
 | Open positions | 2 / 8 |
 | Closed trades | 76 (21W / 55L, WR 28%) |
 | Profit factor | 0.51 |
 | Fees + slippage paid | $67.51 |
-| Ticks run | 1089 |
+| Ticks run | 1092 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| SS | solana | $7.12 | $9.55 | +81% | +90% | 5.3h |
-| NUTFLEX | solana | $7.07 | $5.39 | -23% | +0% | 0.2h |
+| SS | solana | $7.12 | $7.25 | +37% | +95% | 6.0h |
+| NUTFLEX | solana | $7.07 | $4.59 | -34% | +0% | 0.9h |
 
 ## Last closed trades
 
@@ -44,37 +44,37 @@ Updated `2026-09-30T05:54:37+00:00`
 | GAVCOIN | $-7.41 | -100% | 0.4h | stop loss -48% |
 | INUINK | $-2.90 | -56% | 0.4h | stop loss -54% |
 
-## Learned weights (v14)
+## Learned weights (v15)
 
-_refit on 590 observations (517 shadow, 73 real), 210 winners (36% base rate)_
+_refit on 613 observations (537 shadow, 76 real), 219 winners (36% base rate)_
 
 | Feature | Weight |
 |---|---|
-| turnover | +0.089 |
-| buy_pressure | +0.074 |
-| not_vertical | -0.071 |
-| momentum_accel | +0.061 |
-| fdv_sanity | +0.053 |
-| buzz | -0.048 |
-| paid_boost | -0.038 |
-| txn_depth | +0.032 |
-| liq_quality | +0.021 |
-| age_sweet | +0.021 |
-| socials | +0.015 |
-| dip_in_uptrend | +0.012 |
+| turnover | +0.097 |
+| buy_pressure | +0.078 |
+| not_vertical | -0.077 |
+| paid_boost | -0.060 |
+| momentum_accel | +0.053 |
+| fdv_sanity | +0.041 |
+| txn_depth | +0.038 |
+| buzz | -0.035 |
+| age_sweet | +0.026 |
+| dip_in_uptrend | +0.023 |
+| socials | +0.013 |
+| liq_quality | +0.008 |
 
 ## Last run log
 ```
-tick #1089  equity $351.17  cash $336.31  open 2
+tick #1092  equity $348.70  cash $336.31  open 2
   scanning chains + news...
-  115 raw candidates across 6 chains, 160 headlines/posts
-  13 passed gates | rejected: liquidity too thin x69, no h1 volume x19, too old x6, already discovered x4, sell pressure x3
-  top: POTUS 0.78 | swordcat 0.69 | NUTFLEX 0.49 | RESI 0.41 | PARASITE 0.36
-  tick bar 0.49 (top 30% of 13, floor 0.45)
+  74 raw candidates across 6 chains, 156 headlines/posts
+  7 passed gates | rejected: liquidity too thin x37, no h1 volume x24, too old x3, too new (bot war) x2, already discovered x1
+  top: SS 0.36 | PARASITE 0.28 | RESI 0.26 | SI 0.18 | AIRPAD 0.15
+  tick bar 0.45 (top 30% of 7, floor 0.45)
   no entries this tick
-  shadow: tracking 111, closed 1 this tick (1 would have won)
+  shadow: tracking 107, closed 4 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
-  entries blocked: 7d loss -15.4% <= -15%
+  entries blocked: 7d loss -16.2% <= -15%
 ```
