@@ -1,33 +1,33 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-30T01:41:03+00:00`
+Updated `2026-09-30T01:53:27+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$348.04** |
-| Return | **-30.39%** (start $500.00) |
-| Cash | $336.57 |
-| Deployed | $11.47 (3.3%) |
-| Open positions | 2 / 8 |
-| Closed trades | 75 (21W / 54L, WR 28%) |
-| Profit factor | 0.52 |
-| Fees + slippage paid | $67.35 |
-| Ticks run | 1058 |
+| Equity | **$347.43** |
+| Return | **-30.51%** (start $500.00) |
+| Cash | $340.76 |
+| Deployed | $6.67 (1.9%) |
+| Open positions | 1 / 8 |
+| Closed trades | 76 (21W / 55L, WR 28%) |
+| Profit factor | 0.51 |
+| Fees + slippage paid | $67.40 |
+| Ticks run | 1060 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| SS | solana | $7.12 | $6.56 | -7% | +7% | 1.1h |
-| FKCANCER | solana | $7.07 | $4.91 | -30% | +0% | 0.7h |
+| SS | solana | $7.12 | $6.67 | -5% | +7% | 1.3h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| FKCANCER | $-2.88 | -41% | 0.8h | stop loss -39% |
 | SAI | $-3.50 | -49% | 1.5h | stop loss -48% |
 | ARTHUR | $-4.77 | -66% | 0.3h | stop loss -66% |
 | WOOF | $-4.47 | -88% | 12.8h | ratchet +222% (peak +360%) |
@@ -42,7 +42,6 @@ Updated `2026-09-30T01:41:03+00:00`
 | PAIDINK | $-3.09 | -60% | 0.6h | ratchet +0% (peak +61%) |
 | GAVCOIN | $-7.41 | -100% | 0.4h | stop loss -48% |
 | INUINK | $-2.90 | -56% | 0.4h | stop loss -54% |
-| Q4 | $-0.65 | -11% | 13.7h | ratchet +0% (peak +48%) |
 
 ## Learned weights (v14)
 
@@ -65,17 +64,16 @@ _refit on 590 observations (517 shadow, 73 real), 210 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #1058  equity $352.65  cash $332.88  open 3
-  SELL SAI        100% @ $0.0001521  ->  $3.68   [stop loss -48%]
+tick #1060  equity $347.36  cash $340.76  open 1
   scanning chains + news...
-  97 raw candidates across 8 chains, 160 headlines/posts
-  12 passed gates | rejected: liquidity too thin x45, no h1 volume x36, already discovered x3, sell pressure x1
-  top: DAD 0.83 | tok 0.78 | BEE 0.63 | RESI 0.52 | 犇犇 0.49
-  tick bar 0.63 (top 30% of 12, floor 0.45)
+  110 raw candidates across 5 chains, 156 headlines/posts
+  14 passed gates | rejected: liquidity too thin x58, no h1 volume x23, too old x9, already discovered x4, sell pressure x1
+  top: DAD 0.79 | RESI 0.58 | FKCANCER 0.52 | 犇犇 0.44 | HI 0.40
+  tick bar 0.45 (top 30% of 14, floor 0.45)
   no entries this tick
-  shadow: tracking 107, closed 2 this tick (1 would have won)
+  shadow: tracking 108, closed 1 this tick (1 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
-  entries blocked: 7d loss -16.2% <= -15%
+  entries blocked: 7d loss -16.3% <= -15%
 ```
