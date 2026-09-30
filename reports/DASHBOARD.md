@@ -1,32 +1,31 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-30T09:43:57+00:00`
+Updated `2026-09-30T09:57:40+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$345.84** |
-| Return | **-30.83%** (start $500.00) |
-| Cash | $339.18 |
-| Deployed | $6.66 (1.9%) |
-| Open positions | 1 / 8 |
-| Closed trades | 77 (21W / 56L, WR 27%) |
+| Equity | **$345.14** |
+| Return | **-30.97%** (start $500.00) |
+| Cash | $345.14 |
+| Deployed | $-0.00 (-0.0%) |
+| Open positions | 0 / 8 |
+| Closed trades | 78 (22W / 56L, WR 28%) |
 | Profit factor | 0.51 |
-| Fees + slippage paid | $67.55 |
-| Ticks run | 1113 |
+| Fees + slippage paid | $67.62 |
+| Ticks run | 1115 |
 
 ## Open positions
 
-| Token | Chain | Cost | Now | P&L | Peak | Held |
-|---|---|---|---|---|---|---|
-| SS | solana | $7.12 | $6.66 | +26% | +95% | 9.2h |
+_flat_
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| SS | $+1.46 | +21% | 9.3h | ratchet +25% (peak +95%) |
 | NUTFLEX | $-4.20 | -59% | 1.1h | stop loss -58% |
 | FKCANCER | $-2.88 | -41% | 0.8h | stop loss -39% |
 | SAI | $-3.50 | -49% | 1.5h | stop loss -48% |
@@ -41,7 +40,6 @@ Updated `2026-09-30T09:43:57+00:00`
 | Adventures | $-3.57 | -50% | 0.2h | stop loss -49% |
 | Murphy | $-3.60 | -50% | 0.2h | stop loss -49% |
 | PAIDINK | $-3.09 | -60% | 0.6h | ratchet +0% (peak +61%) |
-| GAVCOIN | $-7.41 | -100% | 0.4h | stop loss -48% |
 
 ## Learned weights (v15)
 
@@ -64,16 +62,16 @@ _refit on 613 observations (537 shadow, 76 real), 219 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #1113  equity $346.00  cash $339.18  open 1
+tick #1115  equity $345.14  cash $345.14  open 0
   scanning chains + news...
-  105 raw candidates across 6 chains, 156 headlines/posts
-  7 passed gates | rejected: liquidity too thin x62, no h1 volume x35, sell pressure x1
-  top: APE 0.82 | CSI 0.51 | SS 0.36 | AIRPAD 0.30 | STOCK 0.21
-  tick bar 0.51 (top 30% of 7, floor 0.45)
+  148 raw candidates across 7 chains, 156 headlines/posts
+  10 passed gates | rejected: liquidity too thin x70, no h1 volume x49, already discovered x10, too old x8, sell pressure x1
+  top: APE 0.73 | CSI 0.54 | SS 0.37 | AIRPAD 0.31 | RESI 0.24
+  tick bar 0.45 (top 30% of 10, floor 0.45)
   no entries this tick
-  shadow: tracking 101, closed 1 this tick (0 would have won)
+  shadow: tracking 101, closed 0 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
-  entries blocked: 7d loss -16.7% <= -15%
+  entries blocked: 7d loss -16.9% <= -15%
 ```
