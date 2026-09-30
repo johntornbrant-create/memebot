@@ -1,27 +1,27 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-30T04:42:46+00:00`
+Updated `2026-09-30T04:55:50+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$351.35** |
-| Return | **-29.73%** (start $500.00) |
+| Equity | **$350.96** |
+| Return | **-29.81%** (start $500.00) |
 | Cash | $343.38 |
-| Deployed | $7.97 (2.3%) |
+| Deployed | $7.57 (2.2%) |
 | Open positions | 1 / 8 |
 | Closed trades | 76 (21W / 55L, WR 28%) |
 | Profit factor | 0.51 |
 | Fees + slippage paid | $67.44 |
-| Ticks run | 1080 |
+| Ticks run | 1082 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| SS | solana | $7.12 | $7.97 | +51% | +51% | 4.1h |
+| SS | solana | $7.12 | $7.57 | +43% | +51% | 4.4h |
 
 ## Last closed trades
 
@@ -64,17 +64,16 @@ _refit on 590 observations (517 shadow, 73 real), 210 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #1080  equity $350.04  cash $340.76  open 1
-  SELL SS         25% @ $0.001496  ->  $2.62   [take profit +50% (sold 25%)]
+tick #1082  equity $350.84  cash $343.38  open 1
   scanning chains + news...
-  130 raw candidates across 5 chains, 156 headlines/posts
-  12 passed gates | rejected: liquidity too thin x69, no h1 volume x35, too old x8, already discovered x4, sell pressure x1
-  top: NUTFLEX 0.67 | POTUS 0.55 | SI 0.52 | BEE 0.50 | SS 0.46
-  tick bar 0.52 (top 30% of 12, floor 0.45)
+  98 raw candidates across 5 chains, 156 headlines/posts
+  11 passed gates | rejected: liquidity too thin x53, no h1 volume x21, too old x8, already discovered x3, sell pressure x1
+  top: SS 0.48 | RESI 0.46 | BEE 0.40 | SI 0.40 | PARASITE 0.33
+  tick bar 0.45 (top 30% of 11, floor 0.45)
   no entries this tick
-  shadow: tracking 112, closed 1 this tick (1 would have won)
+  shadow: tracking 112, closed 0 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
-  entries blocked: 7d loss -15.4% <= -15%
+  entries blocked: 7d loss -15.5% <= -15%
 ```
