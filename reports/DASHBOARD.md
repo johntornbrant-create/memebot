@@ -1,27 +1,27 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-30T07:10:08+00:00`
+Updated `2026-09-30T07:30:13+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$346.60** |
-| Return | **-30.68%** (start $500.00) |
+| Equity | **$347.10** |
+| Return | **-30.58%** (start $500.00) |
 | Cash | $339.18 |
-| Deployed | $7.42 (2.1%) |
+| Deployed | $7.93 (2.3%) |
 | Open positions | 1 / 8 |
 | Closed trades | 77 (21W / 56L, WR 27%) |
 | Profit factor | 0.51 |
 | Fees + slippage paid | $67.55 |
-| Ticks run | 1096 |
+| Ticks run | 1098 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| SS | solana | $7.12 | $7.42 | +40% | +95% | 6.6h |
+| SS | solana | $7.12 | $7.93 | +50% | +95% | 6.9h |
 
 ## Last closed trades
 
@@ -64,16 +64,16 @@ _refit on 613 observations (537 shadow, 76 real), 219 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #1096  equity $346.52  cash $339.18  open 1
+tick #1098  equity $347.09  cash $339.18  open 1
   scanning chains + news...
-  125 raw candidates across 9 chains, 156 headlines/posts
-  8 passed gates | rejected: liquidity too thin x75, no h1 volume x35, already discovered x5, sell pressure x1, too old x1
-  top: PI 0.54 | SS 0.30 | AIRPAD 0.23 | RESI 0.22 | STOCK 0.19
+  84 raw candidates across 8 chains, 156 headlines/posts
+  8 passed gates | rejected: liquidity too thin x45, no h1 volume x23, too old x4, already discovered x3, sell pressure x1
+  top: PI 0.56 | SS 0.34 | RESI 0.23 | AIRPAD 0.20 | Pygoscelis 0.19
   tick bar 0.45 (top 30% of 8, floor 0.45)
   no entries this tick
-  shadow: tracking 106, closed 2 this tick (1 would have won)
+  shadow: tracking 105, closed 1 this tick (1 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
-  entries blocked: 7d loss -16.5% <= -15%
+  entries blocked: 7d loss -16.4% <= -15%
 ```
