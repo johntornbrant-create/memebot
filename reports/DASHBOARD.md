@@ -1,27 +1,27 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-30T02:25:49+00:00`
+Updated `2026-09-30T02:39:53+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$347.11** |
-| Return | **-30.58%** (start $500.00) |
+| Equity | **$347.01** |
+| Return | **-30.60%** (start $500.00) |
 | Cash | $340.76 |
-| Deployed | $6.34 (1.8%) |
+| Deployed | $6.25 (1.8%) |
 | Open positions | 1 / 8 |
 | Closed trades | 76 (21W / 55L, WR 28%) |
 | Profit factor | 0.51 |
 | Fees + slippage paid | $67.40 |
-| Ticks run | 1064 |
+| Ticks run | 1066 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| SS | solana | $7.12 | $6.34 | -10% | +7% | 1.9h |
+| SS | solana | $7.12 | $6.25 | -11% | +7% | 2.1h |
 
 ## Last closed trades
 
@@ -64,14 +64,14 @@ _refit on 590 observations (517 shadow, 73 real), 210 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #1064  equity $346.69  cash $340.76  open 1
+tick #1066  equity $347.02  cash $340.76  open 1
   scanning chains + news...
-  103 raw candidates across 4 chains, 156 headlines/posts
-  13 passed gates | rejected: liquidity too thin x56, no h1 volume x23, too old x8, already discovered x2, too new (bot war) x1
-  top: NUTFLEX 0.83 | supercycle 0.59 | RESI 0.54 | 犇犇 0.50 | SS 0.41
-  tick bar 0.54 (top 30% of 13, floor 0.45)
+  123 raw candidates across 5 chains, 156 headlines/posts
+  12 passed gates | rejected: liquidity too thin x72, no h1 volume x27, too old x8, already discovered x3, too new (bot war) x1
+  top: NUTFLEX 0.79 | discat 0.78 | BEE 0.62 | supercycle 0.57 | RESI 0.54
+  tick bar 0.62 (top 30% of 12, floor 0.45)
   no entries this tick
-  shadow: tracking 110, closed 0 this tick (0 would have won)
+  shadow: tracking 110, closed 1 this tick (1 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
