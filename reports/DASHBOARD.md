@@ -1,27 +1,27 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-09-30T03:06:21+00:00`
+Updated `2026-09-30T03:27:44+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$347.69** |
-| Return | **-30.46%** (start $500.00) |
+| Equity | **$348.47** |
+| Return | **-30.31%** (start $500.00) |
 | Cash | $340.76 |
-| Deployed | $6.93 (2.0%) |
+| Deployed | $7.71 (2.2%) |
 | Open positions | 1 / 8 |
 | Closed trades | 76 (21W / 55L, WR 28%) |
 | Profit factor | 0.51 |
 | Fees + slippage paid | $67.40 |
-| Ticks run | 1070 |
+| Ticks run | 1072 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| SS | solana | $7.12 | $6.93 | -2% | +7% | 2.5h |
+| SS | solana | $7.12 | $7.71 | +9% | +10% | 2.9h |
 
 ## Last closed trades
 
@@ -64,16 +64,16 @@ _refit on 590 observations (517 shadow, 73 real), 210 winners (36% base rate)_
 
 ## Last run log
 ```
-tick #1070  equity $347.54  cash $340.76  open 1
+tick #1072  equity $348.52  cash $340.76  open 1
   scanning chains + news...
-  99 raw candidates across 7 chains, 116 headlines/posts
-  12 passed gates | rejected: liquidity too thin x50, no h1 volume x32, sell pressure x2, already discovered x2, too new (bot war) x1
-  top: BEE 0.85 | SI 0.72 | discat 0.64 | TRENCHDOTS 0.63 | RESI 0.47
-  tick bar 0.64 (top 30% of 12, floor 0.45)
+  90 raw candidates across 5 chains, 156 headlines/posts
+  11 passed gates | rejected: liquidity too thin x50, no h1 volume x24, sell pressure x2, already discovered x2, too new (bot war) x1
+  top: BEE 0.87 | LionDad 0.75 | SI 0.65 | 犇犇 0.43 | SS 0.42
+  tick bar 0.65 (top 30% of 11, floor 0.45)
   no entries this tick
-  shadow: tracking 110, closed 2 this tick (1 would have won)
+  shadow: tracking 111, closed 0 this tick (0 would have won)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
     MISSED Moon       peak +2942%  (scored 0.86)
-  entries blocked: 7d loss -16.3% <= -15%
+  entries blocked: 7d loss -16.1% <= -15%
 ```
