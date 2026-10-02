@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-02T02:35:40+00:00`
+Updated `2026-10-02T09:01:24+00:00`
 
 ## Equity
 
@@ -15,7 +15,7 @@ Updated `2026-10-02T02:35:40+00:00`
 | Closed trades | 78 (22W / 56L, WR 28%) |
 | Profit factor | 0.51 |
 | Fees + slippage paid | $67.62 |
-| Ticks run | 1179 |
+| Ticks run | 1181 |
 
 ## Open positions
 
@@ -41,35 +41,35 @@ _flat_
 | Murphy | $-3.60 | -50% | 0.2h | stop loss -49% |
 | PAIDINK | $-3.09 | -60% | 0.6h | ratchet +0% (peak +61%) |
 
-## Learned weights (v19)
+## Learned weights (v20)
 
-_refit on 770 observations (692 shadow, 78 real), 275 winners (36% base rate)_
+_refit on 780 observations (702 shadow, 78 real), 275 winners (35% base rate)_
 
 | Feature | Weight |
 |---|---|
-| turnover | +0.095 |
-| not_vertical | -0.089 |
-| buy_pressure | +0.080 |
-| txn_depth | +0.060 |
-| momentum_accel | +0.049 |
-| dip_in_uptrend | +0.036 |
-| buzz | -0.024 |
-| age_sweet | +0.022 |
-| socials | +0.021 |
-| paid_boost | -0.015 |
-| liq_quality | -0.010 |
-| fdv_sanity | +0.009 |
+| turnover | +0.094 |
+| buy_pressure | +0.081 |
+| not_vertical | -0.080 |
+| txn_depth | +0.062 |
+| momentum_accel | +0.050 |
+| dip_in_uptrend | +0.029 |
+| buzz | -0.022 |
+| socials | +0.020 |
+| age_sweet | +0.013 |
+| fdv_sanity | +0.012 |
+| paid_boost | -0.009 |
+| liq_quality | -0.008 |
 
 ## Last run log
 ```
-tick #1179  equity $345.14  cash $345.14  open 0
+tick #1181  equity $345.14  cash $345.14  open 0
   scanning chains + news...
-  106 raw candidates across 4 chains, 159 headlines/posts
-  12 passed gates | rejected: liquidity too thin x61, no h1 volume x21, too old x6, already discovered x3, sell pressure x2
-  top: SACC 0.57 | Jane 0.48 | test 0.44 | e/acc 0.39 | SHIT 0.28
-  tick bar 0.45 (top 30% of 12, floor 0.45)
+  156 raw candidates across 6 chains, 159 headlines/posts
+  6 passed gates | rejected: liquidity too thin x98, no h1 volume x37, too old x6, already discovered x6, unknown age x2
+  top: WORTH 0.30 | PUMPE 0.28 | D/ACC 0.24 | BlackHoles 0.18 | HI 0.17
+  tick bar 0.45 (top 30% of 6, floor 0.45)
   no entries this tick
-  shadow: tracking 33, closed 7 this tick (0 would have won)
+  shadow: tracking 29, closed 7 this tick (1 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
