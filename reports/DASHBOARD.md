@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-03T02:22:04+00:00`
+Updated `2026-10-03T08:23:49+00:00`
 
 ## Equity
 
@@ -15,7 +15,7 @@ Updated `2026-10-03T02:22:04+00:00`
 | Closed trades | 78 (22W / 56L, WR 28%) |
 | Profit factor | 0.51 |
 | Fees + slippage paid | $67.62 |
-| Ticks run | 1189 |
+| Ticks run | 1191 |
 
 ## Open positions
 
@@ -41,35 +41,35 @@ _flat_
 | Murphy | $-3.60 | -50% | 0.2h | stop loss -49% |
 | PAIDINK | $-3.09 | -60% | 0.6h | ratchet +0% (peak +61%) |
 
-## Learned weights (v23)
+## Learned weights (v24)
 
-_refit on 797 observations (719 shadow, 78 real), 278 winners (35% base rate)_
+_refit on 807 observations (729 shadow, 78 real), 280 winners (35% base rate)_
 
 | Feature | Weight |
 |---|---|
-| turnover | +0.094 |
-| not_vertical | -0.079 |
-| buy_pressure | +0.074 |
-| txn_depth | +0.062 |
-| momentum_accel | +0.047 |
-| dip_in_uptrend | +0.029 |
-| socials | +0.027 |
-| buzz | -0.022 |
-| paid_boost | -0.016 |
-| liq_quality | -0.013 |
-| fdv_sanity | +0.012 |
+| turnover | +0.088 |
+| not_vertical | -0.074 |
+| buy_pressure | +0.073 |
+| txn_depth | +0.069 |
+| momentum_accel | +0.052 |
+| dip_in_uptrend | +0.032 |
+| buzz | -0.026 |
+| socials | +0.026 |
+| liq_quality | -0.014 |
+| paid_boost | -0.011 |
+| fdv_sanity | +0.010 |
 | age_sweet | +0.008 |
 
 ## Last run log
 ```
-tick #1189  equity $345.14  cash $345.14  open 0
+tick #1191  equity $345.14  cash $345.14  open 0
   scanning chains + news...
-  112 raw candidates across 7 chains, 159 headlines/posts
-  7 passed gates | rejected: liquidity too thin x57, no h1 volume x40, too old x4, already discovered x3, too new (bot war) x1
-  top: SEMI 0.78 | POOPYBOT 0.51 | HOOKEDINU 0.46 | m/acc 0.37 | BNBSZN 0.25
-  tick bar 0.51 (top 30% of 7, floor 0.45)
+  115 raw candidates across 6 chains, 159 headlines/posts
+  3 passed gates | rejected: liquidity too thin x86, no h1 volume x21, too old x2, exit-liquidity trap (FDV/liq) x1, too few txns x1
+  top: FROGE 0.31 | www 0.16 | ABU 0.15
+  tick bar 0.45 (top 30% of 3, floor 0.45)
   no entries this tick
-  shadow: tracking 31, closed 0 this tick (0 would have won)
+  shadow: tracking 26, closed 6 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
