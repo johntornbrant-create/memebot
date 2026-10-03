@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-03T13:35:05+00:00`
+Updated `2026-10-03T17:38:00+00:00`
 
 ## Equity
 
@@ -15,7 +15,7 @@ Updated `2026-10-03T13:35:05+00:00`
 | Closed trades | 78 (22W / 56L, WR 28%) |
 | Profit factor | 0.51 |
 | Fees + slippage paid | $67.62 |
-| Ticks run | 1193 |
+| Ticks run | 1195 |
 
 ## Open positions
 
@@ -41,35 +41,35 @@ _flat_
 | Murphy | $-3.60 | -50% | 0.2h | stop loss -49% |
 | PAIDINK | $-3.09 | -60% | 0.6h | ratchet +0% (peak +61%) |
 
-## Learned weights (v25)
+## Learned weights (v26)
 
-_refit on 813 observations (735 shadow, 78 real), 280 winners (34% base rate)_
+_refit on 816 observations (738 shadow, 78 real), 280 winners (34% base rate)_
 
 | Feature | Weight |
 |---|---|
-| turnover | +0.085 |
-| buy_pressure | +0.078 |
-| not_vertical | -0.076 |
-| txn_depth | +0.069 |
+| turnover | +0.086 |
+| buy_pressure | +0.079 |
+| not_vertical | -0.073 |
+| txn_depth | +0.067 |
 | momentum_accel | +0.051 |
 | dip_in_uptrend | +0.035 |
-| socials | +0.026 |
-| buzz | -0.024 |
-| liq_quality | -0.021 |
-| fdv_sanity | +0.010 |
-| age_sweet | +0.009 |
-| paid_boost | -0.008 |
+| buzz | -0.028 |
+| socials | +0.025 |
+| liq_quality | -0.019 |
+| fdv_sanity | +0.009 |
+| age_sweet | +0.008 |
+| paid_boost | -0.007 |
 
 ## Last run log
 ```
-tick #1193  equity $345.14  cash $345.14  open 0
+tick #1195  equity $345.14  cash $345.14  open 0
   scanning chains + news...
-  125 raw candidates across 6 chains, 159 headlines/posts
-  4 passed gates | rejected: liquidity too thin x99, no h1 volume x20, too new (bot war) x1, too old x1
-  top: Milly 0.37 | DARKPOOL 0.28 | PRINTR 0.13 | ABU 0.09
-  tick bar 0.45 (top 30% of 4, floor 0.45)
+  100 raw candidates across 7 chains, 159 headlines/posts
+  9 passed gates | rejected: liquidity too thin x65, no h1 volume x19, already discovered x4, too new (bot war) x2, too old x1
+  top: catius 0.72 | WHIPCAT 0.59 | PRINTR 0.56 | SI 0.54 | IDOL 0.29
+  tick bar 0.53 (top 30% of 9, floor 0.45)
   no entries this tick
-  shadow: tracking 26, closed 3 this tick (0 would have won)
+  shadow: tracking 27, closed 6 this tick (2 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
