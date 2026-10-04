@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-04T14:31:55+00:00`
+Updated `2026-10-04T18:22:22+00:00`
 
 ## Equity
 
@@ -15,7 +15,7 @@ Updated `2026-10-04T14:31:55+00:00`
 | Closed trades | 78 (22W / 56L, WR 28%) |
 | Profit factor | 0.51 |
 | Fees + slippage paid | $67.62 |
-| Ticks run | 1204 |
+| Ticks run | 1206 |
 
 ## Open positions
 
@@ -41,35 +41,35 @@ _flat_
 | Murphy | $-3.60 | -50% | 0.2h | stop loss -49% |
 | PAIDINK | $-3.09 | -60% | 0.6h | ratchet +0% (peak +61%) |
 
-## Learned weights (v29)
+## Learned weights (v30)
 
-_refit on 839 observations (761 shadow, 78 real), 289 winners (34% base rate)_
+_refit on 842 observations (764 shadow, 78 real), 289 winners (34% base rate)_
 
 | Feature | Weight |
 |---|---|
 | turnover | +0.101 |
-| buy_pressure | +0.082 |
+| buy_pressure | +0.083 |
 | not_vertical | -0.074 |
-| txn_depth | +0.051 |
+| txn_depth | +0.052 |
 | momentum_accel | +0.037 |
-| buzz | -0.037 |
+| buzz | -0.035 |
 | socials | +0.026 |
-| fdv_sanity | +0.026 |
-| dip_in_uptrend | +0.023 |
-| liq_quality | -0.022 |
+| dip_in_uptrend | +0.026 |
+| fdv_sanity | +0.024 |
+| liq_quality | -0.020 |
 | paid_boost | +0.004 |
-| age_sweet | -0.000 |
+| age_sweet | -0.003 |
 
 ## Last run log
 ```
-tick #1204  equity $345.14  cash $345.14  open 0
+tick #1206  equity $345.14  cash $345.14  open 0
   scanning chains + news...
-  125 raw candidates across 6 chains, 159 headlines/posts
-  15 passed gates | rejected: liquidity too thin x68, no h1 volume x30, too old x10, already discovered x1, sell pressure x1
-  top: 躺赢 0.60 | SA 0.55 | BVeil 0.47 | SIF 0.46 | 币安世界 0.42
-  tick bar 0.46 (top 30% of 15, floor 0.45)
+  116 raw candidates across 8 chains, 159 headlines/posts
+  4 passed gates | rejected: liquidity too thin x72, no h1 volume x31, already discovered x6, too old x3
+  top: SA 0.65 | CELLUMO 0.42 | PAYR 0.34 | ABU 0.07
+  tick bar 0.49 (top 30% of 4, floor 0.45)
   no entries this tick
-  shadow: tracking 33, closed 3 this tick (0 would have won)
+  shadow: tracking 28, closed 7 this tick (3 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
