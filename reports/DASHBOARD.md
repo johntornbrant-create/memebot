@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-05T00:11:53+00:00`
+Updated `2026-10-05T05:33:41+00:00`
 
 ## Equity
 
@@ -9,17 +9,19 @@ Updated `2026-10-05T00:11:53+00:00`
 |---|---|
 | Equity | **$345.14** |
 | Return | **-30.97%** (start $500.00) |
-| Cash | $345.14 |
-| Deployed | $-0.00 (-0.0%) |
-| Open positions | 0 / 8 |
+| Cash | $338.24 |
+| Deployed | $6.90 (2.0%) |
+| Open positions | 1 / 8 |
 | Closed trades | 78 (22W / 56L, WR 28%) |
 | Profit factor | 0.51 |
-| Fees + slippage paid | $67.62 |
-| Ticks run | 1209 |
+| Fees + slippage paid | $67.69 |
+| Ticks run | 1210 |
 
 ## Open positions
 
-_flat_
+| Token | Chain | Cost | Now | P&L | Peak | Held |
+|---|---|---|---|---|---|---|
+| XMAN | solana | $6.90 | $6.83 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
@@ -41,37 +43,36 @@ _flat_
 | Murphy | $-3.60 | -50% | 0.2h | stop loss -49% |
 | PAIDINK | $-3.09 | -60% | 0.6h | ratchet +0% (peak +61%) |
 
-## Learned weights (v31)
+## Learned weights (v32)
 
-_refit on 849 observations (771 shadow, 78 real), 292 winners (34% base rate)_
+_refit on 854 observations (776 shadow, 78 real), 293 winners (34% base rate)_
 
 | Feature | Weight |
 |---|---|
-| turnover | +0.102 |
-| buy_pressure | +0.089 |
+| turnover | +0.101 |
+| buy_pressure | +0.087 |
 | not_vertical | -0.077 |
-| momentum_accel | +0.041 |
-| txn_depth | +0.040 |
-| buzz | -0.037 |
-| dip_in_uptrend | +0.030 |
-| fdv_sanity | +0.024 |
+| momentum_accel | +0.043 |
+| txn_depth | +0.043 |
+| buzz | -0.036 |
+| dip_in_uptrend | +0.032 |
+| fdv_sanity | +0.023 |
 | socials | +0.021 |
-| liq_quality | -0.018 |
-| paid_boost | +0.002 |
-| age_sweet | +0.000 |
+| liq_quality | -0.015 |
+| paid_boost | -0.004 |
+| age_sweet | -0.002 |
 
 ## Last run log
 ```
-tick #1209  equity $345.14  cash $345.14  open 0
+tick #1210  equity $345.14  cash $345.14  open 0
   scanning chains + news...
-  121 raw candidates across 7 chains, 159 headlines/posts
-  5 passed gates | rejected: liquidity too thin x73, no h1 volume x41, too old x1, already discovered x1
-  top: Army 0.67 | BATONROGUE 0.45 | WHIPCAT 0.31 | AGENTCAT 0.31 | EGO 0.29
-  tick bar 0.50 (top 30% of 5, floor 0.45)
-  no entries this tick
-  shadow: tracking 30, closed 5 this tick (1 would have won)
+  178 raw candidates across 9 chains, 159 headlines/posts
+  18 passed gates | rejected: liquidity too thin x106, no h1 volume x41, too old x9, too new (bot war) x2, sell pressure x1
+  top: XMAN 0.63 | AGENTCAT 0.42 | HIGGS 0.38 | Gizmo 0.36 | MEMEAGENCY 0.33
+  tick bar 0.45 (top 30% of 18, floor 0.45)
+  BUY[exploit] XMAN       $6.90 @ $0.0004882  score 0.63  solana  liq $65,155
+  shadow: tracking 35, closed 5 this tick (1 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
-  entries blocked: 7d loss -17.7% <= -15%
 ```
