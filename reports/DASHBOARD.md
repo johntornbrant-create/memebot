@@ -1,32 +1,33 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-05T05:33:41+00:00`
+Updated `2026-10-05T12:38:44+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$345.14** |
-| Return | **-30.97%** (start $500.00) |
-| Cash | $338.24 |
-| Deployed | $6.90 (2.0%) |
+| Equity | **$338.26** |
+| Return | **-32.35%** (start $500.00) |
+| Cash | $331.49 |
+| Deployed | $6.77 (2.0%) |
 | Open positions | 1 / 8 |
-| Closed trades | 78 (22W / 56L, WR 28%) |
-| Profit factor | 0.51 |
-| Fees + slippage paid | $67.69 |
-| Ticks run | 1210 |
+| Closed trades | 79 (22W / 57L, WR 28%) |
+| Profit factor | 0.50 |
+| Fees + slippage paid | $67.77 |
+| Ticks run | 1212 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| XMAN | solana | $6.90 | $6.83 | +0% | +0% | 0.0h |
+| TIT | solana | $6.77 | $6.70 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| XMAN | $-6.88 | -100% | 7.1h | stop loss -99% |
 | SS | $+1.46 | +21% | 9.3h | ratchet +25% (peak +95%) |
 | NUTFLEX | $-4.20 | -59% | 1.1h | stop loss -58% |
 | FKCANCER | $-2.88 | -41% | 0.8h | stop loss -39% |
@@ -41,7 +42,6 @@ Updated `2026-10-05T05:33:41+00:00`
 | SITRUMP | $-3.03 | -42% | 1.1h | stop loss -41% |
 | Adventures | $-3.57 | -50% | 0.2h | stop loss -49% |
 | Murphy | $-3.60 | -50% | 0.2h | stop loss -49% |
-| PAIDINK | $-3.09 | -60% | 0.6h | ratchet +0% (peak +61%) |
 
 ## Learned weights (v32)
 
@@ -64,14 +64,15 @@ _refit on 854 observations (776 shadow, 78 real), 293 winners (34% base rate)_
 
 ## Last run log
 ```
-tick #1210  equity $345.14  cash $345.14  open 0
+tick #1212  equity $346.98  cash $338.24  open 1
+  SELL XMAN       100% @ $2.741e-06  ->  $0.02   [stop loss -99%]
   scanning chains + news...
-  178 raw candidates across 9 chains, 159 headlines/posts
-  18 passed gates | rejected: liquidity too thin x106, no h1 volume x41, too old x9, too new (bot war) x2, sell pressure x1
-  top: XMAN 0.63 | AGENTCAT 0.42 | HIGGS 0.38 | Gizmo 0.36 | MEMEAGENCY 0.33
-  tick bar 0.45 (top 30% of 18, floor 0.45)
-  BUY[exploit] XMAN       $6.90 @ $0.0004882  score 0.63  solana  liq $65,155
-  shadow: tracking 35, closed 5 this tick (1 would have won)
+  129 raw candidates across 6 chains, 160 headlines/posts
+  9 passed gates | rejected: liquidity too thin x67, no h1 volume x36, too old x8, already discovered x7, too new (bot war) x1
+  top: TIT 0.60 | GOMO 0.54 | BATONROGUE 0.46 | AGENTCAT 0.41 | Sacabambaspis 0.39
+  tick bar 0.48 (top 30% of 9, floor 0.45)
+  BUY[exploit] TIT        $6.77 @ $0.0001894  score 0.60  solana  liq $36,920
+  shadow: tracking 31, closed 7 this tick (2 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
