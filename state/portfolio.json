@@ -1,8 +1,8 @@
 {
   "started": "2026-09-22T16:04:55+00:00",
-  "updated": "2026-10-05T12:38:44+00:00",
+  "updated": "2026-10-05T12:40:40+00:00",
   "cash": 331.49303121397503,
-  "equity": 338.263,
+  "equity": 337.9893,
   "positions": {
     "solana:Ar3QBegnCQr6ZFyN9h637ar9JCxZRvdboiR1QzMrpump": {
       "id": "f5182801ef",
@@ -34,7 +34,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0001894
+      "last_price": 0.0001836
     }
   },
   "blacklist": {
@@ -102,7 +102,7 @@
     "trades_today": 2
   },
   "stats": {
-    "ticks": 1212,
+    "ticks": 1213,
     "opened": 80,
     "closed": 79,
     "wins": 22,
