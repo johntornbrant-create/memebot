@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-07T02:35:53+00:00`
+Updated `2026-10-07T09:15:48+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $322.57 below $325.00. Manual reset required.
 
@@ -17,7 +17,7 @@ Updated `2026-10-07T02:35:53+00:00`
 | Closed trades | 82 (22W / 60L, WR 27%) |
 | Profit factor | 0.48 |
 | Fees + slippage paid | $68.00 |
-| Ticks run | 1225 |
+| Ticks run | 1227 |
 
 ## Open positions
 
@@ -43,35 +43,35 @@ _flat_
 | SNOWBALL | $+7.23 | +101% | 0.8h | ratchet +78% (peak +154%) |
 | 鹅次元 | $+3.43 | +48% | 0.9h | ratchet +88% (peak +168%) |
 
-## Learned weights (v37)
+## Learned weights (v38)
 
-_refit on 901 observations (819 shadow, 82 real), 306 winners (34% base rate)_
+_refit on 907 observations (825 shadow, 82 real), 306 winners (34% base rate)_
 
 | Feature | Weight |
 |---|---|
-| turnover | +0.095 |
-| buy_pressure | +0.095 |
+| buy_pressure | +0.097 |
+| turnover | +0.092 |
 | not_vertical | -0.080 |
-| txn_depth | +0.060 |
-| momentum_accel | +0.043 |
+| txn_depth | +0.058 |
+| momentum_accel | +0.044 |
 | dip_in_uptrend | +0.034 |
-| socials | +0.019 |
-| buzz | -0.018 |
+| socials | +0.017 |
+| buzz | -0.016 |
 | fdv_sanity | +0.003 |
-| liq_quality | +0.002 |
+| liq_quality | +0.003 |
+| paid_boost | -0.003 |
 | age_sweet | -0.002 |
-| paid_boost | +0.001 |
 
 ## Last run log
 ```
-tick #1225  equity $322.57  cash $322.57  open 0
+tick #1227  equity $322.57  cash $322.57  open 0
   scanning chains + news...
-  136 raw candidates across 5 chains, 157 headlines/posts
-  12 passed gates | rejected: liquidity too thin x80, no h1 volume x28, too old x10, sell pressure x3, already discovered x2
-  top: SNDWITCH 0.56 | SI276 0.49 | Frank 0.48 | CROWN 0.47 | BI 0.28
-  tick bar 0.48 (top 30% of 12, floor 0.45)
+  117 raw candidates across 4 chains, 157 headlines/posts
+  13 passed gates | rejected: liquidity too thin x65, no h1 volume x23, too old x11, already discovered x5
+  top: ENGRAM 0.70 | CAESAR 0.60 | SpaceXSI 0.51 | EVERYTHING 0.47 | SNDWITCH 0.40
+  tick bar 0.48 (top 30% of 13, floor 0.45)
   no entries this tick
-  shadow: tracking 33, closed 6 this tick (0 would have won)
+  shadow: tracking 37, closed 3 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
