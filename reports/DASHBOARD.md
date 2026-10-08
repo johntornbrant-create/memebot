@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-08T01:13:05+00:00`
+Updated `2026-10-08T07:23:14+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $322.57 below $325.00. Manual reset required.
 
@@ -17,7 +17,7 @@ Updated `2026-10-08T01:13:05+00:00`
 | Closed trades | 82 (22W / 60L, WR 27%) |
 | Profit factor | 0.48 |
 | Fees + slippage paid | $68.00 |
-| Ticks run | 1233 |
+| Ticks run | 1235 |
 
 ## Open positions
 
@@ -43,35 +43,35 @@ _flat_
 | SNOWBALL | $+7.23 | +101% | 0.8h | ratchet +78% (peak +154%) |
 | 鹅次元 | $+3.43 | +48% | 0.9h | ratchet +88% (peak +168%) |
 
-## Learned weights (v40)
+## Learned weights (v41)
 
-_refit on 930 observations (848 shadow, 82 real), 313 winners (34% base rate)_
+_refit on 937 observations (855 shadow, 82 real), 316 winners (34% base rate)_
 
 | Feature | Weight |
 |---|---|
-| turnover | +0.101 |
-| buy_pressure | +0.093 |
-| not_vertical | -0.075 |
-| txn_depth | +0.049 |
-| momentum_accel | +0.042 |
-| dip_in_uptrend | +0.028 |
-| socials | +0.023 |
-| buzz | -0.018 |
-| age_sweet | -0.010 |
-| liq_quality | +0.006 |
-| paid_boost | -0.005 |
-| fdv_sanity | +0.003 |
+| turnover | +0.104 |
+| buy_pressure | +0.095 |
+| not_vertical | -0.076 |
+| momentum_accel | +0.051 |
+| txn_depth | +0.046 |
+| buzz | -0.025 |
+| paid_boost | +0.024 |
+| dip_in_uptrend | +0.020 |
+| socials | +0.018 |
+| age_sweet | -0.005 |
+| fdv_sanity | +0.005 |
+| liq_quality | +0.002 |
 
 ## Last run log
 ```
-tick #1233  equity $322.57  cash $322.57  open 0
+tick #1235  equity $322.57  cash $322.57  open 0
   scanning chains + news...
-  142 raw candidates across 7 chains, 160 headlines/posts
-  8 passed gates | rejected: liquidity too thin x74, no h1 volume x43, too old x9, already discovered x5, unknown age x3
-  top: YEHI 0.92 | BUNKER 0.66 | ECSTASY 0.43 | SharkTank 0.42 | MINER 0.31
-  tick bar 0.47 (top 30% of 8, floor 0.45)
+  146 raw candidates across 7 chains, 157 headlines/posts
+  4 passed gates | rejected: liquidity too thin x84, no h1 volume x36, too old x10, already discovered x7, too new (bot war) x3
+  top: FPES 0.57 | ECSTASY 0.25 | SIMD 0.09 | SI276 0.08
+  tick bar 0.45 (top 30% of 4, floor 0.45)
   no entries this tick
-  shadow: tracking 28, closed 7 this tick (3 would have won)
+  shadow: tracking 28, closed 3 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
