@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-07T21:30:29+00:00`
+Updated `2026-10-08T01:13:05+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $322.57 below $325.00. Manual reset required.
 
@@ -17,7 +17,7 @@ Updated `2026-10-07T21:30:29+00:00`
 | Closed trades | 82 (22W / 60L, WR 27%) |
 | Profit factor | 0.48 |
 | Fees + slippage paid | $68.00 |
-| Ticks run | 1231 |
+| Ticks run | 1233 |
 
 ## Open positions
 
@@ -43,35 +43,35 @@ _flat_
 | SNOWBALL | $+7.23 | +101% | 0.8h | ratchet +78% (peak +154%) |
 | 鹅次元 | $+3.43 | +48% | 0.9h | ratchet +88% (peak +168%) |
 
-## Learned weights (v39)
+## Learned weights (v40)
 
-_refit on 910 observations (828 shadow, 82 real), 306 winners (34% base rate)_
+_refit on 930 observations (848 shadow, 82 real), 313 winners (34% base rate)_
 
 | Feature | Weight |
 |---|---|
-| buy_pressure | +0.098 |
-| turnover | +0.092 |
-| not_vertical | -0.080 |
-| txn_depth | +0.056 |
-| momentum_accel | +0.045 |
-| dip_in_uptrend | +0.036 |
-| socials | +0.017 |
-| buzz | -0.015 |
-| liq_quality | +0.005 |
-| age_sweet | -0.003 |
-| paid_boost | -0.002 |
-| fdv_sanity | +0.001 |
+| turnover | +0.101 |
+| buy_pressure | +0.093 |
+| not_vertical | -0.075 |
+| txn_depth | +0.049 |
+| momentum_accel | +0.042 |
+| dip_in_uptrend | +0.028 |
+| socials | +0.023 |
+| buzz | -0.018 |
+| age_sweet | -0.010 |
+| liq_quality | +0.006 |
+| paid_boost | -0.005 |
+| fdv_sanity | +0.003 |
 
 ## Last run log
 ```
-tick #1231  equity $322.57  cash $322.57  open 0
+tick #1233  equity $322.57  cash $322.57  open 0
   scanning chains + news...
-  94 raw candidates across 4 chains, 157 headlines/posts
-  9 passed gates | rejected: liquidity too thin x67, no h1 volume x12, too old x5, too new (bot war) x1
-  top: RARINU 0.60 | AnyPS5 0.28 | Frank 0.27 | doxxed 0.26 | MINER 0.21
-  tick bar 0.45 (top 30% of 9, floor 0.45)
+  142 raw candidates across 7 chains, 160 headlines/posts
+  8 passed gates | rejected: liquidity too thin x74, no h1 volume x43, too old x9, already discovered x5, unknown age x3
+  top: YEHI 0.92 | BUNKER 0.66 | ECSTASY 0.43 | SharkTank 0.42 | MINER 0.31
+  tick bar 0.47 (top 30% of 8, floor 0.45)
   no entries this tick
-  shadow: tracking 29, closed 12 this tick (3 would have won)
+  shadow: tracking 28, closed 7 this tick (3 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
