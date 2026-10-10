@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-10T18:54:54+00:00`
+Updated `2026-10-10T22:07:37+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $322.57 below $325.00. Manual reset required.
 
@@ -17,7 +17,7 @@ Updated `2026-10-10T18:54:54+00:00`
 | Closed trades | 82 (22W / 60L, WR 27%) |
 | Profit factor | 0.48 |
 | Fees + slippage paid | $68.00 |
-| Ticks run | 1257 |
+| Ticks run | 1259 |
 
 ## Open positions
 
@@ -43,7 +43,7 @@ _flat_
 | SNOWBALL | $+7.23 | +101% | 0.8h | ratchet +78% (peak +154%) |
 | 鹅次元 | $+3.43 | +48% | 0.9h | ratchet +88% (peak +168%) |
 
-## Learned weights (v49)
+## Learned weights (v50)
 
 _refit on 993 observations (911 shadow, 82 real), 324 winners (33% base rate)_
 
@@ -64,14 +64,14 @@ _refit on 993 observations (911 shadow, 82 real), 324 winners (33% base rate)_
 
 ## Last run log
 ```
-tick #1257  equity $322.57  cash $322.57  open 0
+tick #1259  equity $322.57  cash $322.57  open 0
   scanning chains + news...
-  139 raw candidates across 6 chains, 158 headlines/posts
-  6 passed gates | rejected: liquidity too thin x92, no h1 volume x25, too old x9, already discovered x6, unknown age x1
-  top: $PGOAT 0.73 | QT 0.64 | 1DOG 0.64 | SWOLF 0.55 | SI 0.30
-  tick bar 0.45 (top 30% of 6, floor 0.45)
+  109 raw candidates across 5 chains, 160 headlines/posts
+  8 passed gates | rejected: liquidity too thin x64, no h1 volume x25, too old x7, too new (bot war) x3, already discovered x2
+  top: UNSPENT 0.89 | CYBERINU 0.84 | uzicat 0.65 | Altai 0.53 | LLM 0.52
+  tick bar 0.45 (top 30% of 8, floor 0.45)
   no entries this tick
-  shadow: tracking 24, closed 0 this tick (0 would have won)
+  shadow: tracking 24, closed 6 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
