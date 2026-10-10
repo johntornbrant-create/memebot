@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-10T08:44:40+00:00`
+Updated `2026-10-10T14:46:19+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $322.57 below $325.00. Manual reset required.
 
@@ -17,7 +17,7 @@ Updated `2026-10-10T08:44:40+00:00`
 | Closed trades | 82 (22W / 60L, WR 27%) |
 | Profit factor | 0.48 |
 | Fees + slippage paid | $68.00 |
-| Ticks run | 1253 |
+| Ticks run | 1255 |
 
 ## Open positions
 
@@ -43,35 +43,35 @@ _flat_
 | SNOWBALL | $+7.23 | +101% | 0.8h | ratchet +78% (peak +154%) |
 | 鹅次元 | $+3.43 | +48% | 0.9h | ratchet +88% (peak +168%) |
 
-## Learned weights (v47)
+## Learned weights (v48)
 
-_refit on 981 observations (899 shadow, 82 real), 323 winners (33% base rate)_
+_refit on 986 observations (904 shadow, 82 real), 324 winners (33% base rate)_
 
 | Feature | Weight |
 |---|---|
+| turnover | +0.100 |
 | buy_pressure | +0.099 |
-| turnover | +0.099 |
-| not_vertical | -0.088 |
-| momentum_accel | +0.055 |
-| txn_depth | +0.042 |
-| fdv_sanity | +0.037 |
-| buzz | -0.019 |
-| socials | +0.018 |
-| age_sweet | -0.011 |
-| dip_in_uptrend | +0.010 |
-| paid_boost | +0.010 |
-| liq_quality | +0.006 |
+| not_vertical | -0.089 |
+| momentum_accel | +0.051 |
+| fdv_sanity | +0.038 |
+| txn_depth | +0.036 |
+| age_sweet | -0.017 |
+| dip_in_uptrend | +0.014 |
+| socials | +0.012 |
+| buzz | -0.010 |
+| paid_boost | +0.009 |
+| liq_quality | +0.005 |
 
 ## Last run log
 ```
-tick #1253  equity $322.57  cash $322.57  open 0
+tick #1255  equity $322.57  cash $322.57  open 0
   scanning chains + news...
-  102 raw candidates across 7 chains, 160 headlines/posts
-  7 passed gates | rejected: liquidity too thin x71, no h1 volume x17, already discovered x5, too new (bot war) x1, too old x1
-  top: MUSK 0.88 | MogCat 0.38 | Musk 0.24 | NOEL 0.18 | qOMPUTE 0.11
-  tick bar 0.45 (top 30% of 7, floor 0.45)
+  127 raw candidates across 9 chains, 158 headlines/posts
+  5 passed gates | rejected: liquidity too thin x68, no h1 volume x41, too old x8, already discovered x4, sell pressure x1
+  top: Altai  0.49 | Tschuna 0.47 | Altai 0.21 | FACTORY 0.17 | qOMPUTE 0.15
+  tick bar 0.45 (top 30% of 5, floor 0.45)
   no entries this tick
-  shadow: tracking 22, closed 5 this tick (1 would have won)
+  shadow: tracking 19, closed 7 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
