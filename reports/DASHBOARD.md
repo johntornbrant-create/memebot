@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-11T13:40:10+00:00`
+Updated `2026-10-11T18:28:46+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $322.57 below $325.00. Manual reset required.
 
@@ -17,7 +17,7 @@ Updated `2026-10-11T13:40:10+00:00`
 | Closed trades | 82 (22W / 60L, WR 27%) |
 | Profit factor | 0.48 |
 | Fees + slippage paid | $68.00 |
-| Ticks run | 1265 |
+| Ticks run | 1267 |
 
 ## Open positions
 
@@ -43,35 +43,35 @@ _flat_
 | SNOWBALL | $+7.23 | +101% | 0.8h | ratchet +78% (peak +154%) |
 | 鹅次元 | $+3.43 | +48% | 0.9h | ratchet +88% (peak +168%) |
 
-## Learned weights (v52)
+## Learned weights (v53)
 
-_refit on 1005 observations (923 shadow, 82 real), 325 winners (32% base rate)_
+_refit on 1008 observations (926 shadow, 82 real), 325 winners (32% base rate)_
 
 | Feature | Weight |
 |---|---|
 | buy_pressure | +0.101 |
-| turnover | +0.096 |
+| turnover | +0.094 |
 | not_vertical | -0.075 |
-| momentum_accel | +0.061 |
-| txn_depth | +0.041 |
-| fdv_sanity | +0.019 |
-| age_sweet | -0.016 |
-| paid_boost | +0.009 |
-| dip_in_uptrend | +0.008 |
-| liq_quality | +0.007 |
-| buzz | +0.007 |
+| momentum_accel | +0.063 |
+| txn_depth | +0.039 |
+| fdv_sanity | +0.018 |
+| age_sweet | -0.015 |
+| paid_boost | +0.010 |
+| liq_quality | +0.009 |
+| buzz | +0.008 |
+| dip_in_uptrend | +0.007 |
 | socials | +0.007 |
 
 ## Last run log
 ```
-tick #1265  equity $322.57  cash $322.57  open 0
+tick #1267  equity $322.57  cash $322.57  open 0
   scanning chains + news...
-  134 raw candidates across 8 chains, 158 headlines/posts
-  5 passed gates | rejected: liquidity too thin x67, no h1 volume x40, too old x11, already discovered x9, too new (bot war) x2
-  top: CLAUDIA 0.51 | TesIaSI 0.31 | Incognito 0.26 | BUNKER 0.22 | ADAPT 0.17
-  tick bar 0.48 (top 30% of 5, floor 0.45)
+  105 raw candidates across 5 chains, 158 headlines/posts
+  6 passed gates | rejected: liquidity too thin x61, no h1 volume x25, too old x7, already discovered x4, too new (bot war) x2
+  top: Nuts 0.45 | KILOS 0.42 | SAFU 0.33 | DNA 0.30 | Incognito 0.17
+  tick bar 0.45 (top 30% of 6, floor 0.45)
   no entries this tick
-  shadow: tracking 26, closed 3 this tick (0 would have won)
+  shadow: tracking 27, closed 4 this tick (2 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
