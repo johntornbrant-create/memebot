@@ -1,31 +1,4 @@
 {
- "solana:CVxmNU5pseYjegY1D8GBk6J1y3cRj7JrCZDyd2z1pump": {
-  "t0": "2026-10-12T23:34:00+00:00",
-  "symbol": "OnlyDoge",
-  "chain": "solana",
-  "address": "CVxmNU5pseYjegY1D8GBk6J1y3cRj7JrCZDyd2z1pump",
-  "price0": 0.0001349,
-  "liq0": 30895.7,
-  "features": {
-   "liq_quality": 0.4592,
-   "turnover": 0.0,
-   "buy_pressure": 1.0,
-   "momentum_accel": 1.0,
-   "not_vertical": 0.6188,
-   "age_sweet": 0.3393,
-   "socials": 0.65,
-   "fdv_sanity": 1.0,
-   "txn_depth": 0.4028,
-   "dip_in_uptrend": 0.5,
-   "buzz": 0.0,
-   "paid_boost": 0.0
-  },
-  "score": 0.5107,
-  "taken": false,
-  "peak": 0.0,
-  "trough": -0.9838917716827279,
-  "last": 2.194e-06
- },
  "bsc:0xfE6992bd3e46c313955317ac0DCdD5DF96197777": {
   "t0": "2026-10-13T03:53:35+00:00",
   "symbol": "\ubcf4\uace0\uc2f6\uc740 \uac1c\uad6c\ub9ac\ud615",
@@ -51,7 +24,7 @@
   "taken": false,
   "peak": 0.04820415879017026,
   "trough": -0.8853497164461248,
-  "last": 1.213e-05
+  "last": 1.572e-05
  },
  "solana:49PU6ENTpYc3zkhgCruzCSBzgVAdix5muP2oVzRGpump": {
   "t0": "2026-10-13T03:53:35+00:00",
@@ -77,8 +50,8 @@
   "score": 0.2262,
   "taken": false,
   "peak": 0.0,
-  "trough": -0.8285714285714285,
-  "last": 1.836e-05
+  "trough": -0.884593837535014,
+  "last": 1.236e-05
  },
  "solana:7jNwX4Me9zGEjmWY7zARDG2LYjVs1WXD6DZ1JvSfpump": {
   "t0": "2026-10-13T03:53:35+00:00",
@@ -104,8 +77,8 @@
   "score": 0.215,
   "taken": false,
   "peak": 0.27920669352339633,
-  "trough": -0.3669042454291911,
-  "last": 0.002043
+  "trough": -0.8920669352339634,
+  "last": 0.0003483
  },
  "solana:43itHQ85P7t7UWAZgFjYHe4FLV8HSSDPqBiaVDnmpump": {
   "t0": "2026-10-13T03:53:35+00:00",
@@ -131,8 +104,8 @@
   "score": 0.1579,
   "taken": false,
   "peak": 0.05461102524471917,
-  "trough": -0.9882380216383307,
-  "last": 2.283e-06
+  "trough": -0.9938227717671303,
+  "last": 1.199e-06
  },
  "solana:GU5NkUVLzmJQxJKuho5dG4d1owChpcSQnhARrjYQpump": {
   "t0": "2026-10-13T11:18:30+00:00",
@@ -159,7 +132,7 @@
   "taken": false,
   "peak": 0.5448644520809469,
   "trough": 0.0,
-  "last": 0.0003329
+  "last": 0.0003003
  },
  "cronos:0x76eb951011792557F32CD4006d381c99AE8778d7": {
   "t0": "2026-10-13T11:18:30+00:00",
@@ -186,7 +159,7 @@
   "taken": false,
   "peak": 0.0,
   "trough": -0.22142601218201363,
-  "last": 0.002319
+  "last": 0.002249
  },
  "solana:Fak3rJEBfR4Vb8DoFpecf6yoxbkkr1gGUH5tdj2rpump": {
   "t0": "2026-10-13T11:18:30+00:00",
@@ -212,8 +185,8 @@
   "score": 0.1209,
   "taken": false,
   "peak": 0.0,
-  "trough": -0.5253299276287782,
-  "last": 0.0002242
+  "trough": -0.5723712217965091,
+  "last": 0.0002009
  },
  "solana:98AG3zJUawbvDnpgbDhmxpMKva43vtgPLLPSXqo1pump": {
   "t0": "2026-10-13T11:18:30+00:00",
@@ -239,8 +212,8 @@
   "score": 0.1205,
   "taken": false,
   "peak": 0.0,
-  "trough": -0.4473246465206543,
-  "last": 0.0003987
+  "trough": -0.5345162184640976,
+  "last": 0.0003358
  },
  "solana:CQCDTp8rsFV3PhaPeYjcCW5LdGTxi6jFx7eC3UXnpump": {
   "t0": "2026-10-13T11:18:30+00:00",
@@ -266,8 +239,8 @@
   "score": 0.0647,
   "taken": false,
   "peak": 0.0,
-  "trough": -0.21708683473389356,
-  "last": 0.02101
+  "trough": -0.3893557422969188,
+  "last": 0.01308
  },
  "solana:1zXbHKTS2VzhJuiFadePVVrMK9f94GCRtLmV2PUpump": {
   "t0": "2026-10-13T18:25:31+00:00",
@@ -294,7 +267,7 @@
   "taken": false,
   "peak": 0.031572164948453496,
   "trough": -0.9860309278350515,
-  "last": 2.168e-06
+  "last": 2.176e-06
  },
  "solana:8LfVXJjup9jYQYM5Zb7LoBvRvXEEQATxorqG2qkUpump": {
   "t0": "2026-10-13T18:25:31+00:00",
@@ -320,8 +293,8 @@
   "score": 0.4306,
   "taken": false,
   "peak": 0.0,
-  "trough": -0.9903601496725912,
-  "last": 2.061e-06
+  "trough": -0.9961623012160898,
+  "last": 8.205e-07
  },
  "solana:2N8c4pXu6T2oBxE8ZDBYb3QgwMkyTe673HiBaYSNpump": {
   "t0": "2026-10-13T18:25:31+00:00",
@@ -347,8 +320,8 @@
   "score": 0.383,
   "taken": false,
   "peak": 0.16766981943250214,
-  "trough": -0.7921754084264832,
-  "last": 2.417e-05
+  "trough": -0.8276010318142735,
+  "last": 2.005e-05
  },
  "solana:4hsJNmPComjTsbrDtoLjDMmsyZ1g2T1xy1xHnEE2pump": {
   "t0": "2026-10-13T18:25:31+00:00",
@@ -375,7 +348,7 @@
   "taken": false,
   "peak": 0.19752798507462677,
   "trough": -0.958348880597015,
-  "last": 3.572e-06
+  "last": 3.999e-06
  },
  "solana:3sKaoPryg4KrXubLWtoqF7MznLT7QNqKRxMMkkxTpump": {
   "t0": "2026-10-13T18:25:31+00:00",
@@ -402,7 +375,7 @@
   "taken": false,
   "peak": 0.5830382106244176,
   "trough": -0.005778191985088554,
-  "last": 0.0008493
+  "last": 0.0007442
  },
  "solana:33jENUQnjoitkMFpvNJcSHyLAHFWJuHwT6E3E8CNpump": {
   "t0": "2026-10-13T18:25:31+00:00",
@@ -427,9 +400,9 @@
   },
   "score": 0.1146,
   "taken": false,
-  "peak": 0.024151811385853872,
+  "peak": 0.15066129959746988,
   "trough": -0.15756181713628525,
-  "last": 0.001465
+  "last": 0.002001
  },
  "ethereum:0xAfCB6c94282c96B4E6CD7Fb34B27DF1AA378A820": {
   "t0": "2026-10-13T22:59:47+00:00",
@@ -454,9 +427,9 @@
   },
   "score": 0.6101,
   "taken": false,
-  "peak": 0.10349050826699302,
+  "peak": 1.6099203919167175,
   "trough": 0.0,
-  "last": 0.0001802
+  "last": 0.0004262
  },
  "solana:jq4yKhqGNzWCQhgQYB89CDEYQYjLHGcvDy9WNJHpump": {
   "t0": "2026-10-13T22:59:47+00:00",
@@ -481,9 +454,9 @@
   },
   "score": 0.468,
   "taken": false,
-  "peak": 0.0,
+  "peak": 1.1315068493150684,
   "trough": -0.2136986301369863,
-  "last": 8.61e-05
+  "last": 0.0002334
  },
  "solana:DxnkB7w6f2eS1nfJH8ER1MeoR3apJZQKKA6sspzFpump": {
   "t0": "2026-10-13T22:59:47+00:00",
@@ -509,8 +482,8 @@
   "score": 0.3955,
   "taken": false,
   "peak": 0.03165735567970196,
-  "trough": 0.0,
-  "last": 0.0001662
+  "trough": -0.9862693978895096,
+  "last": 2.212e-06
  },
  "cronos:0x5A41172f3dcfD1Cf356340EE61876c0e72D9b1af": {
   "t0": "2026-10-13T22:59:47+00:00",
@@ -536,7 +509,169 @@
   "score": 0.1867,
   "taken": false,
   "peak": 0.015424164524421524,
+  "trough": -0.47339331619537284,
+  "last": 0.0004097
+ },
+ "solana:5kbUKCWs7ZS5EVqdY9Ci9e5GXH4bbXrHD2vTfn41pump": {
+  "t0": "2026-10-14T01:37:48+00:00",
+  "symbol": "JEANGUY",
+  "chain": "solana",
+  "address": "5kbUKCWs7ZS5EVqdY9Ci9e5GXH4bbXrHD2vTfn41pump",
+  "price0": 0.0002643,
+  "liq0": 43286.93,
+  "features": {
+   "liq_quality": 0.6178,
+   "turnover": 0.6624,
+   "buy_pressure": 0.6092,
+   "momentum_accel": 1.0,
+   "not_vertical": 0.0,
+   "age_sweet": 0.1666,
+   "socials": 0.65,
+   "fdv_sanity": 0.9776,
+   "txn_depth": 0.6348,
+   "dip_in_uptrend": 0.5,
+   "buzz": 0.5,
+   "paid_boost": 0.0
+  },
+  "score": 0.8172,
+  "taken": false,
+  "peak": 0.14945138100643218,
   "trough": 0.0,
-  "last": 0.00079
+  "last": 0.0003038
+ },
+ "solana:7d7XuJK65UummdJpNTQnpt53Wb4DhpAcwLPB89z1pump": {
+  "t0": "2026-10-14T01:37:48+00:00",
+  "symbol": "Vwhale",
+  "chain": "solana",
+  "address": "7d7XuJK65UummdJpNTQnpt53Wb4DhpAcwLPB89z1pump",
+  "price0": 0.0001221,
+  "liq0": 29805.18,
+  "features": {
+   "liq_quality": 0.443,
+   "turnover": 0.7377,
+   "buy_pressure": 0.0803,
+   "momentum_accel": 1.0,
+   "not_vertical": 0.1062,
+   "age_sweet": 0.2751,
+   "socials": 0.65,
+   "fdv_sanity": 1.0,
+   "txn_depth": 0.2902,
+   "dip_in_uptrend": 0.5,
+   "buzz": 0.3333,
+   "paid_boost": 0.0
+  },
+  "score": 0.5754,
+  "taken": false,
+  "peak": 0.0,
+  "trough": -0.07616707616707619,
+  "last": 0.0001128
+ },
+ "solana:XtogpWjiAgvkemc5gr1auxkh77w3vKgSQN1nxJeJfHt": {
+  "t0": "2026-10-14T01:37:48+00:00",
+  "symbol": "XTO",
+  "chain": "solana",
+  "address": "XtogpWjiAgvkemc5gr1auxkh77w3vKgSQN1nxJeJfHt",
+  "price0": 0.005189,
+  "liq0": 174185.99,
+  "features": {
+   "liq_quality": 0.9931,
+   "turnover": 0.3052,
+   "buy_pressure": 0.9138,
+   "momentum_accel": 0.0,
+   "not_vertical": 1.0,
+   "age_sweet": 0.9043,
+   "socials": 0.65,
+   "fdv_sanity": 0.449,
+   "txn_depth": 0.9598,
+   "dip_in_uptrend": 0.0,
+   "buzz": 0.0,
+   "paid_boost": 0.2
+  },
+  "score": 0.3458,
+  "taken": false,
+  "peak": 0.0,
+  "trough": 0.0,
+  "last": 0.005189
+ },
+ "ethereum:0x0f8B5B82A8A62137e4eA563A3709fE4Ca1fF1A2D": {
+  "t0": "2026-10-14T01:37:48+00:00",
+  "symbol": "Temo",
+  "chain": "ethereum",
+  "address": "0x0f8B5B82A8A62137e4eA563A3709fE4Ca1fF1A2D",
+  "price0": 0.0004486,
+  "liq0": 91143.57,
+  "features": {
+   "liq_quality": 0.9255,
+   "turnover": 0.3457,
+   "buy_pressure": 0.5378,
+   "momentum_accel": 0.0,
+   "not_vertical": 1.0,
+   "age_sweet": 0.9895,
+   "socials": 0.65,
+   "fdv_sanity": 1.0,
+   "txn_depth": 0.968,
+   "dip_in_uptrend": 0.5,
+   "buzz": 0.0,
+   "paid_boost": 0.0
+  },
+  "score": 0.2732,
+  "taken": false,
+  "peak": 0.0,
+  "trough": -0.05416852429781538,
+  "last": 0.0004243
+ },
+ "solana:GjMrz9j5Bt5Va1tsqfi71XpcqKAbhFoyPxw9CAzZpump": {
+  "t0": "2026-10-14T01:37:48+00:00",
+  "symbol": "FWOYD",
+  "chain": "solana",
+  "address": "GjMrz9j5Bt5Va1tsqfi71XpcqKAbhFoyPxw9CAzZpump",
+  "price0": 0.0001348,
+  "liq0": 31281.4,
+  "features": {
+   "liq_quality": 0.4648,
+   "turnover": 0.3973,
+   "buy_pressure": 0.3238,
+   "momentum_accel": 0.0,
+   "not_vertical": 1.0,
+   "age_sweet": 0.5544,
+   "socials": 0.45,
+   "fdv_sanity": 1.0,
+   "txn_depth": 0.4822,
+   "dip_in_uptrend": 0.0,
+   "buzz": 0.0,
+   "paid_boost": 0.02
+  },
+  "score": 0.158,
+  "taken": false,
+  "peak": 0.07937685459940669,
+  "trough": 0.0,
+  "last": 0.0001455
+ },
+ "ethereum:0x73dF7018Cbcb919CCdE48c3f12F4326688aC4446": {
+  "t0": "2026-10-14T01:37:48+00:00",
+  "symbol": "DOPE",
+  "chain": "ethereum",
+  "address": "0x73dF7018Cbcb919CCdE48c3f12F4326688aC4446",
+  "price0": 0.02403,
+  "liq0": 490120.37,
+  "features": {
+   "liq_quality": 0.6459,
+   "turnover": 0.3105,
+   "buy_pressure": 0.5614,
+   "momentum_accel": 0.0,
+   "not_vertical": 1.0,
+   "age_sweet": 0.1423,
+   "socials": 0.65,
+   "fdv_sanity": 0.0212,
+   "txn_depth": 0.4404,
+   "dip_in_uptrend": 0.0,
+   "buzz": 0.0,
+   "paid_boost": 0.0
+  },
+  "score": 0.1442,
+  "taken": false,
+  "peak": 0.0,
+  "trough": -0.008739076154806402,
+  "last": 0.02382
  }
 }
