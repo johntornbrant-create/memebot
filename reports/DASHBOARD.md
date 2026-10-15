@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-15T12:10:45+00:00`
+Updated `2026-10-15T16:57:11+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $322.57 below $325.00. Manual reset required.
 
@@ -17,7 +17,7 @@ Updated `2026-10-15T12:10:45+00:00`
 | Closed trades | 82 (22W / 60L, WR 27%) |
 | Profit factor | 0.48 |
 | Fees + slippage paid | $68.00 |
-| Ticks run | 1303 |
+| Ticks run | 1305 |
 
 ## Open positions
 
@@ -43,7 +43,7 @@ _flat_
 | SNOWBALL | $+7.23 | +101% | 0.8h | ratchet +78% (peak +154%) |
 | 鹅次元 | $+3.43 | +48% | 0.9h | ratchet +88% (peak +168%) |
 
-## Learned weights (v65)
+## Learned weights (v66)
 
 _refit on 1085 observations (1003 shadow, 82 real), 342 winners (32% base rate)_
 
@@ -64,14 +64,14 @@ _refit on 1085 observations (1003 shadow, 82 real), 342 winners (32% base rate)_
 
 ## Last run log
 ```
-tick #1303  equity $322.57  cash $322.57  open 0
+tick #1305  equity $322.57  cash $322.57  open 0
   scanning chains + news...
-  125 raw candidates across 7 chains, 115 headlines/posts
-  8 passed gates | rejected: liquidity too thin x85, no h1 volume x23, too old x7, already discovered x2
-  top: HELLCAT 0.60 | SYCAMORE 0.49 | VEILTRUMP 0.41 | LEND 0.37 | Nihilism 0.28
-  tick bar 0.47 (top 30% of 8, floor 0.45)
+  183 raw candidates across 9 chains, 156 headlines/posts
+  9 passed gates | rejected: liquidity too thin x95, no h1 volume x58, too old x14, already discovered x4, too new (bot war) x2
+  top: DADOGE 0.79 | $OTCATWALK 0.74 | Oppy 0.70 | SYCAMORE 0.54 | STREAM 0.49
+  tick bar 0.47 (top 30% of 9, floor 0.45)
   no entries this tick
-  shadow: tracking 30, closed 0 this tick (0 would have won)
+  shadow: tracking 31, closed 4 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
