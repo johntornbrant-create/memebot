@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-15T01:51:07+00:00`
+Updated `2026-10-15T06:45:39+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $322.57 below $325.00. Manual reset required.
 
@@ -17,7 +17,7 @@ Updated `2026-10-15T01:51:07+00:00`
 | Closed trades | 82 (22W / 60L, WR 27%) |
 | Profit factor | 0.48 |
 | Fees + slippage paid | $68.00 |
-| Ticks run | 1299 |
+| Ticks run | 1301 |
 
 ## Open positions
 
@@ -43,35 +43,35 @@ _flat_
 | SNOWBALL | $+7.23 | +101% | 0.8h | ratchet +78% (peak +154%) |
 | 鹅次元 | $+3.43 | +48% | 0.9h | ratchet +88% (peak +168%) |
 
-## Learned weights (v63)
+## Learned weights (v64)
 
-_refit on 1074 observations (992 shadow, 82 real), 338 winners (31% base rate)_
+_refit on 1084 observations (1002 shadow, 82 real), 342 winners (32% base rate)_
 
 | Feature | Weight |
 |---|---|
-| turnover | +0.103 |
-| buy_pressure | +0.099 |
-| not_vertical | -0.071 |
-| txn_depth | +0.070 |
-| momentum_accel | +0.059 |
-| fdv_sanity | +0.031 |
-| paid_boost | +0.020 |
-| buzz | +0.017 |
-| age_sweet | -0.010 |
+| turnover | +0.107 |
+| buy_pressure | +0.100 |
+| not_vertical | -0.074 |
+| momentum_accel | +0.062 |
+| txn_depth | +0.062 |
+| fdv_sanity | +0.039 |
+| paid_boost | +0.016 |
+| buzz | +0.016 |
+| age_sweet | -0.011 |
 | socials | +0.009 |
-| liq_quality | +0.002 |
-| dip_in_uptrend | -0.001 |
+| liq_quality | +0.007 |
+| dip_in_uptrend | -0.004 |
 
 ## Last run log
 ```
-tick #1299  equity $322.57  cash $322.57  open 0
+tick #1301  equity $322.57  cash $322.57  open 0
   scanning chains + news...
-  136 raw candidates across 7 chains, 160 headlines/posts
-  5 passed gates | rejected: liquidity too thin x116, no h1 volume x10, already discovered x2, too old x1, too new (bot war) x1
-  top: STREAM 0.36 | Jack 0.33 | HUMPH 0.24 | DIKSHIT 0.21 | VEILTRUMP 0.16
-  tick bar 0.45 (top 30% of 5, floor 0.45)
+  80 raw candidates across 3 chains, 155 headlines/posts
+  6 passed gates | rejected: liquidity too thin x47, no h1 volume x16, too old x7, already discovered x3, sell pressure x1
+  top: SOC 0.63 | HUMPH 0.43 | STREAM 0.42 | FTR 0.35 | SAINDRA 0.11
+  tick bar 0.48 (top 30% of 6, floor 0.45)
   no entries this tick
-  shadow: tracking 20, closed 6 this tick (1 would have won)
+  shadow: tracking 23, closed 1 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
