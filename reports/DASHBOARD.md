@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-16T06:01:56+00:00`
+Updated `2026-10-16T11:17:59+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $322.57 below $325.00. Manual reset required.
 
@@ -17,7 +17,7 @@ Updated `2026-10-16T06:01:56+00:00`
 | Closed trades | 82 (22W / 60L, WR 27%) |
 | Profit factor | 0.48 |
 | Fees + slippage paid | $68.00 |
-| Ticks run | 1313 |
+| Ticks run | 1315 |
 
 ## Open positions
 
@@ -43,35 +43,35 @@ _flat_
 | SNOWBALL | $+7.23 | +101% | 0.8h | ratchet +78% (peak +154%) |
 | 鹅次元 | $+3.43 | +48% | 0.9h | ratchet +88% (peak +168%) |
 
-## Learned weights (v68)
+## Learned weights (v69)
 
-_refit on 1102 observations (1020 shadow, 82 real), 345 winners (31% base rate)_
+_refit on 1104 observations (1022 shadow, 82 real), 346 winners (31% base rate)_
 
 | Feature | Weight |
 |---|---|
-| buy_pressure | +0.105 |
-| turnover | +0.103 |
-| not_vertical | -0.077 |
+| buy_pressure | +0.106 |
+| turnover | +0.105 |
+| not_vertical | -0.079 |
 | momentum_accel | +0.062 |
-| txn_depth | +0.054 |
-| fdv_sanity | +0.044 |
-| buzz | +0.018 |
-| paid_boost | +0.010 |
-| dip_in_uptrend | -0.009 |
-| liq_quality | +0.006 |
+| txn_depth | +0.052 |
+| fdv_sanity | +0.042 |
+| buzz | +0.017 |
+| liq_quality | +0.010 |
+| dip_in_uptrend | -0.008 |
+| paid_boost | +0.008 |
 | socials | +0.005 |
-| age_sweet | -0.002 |
+| age_sweet | -0.001 |
 
 ## Last run log
 ```
-tick #1313  equity $322.57  cash $322.57  open 0
+tick #1315  equity $322.57  cash $322.57  open 0
   scanning chains + news...
-  138 raw candidates across 6 chains, 155 headlines/posts
-  10 passed gates | rejected: liquidity too thin x87, no h1 volume x23, too old x9, already discovered x8, too new (bot war) x1
-  top: SYCAMORE 0.53 | 1 0.38 | PVSN 0.37 | SXTR 0.36 | Nihilism 0.33
-  tick bar 0.45 (top 30% of 10, floor 0.45)
+  133 raw candidates across 7 chains, 156 headlines/posts
+  4 passed gates | rejected: liquidity too thin x87, no h1 volume x35, too old x4, too new (bot war) x2, already discovered x1
+  top: USDC 0.41 | OWLDACITY 0.26 | ElonThrust 0.23 | Irene 0.21
+  tick bar 0.45 (top 30% of 4, floor 0.45)
   no entries this tick
-  shadow: tracking 30, closed 2 this tick (1 would have won)
+  shadow: tracking 29, closed 4 this tick (2 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
