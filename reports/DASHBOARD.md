@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-17T18:04:12+00:00`
+Updated `2026-10-17T20:33:28+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $322.57 below $325.00. Manual reset required.
 
@@ -17,7 +17,7 @@ Updated `2026-10-17T18:04:12+00:00`
 | Closed trades | 82 (22W / 60L, WR 27%) |
 | Profit factor | 0.48 |
 | Fees + slippage paid | $68.00 |
-| Ticks run | 1333 |
+| Ticks run | 1335 |
 
 ## Open positions
 
@@ -43,35 +43,35 @@ _flat_
 | SNOWBALL | $+7.23 | +101% | 0.8h | ratchet +78% (peak +154%) |
 | 鹅次元 | $+3.43 | +48% | 0.9h | ratchet +88% (peak +168%) |
 
-## Learned weights (v74)
+## Learned weights (v75)
 
-_refit on 1137 observations (1055 shadow, 82 real), 352 winners (31% base rate)_
+_refit on 1142 observations (1060 shadow, 82 real), 354 winners (31% base rate)_
 
 | Feature | Weight |
 |---|---|
-| turnover | +0.118 |
-| buy_pressure | +0.096 |
-| not_vertical | -0.071 |
-| momentum_accel | +0.062 |
-| txn_depth | +0.059 |
-| fdv_sanity | +0.041 |
-| buzz | +0.022 |
-| liq_quality | +0.014 |
+| turnover | +0.116 |
+| buy_pressure | +0.095 |
+| momentum_accel | +0.068 |
+| not_vertical | -0.066 |
+| txn_depth | +0.060 |
+| fdv_sanity | +0.039 |
+| buzz | +0.021 |
+| liq_quality | +0.016 |
 | socials | -0.006 |
-| dip_in_uptrend | +0.003 |
-| age_sweet | -0.001 |
-| paid_boost | -0.000 |
+| age_sweet | +0.002 |
+| paid_boost | +0.001 |
+| dip_in_uptrend | +0.000 |
 
 ## Last run log
 ```
-tick #1333  equity $322.57  cash $322.57  open 0
+tick #1335  equity $322.57  cash $322.57  open 0
   scanning chains + news...
-  127 raw candidates across 9 chains, 157 headlines/posts
-  5 passed gates | rejected: liquidity too thin x87, no h1 volume x33, already discovered x2
-  top: 特斯拉能飞 0.84 | HeyGrok 0.49 | ELON 0.25 | DAWG 0.21 | MOMO 0.17
-  tick bar 0.52 (top 30% of 5, floor 0.45)
+  125 raw candidates across 7 chains, 157 headlines/posts
+  9 passed gates | rejected: liquidity too thin x73, no h1 volume x26, already discovered x8, too old x7, too new (bot war) x1
+  top: YILONGMA 0.57 | MAKERS 0.55 | ELON 0.39 | GROKLET 0.35 | Dip 0.33
+  tick bar 0.54 (top 30% of 9, floor 0.45)
   no entries this tick
-  shadow: tracking 28, closed 0 this tick (0 would have won)
+  shadow: tracking 31, closed 4 this tick (1 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
