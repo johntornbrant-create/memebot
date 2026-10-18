@@ -1,27 +1,13 @@
 {
-  "version": 78,
-  "fitted_on": 1167,
-  "n_shadow": 1085,
+  "version": 79,
+  "fitted_on": 1170,
+  "n_shadow": 1088,
   "n_real": 82,
   "base_rate": 0.308,
-  "threshold": 0.57,
+  "threshold": 0.562,
   "selectivity_pct": 0.68,
-  "note": "refit on 1167 observations (1085 shadow, 82 real), 359 winners (31% base rate)",
+  "note": "refit on 1170 observations (1088 shadow, 82 real), 360 winners (31% base rate)",
   "prev_weights": {
-    "liq_quality": 0.0151,
-    "turnover": 0.1119,
-    "buy_pressure": 0.0973,
-    "momentum_accel": 0.0655,
-    "not_vertical": -0.0607,
-    "age_sweet": 0.0056,
-    "socials": -0.0059,
-    "fdv_sanity": 0.0419,
-    "txn_depth": 0.0663,
-    "dip_in_uptrend": -0.0008,
-    "buzz": 0.0149,
-    "paid_boost": -0.0018
-  },
-  "weights": {
     "liq_quality": 0.0159,
     "turnover": 0.1112,
     "buy_pressure": 0.098,
@@ -34,5 +20,19 @@
     "dip_in_uptrend": -0.0009,
     "buzz": 0.0156,
     "paid_boost": -0.001
+  },
+  "weights": {
+    "liq_quality": 0.0158,
+    "turnover": 0.1112,
+    "buy_pressure": 0.0997,
+    "momentum_accel": 0.0652,
+    "not_vertical": -0.0631,
+    "age_sweet": 0.0048,
+    "socials": -0.0078,
+    "fdv_sanity": 0.0464,
+    "txn_depth": 0.0673,
+    "dip_in_uptrend": -0.0008,
+    "buzz": 0.0248,
+    "paid_boost": -0.0003
   }
 }
