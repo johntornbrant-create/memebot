@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-18T13:20:21+00:00`
+Updated `2026-10-18T16:40:37+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $322.57 below $325.00. Manual reset required.
 
@@ -17,7 +17,7 @@ Updated `2026-10-18T13:20:21+00:00`
 | Closed trades | 82 (22W / 60L, WR 27%) |
 | Profit factor | 0.48 |
 | Fees + slippage paid | $68.00 |
-| Ticks run | 1345 |
+| Ticks run | 1347 |
 
 ## Open positions
 
@@ -43,35 +43,35 @@ _flat_
 | SNOWBALL | $+7.23 | +101% | 0.8h | ratchet +78% (peak +154%) |
 | 鹅次元 | $+3.43 | +48% | 0.9h | ratchet +88% (peak +168%) |
 
-## Learned weights (v77)
+## Learned weights (v78)
 
-_refit on 1165 observations (1083 shadow, 82 real), 359 winners (31% base rate)_
+_refit on 1167 observations (1085 shadow, 82 real), 359 winners (31% base rate)_
 
 | Feature | Weight |
 |---|---|
-| turnover | +0.112 |
-| buy_pressure | +0.097 |
-| txn_depth | +0.066 |
-| momentum_accel | +0.066 |
+| turnover | +0.111 |
+| buy_pressure | +0.098 |
+| txn_depth | +0.067 |
+| momentum_accel | +0.065 |
 | not_vertical | -0.061 |
 | fdv_sanity | +0.042 |
-| liq_quality | +0.015 |
-| buzz | +0.015 |
+| liq_quality | +0.016 |
+| buzz | +0.016 |
 | socials | -0.006 |
-| age_sweet | +0.006 |
-| paid_boost | -0.002 |
+| age_sweet | +0.005 |
+| paid_boost | -0.001 |
 | dip_in_uptrend | -0.001 |
 
 ## Last run log
 ```
-tick #1345  equity $322.57  cash $322.57  open 0
+tick #1347  equity $322.57  cash $322.57  open 0
   scanning chains + news...
-  141 raw candidates across 7 chains, 157 headlines/posts
-  7 passed gates | rejected: liquidity too thin x96, no h1 volume x32, too old x3, already discovered x2, sell pressure x1
-  top: ZDOG 0.70 | Tortue 0.67 | MEGA 0.53 | mucron 0.30 | CATSZN 0.26
-  tick bar 0.57 (top 30% of 7, floor 0.45)
+  92 raw candidates across 7 chains, 157 headlines/posts
+  9 passed gates | rejected: liquidity too thin x54, no h1 volume x22, too old x3, already discovered x3, unknown age x1
+  top: CATONICE 0.75 | mucron 0.47 | CATSZN 0.45 | koinu 0.34 | Dip 0.31
+  tick bar 0.47 (top 30% of 9, floor 0.45)
   no entries this tick
-  shadow: tracking 30, closed 2 this tick (0 would have won)
+  shadow: tracking 32, closed 1 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
