@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-18T00:18:56+00:00`
+Updated `2026-10-18T04:52:44+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $322.57 below $325.00. Manual reset required.
 
@@ -17,7 +17,7 @@ Updated `2026-10-18T00:18:56+00:00`
 | Closed trades | 82 (22W / 60L, WR 27%) |
 | Profit factor | 0.48 |
 | Fees + slippage paid | $68.00 |
-| Ticks run | 1339 |
+| Ticks run | 1341 |
 
 ## Open positions
 
@@ -43,35 +43,35 @@ _flat_
 | SNOWBALL | $+7.23 | +101% | 0.8h | ratchet +78% (peak +154%) |
 | 鹅次元 | $+3.43 | +48% | 0.9h | ratchet +88% (peak +168%) |
 
-## Learned weights (v75)
+## Learned weights (v76)
 
-_refit on 1142 observations (1060 shadow, 82 real), 354 winners (31% base rate)_
+_refit on 1156 observations (1074 shadow, 82 real), 357 winners (31% base rate)_
 
 | Feature | Weight |
 |---|---|
-| turnover | +0.116 |
-| buy_pressure | +0.095 |
-| momentum_accel | +0.068 |
-| not_vertical | -0.066 |
-| txn_depth | +0.060 |
-| fdv_sanity | +0.039 |
-| buzz | +0.021 |
-| liq_quality | +0.016 |
-| socials | -0.006 |
-| age_sweet | +0.002 |
-| paid_boost | +0.001 |
-| dip_in_uptrend | +0.000 |
+| turnover | +0.112 |
+| buy_pressure | +0.098 |
+| momentum_accel | +0.067 |
+| txn_depth | +0.063 |
+| not_vertical | -0.059 |
+| fdv_sanity | +0.040 |
+| buzz | +0.014 |
+| liq_quality | +0.011 |
+| age_sweet | +0.005 |
+| socials | -0.004 |
+| dip_in_uptrend | +0.001 |
+| paid_boost | -0.001 |
 
 ## Last run log
 ```
-tick #1339  equity $322.57  cash $322.57  open 0
+tick #1341  equity $322.57  cash $322.57  open 0
   scanning chains + news...
-  141 raw candidates across 8 chains, 157 headlines/posts
-  8 passed gates | rejected: liquidity too thin x82, no h1 volume x38, already discovered x5, too old x4, unknown age x3
-  top: QTITS 0.77 | YILONGMA 0.74 | Chaton 0.64 | CLAUDIA 0.52 | ALT 0.40
-  tick bar 0.54 (top 30% of 8, floor 0.45)
+  126 raw candidates across 7 chains, 157 headlines/posts
+  7 passed gates | rejected: liquidity too thin x80, no h1 volume x35, too new (bot war) x2, too old x1, already discovered x1
+  top: Eternia 0.71 | Chaton 0.54 | FTR 0.53 | Fly 0.42 | YILONGMA 0.39
+  tick bar 0.54 (top 30% of 7, floor 0.45)
   no entries this tick
-  shadow: tracking 32, closed 4 this tick (1 would have won)
+  shadow: tracking 29, closed 6 this tick (1 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
