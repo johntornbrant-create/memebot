@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-19T01:13:14+00:00`
+Updated `2026-10-19T06:12:29+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $322.57 below $325.00. Manual reset required.
 
@@ -17,7 +17,7 @@ Updated `2026-10-19T01:13:14+00:00`
 | Closed trades | 82 (22W / 60L, WR 27%) |
 | Profit factor | 0.48 |
 | Fees + slippage paid | $68.00 |
-| Ticks run | 1355 |
+| Ticks run | 1357 |
 
 ## Open positions
 
@@ -43,35 +43,35 @@ _flat_
 | SNOWBALL | $+7.23 | +101% | 0.8h | ratchet +78% (peak +154%) |
 | 鹅次元 | $+3.43 | +48% | 0.9h | ratchet +88% (peak +168%) |
 
-## Learned weights (v79)
+## Learned weights (v80)
 
-_refit on 1170 observations (1088 shadow, 82 real), 360 winners (31% base rate)_
+_refit on 1188 observations (1106 shadow, 82 real), 364 winners (31% base rate)_
 
 | Feature | Weight |
 |---|---|
-| turnover | +0.111 |
+| turnover | +0.115 |
 | buy_pressure | +0.100 |
-| txn_depth | +0.067 |
-| momentum_accel | +0.065 |
+| txn_depth | +0.078 |
+| momentum_accel | +0.068 |
 | not_vertical | -0.063 |
-| fdv_sanity | +0.046 |
-| buzz | +0.025 |
-| liq_quality | +0.016 |
-| socials | -0.008 |
-| age_sweet | +0.005 |
+| fdv_sanity | +0.029 |
+| buzz | +0.027 |
+| liq_quality | +0.022 |
+| paid_boost | +0.017 |
+| socials | -0.009 |
+| age_sweet | +0.003 |
 | dip_in_uptrend | -0.001 |
-| paid_boost | -0.000 |
 
 ## Last run log
 ```
-tick #1355  equity $322.57  cash $322.57  open 0
+tick #1357  equity $322.57  cash $322.57  open 0
   scanning chains + news...
-  148 raw candidates across 6 chains, 160 headlines/posts
-  10 passed gates | rejected: liquidity too thin x81, no h1 volume x35, too old x15, already discovered x6, unknown age x1
-  top: 特斯拉能飞 0.72 | KEYCAT 0.72 | Doomsday 0.65 | TNUT 0.63 | FLAP 0.60
-  tick bar 0.56 (top 30% of 10, floor 0.45)
+  147 raw candidates across 6 chains, 157 headlines/posts
+  10 passed gates | rejected: liquidity too thin x102, no h1 volume x17, too old x12, already discovered x3, sell pressure x1
+  top: Saylor 0.67 | Doomsday 0.59 | NVYX 0.47 | CATONICE 0.44 | KIBI 0.43
+  tick bar 0.47 (top 30% of 10, floor 0.45)
   no entries this tick
-  shadow: tracking 31, closed 4 this tick (2 would have won)
+  shadow: tracking 34, closed 3 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
