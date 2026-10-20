@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-20T12:11:55+00:00`
+Updated `2026-10-20T16:59:51+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $322.57 below $325.00. Manual reset required.
 
@@ -17,7 +17,7 @@ Updated `2026-10-20T12:11:55+00:00`
 | Closed trades | 82 (22W / 60L, WR 27%) |
 | Profit factor | 0.48 |
 | Fees + slippage paid | $68.00 |
-| Ticks run | 1369 |
+| Ticks run | 1371 |
 
 ## Open positions
 
@@ -43,7 +43,7 @@ _flat_
 | SNOWBALL | $+7.23 | +101% | 0.8h | ratchet +78% (peak +154%) |
 | 鹅次元 | $+3.43 | +48% | 0.9h | ratchet +88% (peak +168%) |
 
-## Learned weights (v84)
+## Learned weights (v85)
 
 _refit on 1225 observations (1143 shadow, 82 real), 369 winners (30% base rate)_
 
@@ -64,14 +64,14 @@ _refit on 1225 observations (1143 shadow, 82 real), 369 winners (30% base rate)_
 
 ## Last run log
 ```
-tick #1369  equity $322.57  cash $322.57  open 0
+tick #1371  equity $322.57  cash $322.57  open 0
   scanning chains + news...
-  104 raw candidates across 7 chains, 159 headlines/posts
-  3 passed gates | rejected: liquidity too thin x60, no h1 volume x24, too old x7, already discovered x6, unknown age x4
-  top: WORTHLESS 0.73 | startupSI 0.66 | BIAO 0.42
+  110 raw candidates across 5 chains, 158 headlines/posts
+  3 passed gates | rejected: liquidity too thin x59, no h1 volume x23, too old x15, already discovered x5, unknown age x3
+  top: MONEYBIZ 0.61 | COLLECTOOOR 0.52 | startupSI 0.28
   tick bar 0.51 (top 30% of 3, floor 0.45)
   no entries this tick
-  shadow: tracking 23, closed 0 this tick (0 would have won)
+  shadow: tracking 21, closed 3 this tick (1 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
