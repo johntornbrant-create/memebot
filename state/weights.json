@@ -1,5 +1,5 @@
 {
-  "version": 84,
+  "version": 85,
   "fitted_on": 1225,
   "n_shadow": 1143,
   "n_real": 82,
@@ -8,18 +8,18 @@
   "selectivity_pct": 0.68,
   "note": "refit on 1225 observations (1143 shadow, 82 real), 369 winners (30% base rate)",
   "prev_weights": {
-    "liq_quality": 0.0224,
-    "turnover": 0.1144,
-    "buy_pressure": 0.1004,
-    "momentum_accel": 0.0666,
-    "not_vertical": -0.0653,
-    "age_sweet": 0.0053,
-    "socials": -0.0076,
-    "fdv_sanity": 0.0239,
-    "txn_depth": 0.0856,
-    "dip_in_uptrend": 0.0012,
-    "buzz": 0.0209,
-    "paid_boost": 0.0329
+    "liq_quality": 0.0263,
+    "turnover": 0.1155,
+    "buy_pressure": 0.1016,
+    "momentum_accel": 0.0656,
+    "not_vertical": -0.0687,
+    "age_sweet": 0.0055,
+    "socials": -0.0099,
+    "fdv_sanity": 0.0242,
+    "txn_depth": 0.0844,
+    "dip_in_uptrend": 0.0048,
+    "buzz": 0.0207,
+    "paid_boost": 0.0311
   },
   "weights": {
     "liq_quality": 0.0263,
