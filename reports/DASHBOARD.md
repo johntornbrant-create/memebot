@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-22T02:31:56+00:00`
+Updated `2026-10-22T07:58:07+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $322.57 below $325.00. Manual reset required.
 
@@ -17,7 +17,7 @@ Updated `2026-10-22T02:31:56+00:00`
 | Closed trades | 82 (22W / 60L, WR 27%) |
 | Profit factor | 0.48 |
 | Fees + slippage paid | $68.00 |
-| Ticks run | 1389 |
+| Ticks run | 1391 |
 
 ## Open positions
 
@@ -43,35 +43,35 @@ _flat_
 | SNOWBALL | $+7.23 | +101% | 0.8h | ratchet +78% (peak +154%) |
 | 鹅次元 | $+3.43 | +48% | 0.9h | ratchet +88% (peak +168%) |
 
-## Learned weights (v90)
+## Learned weights (v91)
 
-_refit on 1256 observations (1174 shadow, 82 real), 373 winners (30% base rate)_
+_refit on 1264 observations (1182 shadow, 82 real), 374 winners (30% base rate)_
 
 | Feature | Weight |
 |---|---|
-| turnover | +0.118 |
-| buy_pressure | +0.097 |
-| txn_depth | +0.083 |
-| not_vertical | -0.070 |
-| momentum_accel | +0.068 |
-| paid_boost | +0.026 |
-| liq_quality | +0.024 |
-| fdv_sanity | +0.023 |
+| turnover | +0.120 |
+| buy_pressure | +0.099 |
+| txn_depth | +0.079 |
+| not_vertical | -0.073 |
+| momentum_accel | +0.067 |
+| liq_quality | +0.028 |
+| fdv_sanity | +0.025 |
+| paid_boost | +0.024 |
 | buzz | +0.018 |
-| dip_in_uptrend | +0.012 |
-| socials | -0.011 |
+| socials | -0.010 |
 | age_sweet | +0.010 |
+| dip_in_uptrend | +0.010 |
 
 ## Last run log
 ```
-tick #1389  equity $322.57  cash $322.57  open 0
+tick #1391  equity $322.57  cash $322.57  open 0
   scanning chains + news...
-  132 raw candidates across 6 chains, 159 headlines/posts
-  8 passed gates | rejected: liquidity too thin x80, no h1 volume x23, too old x12, already discovered x8, too new (bot war) x1
-  top: KIMCHIBULL 0.67 | PHP 0.57 | FRENS 0.50 | MONEYBIZ 0.43 | CYBER 0.42
-  tick bar 0.51 (top 30% of 8, floor 0.45)
+  123 raw candidates across 8 chains, 159 headlines/posts
+  3 passed gates | rejected: liquidity too thin x70, no h1 volume x23, too old x17, already discovered x8, unknown age x2
+  top: KIMCHIBULL 0.76 | MONEYBIZ 0.46 | TIB 0.16
+  tick bar 0.52 (top 30% of 3, floor 0.45)
   no entries this tick
-  shadow: tracking 22, closed 6 this tick (1 would have won)
+  shadow: tracking 19, closed 4 this tick (1 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
