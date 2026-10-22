@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-22T18:07:09+00:00`
+Updated `2026-10-22T21:32:54+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $322.57 below $325.00. Manual reset required.
 
@@ -17,7 +17,7 @@ Updated `2026-10-22T18:07:09+00:00`
 | Closed trades | 82 (22W / 60L, WR 27%) |
 | Profit factor | 0.48 |
 | Fees + slippage paid | $68.00 |
-| Ticks run | 1395 |
+| Ticks run | 1397 |
 
 ## Open positions
 
@@ -43,35 +43,35 @@ _flat_
 | SNOWBALL | $+7.23 | +101% | 0.8h | ratchet +78% (peak +154%) |
 | 鹅次元 | $+3.43 | +48% | 0.9h | ratchet +88% (peak +168%) |
 
-## Learned weights (v93)
+## Learned weights (v94)
 
-_refit on 1270 observations (1188 shadow, 82 real), 376 winners (30% base rate)_
+_refit on 1275 observations (1193 shadow, 82 real), 379 winners (30% base rate)_
 
 | Feature | Weight |
 |---|---|
-| turnover | +0.122 |
-| buy_pressure | +0.100 |
-| not_vertical | -0.079 |
-| txn_depth | +0.079 |
-| momentum_accel | +0.069 |
-| fdv_sanity | +0.029 |
-| liq_quality | +0.028 |
-| buzz | +0.028 |
+| turnover | +0.124 |
+| buy_pressure | +0.097 |
+| txn_depth | +0.085 |
+| not_vertical | -0.080 |
+| momentum_accel | +0.070 |
+| liq_quality | +0.030 |
+| fdv_sanity | +0.028 |
+| buzz | +0.026 |
 | paid_boost | +0.024 |
-| socials | -0.011 |
-| age_sweet | +0.009 |
-| dip_in_uptrend | +0.009 |
+| dip_in_uptrend | +0.012 |
+| age_sweet | +0.010 |
+| socials | -0.006 |
 
 ## Last run log
 ```
-tick #1395  equity $322.57  cash $322.57  open 0
+tick #1397  equity $322.57  cash $322.57  open 0
   scanning chains + news...
-  142 raw candidates across 8 chains, 159 headlines/posts
-  20 passed gates | rejected: liquidity too thin x67, no h1 volume x41, too old x6, already discovered x6, too new (bot war) x2
-  top: umi 0.67 | CHRM 0.56 | MONEYBIZ 0.51 | NOWHEEL 0.49 | PVE 0.48
-  tick bar 0.47 (top 30% of 20, floor 0.45)
+  81 raw candidates across 7 chains, 160 headlines/posts
+  6 passed gates | rejected: liquidity too thin x43, no h1 volume x23, too old x3, sell pressure x2, too new (bot war) x2
+  top: BTC 0.70 | SNOWMOON 0.60 | Kimchi 0.46 | EMP 0.46 | VIRTUAL 0.28
+  tick bar 0.52 (top 30% of 6, floor 0.45)
   no entries this tick
-  shadow: tracking 32, closed 5 this tick (3 would have won)
+  shadow: tracking 33, closed 4 this tick (3 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
