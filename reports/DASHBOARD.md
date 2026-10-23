@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-22T21:32:54+00:00`
+Updated `2026-10-23T00:10:55+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $322.57 below $325.00. Manual reset required.
 
@@ -17,7 +17,7 @@ Updated `2026-10-22T21:32:54+00:00`
 | Closed trades | 82 (22W / 60L, WR 27%) |
 | Profit factor | 0.48 |
 | Fees + slippage paid | $68.00 |
-| Ticks run | 1397 |
+| Ticks run | 1399 |
 
 ## Open positions
 
@@ -64,14 +64,14 @@ _refit on 1275 observations (1193 shadow, 82 real), 379 winners (30% base rate)_
 
 ## Last run log
 ```
-tick #1397  equity $322.57  cash $322.57  open 0
+tick #1399  equity $322.57  cash $322.57  open 0
   scanning chains + news...
-  81 raw candidates across 7 chains, 160 headlines/posts
-  6 passed gates | rejected: liquidity too thin x43, no h1 volume x23, too old x3, sell pressure x2, too new (bot war) x2
-  top: BTC 0.70 | SNOWMOON 0.60 | Kimchi 0.46 | EMP 0.46 | VIRTUAL 0.28
+  140 raw candidates across 7 chains, 160 headlines/posts
+  6 passed gates | rejected: liquidity too thin x69, no h1 volume x49, too old x9, already discovered x6, sell pressure x1
+  top: KIMCHINU 0.64 | SUKI 0.59 | MEGA 0.58 | BTC 0.51 | VIRTUAL 0.34
   tick bar 0.52 (top 30% of 6, floor 0.45)
   no entries this tick
-  shadow: tracking 33, closed 4 this tick (3 would have won)
+  shadow: tracking 32, closed 4 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
