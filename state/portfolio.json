@@ -2,8 +2,8 @@
   "started": "2026-09-22T16:04:55+00:00",
   "restarted": "2026-10-24",
   "run": 2,
-  "cash": 463.6253721599226,
-  "equity": 485.502,
+  "cash": 444.71961955735446,
+  "equity": 473.6143,
   "positions": {
     "solana:hFF4rkdzsaoYhkz4dGEQepGmHCBTVFFCoaLXbJqpump": {
       "id": "e1f6e41cf5",
@@ -37,50 +37,83 @@
         "buzz": 0.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.002149
+      "last_price": 0.001561
     },
-    "solana:3AQmLmBUKGGenieXnkNh1QGoFC1sSTkbdoiEU2Cxpump": {
-      "id": "c71b2808ed",
-      "chain": "solana",
-      "address": "3AQmLmBUKGGenieXnkNh1QGoFC1sSTkbdoiEU2Cxpump",
-      "symbol": "HCAT",
-      "opened": "2026-10-24T21:20:46+00:00",
-      "entry_price": 0.0003783,
-      "tokens": 25037.081562304047,
-      "tokens_initial": 25037.081562304047,
-      "cost_usd": 9.56,
-      "fees_usd": 0.0885,
+    "ethereum:0xBAF2Dc609412a6991E24C02a61039f7D885DD6bC": {
+      "id": "b4172e139a",
+      "chain": "ethereum",
+      "address": "0xBAF2Dc609412a6991E24C02a61039f7D885DD6bC",
+      "symbol": "ODIE",
+      "opened": "2026-10-24T23:30:05+00:00",
+      "entry_price": 0.0005455,
+      "tokens": 11736.225351449673,
+      "tokens_initial": 11736.225351449673,
+      "cost_usd": 9.47,
+      "fees_usd": 3.0679,
       "realized_usd": 0.0,
       "peak_gain": 0.0,
       "tp_hit": [],
-      "entry_liq": 52997.33,
-      "score": 0.5636,
+      "entry_liq": 50474.82,
+      "score": 0.7354,
       "features": {
-        "liq_quality": 0.7136,
-        "turnover": 0.0,
+        "liq_quality": 0.6909,
+        "turnover": 0.4103,
         "buy_pressure": 1.0,
         "momentum_accel": 1.0,
         "not_vertical": 0.0,
-        "age_sweet": 0.2988,
-        "socials": 1.0,
-        "fdv_sanity": 0.9533,
-        "txn_depth": 0.4659,
+        "age_sweet": 0.3066,
+        "socials": 0.0,
+        "fdv_sanity": 1.0,
+        "txn_depth": 0.6316,
         "dip_in_uptrend": 0.5,
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0003264
+      "last_price": 0.0005455
+    },
+    "solana:2QMiTLqkaNsdSZdDxnxpVLSgrPEyKzPLr6BKWFCLpump": {
+      "id": "5770a53c04",
+      "chain": "solana",
+      "address": "2QMiTLqkaNsdSZdDxnxpVLSgrPEyKzPLr6BKWFCLpump",
+      "symbol": "LUCIA",
+      "opened": "2026-10-24T23:30:05+00:00",
+      "entry_price": 0.000182,
+      "tokens": 51546.11156821772,
+      "tokens_initial": 51546.11156821772,
+      "cost_usd": 9.47,
+      "fees_usd": 0.0886,
+      "realized_usd": 0.0,
+      "peak_gain": 0.0,
+      "tp_hit": [],
+      "entry_liq": 34824.61,
+      "score": 0.5508,
+      "features": {
+        "liq_quality": 0.5144,
+        "turnover": 0.1076,
+        "buy_pressure": 1.0,
+        "momentum_accel": 1.0,
+        "not_vertical": 0.0,
+        "age_sweet": 0.2633,
+        "socials": 0.65,
+        "fdv_sanity": 0.996,
+        "txn_depth": 0.2863,
+        "dip_in_uptrend": 0.5,
+        "buzz": 0.0,
+        "paid_boost": 0.06
+      },
+      "last_price": 0.000182
     }
   },
   "blacklist": {
     "solana:2ZTZPzwUH2fFBVy6rDSidVtq6hXVeZPZmxUSLqd7pump": "2026-10-24T16:22:24+00:00",
     "solana:CbTbAY45Tfp8Lbk2ovjkS7wthxNka19MbGbGAZAdpump": "2026-10-24T16:22:24+00:00",
     "solana:3WUfWQADbhWwogJk7Y37o5PUUVEy7KK1xsxB3YTvpump": "2026-10-24T16:55:04+00:00",
-    "solana:3YYqFkPaob7SzUCyk59DGVhPZK1LN9odKMJc1uy3pump": "2026-10-24T19:16:22+00:00"
+    "solana:3YYqFkPaob7SzUCyk59DGVhPZK1LN9odKMJc1uy3pump": "2026-10-24T19:16:22+00:00",
+    "solana:3AQmLmBUKGGenieXnkNh1QGoFC1sSTkbdoiEU2Cxpump": "2026-10-24T23:28:38+00:00"
   },
   "halted": false,
   "halt_reason": "",
-  "last_entry": "2026-10-24T21:20:46+00:00",
+  "last_entry": "2026-10-24T23:30:05+00:00",
   "equity_history": [
     [
       "2026-10-24T15:23:05+00:00",
@@ -97,6 +130,10 @@
     [
       "2026-10-24T21:19:16+00:00",
       478.23
+    ],
+    [
+      "2026-10-24T23:28:38+00:00",
+      485.5
     ]
   ],
   "marks": {
@@ -104,17 +141,17 @@
     "day_equity": 500.0,
     "week": "2026-W43",
     "week_equity": 500.0,
-    "trades_today": 6
+    "trades_today": 8
   },
   "stats": {
-    "ticks": 1425,
-    "opened": 6,
-    "closed": 4,
+    "ticks": 1426,
+    "opened": 8,
+    "closed": 5,
     "wins": 0,
-    "losses": 4,
-    "fees_paid": 0.6697761671364277,
-    "realized_pnl": -21.770664380246934
+    "losses": 5,
+    "fees_paid": 3.846656447042057,
+    "realized_pnl": -31.296416982815035
   },
-  "updated": "2026-10-24T21:40:30+00:00",
+  "updated": "2026-10-24T23:30:07+00:00",
   "run1_final_equity": 322.5674
 }

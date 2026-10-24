@@ -1,33 +1,35 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-24T21:20:47+00:00`
+Updated `2026-10-24T23:30:07+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$478.23** |
-| Return | **-4.35%** (start $500.00) |
-| Cash | $459.11 |
-| Deployed | $19.12 (4.0%) |
-| Open positions | 2 / 8 |
-| Closed trades | 4 (0W / 4L, WR 0%) |
-| Profit factor | 0.45 |
-| Fees + slippage paid | $0.62 |
-| Ticks run | 1424 |
+| Equity | **$473.61** |
+| Return | **-5.28%** (start $500.00) |
+| Cash | $444.72 |
+| Deployed | $28.89 (6.1%) |
+| Open positions | 3 / 8 |
+| Closed trades | 5 (0W / 5L, WR 0%) |
+| Profit factor | 0.44 |
+| Fees + slippage paid | $3.85 |
+| Ticks run | 1426 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| WRHND | solana | $9.56 | $9.47 | +0% | +0% | 0.0h |
-| HCAT | solana | $9.56 | $9.47 | +0% | +0% | 0.0h |
+| WRHND | solana | $9.56 | $9.95 | +40% | +93% | 2.2h |
+| ODIE | ethereum | $9.47 | $6.40 | +0% | +0% | 0.0h |
+| LUCIA | solana | $9.47 | $9.38 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| HCAT | $-9.53 | -100% | 2.1h | stop loss -99% |
 | TRUMP | $-6.53 | -67% | 0.3h | stop loss -67% |
 | Leonida | $-6.82 | -99% | 0.5h | stop loss -99% |
 | MI | $-3.37 | -48% | 1.0h | stop loss -47% |
@@ -42,7 +44,6 @@ Updated `2026-10-24T21:20:47+00:00`
 | SAI | $-3.50 | -49% | 1.5h | stop loss -48% |
 | ARTHUR | $-4.77 | -66% | 0.3h | stop loss -66% |
 | WOOF | $-4.47 | -88% | 12.8h | ratchet +222% (peak +360%) |
-| STOCK | $+5.89 | +113% | 9.5h | ratchet +120% (peak +214%) |
 
 ## Learned weights (v102)
 
@@ -65,15 +66,16 @@ _refit on 1338 observations (1252 shadow, 86 real), 396 winners (30% base rate)_
 
 ## Last run log
 ```
-tick #1424  equity $478.23  cash $478.23  open 0
+tick #1426  equity $485.50  cash $463.63  open 2
+  SELL HCAT       100% @ $2.182e-06  ->  $0.03   [stop loss -99%]
   scanning chains + news...
-  116 raw candidates across 5 chains, 160 headlines/posts
-  13 passed gates | rejected: liquidity too thin x69, too old x18, no h1 volume x14, already discovered x1, exit-liquidity trap (FDV/liq) x1
-  top: WRHND 0.69 | HCAT 0.56 | swordcat 0.54 | MI 0.49 | BEARSTR 0.44
-  tick bar 0.48 (top 30% of 13, floor 0.45)
-  BUY[exploit] WRHND      $9.56 @ $0.001114  score 0.69  solana  liq $91,489
-  BUY[exploit] HCAT       $9.56 @ $0.0003783  score 0.56  solana  liq $52,997
-  shadow: tracking 44, closed 0 this tick (0 would have won)
+  160 raw candidates across 5 chains, 160 headlines/posts
+  9 passed gates | rejected: liquidity too thin x106, no h1 volume x18, too old x15, already discovered x6, unknown age x4
+  top: ODIE 0.74 | LUCIA 0.55 | SWORDOPE 0.54 | GDC 0.39 | REMUS 0.38
+  tick bar 0.48 (top 30% of 9, floor 0.45)
+  BUY[exploit] ODIE       $9.47 @ $0.0005455  score 0.74  ethereum  liq $50,475
+  BUY[exploit] LUCIA      $9.47 @ $0.000182  score 0.55  solana  liq $34,825
+  shadow: tracking 41, closed 6 this tick (1 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
