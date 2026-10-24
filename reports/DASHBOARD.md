@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-24T03:54:45+00:00`
+Updated `2026-10-24T08:31:53+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $322.57 below $325.00. Manual reset required.
 
@@ -17,7 +17,7 @@ Updated `2026-10-24T03:54:45+00:00`
 | Closed trades | 82 (22W / 60L, WR 27%) |
 | Profit factor | 0.48 |
 | Fees + slippage paid | $68.00 |
-| Ticks run | 1413 |
+| Ticks run | 1415 |
 
 ## Open positions
 
@@ -64,14 +64,14 @@ _refit on 1312 observations (1230 shadow, 82 real), 390 winners (30% base rate)_
 
 ## Last run log
 ```
-tick #1413  equity $322.57  cash $322.57  open 0
+tick #1415  equity $322.57  cash $322.57  open 0
   scanning chains + news...
-  132 raw candidates across 7 chains, 160 headlines/posts
-  7 passed gates | rejected: liquidity too thin x70, no h1 volume x36, too new (bot war) x6, already discovered x5, too old x3
-  top: ODIE 0.60 | TRUMP 0.37 | Moustache 0.34 | YMB 0.29 | VIRTUAL 0.22
-  tick bar 0.45 (top 30% of 7, floor 0.45)
+  121 raw candidates across 4 chains, 160 headlines/posts
+  13 passed gates | rejected: liquidity too thin x64, no h1 volume x25, too old x12, already discovered x7
+  top: MCRIBINU 0.73 | GROKLET 0.65 | evmbot 0.38 | YMB 0.34 | SHADOW 0.31
+  tick bar 0.45 (top 30% of 13, floor 0.45)
   no entries this tick
-  shadow: tracking 33, closed 3 this tick (0 would have won)
+  shadow: tracking 35, closed 4 this tick (1 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
