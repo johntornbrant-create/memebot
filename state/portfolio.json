@@ -3,7 +3,7 @@
   "restarted": "2026-10-24",
   "run": 2,
   "cash": 444.71961955735446,
-  "equity": 473.6143,
+  "equity": 470.57,
   "positions": {
     "solana:hFF4rkdzsaoYhkz4dGEQepGmHCBTVFFCoaLXbJqpump": {
       "id": "e1f6e41cf5",
@@ -37,7 +37,7 @@
         "buzz": 0.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.001561
+      "last_price": 0.001799
     },
     "ethereum:0xBAF2Dc609412a6991E24C02a61039f7D885DD6bC": {
       "id": "b4172e139a",
@@ -51,7 +51,7 @@
       "cost_usd": 9.47,
       "fees_usd": 3.0679,
       "realized_usd": 0.0,
-      "peak_gain": 0.0,
+      "peak_gain": 0.04051329055912012,
       "tp_hit": [],
       "entry_liq": 50474.82,
       "score": 0.7354,
@@ -69,7 +69,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0005455
+      "last_price": 0.0005676
     },
     "solana:2QMiTLqkaNsdSZdDxnxpVLSgrPEyKzPLr6BKWFCLpump": {
       "id": "5770a53c04",
@@ -101,7 +101,7 @@
         "buzz": 0.0,
         "paid_boost": 0.06
       },
-      "last_price": 0.000182
+      "last_price": 0.0001497
     }
   },
   "blacklist": {
@@ -144,7 +144,7 @@
     "trades_today": 8
   },
   "stats": {
-    "ticks": 1426,
+    "ticks": 1427,
     "opened": 8,
     "closed": 5,
     "wins": 0,
@@ -152,6 +152,6 @@
     "fees_paid": 3.846656447042057,
     "realized_pnl": -31.296416982815035
   },
-  "updated": "2026-10-24T23:30:07+00:00",
+  "updated": "2026-10-24T23:44:44+00:00",
   "run1_final_equity": 322.5674
 }
