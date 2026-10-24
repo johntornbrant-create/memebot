@@ -15,6 +15,7 @@ from . import config
 from .features import FEATURES, PRIOR_WEIGHTS
 from .scoring import load_weights, save_weights, score
 from .shadow import read_outcomes
+from . import diagnose
 
 TRADES = os.path.join(os.path.dirname(__file__), "..", "state", "trades.jsonl")
 REAL_TRADE_WEIGHT = 3.0
@@ -99,7 +100,12 @@ def refit(force=False):
     # Fix: always set the bar at a percentile of the model's own recent scores. It cannot
     # outrun the distribution, so the bot can never stop trading by accident.
     # Walk-forward on 122 unseen closures: p80 (~0.65) = +28.0%/trade, the best tested.
+    diag = diagnose.run()
     sel_pct = 0.68
+    # ACT on the self-diagnosis, do not just record it. An 18-day silent stall is the
+    # single most expensive failure this bot has had - loosen before anything else.
+    if diag.get("suggest_loosen"):
+        sel_pct = 0.50
     real = _read_trades()
     if len(real) >= 25:
         rwr = sum(1 for r in real if r.get("pnl_pct", -1) >= WIN_THRESHOLD) / len(real)
@@ -130,6 +136,8 @@ def refit(force=False):
         "fitted_on": n, "n_shadow": n_shadow, "n_real": n_real,
         "base_rate": round(base_rate, 3), "threshold": round(thr, 3),
         "selectivity_pct": sel_pct,
+        "diagnosis": diag.get("actions", []),
+        "edge_pp": diag.get("edge_pp"), "stop_actual": diag.get("stop_actual"),
         "note": (f"refit on {n} observations ({n_shadow} shadow, {n_real} real), "
                  f"{wins} winners ({base_rate:.0%} base rate)"),
         "prev_weights": old,

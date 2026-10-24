@@ -1,0 +1,358 @@
+{
+  "started": "2026-09-22T16:04:55+00:00",
+  "updated": "2026-10-24T13:33:05+00:00",
+  "cash": 322.56736719500645,
+  "equity": 322.5674,
+  "positions": {},
+  "blacklist": {
+    "solana:D4sBdmPaDKxKThQW3Eh721R9M335VcCThn31w7CRtdkN": "2026-09-22T17:22:35+00:00",
+    "solana:HzaCANKGkhNcQGb1VWL8f4tHJYrCmaXrPWk9eHR7GYYX": "2026-09-22T20:22:15+00:00",
+    "solana:BLSuVTxKYDL4vm4XmG3oEJfsSGfJZF3cgy98ri68pump": "2026-09-22T20:49:44+00:00",
+    "solana:MboMMGXjGDi45hfjCVzYru32kEM5nw7VzCqCofZpump": "2026-09-22T22:34:52+00:00",
+    "solana:26j97ZBGjaEZNzqZ3eSqKqPLZwS45aYp5BobLRQVpump": "2026-09-22T23:47:14+00:00",
+    "solana:3szq28LEQFxuB9tFNbS4xd7pCZs69d9J9W1ecyXLpump": "2026-09-23T01:04:10+00:00",
+    "solana:3i43bRLKSomUXyin1jgGsd3y9MgBW1cdX3nh43YD3W4R": "2026-09-23T01:22:01+00:00",
+    "solana:5zT1G7tWhew7GuLFKuiVwvvDv2z14kHG1dA7nt4Rpump": "2026-09-23T06:05:10+00:00",
+    "solana:4wYd4vPhzaUQs5vqUrEJ7CPtKg1qzXHhauERuh4MiNMB": "2026-09-23T07:04:43+00:00",
+    "bsc:0x24112F40562E4c77C0002eF5cCeA4D978cc180a2": "2026-09-23T07:37:09+00:00",
+    "solana:AgxyNjRhc2185eGATkQcanNG6J2pCQcdhxbaSrEXpump": "2026-09-23T07:37:09+00:00",
+    "solana:8MPLzMvudX7ehD8VjKSDDWCS9bAu1N6KK3Ubg5xypump": "2026-09-23T08:04:04+00:00",
+    "solana:CsB8SdZ2wFNqLpBJ5deuW1vnYv9nHDg5LfLTpEp5pump": "2026-09-23T08:25:15+00:00",
+    "solana:74sHNXtVDHZVw4ADktjGFHPzNycV8iHvfHLPp6QZPdT4": "2026-09-24T00:52:21+00:00",
+    "solana:c4AtfqMRbC9FuHtVEHDhCm453tytU9E34MXXrp6bLuf": "2026-09-24T02:23:42+00:00",
+    "bsc:0xc2b283f62DfcaA4BF6179508C739D16f085C9fB3": "2026-09-24T02:23:42+00:00",
+    "solana:8Vte25yt28L8BfLXm8DrzjSYEyaKX8yry6hRKRmX7FGd": "2026-09-24T03:23:32+00:00",
+    "solana:27XVtvjVVwBgZKDfBQfQ3L8TvWvBWCDYL7vBnFtjbdLc": "2026-09-24T05:49:49+00:00",
+    "bsc:0x0E75C4FDc17B54C5fC7c2320C3f70aA9Ce647777": "2026-09-24T13:25:28+00:00",
+    "bsc:0x67b85B6bEDd3C7C7e01c95168583bD1078e47777": "2026-09-24T13:52:21+00:00",
+    "solana:6F2e2Lkh3CSFHFpzwfnfT5QKtRosUNNrbWvyQDS8hB6S": "2026-09-25T01:04:12+00:00",
+    "solana:5qfodizArUwfzWxnHqvaK45eVdzv1mj8L6QPY8gUpump": "2026-09-25T01:22:15+00:00",
+    "bsc:0x862492e45d3aCD53f20E590D8C6e18f325c864C4": "2026-09-25T03:37:06+00:00",
+    "solana:D5qLnkRpzvuizsp4BfcrEWgUHiwrLoxVNZHoCx3Rpump": "2026-09-25T03:37:06+00:00",
+    "solana:EXXR9Wt3mjxbjmzhPVj7EcA3zfxZd9uk1WhMioeipump": "2026-09-25T07:24:55+00:00",
+    "bsc:0x4392cBaE887bb2CcF3d58bc4D04F782c76B47777": "2026-09-25T09:25:08+00:00",
+    "solana:4WECKfvfgEiojyZJq5Xm12Hvk76rhM4VHQAZGaELpump": "2026-09-25T09:37:53+00:00",
+    "bsc:0x7a67363885EBC01F1D2AEf95B238E39ca1587777": "2026-09-25T13:05:48+00:00",
+    "solana:3znS89gifim2Hhhu8wjb2PfSgaCDdma187D5NMkDpump": "2026-09-25T16:37:25+00:00",
+    "ethereum:0x85e6e6E7390513447e72b6B2966F26196dc7E785": "2026-09-26T01:00:46+00:00",
+    "solana:bGpXrniA1kzqubTCCexxR4Zh4Hrx8eoYY1Sqtt3pump": "2026-09-26T01:32:05+00:00",
+    "solana:FJGWEmtCEtvyviC8w86twWNiTcXwn7YiAoHmJgxWpump": "2026-09-27T22:49:50+00:00",
+    "solana:2pMyVuWtYh3SH44RNKPqqj6tiYqfMAFaKFkohS1npump": "2026-09-28T00:26:56+00:00",
+    "solana:5cDPo1jjEEtxWf2y1HTx4WyMydVmErN3YnbYtxLVcmg9": "2026-09-28T00:49:04+00:00",
+    "solana:5EsadufesY7VSU7CRPLTuFZP35q1kiLfWw6t8spUpump": "2026-09-28T01:49:21+00:00",
+    "solana:BvnqdYwuFrvi9ds63EtwQLYME89ikJkULnJPAd83pump": "2026-09-28T02:04:08+00:00",
+    "solana:C5zyCRUo23yLHDfcYWWTZNVh4yxWgQ8PFr1zx1Zrpump": "2026-09-28T02:20:30+00:00",
+    "ethereum:0x8B604C685605c48D75A150E7A1f59c76dE30aF9F": "2026-09-28T03:53:43+00:00",
+    "solana:A2r4WEaSpe4eDHriikS3xW5bgqdXbpA6bZFbJgjFpump": "2026-09-28T04:39:51+00:00",
+    "ethereum:0x4E67DB19044549fF420860834c91b45BaD298722": "2026-09-28T09:07:05+00:00",
+    "solana:9k7NgXqiJ7tvLtiB6HXdJHnKZZynFz46AB6Eg4Uwpump": "2026-09-29T00:31:16+00:00",
+    "ethereum:0x27aa8DabfDaCAd9353744bE79B1FF8526FB36c64": "2026-09-29T00:57:32+00:00",
+    "solana:A8MBwPZwR6msXrDBRzg8b1W7BpjjPch1WsTELQJzpump": "2026-09-29T01:07:05+00:00",
+    "solana:4kgo11KazbCNd2DosYSLGpgSZhEtda1gGu4rbWJLGCJV": "2026-09-29T01:23:39+00:00",
+    "solana:2sDeSDUigrzYKRhZBjjs8AJDyMYroRyVAsUzzq9D4sqr": "2026-09-29T01:51:43+00:00",
+    "solana:4tvcXSyhPfb1vQQWunMmMzmVNCJGMYrXgtv3bEbSpump": "2026-09-29T02:17:51+00:00",
+    "solana:HGN8K3x5ZLfYNjvE8b1hCqqu7RwupuKU6EkEhemzpump": "2026-09-29T03:55:46+00:00",
+    "ethereum:0xA912C71c0e53701153cAd9ba73E9B7D854418eaE": "2026-09-29T15:11:10+00:00",
+    "solana:6e8LLHkqCTa4mzGuL1PoUxSfeHmDeceJ3DaJSSUNg937": "2026-09-30T00:27:06+00:00",
+    "solana:BiFfzEETEN4wG1vCQLmKk7nBcAcDzVrTEgX3fDiLpump": "2026-09-30T01:39:29+00:00",
+    "solana:J47Jmw8ndwu6Vt6ZubD9C9VUVHi6uWsBE2XPsEjmpump": "2026-09-30T01:43:30+00:00",
+    "solana:9a2vQG6eQGmdJqvrVuAtXpvMQMokhLf7FHW1QJGHFvWi": "2026-09-30T06:48:45+00:00",
+    "solana:8vDuxcypxP1W7QzDs537zUqnLbxPbyD6G1i7q49Vpump": "2026-10-05T12:37:14+00:00",
+    "solana:Ar3QBegnCQr6ZFyN9h637ar9JCxZRvdboiR1QzMrpump": "2026-10-05T21:07:08+00:00",
+    "solana:GYFLuEAZMDdpUsTmyGdHstuXQC3JB9ZqtZbfktpppump": "2026-10-06T07:57:36+00:00",
+    "solana:E7eCZS2cq655qJ7uVx3dSHR2zK31kwNQsWS6P6Hpump": "2026-10-06T14:43:37+00:00"
+  },
+  "halted": true,
+  "halt_reason": "KILL SWITCH: equity $322.57 below $325.00. Manual reset required.",
+  "marks": {
+    "day": "2026-10-24",
+    "day_equity": 322.5674,
+    "week": "2026-W43",
+    "week_equity": 322.5674,
+    "trades_today": 0
+  },
+  "stats": {
+    "ticks": 1418,
+    "opened": 82,
+    "closed": 82,
+    "wins": 22,
+    "losses": 60,
+    "fees_paid": 67.99902372743267,
+    "realized_pnl": -177.43263280499352
+  },
+  "last_entry": "2026-10-06T07:58:51+00:00",
+  "equity_history": [
+    [
+      "2026-10-15T14:17:53+00:00",
+      322.57
+    ],
+    [
+      "2026-10-15T16:55:43+00:00",
+      322.57
+    ],
+    [
+      "2026-10-15T18:24:06+00:00",
+      322.57
+    ],
+    [
+      "2026-10-15T20:08:13+00:00",
+      322.57
+    ],
+    [
+      "2026-10-15T21:36:38+00:00",
+      322.57
+    ],
+    [
+      "2026-10-15T23:02:48+00:00",
+      322.57
+    ],
+    [
+      "2026-10-16T01:17:53+00:00",
+      322.57
+    ],
+    [
+      "2026-10-16T06:00:27+00:00",
+      322.57
+    ],
+    [
+      "2026-10-16T07:03:40+00:00",
+      322.57
+    ],
+    [
+      "2026-10-16T11:16:31+00:00",
+      322.57
+    ],
+    [
+      "2026-10-16T12:19:53+00:00",
+      322.57
+    ],
+    [
+      "2026-10-16T15:25:06+00:00",
+      322.57
+    ],
+    [
+      "2026-10-16T16:48:07+00:00",
+      322.57
+    ],
+    [
+      "2026-10-16T18:52:02+00:00",
+      322.57
+    ],
+    [
+      "2026-10-16T21:50:11+00:00",
+      322.57
+    ],
+    [
+      "2026-10-17T00:03:40+00:00",
+      322.57
+    ],
+    [
+      "2026-10-17T04:19:22+00:00",
+      322.57
+    ],
+    [
+      "2026-10-17T08:41:27+00:00",
+      322.57
+    ],
+    [
+      "2026-10-17T12:24:30+00:00",
+      322.57
+    ],
+    [
+      "2026-10-17T15:46:15+00:00",
+      322.57
+    ],
+    [
+      "2026-10-17T18:02:45+00:00",
+      322.57
+    ],
+    [
+      "2026-10-17T20:32:06+00:00",
+      322.57
+    ],
+    [
+      "2026-10-17T22:39:03+00:00",
+      322.57
+    ],
+    [
+      "2026-10-18T00:17:23+00:00",
+      322.57
+    ],
+    [
+      "2026-10-18T04:51:12+00:00",
+      322.57
+    ],
+    [
+      "2026-10-18T09:14:14+00:00",
+      322.57
+    ],
+    [
+      "2026-10-18T13:18:53+00:00",
+      322.57
+    ],
+    [
+      "2026-10-18T16:39:01+00:00",
+      322.57
+    ],
+    [
+      "2026-10-18T18:55:24+00:00",
+      322.57
+    ],
+    [
+      "2026-10-18T21:11:33+00:00",
+      322.57
+    ],
+    [
+      "2026-10-18T23:09:28+00:00",
+      322.57
+    ],
+    [
+      "2026-10-19T01:11:47+00:00",
+      322.57
+    ],
+    [
+      "2026-10-19T06:10:54+00:00",
+      322.57
+    ],
+    [
+      "2026-10-19T13:05:55+00:00",
+      322.57
+    ],
+    [
+      "2026-10-19T19:17:51+00:00",
+      322.57
+    ],
+    [
+      "2026-10-19T22:57:49+00:00",
+      322.57
+    ],
+    [
+      "2026-10-20T01:34:48+00:00",
+      322.57
+    ],
+    [
+      "2026-10-20T06:35:26+00:00",
+      322.57
+    ],
+    [
+      "2026-10-20T12:10:25+00:00",
+      322.57
+    ],
+    [
+      "2026-10-20T16:58:22+00:00",
+      322.57
+    ],
+    [
+      "2026-10-20T20:18:04+00:00",
+      322.57
+    ],
+    [
+      "2026-10-20T23:15:18+00:00",
+      322.57
+    ],
+    [
+      "2026-10-21T01:45:57+00:00",
+      322.57
+    ],
+    [
+      "2026-10-21T06:47:53+00:00",
+      322.57
+    ],
+    [
+      "2026-10-21T12:35:16+00:00",
+      322.57
+    ],
+    [
+      "2026-10-21T17:38:45+00:00",
+      322.57
+    ],
+    [
+      "2026-10-21T20:53:09+00:00",
+      322.57
+    ],
+    [
+      "2026-10-21T23:48:27+00:00",
+      322.57
+    ],
+    [
+      "2026-10-22T02:30:26+00:00",
+      322.57
+    ],
+    [
+      "2026-10-22T04:44:46+00:00",
+      322.57
+    ],
+    [
+      "2026-10-22T07:56:42+00:00",
+      322.57
+    ],
+    [
+      "2026-10-22T09:40:45+00:00",
+      322.57
+    ],
+    [
+      "2026-10-22T13:23:01+00:00",
+      322.57
+    ],
+    [
+      "2026-10-22T14:41:20+00:00",
+      322.57
+    ],
+    [
+      "2026-10-22T18:04:40+00:00",
+      322.57
+    ],
+    [
+      "2026-10-22T21:31:20+00:00",
+      322.57
+    ],
+    [
+      "2026-10-23T00:09:22+00:00",
+      322.57
+    ],
+    [
+      "2026-10-23T04:42:35+00:00",
+      322.57
+    ],
+    [
+      "2026-10-23T09:35:09+00:00",
+      322.57
+    ],
+    [
+      "2026-10-23T14:26:11+00:00",
+      322.57
+    ],
+    [
+      "2026-10-23T18:34:01+00:00",
+      322.57
+    ],
+    [
+      "2026-10-23T21:40:09+00:00",
+      322.57
+    ],
+    [
+      "2026-10-23T23:59:50+00:00",
+      322.57
+    ],
+    [
+      "2026-10-24T03:53:14+00:00",
+      322.57
+    ],
+    [
+      "2026-10-24T05:08:02+00:00",
+      322.57
+    ],
+    [
+      "2026-10-24T08:30:23+00:00",
+      322.57
+    ],
+    [
+      "2026-10-24T09:30:57+00:00",
+      322.57
+    ],
+    [
+      "2026-10-24T12:54:54+00:00",
+      322.57
+    ]
+  ]
+}
