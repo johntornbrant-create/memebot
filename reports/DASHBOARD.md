@@ -1,33 +1,34 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-24T15:24:41+00:00`
+Updated `2026-10-24T16:23:54+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$500.00** |
-| Return | **+0.00%** (start $500.00) |
-| Cash | $486.00 |
-| Deployed | $14.00 (2.8%) |
-| Open positions | 2 / 8 |
-| Closed trades | 0 (0W / 0L, WR 0%) |
-| Profit factor | 0.48 |
-| Fees + slippage paid | $0.14 |
-| Ticks run | 1419 |
+| Equity | **$491.57** |
+| Return | **-1.69%** (start $500.00) |
+| Cash | $484.69 |
+| Deployed | $6.88 (1.4%) |
+| Open positions | 1 / 8 |
+| Closed trades | 2 (0W / 2L, WR 0%) |
+| Profit factor | 0.47 |
+| Fees + slippage paid | $0.29 |
+| Ticks run | 1420 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| PRIVACY | solana | $7.00 | $6.93 | +0% | +0% | 0.0h |
-| MI | solana | $7.00 | $6.93 | +0% | +0% | 0.0h |
+| Leonida | solana | $6.88 | $6.81 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| MI | $-3.37 | -48% | 1.0h | stop loss -47% |
+| PRIVACY | $-5.06 | -72% | 1.0h | stop loss -71% |
 | APU | $-3.72 | -57% | 6.8h | stop loss -56% |
 | SWAP | $-6.55 | -98% | 6.4h | stop loss -98% |
 | TIT | $-5.43 | -80% | 8.5h | stop loss -80% |
@@ -41,8 +42,6 @@ Updated `2026-10-24T15:24:41+00:00`
 | STOCK | $+5.89 | +113% | 9.5h | ratchet +120% (peak +214%) |
 | SNOWBALL | $-2.98 | -41% | 1.1h | stop loss -40% |
 | INKCHAN | $+0.60 | +8% | 1.0h | ratchet +0% (peak +69%) |
-| SNOWBALL | $+7.23 | +101% | 0.8h | ratchet +78% (peak +154%) |
-| 鹅次元 | $+3.43 | +48% | 0.9h | ratchet +88% (peak +168%) |
 
 ## Learned weights (v101)
 
@@ -65,15 +64,16 @@ _refit on 1321 observations (1239 shadow, 82 real), 391 winners (30% base rate)_
 
 ## Last run log
 ```
-tick #1419  equity $500.00  cash $500.00  open 0
+tick #1420  equity $500.00  cash $486.00  open 2
+  SELL PRIVACY    100% @ $0.000437  ->  $1.94   [stop loss -71%]
+  SELL MI         100% @ $0.0006843  ->  $3.63   [stop loss -47%]
   scanning chains + news...
-  76 raw candidates across 5 chains, 160 headlines/posts
-  10 passed gates | rejected: liquidity too thin x45, no h1 volume x14, too old x7
-  top: DOGETRUMP 0.68 | VIRTUAL 0.60 | PRIVACY 0.51 | MI 0.50 | GDC 0.42
-  tick bar 0.47 (top 30% of 10, floor 0.45)
-  BUY[explore] PRIVACY    $7.00 @ $0.001532  score 0.51  solana  liq $107,500
-  BUY[explore] MI         $7.00 @ $0.00129  score 0.50  solana  liq $95,490
-  shadow: tracking 34, closed 9 this tick (4 would have won)
+  113 raw candidates across 9 chains, 160 headlines/posts
+  11 passed gates | rejected: liquidity too thin x59, no h1 volume x20, too old x11, already discovered x6, unknown age x6
+  top: Leonida 0.52 | VIRTUAL 0.50 | swordinu 0.48 | GDC 0.45 | REMUS 0.43
+  tick bar 0.47 (top 30% of 11, floor 0.45)
+  BUY[explore] Leonida    $6.88 @ $0.0001563  score 0.52  solana  liq $32,494
+  shadow: tracking 37, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
