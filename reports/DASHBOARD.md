@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-24T08:31:53+00:00`
+Updated `2026-10-24T12:56:24+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $322.57 below $325.00. Manual reset required.
 
@@ -17,7 +17,7 @@ Updated `2026-10-24T08:31:53+00:00`
 | Closed trades | 82 (22W / 60L, WR 27%) |
 | Profit factor | 0.48 |
 | Fees + slippage paid | $68.00 |
-| Ticks run | 1415 |
+| Ticks run | 1417 |
 
 ## Open positions
 
@@ -43,35 +43,35 @@ _flat_
 | SNOWBALL | $+7.23 | +101% | 0.8h | ratchet +78% (peak +154%) |
 | 鹅次元 | $+3.43 | +48% | 0.9h | ratchet +88% (peak +168%) |
 
-## Learned weights (v99)
+## Learned weights (v100)
 
-_refit on 1312 observations (1230 shadow, 82 real), 390 winners (30% base rate)_
+_refit on 1319 observations (1237 shadow, 82 real), 391 winners (30% base rate)_
 
 | Feature | Weight |
 |---|---|
-| turnover | +0.135 |
-| txn_depth | +0.100 |
-| buy_pressure | +0.097 |
-| not_vertical | -0.086 |
-| momentum_accel | +0.066 |
-| paid_boost | +0.044 |
-| buzz | +0.035 |
-| fdv_sanity | +0.029 |
-| liq_quality | +0.021 |
-| dip_in_uptrend | +0.015 |
-| age_sweet | +0.011 |
-| socials | -0.001 |
+| turnover | +0.139 |
+| txn_depth | +0.098 |
+| buy_pressure | +0.092 |
+| not_vertical | -0.083 |
+| momentum_accel | +0.069 |
+| paid_boost | +0.047 |
+| buzz | +0.036 |
+| fdv_sanity | +0.028 |
+| liq_quality | +0.022 |
+| dip_in_uptrend | +0.016 |
+| age_sweet | +0.012 |
+| socials | -0.003 |
 
 ## Last run log
 ```
-tick #1415  equity $322.57  cash $322.57  open 0
+tick #1417  equity $322.57  cash $322.57  open 0
   scanning chains + news...
-  121 raw candidates across 4 chains, 160 headlines/posts
-  13 passed gates | rejected: liquidity too thin x64, no h1 volume x25, too old x12, already discovered x7
-  top: MCRIBINU 0.73 | GROKLET 0.65 | evmbot 0.38 | YMB 0.34 | SHADOW 0.31
-  tick bar 0.45 (top 30% of 13, floor 0.45)
+  76 raw candidates across 7 chains, 160 headlines/posts
+  7 passed gates | rejected: liquidity too thin x43, no h1 volume x24, too old x1, already discovered x1
+  top: Friendship 0.50 | TRUMP 0.44 | Moustache 0.35 | 币安世界 0.34 | REMUS 0.30
+  tick bar 0.45 (top 30% of 7, floor 0.45)
   no entries this tick
-  shadow: tracking 35, closed 4 this tick (1 would have won)
+  shadow: tracking 37, closed 2 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
