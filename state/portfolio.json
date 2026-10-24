@@ -2,45 +2,13 @@
   "started": "2026-09-22T16:04:55+00:00",
   "restarted": "2026-10-24",
   "run": 2,
-  "cash": 484.6915085122158,
-  "equity": 491.5735,
-  "positions": {
-    "solana:3WUfWQADbhWwogJk7Y37o5PUUVEy7KK1xsxB3YTvpump": {
-      "id": "e611e5436e",
-      "chain": "solana",
-      "address": "3WUfWQADbhWwogJk7Y37o5PUUVEy7KK1xsxB3YTvpump",
-      "symbol": "Leonida",
-      "opened": "2026-10-24T16:23:53+00:00",
-      "entry_price": 0.0001563,
-      "tokens": 43586.327583899016,
-      "tokens_initial": 43586.327583899016,
-      "cost_usd": 6.882029,
-      "fees_usd": 0.0695,
-      "realized_usd": 0.0,
-      "peak_gain": 0.0,
-      "tp_hit": [],
-      "entry_liq": 32494.46,
-      "score": 0.5235,
-      "features": {
-        "liq_quality": 0.4822,
-        "turnover": 0.0,
-        "buy_pressure": 1.0,
-        "momentum_accel": 1.0,
-        "not_vertical": 0.0,
-        "age_sweet": 0.2701,
-        "socials": 0.65,
-        "fdv_sanity": 1.0,
-        "txn_depth": 0.2275,
-        "dip_in_uptrend": 1.0,
-        "buzz": 0.0,
-        "paid_boost": 0.06
-      },
-      "last_price": 0.0001563
-    }
-  },
+  "cash": 484.7570723134142,
+  "equity": 484.7571,
+  "positions": {},
   "blacklist": {
     "solana:2ZTZPzwUH2fFBVy6rDSidVtq6hXVeZPZmxUSLqd7pump": "2026-10-24T16:22:24+00:00",
-    "solana:CbTbAY45Tfp8Lbk2ovjkS7wthxNka19MbGbGAZAdpump": "2026-10-24T16:22:24+00:00"
+    "solana:CbTbAY45Tfp8Lbk2ovjkS7wthxNka19MbGbGAZAdpump": "2026-10-24T16:22:24+00:00",
+    "solana:3WUfWQADbhWwogJk7Y37o5PUUVEy7KK1xsxB3YTvpump": "2026-10-24T16:55:04+00:00"
   },
   "halted": false,
   "halt_reason": "",
@@ -49,6 +17,10 @@
     [
       "2026-10-24T15:23:05+00:00",
       500.0
+    ],
+    [
+      "2026-10-24T16:55:04+00:00",
+      491.57
     ]
   ],
   "marks": {
@@ -59,14 +31,14 @@
     "trades_today": 3
   },
   "stats": {
-    "ticks": 1420,
+    "ticks": 1421,
     "opened": 3,
-    "closed": 2,
+    "closed": 3,
     "wins": 0,
-    "losses": 2,
-    "fees_paid": 0.2881664445399974,
-    "realized_pnl": -8.426462487784214
+    "losses": 3,
+    "fees_paid": 0.30877281297498305,
+    "realized_pnl": -15.242927686585832
   },
-  "updated": "2026-10-24T16:23:54+00:00",
+  "updated": "2026-10-24T16:55:04+00:00",
   "run1_final_equity": 322.5674
 }
