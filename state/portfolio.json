@@ -2,46 +2,14 @@
   "started": "2026-09-22T16:04:55+00:00",
   "restarted": "2026-10-24",
   "run": 2,
-  "cash": 475.0570723134142,
-  "equity": 484.7571,
-  "positions": {
-    "solana:3YYqFkPaob7SzUCyk59DGVhPZK1LN9odKMJc1uy3pump": {
-      "id": "5c6c1a1a82",
-      "chain": "solana",
-      "address": "3YYqFkPaob7SzUCyk59DGVhPZK1LN9odKMJc1uy3pump",
-      "symbol": "TRUMP",
-      "opened": "2026-10-24T18:55:34+00:00",
-      "entry_price": 0.0002547,
-      "tokens": 37731.706761413334,
-      "tokens_initial": 37731.706761413334,
-      "cost_usd": 9.7,
-      "fees_usd": 0.0897,
-      "realized_usd": 0.0,
-      "peak_gain": 0.0,
-      "tp_hit": [],
-      "entry_liq": 46165.6,
-      "score": 0.4505,
-      "features": {
-        "liq_quality": 0.6486,
-        "turnover": 0.6262,
-        "buy_pressure": 1.0,
-        "momentum_accel": 0.4109,
-        "not_vertical": 1.0,
-        "age_sweet": 0.695,
-        "socials": 1.0,
-        "fdv_sanity": 0.989,
-        "txn_depth": 0.0,
-        "dip_in_uptrend": 0.0,
-        "buzz": 1.0,
-        "paid_boost": 0.2
-      },
-      "last_price": 0.0002547
-    }
-  },
+  "cash": 478.2293356197531,
+  "equity": 478.2293,
+  "positions": {},
   "blacklist": {
     "solana:2ZTZPzwUH2fFBVy6rDSidVtq6hXVeZPZmxUSLqd7pump": "2026-10-24T16:22:24+00:00",
     "solana:CbTbAY45Tfp8Lbk2ovjkS7wthxNka19MbGbGAZAdpump": "2026-10-24T16:22:24+00:00",
-    "solana:3WUfWQADbhWwogJk7Y37o5PUUVEy7KK1xsxB3YTvpump": "2026-10-24T16:55:04+00:00"
+    "solana:3WUfWQADbhWwogJk7Y37o5PUUVEy7KK1xsxB3YTvpump": "2026-10-24T16:55:04+00:00",
+    "solana:3YYqFkPaob7SzUCyk59DGVhPZK1LN9odKMJc1uy3pump": "2026-10-24T19:16:22+00:00"
   },
   "halted": false,
   "halt_reason": "",
@@ -68,14 +36,14 @@
     "trades_today": 4
   },
   "stats": {
-    "ticks": 1422,
+    "ticks": 1423,
     "opened": 4,
-    "closed": 3,
+    "closed": 4,
     "wins": 0,
-    "losses": 3,
-    "fees_paid": 0.398507100843006,
-    "realized_pnl": -15.242927686585832
+    "losses": 4,
+    "fees_paid": 0.44136252764413947,
+    "realized_pnl": -21.770664380246934
   },
-  "updated": "2026-10-24T18:55:36+00:00",
+  "updated": "2026-10-24T19:16:22+00:00",
   "run1_final_equity": 322.5674
 }
