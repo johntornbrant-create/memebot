@@ -3,7 +3,7 @@
   "restarted": "2026-10-24",
   "run": 2,
   "cash": 425.8640270238025,
-  "equity": 439.5464,
+  "equity": 438.9274,
   "positions": {
     "bsc:0xb8462347fb69eE8aEF3fAE7c58c1cc3f78D97777": {
       "id": "87b0f956b6",
@@ -35,7 +35,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 8.986e-05
+      "last_price": 8.871e-05
     },
     "solana:H7VZNCBynDK5ikBS9krDJ2Tx8CUr1wxedV19ZgkWpump": {
       "id": "bd04878b20",
@@ -67,7 +67,7 @@
         "buzz": 0.0,
         "paid_boost": 1.0
       },
-      "last_price": 0.001252
+      "last_price": 0.001116
     }
   },
   "blacklist": {
@@ -144,7 +144,7 @@
     "trades_today": 7
   },
   "stats": {
-    "ticks": 1438,
+    "ticks": 1439,
     "opened": 15,
     "closed": 13,
     "wins": 1,
@@ -152,6 +152,6 @@
     "fees_paid": 7.732404567773711,
     "realized_pnl": -61.50681937619746
   },
-  "updated": "2026-10-25T21:08:48+00:00",
+  "updated": "2026-10-25T21:54:40+00:00",
   "run1_final_equity": 322.5674
 }
