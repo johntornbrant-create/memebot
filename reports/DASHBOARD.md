@@ -1,28 +1,29 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-25T01:27:10+00:00`
+Updated `2026-10-25T06:28:07+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$448.04** |
-| Return | **-10.39%** (start $500.00) |
-| Cash | $435.49 |
-| Deployed | $12.55 (2.8%) |
-| Open positions | 2 / 8 |
+| Equity | **$455.26** |
+| Return | **-8.95%** (start $500.00) |
+| Cash | $429.07 |
+| Deployed | $26.19 (5.8%) |
+| Open positions | 3 / 8 |
 | Closed trades | 8 (0W / 8L, WR 0%) |
 | Profit factor | 0.41 |
-| Fees + slippage paid | $7.04 |
-| Ticks run | 1428 |
+| Fees + slippage paid | $7.16 |
+| Ticks run | 1430 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| REACHY | solana | $6.27 | $6.21 | +0% | +0% | 0.0h |
-| MAYA | solana | $6.27 | $6.21 | +0% | +0% | 0.0h |
+| REACHY | solana | $6.27 | $8.11 | +31% | +31% | 5.0h |
+| MAYA | solana | $6.27 | $8.97 | +93% | +93% | 5.0h |
+| KURUMI | solana | $9.11 | $9.02 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
@@ -44,39 +45,35 @@ Updated `2026-10-25T01:27:10+00:00`
 | NUTFLEX | $-4.20 | -59% | 1.1h | stop loss -58% |
 | FKCANCER | $-2.88 | -41% | 0.8h | stop loss -39% |
 
-## Learned weights (v102)
+## Learned weights (v103)
 
-_refit on 1338 observations (1252 shadow, 86 real), 396 winners (30% base rate)_
+_refit on 1353 observations (1263 shadow, 90 real), 397 winners (29% base rate)_
 
 | Feature | Weight |
 |---|---|
-| turnover | +0.132 |
-| txn_depth | +0.106 |
-| buy_pressure | +0.084 |
-| not_vertical | -0.077 |
-| momentum_accel | +0.067 |
+| turnover | +0.141 |
+| txn_depth | +0.110 |
+| not_vertical | -0.078 |
+| buy_pressure | +0.075 |
+| momentum_accel | +0.065 |
 | paid_boost | +0.060 |
-| fdv_sanity | +0.031 |
-| buzz | +0.027 |
-| liq_quality | +0.020 |
-| dip_in_uptrend | +0.017 |
-| age_sweet | +0.013 |
-| socials | +0.002 |
+| buzz | +0.031 |
+| dip_in_uptrend | +0.026 |
+| fdv_sanity | +0.025 |
+| liq_quality | +0.016 |
+| age_sweet | +0.008 |
+| socials | +0.006 |
 
 ## Last run log
 ```
-tick #1428  equity $470.57  cash $444.72  open 3
-  SELL WRHND      100% @ $0.0005145  ->  $3.24   [ratchet +25% (peak +93%)]
-  SELL ODIE       100% @ $1.521e-10  ->  $0.00   [stop loss -100%]
-  SELL LUCIA      100% @ $1.923e-06  ->  $0.08   [stop loss -99%]
+tick #1430  equity $451.84  cash $438.18  open 2
   scanning chains + news...
-  132 raw candidates across 7 chains, 160 headlines/posts
-  10 passed gates | rejected: liquidity too thin x89, no h1 volume x18, too old x12, already discovered x2, exit-liquidity trap (FDV/liq) x1
-  top: MAYA 0.65 | BTC 0.56 | WRHND 0.45 | REACHY 0.44 | SWORDOPE 0.42
-  tick bar 0.45 (top 30% of 10, floor 0.45)
-  BUY[explore] REACHY     $6.27 @ $0.0001925  score 0.44  solana  liq $36,084
-  BUY[explore] MAYA       $6.27 @ $0.0008188  score 0.65  solana  liq $78,287
-  shadow: tracking 41, closed 5 this tick (0 would have won)
+  130 raw candidates across 7 chains, 160 headlines/posts
+  11 passed gates | rejected: liquidity too thin x79, no h1 volume x31, too old x7, already discovered x2
+  top: KURUMI 0.48 | Chunkee 0.45 | ███ 0.37 | WRHND 0.31 | REACHY 0.30
+  tick bar 0.45 (top 30% of 11, floor 0.45)
+  BUY[exploit] KURUMI     $9.11 @ $0.0002891  score 0.48  solana  liq $45,129
+  shadow: tracking 41, closed 3 this tick (1 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
