@@ -2,8 +2,8 @@
   "started": "2026-09-22T16:04:55+00:00",
   "restarted": "2026-10-24",
   "run": 2,
-  "cash": 421.51479825829057,
-  "equity": 457.7078,
+  "cash": 430.64387913228336,
+  "equity": 451.8936,
   "positions": {
     "solana:DgmECo2oh1h7WC7sb7Y25fuH6YLBDCnjCBzKbVQ1pump": {
       "id": "a5980dddfe",
@@ -35,41 +35,7 @@
         "buzz": 0.3333,
         "paid_boost": 0.06
       },
-      "last_price": 0.0002303
-    },
-    "solana:AUHK6bsTMU6nemt7epnvELJtGezx9JS76Lm48pxipump": {
-      "id": "dd30a2e346",
-      "chain": "solana",
-      "address": "AUHK6bsTMU6nemt7epnvELJtGezx9JS76Lm48pxipump",
-      "symbol": "KURUMI",
-      "opened": "2026-10-25T06:28:06+00:00",
-      "entry_price": 0.0002891,
-      "tokens": 23412.075989043347,
-      "tokens_initial": 31216.101318724464,
-      "cost_usd": 9.11,
-      "fees_usd": 0.1429723333416532,
-      "realized_usd": 5.259310123770091,
-      "peak_gain": 1.3566240055344174,
-      "tp_hit": [
-        0
-      ],
-      "entry_liq": 45128.69,
-      "score": 0.4833,
-      "features": {
-        "liq_quality": 0.6378,
-        "turnover": 0.6301,
-        "buy_pressure": 0.9827,
-        "momentum_accel": 0.5071,
-        "not_vertical": 1.0,
-        "age_sweet": 0.9996,
-        "socials": 0.65,
-        "fdv_sanity": 0.9701,
-        "txn_depth": 0.4308,
-        "dip_in_uptrend": 0.5,
-        "buzz": 0.0,
-        "paid_boost": 0.1
-      },
-      "last_price": 0.0006813
+      "last_price": 0.0002343
     },
     "solana:3SVjZ7BfT9FxiR49nZc7UdBmLgzRLJY7XBZDKhEFpump": {
       "id": "c69fe17755",
@@ -101,7 +67,7 @@
         "buzz": 0.0,
         "paid_boost": 1.0
       },
-      "last_price": 0.001394
+      "last_price": 0.001382
     },
     "bsc:0xb8462347fb69eE8aEF3fAE7c58c1cc3f78D97777": {
       "id": "87b0f956b6",
@@ -115,7 +81,7 @@
       "cost_usd": 6.4079092,
       "fees_usd": 0.0956,
       "realized_usd": 0.0,
-      "peak_gain": 0.0,
+      "peak_gain": 0.17326100829610724,
       "tp_hit": [],
       "entry_liq": 50586.21,
       "score": 0.3397,
@@ -133,7 +99,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 6.268e-05
+      "last_price": 7.354e-05
     }
   },
   "blacklist": {
@@ -191,14 +157,14 @@
     "trades_today": 5
   },
   "stats": {
-    "ticks": 1432,
+    "ticks": 1433,
     "opened": 13,
-    "closed": 9,
-    "wins": 0,
+    "closed": 10,
+    "wins": 1,
     "losses": 9,
-    "fees_paid": 7.402766465920174,
-    "realized_pnl": -55.546189465479465
+    "fees_paid": 7.488678701214874,
+    "realized_pnl": -50.26779846771661
   },
-  "updated": "2026-10-25T11:54:44+00:00",
+  "updated": "2026-10-25T12:28:41+00:00",
   "run1_final_equity": 322.5674
 }
