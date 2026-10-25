@@ -1,35 +1,35 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-25T15:17:56+00:00`
+Updated `2026-10-25T18:31:31+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$444.37** |
-| Return | **-11.13%** (start $500.00) |
-| Cash | $418.25 |
-| Deployed | $26.13 (5.9%) |
-| Open positions | 4 / 8 |
-| Closed trades | 11 (1W / 10L, WR 9%) |
-| Profit factor | 0.42 |
-| Fees + slippage paid | $7.64 |
-| Ticks run | 1434 |
+| Equity | **$441.90** |
+| Return | **-11.62%** (start $500.00) |
+| Cash | $422.23 |
+| Deployed | $19.66 (4.4%) |
+| Open positions | 3 / 8 |
+| Closed trades | 12 (1W / 11L, WR 8%) |
+| Profit factor | 0.41 |
+| Fees + slippage paid | $7.69 |
+| Ticks run | 1436 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| SWORDOPE | solana | $6.41 | $5.30 | -16% | +0% | 3.4h |
-| 币安AiPro | bsc | $6.41 | $8.39 | +33% | +33% | 3.4h |
-| BTC | solana | $6.22 | $6.16 | +0% | +0% | 0.0h |
-| CATTLEAXE | solana | $6.22 | $6.16 | +0% | +0% | 0.0h |
+| 币安AiPro | bsc | $6.41 | $8.95 | +42% | +42% | 6.6h |
+| BTC | solana | $6.22 | $4.76 | -23% | +1% | 3.2h |
+| CATTLEAXE | solana | $6.22 | $5.96 | -3% | +3% | 3.2h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| SWORDOPE | $-2.42 | -38% | 4.8h | stop loss -36% |
 | REACHY | $-6.23 | -99% | 13.8h | stop loss -99% |
 | KURUMI | $+5.28 | +58% | 6.0h | ratchet +65% (peak +136%) |
 | MAYA | $-3.58 | -57% | 10.4h | ratchet +25% (peak +94%) |
@@ -44,40 +44,38 @@ Updated `2026-10-25T15:17:56+00:00`
 | APU | $-3.72 | -57% | 6.8h | stop loss -56% |
 | SWAP | $-6.55 | -98% | 6.4h | stop loss -98% |
 | TIT | $-5.43 | -80% | 8.5h | stop loss -80% |
-| XMAN | $-6.88 | -100% | 7.1h | stop loss -99% |
 
-## Learned weights (v104)
+## Learned weights (v105)
 
-_refit on 1356 observations (1266 shadow, 90 real), 398 winners (29% base rate)_
+_refit on 1369 observations (1276 shadow, 93 real), 401 winners (29% base rate)_
 
 | Feature | Weight |
 |---|---|
-| turnover | +0.142 |
-| txn_depth | +0.108 |
-| not_vertical | -0.077 |
-| buy_pressure | +0.074 |
-| momentum_accel | +0.066 |
-| paid_boost | +0.058 |
-| buzz | +0.028 |
-| fdv_sanity | +0.026 |
-| dip_in_uptrend | +0.025 |
-| liq_quality | +0.018 |
-| age_sweet | +0.011 |
-| socials | +0.001 |
+| turnover | +0.144 |
+| txn_depth | +0.099 |
+| momentum_accel | +0.080 |
+| buy_pressure | +0.076 |
+| not_vertical | -0.072 |
+| paid_boost | +0.052 |
+| age_sweet | +0.032 |
+| buzz | +0.022 |
+| dip_in_uptrend | +0.022 |
+| liq_quality | +0.019 |
+| fdv_sanity | +0.015 |
+| socials | -0.005 |
 
 ## Last run log
 ```
-tick #1434  equity $451.89  cash $430.64  open 3
-  SELL REACHY     100% @ $2.079e-06  ->  $0.05   [stop loss -99%]
+tick #1436  equity $443.75  cash $422.23  open 3
   scanning chains + news...
-  114 raw candidates across 5 chains, 160 headlines/posts
-  7 passed gates | rejected: liquidity too thin x55, no h1 volume x25, too old x15, already discovered x8, unknown age x2
-  top: ASSETS 0.64 | TTC 0.62 | PumpkinBot 0.57 | BTC 0.46 | CATTLEAXE 0.39
-  tick bar 0.46 (top 30% of 7, floor 0.45)
-  BUY[explore] BTC        $6.22 @ $0.0001156  score 0.46  solana  liq $29,382
-  BUY[explore] CATTLEAXE  $6.22 @ $0.001664  score 0.39  solana  liq $121,017
-  shadow: tracking 39, closed 4 this tick (0 would have won)
+  138 raw candidates across 6 chains, 160 headlines/posts
+  10 passed gates | rejected: liquidity too thin x92, no h1 volume x30, too old x2, already discovered x2, too new (bot war) x2
+  top: SQK 0.82 | ZERO 0.73 | MAGA 0.52 | CAKE 0.51 | PUMP 0.48
+  tick bar 0.47 (top 30% of 10, floor 0.45)
+  no entries this tick
+  shadow: tracking 37, closed 9 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
+  entries blocked: daily loss -6.1% <= -6%
 ```
