@@ -1,34 +1,36 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-24T23:30:07+00:00`
+Updated `2026-10-25T01:27:10+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$473.61** |
-| Return | **-5.28%** (start $500.00) |
-| Cash | $444.72 |
-| Deployed | $28.89 (6.1%) |
-| Open positions | 3 / 8 |
-| Closed trades | 5 (0W / 5L, WR 0%) |
-| Profit factor | 0.44 |
-| Fees + slippage paid | $3.85 |
-| Ticks run | 1426 |
+| Equity | **$448.04** |
+| Return | **-10.39%** (start $500.00) |
+| Cash | $435.49 |
+| Deployed | $12.55 (2.8%) |
+| Open positions | 2 / 8 |
+| Closed trades | 8 (0W / 8L, WR 0%) |
+| Profit factor | 0.41 |
+| Fees + slippage paid | $7.04 |
+| Ticks run | 1428 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| WRHND | solana | $9.56 | $9.95 | +40% | +93% | 2.2h |
-| ODIE | ethereum | $9.47 | $6.40 | +0% | +0% | 0.0h |
-| LUCIA | solana | $9.47 | $9.38 | +0% | +0% | 0.0h |
+| REACHY | solana | $6.27 | $6.21 | +0% | +0% | 0.0h |
+| MAYA | solana | $6.27 | $6.21 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| LUCIA | $-9.39 | -99% | 1.9h | stop loss -99% |
+| ODIE | $-9.47 | -100% | 1.9h | stop loss -100% |
+| WRHND | $-1.81 | -19% | 4.1h | ratchet +25% (peak +93%) |
 | HCAT | $-9.53 | -100% | 2.1h | stop loss -99% |
 | TRUMP | $-6.53 | -67% | 0.3h | stop loss -67% |
 | Leonida | $-6.82 | -99% | 0.5h | stop loss -99% |
@@ -41,9 +43,6 @@ Updated `2026-10-24T23:30:07+00:00`
 | SS | $+1.46 | +21% | 9.3h | ratchet +25% (peak +95%) |
 | NUTFLEX | $-4.20 | -59% | 1.1h | stop loss -58% |
 | FKCANCER | $-2.88 | -41% | 0.8h | stop loss -39% |
-| SAI | $-3.50 | -49% | 1.5h | stop loss -48% |
-| ARTHUR | $-4.77 | -66% | 0.3h | stop loss -66% |
-| WOOF | $-4.47 | -88% | 12.8h | ratchet +222% (peak +360%) |
 
 ## Learned weights (v102)
 
@@ -66,16 +65,18 @@ _refit on 1338 observations (1252 shadow, 86 real), 396 winners (30% base rate)_
 
 ## Last run log
 ```
-tick #1426  equity $485.50  cash $463.63  open 2
-  SELL HCAT       100% @ $2.182e-06  ->  $0.03   [stop loss -99%]
+tick #1428  equity $470.57  cash $444.72  open 3
+  SELL WRHND      100% @ $0.0005145  ->  $3.24   [ratchet +25% (peak +93%)]
+  SELL ODIE       100% @ $1.521e-10  ->  $0.00   [stop loss -100%]
+  SELL LUCIA      100% @ $1.923e-06  ->  $0.08   [stop loss -99%]
   scanning chains + news...
-  160 raw candidates across 5 chains, 160 headlines/posts
-  9 passed gates | rejected: liquidity too thin x106, no h1 volume x18, too old x15, already discovered x6, unknown age x4
-  top: ODIE 0.74 | LUCIA 0.55 | SWORDOPE 0.54 | GDC 0.39 | REMUS 0.38
-  tick bar 0.48 (top 30% of 9, floor 0.45)
-  BUY[exploit] ODIE       $9.47 @ $0.0005455  score 0.74  ethereum  liq $50,475
-  BUY[exploit] LUCIA      $9.47 @ $0.000182  score 0.55  solana  liq $34,825
-  shadow: tracking 41, closed 6 this tick (1 would have won)
+  132 raw candidates across 7 chains, 160 headlines/posts
+  10 passed gates | rejected: liquidity too thin x89, no h1 volume x18, too old x12, already discovered x2, exit-liquidity trap (FDV/liq) x1
+  top: MAYA 0.65 | BTC 0.56 | WRHND 0.45 | REACHY 0.44 | SWORDOPE 0.42
+  tick bar 0.45 (top 30% of 10, floor 0.45)
+  BUY[explore] REACHY     $6.27 @ $0.0001925  score 0.44  solana  liq $36,084
+  BUY[explore] MAYA       $6.27 @ $0.0008188  score 0.65  solana  liq $78,287
+  shadow: tracking 41, closed 5 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
