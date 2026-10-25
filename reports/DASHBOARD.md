@@ -1,33 +1,33 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-25T21:08:48+00:00`
+Updated `2026-10-25T23:14:44+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$439.55** |
-| Return | **-12.09%** (start $500.00) |
-| Cash | $425.86 |
-| Deployed | $13.68 (3.1%) |
-| Open positions | 2 / 8 |
-| Closed trades | 13 (1W / 12L, WR 8%) |
+| Equity | **$438.81** |
+| Return | **-12.24%** (start $500.00) |
+| Cash | $429.69 |
+| Deployed | $9.12 (2.1%) |
+| Open positions | 1 / 8 |
+| Closed trades | 14 (1W / 13L, WR 7%) |
 | Profit factor | 0.41 |
-| Fees + slippage paid | $7.73 |
-| Ticks run | 1438 |
+| Fees + slippage paid | $7.78 |
+| Ticks run | 1440 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| 币安AiPro | bsc | $6.41 | $9.05 | +43% | +43% | 9.2h |
-| CATTLEAXE | solana | $6.22 | $4.63 | -25% | +3% | 5.8h |
+| 币安AiPro | bsc | $6.41 | $9.12 | +44% | +44% | 11.3h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| CATTLEAXE | $-2.39 | -38% | 7.9h | stop loss -37% |
 | BTC | $-2.59 | -42% | 4.0h | stop loss -40% |
 | SWORDOPE | $-2.42 | -38% | 4.8h | stop loss -36% |
 | REACHY | $-6.23 | -99% | 13.8h | stop loss -99% |
@@ -42,7 +42,6 @@ Updated `2026-10-25T21:08:48+00:00`
 | MI | $-3.37 | -48% | 1.0h | stop loss -47% |
 | PRIVACY | $-5.06 | -72% | 1.0h | stop loss -71% |
 | APU | $-3.72 | -57% | 6.8h | stop loss -56% |
-| SWAP | $-6.55 | -98% | 6.4h | stop loss -98% |
 
 ## Learned weights (v106)
 
@@ -65,16 +64,17 @@ _refit on 1380 observations (1285 shadow, 95 real), 401 winners (29% base rate)_
 
 ## Last run log
 ```
-tick #1438  equity $439.99  cash $425.86  open 2
+tick #1440  equity $438.93  cash $425.86  open 2
+  SELL CATTLEAXE  100% @ $0.001047  ->  $3.83   [stop loss -37%]
   scanning chains + news...
-  102 raw candidates across 6 chains, 160 headlines/posts
-  6 passed gates | rejected: liquidity too thin x74, no h1 volume x18, too old x2, too new (bot war) x1, already discovered x1
-  top: NMS 0.79 | Chop 0.62 | GTA 0.55 | LAUNCH 0.40 | CATTLEAXE 0.25
+  133 raw candidates across 5 chains, 160 headlines/posts
+  6 passed gates | rejected: liquidity too thin x90, no h1 volume x32, too new (bot war) x2, already discovered x2, too old x1
+  top: GTA 0.54 | Chop 0.46 | LAUNCH 0.39 | CATTLEAXE 0.28 | REMUS 0.16
   tick bar 0.50 (top 30% of 6, floor 0.45)
   no entries this tick
-  shadow: tracking 38, closed 2 this tick (1 would have won)
+  shadow: tracking 30, closed 9 this tick (4 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
-  entries blocked: daily loss -6.6% <= -6%
+  entries blocked: daily loss -6.8% <= -6%
 ```
