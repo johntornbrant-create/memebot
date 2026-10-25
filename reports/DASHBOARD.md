@@ -1,34 +1,36 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-25T06:28:07+00:00`
+Updated `2026-10-25T11:54:44+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$455.26** |
-| Return | **-8.95%** (start $500.00) |
-| Cash | $429.07 |
-| Deployed | $26.19 (5.8%) |
-| Open positions | 3 / 8 |
-| Closed trades | 8 (0W / 8L, WR 0%) |
+| Equity | **$457.71** |
+| Return | **-8.46%** (start $500.00) |
+| Cash | $421.51 |
+| Deployed | $36.19 (7.9%) |
+| Open positions | 4 / 8 |
+| Closed trades | 9 (0W / 9L, WR 0%) |
 | Profit factor | 0.41 |
-| Fees + slippage paid | $7.16 |
-| Ticks run | 1430 |
+| Fees + slippage paid | $7.40 |
+| Ticks run | 1432 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| REACHY | solana | $6.27 | $8.11 | +31% | +31% | 5.0h |
-| MAYA | solana | $6.27 | $8.97 | +93% | +93% | 5.0h |
-| KURUMI | solana | $9.11 | $9.02 | +0% | +0% | 0.0h |
+| REACHY | solana | $6.27 | $7.43 | +20% | +31% | 10.5h |
+| KURUMI | solana | $9.11 | $15.95 | +136% | +136% | 5.4h |
+| SWORDOPE | solana | $6.41 | $6.34 | +0% | +0% | 0.0h |
+| 币安AiPro | bsc | $6.41 | $6.31 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| MAYA | $-3.58 | -57% | 10.4h | ratchet +25% (peak +94%) |
 | LUCIA | $-9.39 | -99% | 1.9h | stop loss -99% |
 | ODIE | $-9.47 | -100% | 1.9h | stop loss -100% |
 | WRHND | $-1.81 | -19% | 4.1h | ratchet +25% (peak +93%) |
@@ -43,37 +45,39 @@ Updated `2026-10-25T06:28:07+00:00`
 | XMAN | $-6.88 | -100% | 7.1h | stop loss -99% |
 | SS | $+1.46 | +21% | 9.3h | ratchet +25% (peak +95%) |
 | NUTFLEX | $-4.20 | -59% | 1.1h | stop loss -58% |
-| FKCANCER | $-2.88 | -41% | 0.8h | stop loss -39% |
 
-## Learned weights (v103)
+## Learned weights (v104)
 
-_refit on 1353 observations (1263 shadow, 90 real), 397 winners (29% base rate)_
+_refit on 1356 observations (1266 shadow, 90 real), 398 winners (29% base rate)_
 
 | Feature | Weight |
 |---|---|
-| turnover | +0.141 |
-| txn_depth | +0.110 |
-| not_vertical | -0.078 |
-| buy_pressure | +0.075 |
-| momentum_accel | +0.065 |
-| paid_boost | +0.060 |
-| buzz | +0.031 |
-| dip_in_uptrend | +0.026 |
-| fdv_sanity | +0.025 |
-| liq_quality | +0.016 |
-| age_sweet | +0.008 |
-| socials | +0.006 |
+| turnover | +0.142 |
+| txn_depth | +0.108 |
+| not_vertical | -0.077 |
+| buy_pressure | +0.074 |
+| momentum_accel | +0.066 |
+| paid_boost | +0.058 |
+| buzz | +0.028 |
+| fdv_sanity | +0.026 |
+| dip_in_uptrend | +0.025 |
+| liq_quality | +0.018 |
+| age_sweet | +0.011 |
+| socials | +0.001 |
 
 ## Last run log
 ```
-tick #1430  equity $451.84  cash $438.18  open 2
+tick #1432  equity $456.28  cash $429.07  open 3
+  SELL MAYA       100% @ $2.438e-06  ->  $0.00   [ratchet +25% (peak +94%)]
+  SELL KURUMI     25% @ $0.0006813  ->  $5.26   [take profit +50% (sold 25%)]
   scanning chains + news...
-  130 raw candidates across 7 chains, 160 headlines/posts
-  11 passed gates | rejected: liquidity too thin x79, no h1 volume x31, too old x7, already discovered x2
-  top: KURUMI 0.48 | Chunkee 0.45 | ███ 0.37 | WRHND 0.31 | REACHY 0.30
-  tick bar 0.45 (top 30% of 11, floor 0.45)
-  BUY[exploit] KURUMI     $9.11 @ $0.0002891  score 0.48  solana  liq $45,129
-  shadow: tracking 41, closed 3 this tick (1 would have won)
+  102 raw candidates across 8 chains, 160 headlines/posts
+  8 passed gates | rejected: liquidity too thin x58, no h1 volume x32, too old x2, sell pressure x1, already discovered x1
+  top: SOL 0.60 | SWORDOPE 0.51 | KURUMI 0.40 | NAVA 0.39 | 币安AiPro 0.34
+  tick bar 0.46 (top 30% of 8, floor 0.45)
+  BUY[explore] SWORDOPE   $6.41 @ $0.001394  score 0.51  solana  liq $109,710
+  BUY[explore] 币安AiPro    $6.41 @ $6.268e-05  score 0.34  bsc  liq $50,586
+  shadow: tracking 39, closed 6 this tick (2 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
