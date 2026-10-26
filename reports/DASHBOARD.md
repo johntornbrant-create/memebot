@@ -1,34 +1,36 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-26T01:11:07+00:00`
+Updated `2026-10-26T06:09:02+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$442.41** |
-| Return | **-11.52%** (start $500.00) |
-| Cash | $417.77 |
-| Deployed | $24.64 (5.6%) |
+| Equity | **$435.58** |
+| Return | **-12.88%** (start $500.00) |
+| Cash | $407.35 |
+| Deployed | $28.23 (6.5%) |
 | Open positions | 3 / 8 |
-| Closed trades | 14 (1W / 13L, WR 7%) |
-| Profit factor | 0.41 |
-| Fees + slippage paid | $8.00 |
-| Ticks run | 1442 |
+| Closed trades | 16 (1W / 15L, WR 6%) |
+| Profit factor | 0.40 |
+| Fees + slippage paid | $8.33 |
+| Ticks run | 1444 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| 币安AiPro | bsc | $6.41 | $9.59 | +103% | +103% | 13.3h |
-| TIT | solana | $8.85 | $8.77 | +0% | +0% | 0.0h |
-| GTA | solana | $6.19 | $6.13 | +0% | +0% | 0.0h |
+| GTA | solana | $6.19 | $10.81 | +135% | +135% | 5.0h |
+| GTA | solana | $8.71 | $8.63 | +0% | +0% | 0.0h |
+| FLAPAI | bsc | $8.71 | $8.60 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| TIT | $-7.07 | -80% | 4.9h | stop loss -79% |
+| 币安AiPro | $-1.62 | -25% | 18.2h | ratchet +47% (peak +109%) |
 | CATTLEAXE | $-2.39 | -38% | 7.9h | stop loss -37% |
 | BTC | $-2.59 | -42% | 4.0h | stop loss -40% |
 | SWORDOPE | $-2.42 | -38% | 4.8h | stop loss -36% |
@@ -42,40 +44,40 @@ Updated `2026-10-26T01:11:07+00:00`
 | TRUMP | $-6.53 | -67% | 0.3h | stop loss -67% |
 | Leonida | $-6.82 | -99% | 0.5h | stop loss -99% |
 | MI | $-3.37 | -48% | 1.0h | stop loss -47% |
-| PRIVACY | $-5.06 | -72% | 1.0h | stop loss -71% |
-| APU | $-3.72 | -57% | 6.8h | stop loss -56% |
 
-## Learned weights (v106)
+## Learned weights (v107)
 
-_refit on 1380 observations (1285 shadow, 95 real), 401 winners (29% base rate)_
+_refit on 1395 observations (1299 shadow, 96 real), 406 winners (29% base rate)_
 
 | Feature | Weight |
 |---|---|
-| turnover | +0.142 |
-| txn_depth | +0.105 |
-| momentum_accel | +0.077 |
-| buy_pressure | +0.074 |
+| turnover | +0.141 |
+| txn_depth | +0.110 |
+| buy_pressure | +0.075 |
+| momentum_accel | +0.071 |
 | not_vertical | -0.070 |
-| paid_boost | +0.040 |
-| age_sweet | +0.028 |
-| dip_in_uptrend | +0.021 |
-| liq_quality | +0.019 |
-| buzz | +0.018 |
-| fdv_sanity | +0.015 |
-| socials | -0.004 |
+| paid_boost | +0.035 |
+| dip_in_uptrend | +0.030 |
+| liq_quality | +0.023 |
+| age_sweet | +0.023 |
+| fdv_sanity | +0.017 |
+| buzz | +0.013 |
+| socials | -0.009 |
 
 ## Last run log
 ```
-tick #1442  equity $438.80  cash $429.69  open 1
-  SELL 币安AiPro    25% @ $0.000127  ->  $3.12   [take profit +50% (sold 25%)]
+tick #1444  equity $446.65  cash $417.77  open 3
+  SELL 币安AiPro    100% @ $2.279e-05  ->  $1.66   [ratchet +47% (peak +109%)]
+  SELL TIT        100% @ $0.0002416  ->  $1.78   [stop loss -79%]
+  SELL GTA        25% @ $0.001376  ->  $3.56   [take profit +50% (sold 25%)]
   scanning chains + news...
-  130 raw candidates across 6 chains, 160 headlines/posts
-  8 passed gates | rejected: liquidity too thin x102, no h1 volume x19, already discovered x1
-  top: TIT 0.66 | GTA 0.59 | LAUNCH 0.55 | DANIELLA 0.54 | GTA 0.53
-  tick bar 0.50 (top 30% of 8, floor 0.45)
-  BUY[exploit] TIT        $8.85 @ $0.00117  score 0.66  solana  liq $92,848
-  BUY[explore] GTA        $6.19 @ $0.0005852  score 0.59  solana  liq $64,522
-  shadow: tracking 30, closed 3 this tick (0 would have won)
+  130 raw candidates across 8 chains, 160 headlines/posts
+  14 passed gates | rejected: liquidity too thin x72, no h1 volume x37, too old x5, sell pressure x1, already discovered x1
+  top: GTA 0.77 | FLAPAI 0.69 | Chop 0.65 | 4AGENT 0.46 | Bow 0.45
+  tick bar 0.46 (top 30% of 14, floor 0.45)
+  BUY[exploit] GTA        $8.71 @ $0.0002961  score 0.77  solana  liq $47,863
+  BUY[exploit] FLAPAI     $8.71 @ $7.961e-05  score 0.69  bsc  liq $28,476
+  shadow: tracking 34, closed 5 this tick (3 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
