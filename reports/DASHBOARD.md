@@ -1,27 +1,29 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-25T23:14:44+00:00`
+Updated `2026-10-26T01:11:07+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$438.81** |
-| Return | **-12.24%** (start $500.00) |
-| Cash | $429.69 |
-| Deployed | $9.12 (2.1%) |
-| Open positions | 1 / 8 |
+| Equity | **$442.41** |
+| Return | **-11.52%** (start $500.00) |
+| Cash | $417.77 |
+| Deployed | $24.64 (5.6%) |
+| Open positions | 3 / 8 |
 | Closed trades | 14 (1W / 13L, WR 7%) |
 | Profit factor | 0.41 |
-| Fees + slippage paid | $7.78 |
-| Ticks run | 1440 |
+| Fees + slippage paid | $8.00 |
+| Ticks run | 1442 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| 币安AiPro | bsc | $6.41 | $9.12 | +44% | +44% | 11.3h |
+| 币安AiPro | bsc | $6.41 | $9.59 | +103% | +103% | 13.3h |
+| TIT | solana | $8.85 | $8.77 | +0% | +0% | 0.0h |
+| GTA | solana | $6.19 | $6.13 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
@@ -64,17 +66,17 @@ _refit on 1380 observations (1285 shadow, 95 real), 401 winners (29% base rate)_
 
 ## Last run log
 ```
-tick #1440  equity $438.93  cash $425.86  open 2
-  SELL CATTLEAXE  100% @ $0.001047  ->  $3.83   [stop loss -37%]
+tick #1442  equity $438.80  cash $429.69  open 1
+  SELL 币安AiPro    25% @ $0.000127  ->  $3.12   [take profit +50% (sold 25%)]
   scanning chains + news...
-  133 raw candidates across 5 chains, 160 headlines/posts
-  6 passed gates | rejected: liquidity too thin x90, no h1 volume x32, too new (bot war) x2, already discovered x2, too old x1
-  top: GTA 0.54 | Chop 0.46 | LAUNCH 0.39 | CATTLEAXE 0.28 | REMUS 0.16
-  tick bar 0.50 (top 30% of 6, floor 0.45)
-  no entries this tick
-  shadow: tracking 30, closed 9 this tick (4 would have won)
+  130 raw candidates across 6 chains, 160 headlines/posts
+  8 passed gates | rejected: liquidity too thin x102, no h1 volume x19, already discovered x1
+  top: TIT 0.66 | GTA 0.59 | LAUNCH 0.55 | DANIELLA 0.54 | GTA 0.53
+  tick bar 0.50 (top 30% of 8, floor 0.45)
+  BUY[exploit] TIT        $8.85 @ $0.00117  score 0.66  solana  liq $92,848
+  BUY[explore] GTA        $6.19 @ $0.0005852  score 0.59  solana  liq $64,522
+  shadow: tracking 30, closed 3 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
-  entries blocked: daily loss -6.8% <= -6%
 ```
