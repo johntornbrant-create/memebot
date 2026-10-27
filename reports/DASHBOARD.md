@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-27T01:54:11+00:00`
+Updated `2026-10-27T07:04:31+00:00`
 
 ## Equity
 
@@ -15,7 +15,7 @@ Updated `2026-10-27T01:54:11+00:00`
 | Closed trades | 19 (1W / 18L, WR 5%) |
 | Profit factor | 0.39 |
 | Fees + slippage paid | $8.47 |
-| Ticks run | 1452 |
+| Ticks run | 1454 |
 
 ## Open positions
 
@@ -41,35 +41,35 @@ _flat_
 | WRHND | $-1.81 | -19% | 4.1h | ratchet +25% (peak +93%) |
 | HCAT | $-9.53 | -100% | 2.1h | stop loss -99% |
 
-## Learned weights (v109)
+## Learned weights (v110)
 
-_refit on 1412 observations (1311 shadow, 101 real), 411 winners (29% base rate)_
+_refit on 1430 observations (1329 shadow, 101 real), 418 winners (29% base rate)_
 
 | Feature | Weight |
 |---|---|
-| turnover | +0.133 |
-| txn_depth | +0.112 |
-| buy_pressure | +0.074 |
-| not_vertical | -0.065 |
-| momentum_accel | +0.063 |
-| paid_boost | +0.038 |
-| dip_in_uptrend | +0.031 |
-| liq_quality | +0.028 |
-| fdv_sanity | +0.018 |
-| age_sweet | +0.012 |
+| turnover | +0.139 |
+| txn_depth | +0.121 |
+| buy_pressure | +0.076 |
+| not_vertical | -0.063 |
+| momentum_accel | +0.058 |
+| paid_boost | +0.040 |
+| dip_in_uptrend | +0.032 |
+| liq_quality | +0.029 |
+| fdv_sanity | +0.022 |
 | socials | -0.012 |
-| buzz | -0.003 |
+| age_sweet | +0.009 |
+| buzz | +0.004 |
 
 ## Last run log
 ```
-tick #1452  equity $412.87  cash $412.87  open 0
+tick #1454  equity $412.87  cash $412.87  open 0
   scanning chains + news...
-  203 raw candidates across 8 chains, 160 headlines/posts
-  14 passed gates | rejected: liquidity too thin x128, no h1 volume x43, too old x11, already discovered x5, sell pressure x2
-  top: XCAT 0.89 | CHICO 0.68 | ELON2028 0.57 | Shitcoin 0.48 | HACHI 0.41
-  tick bar 0.48 (top 30% of 14, floor 0.45)
+  91 raw candidates across 5 chains, 160 headlines/posts
+  5 passed gates | rejected: liquidity too thin x47, no h1 volume x23, too old x15, already discovered x1
+  top: ELON2028 0.78 | TGC 0.31 | CHICO 0.21 | ███WIF 0.20 | GTAELON 0.20
+  tick bar 0.56 (top 30% of 5, floor 0.45)
   no entries this tick
-  shadow: tracking 32, closed 4 this tick (1 would have won)
+  shadow: tracking 25, closed 9 this tick (2 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
