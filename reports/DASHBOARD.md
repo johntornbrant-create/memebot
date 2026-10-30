@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-30T18:52:27+00:00`
+Updated `2026-10-30T21:24:47+00:00`
 
 ## Equity
 
@@ -15,7 +15,7 @@ Updated `2026-10-30T18:52:27+00:00`
 | Closed trades | 19 (1W / 18L, WR 5%) |
 | Profit factor | 0.39 |
 | Fees + slippage paid | $8.47 |
-| Ticks run | 1486 |
+| Ticks run | 1488 |
 
 ## Open positions
 
@@ -62,16 +62,15 @@ _refit on 1506 observations (1405 shadow, 101 real), 435 winners (29% base rate)
 
 ## Last run log
 ```
-tick #1486  equity $412.87  cash $412.87  open 0
+tick #1488  equity $412.87  cash $412.87  open 0
   scanning chains + news...
-  160 raw candidates across 7 chains, 158 headlines/posts
-  7 passed gates | rejected: liquidity too thin x87, no h1 volume x43, already discovered x12, too old x10, unknown age x1
-  top: BTC 0.68 | AgenC 0.59 | TYGR 0.48 | SAFU 0.42 | STANK 0.33
-  tick bar 0.57 (top 30% of 7, floor 0.45)
+  89 raw candidates across 5 chains, 158 headlines/posts
+  1 passed gates | rejected: liquidity too thin x66, no h1 volume x14, too old x6, too new (bot war) x1, unknown age x1
+  top: HYPERCHAN 0.28
+  tick bar 0.45 (top 10% of 1, floor 0.45)
   no entries this tick
-  shadow: tracking 21, closed 6 this tick (0 would have won)
+  shadow: tracking 15, closed 6 this tick (1 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
-  entries blocked: 7d loss -17.4% <= -15%
 ```
