@@ -1,33 +1,19 @@
 {
-  "version": 123,
-  "fitted_on": 1506,
-  "n_shadow": 1405,
+  "version": 124,
+  "fitted_on": 1518,
+  "n_shadow": 1417,
   "n_real": 101,
-  "base_rate": 0.289,
-  "threshold": 0.568,
+  "base_rate": 0.287,
+  "threshold": 0.566,
   "selectivity_pct": 0.74,
   "diagnosis": [
     "stop set -35% but filling -56% - gapping, not a stop. Reduce size rather than tighten.",
-    "no entry in 107h while not halted - selection is too tight, loosening"
+    "no entry in 112h while not halted - selection is too tight, loosening"
   ],
-  "edge_pp": 23.0,
+  "edge_pp": 23.2,
   "stop_actual": -0.56,
-  "note": "refit on 1506 observations (1405 shadow, 101 real), 435 winners (29% base rate)",
+  "note": "refit on 1518 observations (1417 shadow, 101 real), 436 winners (29% base rate)",
   "prev_weights": {
-    "liq_quality": 0.0535,
-    "turnover": 0.1378,
-    "buy_pressure": 0.0667,
-    "momentum_accel": 0.0608,
-    "not_vertical": -0.0545,
-    "age_sweet": 0.0052,
-    "socials": -0.0092,
-    "fdv_sanity": 0.013,
-    "txn_depth": 0.1337,
-    "dip_in_uptrend": 0.0342,
-    "buzz": 0.0079,
-    "paid_boost": 0.0394
-  },
-  "weights": {
     "liq_quality": 0.0561,
     "turnover": 0.137,
     "buy_pressure": 0.0642,
@@ -40,5 +26,19 @@
     "dip_in_uptrend": 0.0323,
     "buzz": 0.0073,
     "paid_boost": 0.0366
+  },
+  "weights": {
+    "liq_quality": 0.0529,
+    "turnover": 0.1373,
+    "buy_pressure": 0.0621,
+    "momentum_accel": 0.0606,
+    "not_vertical": -0.052,
+    "age_sweet": 0.0075,
+    "socials": -0.0058,
+    "fdv_sanity": 0.0074,
+    "txn_depth": 0.1394,
+    "dip_in_uptrend": 0.0343,
+    "buzz": 0.008,
+    "paid_boost": 0.0363
   }
 }
