@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-10-29T21:06:47+00:00`
+Updated `2026-10-30T00:57:32+00:00`
 
 ## Equity
 
@@ -15,7 +15,7 @@ Updated `2026-10-29T21:06:47+00:00`
 | Closed trades | 19 (1W / 18L, WR 5%) |
 | Profit factor | 0.39 |
 | Fees + slippage paid | $8.47 |
-| Ticks run | 1478 |
+| Ticks run | 1480 |
 
 ## Open positions
 
@@ -41,35 +41,35 @@ _flat_
 | WRHND | $-1.81 | -19% | 4.1h | ratchet +25% (peak +93%) |
 | HCAT | $-9.53 | -100% | 2.1h | stop loss -99% |
 
-## Learned weights (v119)
+## Learned weights (v120)
 
-_refit on 1486 observations (1385 shadow, 101 real), 428 winners (29% base rate)_
+_refit on 1498 observations (1397 shadow, 101 real), 433 winners (29% base rate)_
 
 | Feature | Weight |
 |---|---|
-| turnover | +0.134 |
+| turnover | +0.142 |
 | txn_depth | +0.130 |
-| buy_pressure | +0.070 |
-| not_vertical | -0.059 |
-| momentum_accel | +0.057 |
-| liq_quality | +0.048 |
-| dip_in_uptrend | +0.042 |
-| paid_boost | +0.027 |
-| fdv_sanity | +0.013 |
-| socials | -0.009 |
-| buzz | +0.005 |
+| buy_pressure | +0.067 |
+| not_vertical | -0.061 |
+| momentum_accel | +0.056 |
+| liq_quality | +0.051 |
+| paid_boost | +0.037 |
+| dip_in_uptrend | +0.035 |
+| fdv_sanity | +0.014 |
+| buzz | +0.006 |
+| socials | -0.004 |
 | age_sweet | +0.003 |
 
 ## Last run log
 ```
-tick #1478  equity $412.87  cash $412.87  open 0
+tick #1480  equity $412.87  cash $412.87  open 0
   scanning chains + news...
-  112 raw candidates across 5 chains, 158 headlines/posts
-  7 passed gates | rejected: liquidity too thin x68, too old x21, no h1 volume x12, already discovered x3, too new (bot war) x1
-  top: STANK 0.62 | HYPERCHAN 0.57 | HEXN 0.53 | HOUSEWORM 0.45 | JAGENT 0.41
-  tick bar 0.57 (top 30% of 7, floor 0.45)
+  89 raw candidates across 4 chains, 158 headlines/posts
+  5 passed gates | rejected: liquidity too thin x52, too old x15, no h1 volume x14, already discovered x2, sell pressure x1
+  top: ZERODAY 0.54 | JAGENT 0.52 | SWAN 0.40 | HOUSEWORM 0.34 | jeff 0.30
+  tick bar 0.54 (top 30% of 5, floor 0.45)
   no entries this tick
-  shadow: tracking 20, closed 7 this tick (4 would have won)
+  shadow: tracking 19, closed 4 this tick (1 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
