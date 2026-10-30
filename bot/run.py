@@ -144,10 +144,20 @@ def tick(exits_only=False):
     except Exception:
         log("  exit management failed:\n" + traceback.format_exc())
 
-    if exits_only:
+    # One workflow, two jobs. Exits run EVERY invocation; the 20-chain scan only when
+    # due. Previously these were two workflows writing the same state file with
+    # last-writer-wins, so a partial take-profit booked by the fast job could be silently
+    # erased by the slow one. One writer, no clobber.
+    due = True
+    last = pf.get("last_scan")
+    if last and pf_mod.hours_since(last) * 60 < config.SCAN_EVERY_MIN:
+        due = False
+    if exits_only or not due:
         pf_mod.save(pf)
-        log(f"exit sweep done. equity ${pf['equity']:.2f}")
+        log(f"exits-only pass. equity ${pf['equity']:.2f}"
+            + ("" if due else f" (next scan in {config.SCAN_EVERY_MIN - pf_mod.hours_since(last)*60:.0f} min)"))
         return pf
+    pf["last_scan"] = pf_mod.now_iso()
 
     can, reasons = risk.equity_curve_checks(pf)
     try:

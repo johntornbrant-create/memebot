@@ -3,7 +3,7 @@ name: memebot tick
 
 on:
   schedule:
-    - cron: "*/15 * * * *"     # every 15 min, 24/7, PC off
+    - cron: "*/10 * * * *"     # every 15 min, 24/7, PC off
   workflow_dispatch:            # manual "run now" button
 
 permissions:

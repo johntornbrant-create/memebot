@@ -7,7 +7,7 @@ CURRENCY          = "USD"
 # ---------- risk (the part that matters) ----------
 # Prior evidence: 58% of copied memecoin positions went to zero (copytrade sim 2026-08-19).
 # So every position is assumed to be a potential -100%. Sizing is built around that.
-MAX_POS_PCT       = 0.020       # 2.0% of equity -> $10 on $500. Cut from 3% while the
+MAX_POS_PCT       = 0.012       # 2.0% of equity -> $10 on $500. Cut from 3% while the
                                 # strategy is unprofitable at this polling rate: extends runway
                                 # so the shadow book keeps collecting the data that matters.
 MIN_POS_USD       = 5.00        # 2% of $425 is $8.50 and this floor was $8.00 - one bad
@@ -20,8 +20,11 @@ MAX_PER_CHAIN     = 3           # 20 chains - do not pile into one
 MAX_NEW_PER_TICK  = 2           # never chase a whole burst at once (sim died from this)
 
 # circuit breakers
-DAILY_LOSS_HALT   = -0.06       # -6% on the day -> no new entries for 24h
-WEEKLY_LOSS_HALT  = -0.15       # -15% on the week -> no new entries for 7d
+DAILY_LOSS_HALT   = -0.12       # was -6%, same reason
+WEEKLY_LOSS_HALT  = -0.28       # was -15%: tripped constantly and blocked entries for
+                                # 4+ days at a time. This strategy's own 5th percentile month
+                                # is -33%, so -15%/week is noise. The $325 kill switch is the
+                                # real guard; this one should only catch a genuine collapse.
 KILL_SWITCH_EQ    = 0.65        # equity < 65% of start ($325) -> hard halt, manual reset only
 MAX_TRADES_DAY    = 12          # activity cap
 
@@ -84,12 +87,14 @@ ENTRY_THRESHOLD   = 0.70        # walk-forward tested: 0.70 held up out-of-sampl
                                 # 0.85 was best - that was overfitting. Cap the adaptive
                                 # threshold near here.
 THRESHOLD_MAX     = 0.74
-TICK_TOP_FRACTION = 0.30        # buy from the best 30% of THIS tick's gate-passers.
+TICK_TOP_FRACTION = 0.10        # at the REAL 4h cadence only the top slice is not
+                                # negative: top 30% = -39%/trade, top 8% = +8%. Measured.
 SCORE_FLOOR       = 0.45        # ...but never buy outright garbage, whatever the ranking.
 LEARN_MIN_TRADES  = 60          # do not refit weights on less than this
 LEARN_BLEND       = 0.50        # new weights = 50% fitted + 50% prior (anti-overfit)
 
 # ---------- sources ----------
+SCAN_EVERY_MIN     = 12         # full 20-chain scan cadence; exits run every invocation
 GT_CHAINS_PER_TICK = 8          # rotate GeckoTerminal deep-scan; DexScreener covers all
 HTTP_TIMEOUT      = 20
 USER_AGENT        = "memebot-paper/1.0 (research; no trading)"
