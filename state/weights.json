@@ -1,31 +1,31 @@
 {
-  "version": 126,
+  "version": 127,
   "fitted_on": 1526,
   "n_shadow": 1425,
   "n_real": 101,
   "base_rate": 0.286,
-  "threshold": 0.572,
+  "threshold": 0.575,
   "selectivity_pct": 0.74,
   "diagnosis": [
     "stop set -35% but filling -56% - gapping, not a stop. Reduce size rather than tighten.",
-    "no entry in 125h while not halted - selection is too tight, loosening"
+    "no entry in 130h while not halted - selection is too tight, loosening"
   ],
   "edge_pp": 23.3,
   "stop_actual": -0.56,
   "note": "refit on 1526 observations (1425 shadow, 101 real), 437 winners (29% base rate)",
   "prev_weights": {
-    "liq_quality": 0.0543,
-    "turnover": 0.1368,
-    "buy_pressure": 0.0614,
-    "momentum_accel": 0.0592,
-    "not_vertical": -0.049,
-    "age_sweet": 0.0049,
+    "liq_quality": 0.0532,
+    "turnover": 0.1352,
+    "buy_pressure": 0.0622,
+    "momentum_accel": 0.0593,
+    "not_vertical": -0.0474,
+    "age_sweet": 0.0022,
     "socials": -0.0041,
-    "fdv_sanity": 0.0074,
-    "txn_depth": 0.141,
-    "dip_in_uptrend": 0.0331,
-    "buzz": 0.0081,
-    "paid_boost": 0.0358
+    "fdv_sanity": 0.0069,
+    "txn_depth": 0.1437,
+    "dip_in_uptrend": 0.034,
+    "buzz": 0.0085,
+    "paid_boost": 0.037
   },
   "weights": {
     "liq_quality": 0.0532,
