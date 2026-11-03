@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-03T08:01:01+00:00`
+Updated `2026-11-03T16:07:17+00:00`
 
 ## Equity
 
@@ -15,7 +15,7 @@ Updated `2026-11-03T08:01:01+00:00`
 | Closed trades | 19 (1W / 18L, WR 5%) |
 | Profit factor | 0.39 |
 | Fees + slippage paid | $8.47 |
-| Ticks run | 1504 |
+| Ticks run | 1505 |
 
 ## Open positions
 
@@ -41,35 +41,35 @@ _flat_
 | WRHND | $-1.81 | -19% | 4.1h | ratchet +25% (peak +93%) |
 | HCAT | $-9.53 | -100% | 2.1h | stop loss -99% |
 
-## Learned weights (v134)
+## Learned weights (v135)
 
-_refit on 1574 observations (1473 shadow, 101 real), 450 winners (29% base rate)_
+_refit on 1584 observations (1483 shadow, 101 real), 451 winners (28% base rate)_
 
 | Feature | Weight |
 |---|---|
-| txn_depth | +0.144 |
-| turnover | +0.128 |
-| liq_quality | +0.068 |
-| buy_pressure | +0.065 |
+| txn_depth | +0.142 |
+| turnover | +0.125 |
+| liq_quality | +0.074 |
+| buy_pressure | +0.063 |
 | momentum_accel | +0.054 |
-| not_vertical | -0.040 |
-| dip_in_uptrend | +0.034 |
-| paid_boost | +0.030 |
-| buzz | +0.018 |
-| socials | -0.005 |
-| age_sweet | +0.003 |
-| fdv_sanity | +0.002 |
+| not_vertical | -0.037 |
+| dip_in_uptrend | +0.033 |
+| paid_boost | +0.026 |
+| buzz | +0.019 |
+| socials | -0.004 |
+| age_sweet | +0.004 |
+| fdv_sanity | +0.000 |
 
 ## Last run log
 ```
-tick #1504  equity $412.87  cash $412.87  open 0
+tick #1505  equity $412.87  cash $412.87  open 0
   scanning chains + news...
-  141 raw candidates across 6 chains, 159 headlines/posts
-  13 passed gates | rejected: liquidity too thin x83, no h1 volume x33, too old x6, already discovered x5, exit-liquidity trap (FDV/liq) x1
-  top: XDG 0.66 | GTA6 0.61 | RICO 0.57 | AnonCrime 0.46 | SPHERE 0.44
-  tick bar 0.60 (top 10% of 13, floor 0.45)
+  139 raw candidates across 8 chains, 157 headlines/posts
+  9 passed gates | rejected: liquidity too thin x72, no h1 volume x41, too old x10, already discovered x6, unknown age x1
+  top: BINGUS 0.70 | SARAH 0.67 | RICO 0.65 | NALA 0.48 | ANONVOYAGE 0.47
+  tick bar 0.60 (top 10% of 9, floor 0.45)
   no entries this tick
-  shadow: tracking 21, closed 5 this tick (1 would have won)
+  shadow: tracking 25, closed 2 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
