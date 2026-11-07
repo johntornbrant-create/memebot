@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-07T15:46:25+00:00`
+Updated `2026-11-07T19:41:43+00:00`
 
 ## Equity
 
@@ -15,7 +15,7 @@ Updated `2026-11-07T15:46:25+00:00`
 | Closed trades | 19 (1W / 18L, WR 5%) |
 | Profit factor | 0.39 |
 | Fees + slippage paid | $8.47 |
-| Ticks run | 1521 |
+| Ticks run | 1522 |
 
 ## Open positions
 
@@ -62,14 +62,14 @@ _refit on 1661 observations (1560 shadow, 101 real), 468 winners (28% base rate)
 
 ## Last run log
 ```
-tick #1521  equity $412.87  cash $412.87  open 0
+tick #1522  equity $412.87  cash $412.87  open 0
   scanning chains + news...
-  106 raw candidates across 6 chains, 159 headlines/posts
-  4 passed gates | rejected: liquidity too thin x59, no h1 volume x22, too old x10, already discovered x7, unknown age x4
-  top: ANTS 0.70 | IMAM 0.62 | HODL 0.44 | debtdog 0.31
+  89 raw candidates across 6 chains, 159 headlines/posts
+  4 passed gates | rejected: liquidity too thin x66, no h1 volume x16, too old x2, already discovered x1
+  top: WEALTH 0.74 | Leonida 0.68 | HODL 0.53 | Leonida 0.48
   tick bar 0.58 (top 10% of 4, floor 0.45)
   no entries this tick
-  shadow: tracking 22, closed 2 this tick (0 would have won)
+  shadow: tracking 18, closed 6 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
