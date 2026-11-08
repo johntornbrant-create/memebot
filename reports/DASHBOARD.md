@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-08T09:24:01+00:00`
+Updated `2026-11-08T16:13:02+00:00`
 
 ## Equity
 
@@ -15,7 +15,7 @@ Updated `2026-11-08T09:24:01+00:00`
 | Closed trades | 19 (1W / 18L, WR 5%) |
 | Profit factor | 0.39 |
 | Fees + slippage paid | $8.47 |
-| Ticks run | 1525 |
+| Ticks run | 1526 |
 
 ## Open positions
 
@@ -41,35 +41,35 @@ _flat_
 | WRHND | $-1.81 | -19% | 4.1h | ratchet +25% (peak +93%) |
 | HCAT | $-9.53 | -100% | 2.1h | stop loss -99% |
 
-## Learned weights (v149)
+## Learned weights (v150)
 
-_refit on 1673 observations (1572 shadow, 101 real), 471 winners (28% base rate)_
+_refit on 1682 observations (1581 shadow, 101 real), 472 winners (28% base rate)_
 
 | Feature | Weight |
 |---|---|
-| txn_depth | +0.139 |
+| txn_depth | +0.143 |
 | turnover | +0.139 |
 | liq_quality | +0.094 |
-| momentum_accel | +0.060 |
-| buy_pressure | +0.048 |
-| not_vertical | -0.037 |
-| dip_in_uptrend | +0.036 |
-| paid_boost | +0.033 |
-| buzz | +0.021 |
-| fdv_sanity | +0.008 |
-| age_sweet | +0.001 |
-| socials | +0.000 |
+| momentum_accel | +0.059 |
+| buy_pressure | +0.046 |
+| dip_in_uptrend | +0.037 |
+| not_vertical | -0.036 |
+| paid_boost | +0.035 |
+| buzz | +0.020 |
+| fdv_sanity | +0.012 |
+| age_sweet | -0.003 |
+| socials | -0.001 |
 
 ## Last run log
 ```
-tick #1525  equity $412.87  cash $412.87  open 0
+tick #1526  equity $412.87  cash $412.87  open 0
   scanning chains + news...
-  111 raw candidates across 7 chains, 159 headlines/posts
-  4 passed gates | rejected: liquidity too thin x69, no h1 volume x30, too old x4, too new (bot war) x2, exit-liquidity trap (FDV/liq) x1
-  top: GIGAHUG 0.57 | Respect 0.47 | CALYPSO 0.35 | COGE 0.24
-  tick bar 0.57 (top 10% of 4, floor 0.45)
+  139 raw candidates across 6 chains, 159 headlines/posts
+  16 passed gates | rejected: liquidity too thin x69, no h1 volume x35, too old x14, already discovered x4, sell pressure x1
+  top: Mars 0.85 | MAGGIE 0.66 | HEREWEGO 0.57 | DacityCoin 0.56 | ELYSION 0.55
+  tick bar 0.59 (top 10% of 16, floor 0.45)
   no entries this tick
-  shadow: tracking 22, closed 9 this tick (1 would have won)
+  shadow: tracking 32, closed 3 this tick (1 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
