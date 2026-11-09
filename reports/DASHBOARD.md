@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-09T00:01:29+00:00`
+Updated `2026-11-09T06:03:44+00:00`
 
 ## Equity
 
@@ -15,7 +15,7 @@ Updated `2026-11-09T00:01:29+00:00`
 | Closed trades | 19 (1W / 18L, WR 5%) |
 | Profit factor | 0.39 |
 | Fees + slippage paid | $8.47 |
-| Ticks run | 1528 |
+| Ticks run | 1529 |
 
 ## Open positions
 
@@ -41,35 +41,35 @@ _flat_
 | WRHND | $-1.81 | -19% | 4.1h | ratchet +25% (peak +93%) |
 | HCAT | $-9.53 | -100% | 2.1h | stop loss -99% |
 
-## Learned weights (v151)
+## Learned weights (v152)
 
-_refit on 1687 observations (1586 shadow, 101 real), 473 winners (28% base rate)_
+_refit on 1694 observations (1593 shadow, 101 real), 474 winners (28% base rate)_
 
 | Feature | Weight |
 |---|---|
-| txn_depth | +0.145 |
-| turnover | +0.139 |
-| liq_quality | +0.093 |
-| momentum_accel | +0.061 |
+| txn_depth | +0.142 |
+| turnover | +0.138 |
+| liq_quality | +0.091 |
+| momentum_accel | +0.062 |
 | buy_pressure | +0.046 |
-| paid_boost | +0.037 |
-| dip_in_uptrend | +0.036 |
-| not_vertical | -0.035 |
-| buzz | +0.025 |
-| fdv_sanity | +0.012 |
-| age_sweet | -0.003 |
-| socials | -0.003 |
+| not_vertical | -0.036 |
+| dip_in_uptrend | +0.035 |
+| paid_boost | +0.034 |
+| buzz | +0.023 |
+| fdv_sanity | +0.011 |
+| socials | -0.004 |
+| age_sweet | -0.000 |
 
 ## Last run log
 ```
-tick #1528  equity $412.87  cash $412.87  open 0
+tick #1529  equity $412.87  cash $412.87  open 0
   scanning chains + news...
-  99 raw candidates across 9 chains, 159 headlines/posts
-  3 passed gates | rejected: liquidity too thin x49, no h1 volume x33, too old x11, too new (bot war) x2, unknown age x1
-  top: HEREWEGO 0.71 | S&P500 0.34 | ELYSION 0.30
-  tick bar 0.57 (top 10% of 3, floor 0.45)
+  123 raw candidates across 5 chains, 159 headlines/posts
+  10 passed gates | rejected: liquidity too thin x76, no h1 volume x20, too old x13, already discovered x3, unknown age x1
+  top: 牛逼 0.90 | 牛逼 0.83 | PUSSY 0.65 | ELYSION 0.50 | 牛逼 0.49
+  tick bar 0.57 (top 10% of 10, floor 0.45)
   no entries this tick
-  shadow: tracking 27, closed 7 this tick (1 would have won)
+  shadow: tracking 26, closed 9 this tick (1 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
