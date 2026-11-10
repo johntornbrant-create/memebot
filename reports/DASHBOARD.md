@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-10T00:15:28+00:00`
+Updated `2026-11-10T07:30:08+00:00`
 
 ## Equity
 
@@ -15,7 +15,7 @@ Updated `2026-11-10T00:15:28+00:00`
 | Closed trades | 19 (1W / 18L, WR 5%) |
 | Profit factor | 0.39 |
 | Fees + slippage paid | $8.47 |
-| Ticks run | 1531 |
+| Ticks run | 1532 |
 
 ## Open positions
 
@@ -41,35 +41,35 @@ _flat_
 | WRHND | $-1.81 | -19% | 4.1h | ratchet +25% (peak +93%) |
 | HCAT | $-9.53 | -100% | 2.1h | stop loss -99% |
 
-## Learned weights (v153)
+## Learned weights (v154)
 
-_refit on 1703 observations (1602 shadow, 101 real), 475 winners (28% base rate)_
+_refit on 1721 observations (1620 shadow, 101 real), 477 winners (28% base rate)_
 
 | Feature | Weight |
 |---|---|
-| txn_depth | +0.143 |
-| turnover | +0.139 |
-| liq_quality | +0.092 |
-| momentum_accel | +0.066 |
-| buy_pressure | +0.045 |
-| paid_boost | +0.035 |
-| dip_in_uptrend | +0.033 |
-| not_vertical | -0.030 |
-| buzz | +0.024 |
-| fdv_sanity | +0.010 |
-| socials | -0.004 |
-| age_sweet | +0.001 |
+| txn_depth | +0.147 |
+| turnover | +0.138 |
+| liq_quality | +0.091 |
+| momentum_accel | +0.061 |
+| buy_pressure | +0.048 |
+| dip_in_uptrend | +0.037 |
+| paid_boost | +0.036 |
+| not_vertical | -0.036 |
+| buzz | +0.021 |
+| fdv_sanity | +0.017 |
+| socials | -0.005 |
+| age_sweet | -0.002 |
 
 ## Last run log
 ```
-tick #1531  equity $412.87  cash $412.87  open 0
+tick #1532  equity $412.87  cash $412.87  open 0
   scanning chains + news...
-  160 raw candidates across 8 chains, 159 headlines/posts
-  7 passed gates | rejected: liquidity too thin x81, no h1 volume x51, too old x9, unknown age x5, already discovered x5
-  top: PANGEA 0.70 | BIDEN 0.70 | BORLY 0.67 | ANT 0.60 | GPU 0.34
-  tick bar 0.58 (top 10% of 7, floor 0.45)
+  150 raw candidates across 6 chains, 159 headlines/posts
+  4 passed gates | rejected: liquidity too thin x95, no h1 volume x39, too old x6, already discovered x5, too few txns x1
+  top: Rocco 0.86 | AICoin 0.66 | BITS 0.53 | OnlyCats 0.34
+  tick bar 0.58 (top 10% of 4, floor 0.45)
   no entries this tick
-  shadow: tracking 17, closed 17 this tick (2 would have won)
+  shadow: tracking 12, closed 8 this tick (2 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED e/acc      peak +5180%  (scored 0.58)
     MISSED BABYCALI   peak +4979%  (scored 0.93)
