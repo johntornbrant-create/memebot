@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-11T16:07:57+00:00`
+Updated `2026-11-11T22:41:20+00:00`
 
 ## Equity
 
@@ -15,7 +15,7 @@ Updated `2026-11-11T16:07:57+00:00`
 | Closed trades | 19 (1W / 18L, WR 5%) |
 | Profit factor | 0.39 |
 | Fees + slippage paid | $8.47 |
-| Ticks run | 1537 |
+| Ticks run | 1538 |
 
 ## Open positions
 
@@ -62,15 +62,15 @@ _refit on 1741 observations (1640 shadow, 101 real), 483 winners (28% base rate)
 
 ## Last run log
 ```
-tick #1537  equity $412.87  cash $412.87  open 0
+tick #1538  equity $412.87  cash $412.87  open 0
   scanning chains + news...
-  137 raw candidates across 7 chains, 156 headlines/posts
-  6 passed gates | rejected: liquidity too thin x83, no h1 volume x36, too old x8, already discovered x3, too new (bot war) x1
-  top: 咪好 0.59 | GTA6 0.42 | NIHAO 0.35 | X 0.33 | GTA 0.28
-  tick bar 0.57 (top 10% of 6, floor 0.45)
+  131 raw candidates across 8 chains, 157 headlines/posts
+  5 passed gates | rejected: liquidity too thin x76, no h1 volume x39, too old x7, already discovered x2, sell pressure x1
+  top: TILLY 0.78 | REVVY 0.63 | Max 0.32 | X 0.27 | NIHAONOON 0.15
+  tick bar 0.57 (top 10% of 5, floor 0.45)
   no entries this tick
-  shadow: tracking 15, closed 2 this tick (0 would have won)
+  shadow: tracking 16, closed 3 this tick (2 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
+    MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
-    MISSED BABYCALI   peak +4979%  (scored 0.93)
 ```
