@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-13T07:17:01+00:00`
+Updated `2026-11-13T15:31:14+00:00`
 
 ## Equity
 
@@ -15,7 +15,7 @@ Updated `2026-11-13T07:17:01+00:00`
 | Closed trades | 19 (1W / 18L, WR 5%) |
 | Profit factor | 0.39 |
 | Fees + slippage paid | $8.47 |
-| Ticks run | 1543 |
+| Ticks run | 1544 |
 
 ## Open positions
 
@@ -41,35 +41,35 @@ _flat_
 | WRHND | $-1.81 | -19% | 4.1h | ratchet +25% (peak +93%) |
 | HCAT | $-9.53 | -100% | 2.1h | stop loss -99% |
 
-## Learned weights (v163)
+## Learned weights (v164)
 
-_refit on 1762 observations (1661 shadow, 101 real), 488 winners (28% base rate)_
+_refit on 1768 observations (1667 shadow, 101 real), 488 winners (28% base rate)_
 
 | Feature | Weight |
 |---|---|
-| txn_depth | +0.144 |
-| turnover | +0.135 |
-| liq_quality | +0.089 |
-| momentum_accel | +0.063 |
-| buy_pressure | +0.056 |
-| dip_in_uptrend | +0.035 |
-| paid_boost | +0.033 |
+| txn_depth | +0.146 |
+| turnover | +0.133 |
+| liq_quality | +0.087 |
+| momentum_accel | +0.062 |
+| buy_pressure | +0.057 |
+| dip_in_uptrend | +0.034 |
 | not_vertical | -0.033 |
-| buzz | +0.022 |
-| fdv_sanity | +0.013 |
+| paid_boost | +0.031 |
+| buzz | +0.021 |
+| fdv_sanity | +0.014 |
 | age_sweet | +0.008 |
-| socials | -0.008 |
+| socials | -0.007 |
 
 ## Last run log
 ```
-tick #1543  equity $412.87  cash $412.87  open 0
+tick #1544  equity $412.87  cash $412.87  open 0
   scanning chains + news...
-  159 raw candidates across 5 chains, 158 headlines/posts
-  4 passed gates | rejected: liquidity too thin x103, no h1 volume x26, too old x12, unknown age x7, already discovered x5
-  top: Basecat 0.72 | PENNY 0.58 | mihao 0.54 | Shitcoin 0.52
-  tick bar 0.59 (top 10% of 4, floor 0.45)
+  138 raw candidates across 7 chains, 158 headlines/posts
+  13 passed gates | rejected: liquidity too thin x76, no h1 volume x32, too old x10, unknown age x3, too new (bot war) x2
+  top: FOOD 0.76 | Sakura 0.69 | PARANOID 0.67 | JENSEN 0.66 | GTA 0.64
+  tick bar 0.60 (top 10% of 13, floor 0.45)
   no entries this tick
-  shadow: tracking 9, closed 6 this tick (0 would have won)
+  shadow: tracking 21, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
