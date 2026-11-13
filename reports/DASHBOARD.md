@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-13T15:31:14+00:00`
+Updated `2026-11-13T21:35:00+00:00`
 
 ## Equity
 
@@ -15,7 +15,7 @@ Updated `2026-11-13T15:31:14+00:00`
 | Closed trades | 19 (1W / 18L, WR 5%) |
 | Profit factor | 0.39 |
 | Fees + slippage paid | $8.47 |
-| Ticks run | 1544 |
+| Ticks run | 1545 |
 
 ## Open positions
 
@@ -62,14 +62,14 @@ _refit on 1768 observations (1667 shadow, 101 real), 488 winners (28% base rate)
 
 ## Last run log
 ```
-tick #1544  equity $412.87  cash $412.87  open 0
+tick #1545  equity $412.87  cash $412.87  open 0
   scanning chains + news...
-  138 raw candidates across 7 chains, 158 headlines/posts
-  13 passed gates | rejected: liquidity too thin x76, no h1 volume x32, too old x10, unknown age x3, too new (bot war) x2
-  top: FOOD 0.76 | Sakura 0.69 | PARANOID 0.67 | JENSEN 0.66 | GTA 0.64
-  tick bar 0.60 (top 10% of 13, floor 0.45)
+  140 raw candidates across 7 chains, 160 headlines/posts
+  5 passed gates | rejected: liquidity too thin x90, no h1 volume x25, too old x8, already discovered x6, unknown age x4
+  top: POPO 0.86 | WANTED 0.60 | MORI 0.50 | AMC 0.46 | S42 0.28
+  tick bar 0.60 (top 10% of 5, floor 0.45)
   no entries this tick
-  shadow: tracking 21, closed 0 this tick (0 would have won)
+  shadow: tracking 22, closed 3 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
