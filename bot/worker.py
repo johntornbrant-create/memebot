@@ -16,7 +16,7 @@ from datetime import datetime, timezone
 from . import config, portfolio as pf_mod
 from .run import tick
 
-RUN_MINUTES      = int(os.environ.get("RUN_MINUTES", "330"))   # stop well before the 6h cap
+RUN_MINUTES      = int(os.environ.get("RUN_MINUTES", "350"))   # stop well before the 6h cap
 POLL_SECONDS     = int(os.environ.get("POLL_SECONDS", "60"))   # position check cadence
 COMMIT_EVERY_MIN = 5
 ROOT = os.path.join(os.path.dirname(__file__), "..")

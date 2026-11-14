@@ -12,12 +12,12 @@ name: memebot worker
 
 on:
   schedule:
-    - cron: "7 */6 * * *"      # 4x/day, offset off the hour to dodge peak scheduling load
+    - cron: "2 */6 * * *"      # 4x/day, offset off the hour to dodge peak scheduling load
   workflow_dispatch:
     inputs:
       minutes:
         description: "How long to run (max 330)"
-        default: "330"
+        default: "350"
 
 permissions:
   contents: write
@@ -38,6 +38,6 @@ jobs:
 
       - name: Run worker
         env:
-          RUN_MINUTES: ${{ inputs.minutes || '330' }}
+          RUN_MINUTES: ${{ inputs.minutes || '350' }}
           POLL_SECONDS: "60"
         run: python -m bot.worker
