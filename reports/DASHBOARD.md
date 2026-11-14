@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-14T17:44:44+00:00`
+Updated `2026-11-14T17:57:31+00:00`
 
 ## Equity
 
@@ -9,17 +9,20 @@ Updated `2026-11-14T17:44:44+00:00`
 |---|---|
 | Equity | **$412.87** |
 | Return | **-17.43%** (start $500.00) |
-| Cash | $412.87 |
-| Deployed | $-0.00 (-0.0%) |
-| Open positions | 0 / 8 |
+| Cash | $402.87 |
+| Deployed | $10.00 (2.4%) |
+| Open positions | 2 / 8 |
 | Closed trades | 19 (1W / 18L, WR 5%) |
 | Profit factor | 0.39 |
-| Fees + slippage paid | $8.47 |
-| Ticks run | 1549 |
+| Fees + slippage paid | $8.61 |
+| Ticks run | 1560 |
 
 ## Open positions
 
-_flat_
+| Token | Chain | Cost | Now | P&L | Peak | Held |
+|---|---|---|---|---|---|---|
+| SHIT | solana | $5.00 | $4.94 | +0% | +0% | 0.0h |
+| 牛逼 | bsc | $5.00 | $4.91 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
@@ -62,16 +65,34 @@ _refit on 1777 observations (1676 shadow, 101 real), 490 winners (28% base rate)
 
 ## Last run log
 ```
-tick #1549  equity $412.87  cash $412.87  open 0
+tick #1551  equity $412.87  cash $412.87  open 0
+exits-only pass. equity $412.87 (next scan in 8 min)
+tick #1552  equity $412.87  cash $412.87  open 0
+exits-only pass. equity $412.87 (next scan in 7 min)
+tick #1553  equity $412.87  cash $412.87  open 0
+exits-only pass. equity $412.87 (next scan in 6 min)
+tick #1554  equity $412.87  cash $412.87  open 0
+exits-only pass. equity $412.87 (next scan in 5 min)
+tick #1555  equity $412.87  cash $412.87  open 0
+exits-only pass. equity $412.87 (next scan in 4 min)
+tick #1556  equity $412.87  cash $412.87  open 0
+exits-only pass. equity $412.87 (next scan in 3 min)
+tick #1557  equity $412.87  cash $412.87  open 0
+exits-only pass. equity $412.87 (next scan in 2 min)
+tick #1558  equity $412.87  cash $412.87  open 0
+exits-only pass. equity $412.87 (next scan in 1 min)
+tick #1559  equity $412.87  cash $412.87  open 0
+exits-only pass. equity $412.87 (next scan in 0 min)
+tick #1560  equity $412.87  cash $412.87  open 0
   scanning chains + news...
-  113 raw candidates across 5 chains, 160 headlines/posts
-  5 passed gates | rejected: liquidity too thin x63, no h1 volume x33, too old x6, unknown age x2, already discovered x2
-  top: 牛逼 0.84 | gtacoin 0.77 | JENSEN 0.35 | Angel 0.22 | AMC 0.22
-  tick bar 0.61 (top 10% of 5, floor 0.45)
-  no entries this tick
-  shadow: tracking 15, closed 12 this tick (0 would have won)
+  92 raw candidates across 4 chains, 160 headlines/posts
+  6 passed gates | rejected: liquidity too thin x58, no h1 volume x22, too old x4, too new (bot war) x2
+  top: 牛逼 0.80 | JENSEN 0.59 | gtacoin 0.57 | SHIT 0.50 | AMC 0.24
+  tick bar 0.61 (top 10% of 6, floor 0.45)
+  BUY[explore] SHIT       $5.00 @ $8.156e-05  score 0.50  solana  liq $26,241
+  BUY[explore] 牛逼         $5.00 @ $0.0001506  score 0.80  bsc  liq $78,746
+  shadow: tracking 16, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
-  !! STALL: no entry in 468h. probe size $5.00 (min $5.00), breaker=[]
 ```
