@@ -3,7 +3,7 @@
   "restarted": "2026-10-24",
   "run": 2,
   "cash": 397.1674984359712,
-  "equity": 420.5708,
+  "equity": 422.0129,
   "positions": {
     "solana:6sZUjgnHTdezsZoMdbTcxsi58bXqnsz6mkj49Wgxpump": {
       "id": "d8eb55f7bd",
@@ -37,7 +37,7 @@
         "buzz": 0.3333,
         "paid_boost": 0.0
       },
-      "last_price": 0.0001441
+      "last_price": 0.0001393
     },
     "bsc:0x4fC21E10DA141e8B7D7c9945CBEC2Ec3ffbA7777": {
       "id": "61f500c397",
@@ -51,7 +51,7 @@
       "cost_usd": 5.0,
       "fees_usd": 0.1512111873341095,
       "realized_usd": 2.2013515882086296,
-      "peak_gain": 0.845285524568393,
+      "peak_gain": 1.1195219123505975,
       "tp_hit": [
         0
       ],
@@ -71,7 +71,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0002779
+      "last_price": 0.0003192
     },
     "solana:3Kf7Jxy1dB5TH56qFkC6XUW9S3qtMZQJzuUPzbdMpump": {
       "id": "b9008380eb",
@@ -85,7 +85,7 @@
       "cost_usd": 5.0,
       "fees_usd": 0.0559,
       "realized_usd": 0.0,
-      "peak_gain": 0.0,
+      "peak_gain": 0.19797024885305148,
       "tp_hit": [],
       "entry_liq": 25069.62,
       "score": 0.2064,
@@ -103,7 +103,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 7.193e-05
+      "last_price": 8.617e-05
     },
     "solana:FTu55MyigXns96jz4nTCDDiTCjYJjyrHSceCgG9Upump": {
       "id": "1ec349e414",
@@ -135,7 +135,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0003512
+      "last_price": 0.0003359
     }
   },
   "blacklist": {
@@ -314,7 +314,7 @@
     "trades_today": 4
   },
   "stats": {
-    "ticks": 1563,
+    "ticks": 1564,
     "opened": 23,
     "closed": 19,
     "wins": 1,
@@ -322,7 +322,7 @@
     "fees_paid": 8.819264000196906,
     "realized_pnl": -87.13227179161917
   },
-  "updated": "2026-11-14T23:19:06+00:00",
+  "updated": "2026-11-14T23:42:16+00:00",
   "run1_final_equity": 322.5674,
-  "last_scan": "2026-11-14T23:17:33+00:00"
+  "last_scan": "2026-11-14T23:40:47+00:00"
 }
