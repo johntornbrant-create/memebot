@@ -1,0 +1,43 @@
+name: memebot worker
+
+# GitHub throttles FREQUENCY, not DURATION. Measured over 200 runs: a */5 cron delivered
+# 2% of its runs and a */15 delivered 6%, while a 6-hourly cron delivered 95%. A job may
+# run for up to 6 hours.
+#
+# So this asks for one run every 6 hours - the reliable cadence - and that run stays alive
+# for 5.5 hours polling positions every 60 seconds. Four-hour stop resolution becomes
+# roughly one minute, for free, with no server.
+#
+# Public repo = unlimited free Actions minutes, so the runtime costs nothing.
+
+on:
+  schedule:
+    - cron: "7 */6 * * *"      # 4x/day, offset off the hour to dodge peak scheduling load
+  workflow_dispatch:
+    inputs:
+      minutes:
+        description: "How long to run (max 330)"
+        default: "330"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: memebot
+  cancel-in-progress: false
+
+jobs:
+  worker:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355        # hard cap is 360; leave headroom to commit and exit
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run worker
+        env:
+          RUN_MINUTES: ${{ inputs.minutes || '330' }}
+          POLL_SECONDS: "60"
+        run: python -m bot.worker

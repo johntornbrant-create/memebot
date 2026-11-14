@@ -86,7 +86,17 @@ def size_position(pf, cand):
     notional = min(notional, cand["liquidity"] * 0.004)   # <=0.4% of pool = tolerable impact
     room = eq * config.MAX_DEPLOYED_PCT - sum(p["cost_usd"] for p in pf["positions"].values())
     notional = min(notional, room, cash * 0.9)
-    return round(notional, 2) if notional >= config.MIN_POS_USD else 0.0
+
+    # NO CLIFF. A percentage size and a fixed dollar floor create a threshold the equity
+    # curve can drift across silently: at $412.87 a 1.2% size is $4.95 against a $5.00
+    # floor, and the bot stopped entering for 19 days without a single error. If the
+    # percentage lands just under the floor, trade the floor instead - provided cash and
+    # the exposure caps genuinely allow it. Only a real constraint should block a trade.
+    if notional < config.MIN_POS_USD:
+        if min(room, cash * 0.9) >= config.MIN_POS_USD and eq * config.MAX_POS_PCT >= config.MIN_POS_USD * 0.5:
+            return float(config.MIN_POS_USD)
+        return 0.0
+    return round(notional, 2)
 
 
 def roll_marks(pf):

@@ -170,6 +170,17 @@ def tick(exits_only=False):
     if not can:
         log(f"  entries blocked: {'; '.join(reasons)}")
 
+    # Loud stall check. Two separate 2+ week stalls happened because "running fine with no
+    # entries" is indistinguishable from health unless something shouts about it.
+    le = pf.get("last_entry")
+    if le and not pf.get("halted"):
+        idle = pf_mod.hours_since(le)
+        if idle > 24:
+            probe = risk.size_position(pf, {"chain": "solana", "address": "_probe",
+                                            "liquidity": 100_000})
+            log(f"  !! STALL: no entry in {idle:.0f}h. probe size ${probe:.2f} "
+                f"(min ${config.MIN_POS_USD:.2f}), breaker={risk.equity_curve_checks(pf)[1]}")
+
     pf_mod.save(pf)
     write_dashboard(pf, LOG)
     ret = pf["equity"] / config.START_EQUITY - 1
