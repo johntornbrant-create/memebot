@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-13T21:35:00+00:00`
+Updated `2026-11-14T01:46:05+00:00`
 
 ## Equity
 
@@ -15,7 +15,7 @@ Updated `2026-11-13T21:35:00+00:00`
 | Closed trades | 19 (1W / 18L, WR 5%) |
 | Profit factor | 0.39 |
 | Fees + slippage paid | $8.47 |
-| Ticks run | 1545 |
+| Ticks run | 1546 |
 
 ## Open positions
 
@@ -41,9 +41,9 @@ _flat_
 | WRHND | $-1.81 | -19% | 4.1h | ratchet +25% (peak +93%) |
 | HCAT | $-9.53 | -100% | 2.1h | stop loss -99% |
 
-## Learned weights (v164)
+## Learned weights (v165)
 
-_refit on 1768 observations (1667 shadow, 101 real), 488 winners (28% base rate)_
+_refit on 1771 observations (1670 shadow, 101 real), 488 winners (28% base rate)_
 
 | Feature | Weight |
 |---|---|
@@ -53,23 +53,23 @@ _refit on 1768 observations (1667 shadow, 101 real), 488 winners (28% base rate)
 | momentum_accel | +0.062 |
 | buy_pressure | +0.057 |
 | dip_in_uptrend | +0.034 |
-| not_vertical | -0.033 |
+| not_vertical | -0.032 |
 | paid_boost | +0.031 |
-| buzz | +0.021 |
+| buzz | +0.020 |
 | fdv_sanity | +0.014 |
 | age_sweet | +0.008 |
-| socials | -0.007 |
+| socials | -0.006 |
 
 ## Last run log
 ```
-tick #1545  equity $412.87  cash $412.87  open 0
+tick #1546  equity $412.87  cash $412.87  open 0
   scanning chains + news...
-  140 raw candidates across 7 chains, 160 headlines/posts
-  5 passed gates | rejected: liquidity too thin x90, no h1 volume x25, too old x8, already discovered x6, unknown age x4
-  top: POPO 0.86 | WANTED 0.60 | MORI 0.50 | AMC 0.46 | S42 0.28
-  tick bar 0.60 (top 10% of 5, floor 0.45)
+  152 raw candidates across 5 chains, 160 headlines/posts
+  4 passed gates | rejected: liquidity too thin x102, no h1 volume x28, too old x14, already discovered x2, sell pressure x1
+  top: JENSEN 0.68 | SWJ 0.52 | PEACEFROG 0.34 | AMC 0.22
+  tick bar 0.61 (top 10% of 4, floor 0.45)
   no entries this tick
-  shadow: tracking 22, closed 3 this tick (0 would have won)
+  shadow: tracking 23, closed 2 this tick (1 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
