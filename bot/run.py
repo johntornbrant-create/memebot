@@ -103,14 +103,15 @@ def scan(pf, allow_entries=True):
             break
         ok, why = risk.can_open(pf, c)
         if not ok:
+            log(f"  skip {c['symbol']}: {why}")
             continue
         size = risk.size_position(pf, c)
         if size < config.MIN_POS_USD:
+            log(f"  skip {c['symbol']}: size ${size:.2f} < min ${config.MIN_POS_USD:.2f} "
+                f"(liq ${c['liquidity']:,.0f} caps at ${c['liquidity']*0.004:.2f})")
             continue
         if mode == "explore":
-            size = min(size, pf["equity"] * config.MAX_POS_PCT * 0.7)   # smaller bets on what we know nothing about
-            if size < config.MIN_POS_USD:
-                continue
+            size = max(min(size, pf["equity"] * config.MAX_POS_PCT * 0.7), config.MIN_POS_USD)
         pf_mod.open_position(pf, c, size, f, s)
         taken_keys.add(f"{c['chain']}:{c['address']}")
         opened += 1
