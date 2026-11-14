@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-14T15:02:12+00:00`
+Updated `2026-11-14T17:44:44+00:00`
 
 ## Equity
 
@@ -15,7 +15,7 @@ Updated `2026-11-14T15:02:12+00:00`
 | Closed trades | 19 (1W / 18L, WR 5%) |
 | Profit factor | 0.39 |
 | Fees + slippage paid | $8.47 |
-| Ticks run | 1548 |
+| Ticks run | 1549 |
 
 ## Open positions
 
@@ -62,15 +62,16 @@ _refit on 1777 observations (1676 shadow, 101 real), 490 winners (28% base rate)
 
 ## Last run log
 ```
-tick #1548  equity $412.87  cash $412.87  open 0
+tick #1549  equity $412.87  cash $412.87  open 0
   scanning chains + news...
-  131 raw candidates across 7 chains, 160 headlines/posts
-  4 passed gates | rejected: liquidity too thin x83, no h1 volume x31, too old x7, already discovered x6
-  top: OG 0.51 | JENSEN 0.50 | WISHMAS 0.35 | AMC 0.26
-  tick bar 0.51 (top 10% of 4, floor 0.45)
+  113 raw candidates across 5 chains, 160 headlines/posts
+  5 passed gates | rejected: liquidity too thin x63, no h1 volume x33, too old x6, unknown age x2, already discovered x2
+  top: 牛逼 0.84 | gtacoin 0.77 | JENSEN 0.35 | Angel 0.22 | AMC 0.22
+  tick bar 0.61 (top 10% of 5, floor 0.45)
   no entries this tick
-  shadow: tracking 24, closed 0 this tick (0 would have won)
+  shadow: tracking 15, closed 12 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
+  !! STALL: no entry in 468h. probe size $5.00 (min $5.00), breaker=[]
 ```
