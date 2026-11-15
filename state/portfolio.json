@@ -2,8 +2,8 @@
   "started": "2026-09-22T16:04:55+00:00",
   "restarted": "2026-10-24",
   "run": 2,
-  "cash": 397.8142829666678,
-  "equity": 415.1051,
+  "cash": 400.1327594791531,
+  "equity": 417.1855,
   "positions": {
     "solana:6sZUjgnHTdezsZoMdbTcxsi58bXqnsz6mkj49Wgxpump": {
       "id": "d8eb55f7bd",
@@ -12,14 +12,15 @@
       "symbol": "SHIT",
       "opened": "2026-11-14T17:57:30+00:00",
       "entry_price": 8.156e-05,
-      "tokens": 45464.77356762966,
+      "tokens": 34098.58017572224,
       "tokens_initial": 60619.698090172875,
       "cost_usd": 5.0,
-      "fees_usd": 0.09130598431669912,
-      "realized_usd": 2.1484186393817786,
-      "peak_gain": 1.4448258950465913,
+      "fees_usd": 0.12790474263462534,
+      "realized_usd": 4.466895151867068,
+      "peak_gain": 1.540461010299166,
       "tp_hit": [
-        0
+        0,
+        1
       ],
       "entry_liq": 26241.4,
       "score": 0.4968,
@@ -37,7 +38,7 @@
         "buzz": 0.3333,
         "paid_boost": 0.0
       },
-      "last_price": 0.0001629
+      "last_price": 0.0002066
     },
     "solana:FTu55MyigXns96jz4nTCDDiTCjYJjyrHSceCgG9Upump": {
       "id": "1ec349e414",
@@ -69,7 +70,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.000351
+      "last_price": 0.0003529
     },
     "solana:G9ZMir6uh66Y7viPkXAy7myA9jjE4T1YgheVUmGDpump": {
       "id": "60acd45f23",
@@ -101,7 +102,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 8.839e-05
+      "last_price": 9.013e-05
     }
   },
   "blacklist": {
@@ -290,15 +291,15 @@
     "trades_today": 2
   },
   "stats": {
-    "ticks": 1632,
+    "ticks": 1638,
     "opened": 25,
     "closed": 22,
     "wins": 2,
     "losses": 20,
-    "fees_paid": 9.148291714756636,
+    "fees_paid": 9.184890473074562,
     "realized_pnl": -89.28413567271397
   },
-  "updated": "2026-11-15T07:23:30+00:00",
+  "updated": "2026-11-15T07:29:11+00:00",
   "run1_final_equity": 322.5674,
   "last_scan": "2026-11-15T07:22:11+00:00"
 }
