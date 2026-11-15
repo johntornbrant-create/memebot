@@ -1,37 +1,36 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-15T11:59:31+00:00`
+Updated `2026-11-15T12:01:53+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$407.85** |
-| Return | **-18.43%** (start $500.00) |
-| Cash | $398.44 |
-| Deployed | $9.42 (2.3%) |
-| Open positions | 2 / 8 |
-| Closed trades | 28 (5W / 23L, WR 18%) |
+| Equity | **$413.63** |
+| Return | **-17.27%** (start $500.00) |
+| Cash | $392.11 |
+| Deployed | $21.52 (5.2%) |
+| Open positions | 4 / 8 |
+| Closed trades | 25 (3W / 22L, WR 12%) |
 | Profit factor | 0.40 |
-| Fees + slippage paid | $18.82 |
-| Ticks run | 1885 |
+| Fees + slippage paid | $12.61 |
+| Ticks run | 1820 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| FOOD | solana | $5.05 | $3.99 | -20% | +17% | 12.7h |
-| GTA | solana | $5.00 | $5.43 | +10% | +43% | 5.6h |
+| FOOD | solana | $5.05 | $4.04 | -19% | +17% | 12.7h |
+| GTA | solana | $5.00 | $5.65 | +14% | +43% | 5.6h |
+| Socks | solana | $5.00 | $6.83 | +84% | +103% | 1.6h |
+| LETSWIN | ethereum | $5.00 | $1.96 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
-| Socks | $+0.46 | +9% | 0.8h | ratchet +0% (peak +60%) |
-| Macca | $-1.92 | -38% | 0.8h | stop loss -36% |
-| LETSWIN | $-5.00 | -100% | 0.2h | ratchet +0% (peak +64%) |
-| Socks | $+1.61 | +32% | 0.4h | ratchet +42% (peak +103%) |
+| Macca | $-3.03 | -61% | 1.2h | stop loss -59% |
 | HOGE | $-1.94 | -39% | 0.2h | stop loss -37% |
 | SHIT | $+4.56 | +91% | 14.6h | ratchet +90% (peak +172%) |
 | worth | $-1.96 | -39% | 3.0h | stop loss -37% |
@@ -43,6 +42,9 @@ Updated `2026-11-15T11:59:31+00:00`
 | TIT | $-7.07 | -80% | 4.9h | stop loss -79% |
 | 币安AiPro | $-1.62 | -25% | 18.2h | ratchet +47% (peak +109%) |
 | CATTLEAXE | $-2.39 | -38% | 7.9h | stop loss -37% |
+| BTC | $-2.59 | -42% | 4.0h | stop loss -40% |
+| SWORDOPE | $-2.42 | -38% | 4.8h | stop loss -36% |
+| REACHY | $-6.23 | -99% | 13.8h | stop loss -99% |
 
 ## Learned weights (v168)
 
@@ -65,42 +67,15 @@ _refit on 1797 observations (1695 shadow, 102 real), 492 winners (27% base rate)
 
 ## Last run log
 ```
-  no entries this tick
-  shadow: tracking 20, closed 0 this tick (0 would have won)
-    MISSED NI         peak +277296%  (scored 0.21)
-    MISSED GTAX       peak +11365%  (scored 0.25)
-    MISSED e/acc      peak +5180%  (scored 0.58)
-done. equity $408.82 (-18.24% since start)
-tick #1875  equity $408.82  cash $394.84  open 3
-  SELL Socks      100% @ $0.0003068  ->  $3.60   [ratchet +0% (peak +60%)]
-exits-only pass. equity $407.90 (next scan in 10 min)
-tick #1876  equity $407.90  cash $398.44  open 2
-exits-only pass. equity $407.99 (next scan in 9 min)
-tick #1877  equity $407.99  cash $398.44  open 2
-exits-only pass. equity $407.91 (next scan in 8 min)
-tick #1878  equity $407.91  cash $398.44  open 2
-exits-only pass. equity $407.74 (next scan in 7 min)
-tick #1879  equity $407.74  cash $398.44  open 2
-exits-only pass. equity $407.64 (next scan in 6 min)
-tick #1880  equity $407.64  cash $398.44  open 2
-exits-only pass. equity $407.86 (next scan in 5 min)
-tick #1881  equity $407.86  cash $398.44  open 2
-exits-only pass. equity $407.79 (next scan in 4 min)
-tick #1882  equity $407.79  cash $398.44  open 2
-exits-only pass. equity $407.72 (next scan in 3 min)
-tick #1883  equity $407.72  cash $398.44  open 2
-exits-only pass. equity $408.00 (next scan in 2 min)
-tick #1884  equity $408.00  cash $398.44  open 2
-exits-only pass. equity $407.93 (next scan in 1 min)
-tick #1885  equity $407.93  cash $398.44  open 2
+tick #1820  equity $416.20  cash $395.13  open 4
+  SELL Macca      100% @ $1.77  ->  $1.97   [stop loss -59%]
   scanning chains + news...
-  99 raw candidates across 5 chains, 160 headlines/posts
-  4 passed gates | rejected: liquidity too thin x55, no h1 volume x23, too old x11, already discovered x6
-  top: LETSWIN 0.68 | GETAJOB 0.66 | Macca 0.59 | Socks 0.22
+  123 raw candidates across 7 chains, 160 headlines/posts
+  4 passed gates | rejected: liquidity too thin x82, no h1 volume x27, too old x6, already discovered x3, too new (bot war) x1
+  top: LETSWIN 0.64 | GETAJOB 0.64 | Macca 0.58 | Socks 0.25
   tick bar 0.62 (top 10% of 4, floor 0.45)
-  skip Macca: blacklisted (previously stopped out)
-  skip LETSWIN: blacklisted (previously stopped out)
-  no entries this tick
+  BUY[exploit] LETSWIN    $5.00 @ $0.0009293  score 0.64  ethereum  liq $29,940
+  skip Socks: already held
   shadow: tracking 20, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
