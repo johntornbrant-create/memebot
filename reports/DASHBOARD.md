@@ -1,29 +1,29 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-15T06:35:31+00:00`
+Updated `2026-11-15T06:47:31+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$415.47** |
-| Return | **-16.91%** (start $500.00) |
+| Equity | **$415.57** |
+| Return | **-16.89%** (start $500.00) |
 | Cash | $397.81 |
-| Deployed | $17.66 (4.2%) |
+| Deployed | $17.76 (4.3%) |
 | Open positions | 3 / 8 |
 | Closed trades | 22 (2W / 20L, WR 9%) |
 | Profit factor | 0.39 |
 | Fees + slippage paid | $9.15 |
-| Ticks run | 1588 |
+| Ticks run | 1599 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| SHIT | solana | $5.00 | $8.12 | +119% | +144% | 12.6h |
-| FOOD | solana | $5.05 | $5.38 | +8% | +17% | 7.3h |
-| GTA | solana | $5.00 | $4.15 | -16% | +4% | 0.2h |
+| SHIT | solana | $5.00 | $8.10 | +118% | +144% | 12.8h |
+| FOOD | solana | $5.05 | $5.08 | +2% | +17% | 7.5h |
+| GTA | solana | $5.00 | $4.58 | -7% | +4% | 0.4h |
 
 ## Last closed trades
 
@@ -66,43 +66,43 @@ _refit on 1797 observations (1695 shadow, 102 real), 492 winners (27% base rate)
 
 ## Last run log
 ```
-  BUY[explore] GTA        $5.00 @ $8.931e-05  score 0.70  solana  liq $27,555
   skip GTA$: solana concentration cap
+  no entries this tick
   shadow: tracking 17, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
-done. equity $417.16 (-16.57% since start)
-tick #1578  equity $417.16  cash $397.81  open 3
-exits-only pass. equity $416.95 (next scan in 10 min)
-tick #1579  equity $416.95  cash $397.81  open 3
-exits-only pass. equity $416.99 (next scan in 9 min)
-tick #1580  equity $416.99  cash $397.81  open 3
-exits-only pass. equity $416.88 (next scan in 8 min)
-tick #1581  equity $416.88  cash $397.81  open 3
-exits-only pass. equity $417.36 (next scan in 7 min)
-tick #1582  equity $417.36  cash $397.81  open 3
-exits-only pass. equity $417.46 (next scan in 6 min)
-tick #1583  equity $417.46  cash $397.81  open 3
-exits-only pass. equity $417.00 (next scan in 5 min)
-tick #1584  equity $417.00  cash $397.81  open 3
-exits-only pass. equity $416.62 (next scan in 4 min)
-tick #1585  equity $416.62  cash $397.81  open 3
-exits-only pass. equity $416.40 (next scan in 3 min)
-tick #1586  equity $416.40  cash $397.81  open 3
-exits-only pass. equity $416.43 (next scan in 2 min)
-tick #1587  equity $416.43  cash $397.81  open 3
-exits-only pass. equity $415.43 (next scan in 1 min)
-tick #1588  equity $415.43  cash $397.81  open 3
+done. equity $415.47 (-16.91% since start)
+tick #1589  equity $415.47  cash $397.81  open 3
+exits-only pass. equity $415.60 (next scan in 10 min)
+tick #1590  equity $415.60  cash $397.81  open 3
+exits-only pass. equity $415.67 (next scan in 9 min)
+tick #1591  equity $415.67  cash $397.81  open 3
+exits-only pass. equity $415.68 (next scan in 8 min)
+tick #1592  equity $415.68  cash $397.81  open 3
+exits-only pass. equity $416.02 (next scan in 7 min)
+tick #1593  equity $416.02  cash $397.81  open 3
+exits-only pass. equity $416.11 (next scan in 6 min)
+tick #1594  equity $416.11  cash $397.81  open 3
+exits-only pass. equity $416.11 (next scan in 5 min)
+tick #1595  equity $416.11  cash $397.81  open 3
+exits-only pass. equity $416.30 (next scan in 4 min)
+tick #1596  equity $416.30  cash $397.81  open 3
+exits-only pass. equity $416.15 (next scan in 3 min)
+tick #1597  equity $416.15  cash $397.81  open 3
+exits-only pass. equity $416.16 (next scan in 2 min)
+tick #1598  equity $416.16  cash $397.81  open 3
+exits-only pass. equity $415.87 (next scan in 1 min)
+tick #1599  equity $415.87  cash $397.81  open 3
   scanning chains + news...
   106 raw candidates across 3 chains, 160 headlines/posts
-  3 passed gates | rejected: liquidity too thin x79, no h1 volume x16, too old x6, too new (bot war) x2
-  top: bill 0.67 | GTA 0.47 | GTA$ 0.31
+  3 passed gates | rejected: liquidity too thin x80, no h1 volume x16, too old x7
+  top: bill 0.81 | penny 0.65 | GTA 0.29
   tick bar 0.62 (top 10% of 3, floor 0.45)
+  skip penny: solana concentration cap
   skip bill: solana concentration cap
-  skip GTA$: solana concentration cap
   no entries this tick
-  shadow: tracking 17, closed 0 this tick (0 would have won)
+  shadow: tracking 18, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
