@@ -1,34 +1,36 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-15T17:36:48+00:00`
+Updated `2026-11-15T18:46:26+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$404.93** |
-| Return | **-19.01%** (start $500.00) |
-| Cash | $390.67 |
-| Deployed | $14.26 (3.5%) |
-| Open positions | 3 / 8 |
-| Closed trades | 27 (4W / 23L, WR 15%) |
+| Equity | **$399.60** |
+| Return | **-20.08%** (start $500.00) |
+| Cash | $380.67 |
+| Deployed | $18.93 (4.7%) |
+| Open positions | 4 / 8 |
+| Closed trades | 28 (4W / 24L, WR 14%) |
 | Profit factor | 0.39 |
-| Fees + slippage paid | $18.70 |
-| Ticks run | 1821 |
+| Fees + slippage paid | $24.79 |
+| Ticks run | 1822 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| FOOD | solana | $5.05 | $3.29 | -34% | +17% | 18.3h |
-| GTA | solana | $5.00 | $5.97 | +21% | +43% | 11.2h |
-| GTA | ethereum | $5.00 | $1.96 | +0% | +0% | 0.0h |
+| FOOD | solana | $5.05 | $3.48 | -30% | +17% | 19.5h |
+| GTA | solana | $5.00 | $5.45 | +10% | +43% | 12.4h |
+| BEAR | solana | $5.00 | $4.94 | +0% | +0% | 0.0h |
+| WASTED | ethereum | $5.00 | $1.96 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| GTA | $-5.00 | -100% | 1.1h | stop loss -99% |
 | LETSWIN | $-5.00 | -100% | 5.6h | stop loss -83% |
 | Socks | $+0.41 | +8% | 7.2h | ratchet +42% (peak +103%) |
 | Macca | $-3.03 | -61% | 1.2h | stop loss -59% |
@@ -43,7 +45,6 @@ Updated `2026-11-15T17:36:48+00:00`
 | TIT | $-7.07 | -80% | 4.9h | stop loss -79% |
 | 币安AiPro | $-1.62 | -25% | 18.2h | ratchet +47% (peak +109%) |
 | CATTLEAXE | $-2.39 | -38% | 7.9h | stop loss -37% |
-| BTC | $-2.59 | -42% | 4.0h | stop loss -40% |
 
 ## Learned weights (v169)
 
@@ -66,16 +67,16 @@ _refit on 1806 observations (1699 shadow, 107 real), 494 winners (27% base rate)
 
 ## Last run log
 ```
-tick #1821  equity $413.63  cash $392.11  open 4
-  SELL Socks      100% @ $0.0001691  ->  $3.56   [ratchet +42% (peak +103%)]
-  SELL LETSWIN    100% @ $0.0001546  ->  $0.00   [stop loss -83%]
+tick #1822  equity $404.93  cash $390.67  open 3
+  SELL GTA        100% @ $1.834e-06  ->  $0.00   [stop loss -99%]
   scanning chains + news...
-  82 raw candidates across 7 chains, 160 headlines/posts
-  3 passed gates | rejected: liquidity too thin x54, no h1 volume x20, too old x2, too new (bot war) x1, already discovered x1
-  top: GTA 0.63 | Jacket 0.55 | gtacoin 0.44
-  tick bar 0.63 (top 10% of 3, floor 0.45)
-  BUY[exploit] GTA        $5.00 @ $0.0001574  score 0.63  ethereum  liq $31,977
-  shadow: tracking 21, closed 1 this tick (1 would have won)
+  133 raw candidates across 7 chains, 160 headlines/posts
+  6 passed gates | rejected: liquidity too thin x71, no h1 volume x34, too old x16, already discovered x5, too new (bot war) x1
+  top: WASTED 0.72 | BEAR 0.70 | SWJ 0.64 | Macca 0.44 | gtacoin 0.43
+  tick bar 0.64 (top 10% of 6, floor 0.45)
+  BUY[explore] BEAR       $5.00 @ $0.0001205  score 0.70  solana  liq $32,896
+  BUY[explore] WASTED     $5.00 @ $0.0006616  score 0.72  ethereum  liq $67,520
+  shadow: tracking 22, closed 4 this tick (3 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
