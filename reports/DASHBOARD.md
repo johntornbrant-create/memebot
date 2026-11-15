@@ -1,29 +1,29 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-15T08:11:30+00:00`
+Updated `2026-11-15T08:23:30+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$417.27** |
-| Return | **-16.55%** (start $500.00) |
+| Equity | **$416.28** |
+| Return | **-16.74%** (start $500.00) |
 | Cash | $400.13 |
-| Deployed | $17.14 (4.1%) |
+| Deployed | $16.15 (3.9%) |
 | Open positions | 3 / 8 |
 | Closed trades | 22 (2W / 20L, WR 9%) |
 | Profit factor | 0.39 |
 | Fees + slippage paid | $9.18 |
-| Ticks run | 1676 |
+| Ticks run | 1687 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| SHIT | solana | $5.00 | $6.89 | +148% | +172% | 14.2h |
-| FOOD | solana | $5.05 | $5.03 | +1% | +17% | 8.9h |
-| GTA | solana | $5.00 | $5.22 | +6% | +12% | 1.8h |
+| SHIT | solana | $5.00 | $5.78 | +108% | +172% | 14.4h |
+| FOOD | solana | $5.05 | $5.05 | +1% | +17% | 9.1h |
+| GTA | solana | $5.00 | $5.31 | +7% | +12% | 2.0h |
 
 ## Last closed trades
 
@@ -66,43 +66,43 @@ _refit on 1797 observations (1695 shadow, 102 real), 492 winners (27% base rate)
 
 ## Last run log
 ```
-  tick bar 0.51 (top 10% of 3, floor 0.45)
-  skip bill: solana concentration cap
-  skip GTA: already held
-  no entries this tick
-  shadow: tracking 19, closed 0 this tick (0 would have won)
-    MISSED NI         peak +277296%  (scored 0.21)
-    MISSED GTAX       peak +11365%  (scored 0.25)
-    MISSED e/acc      peak +5180%  (scored 0.58)
-done. equity $417.62 (-16.48% since start)
-tick #1666  equity $417.62  cash $400.13  open 3
-exits-only pass. equity $417.77 (next scan in 10 min)
-tick #1667  equity $417.77  cash $400.13  open 3
-exits-only pass. equity $417.75 (next scan in 9 min)
-tick #1668  equity $417.75  cash $400.13  open 3
-exits-only pass. equity $417.72 (next scan in 8 min)
-tick #1669  equity $417.72  cash $400.13  open 3
-exits-only pass. equity $417.61 (next scan in 7 min)
-tick #1670  equity $417.61  cash $400.13  open 3
-exits-only pass. equity $417.67 (next scan in 6 min)
-tick #1671  equity $417.67  cash $400.13  open 3
-exits-only pass. equity $417.66 (next scan in 5 min)
-tick #1672  equity $417.66  cash $400.13  open 3
-exits-only pass. equity $417.73 (next scan in 4 min)
-tick #1673  equity $417.73  cash $400.13  open 3
-exits-only pass. equity $417.65 (next scan in 3 min)
-tick #1674  equity $417.65  cash $400.13  open 3
-exits-only pass. equity $417.31 (next scan in 2 min)
-tick #1675  equity $417.31  cash $400.13  open 3
-exits-only pass. equity $417.24 (next scan in 1 min)
-tick #1676  equity $417.24  cash $400.13  open 3
-  scanning chains + news...
-  133 raw candidates across 6 chains, 160 headlines/posts
-  2 passed gates | rejected: liquidity too thin x93, no h1 volume x31, too old x4, already discovered x3
-  top: GTA 0.31 | HOGE 0.21
   tick bar 0.45 (top 10% of 2, floor 0.45)
   no entries this tick
   shadow: tracking 15, closed 4 this tick (0 would have won)
+    MISSED NI         peak +277296%  (scored 0.21)
+    MISSED GTAX       peak +11365%  (scored 0.25)
+    MISSED e/acc      peak +5180%  (scored 0.58)
+done. equity $417.27 (-16.55% since start)
+tick #1677  equity $417.27  cash $400.13  open 3
+exits-only pass. equity $417.09 (next scan in 10 min)
+tick #1678  equity $417.09  cash $400.13  open 3
+exits-only pass. equity $416.86 (next scan in 9 min)
+tick #1679  equity $416.86  cash $400.13  open 3
+exits-only pass. equity $416.91 (next scan in 8 min)
+tick #1680  equity $416.91  cash $400.13  open 3
+exits-only pass. equity $416.86 (next scan in 7 min)
+tick #1681  equity $416.86  cash $400.13  open 3
+exits-only pass. equity $416.82 (next scan in 6 min)
+tick #1682  equity $416.82  cash $400.13  open 3
+exits-only pass. equity $416.66 (next scan in 5 min)
+tick #1683  equity $416.66  cash $400.13  open 3
+exits-only pass. equity $416.71 (next scan in 4 min)
+tick #1684  equity $416.71  cash $400.13  open 3
+exits-only pass. equity $416.77 (next scan in 3 min)
+tick #1685  equity $416.77  cash $400.13  open 3
+exits-only pass. equity $416.63 (next scan in 2 min)
+tick #1686  equity $416.63  cash $400.13  open 3
+exits-only pass. equity $416.70 (next scan in 1 min)
+tick #1687  equity $416.70  cash $400.13  open 3
+  scanning chains + news...
+  133 raw candidates across 6 chains, 160 headlines/posts
+  3 passed gates | rejected: liquidity too thin x94, no h1 volume x30, too old x3, already discovered x3
+  top: CLOCKED 0.51 | GTA 0.29 | HOGE 0.21
+  tick bar 0.51 (top 10% of 3, floor 0.45)
+  skip CLOCKED: solana concentration cap
+  skip HOGE: solana concentration cap
+  no entries this tick
+  shadow: tracking 16, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
