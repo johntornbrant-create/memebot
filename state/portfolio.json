@@ -2,8 +2,8 @@
   "started": "2026-09-22T16:04:55+00:00",
   "restarted": "2026-10-24",
   "run": 2,
-  "cash": 394.8407542538751,
-  "equity": 408.8156,
+  "cash": 398.43799835905224,
+  "equity": 407.8555,
   "positions": {
     "solana:FTu55MyigXns96jz4nTCDDiTCjYJjyrHSceCgG9Upump": {
       "id": "1ec349e414",
@@ -35,7 +35,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0003084
+      "last_price": 0.0002953
     },
     "solana:G9ZMir6uh66Y7viPkXAy7myA9jjE4T1YgheVUmGDpump": {
       "id": "60acd45f23",
@@ -67,41 +67,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 9.63e-05
-    },
-    "solana:FS1pBmZKp2Qw1atC64GoLamHstECAos9ot8bGPgDpump": {
-      "id": "396d4a3dc4",
-      "chain": "solana",
-      "address": "FS1pBmZKp2Qw1atC64GoLamHstECAos9ot8bGPgDpump",
-      "symbol": "Socks",
-      "opened": "2026-11-15T10:59:30+00:00",
-      "entry_price": 0.0003123,
-      "tokens": 11874.295166107639,
-      "tokens_initial": 15832.393554810185,
-      "cost_usd": 5.0,
-      "fees_usd": 0.08881464576623779,
-      "realized_usd": 1.8598438135501902,
-      "peak_gain": 0.5965417867435157,
-      "tp_hit": [
-        0
-      ],
-      "entry_liq": 41398.89,
-      "score": 0.4531,
-      "features": {
-        "liq_quality": 0.5965,
-        "turnover": 0.0,
-        "buy_pressure": 0.3965,
-        "momentum_accel": 1.0,
-        "not_vertical": 0.0,
-        "age_sweet": 0.3796,
-        "socials": 0.65,
-        "fdv_sanity": 0.949,
-        "txn_depth": 0.4207,
-        "dip_in_uptrend": 0.5,
-        "buzz": 0.0,
-        "paid_boost": 0.0
-      },
-      "last_price": 0.0003586
+      "last_price": 9.426e-05
     }
   },
   "blacklist": {
@@ -305,15 +271,15 @@
     "trades_today": 7
   },
   "stats": {
-    "ticks": 1874,
+    "ticks": 1880,
     "opened": 30,
-    "closed": 27,
-    "wins": 4,
+    "closed": 28,
+    "wins": 5,
     "losses": 23,
-    "fees_paid": 18.778379317666598,
-    "realized_pnl": -91.96908955967504
+    "fees_paid": 18.82416896945126,
+    "realized_pnl": -91.51200164094769
   },
-  "updated": "2026-11-15T11:47:31+00:00",
+  "updated": "2026-11-15T11:53:11+00:00",
   "run1_final_equity": 322.5674,
   "last_scan": "2026-11-15T11:46:11+00:00"
 }
