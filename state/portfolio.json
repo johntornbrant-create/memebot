@@ -2,8 +2,8 @@
   "started": "2026-09-22T16:04:55+00:00",
   "restarted": "2026-10-24",
   "run": 2,
-  "cash": 405.2249641403184,
-  "equity": 414.9039,
+  "cash": 400.2249641403184,
+  "equity": 414.9069,
   "positions": {
     "solana:FTu55MyigXns96jz4nTCDDiTCjYJjyrHSceCgG9Upump": {
       "id": "1ec349e414",
@@ -35,7 +35,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0002941
+      "last_price": 0.0003012
     },
     "solana:G9ZMir6uh66Y7viPkXAy7myA9jjE4T1YgheVUmGDpump": {
       "id": "60acd45f23",
@@ -67,7 +67,39 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 9.929e-05
+      "last_price": 9.752e-05
+    },
+    "solana:FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump": {
+      "id": "d2e7f1d1b2",
+      "chain": "solana",
+      "address": "FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump",
+      "symbol": "HOGE",
+      "opened": "2026-11-15T09:47:30+00:00",
+      "entry_price": 7.486e-05,
+      "tokens": 66045.25049170772,
+      "tokens_initial": 66045.25049170772,
+      "cost_usd": 5.0,
+      "fees_usd": 0.0559,
+      "realized_usd": 0.0,
+      "peak_gain": 0.0,
+      "tp_hit": [],
+      "entry_liq": 26391.47,
+      "score": 0.4156,
+      "features": {
+        "liq_quality": 0.3901,
+        "turnover": 0.9477,
+        "buy_pressure": 0.4226,
+        "momentum_accel": 0.0,
+        "not_vertical": 1.0,
+        "age_sweet": 0.8088,
+        "socials": 0.65,
+        "fdv_sanity": 1.0,
+        "txn_depth": 0.329,
+        "dip_in_uptrend": 0.0,
+        "buzz": 0.0,
+        "paid_boost": 0.0
+      },
+      "last_price": 7.486e-05
     }
   },
   "blacklist": {
@@ -93,7 +125,7 @@
   },
   "halted": false,
   "halt_reason": "",
-  "last_entry": "2026-11-15T06:23:30+00:00",
+  "last_entry": "2026-11-15T09:47:30+00:00",
   "equity_history": [
     [
       "2026-11-06T11:07:38+00:00",
@@ -261,18 +293,18 @@
     "day_equity": 422.0129,
     "week": "2026-W46",
     "week_equity": 412.8677,
-    "trades_today": 2
+    "trades_today": 3
   },
   "stats": {
-    "ticks": 1759,
-    "opened": 25,
+    "ticks": 1764,
+    "opened": 26,
     "closed": 23,
     "wins": 3,
     "losses": 20,
-    "fees_paid": 9.24157141844331,
+    "fees_paid": 9.29742396663407,
     "realized_pnl": -84.7250358596816
   },
-  "updated": "2026-11-15T09:41:11+00:00",
+  "updated": "2026-11-15T09:47:31+00:00",
   "run1_final_equity": 322.5674,
-  "last_scan": "2026-11-15T09:34:11+00:00"
+  "last_scan": "2026-11-15T09:46:11+00:00"
 }
