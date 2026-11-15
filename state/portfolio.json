@@ -2,8 +2,8 @@
   "started": "2026-09-22T16:04:55+00:00",
   "restarted": "2026-10-24",
   "run": 2,
-  "cash": 370.6676294811793,
-  "equity": 389.7109,
+  "cash": 365.6676294811793,
+  "equity": 388.6184,
   "positions": {
     "solana:FTu55MyigXns96jz4nTCDDiTCjYJjyrHSceCgG9Upump": {
       "id": "1ec349e414",
@@ -35,7 +35,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0002579
+      "last_price": 0.0002609
     },
     "solana:G9ZMir6uh66Y7viPkXAy7myA9jjE4T1YgheVUmGDpump": {
       "id": "60acd45f23",
@@ -67,7 +67,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 9.71e-05
+      "last_price": 9.172e-05
     },
     "solana:3GN46GsmAUQSpHXtY3oasJFYAbp9RBzVoR7X8ar1pump": {
       "id": "fb042bd7a8",
@@ -99,7 +99,7 @@
         "buzz": 0.1667,
         "paid_boost": 1.0
       },
-      "last_price": 0.0001111
+      "last_price": 9.652e-05
     },
     "ethereum:0x0F08046Cf0F51616Be643F8434232c51C2189edc": {
       "id": "cdf77d8895",
@@ -113,7 +113,7 @@
       "cost_usd": 5.0,
       "fees_usd": 9.047847804613566,
       "realized_usd": 0.0,
-      "peak_gain": 1.8567110036275691,
+      "peak_gain": 2.166565900846433,
       "tp_hit": [
         0,
         1
@@ -134,7 +134,7 @@
         "buzz": 0.1667,
         "paid_boost": 0.0
       },
-      "last_price": 0.00189
+      "last_price": 0.001885
     },
     "ethereum:0x370BeCaBA7374412212291E255Ca10c6Ea73289B": {
       "id": "763b66dbf0",
@@ -148,7 +148,7 @@
       "cost_usd": 5.0,
       "fees_usd": 3.0358,
       "realized_usd": 0.0,
-      "peak_gain": 0.1632286995515695,
+      "peak_gain": 0.19103139013452908,
       "tp_hit": [],
       "entry_liq": 26682.28,
       "score": 0.8766,
@@ -166,7 +166,39 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0001297
+      "last_price": 0.0001166
+    },
+    "ethereum:0x37f5dAd784304aC1911B95046134c1B74e4D72A9": {
+      "id": "9e04831458",
+      "chain": "ethereum",
+      "address": "0x37f5dAd784304aC1911B95046134c1B74e4D72A9",
+      "symbol": "Macca",
+      "opened": "2026-11-15T19:46:09+00:00",
+      "entry_price": 0.01483,
+      "tokens": 132.49705144139065,
+      "tokens_initial": 132.49705144139065,
+      "cost_usd": 5.0,
+      "fees_usd": 3.0351,
+      "realized_usd": 0.0,
+      "peak_gain": 0.0,
+      "tp_hit": [],
+      "entry_liq": 327381.66,
+      "score": 0.5071,
+      "features": {
+        "liq_quality": 0.827,
+        "turnover": 0.1683,
+        "buy_pressure": 1.0,
+        "momentum_accel": 0.0,
+        "not_vertical": 1.0,
+        "age_sweet": 0.3709,
+        "socials": 1.0,
+        "fdv_sanity": 0.1044,
+        "txn_depth": 0.6738,
+        "dip_in_uptrend": 1.0,
+        "buzz": 0.0,
+        "paid_boost": 0.0
+      },
+      "last_price": 0.01483
     }
   },
   "blacklist": {
@@ -197,7 +229,7 @@
   },
   "halted": false,
   "halt_reason": "",
-  "last_entry": "2026-11-15T19:09:57+00:00",
+  "last_entry": "2026-11-15T19:46:09+00:00",
   "equity_history": [
     [
       "2026-11-06T22:53:47+00:00",
@@ -366,6 +398,10 @@
     [
       "2026-11-15T18:44:48+00:00",
       404.93
+    ],
+    [
+      "2026-11-15T19:44:48+00:00",
+      389.01
     ]
   ],
   "marks": {
@@ -373,18 +409,18 @@
     "day_equity": 422.0129,
     "week": "2026-W46",
     "week_equity": 412.8677,
-    "trades_today": 11
+    "trades_today": 12
   },
   "stats": {
-    "ticks": 1872,
-    "opened": 34,
+    "ticks": 1877,
+    "opened": 35,
     "closed": 29,
     "wins": 4,
     "losses": 25,
-    "fees_paid": 39.880251386684705,
+    "fees_paid": 42.91532011380888,
     "realized_pnl": -104.2823705188207
   },
-  "updated": "2026-11-15T19:39:49+00:00",
+  "updated": "2026-11-15T19:46:10+00:00",
   "run1_final_equity": 322.5674,
-  "last_scan": "2026-11-15T19:32:49+00:00"
+  "last_scan": "2026-11-15T19:44:49+00:00"
 }
