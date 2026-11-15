@@ -1,27 +1,27 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-15T22:47:57+00:00`
+Updated `2026-11-15T22:59:55+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$376.05** |
-| Return | **-24.79%** (start $500.00) |
+| Equity | **$376.13** |
+| Return | **-24.77%** (start $500.00) |
 | Cash | $373.84 |
-| Deployed | $2.21 (0.6%) |
+| Deployed | $2.29 (0.6%) |
 | Open positions | 1 / 8 |
 | Closed trades | 34 (4W / 30L, WR 12%) |
 | Profit factor | 0.37 |
 | Fees + slippage paid | $52.08 |
-| Ticks run | 2044 |
+| Ticks run | 2055 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| Macca | ethereum | $5.00 | $2.21 | +12% | +29% | 3.0h |
+| Macca | ethereum | $5.00 | $2.29 | +16% | +29% | 3.2h |
 
 ## Last closed trades
 
@@ -64,39 +64,39 @@ _refit on 1806 observations (1699 shadow, 107 real), 494 winners (27% base rate)
 
 ## Last run log
 ```
+  tick bar 0.64 (top 10% of 9, floor 0.45)
+  no entries this tick
   shadow: tracking 48, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
   entries blocked: daily trade cap reached
 done. equity $376.05 (-24.79% since start)
-tick #2033  equity $376.05  cash $373.84  open 1
-exits-only pass. equity $376.15 (next scan in 10 min)
-tick #2034  equity $376.15  cash $373.84  open 1
-exits-only pass. equity $376.14 (next scan in 9 min)
-tick #2035  equity $376.14  cash $373.84  open 1
-exits-only pass. equity $376.17 (next scan in 8 min)
-tick #2036  equity $376.17  cash $373.84  open 1
-exits-only pass. equity $376.19 (next scan in 7 min)
-tick #2037  equity $376.19  cash $373.84  open 1
-exits-only pass. equity $376.13 (next scan in 6 min)
-tick #2038  equity $376.13  cash $373.84  open 1
-exits-only pass. equity $376.11 (next scan in 5 min)
-tick #2039  equity $376.11  cash $373.84  open 1
-exits-only pass. equity $376.08 (next scan in 4 min)
-tick #2040  equity $376.08  cash $373.84  open 1
-exits-only pass. equity $376.05 (next scan in 3 min)
-tick #2041  equity $376.05  cash $373.84  open 1
-exits-only pass. equity $376.08 (next scan in 2 min)
-tick #2042  equity $376.08  cash $373.84  open 1
-exits-only pass. equity $376.04 (next scan in 1 min)
-tick #2043  equity $376.04  cash $373.84  open 1
-exits-only pass. equity $376.04 (next scan in -0 min)
-tick #2044  equity $376.04  cash $373.84  open 1
+tick #2045  equity $376.05  cash $373.84  open 1
+exits-only pass. equity $376.03 (next scan in 10 min)
+tick #2046  equity $376.03  cash $373.84  open 1
+exits-only pass. equity $376.03 (next scan in 9 min)
+tick #2047  equity $376.03  cash $373.84  open 1
+exits-only pass. equity $376.06 (next scan in 8 min)
+tick #2048  equity $376.06  cash $373.84  open 1
+exits-only pass. equity $376.06 (next scan in 7 min)
+tick #2049  equity $376.06  cash $373.84  open 1
+exits-only pass. equity $376.07 (next scan in 6 min)
+tick #2050  equity $376.07  cash $373.84  open 1
+exits-only pass. equity $376.12 (next scan in 5 min)
+tick #2051  equity $376.12  cash $373.84  open 1
+exits-only pass. equity $376.15 (next scan in 4 min)
+tick #2052  equity $376.15  cash $373.84  open 1
+exits-only pass. equity $376.07 (next scan in 3 min)
+tick #2053  equity $376.07  cash $373.84  open 1
+exits-only pass. equity $376.12 (next scan in 2 min)
+tick #2054  equity $376.12  cash $373.84  open 1
+exits-only pass. equity $376.10 (next scan in 1 min)
+tick #2055  equity $376.10  cash $373.84  open 1
   scanning chains + news...
-  165 raw candidates across 7 chains, 160 headlines/posts
-  9 passed gates | rejected: liquidity too thin x104, no h1 volume x40, too old x10, already discovered x1, unknown age x1
-  top: BUTTHOLE 0.66 | gtacoin 0.64 | Retire 0.62 | BJB 0.61 | AURA 0.54
+  171 raw candidates across 8 chains, 160 headlines/posts
+  9 passed gates | rejected: liquidity too thin x112, no h1 volume x37, too old x10, already discovered x2, unknown age x1
+  top: BUTTHOLE 0.68 | Retire 0.64 | gtacoin 0.63 | BJB 0.62 | AURA 0.57
   tick bar 0.64 (top 10% of 9, floor 0.45)
   no entries this tick
   shadow: tracking 48, closed 0 this tick (0 would have won)
