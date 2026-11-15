@@ -1,28 +1,28 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-15T21:10:09+00:00`
+Updated `2026-11-15T21:22:09+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$379.52** |
-| Return | **-24.10%** (start $500.00) |
+| Equity | **$378.83** |
+| Return | **-24.23%** (start $500.00) |
 | Cash | $373.84 |
-| Deployed | $5.68 (1.5%) |
+| Deployed | $4.99 (1.3%) |
 | Open positions | 2 / 8 |
 | Closed trades | 33 (4W / 29L, WR 12%) |
 | Profit factor | 0.38 |
 | Fees + slippage paid | $49.06 |
-| Ticks run | 1954 |
+| Ticks run | 1965 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| GATO | ethereum | $5.00 | $3.26 | +121% | +121% | 2.0h |
-| Macca | ethereum | $5.00 | $2.42 | +23% | +25% | 1.4h |
+| GATO | ethereum | $5.00 | $2.61 | +77% | +121% | 2.2h |
+| Macca | ethereum | $5.00 | $2.38 | +21% | +25% | 1.6h |
 
 ## Last closed trades
 
@@ -65,42 +65,42 @@ _refit on 1806 observations (1699 shadow, 107 real), 494 winners (27% base rate)
 
 ## Last run log
 ```
-  tick bar 0.64 (top 10% of 14, floor 0.45)
+  tick bar 0.64 (top 10% of 9, floor 0.45)
   no entries this tick
-  shadow: tracking 41, closed 0 this tick (0 would have won)
+  shadow: tracking 42, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
   entries blocked: daily trade cap reached
-done. equity $378.25 (-24.35% since start)
-tick #1944  equity $378.25  cash $373.84  open 2
-exits-only pass. equity $378.49 (next scan in 10 min)
-tick #1945  equity $378.49  cash $373.84  open 2
-exits-only pass. equity $378.62 (next scan in 9 min)
-tick #1946  equity $378.62  cash $373.84  open 2
-exits-only pass. equity $378.59 (next scan in 8 min)
-tick #1947  equity $378.59  cash $373.84  open 2
-exits-only pass. equity $378.73 (next scan in 7 min)
-tick #1948  equity $378.73  cash $373.84  open 2
-exits-only pass. equity $378.68 (next scan in 6 min)
-tick #1949  equity $378.68  cash $373.84  open 2
-exits-only pass. equity $378.76 (next scan in 5 min)
-tick #1950  equity $378.76  cash $373.84  open 2
-exits-only pass. equity $379.01 (next scan in 4 min)
-tick #1951  equity $379.01  cash $373.84  open 2
+done. equity $379.52 (-24.10% since start)
+tick #1955  equity $379.52  cash $373.84  open 2
+exits-only pass. equity $379.15 (next scan in 10 min)
+tick #1956  equity $379.15  cash $373.84  open 2
+exits-only pass. equity $379.15 (next scan in 9 min)
+tick #1957  equity $379.15  cash $373.84  open 2
+exits-only pass. equity $379.17 (next scan in 8 min)
+tick #1958  equity $379.17  cash $373.84  open 2
+exits-only pass. equity $379.08 (next scan in 7 min)
+tick #1959  equity $379.08  cash $373.84  open 2
+exits-only pass. equity $379.22 (next scan in 6 min)
+tick #1960  equity $379.22  cash $373.84  open 2
+exits-only pass. equity $379.12 (next scan in 5 min)
+tick #1961  equity $379.12  cash $373.84  open 2
+exits-only pass. equity $379.22 (next scan in 4 min)
+tick #1962  equity $379.22  cash $373.84  open 2
 exits-only pass. equity $379.19 (next scan in 3 min)
-tick #1952  equity $379.19  cash $373.84  open 2
-exits-only pass. equity $379.52 (next scan in 2 min)
-tick #1953  equity $379.52  cash $373.84  open 2
-exits-only pass. equity $379.40 (next scan in 1 min)
-tick #1954  equity $379.40  cash $373.84  open 2
+tick #1963  equity $379.19  cash $373.84  open 2
+exits-only pass. equity $378.90 (next scan in 2 min)
+tick #1964  equity $378.90  cash $373.84  open 2
+exits-only pass. equity $378.88 (next scan in 1 min)
+tick #1965  equity $378.88  cash $373.84  open 2
   scanning chains + news...
-  129 raw candidates across 8 chains, 160 headlines/posts
-  9 passed gates | rejected: liquidity too thin x82, no h1 volume x26, too old x10, too new (bot war) x1, already discovered x1
-  top: BUTTHOLE 0.81 | HENSEN 0.60 | NCAT 0.54 | Emojis 0.50 | bill 0.47
-  tick bar 0.64 (top 10% of 9, floor 0.45)
+  129 raw candidates across 7 chains, 160 headlines/posts
+  7 passed gates | rejected: liquidity too thin x83, no h1 volume x24, too old x12, too new (bot war) x1, sell pressure x1
+  top: BUTTHOLE 0.82 | Brian 0.70 | bill 0.49 | Emojis 0.49 | Socks 0.40
+  tick bar 0.64 (top 10% of 7, floor 0.45)
   no entries this tick
-  shadow: tracking 42, closed 0 this tick (0 would have won)
+  shadow: tracking 43, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
