@@ -3,7 +3,7 @@
   "restarted": "2026-10-24",
   "run": 2,
   "cash": 370.6435318510589,
-  "equity": 381.9346,
+  "equity": 381.914,
   "positions": {
     "solana:FTu55MyigXns96jz4nTCDDiTCjYJjyrHSceCgG9Upump": {
       "id": "1ec349e414",
@@ -35,7 +35,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0002665
+      "last_price": 0.0002667
     },
     "ethereum:0x0F08046Cf0F51616Be643F8434232c51C2189edc": {
       "id": "cdf77d8895",
@@ -70,7 +70,7 @@
         "buzz": 0.1667,
         "paid_boost": 0.0
       },
-      "last_price": 0.002081
+      "last_price": 0.001796
     },
     "ethereum:0x370BeCaBA7374412212291E255Ca10c6Ea73289B": {
       "id": "763b66dbf0",
@@ -84,7 +84,7 @@
       "cost_usd": 5.0,
       "fees_usd": 3.0358,
       "realized_usd": 0.0,
-      "peak_gain": 0.19103139013452908,
+      "peak_gain": 0.199103139013453,
       "tp_hit": [],
       "entry_liq": 26682.28,
       "score": 0.8766,
@@ -102,7 +102,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0001132
+      "last_price": 0.0001337
     },
     "ethereum:0x37f5dAd784304aC1911B95046134c1B74e4D72A9": {
       "id": "9e04831458",
@@ -116,7 +116,7 @@
       "cost_usd": 5.0,
       "fees_usd": 3.0351,
       "realized_usd": 0.0,
-      "peak_gain": 0.03371544167228602,
+      "peak_gain": 0.08024275118004054,
       "tp_hit": [],
       "entry_liq": 327381.66,
       "score": 0.5071,
@@ -134,7 +134,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.01533
+      "last_price": 0.01602
     }
   },
   "blacklist": {
@@ -349,7 +349,7 @@
     "trades_today": 12
   },
   "stats": {
-    "ticks": 1883,
+    "ticks": 1888,
     "opened": 35,
     "closed": 31,
     "wins": 4,
@@ -357,7 +357,7 @@
     "fees_paid": 42.99146736256756,
     "realized_pnl": -109.30646814894104
   },
-  "updated": "2026-11-15T19:51:49+00:00",
+  "updated": "2026-11-15T19:58:09+00:00",
   "run1_final_equity": 322.5674,
-  "last_scan": "2026-11-15T19:44:49+00:00"
+  "last_scan": "2026-11-15T19:56:49+00:00"
 }

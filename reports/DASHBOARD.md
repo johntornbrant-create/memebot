@@ -1,37 +1,37 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-15T19:46:10+00:00`
+Updated `2026-11-15T19:58:09+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$388.62** |
-| Return | **-22.28%** (start $500.00) |
-| Cash | $365.67 |
-| Deployed | $22.95 (5.9%) |
-| Open positions | 6 / 8 |
-| Closed trades | 29 (4W / 25L, WR 14%) |
-| Profit factor | 0.39 |
-| Fees + slippage paid | $42.92 |
-| Ticks run | 1877 |
+| Equity | **$381.91** |
+| Return | **-23.62%** (start $500.00) |
+| Cash | $370.64 |
+| Deployed | $11.27 (3.0%) |
+| Open positions | 4 / 8 |
+| Closed trades | 31 (4W / 27L, WR 13%) |
+| Profit factor | 0.38 |
+| Fees + slippage paid | $42.99 |
+| Ticks run | 1888 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| FOOD | solana | $5.05 | $3.71 | -26% | +17% | 20.5h |
-| GTA | solana | $5.00 | $5.08 | +3% | +43% | 13.4h |
-| BEAR | solana | $5.00 | $3.96 | -20% | +5% | 1.0h |
-| WASTED | ethereum | $5.00 | $3.15 | +185% | +217% | 1.0h |
-| GATO | ethereum | $5.00 | $2.05 | +5% | +19% | 0.6h |
-| Macca | ethereum | $5.00 | $1.96 | +0% | +0% | 0.0h |
+| FOOD | solana | $5.05 | $3.79 | -24% | +17% | 20.7h |
+| WASTED | ethereum | $5.00 | $3.00 | +171% | +220% | 1.2h |
+| GATO | ethereum | $5.00 | $2.36 | +20% | +20% | 0.8h |
+| Macca | ethereum | $5.00 | $2.12 | +8% | +8% | 0.2h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| BEAR | $-4.85 | -97% | 1.1h | stop loss -97% |
+| GTA | $-0.17 | -3% | 13.4h | ratchet +0% (peak +43%) |
 | JASON | $-5.00 | -100% | 0.6h | stop loss -41% |
 | GTA | $-5.00 | -100% | 1.1h | stop loss -99% |
 | LETSWIN | $-5.00 | -100% | 5.6h | stop loss -83% |
@@ -45,8 +45,6 @@ Updated `2026-11-15T19:46:10+00:00`
 | FLAPAI | $-6.90 | -79% | 6.7h | stop loss -78% |
 | GTA | $-5.00 | -57% | 6.7h | stop loss -56% |
 | GTA | $-2.64 | -43% | 11.7h | ratchet +65% (peak +135%) |
-| TIT | $-7.07 | -80% | 4.9h | stop loss -79% |
-| 币安AiPro | $-1.62 | -25% | 18.2h | ratchet +47% (peak +109%) |
 
 ## Learned weights (v169)
 
@@ -69,44 +67,44 @@ _refit on 1806 observations (1699 shadow, 107 real), 494 winners (27% base rate)
 
 ## Last run log
 ```
-  skip gtacoin: solana concentration cap
-  skip SWJ: solana concentration cap
-  no entries this tick
-  shadow: tracking 31, closed 0 this tick (0 would have won)
-    MISSED NI         peak +277296%  (scored 0.21)
-    MISSED GTAX       peak +11365%  (scored 0.25)
-    MISSED e/acc      peak +5180%  (scored 0.58)
-done. equity $388.54 (-22.29% since start)
-tick #1867  equity $388.54  cash $370.67  open 5
-exits-only pass. equity $388.22 (next scan in 10 min)
-tick #1868  equity $388.22  cash $370.67  open 5
-exits-only pass. equity $388.62 (next scan in 9 min)
-tick #1869  equity $388.62  cash $370.67  open 5
-exits-only pass. equity $389.01 (next scan in 8 min)
-tick #1870  equity $389.01  cash $370.67  open 5
-exits-only pass. equity $389.28 (next scan in 7 min)
-tick #1871  equity $389.28  cash $370.67  open 5
-exits-only pass. equity $389.66 (next scan in 6 min)
-tick #1872  equity $389.66  cash $370.67  open 5
-exits-only pass. equity $389.71 (next scan in 5 min)
-tick #1873  equity $389.71  cash $370.67  open 5
-exits-only pass. equity $390.07 (next scan in 4 min)
-tick #1874  equity $390.07  cash $370.67  open 5
-exits-only pass. equity $389.37 (next scan in 3 min)
-tick #1875  equity $389.37  cash $370.67  open 5
-exits-only pass. equity $389.25 (next scan in 2 min)
-tick #1876  equity $389.25  cash $370.67  open 5
-exits-only pass. equity $389.01 (next scan in 1 min)
-tick #1877  equity $389.01  cash $370.67  open 5
-  scanning chains + news...
-  164 raw candidates across 7 chains, 160 headlines/posts
-  11 passed gates | rejected: liquidity too thin x101, no h1 volume x38, already discovered x7, too old x6, unknown age x1
-  top: GATO 0.79 | WISHMAS 0.76 | WASTED 0.76 | Anthropig 0.67 | ANT 0.66
-  tick bar 0.64 (top 10% of 11, floor 0.45)
-  skip Anthropig: solana concentration cap
   BUY[explore] Macca      $5.00 @ $0.01483  score 0.51  ethereum  liq $327,382
   shadow: tracking 31, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
+done. equity $388.62 (-22.28% since start)
+tick #1878  equity $388.62  cash $365.67  open 6
+exits-only pass. equity $385.58 (next scan in 10 min)
+tick #1879  equity $385.58  cash $365.67  open 6
+exits-only pass. equity $385.36 (next scan in 9 min)
+tick #1880  equity $385.36  cash $365.67  open 6
+  SELL GTA        100% @ $8.825e-05  ->  $4.83   [ratchet +0% (peak +43%)]
+exits-only pass. equity $385.49 (next scan in 8 min)
+tick #1881  equity $385.49  cash $370.50  open 5
+  SELL BEAR       100% @ $4.059e-06  ->  $0.15   [stop loss -97%]
+exits-only pass. equity $381.89 (next scan in 7 min)
+tick #1882  equity $381.89  cash $370.64  open 4
+exits-only pass. equity $381.92 (next scan in 6 min)
+tick #1883  equity $381.92  cash $370.64  open 4
+exits-only pass. equity $381.93 (next scan in 5 min)
+tick #1884  equity $381.93  cash $370.64  open 4
+exits-only pass. equity $382.06 (next scan in 4 min)
+tick #1885  equity $382.06  cash $370.64  open 4
+exits-only pass. equity $382.08 (next scan in 3 min)
+tick #1886  equity $382.08  cash $370.64  open 4
+exits-only pass. equity $381.93 (next scan in 2 min)
+tick #1887  equity $381.93  cash $370.64  open 4
+exits-only pass. equity $382.04 (next scan in 1 min)
+tick #1888  equity $382.04  cash $370.64  open 4
+  scanning chains + news...
+  157 raw candidates across 7 chains, 160 headlines/posts
+  12 passed gates | rejected: liquidity too thin x93, no h1 volume x35, too old x8, already discovered x8, unknown age x1
+  top: GATO 0.79 | WISHMAS 0.76 | WASTED 0.72 | ANT 0.65 | Anthropig 0.59
+  tick bar 0.64 (top 10% of 12, floor 0.45)
+  no entries this tick
+  shadow: tracking 32, closed 0 this tick (0 would have won)
+    MISSED NI         peak +277296%  (scored 0.21)
+    MISSED GTAX       peak +11365%  (scored 0.25)
+    MISSED e/acc      peak +5180%  (scored 0.58)
+  entries blocked: daily trade cap reached
 ```
