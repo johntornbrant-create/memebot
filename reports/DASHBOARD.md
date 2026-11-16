@@ -1,30 +1,30 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-16T23:44:29+00:00`
+Updated `2026-11-16T23:56:32+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$356.51** |
-| Return | **-28.70%** (start $500.00) |
+| Equity | **$355.79** |
+| Return | **-28.84%** (start $500.00) |
 | Cash | $336.41 |
-| Deployed | $20.10 (5.6%) |
+| Deployed | $19.39 (5.4%) |
 | Open positions | 4 / 8 |
 | Closed trades | 41 (4W / 37L, WR 10%) |
 | Profit factor | 0.35 |
 | Fees + slippage paid | $61.85 |
-| Ticks run | 2280 |
+| Ticks run | 2291 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| WISHMAS | solana | $5.00 | $3.40 | -31% | +5% | 23.1h |
-| GTA | solana | $5.00 | $6.59 | +33% | +39% | 16.6h |
-| TE | base | $5.00 | $5.04 | +2% | +10% | 1.4h |
-| LEOSTAR | solana | $5.00 | $5.08 | +37% | +77% | 0.2h |
+| WISHMAS | solana | $5.00 | $3.47 | -30% | +5% | 23.3h |
+| GTA | solana | $5.00 | $6.57 | +33% | +39% | 16.8h |
+| TE | base | $5.00 | $4.43 | -10% | +10% | 1.6h |
+| LEOSTAR | solana | $5.00 | $4.92 | +33% | +77% | 0.4h |
 
 ## Last closed trades
 
@@ -67,43 +67,43 @@ _refit on 1836 observations (1717 shadow, 119 real), 503 winners (27% base rate)
 
 ## Last run log
 ```
-  BUY[exploit] LEOSTAR    $5.00 @ $0.0007127  score 0.71  solana  liq $60,159
-  shadow: tracking 32, closed 0 this tick (0 would have won)
-    MISSED NI         peak +277296%  (scored 0.21)
-    MISSED GTAX       peak +11365%  (scored 0.25)
-    MISSED e/acc      peak +5180%  (scored 0.58)
-done. equity $353.34 (-29.33% since start)
-tick #2270  equity $353.34  cash $334.33  open 4
-exits-only pass. equity $354.30 (next scan in 10 min)
-tick #2271  equity $354.30  cash $334.33  open 4
-exits-only pass. equity $354.88 (next scan in 9 min)
-tick #2272  equity $354.88  cash $334.33  open 4
-exits-only pass. equity $355.05 (next scan in 8 min)
-tick #2273  equity $355.05  cash $334.33  open 4
-exits-only pass. equity $355.44 (next scan in 7 min)
-tick #2274  equity $355.44  cash $334.33  open 4
-  SELL LEOSTAR    25% @ $0.001219  ->  $2.08   [take profit +50% (sold 25%)]
-exits-only pass. equity $357.22 (next scan in 6 min)
-tick #2275  equity $357.22  cash $336.41  open 4
-exits-only pass. equity $357.91 (next scan in 5 min)
-tick #2276  equity $357.91  cash $336.41  open 4
-exits-only pass. equity $356.76 (next scan in 4 min)
-tick #2277  equity $356.76  cash $336.41  open 4
-exits-only pass. equity $356.64 (next scan in 3 min)
-tick #2278  equity $356.64  cash $336.41  open 4
-exits-only pass. equity $356.51 (next scan in 2 min)
-tick #2279  equity $356.51  cash $336.41  open 4
-exits-only pass. equity $356.41 (next scan in 1 min)
-tick #2280  equity $356.41  cash $336.41  open 4
-  scanning chains + news...
-  178 raw candidates across 9 chains, 159 headlines/posts
-  5 passed gates | rejected: liquidity too thin x109, no h1 volume x50, too old x9, already discovered x5
-  top: MEOWL 0.80 | GTA 0.72 | LEOSTAR 0.65 | BAWSAQ 0.44 | COGE 0.40
-  tick bar 0.66 (top 10% of 5, floor 0.45)
-  skip MEOWL: solana concentration cap
   skip GTA: solana concentration cap
   no entries this tick
   shadow: tracking 33, closed 0 this tick (0 would have won)
+    MISSED NI         peak +277296%  (scored 0.21)
+    MISSED GTAX       peak +11365%  (scored 0.25)
+    MISSED e/acc      peak +5180%  (scored 0.58)
+done. equity $356.51 (-28.70% since start)
+tick #2281  equity $356.51  cash $336.41  open 4
+exits-only pass. equity $356.19 (next scan in 10 min)
+tick #2282  equity $356.19  cash $336.41  open 4
+exits-only pass. equity $356.16 (next scan in 9 min)
+tick #2283  equity $356.16  cash $336.41  open 4
+exits-only pass. equity $356.38 (next scan in 8 min)
+tick #2284  equity $356.38  cash $336.41  open 4
+exits-only pass. equity $356.46 (next scan in 7 min)
+tick #2285  equity $356.46  cash $336.41  open 4
+exits-only pass. equity $356.16 (next scan in 6 min)
+tick #2286  equity $356.16  cash $336.41  open 4
+exits-only pass. equity $356.76 (next scan in 5 min)
+tick #2287  equity $356.76  cash $336.41  open 4
+exits-only pass. equity $356.50 (next scan in 4 min)
+tick #2288  equity $356.50  cash $336.41  open 4
+exits-only pass. equity $355.70 (next scan in 3 min)
+tick #2289  equity $355.70  cash $336.41  open 4
+exits-only pass. equity $355.58 (next scan in 2 min)
+tick #2290  equity $355.58  cash $336.41  open 4
+exits-only pass. equity $355.82 (next scan in 1 min)
+tick #2291  equity $355.82  cash $336.41  open 4
+  scanning chains + news...
+  177 raw candidates across 7 chains, 159 headlines/posts
+  6 passed gates | rejected: liquidity too thin x101, no h1 volume x51, too old x9, already discovered x8, unknown age x2
+  top: MEOWL 0.79 | GTA 0.65 | LEOSTAR 0.62 | ETF 0.49 | BAWSAQ 0.46
+  tick bar 0.66 (top 10% of 6, floor 0.45)
+  skip ETF: solana concentration cap
+  skip MEOWL: solana concentration cap
+  no entries this tick
+  shadow: tracking 34, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
