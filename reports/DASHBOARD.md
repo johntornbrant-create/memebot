@@ -1,29 +1,30 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-16T00:13:11+00:00`
+Updated `2026-11-16T00:25:00+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$375.96** |
-| Return | **-24.81%** (start $500.00) |
-| Cash | $363.84 |
-| Deployed | $12.12 (3.2%) |
-| Open positions | 3 / 8 |
+| Equity | **$376.35** |
+| Return | **-24.73%** (start $500.00) |
+| Cash | $358.84 |
+| Deployed | $17.51 (4.7%) |
+| Open positions | 4 / 8 |
 | Closed trades | 34 (4W / 30L, WR 12%) |
 | Profit factor | 0.37 |
-| Fees + slippage paid | $52.19 |
-| Ticks run | 2122 |
+| Fees + slippage paid | $52.24 |
+| Ticks run | 2133 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| Macca | ethereum | $5.00 | $2.12 | +8% | +29% | 4.5h |
-| GTAVI | solana | $5.00 | $4.94 | +0% | +0% | 0.0h |
-| AI | solana | $5.00 | $4.94 | +0% | +0% | 0.0h |
+| Macca | ethereum | $5.00 | $2.16 | +10% | +29% | 4.6h |
+| GTAVI | solana | $5.00 | $4.99 | +1% | +6% | 0.2h |
+| AI | solana | $5.00 | $5.35 | +8% | +11% | 0.2h |
+| BUTTHOLE | solana | $5.00 | $4.94 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
@@ -66,42 +67,42 @@ _refit on 1806 observations (1699 shadow, 107 real), 494 winners (27% base rate)
 
 ## Last run log
 ```
-  tick bar 0.64 (top 10% of 5, floor 0.45)
-  no entries this tick
+  tick bar 0.53 (top 10% of 6, floor 0.45)
+  BUY[explore] GTAVI      $5.00 @ $9.306e-05  score 0.53  solana  liq $27,189
+  BUY[explore] AI         $5.00 @ $0.0001488  score 0.24  solana  liq $26,877
   shadow: tracking 45, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
-  entries blocked: daily trade cap reached
-done. equity $376.08 (-24.78% since start)
-tick #2112  equity $376.08  cash $373.84  open 1
-exits-only pass. equity $376.11 (next scan in 10 min)
-tick #2113  equity $376.11  cash $373.84  open 1
-exits-only pass. equity $376.10 (next scan in 9 min)
-tick #2114  equity $376.10  cash $373.84  open 1
-exits-only pass. equity $376.08 (next scan in 8 min)
-tick #2115  equity $376.08  cash $373.84  open 1
-exits-only pass. equity $376.09 (next scan in 7 min)
-tick #2116  equity $376.09  cash $373.84  open 1
-exits-only pass. equity $376.12 (next scan in 6 min)
-tick #2117  equity $376.12  cash $373.84  open 1
-exits-only pass. equity $376.12 (next scan in 5 min)
-tick #2118  equity $376.12  cash $373.84  open 1
-exits-only pass. equity $376.09 (next scan in 4 min)
-tick #2119  equity $376.09  cash $373.84  open 1
-exits-only pass. equity $376.10 (next scan in 3 min)
-tick #2120  equity $376.10  cash $373.84  open 1
-exits-only pass. equity $375.97 (next scan in 2 min)
-tick #2121  equity $375.97  cash $373.84  open 1
-exits-only pass. equity $375.97 (next scan in 1 min)
-tick #2122  equity $375.97  cash $373.84  open 1
+done. equity $375.96 (-24.81% since start)
+tick #2123  equity $375.96  cash $363.84  open 3
+exits-only pass. equity $376.02 (next scan in 10 min)
+tick #2124  equity $376.02  cash $363.84  open 3
+exits-only pass. equity $376.04 (next scan in 9 min)
+tick #2125  equity $376.04  cash $363.84  open 3
+exits-only pass. equity $375.69 (next scan in 8 min)
+tick #2126  equity $375.69  cash $363.84  open 3
+exits-only pass. equity $375.86 (next scan in 7 min)
+tick #2127  equity $375.86  cash $363.84  open 3
+exits-only pass. equity $375.92 (next scan in 6 min)
+tick #2128  equity $375.92  cash $363.84  open 3
+exits-only pass. equity $375.90 (next scan in 5 min)
+tick #2129  equity $375.90  cash $363.84  open 3
+exits-only pass. equity $375.63 (next scan in 4 min)
+tick #2130  equity $375.63  cash $363.84  open 3
+exits-only pass. equity $376.32 (next scan in 3 min)
+tick #2131  equity $376.32  cash $363.84  open 3
+exits-only pass. equity $376.06 (next scan in 2 min)
+tick #2132  equity $376.06  cash $363.84  open 3
+exits-only pass. equity $376.25 (next scan in 1 min)
+tick #2133  equity $376.25  cash $363.84  open 3
   scanning chains + news...
-  138 raw candidates across 6 chains, 160 headlines/posts
-  6 passed gates | rejected: liquidity too thin x93, no h1 volume x24, too old x11, already discovered x2, unknown age x2
-  top: GTAVI 0.53 | bill 0.43 | BUTTHOLE 0.42 | AURA 0.40 | WISHMAS 0.26
-  tick bar 0.53 (top 10% of 6, floor 0.45)
-  BUY[explore] GTAVI      $5.00 @ $9.306e-05  score 0.53  solana  liq $27,189
-  BUY[explore] AI         $5.00 @ $0.0001488  score 0.24  solana  liq $26,877
+  168 raw candidates across 8 chains, 160 headlines/posts
+  6 passed gates | rejected: liquidity too thin x107, no h1 volume x34, too old x13, already discovered x6, unknown age x2
+  top: GTAVI 0.49 | bill 0.45 | Socks 0.43 | BUTTHOLE 0.42 | AURA 0.37
+  tick bar 0.49 (top 10% of 6, floor 0.45)
+  skip AI: already held
+  BUY[explore] BUTTHOLE   $5.00 @ $0.0005252  score 0.42  solana  liq $194,226
   shadow: tracking 45, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)

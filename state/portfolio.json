@@ -2,8 +2,8 @@
   "started": "2026-09-22T16:04:55+00:00",
   "restarted": "2026-10-24",
   "run": 2,
-  "cash": 363.84290112540634,
-  "equity": 375.9038,
+  "cash": 358.84290112540634,
+  "equity": 376.3488,
   "positions": {
     "ethereum:0x37f5dAd784304aC1911B95046134c1B74e4D72A9": {
       "id": "9e04831458",
@@ -35,7 +35,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.01648
+      "last_price": 0.01633
     },
     "solana:HQjXLbFPkpJP1BmF55DgXj9F6614FURvGLKuyCZQpump": {
       "id": "a8a60c8f14",
@@ -49,7 +49,7 @@
       "cost_usd": 5.0,
       "fees_usd": 0.0558,
       "realized_usd": 0.0,
-      "peak_gain": 0.03943692241564589,
+      "peak_gain": 0.06211046636578543,
       "tp_hit": [],
       "entry_liq": 27189.3,
       "score": 0.5331,
@@ -67,7 +67,7 @@
         "buzz": 0.3333,
         "paid_boost": 0.02
       },
-      "last_price": 9.673e-05
+      "last_price": 9.391e-05
     },
     "solana:GgDHtSGcXn5YrADnpsQSVHFAa5xLwVEuD7FWeRgvpump": {
       "id": "7eae568c8e",
@@ -99,7 +99,39 @@
         "buzz": 0.5,
         "paid_boost": 0.0
       },
-      "last_price": 0.0001426
+      "last_price": 0.0001611
+    },
+    "solana:4B8CdHPZ8ng1CtMP2Jk2W8wGAwJ5nJnap1deVsz2pump": {
+      "id": "f4a59bf564",
+      "chain": "solana",
+      "address": "4B8CdHPZ8ng1CtMP2Jk2W8wGAwJ5nJnap1deVsz2pump",
+      "symbol": "BUTTHOLE",
+      "opened": "2026-11-16T00:24:59+00:00",
+      "entry_price": 0.0005252,
+      "tokens": 9415.240204660784,
+      "tokens_initial": 9415.240204660784,
+      "cost_usd": 5.0,
+      "fees_usd": 0.0551,
+      "realized_usd": 0.0,
+      "peak_gain": 0.0,
+      "tp_hit": [],
+      "entry_liq": 194225.86,
+      "score": 0.4161,
+      "features": {
+        "liq_quality": 0.9794,
+        "turnover": 0.0575,
+        "buy_pressure": 0.1595,
+        "momentum_accel": 0.0,
+        "not_vertical": 1.0,
+        "age_sweet": 0.9456,
+        "socials": 0.45,
+        "fdv_sanity": 1.0,
+        "txn_depth": 0.6797,
+        "dip_in_uptrend": 0.0,
+        "buzz": 0.0,
+        "paid_boost": 0.08
+      },
+      "last_price": 0.0005252
     }
   },
   "blacklist": {
@@ -134,7 +166,7 @@
   },
   "halted": false,
   "halt_reason": "",
-  "last_entry": "2026-11-16T00:13:10+00:00",
+  "last_entry": "2026-11-16T00:24:59+00:00",
   "equity_history": [
     [
       "2026-11-07T02:34:12+00:00",
@@ -326,18 +358,18 @@
     "day_equity": 376.0808,
     "week": "2026-W47",
     "week_equity": 376.0808,
-    "trades_today": 2
+    "trades_today": 3
   },
   "stats": {
-    "ticks": 2128,
-    "opened": 37,
+    "ticks": 2133,
+    "opened": 38,
     "closed": 34,
     "wins": 4,
     "losses": 30,
-    "fees_paid": 52.18791046018433,
+    "fees_paid": 52.243026304696485,
     "realized_pnl": -121.15709887459364
   },
-  "updated": "2026-11-16T00:18:49+00:00",
+  "updated": "2026-11-16T00:25:00+00:00",
   "run1_final_equity": 322.5674,
-  "last_scan": "2026-11-16T00:11:48+00:00"
+  "last_scan": "2026-11-16T00:23:49+00:00"
 }
