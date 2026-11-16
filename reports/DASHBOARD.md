@@ -1,30 +1,30 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-16T19:47:07+00:00`
+Updated `2026-11-16T21:56:35+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$358.60** |
-| Return | **-28.28%** (start $500.00) |
+| Equity | **$360.29** |
+| Return | **-27.94%** (start $500.00) |
 | Cash | $341.30 |
-| Deployed | $17.30 (4.8%) |
+| Deployed | $18.99 (5.3%) |
 | Open positions | 4 / 8 |
 | Closed trades | 39 (4W / 35L, WR 10%) |
 | Profit factor | 0.36 |
 | Fees + slippage paid | $58.63 |
-| Ticks run | 2180 |
+| Ticks run | 2181 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| Macca | ethereum | $5.00 | $2.29 | +17% | +29% | 24.0h |
-| WISHMAS | solana | $5.00 | $4.28 | -13% | +5% | 19.2h |
-| GTA | solana | $5.00 | $5.73 | +16% | +39% | 12.6h |
-| Trader | solana | $5.00 | $4.94 | +0% | +0% | 0.0h |
+| Macca | ethereum | $5.00 | $2.18 | +11% | +29% | 26.2h |
+| WISHMAS | solana | $5.00 | $3.71 | -25% | +5% | 21.3h |
+| GTA | solana | $5.00 | $6.35 | +29% | +39% | 14.8h |
+| Trader | solana | $5.00 | $6.75 | +36% | +36% | 2.2h |
 
 ## Last closed trades
 
@@ -67,17 +67,16 @@ _refit on 1836 observations (1717 shadow, 119 real), 503 winners (27% base rate)
 
 ## Last run log
 ```
-tick #2180  equity $368.04  cash $346.30  open 5
-  SELL Anthropig  100% @ $2.505e-06  ->  $0.00   [stop loss -100%]
-  SELL 1.0        100% @ $1.827e-06  ->  $0.00   [stop loss -99%]
+tick #2181  equity $358.60  cash $341.30  open 4
   scanning chains + news...
-  121 raw candidates across 7 chains, 159 headlines/posts
-  9 passed gates | rejected: liquidity too thin x76, no h1 volume x26, too old x5, already discovered x5
-  top: VICEDORD 0.72 | GTA 0.67 | GTA 0.65 | ROCCO 0.62 | VICECAT 0.57
-  tick bar 0.66 (top 10% of 9, floor 0.45)
-  BUY[explore] Trader     $5.00 @ $0.0002047  score 0.52  solana  liq $34,269
-  skip GTA: solana concentration cap
-  shadow: tracking 37, closed 18 this tick (7 would have won)
+  210 raw candidates across 11 chains, 159 headlines/posts
+  7 passed gates | rejected: liquidity too thin x120, no h1 volume x60, too old x16, already discovered x5, too new (bot war) x1
+  top: CHOP 0.67 | rockstar 0.60 | BAWSAQ 0.52 | HOGE 0.48 | WIGGLES 0.47
+  tick bar 0.66 (top 10% of 7, floor 0.45)
+  skip WIGGLES: solana concentration cap
+  skip CHOP: solana concentration cap
+  no entries this tick
+  shadow: tracking 28, closed 14 this tick (2 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
