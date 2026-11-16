@@ -1,30 +1,31 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-16T22:08:29+00:00`
+Updated `2026-11-16T22:20:33+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$358.87** |
-| Return | **-28.23%** (start $500.00) |
-| Cash | $341.30 |
-| Deployed | $17.57 (4.9%) |
-| Open positions | 4 / 8 |
+| Equity | **$359.07** |
+| Return | **-28.19%** (start $500.00) |
+| Cash | $336.30 |
+| Deployed | $22.77 (6.3%) |
+| Open positions | 5 / 8 |
 | Closed trades | 39 (4W / 35L, WR 10%) |
 | Profit factor | 0.36 |
-| Fees + slippage paid | $58.63 |
-| Ticks run | 2192 |
+| Fees + slippage paid | $58.70 |
+| Ticks run | 2203 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| Macca | ethereum | $5.00 | $2.22 | +13% | +29% | 26.4h |
-| WISHMAS | solana | $5.00 | $3.97 | -20% | +5% | 21.5h |
-| GTA | solana | $5.00 | $6.22 | +26% | +39% | 15.0h |
-| Trader | solana | $5.00 | $5.17 | +5% | +36% | 2.4h |
+| Macca | ethereum | $5.00 | $2.20 | +12% | +29% | 26.6h |
+| WISHMAS | solana | $5.00 | $3.92 | -21% | +5% | 21.7h |
+| GTA | solana | $5.00 | $6.34 | +28% | +39% | 15.2h |
+| Trader | solana | $5.00 | $5.30 | +7% | +36% | 2.6h |
+| TE | base | $5.00 | $4.93 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
@@ -67,43 +68,43 @@ _refit on 1836 observations (1717 shadow, 119 real), 503 winners (27% base rate)
 
 ## Last run log
 ```
-  skip WIGGLES: solana concentration cap
-  skip CHOP: solana concentration cap
-  no entries this tick
-  shadow: tracking 28, closed 14 this tick (2 would have won)
-    MISSED NI         peak +277296%  (scored 0.21)
-    MISSED GTAX       peak +11365%  (scored 0.25)
-    MISSED e/acc      peak +5180%  (scored 0.58)
-done. equity $360.29 (-27.94% since start)
-tick #2182  equity $360.29  cash $341.30  open 4
-exits-only pass. equity $359.74 (next scan in 10 min)
-tick #2183  equity $359.74  cash $341.30  open 4
-exits-only pass. equity $359.61 (next scan in 9 min)
-tick #2184  equity $359.61  cash $341.30  open 4
-exits-only pass. equity $359.52 (next scan in 8 min)
-tick #2185  equity $359.52  cash $341.30  open 4
-exits-only pass. equity $359.32 (next scan in 7 min)
-tick #2186  equity $359.32  cash $341.30  open 4
-exits-only pass. equity $358.88 (next scan in 6 min)
-tick #2187  equity $358.88  cash $341.30  open 4
-exits-only pass. equity $358.78 (next scan in 5 min)
-tick #2188  equity $358.78  cash $341.30  open 4
-exits-only pass. equity $358.85 (next scan in 4 min)
-tick #2189  equity $358.85  cash $341.30  open 4
-exits-only pass. equity $358.53 (next scan in 3 min)
-tick #2190  equity $358.53  cash $341.30  open 4
-exits-only pass. equity $358.56 (next scan in 2 min)
-tick #2191  equity $358.56  cash $341.30  open 4
-exits-only pass. equity $358.51 (next scan in 1 min)
-tick #2192  equity $358.51  cash $341.30  open 4
-  scanning chains + news...
-  165 raw candidates across 10 chains, 119 headlines/posts
-  4 passed gates | rejected: liquidity too thin x92, no h1 volume x54, too old x9, already discovered x5, unknown age x1
-  top: CHOP 0.65 | BAWSAQ 0.50 | BAWSAQ 0.49 | COGE 0.45
   tick bar 0.65 (top 10% of 4, floor 0.45)
   skip CHOP: solana concentration cap
   no entries this tick
   shadow: tracking 29, closed 0 this tick (0 would have won)
+    MISSED NI         peak +277296%  (scored 0.21)
+    MISSED GTAX       peak +11365%  (scored 0.25)
+    MISSED e/acc      peak +5180%  (scored 0.58)
+done. equity $358.87 (-28.23% since start)
+tick #2193  equity $358.87  cash $341.30  open 4
+exits-only pass. equity $358.93 (next scan in 10 min)
+tick #2194  equity $358.93  cash $341.30  open 4
+exits-only pass. equity $358.73 (next scan in 9 min)
+tick #2195  equity $358.73  cash $341.30  open 4
+exits-only pass. equity $359.12 (next scan in 8 min)
+tick #2196  equity $359.12  cash $341.30  open 4
+exits-only pass. equity $358.55 (next scan in 7 min)
+tick #2197  equity $358.55  cash $341.30  open 4
+exits-only pass. equity $358.90 (next scan in 6 min)
+tick #2198  equity $358.90  cash $341.30  open 4
+exits-only pass. equity $359.03 (next scan in 5 min)
+tick #2199  equity $359.03  cash $341.30  open 4
+exits-only pass. equity $359.17 (next scan in 4 min)
+tick #2200  equity $359.17  cash $341.30  open 4
+exits-only pass. equity $358.81 (next scan in 3 min)
+tick #2201  equity $358.81  cash $341.30  open 4
+exits-only pass. equity $358.69 (next scan in 2 min)
+tick #2202  equity $358.69  cash $341.30  open 4
+exits-only pass. equity $358.71 (next scan in 1 min)
+tick #2203  equity $358.71  cash $341.30  open 4
+  scanning chains + news...
+  165 raw candidates across 10 chains, 159 headlines/posts
+  5 passed gates | rejected: liquidity too thin x93, no h1 volume x56, too old x9, unknown age x1, already discovered x1
+  top: TE 0.69 | CHOP 0.62 | BAWSAQ 0.56 | BAWSAQ 0.42 | COGE 0.42
+  tick bar 0.66 (top 10% of 5, floor 0.45)
+  BUY[exploit] TE         $5.00 @ $0.0002554  score 0.69  base  liq $59,876
+  skip BAWSAQ: solana concentration cap
+  shadow: tracking 30, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
