@@ -1,34 +1,36 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-16T00:36:29+00:00`
+Updated `2026-11-16T01:58:16+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$376.08** |
-| Return | **-24.78%** (start $500.00) |
-| Cash | $363.84 |
-| Deployed | $12.24 (3.3%) |
-| Open positions | 3 / 8 |
-| Closed trades | 34 (4W / 30L, WR 12%) |
+| Equity | **$372.60** |
+| Return | **-25.48%** (start $500.00) |
+| Cash | $355.28 |
+| Deployed | $17.32 (4.6%) |
+| Open positions | 4 / 8 |
+| Closed trades | 35 (4W / 31L, WR 11%) |
 | Profit factor | 0.37 |
-| Fees + slippage paid | $52.19 |
-| Ticks run | 2000 |
+| Fees + slippage paid | $52.33 |
+| Ticks run | 2001 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| Macca | ethereum | $5.00 | $2.24 | +14% | +29% | 4.8h |
-| WISHMAS | solana | $5.00 | $4.94 | +0% | +0% | 0.0h |
-| GTAVI | solana | $5.00 | $4.94 | +0% | +0% | 0.0h |
+| Macca | ethereum | $5.00 | $2.15 | +9% | +29% | 6.2h |
+| WISHMAS | solana | $5.00 | $5.18 | +5% | +5% | 1.4h |
+| Anthropig | solana | $5.00 | $4.94 | +0% | +0% | 0.0h |
+| Neil | solana | $5.00 | $4.94 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| GTAVI | $-3.57 | -71% | 1.4h | stop loss -70% |
 | GATO | $-5.00 | -100% | 2.3h | ratchet +55% (peak +121%) |
 | FOOD | $-1.85 | -37% | 21.4h | stop loss -35% |
 | WASTED | $-5.00 | -100% | 1.6h | ratchet +190% (peak +314%) |
@@ -43,7 +45,6 @@ Updated `2026-11-16T00:36:29+00:00`
 | SHIT | $+4.56 | +91% | 14.6h | ratchet +90% (peak +172%) |
 | worth | $-1.96 | -39% | 3.0h | stop loss -37% |
 | 牛逼 | $+3.99 | +80% | 12.2h | ratchet +88% (peak +168%) |
-| J*B | $-4.19 | -84% | 3.8h | stop loss -83% |
 
 ## Learned weights (v169)
 
@@ -66,15 +67,16 @@ _refit on 1806 observations (1699 shadow, 107 real), 494 winners (27% base rate)
 
 ## Last run log
 ```
-tick #2000  equity $376.16  cash $373.84  open 1
+tick #2001  equity $376.08  cash $363.84  open 3
+  SELL GTAVI      100% @ $3.006e-05  ->  $1.43   [stop loss -70%]
   scanning chains + news...
-  78 raw candidates across 4 chains, 160 headlines/posts
-  6 passed gates | rejected: liquidity too thin x46, no h1 volume x17, already discovered x5, too old x2, too new (bot war) x1
-  top: BAWSAQ 0.70 | GTAVI 0.43 | BUTTHOLE 0.42 | Socks 0.42 | AI 0.35
-  tick bar 0.64 (top 10% of 6, floor 0.45)
-  BUY[explore] WISHMAS    $5.00 @ $0.0002055  score 0.29  solana  liq $38,034
-  BUY[explore] GTAVI      $5.00 @ $0.0001015  score 0.43  solana  liq $28,381
-  shadow: tracking 44, closed 4 this tick (0 would have won)
+  60 raw candidates across 2 chains, 160 headlines/posts
+  6 passed gates | rejected: liquidity too thin x44, no h1 volume x8, too old x2
+  top: BUTTHOLE 0.53 | BAWSAQ 0.51 | CYBERDACITY 0.48 | Neil 0.47 | FiveM 0.43
+  tick bar 0.53 (top 10% of 6, floor 0.45)
+  BUY[explore] Anthropig  $5.00 @ $0.001124  score 0.42  solana  liq $76,800
+  BUY[explore] Neil       $5.00 @ $0.0001484  score 0.47  solana  liq $28,904
+  shadow: tracking 47, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
