@@ -2,8 +2,8 @@
   "started": "2026-09-22T16:04:55+00:00",
   "restarted": "2026-10-24",
   "run": 2,
-  "cash": 349.3610807009395,
-  "equity": 365.967,
+  "cash": 346.2987819448327,
+  "equity": 368.0418,
   "positions": {
     "ethereum:0x37f5dAd784304aC1911B95046134c1B74e4D72A9": {
       "id": "9e04831458",
@@ -35,7 +35,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.01641
+      "last_price": 0.01662
     },
     "solana:9cmXfuC26anZtH9AUWVzpUxU1UJ7PPogYxftYTepump": {
       "id": "310998128f",
@@ -49,7 +49,7 @@
       "cost_usd": 5.0,
       "fees_usd": 0.0556,
       "realized_usd": 0.0,
-      "peak_gain": 0.05012165450121642,
+      "peak_gain": 0.047201946472019474,
       "tp_hit": [],
       "entry_liq": 38033.75,
       "score": 0.2875,
@@ -67,7 +67,39 @@
         "buzz": 0.0,
         "paid_boost": 0.02
       },
-      "last_price": 0.0001765
+      "last_price": 0.0001815
+    },
+    "solana:2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump": {
+      "id": "1cc522d498",
+      "chain": "solana",
+      "address": "2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump",
+      "symbol": "Anthropig",
+      "opened": "2026-11-16T01:58:14+00:00",
+      "entry_price": 0.001124,
+      "tokens": 4399.205544834879,
+      "tokens_initial": 4399.205544834879,
+      "cost_usd": 5.0,
+      "fees_usd": 0.0553,
+      "realized_usd": 0.0,
+      "peak_gain": 0.1307829181494662,
+      "tp_hit": [],
+      "entry_liq": 76800.3,
+      "score": 0.4188,
+      "features": {
+        "liq_quality": 0.8696,
+        "turnover": 0.413,
+        "buy_pressure": 0.9032,
+        "momentum_accel": 0.0,
+        "not_vertical": 1.0,
+        "age_sweet": 0.9645,
+        "socials": 0.65,
+        "fdv_sanity": 0.7889,
+        "txn_depth": 0.1753,
+        "dip_in_uptrend": 0.0,
+        "buzz": 0.0,
+        "paid_boost": 0.2
+      },
+      "last_price": 0.0007462
     },
     "solana:G9ZMir6uh66Y7viPkXAy7myA9jjE4T1YgheVUmGDpump": {
       "id": "ea1cba2cad",
@@ -76,15 +108,13 @@
       "symbol": "GTA",
       "opened": "2026-11-16T07:09:27+00:00",
       "entry_price": 0.0001346,
-      "tokens": 27550.30741674867,
+      "tokens": 36733.74322233156,
       "tokens_initial": 36733.74322233156,
       "cost_usd": 5.0,
-      "fees_usd": 0.08870117445393669,
-      "realized_usd": 1.8283812633377152,
-      "peak_gain": 0.5185735512630016,
-      "tp_hit": [
-        0
-      ],
+      "fees_usd": 0.0556,
+      "realized_usd": 0.0,
+      "peak_gain": 0.39375928677563166,
+      "tp_hit": [],
       "entry_liq": 35257.49,
       "score": 0.2898,
       "features": {
@@ -101,39 +131,39 @@
         "buzz": 0.1667,
         "paid_boost": 0.06
       },
-      "last_price": 0.0001882
+      "last_price": 0.0001876
     },
-    "solana:DSKM3d518BBaQShSKqaqZcG1XMRf81UFB6a1eavhSTNK": {
-      "id": "bf75bde448",
-      "chain": "solana",
-      "address": "DSKM3d518BBaQShSKqaqZcG1XMRf81UFB6a1eavhSTNK",
-      "symbol": "gtacoin",
-      "opened": "2026-11-16T11:57:29+00:00",
-      "entry_price": 0.000477,
-      "tokens": 10365.993694498768,
-      "tokens_initial": 10365.993694498768,
+    "ethereum:0xCFFE391284A67503fee5e03580459EddA8Aba1Bb": {
+      "id": "cdad34f2b5",
+      "chain": "ethereum",
+      "address": "0xCFFE391284A67503fee5e03580459EddA8Aba1Bb",
+      "symbol": "1.0",
+      "opened": "2026-11-16T11:59:47+00:00",
+      "entry_price": 0.0001392,
+      "tokens": 14110.98242047316,
+      "tokens_initial": 14110.98242047316,
       "cost_usd": 5.0,
-      "fees_usd": 0.0554,
+      "fees_usd": 3.0358,
       "realized_usd": 0.0,
       "peak_gain": 0.0,
       "tp_hit": [],
-      "entry_liq": 53443.2,
-      "score": 0.3606,
+      "entry_liq": 29950.2,
+      "score": 0.8083,
       "features": {
-        "liq_quality": 0.7175,
-        "turnover": 0.1933,
-        "buy_pressure": 0.5242,
-        "momentum_accel": 0.0,
-        "not_vertical": 1.0,
-        "age_sweet": 0.2314,
-        "socials": 0.8,
-        "fdv_sanity": 0.9127,
-        "txn_depth": 0.5365,
-        "dip_in_uptrend": 0.0,
+        "liq_quality": 0.4452,
+        "turnover": 0.4374,
+        "buy_pressure": 1.0,
+        "momentum_accel": 1.0,
+        "not_vertical": 0.0,
+        "age_sweet": 0.2078,
+        "socials": 0.0,
+        "fdv_sanity": 1.0,
+        "txn_depth": 0.9529,
+        "dip_in_uptrend": 0.5,
         "buzz": 0.0,
-        "paid_boost": 0.2
+        "paid_boost": 0.0
       },
-      "last_price": 0.000477
+      "last_price": 0.0001392
     }
   },
   "blacklist": {
@@ -167,13 +197,11 @@
     "ethereum:0x370BeCaBA7374412212291E255Ca10c6Ea73289B": "2026-11-15T21:28:49+00:00",
     "solana:HQjXLbFPkpJP1BmF55DgXj9F6614FURvGLKuyCZQpump": "2026-11-16T01:57:46+00:00",
     "solana:9iG6qBMgzzuYyq2kfXcAD49bkTFrpGp5gr1QHJiZMwoi": "2026-11-16T06:08:09+00:00",
-    "solana:HkRQ6Qcadi5yuoNpZdA1Q7yVF3r7LdEmAw1aKkSxpump": "2026-11-16T07:00:09+00:00",
-    "bsc:0x40D88e7F232Bf94A888eaA4f1905Eb28941e4860": "2026-11-16T10:37:09+00:00",
-    "solana:2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump": "2026-11-16T10:52:09+00:00"
+    "solana:HkRQ6Qcadi5yuoNpZdA1Q7yVF3r7LdEmAw1aKkSxpump": "2026-11-16T07:00:09+00:00"
   },
   "halted": false,
   "halt_reason": "",
-  "last_entry": "2026-11-16T11:57:29+00:00",
+  "last_entry": "2026-11-16T11:59:47+00:00",
   "equity_history": [
     [
       "2026-11-07T15:44:55+00:00",
@@ -368,12 +396,8 @@
       367.8
     ],
     [
-      "2026-11-16T10:08:08+00:00",
-      367.93
-    ],
-    [
-      "2026-11-16T11:08:08+00:00",
-      366.27
+      "2026-11-16T11:58:15+00:00",
+      367.71
     ]
   ],
   "marks": {
@@ -381,18 +405,18 @@
     "day_equity": 376.1629,
     "week": "2026-W47",
     "week_equity": 376.1629,
-    "trades_today": 8
+    "trades_today": 7
   },
   "stats": {
-    "ticks": 2321,
-    "opened": 43,
-    "closed": 39,
+    "ticks": 2179,
+    "opened": 42,
+    "closed": 37,
     "wins": 4,
-    "losses": 35,
-    "fees_paid": 52.811475429990544,
-    "realized_pnl": -132.4673005623982
+    "losses": 33,
+    "fees_paid": 55.5590305092367,
+    "realized_pnl": -128.70121805516735
   },
-  "updated": "2026-11-16T11:57:30+00:00",
+  "updated": "2026-11-16T11:59:49+00:00",
   "run1_final_equity": 322.5674,
-  "last_scan": "2026-11-16T11:56:09+00:00"
+  "last_scan": "2026-11-16T11:58:16+00:00"
 }
