@@ -1,27 +1,27 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-15T23:49:06+00:00`
+Updated `2026-11-16T00:01:01+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$376.27** |
-| Return | **-24.75%** (start $500.00) |
+| Equity | **$376.08** |
+| Return | **-24.78%** (start $500.00) |
 | Cash | $373.84 |
-| Deployed | $2.42 (0.6%) |
+| Deployed | $2.24 (0.6%) |
 | Open positions | 1 / 8 |
 | Closed trades | 34 (4W / 30L, WR 12%) |
 | Profit factor | 0.37 |
 | Fees + slippage paid | $52.08 |
-| Ticks run | 2100 |
+| Ticks run | 2111 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| Macca | ethereum | $5.00 | $2.42 | +23% | +29% | 4.0h |
+| Macca | ethereum | $5.00 | $2.24 | +14% | +29% | 4.2h |
 
 ## Last closed trades
 
@@ -66,40 +66,40 @@ _refit on 1806 observations (1699 shadow, 107 real), 494 winners (27% base rate)
 ```
   tick bar 0.64 (top 10% of 6, floor 0.45)
   no entries this tick
-  shadow: tracking 46, closed 0 this tick (0 would have won)
+  shadow: tracking 45, closed 1 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
   entries blocked: daily trade cap reached
-done. equity $376.19 (-24.76% since start)
-tick #2090  equity $376.19  cash $373.84  open 1
-exits-only pass. equity $376.21 (next scan in 10 min)
-tick #2091  equity $376.21  cash $373.84  open 1
-exits-only pass. equity $376.25 (next scan in 9 min)
-tick #2092  equity $376.25  cash $373.84  open 1
-exits-only pass. equity $376.21 (next scan in 8 min)
-tick #2093  equity $376.21  cash $373.84  open 1
-exits-only pass. equity $376.23 (next scan in 7 min)
-tick #2094  equity $376.23  cash $373.84  open 1
-exits-only pass. equity $376.21 (next scan in 6 min)
-tick #2095  equity $376.21  cash $373.84  open 1
-exits-only pass. equity $376.25 (next scan in 5 min)
-tick #2096  equity $376.25  cash $373.84  open 1
-exits-only pass. equity $376.20 (next scan in 4 min)
-tick #2097  equity $376.20  cash $373.84  open 1
+done. equity $376.27 (-24.75% since start)
+tick #2101  equity $376.27  cash $373.84  open 1
+exits-only pass. equity $376.18 (next scan in 10 min)
+tick #2102  equity $376.18  cash $373.84  open 1
+exits-only pass. equity $376.21 (next scan in 9 min)
+tick #2103  equity $376.21  cash $373.84  open 1
+exits-only pass. equity $376.24 (next scan in 8 min)
+tick #2104  equity $376.24  cash $373.84  open 1
+exits-only pass. equity $376.18 (next scan in 7 min)
+tick #2105  equity $376.18  cash $373.84  open 1
+exits-only pass. equity $376.19 (next scan in 6 min)
+tick #2106  equity $376.19  cash $373.84  open 1
+exits-only pass. equity $376.18 (next scan in 5 min)
+tick #2107  equity $376.18  cash $373.84  open 1
+exits-only pass. equity $376.18 (next scan in 4 min)
+tick #2108  equity $376.18  cash $373.84  open 1
 exits-only pass. equity $376.20 (next scan in 3 min)
-tick #2098  equity $376.20  cash $373.84  open 1
+tick #2109  equity $376.20  cash $373.84  open 1
 exits-only pass. equity $376.23 (next scan in 2 min)
-tick #2099  equity $376.23  cash $373.84  open 1
-exits-only pass. equity $376.25 (next scan in 1 min)
-tick #2100  equity $376.25  cash $373.84  open 1
+tick #2110  equity $376.23  cash $373.84  open 1
+exits-only pass. equity $376.10 (next scan in 1 min)
+tick #2111  equity $376.10  cash $373.84  open 1
   scanning chains + news...
-  118 raw candidates across 8 chains, 160 headlines/posts
-  6 passed gates | rejected: liquidity too thin x68, no h1 volume x29, too old x8, already discovered x5, unknown age x2
-  top: GTAVI 0.68 | AI 0.57 | BUTTHOLE 0.49 | BJB 0.42 | Socks 0.41
-  tick bar 0.64 (top 10% of 6, floor 0.45)
+  162 raw candidates across 8 chains, 160 headlines/posts
+  5 passed gates | rejected: liquidity too thin x95, no h1 volume x37, too old x15, already discovered x6, unknown age x2
+  top: GTAVI 0.69 | BJB 0.53 | bill 0.50 | AURA 0.41 | WISHMAS 0.29
+  tick bar 0.64 (top 10% of 5, floor 0.45)
   no entries this tick
-  shadow: tracking 45, closed 1 this tick (0 would have won)
+  shadow: tracking 45, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
