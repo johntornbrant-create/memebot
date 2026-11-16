@@ -3,7 +3,7 @@
   "restarted": "2026-10-24",
   "run": 2,
   "cash": 346.2987819448327,
-  "equity": 367.0642,
+  "equity": 368.2853,
   "positions": {
     "ethereum:0x37f5dAd784304aC1911B95046134c1B74e4D72A9": {
       "id": "9e04831458",
@@ -35,7 +35,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.01814
+      "last_price": 0.01792
     },
     "solana:9cmXfuC26anZtH9AUWVzpUxU1UJ7PPogYxftYTepump": {
       "id": "310998128f",
@@ -67,7 +67,7 @@
         "buzz": 0.0,
         "paid_boost": 0.02
       },
-      "last_price": 0.0001912
+      "last_price": 0.0002123
     },
     "solana:2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump": {
       "id": "1cc522d498",
@@ -99,7 +99,7 @@
         "buzz": 0.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.0007919
+      "last_price": 0.0007928
     },
     "solana:G9ZMir6uh66Y7viPkXAy7myA9jjE4T1YgheVUmGDpump": {
       "id": "ea1cba2cad",
@@ -113,7 +113,7 @@
       "cost_usd": 5.0,
       "fees_usd": 0.0556,
       "realized_usd": 0.0,
-      "peak_gain": 0.3514115898959882,
+      "peak_gain": 0.3826151560178306,
       "tp_hit": [],
       "entry_liq": 35257.49,
       "score": 0.2898,
@@ -131,7 +131,7 @@
         "buzz": 0.1667,
         "paid_boost": 0.06
       },
-      "last_price": 0.0001767
+      "last_price": 0.0001861
     },
     "bsc:0x40D88e7F232Bf94A888eaA4f1905Eb28941e4860": {
       "id": "a5d24889f2",
@@ -163,7 +163,7 @@
         "buzz": 0.1667,
         "paid_boost": 0.0
       },
-      "last_price": 0.01165
+      "last_price": 0.01286
     }
   },
   "blacklist": {
@@ -408,7 +408,7 @@
     "trades_today": 7
   },
   "stats": {
-    "ticks": 2239,
+    "ticks": 2244,
     "opened": 42,
     "closed": 37,
     "wins": 4,
@@ -416,7 +416,7 @@
     "fees_paid": 52.608337621004004,
     "realized_pnl": -128.70121805516735
   },
-  "updated": "2026-11-16T10:27:09+00:00",
+  "updated": "2026-11-16T10:33:29+00:00",
   "run1_final_equity": 322.5674,
-  "last_scan": "2026-11-16T10:20:09+00:00"
+  "last_scan": "2026-11-16T10:32:09+00:00"
 }
