@@ -1,31 +1,31 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-16T09:57:30+00:00`
+Updated `2026-11-16T10:09:30+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$368.11** |
-| Return | **-26.38%** (start $500.00) |
+| Equity | **$368.46** |
+| Return | **-26.31%** (start $500.00) |
 | Cash | $346.30 |
-| Deployed | $21.82 (5.9%) |
+| Deployed | $22.16 (6.0%) |
 | Open positions | 5 / 8 |
 | Closed trades | 37 (4W / 33L, WR 11%) |
 | Profit factor | 0.37 |
 | Fees + slippage paid | $52.61 |
-| Ticks run | 2211 |
+| Ticks run | 2222 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| Macca | ethereum | $5.00 | $2.33 | +19% | +29% | 14.2h |
-| WISHMAS | solana | $5.00 | $4.76 | -4% | +5% | 9.4h |
-| Anthropig | solana | $5.00 | $4.06 | -18% | +13% | 8.0h |
-| GTA | solana | $5.00 | $5.39 | +9% | +17% | 2.8h |
-| mihao | bsc | $5.00 | $5.27 | +7% | +23% | 0.4h |
+| Macca | ethereum | $5.00 | $2.38 | +21% | +29% | 14.4h |
+| WISHMAS | solana | $5.00 | $4.81 | -3% | +5% | 9.6h |
+| Anthropig | solana | $5.00 | $4.03 | -19% | +13% | 8.2h |
+| GTA | solana | $5.00 | $6.12 | +24% | +24% | 3.0h |
+| mihao | bsc | $5.00 | $4.82 | -2% | +23% | 0.6h |
 
 ## Last closed trades
 
@@ -68,40 +68,40 @@ _refit on 1825 observations (1708 shadow, 117 real), 498 winners (27% base rate)
 
 ## Last run log
 ```
-  skip GTA: already held
+  skip Anthropig: already held
   no entries this tick
   shadow: tracking 46, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
-done. equity $368.22 (-26.36% since start)
-tick #2201  equity $368.22  cash $346.30  open 5
-exits-only pass. equity $368.60 (next scan in 10 min)
-tick #2202  equity $368.60  cash $346.30  open 5
-exits-only pass. equity $368.71 (next scan in 9 min)
-tick #2203  equity $368.71  cash $346.30  open 5
-exits-only pass. equity $368.57 (next scan in 8 min)
-tick #2204  equity $368.57  cash $346.30  open 5
-exits-only pass. equity $368.33 (next scan in 7 min)
-tick #2205  equity $368.33  cash $346.30  open 5
-exits-only pass. equity $367.90 (next scan in 6 min)
-tick #2206  equity $367.90  cash $346.30  open 5
-exits-only pass. equity $367.87 (next scan in 5 min)
-tick #2207  equity $367.87  cash $346.30  open 5
-exits-only pass. equity $367.97 (next scan in 4 min)
-tick #2208  equity $367.97  cash $346.30  open 5
-exits-only pass. equity $368.39 (next scan in 3 min)
-tick #2209  equity $368.39  cash $346.30  open 5
-exits-only pass. equity $367.95 (next scan in 2 min)
-tick #2210  equity $367.95  cash $346.30  open 5
-exits-only pass. equity $368.40 (next scan in 1 min)
-tick #2211  equity $368.40  cash $346.30  open 5
+done. equity $368.11 (-26.38% since start)
+tick #2212  equity $368.11  cash $346.30  open 5
+exits-only pass. equity $367.90 (next scan in 10 min)
+tick #2213  equity $367.90  cash $346.30  open 5
+exits-only pass. equity $367.69 (next scan in 9 min)
+tick #2214  equity $367.69  cash $346.30  open 5
+exits-only pass. equity $367.71 (next scan in 8 min)
+tick #2215  equity $367.71  cash $346.30  open 5
+exits-only pass. equity $368.03 (next scan in 7 min)
+tick #2216  equity $368.03  cash $346.30  open 5
+exits-only pass. equity $367.92 (next scan in 6 min)
+tick #2217  equity $367.92  cash $346.30  open 5
+exits-only pass. equity $367.94 (next scan in 5 min)
+tick #2218  equity $367.94  cash $346.30  open 5
+exits-only pass. equity $367.78 (next scan in 4 min)
+tick #2219  equity $367.78  cash $346.30  open 5
+exits-only pass. equity $367.60 (next scan in 3 min)
+tick #2220  equity $367.60  cash $346.30  open 5
+exits-only pass. equity $367.57 (next scan in 2 min)
+tick #2221  equity $367.57  cash $346.30  open 5
+exits-only pass. equity $367.93 (next scan in 1 min)
+tick #2222  equity $367.93  cash $346.30  open 5
   scanning chains + news...
-  149 raw candidates across 7 chains, 160 headlines/posts
-  6 passed gates | rejected: liquidity too thin x83, no h1 volume x37, too old x10, already discovered x10, unknown age x2
-  top: mihao 0.74 | gtacoin 0.55 | WASTED 0.53 | Macca 0.38 | GTA 0.38
-  tick bar 0.64 (top 10% of 6, floor 0.45)
-  skip Macca: already held
+  134 raw candidates across 6 chains, 160 headlines/posts
+  4 passed gates | rejected: liquidity too thin x90, no h1 volume x30, already discovered x6, too old x3, unknown age x1
+  top: mihao 0.79 | GTA 0.45 | gtacoin 0.43 | Anthropig 0.36
+  tick bar 0.64 (top 10% of 4, floor 0.45)
+  skip mihao: already held
   skip Anthropig: already held
   no entries this tick
   shadow: tracking 46, closed 0 this tick (0 would have won)
