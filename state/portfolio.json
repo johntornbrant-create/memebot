@@ -2,8 +2,8 @@
   "started": "2026-09-22T16:04:55+00:00",
   "restarted": "2026-10-24",
   "run": 2,
-  "cash": 353.33615709241457,
-  "equity": 368.1591,
+  "cash": 356.2987819448327,
+  "equity": 367.5169,
   "positions": {
     "ethereum:0x37f5dAd784304aC1911B95046134c1B74e4D72A9": {
       "id": "9e04831458",
@@ -35,7 +35,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.01721
+      "last_price": 0.01713
     },
     "solana:9cmXfuC26anZtH9AUWVzpUxU1UJ7PPogYxftYTepump": {
       "id": "310998128f",
@@ -67,7 +67,7 @@
         "buzz": 0.0,
         "paid_boost": 0.02
       },
-      "last_price": 0.0001787
+      "last_price": 0.0001739
     },
     "solana:2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump": {
       "id": "1cc522d498",
@@ -99,39 +99,7 @@
         "buzz": 0.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.001112
-    },
-    "solana:HkRQ6Qcadi5yuoNpZdA1Q7yVF3r7LdEmAw1aKkSxpump": {
-      "id": "45b2c19f94",
-      "chain": "solana",
-      "address": "HkRQ6Qcadi5yuoNpZdA1Q7yVF3r7LdEmAw1aKkSxpump",
-      "symbol": "Marvin",
-      "opened": "2026-11-16T06:09:39+00:00",
-      "entry_price": 0.000642,
-      "tokens": 7702.025950504377,
-      "tokens_initial": 7702.025950504377,
-      "cost_usd": 5.0,
-      "fees_usd": 0.0553,
-      "realized_usd": 0.0,
-      "peak_gain": 0.09922118380062295,
-      "tp_hit": [],
-      "entry_liq": 75165.42,
-      "score": 0.412,
-      "features": {
-        "liq_quality": 0.8617,
-        "turnover": 0.1043,
-        "buy_pressure": 0.4274,
-        "momentum_accel": 0.0,
-        "not_vertical": 1.0,
-        "age_sweet": 0.7324,
-        "socials": 0.45,
-        "fdv_sanity": 0.9265,
-        "txn_depth": 0.4516,
-        "dip_in_uptrend": 1.0,
-        "buzz": 0.0,
-        "paid_boost": 0.0
-      },
-      "last_price": 0.0004351
+      "last_price": 0.001083
     }
   },
   "blacklist": {
@@ -164,7 +132,8 @@
     "solana:FTu55MyigXns96jz4nTCDDiTCjYJjyrHSceCgG9Upump": "2026-11-15T20:39:49+00:00",
     "ethereum:0x370BeCaBA7374412212291E255Ca10c6Ea73289B": "2026-11-15T21:28:49+00:00",
     "solana:HQjXLbFPkpJP1BmF55DgXj9F6614FURvGLKuyCZQpump": "2026-11-16T01:57:46+00:00",
-    "solana:9iG6qBMgzzuYyq2kfXcAD49bkTFrpGp5gr1QHJiZMwoi": "2026-11-16T06:08:09+00:00"
+    "solana:9iG6qBMgzzuYyq2kfXcAD49bkTFrpGp5gr1QHJiZMwoi": "2026-11-16T06:08:09+00:00",
+    "solana:HkRQ6Qcadi5yuoNpZdA1Q7yVF3r7LdEmAw1aKkSxpump": "2026-11-16T07:00:09+00:00"
   },
   "halted": false,
   "halt_reason": "",
@@ -363,15 +332,15 @@
     "trades_today": 5
   },
   "stats": {
-    "ticks": 2046,
+    "ticks": 2052,
     "opened": 40,
-    "closed": 36,
+    "closed": 37,
     "wins": 4,
-    "losses": 32,
-    "fees_paid": 52.42647583161378,
-    "realized_pnl": -126.66384290758543
+    "losses": 33,
+    "fees_paid": 52.46764109989239,
+    "realized_pnl": -128.70121805516735
   },
-  "updated": "2026-11-16T06:57:29+00:00",
+  "updated": "2026-11-16T07:03:09+00:00",
   "run1_final_equity": 322.5674,
   "last_scan": "2026-11-16T06:56:09+00:00"
 }
