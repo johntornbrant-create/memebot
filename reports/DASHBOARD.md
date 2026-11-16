@@ -1,30 +1,30 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-16T06:09:41+00:00`
+Updated `2026-11-16T06:21:28+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$369.76** |
-| Return | **-26.05%** (start $500.00) |
+| Equity | **$368.82** |
+| Return | **-26.24%** (start $500.00) |
 | Cash | $353.34 |
-| Deployed | $16.42 (4.4%) |
+| Deployed | $15.49 (4.2%) |
 | Open positions | 4 / 8 |
 | Closed trades | 36 (4W / 32L, WR 11%) |
 | Profit factor | 0.37 |
 | Fees + slippage paid | $52.43 |
-| Ticks run | 2002 |
+| Ticks run | 2013 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| Macca | ethereum | $5.00 | $2.23 | +13% | +29% | 10.4h |
-| WISHMAS | solana | $5.00 | $4.53 | -8% | +5% | 5.6h |
-| Anthropig | solana | $5.00 | $4.66 | -6% | +0% | 4.2h |
-| Marvin | solana | $5.00 | $4.94 | +0% | +0% | 0.0h |
+| Macca | ethereum | $5.00 | $2.13 | +8% | +29% | 10.6h |
+| WISHMAS | solana | $5.00 | $4.27 | -14% | +5% | 5.8h |
+| Anthropig | solana | $5.00 | $4.74 | -4% | +0% | 4.4h |
+| Marvin | solana | $5.00 | $4.35 | -12% | +10% | 0.2h |
 
 ## Last closed trades
 
@@ -67,16 +67,43 @@ _refit on 1825 observations (1708 shadow, 117 real), 498 winners (27% base rate)
 
 ## Last run log
 ```
-tick #2002  equity $372.60  cash $355.28  open 4
-  SELL Neil       100% @ $9.309e-05  ->  $3.06   [stop loss -37%]
-  scanning chains + news...
-  101 raw candidates across 4 chains, 160 headlines/posts
-  5 passed gates | rejected: liquidity too thin x61, no h1 volume x28, already discovered x4, too old x3
-  top: GTA 0.59 | 6STAR 0.59 | Marvin 0.41 | Anthropig 0.37 | WISHMAS 0.24
   tick bar 0.59 (top 10% of 5, floor 0.45)
   BUY[explore] Marvin     $5.00 @ $0.000642  score 0.41  solana  liq $75,165
   skip WISHMAS: already held
   shadow: tracking 47, closed 2 this tick (2 would have won)
+    MISSED NI         peak +277296%  (scored 0.21)
+    MISSED GTAX       peak +11365%  (scored 0.25)
+    MISSED e/acc      peak +5180%  (scored 0.58)
+done. equity $369.76 (-26.05% since start)
+tick #2003  equity $369.76  cash $353.34  open 4
+exits-only pass. equity $370.09 (next scan in 10 min)
+tick #2004  equity $370.09  cash $353.34  open 4
+exits-only pass. equity $369.59 (next scan in 9 min)
+tick #2005  equity $369.59  cash $353.34  open 4
+exits-only pass. equity $369.48 (next scan in 8 min)
+tick #2006  equity $369.48  cash $353.34  open 4
+exits-only pass. equity $369.27 (next scan in 7 min)
+tick #2007  equity $369.27  cash $353.34  open 4
+exits-only pass. equity $368.32 (next scan in 6 min)
+tick #2008  equity $368.32  cash $353.34  open 4
+exits-only pass. equity $368.40 (next scan in 5 min)
+tick #2009  equity $368.40  cash $353.34  open 4
+exits-only pass. equity $368.68 (next scan in 4 min)
+tick #2010  equity $368.68  cash $353.34  open 4
+exits-only pass. equity $368.78 (next scan in 3 min)
+tick #2011  equity $368.78  cash $353.34  open 4
+exits-only pass. equity $368.48 (next scan in 2 min)
+tick #2012  equity $368.48  cash $353.34  open 4
+exits-only pass. equity $368.25 (next scan in 1 min)
+tick #2013  equity $368.25  cash $353.34  open 4
+  scanning chains + news...
+  88 raw candidates across 4 chains, 160 headlines/posts
+  6 passed gates | rejected: liquidity too thin x50, no h1 volume x23, too old x5, already discovered x4
+  top: 6STAR 0.50 | BUTTHOLE 0.45 | Anthropig 0.41 | GTA 0.37 | Marvin 0.35
+  tick bar 0.50 (top 10% of 6, floor 0.45)
+  skip 6STAR: solana concentration cap
+  no entries this tick
+  shadow: tracking 46, closed 1 this tick (1 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
