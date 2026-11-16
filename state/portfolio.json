@@ -2,8 +2,8 @@
   "started": "2026-09-22T16:04:55+00:00",
   "restarted": "2026-10-24",
   "run": 2,
-  "cash": 351.2110718162562,
-  "equity": 366.2603,
+  "cash": 354.3610807009395,
+  "equity": 366.0772,
   "positions": {
     "ethereum:0x37f5dAd784304aC1911B95046134c1B74e4D72A9": {
       "id": "9e04831458",
@@ -35,7 +35,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.01738
+      "last_price": 0.01784
     },
     "solana:9cmXfuC26anZtH9AUWVzpUxU1UJ7PPogYxftYTepump": {
       "id": "310998128f",
@@ -67,39 +67,7 @@
         "buzz": 0.0,
         "paid_boost": 0.02
       },
-      "last_price": 0.000182
-    },
-    "solana:2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump": {
-      "id": "1cc522d498",
-      "chain": "solana",
-      "address": "2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump",
-      "symbol": "Anthropig",
-      "opened": "2026-11-16T01:58:14+00:00",
-      "entry_price": 0.001124,
-      "tokens": 4399.205544834879,
-      "tokens_initial": 4399.205544834879,
-      "cost_usd": 5.0,
-      "fees_usd": 0.0553,
-      "realized_usd": 0.0,
-      "peak_gain": 0.1307829181494662,
-      "tp_hit": [],
-      "entry_liq": 76800.3,
-      "score": 0.4188,
-      "features": {
-        "liq_quality": 0.8696,
-        "turnover": 0.413,
-        "buy_pressure": 0.9032,
-        "momentum_accel": 0.0,
-        "not_vertical": 1.0,
-        "age_sweet": 0.9645,
-        "socials": 0.65,
-        "fdv_sanity": 0.7889,
-        "txn_depth": 0.1753,
-        "dip_in_uptrend": 0.0,
-        "buzz": 0.0,
-        "paid_boost": 0.2
-      },
-      "last_price": 0.0007541
+      "last_price": 0.0001858
     },
     "solana:G9ZMir6uh66Y7viPkXAy7myA9jjE4T1YgheVUmGDpump": {
       "id": "ea1cba2cad",
@@ -133,7 +101,7 @@
         "buzz": 0.1667,
         "paid_boost": 0.06
       },
-      "last_price": 0.0001833
+      "last_price": 0.0001772
     }
   },
   "blacklist": {
@@ -168,7 +136,8 @@
     "solana:HQjXLbFPkpJP1BmF55DgXj9F6614FURvGLKuyCZQpump": "2026-11-16T01:57:46+00:00",
     "solana:9iG6qBMgzzuYyq2kfXcAD49bkTFrpGp5gr1QHJiZMwoi": "2026-11-16T06:08:09+00:00",
     "solana:HkRQ6Qcadi5yuoNpZdA1Q7yVF3r7LdEmAw1aKkSxpump": "2026-11-16T07:00:09+00:00",
-    "bsc:0x40D88e7F232Bf94A888eaA4f1905Eb28941e4860": "2026-11-16T10:37:09+00:00"
+    "bsc:0x40D88e7F232Bf94A888eaA4f1905Eb28941e4860": "2026-11-16T10:37:09+00:00",
+    "solana:2NUaS6Gfrm5rBuPBn7svHka8t33SrSkpXGQiUvZLpump": "2026-11-16T10:52:09+00:00"
   },
   "halted": false,
   "halt_reason": "",
@@ -379,15 +348,15 @@
     "trades_today": 7
   },
   "stats": {
-    "ticks": 2261,
+    "ticks": 2266,
     "opened": 42,
-    "closed": 38,
+    "closed": 39,
     "wins": 4,
-    "losses": 34,
-    "fees_paid": 52.713559843063074,
-    "realized_pnl": -130.6173094470815
+    "losses": 35,
+    "fees_paid": 52.75605442226646,
+    "realized_pnl": -132.4673005623982
   },
-  "updated": "2026-11-16T10:51:09+00:00",
+  "updated": "2026-11-16T10:57:29+00:00",
   "run1_final_equity": 322.5674,
-  "last_scan": "2026-11-16T10:44:09+00:00"
+  "last_scan": "2026-11-16T10:56:09+00:00"
 }
