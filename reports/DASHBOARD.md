@@ -1,35 +1,36 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-16T01:58:16+00:00`
+Updated `2026-11-16T06:09:41+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$372.60** |
-| Return | **-25.48%** (start $500.00) |
-| Cash | $355.28 |
-| Deployed | $17.32 (4.6%) |
+| Equity | **$369.76** |
+| Return | **-26.05%** (start $500.00) |
+| Cash | $353.34 |
+| Deployed | $16.42 (4.4%) |
 | Open positions | 4 / 8 |
-| Closed trades | 35 (4W / 31L, WR 11%) |
+| Closed trades | 36 (4W / 32L, WR 11%) |
 | Profit factor | 0.37 |
-| Fees + slippage paid | $52.33 |
-| Ticks run | 2001 |
+| Fees + slippage paid | $52.43 |
+| Ticks run | 2002 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| Macca | ethereum | $5.00 | $2.15 | +9% | +29% | 6.2h |
-| WISHMAS | solana | $5.00 | $5.18 | +5% | +5% | 1.4h |
-| Anthropig | solana | $5.00 | $4.94 | +0% | +0% | 0.0h |
-| Neil | solana | $5.00 | $4.94 | +0% | +0% | 0.0h |
+| Macca | ethereum | $5.00 | $2.23 | +13% | +29% | 10.4h |
+| WISHMAS | solana | $5.00 | $4.53 | -8% | +5% | 5.6h |
+| Anthropig | solana | $5.00 | $4.66 | -6% | +0% | 4.2h |
+| Marvin | solana | $5.00 | $4.94 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| Neil | $-1.94 | -39% | 4.2h | stop loss -37% |
 | GTAVI | $-3.57 | -71% | 1.4h | stop loss -70% |
 | GATO | $-5.00 | -100% | 2.3h | ratchet +55% (peak +121%) |
 | FOOD | $-1.85 | -37% | 21.4h | stop loss -35% |
@@ -44,39 +45,38 @@ Updated `2026-11-16T01:58:16+00:00`
 | HOGE | $-1.94 | -39% | 0.2h | stop loss -37% |
 | SHIT | $+4.56 | +91% | 14.6h | ratchet +90% (peak +172%) |
 | worth | $-1.96 | -39% | 3.0h | stop loss -37% |
-| 牛逼 | $+3.99 | +80% | 12.2h | ratchet +88% (peak +168%) |
 
-## Learned weights (v169)
+## Learned weights (v170)
 
-_refit on 1806 observations (1699 shadow, 107 real), 494 winners (27% base rate)_
+_refit on 1825 observations (1708 shadow, 117 real), 498 winners (27% base rate)_
 
 | Feature | Weight |
 |---|---|
-| txn_depth | +0.152 |
-| turnover | +0.127 |
-| liq_quality | +0.096 |
-| momentum_accel | +0.065 |
-| buy_pressure | +0.062 |
-| paid_boost | +0.034 |
-| fdv_sanity | +0.030 |
-| not_vertical | -0.029 |
-| dip_in_uptrend | +0.025 |
+| txn_depth | +0.145 |
+| turnover | +0.117 |
+| liq_quality | +0.105 |
+| momentum_accel | +0.066 |
+| buy_pressure | +0.060 |
+| not_vertical | -0.033 |
+| paid_boost | +0.029 |
+| dip_in_uptrend | +0.029 |
+| fdv_sanity | +0.023 |
 | buzz | +0.019 |
-| age_sweet | +0.009 |
-| socials | -0.004 |
+| age_sweet | +0.018 |
+| socials | -0.009 |
 
 ## Last run log
 ```
-tick #2001  equity $376.08  cash $363.84  open 3
-  SELL GTAVI      100% @ $3.006e-05  ->  $1.43   [stop loss -70%]
+tick #2002  equity $372.60  cash $355.28  open 4
+  SELL Neil       100% @ $9.309e-05  ->  $3.06   [stop loss -37%]
   scanning chains + news...
-  60 raw candidates across 2 chains, 160 headlines/posts
-  6 passed gates | rejected: liquidity too thin x44, no h1 volume x8, too old x2
-  top: BUTTHOLE 0.53 | BAWSAQ 0.51 | CYBERDACITY 0.48 | Neil 0.47 | FiveM 0.43
-  tick bar 0.53 (top 10% of 6, floor 0.45)
-  BUY[explore] Anthropig  $5.00 @ $0.001124  score 0.42  solana  liq $76,800
-  BUY[explore] Neil       $5.00 @ $0.0001484  score 0.47  solana  liq $28,904
-  shadow: tracking 47, closed 0 this tick (0 would have won)
+  101 raw candidates across 4 chains, 160 headlines/posts
+  5 passed gates | rejected: liquidity too thin x61, no h1 volume x28, already discovered x4, too old x3
+  top: GTA 0.59 | 6STAR 0.59 | Marvin 0.41 | Anthropig 0.37 | WISHMAS 0.24
+  tick bar 0.59 (top 10% of 5, floor 0.45)
+  BUY[explore] Marvin     $5.00 @ $0.000642  score 0.41  solana  liq $75,165
+  skip WISHMAS: already held
+  shadow: tracking 47, closed 2 this tick (2 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
