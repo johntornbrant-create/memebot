@@ -2,8 +2,8 @@
   "started": "2026-09-22T16:04:55+00:00",
   "restarted": "2026-10-24",
   "run": 2,
-  "cash": 312.12598977245517,
-  "equity": 331.9012,
+  "cash": 310.0706706662228,
+  "equity": 331.2229,
   "positions": {
     "base:0xa4CCdeaeB02e574aaF89EB39bCa73169327dcCcc": {
       "id": "30e0e0405b",
@@ -37,38 +37,6 @@
       },
       "last_price": 0.0001862
     },
-    "solana:Gg5aWvfucyMwihDzyfCEaLgyeeNE2dkob2LTwWfHpump": {
-      "id": "9429c7de77",
-      "chain": "solana",
-      "address": "Gg5aWvfucyMwihDzyfCEaLgyeeNE2dkob2LTwWfHpump",
-      "symbol": "ETF",
-      "opened": "2026-11-17T00:44:36+00:00",
-      "entry_price": 0.0002363,
-      "tokens": 20924.10675481184,
-      "tokens_initial": 20924.10675481184,
-      "cost_usd": 5.0,
-      "fees_usd": 0.0556,
-      "realized_usd": 0.0,
-      "peak_gain": 0.18662716885315267,
-      "tp_hit": [],
-      "entry_liq": 35512.83,
-      "score": 0.5907,
-      "features": {
-        "liq_quality": 0.5236,
-        "turnover": 0.8413,
-        "buy_pressure": 0.648,
-        "momentum_accel": 0.0,
-        "not_vertical": 1.0,
-        "age_sweet": 0.9953,
-        "socials": 0.8,
-        "fdv_sanity": 0.9658,
-        "txn_depth": 0.5634,
-        "dip_in_uptrend": 0.0,
-        "buzz": 0.6667,
-        "paid_boost": 0.02
-      },
-      "last_price": 0.0001663
-    },
     "solana:2NWgu4fqN2AxS5pp5v3f3SH54qArP9JepQFJm58gpump": {
       "id": "eaf661114f",
       "chain": "solana",
@@ -99,7 +67,7 @@
         "buzz": 1.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.001264
+      "last_price": 0.001268
     },
     "solana:2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump": {
       "id": "7e959eaa88",
@@ -131,7 +99,7 @@
         "buzz": 0.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.001186
+      "last_price": 0.001166
     },
     "ethereum:0xbCc061C85232Fb7653CD27a182Eb4ce1141bD40f": {
       "id": "7aaeebd2f8",
@@ -163,7 +131,39 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.000181
+      "last_price": 0.0001755
+    },
+    "bsc:0x0f5a924288F85e4D417CCCd150e0dBEc98F02Ca8": {
+      "id": "4fb560ffca",
+      "chain": "bsc",
+      "address": "0x0f5a924288F85e4D417CCCd150e0dBEc98F02Ca8",
+      "symbol": "BLG Champion",
+      "opened": "2026-11-17T10:56:35+00:00",
+      "entry_price": 4.3,
+      "tokens": 1.1430140355297236,
+      "tokens_initial": 1.1430140355297236,
+      "cost_usd": 5.0,
+      "fees_usd": 0.085,
+      "realized_usd": 0.0,
+      "peak_gain": 0.0,
+      "tp_hit": [],
+      "entry_liq": 567505.08,
+      "score": 0.5737,
+      "features": {
+        "liq_quality": 0.5758,
+        "turnover": 0.8089,
+        "buy_pressure": 1.0,
+        "momentum_accel": 0.0,
+        "not_vertical": 1.0,
+        "age_sweet": 0.4693,
+        "socials": 0.35,
+        "fdv_sanity": 0.2676,
+        "txn_depth": 0.612,
+        "dip_in_uptrend": 0.0,
+        "buzz": 0.0,
+        "paid_boost": 0.0
+      },
+      "last_price": 4.3
     }
   },
   "blacklist": {
@@ -206,11 +206,12 @@
     "bsc:0x09127Ecb8B7345b04a8b07F3933c53f636197777": "2026-11-17T02:37:20+00:00",
     "ethereum:0xF9233998F9ad14B5677c2C59F60462E51625EDab": "2026-11-17T07:43:14+00:00",
     "ethereum:0x028470f23F52511823A713756c14dE8b754D81E4": "2026-11-17T09:09:14+00:00",
-    "ethereum:0xeE2e865260FBB1B41a4741878FCC60BF2BBca886": "2026-11-17T10:18:14+00:00"
+    "ethereum:0xeE2e865260FBB1B41a4741878FCC60BF2BBca886": "2026-11-17T10:18:14+00:00",
+    "solana:Gg5aWvfucyMwihDzyfCEaLgyeeNE2dkob2LTwWfHpump": "2026-11-17T10:54:14+00:00"
   },
   "halted": false,
   "halt_reason": "",
-  "last_entry": "2026-11-17T09:44:35+00:00",
+  "last_entry": "2026-11-17T10:56:35+00:00",
   "equity_history": [
     [
       "2026-11-08T16:11:27+00:00",
@@ -438,18 +439,18 @@
     "day_equity": 355.581,
     "week": "2026-W47",
     "week_equity": 376.1629,
-    "trades_today": 9
+    "trades_today": 10
   },
   "stats": {
-    "ticks": 2613,
-    "opened": 54,
-    "closed": 49,
+    "ticks": 2618,
+    "opened": 55,
+    "closed": 50,
     "wins": 5,
-    "losses": 44,
-    "fees_paid": 89.65191372630555,
-    "realized_pnl": -162.87401022754483
+    "losses": 45,
+    "fees_paid": 89.7781425136718,
+    "realized_pnl": -164.92932933377725
   },
-  "updated": "2026-11-17T10:50:14+00:00",
+  "updated": "2026-11-17T10:56:36+00:00",
   "run1_final_equity": 322.5674,
-  "last_scan": "2026-11-17T10:43:14+00:00"
+  "last_scan": "2026-11-17T10:55:14+00:00"
 }

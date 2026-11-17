@@ -1,36 +1,37 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-17T10:44:36+00:00`
+Updated `2026-11-17T10:56:36+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$331.90** |
-| Return | **-33.62%** (start $500.00) |
-| Cash | $312.13 |
-| Deployed | $19.77 (6.0%) |
+| Equity | **$331.22** |
+| Return | **-33.76%** (start $500.00) |
+| Cash | $310.07 |
+| Deployed | $21.15 (6.4%) |
 | Open positions | 5 / 8 |
-| Closed trades | 49 (5W / 44L, WR 10%) |
+| Closed trades | 50 (5W / 45L, WR 10%) |
 | Profit factor | 0.34 |
-| Fees + slippage paid | $89.65 |
-| Ticks run | 2607 |
+| Fees + slippage paid | $89.78 |
+| Ticks run | 2618 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| TE | base | $5.00 | $3.62 | -27% | +10% | 12.4h |
-| ETF | solana | $5.00 | $3.54 | -28% | +19% | 10.0h |
-| GTA | solana | $5.00 | $5.19 | +5% | +10% | 9.4h |
-| LEOSTAR | solana | $5.00 | $4.80 | -3% | +6% | 3.0h |
-| GTA6 | ethereum | $5.00 | $2.62 | +34% | +39% | 1.0h |
+| TE | base | $5.00 | $3.60 | -27% | +10% | 12.6h |
+| GTA | solana | $5.00 | $5.21 | +5% | +10% | 9.6h |
+| LEOSTAR | solana | $5.00 | $4.97 | +1% | +6% | 3.2h |
+| GTA6 | ethereum | $5.00 | $2.37 | +21% | +39% | 1.2h |
+| BLG Champion | bsc | $5.00 | $4.91 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
 | Token | P&L | % | Held | Exit reason |
 |---|---|---|---|---|
+| ETF | $-2.06 | -41% | 10.2h | stop loss -40% |
 | BLG Champion | $-0.20 | -4% | 1.0h | ratchet +0% (peak +44%) |
 | GTAPEPE | $-5.00 | -100% | 1.6h | ratchet +85% (peak +164%) |
 | KATIA | $-5.00 | -100% | 1.0h | stop loss -79% |
@@ -45,7 +46,6 @@ Updated `2026-11-17T10:44:36+00:00`
 | Anthropig | $-5.00 | -100% | 17.8h | stop loss -100% |
 | Marvin | $-2.04 | -41% | 0.8h | stop loss -39% |
 | Neil | $-1.94 | -39% | 4.2h | stop loss -37% |
-| GTAVI | $-3.57 | -71% | 1.4h | stop loss -70% |
 
 ## Learned weights (v171)
 
@@ -68,42 +68,42 @@ _refit on 1836 observations (1717 shadow, 119 real), 503 winners (27% base rate)
 
 ## Last run log
 ```
-  skip LEOSTAR: already held
-  skip BAWSAQ: solana concentration cap
+  tick bar 0.58 (top 10% of 9, floor 0.45)
+  skip GTA6: already held
   no entries this tick
   shadow: tracking 37, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
-done. equity $332.58 (-33.48% since start)
-tick #2597  equity $332.58  cash $312.13  open 5
-exits-only pass. equity $332.96 (next scan in 10 min)
-tick #2598  equity $332.96  cash $312.13  open 5
-exits-only pass. equity $332.93 (next scan in 9 min)
-tick #2599  equity $332.93  cash $312.13  open 5
-exits-only pass. equity $332.95 (next scan in 8 min)
-tick #2600  equity $332.95  cash $312.13  open 5
-exits-only pass. equity $332.73 (next scan in 7 min)
-tick #2601  equity $332.73  cash $312.13  open 5
-exits-only pass. equity $332.62 (next scan in 6 min)
-tick #2602  equity $332.62  cash $312.13  open 5
-exits-only pass. equity $332.55 (next scan in 5 min)
-tick #2603  equity $332.55  cash $312.13  open 5
-exits-only pass. equity $332.46 (next scan in 4 min)
-tick #2604  equity $332.46  cash $312.13  open 5
-exits-only pass. equity $332.36 (next scan in 3 min)
-tick #2605  equity $332.36  cash $312.13  open 5
-exits-only pass. equity $332.19 (next scan in 2 min)
-tick #2606  equity $332.19  cash $312.13  open 5
-exits-only pass. equity $332.05 (next scan in 1 min)
-tick #2607  equity $332.05  cash $312.13  open 5
+done. equity $331.90 (-33.62% since start)
+tick #2608  equity $331.90  cash $312.13  open 5
+exits-only pass. equity $331.93 (next scan in 10 min)
+tick #2609  equity $331.93  cash $312.13  open 5
+exits-only pass. equity $332.04 (next scan in 9 min)
+tick #2610  equity $332.04  cash $312.13  open 5
+exits-only pass. equity $331.87 (next scan in 8 min)
+tick #2611  equity $331.87  cash $312.13  open 5
+exits-only pass. equity $331.83 (next scan in 7 min)
+tick #2612  equity $331.83  cash $312.13  open 5
+exits-only pass. equity $331.91 (next scan in 6 min)
+tick #2613  equity $331.91  cash $312.13  open 5
+exits-only pass. equity $331.90 (next scan in 5 min)
+tick #2614  equity $331.90  cash $312.13  open 5
+exits-only pass. equity $331.92 (next scan in 4 min)
+tick #2615  equity $331.92  cash $312.13  open 5
+exits-only pass. equity $331.72 (next scan in 3 min)
+tick #2616  equity $331.72  cash $312.13  open 5
+exits-only pass. equity $331.88 (next scan in 2 min)
+tick #2617  equity $331.88  cash $312.13  open 5
+  SELL ETF        100% @ $0.0001427  ->  $2.94   [stop loss -40%]
+exits-only pass. equity $331.20 (next scan in 1 min)
+tick #2618  equity $331.20  cash $315.07  open 4
   scanning chains + news...
-  115 raw candidates across 6 chains, 159 headlines/posts
-  9 passed gates | rejected: liquidity too thin x71, no h1 volume x17, too old x12, already discovered x5, too new (bot war) x1
-  top: GTA6 0.58 | BLG Champion 0.58 | Rocco 0.51 | CHAR 0.49 | GTA 0.44
-  tick bar 0.58 (top 10% of 9, floor 0.45)
-  skip GTA6: already held
-  no entries this tick
+  114 raw candidates across 6 chains, 159 headlines/posts
+  8 passed gates | rejected: liquidity too thin x72, no h1 volume x16, too old x12, already discovered x5, too new (bot war) x1
+  top: BLG Champion 0.57 | Rocco 0.49 | GTA 0.45 | Macca 0.39 | BAWSAQ 0.35
+  tick bar 0.57 (top 10% of 8, floor 0.45)
+  BUY[exploit] BLG Champion $5.00 @ $4.3  score 0.57  bsc  liq $567,505
   shadow: tracking 37, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
