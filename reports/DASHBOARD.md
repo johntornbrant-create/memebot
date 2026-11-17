@@ -1,31 +1,31 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-17T01:56:34+00:00`
+Updated `2026-11-17T02:08:43+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$352.02** |
-| Return | **-29.60%** (start $500.00) |
+| Equity | **$351.92** |
+| Return | **-29.62%** (start $500.00) |
 | Cash | $329.60 |
-| Deployed | $22.42 (6.4%) |
+| Deployed | $22.32 (6.3%) |
 | Open positions | 5 / 8 |
 | Closed trades | 43 (5W / 38L, WR 12%) |
 | Profit factor | 0.36 |
 | Fees + slippage paid | $62.14 |
-| Ticks run | 2401 |
+| Ticks run | 2412 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| GTA | solana | $5.00 | $5.14 | +4% | +39% | 18.8h |
-| TE | base | $5.00 | $3.72 | -25% | +10% | 3.6h |
-| ETF | solana | $5.00 | $4.83 | -2% | +13% | 1.2h |
-| 现货不怕 | bsc | $5.00 | $4.06 | -17% | +0% | 0.8h |
-| GTA | solana | $5.00 | $4.67 | -5% | +1% | 0.6h |
+| GTA | solana | $5.00 | $5.22 | +5% | +39% | 19.0h |
+| TE | base | $5.00 | $3.70 | -25% | +10% | 3.8h |
+| ETF | solana | $5.00 | $5.46 | +10% | +13% | 1.4h |
+| 现货不怕 | bsc | $5.00 | $3.50 | -29% | +0% | 1.0h |
+| GTA | solana | $5.00 | $4.45 | -10% | +1% | 0.8h |
 
 ## Last closed trades
 
@@ -68,43 +68,43 @@ _refit on 1836 observations (1717 shadow, 119 real), 503 winners (27% base rate)
 
 ## Last run log
 ```
-  tick bar 0.53 (top 10% of 4, floor 0.45)
+  tick bar 0.52 (top 10% of 5, floor 0.45)
   skip GTA: already held
   no entries this tick
   shadow: tracking 33, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
-done. equity $351.43 (-29.71% since start)
-tick #2391  equity $351.43  cash $329.60  open 5
-exits-only pass. equity $351.69 (next scan in 10 min)
-tick #2392  equity $351.69  cash $329.60  open 5
-exits-only pass. equity $351.89 (next scan in 9 min)
-tick #2393  equity $351.89  cash $329.60  open 5
-exits-only pass. equity $351.55 (next scan in 8 min)
-tick #2394  equity $351.55  cash $329.60  open 5
-exits-only pass. equity $351.69 (next scan in 7 min)
-tick #2395  equity $351.69  cash $329.60  open 5
-exits-only pass. equity $351.60 (next scan in 6 min)
-tick #2396  equity $351.60  cash $329.60  open 5
-exits-only pass. equity $351.75 (next scan in 5 min)
-tick #2397  equity $351.75  cash $329.60  open 5
-exits-only pass. equity $352.00 (next scan in 4 min)
-tick #2398  equity $352.00  cash $329.60  open 5
-exits-only pass. equity $352.14 (next scan in 3 min)
-tick #2399  equity $352.14  cash $329.60  open 5
-exits-only pass. equity $351.94 (next scan in 2 min)
-tick #2400  equity $351.94  cash $329.60  open 5
-exits-only pass. equity $351.86 (next scan in 1 min)
-tick #2401  equity $351.86  cash $329.60  open 5
+done. equity $352.02 (-29.60% since start)
+tick #2402  equity $352.02  cash $329.60  open 5
+exits-only pass. equity $352.12 (next scan in 10 min)
+tick #2403  equity $352.12  cash $329.60  open 5
+exits-only pass. equity $352.01 (next scan in 9 min)
+tick #2404  equity $352.01  cash $329.60  open 5
+exits-only pass. equity $352.39 (next scan in 8 min)
+tick #2405  equity $352.39  cash $329.60  open 5
+exits-only pass. equity $352.16 (next scan in 7 min)
+tick #2406  equity $352.16  cash $329.60  open 5
+exits-only pass. equity $352.14 (next scan in 6 min)
+tick #2407  equity $352.14  cash $329.60  open 5
+exits-only pass. equity $352.01 (next scan in 5 min)
+tick #2408  equity $352.01  cash $329.60  open 5
+exits-only pass. equity $352.15 (next scan in 4 min)
+tick #2409  equity $352.15  cash $329.60  open 5
+exits-only pass. equity $352.10 (next scan in 3 min)
+tick #2410  equity $352.10  cash $329.60  open 5
+exits-only pass. equity $352.04 (next scan in 2 min)
+tick #2411  equity $352.04  cash $329.60  open 5
+exits-only pass. equity $352.00 (next scan in 1 min)
+tick #2412  equity $352.00  cash $329.60  open 5
   scanning chains + news...
-  176 raw candidates across 10 chains, 159 headlines/posts
-  5 passed gates | rejected: liquidity too thin x95, no h1 volume x55, too old x13, already discovered x7, unknown age x1
-  top: GTA 0.52 | ETF 0.52 | BAWSAQ 0.48 | LEOSTAR 0.41 | COGE 0.37
-  tick bar 0.52 (top 10% of 5, floor 0.45)
-  skip GTA: already held
+  178 raw candidates across 9 chains, 159 headlines/posts
+  8 passed gates | rejected: liquidity too thin x118, no h1 volume x36, too old x12, already discovered x3, too new (bot war) x1
+  top: ETF 0.59 | LEOSTAR 0.49 | GTA 0.48 | BAWSAQ 0.47 | HOGE 0.46
+  tick bar 0.59 (top 10% of 8, floor 0.45)
+  skip ETF: already held
   no entries this tick
-  shadow: tracking 33, closed 0 this tick (0 would have won)
+  shadow: tracking 32, closed 3 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
