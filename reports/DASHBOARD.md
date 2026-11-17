@@ -1,31 +1,31 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-17T13:35:12+00:00`
+Updated `2026-11-17T19:56:33+00:00`
 
-> 🛑 **HALTED** — KILL SWITCH: equity $323.80 below $325.00. Manual reset required.
+> 🛑 **HALTED** — KILL SWITCH: equity $321.58 below $325.00. Manual reset required.
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$323.80** |
-| Return | **-35.24%** (start $500.00) |
+| Equity | **$321.58** |
+| Return | **-35.68%** (start $500.00) |
 | Cash | $311.54 |
-| Deployed | $12.26 (3.8%) |
+| Deployed | $10.04 (3.1%) |
 | Open positions | 3 / 8 |
 | Closed trades | 52 (5W / 47L, WR 10%) |
 | Profit factor | 0.34 |
 | Fees + slippage paid | $89.86 |
-| Ticks run | 2630 |
+| Ticks run | 2631 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| TE | base | $5.00 | $4.03 | -18% | +10% | 15.2h |
-| GTA | solana | $5.00 | $5.89 | +19% | +19% | 12.2h |
-| GTA6 | ethereum | $5.00 | $2.34 | +19% | +39% | 3.8h |
+| TE | base | $5.00 | $3.91 | -21% | +10% | 21.6h |
+| GTA | solana | $5.00 | $4.47 | -10% | +19% | 18.6h |
+| GTA6 | ethereum | $5.00 | $1.65 | -16% | +39% | 10.2h |
 
 ## Last closed trades
 
@@ -47,39 +47,37 @@ Updated `2026-11-17T13:35:12+00:00`
 | 1.0 | $-5.00 | -100% | 7.8h | stop loss -99% |
 | Anthropig | $-5.00 | -100% | 17.8h | stop loss -100% |
 
-## Learned weights (v171)
+## Learned weights (v172)
 
-_refit on 1836 observations (1717 shadow, 119 real), 503 winners (27% base rate)_
+_refit on 1897 observations (1763 shadow, 134 real), 513 winners (27% base rate)_
 
 | Feature | Weight |
 |---|---|
-| txn_depth | +0.143 |
-| turnover | +0.120 |
-| liq_quality | +0.104 |
-| momentum_accel | +0.070 |
-| buy_pressure | +0.061 |
+| liq_quality | +0.138 |
+| txn_depth | +0.135 |
+| turnover | +0.127 |
+| momentum_accel | +0.072 |
+| buy_pressure | +0.049 |
+| fdv_sanity | +0.042 |
+| not_vertical | -0.041 |
+| buzz | +0.029 |
 | paid_boost | +0.028 |
-| not_vertical | -0.028 |
 | dip_in_uptrend | +0.027 |
-| fdv_sanity | +0.024 |
-| buzz | +0.023 |
-| age_sweet | +0.013 |
-| socials | -0.006 |
+| socials | +0.014 |
+| age_sweet | +0.006 |
 
 ## Last run log
 ```
-tick #2630  equity $332.22  cash $310.07  open 5
-  SELL LEOSTAR    100% @ $1.972e-06  ->  $0.00   [stop loss -100%]
-  SELL BLG Champion 100% @ $1.34  ->  $1.47   [stop loss -69%]
+tick #2631  equity $323.80  cash $311.54  open 3
   scanning chains + news...
-  117 raw candidates across 7 chains, 119 headlines/posts
-  3 passed gates | rejected: liquidity too thin x82, no h1 volume x23, too old x6, already discovered x3
-  top: HOGE 0.65 | GROKIA 0.59 | GTA 0.39
-  tick bar 0.65 (top 10% of 3, floor 0.45)
+  106 raw candidates across 5 chains, 157 headlines/posts
+  8 passed gates | rejected: liquidity too thin x62, no h1 volume x23, unknown age x6, too old x5, already discovered x2
+  top: CSI 0.69 | CYBERLEEK 0.67 | GTA 0.60 | JALU 0.50 | GM 0.46
+  tick bar 0.68 (top 10% of 8, floor 0.45)
   no entries this tick
-  shadow: tracking 36, closed 3 this tick (0 would have won)
+  shadow: tracking 33, closed 9 this tick (3 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
-  entries blocked: KILL SWITCH: equity $323.80 below $325.00. Manual reset required.
+  entries blocked: KILL SWITCH: equity $321.58 below $325.00. Manual reset required.
 ```
