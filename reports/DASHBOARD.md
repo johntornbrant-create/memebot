@@ -1,30 +1,30 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-17T21:11:03+00:00`
+Updated `2026-11-17T21:23:06+00:00`
 
-> 🛑 **HALTED** — KILL SWITCH: equity $317.52 below $325.00. Manual reset required.
+> 🛑 **HALTED** — KILL SWITCH: equity $317.47 below $325.00. Manual reset required.
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$317.52** |
-| Return | **-36.50%** (start $500.00) |
+| Equity | **$317.47** |
+| Return | **-36.51%** (start $500.00) |
 | Cash | $311.54 |
-| Deployed | $5.98 (1.9%) |
+| Deployed | $5.93 (1.9%) |
 | Open positions | 2 / 8 |
 | Closed trades | 53 (5W / 48L, WR 9%) |
 | Profit factor | 0.33 |
 | Fees + slippage paid | $89.88 |
-| Ticks run | 2654 |
+| Ticks run | 2665 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| TE | base | $5.00 | $3.85 | -22% | +10% | 22.8h |
-| GTA6 | ethereum | $5.00 | $2.13 | +9% | +39% | 11.4h |
+| TE | base | $5.00 | $3.92 | -21% | +10% | 23.0h |
+| GTA6 | ethereum | $5.00 | $2.01 | +2% | +39% | 11.6h |
 
 ## Last closed trades
 
@@ -67,39 +67,6 @@ _refit on 1897 observations (1763 shadow, 134 real), 513 winners (27% base rate)
 
 ## Last run log
 ```
-  tick bar 0.68 (top 10% of 5, floor 0.45)
-  no entries this tick
-  shadow: tracking 36, closed 0 this tick (0 would have won)
-    MISSED NI         peak +277296%  (scored 0.21)
-    MISSED GTAX       peak +11365%  (scored 0.25)
-    MISSED e/acc      peak +5180%  (scored 0.58)
-  entries blocked: KILL SWITCH: equity $317.42 below $325.00. Manual reset required.
-done. equity $317.42 (-36.52% since start)
-tick #2644  equity $317.42  cash $311.54  open 2
-exits-only pass. equity $317.32 (next scan in 10 min)
-tick #2645  equity $317.32  cash $311.54  open 2
-exits-only pass. equity $317.32 (next scan in 9 min)
-tick #2646  equity $317.32  cash $311.54  open 2
-exits-only pass. equity $317.32 (next scan in 8 min)
-tick #2647  equity $317.32  cash $311.54  open 2
-exits-only pass. equity $317.32 (next scan in 7 min)
-tick #2648  equity $317.32  cash $311.54  open 2
-exits-only pass. equity $317.51 (next scan in 6 min)
-tick #2649  equity $317.51  cash $311.54  open 2
-exits-only pass. equity $317.48 (next scan in 5 min)
-tick #2650  equity $317.48  cash $311.54  open 2
-exits-only pass. equity $317.48 (next scan in 4 min)
-tick #2651  equity $317.48  cash $311.54  open 2
-exits-only pass. equity $317.61 (next scan in 3 min)
-tick #2652  equity $317.61  cash $311.54  open 2
-exits-only pass. equity $317.52 (next scan in 2 min)
-tick #2653  equity $317.52  cash $311.54  open 2
-exits-only pass. equity $317.52 (next scan in 1 min)
-tick #2654  equity $317.52  cash $311.54  open 2
-  scanning chains + news...
-  200 raw candidates across 10 chains, 157 headlines/posts
-  4 passed gates | rejected: liquidity too thin x118, no h1 volume x58, too old x8, unknown age x7, already discovered x3
-  top: LUNO 0.71 | LUCIASS 0.59 | JALU 0.53 | REFU 0.34
   tick bar 0.68 (top 10% of 4, floor 0.45)
   no entries this tick
   shadow: tracking 37, closed 0 this tick (0 would have won)
@@ -107,4 +74,37 @@ tick #2654  equity $317.52  cash $311.54  open 2
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
   entries blocked: KILL SWITCH: equity $317.52 below $325.00. Manual reset required.
+done. equity $317.52 (-36.50% since start)
+tick #2655  equity $317.52  cash $311.54  open 2
+exits-only pass. equity $317.58 (next scan in 10 min)
+tick #2656  equity $317.58  cash $311.54  open 2
+exits-only pass. equity $317.67 (next scan in 9 min)
+tick #2657  equity $317.67  cash $311.54  open 2
+exits-only pass. equity $317.67 (next scan in 8 min)
+tick #2658  equity $317.67  cash $311.54  open 2
+exits-only pass. equity $317.59 (next scan in 7 min)
+tick #2659  equity $317.59  cash $311.54  open 2
+exits-only pass. equity $317.59 (next scan in 6 min)
+tick #2660  equity $317.59  cash $311.54  open 2
+exits-only pass. equity $317.66 (next scan in 5 min)
+tick #2661  equity $317.66  cash $311.54  open 2
+exits-only pass. equity $317.58 (next scan in 4 min)
+tick #2662  equity $317.58  cash $311.54  open 2
+exits-only pass. equity $317.58 (next scan in 3 min)
+tick #2663  equity $317.58  cash $311.54  open 2
+exits-only pass. equity $317.45 (next scan in 2 min)
+tick #2664  equity $317.45  cash $311.54  open 2
+exits-only pass. equity $317.47 (next scan in 1 min)
+tick #2665  equity $317.47  cash $311.54  open 2
+  scanning chains + news...
+  169 raw candidates across 9 chains, 157 headlines/posts
+  7 passed gates | rejected: liquidity too thin x97, no h1 volume x47, too old x8, unknown age x7, already discovered x3
+  top: LUNO 0.73 | mihao 0.73 | KATIA 0.66 | GTAVI 0.60 | LUCIASS 0.57
+  tick bar 0.68 (top 10% of 7, floor 0.45)
+  no entries this tick
+  shadow: tracking 40, closed 0 this tick (0 would have won)
+    MISSED NI         peak +277296%  (scored 0.21)
+    MISSED GTAX       peak +11365%  (scored 0.25)
+    MISSED e/acc      peak +5180%  (scored 0.58)
+  entries blocked: KILL SWITCH: equity $317.47 below $325.00. Manual reset required.
 ```
