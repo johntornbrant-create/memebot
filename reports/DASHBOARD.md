@@ -1,31 +1,32 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-17T12:08:37+00:00`
+Updated `2026-11-17T12:20:37+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$327.82** |
-| Return | **-34.44%** (start $500.00) |
-| Cash | $308.14 |
-| Deployed | $19.68 (6.0%) |
-| Open positions | 5 / 8 |
+| Equity | **$326.55** |
+| Return | **-34.69%** (start $500.00) |
+| Cash | $303.14 |
+| Deployed | $23.41 (7.2%) |
+| Open positions | 6 / 8 |
 | Closed trades | 51 (5W / 46L, WR 10%) |
 | Profit factor | 0.34 |
-| Fees + slippage paid | $92.89 |
-| Ticks run | 2684 |
+| Fees + slippage paid | $92.94 |
+| Ticks run | 2695 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| TE | base | $5.00 | $3.60 | -27% | +10% | 13.8h |
-| GTA | solana | $5.00 | $5.47 | +11% | +17% | 10.8h |
-| LEOSTAR | solana | $5.00 | $6.21 | +26% | +36% | 4.4h |
-| GTA6 | ethereum | $5.00 | $2.10 | +7% | +39% | 2.4h |
-| POPO | ethereum | $5.00 | $2.30 | +17% | +17% | 0.2h |
+| TE | base | $5.00 | $3.60 | -27% | +10% | 14.0h |
+| GTA | solana | $5.00 | $5.30 | +7% | +17% | 11.0h |
+| LEOSTAR | solana | $5.00 | $5.84 | +18% | +36% | 4.6h |
+| GTA6 | ethereum | $5.00 | $2.25 | +15% | +39% | 2.6h |
+| POPO | ethereum | $5.00 | $1.43 | -27% | +17% | 0.4h |
+| BAWSAQ | solana | $5.00 | $4.94 | +0% | +0% | 0.0h |
 
 ## Last closed trades
 
@@ -68,43 +69,43 @@ _refit on 1836 observations (1717 shadow, 119 real), 503 winners (27% base rate)
 
 ## Last run log
 ```
-  top: POPO 0.88 | BLG Champion 0.61 | BAWSAQ 0.48 | GTA 0.46 | LEOSTAR 0.44
-  tick bar 0.66 (top 10% of 9, floor 0.45)
-  BUY[exploit] POPO       $5.00 @ $0.0001002  score 0.88  ethereum  liq $25,196
-  shadow: tracking 40, closed 0 this tick (0 would have won)
-    MISSED NI         peak +277296%  (scored 0.21)
-    MISSED GTAX       peak +11365%  (scored 0.25)
-    MISSED e/acc      peak +5180%  (scored 0.58)
-done. equity $329.36 (-34.13% since start)
-tick #2674  equity $329.36  cash $308.14  open 5
-exits-only pass. equity $326.49 (next scan in 10 min)
-tick #2675  equity $326.49  cash $308.14  open 5
-exits-only pass. equity $326.74 (next scan in 9 min)
-tick #2676  equity $326.74  cash $308.14  open 5
-exits-only pass. equity $326.57 (next scan in 8 min)
-tick #2677  equity $326.57  cash $308.14  open 5
-exits-only pass. equity $326.49 (next scan in 7 min)
-tick #2678  equity $326.49  cash $308.14  open 5
-exits-only pass. equity $326.75 (next scan in 6 min)
-tick #2679  equity $326.75  cash $308.14  open 5
-exits-only pass. equity $326.74 (next scan in 5 min)
-tick #2680  equity $326.74  cash $308.14  open 5
-exits-only pass. equity $327.12 (next scan in 4 min)
-tick #2681  equity $327.12  cash $308.14  open 5
-exits-only pass. equity $327.19 (next scan in 3 min)
-tick #2682  equity $327.19  cash $308.14  open 5
-exits-only pass. equity $327.12 (next scan in 2 min)
-tick #2683  equity $327.12  cash $308.14  open 5
-exits-only pass. equity $327.20 (next scan in 1 min)
-tick #2684  equity $327.20  cash $308.14  open 5
-  scanning chains + news...
-  102 raw candidates across 9 chains, 159 headlines/posts
-  6 passed gates | rejected: liquidity too thin x64, no h1 volume x26, too old x5, sell pressure x1
   top: POPO 0.73 | BLG Champion 0.61 | BAWSAQ 0.43 | CHAR 0.42 | GROKIA 0.37
   tick bar 0.66 (top 10% of 6, floor 0.45)
   skip POPO: already held
   no entries this tick
   shadow: tracking 37, closed 3 this tick (0 would have won)
+    MISSED NI         peak +277296%  (scored 0.21)
+    MISSED GTAX       peak +11365%  (scored 0.25)
+    MISSED e/acc      peak +5180%  (scored 0.58)
+done. equity $327.82 (-34.44% since start)
+tick #2685  equity $327.82  cash $308.14  open 5
+exits-only pass. equity $327.26 (next scan in 10 min)
+tick #2686  equity $327.26  cash $308.14  open 5
+exits-only pass. equity $327.00 (next scan in 9 min)
+tick #2687  equity $327.00  cash $308.14  open 5
+exits-only pass. equity $327.06 (next scan in 8 min)
+tick #2688  equity $327.06  cash $308.14  open 5
+exits-only pass. equity $326.88 (next scan in 7 min)
+tick #2689  equity $326.88  cash $308.14  open 5
+exits-only pass. equity $326.89 (next scan in 6 min)
+tick #2690  equity $326.89  cash $308.14  open 5
+exits-only pass. equity $326.95 (next scan in 5 min)
+tick #2691  equity $326.95  cash $308.14  open 5
+exits-only pass. equity $326.90 (next scan in 4 min)
+tick #2692  equity $326.90  cash $308.14  open 5
+exits-only pass. equity $326.66 (next scan in 3 min)
+tick #2693  equity $326.66  cash $308.14  open 5
+exits-only pass. equity $326.82 (next scan in 2 min)
+tick #2694  equity $326.82  cash $308.14  open 5
+exits-only pass. equity $326.65 (next scan in 1 min)
+tick #2695  equity $326.65  cash $308.14  open 5
+  scanning chains + news...
+  104 raw candidates across 9 chains, 159 headlines/posts
+  4 passed gates | rejected: liquidity too thin x66, no h1 volume x28, too old x5, sell pressure x1
+  top: BAWSAQ 0.66 | CHAR 0.46 | GROKIA 0.33 | LEOSTAR 0.33
+  tick bar 0.66 (top 10% of 4, floor 0.45)
+  BUY[exploit] BAWSAQ     $5.00 @ $0.001763  score 0.66  solana  liq $101,604
+  shadow: tracking 37, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
