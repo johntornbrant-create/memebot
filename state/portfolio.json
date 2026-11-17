@@ -2,41 +2,9 @@
   "started": "2026-09-22T16:04:55+00:00",
   "restarted": "2026-10-24",
   "run": 2,
-  "cash": 311.5415814368504,
-  "equity": 317.1187,
+  "cash": 315.19119903850793,
+  "equity": 316.8956,
   "positions": {
-    "base:0xa4CCdeaeB02e574aaF89EB39bCa73169327dcCcc": {
-      "id": "30e0e0405b",
-      "chain": "base",
-      "address": "0xa4CCdeaeB02e574aaF89EB39bCa73169327dcCcc",
-      "symbol": "TE",
-      "opened": "2026-11-16T22:20:32+00:00",
-      "entry_price": 0.0002554,
-      "tokens": 19321.159847894538,
-      "tokens_initial": 19321.159847894538,
-      "cost_usd": 5.0,
-      "fees_usd": 0.0654,
-      "realized_usd": 0.0,
-      "peak_gain": 0.09553641346906838,
-      "tp_hit": [],
-      "entry_liq": 59876.28,
-      "score": 0.6948,
-      "features": {
-        "liq_quality": 0.7688,
-        "turnover": 0.1594,
-        "buy_pressure": 0.1828,
-        "momentum_accel": 1.0,
-        "not_vertical": 0.843,
-        "age_sweet": 0.7046,
-        "socials": 1.0,
-        "fdv_sanity": 1.0,
-        "txn_depth": 0.9,
-        "dip_in_uptrend": 1.0,
-        "buzz": 0.0,
-        "paid_boost": 0.06
-      },
-      "last_price": 0.0001922
-    },
     "ethereum:0xbCc061C85232Fb7653CD27a182Eb4ce1141bD40f": {
       "id": "7aaeebd2f8",
       "chain": "ethereum",
@@ -69,7 +37,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0001838
+      "last_price": 0.0001681
     }
   },
   "blacklist": {
@@ -116,10 +84,11 @@
     "solana:Gg5aWvfucyMwihDzyfCEaLgyeeNE2dkob2LTwWfHpump": "2026-11-17T10:54:14+00:00",
     "solana:2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump": "2026-11-17T13:33:29+00:00",
     "bsc:0x0f5a924288F85e4D417CCCd150e0dBEc98F02Ca8": "2026-11-17T13:33:29+00:00",
-    "solana:2NWgu4fqN2AxS5pp5v3f3SH54qArP9JepQFJm58gpump": "2026-11-17T20:45:56+00:00"
+    "solana:2NWgu4fqN2AxS5pp5v3f3SH54qArP9JepQFJm58gpump": "2026-11-17T20:45:56+00:00",
+    "base:0xa4CCdeaeB02e574aaF89EB39bCa73169327dcCcc": "2026-11-17T22:20:56+00:00"
   },
   "halted": true,
-  "halt_reason": "KILL SWITCH: equity $317.32 below $325.00. Manual reset required.",
+  "halt_reason": "KILL SWITCH: equity $316.90 below $325.00. Manual reset required.",
   "last_entry": "2026-11-17T10:56:35+00:00",
   "equity_history": [
     [
@@ -359,15 +328,15 @@
     "trades_today": 10
   },
   "stats": {
-    "ticks": 2715,
+    "ticks": 2720,
     "opened": 55,
-    "closed": 53,
+    "closed": 54,
     "wins": 5,
-    "losses": 48,
-    "fees_paid": 92.88429574352638,
-    "realized_pnl": -178.45841856314965
+    "losses": 49,
+    "fees_paid": 92.94047660069502,
+    "realized_pnl": -179.80880096149212
   },
-  "updated": "2026-11-17T22:16:56+00:00",
+  "updated": "2026-11-17T22:22:57+00:00",
   "run1_final_equity": 322.5674,
-  "last_scan": "2026-11-17T22:09:56+00:00"
+  "last_scan": "2026-11-17T22:21:56+00:00"
 }
