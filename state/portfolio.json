@@ -2,8 +2,8 @@
   "started": "2026-09-22T16:04:55+00:00",
   "restarted": "2026-10-24",
   "run": 2,
-  "cash": 307.9860270825539,
-  "equity": 327.1551,
+  "cash": 309.0647380918347,
+  "equity": 321.5475,
   "positions": {
     "base:0xa4CCdeaeB02e574aaF89EB39bCa73169327dcCcc": {
       "id": "30e0e0405b",
@@ -35,7 +35,7 @@
         "buzz": 0.0,
         "paid_boost": 0.06
       },
-      "last_price": 0.0002074
+      "last_price": 0.0002064
     },
     "solana:2NWgu4fqN2AxS5pp5v3f3SH54qArP9JepQFJm58gpump": {
       "id": "eaf661114f",
@@ -67,41 +67,7 @@
         "buzz": 1.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.001461
-    },
-    "solana:2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump": {
-      "id": "7e959eaa88",
-      "chain": "solana",
-      "address": "2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump",
-      "symbol": "LEOSTAR",
-      "opened": "2026-11-17T07:44:47+00:00",
-      "entry_price": 0.001159,
-      "tokens": 3199.7733012005797,
-      "tokens_initial": 4266.364401600773,
-      "cost_usd": 5.0,
-      "fees_usd": 0.08832243659917065,
-      "realized_usd": 1.8228460780971656,
-      "peak_gain": 0.8507333908541848,
-      "tp_hit": [
-        0
-      ],
-      "entry_liq": 79320.72,
-      "score": 0.4554,
-      "features": {
-        "liq_quality": 0.8811,
-        "turnover": 0.3032,
-        "buy_pressure": 0.5972,
-        "momentum_accel": 0.604,
-        "not_vertical": 1.0,
-        "age_sweet": 0.9499,
-        "socials": 0.65,
-        "fdv_sanity": 0.7901,
-        "txn_depth": 0.0,
-        "dip_in_uptrend": 1.0,
-        "buzz": 0.0,
-        "paid_boost": 0.2
-      },
-      "last_price": 0.002145
+      "last_price": 0.001496
     },
     "ethereum:0xbCc061C85232Fb7653CD27a182Eb4ce1141bD40f": {
       "id": "7aaeebd2f8",
@@ -133,7 +99,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.00017
+      "last_price": 0.0001739
     }
   },
   "blacklist": {
@@ -180,10 +146,11 @@
     "solana:Gg5aWvfucyMwihDzyfCEaLgyeeNE2dkob2LTwWfHpump": "2026-11-17T10:54:14+00:00",
     "bsc:0x0f5a924288F85e4D417CCCd150e0dBEc98F02Ca8": "2026-11-17T11:10:14+00:00",
     "ethereum:0xdad1Eb15a33E9002b893454432D806e9108c1873": "2026-11-17T12:24:14+00:00",
-    "solana:D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump": "2026-11-17T12:25:14+00:00"
+    "solana:D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump": "2026-11-17T12:25:14+00:00",
+    "solana:2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump": "2026-11-17T13:04:14+00:00"
   },
   "halted": true,
-  "halt_reason": "KILL SWITCH: equity $324.37 below $325.00. Manual reset required.",
+  "halt_reason": "KILL SWITCH: equity $321.55 below $325.00. Manual reset required.",
   "last_entry": "2026-11-17T12:20:35+00:00",
   "equity_history": [
     [
@@ -423,15 +390,15 @@
     "trades_today": 12
   },
   "stats": {
-    "ticks": 2734,
+    "ticks": 2739,
     "opened": 57,
-    "closed": 53,
+    "closed": 54,
     "wins": 5,
-    "losses": 48,
-    "fees_paid": 96.02427722860592,
-    "realized_pnl": -173.83681899554324
+    "losses": 49,
+    "fees_paid": 96.05204782688027,
+    "realized_pnl": -175.93526190816524
   },
-  "updated": "2026-11-17T13:02:14+00:00",
+  "updated": "2026-11-17T13:08:37+00:00",
   "run1_final_equity": 322.5674,
-  "last_scan": "2026-11-17T12:55:14+00:00"
+  "last_scan": "2026-11-17T13:07:14+00:00"
 }
