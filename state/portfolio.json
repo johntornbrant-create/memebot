@@ -2,8 +2,8 @@
   "started": "2026-09-22T16:04:55+00:00",
   "restarted": "2026-10-24",
   "run": 2,
-  "cash": 309.0647380918347,
-  "equity": 321.418,
+  "cash": 311.5415814368504,
+  "equity": 323.8016,
   "positions": {
     "base:0xa4CCdeaeB02e574aaF89EB39bCa73169327dcCcc": {
       "id": "30e0e0405b",
@@ -35,7 +35,7 @@
         "buzz": 0.0,
         "paid_boost": 0.06
       },
-      "last_price": 0.0002077
+      "last_price": 0.0002084
     },
     "solana:2NWgu4fqN2AxS5pp5v3f3SH54qArP9JepQFJm58gpump": {
       "id": "eaf661114f",
@@ -49,7 +49,7 @@
       "cost_usd": 5.0,
       "fees_usd": 0.0553,
       "realized_usd": 0.0,
-      "peak_gain": 0.28986710963455153,
+      "peak_gain": 0.19102990033222578,
       "tp_hit": [],
       "entry_liq": 79449.71,
       "score": 0.578,
@@ -67,7 +67,7 @@
         "buzz": 1.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.00146
+      "last_price": 0.001434
     },
     "ethereum:0xbCc061C85232Fb7653CD27a182Eb4ce1141bD40f": {
       "id": "7aaeebd2f8",
@@ -144,14 +144,12 @@
     "ethereum:0x028470f23F52511823A713756c14dE8b754D81E4": "2026-11-17T09:09:14+00:00",
     "ethereum:0xeE2e865260FBB1B41a4741878FCC60BF2BBca886": "2026-11-17T10:18:14+00:00",
     "solana:Gg5aWvfucyMwihDzyfCEaLgyeeNE2dkob2LTwWfHpump": "2026-11-17T10:54:14+00:00",
-    "bsc:0x0f5a924288F85e4D417CCCd150e0dBEc98F02Ca8": "2026-11-17T11:10:14+00:00",
-    "ethereum:0xdad1Eb15a33E9002b893454432D806e9108c1873": "2026-11-17T12:24:14+00:00",
-    "solana:D9EcoQZeAytCrF1kQFSpRNpoPhibJUvJcmRHXhubpump": "2026-11-17T12:25:14+00:00",
-    "solana:2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump": "2026-11-17T13:04:14+00:00"
+    "solana:2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump": "2026-11-17T13:33:29+00:00",
+    "bsc:0x0f5a924288F85e4D417CCCd150e0dBEc98F02Ca8": "2026-11-17T13:33:29+00:00"
   },
   "halted": true,
-  "halt_reason": "KILL SWITCH: equity $321.42 below $325.00. Manual reset required.",
-  "last_entry": "2026-11-17T12:20:35+00:00",
+  "halt_reason": "KILL SWITCH: equity $323.80 below $325.00. Manual reset required.",
+  "last_entry": "2026-11-17T10:56:35+00:00",
   "equity_history": [
     [
       "2026-11-08T16:11:27+00:00",
@@ -374,12 +372,8 @@
       332.05
     ],
     [
-      "2026-11-17T11:43:14+00:00",
-      330.17
-    ],
-    [
-      "2026-11-17T12:43:14+00:00",
-      324.62
+      "2026-11-17T13:33:29+00:00",
+      332.22
     ]
   ],
   "marks": {
@@ -387,18 +381,18 @@
     "day_equity": 355.581,
     "week": "2026-W47",
     "week_equity": 376.1629,
-    "trades_today": 12
+    "trades_today": 10
   },
   "stats": {
-    "ticks": 2761,
-    "opened": 57,
-    "closed": 54,
+    "ticks": 2630,
+    "opened": 55,
+    "closed": 52,
     "wins": 5,
-    "losses": 49,
-    "fees_paid": 96.05204782688027,
-    "realized_pnl": -175.93526190816524
+    "losses": 47,
+    "fees_paid": 89.85892947342994,
+    "realized_pnl": -173.45841856314965
   },
-  "updated": "2026-11-17T13:32:36+00:00",
+  "updated": "2026-11-17T13:35:12+00:00",
   "run1_final_equity": 322.5674,
-  "last_scan": "2026-11-17T13:31:14+00:00"
+  "last_scan": "2026-11-17T13:33:29+00:00"
 }
