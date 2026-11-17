@@ -3,7 +3,7 @@
   "restarted": "2026-10-24",
   "run": 2,
   "cash": 317.322264246001,
-  "equity": 339.4885,
+  "equity": 336.872,
   "positions": {
     "base:0xa4CCdeaeB02e574aaF89EB39bCa73169327dcCcc": {
       "id": "30e0e0405b",
@@ -67,7 +67,7 @@
         "buzz": 0.6667,
         "paid_boost": 0.02
       },
-      "last_price": 0.0001937
+      "last_price": 0.0001953
     },
     "solana:2NWgu4fqN2AxS5pp5v3f3SH54qArP9JepQFJm58gpump": {
       "id": "eaf661114f",
@@ -99,7 +99,7 @@
         "buzz": 1.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.001228
+      "last_price": 0.001223
     },
     "solana:2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump": {
       "id": "7e959eaa88",
@@ -131,39 +131,7 @@
         "buzz": 0.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.001124
-    },
-    "ethereum:0x028470f23F52511823A713756c14dE8b754D81E4": {
-      "id": "d363e2fbbf",
-      "chain": "ethereum",
-      "address": "0x028470f23F52511823A713756c14dE8b754D81E4",
-      "symbol": "KATIA",
-      "opened": "2026-11-17T08:08:35+00:00",
-      "entry_price": 0.0001648,
-      "tokens": 11919.401212252724,
-      "tokens_initial": 11919.401212252724,
-      "cost_usd": 5.0,
-      "fees_usd": 3.0357,
-      "realized_usd": 0.0,
-      "peak_gain": 0.17657766990291268,
-      "tp_hit": [],
-      "entry_liq": 32958.33,
-      "score": 0.644,
-      "features": {
-        "liq_quality": 0.4887,
-        "turnover": 0.7394,
-        "buy_pressure": 0.5875,
-        "momentum_accel": 0.0,
-        "not_vertical": 1.0,
-        "age_sweet": 0.3737,
-        "socials": 0.0,
-        "fdv_sanity": 0.9999,
-        "txn_depth": 0.7736,
-        "dip_in_uptrend": 1.0,
-        "buzz": 0.1667,
-        "paid_boost": 0.0
-      },
-      "last_price": 0.0001844
+      "last_price": 0.001004
     },
     "ethereum:0xeE2e865260FBB1B41a4741878FCC60BF2BBca886": {
       "id": "af21410078",
@@ -177,7 +145,7 @@
       "cost_usd": 5.0,
       "fees_usd": 3.0358,
       "realized_usd": 0.0,
-      "peak_gain": 0.24146757679180886,
+      "peak_gain": 0.3131399317406143,
       "tp_hit": [],
       "entry_liq": 27406.04,
       "score": 0.6804,
@@ -195,7 +163,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0001455
+      "last_price": 0.0001503
     }
   },
   "blacklist": {
@@ -236,7 +204,8 @@
     "solana:7TnXXR1ytJ9PZDxgSA8VwbyKmEWZmiA2YAn55YyVpump": "2026-11-16T23:25:20+00:00",
     "solana:9cmXfuC26anZtH9AUWVzpUxU1UJ7PPogYxftYTepump": "2026-11-17T00:37:20+00:00",
     "bsc:0x09127Ecb8B7345b04a8b07F3933c53f636197777": "2026-11-17T02:37:20+00:00",
-    "ethereum:0xF9233998F9ad14B5677c2C59F60462E51625EDab": "2026-11-17T07:43:14+00:00"
+    "ethereum:0xF9233998F9ad14B5677c2C59F60462E51625EDab": "2026-11-17T07:43:14+00:00",
+    "ethereum:0x028470f23F52511823A713756c14dE8b754D81E4": "2026-11-17T09:09:14+00:00"
   },
   "halted": false,
   "halt_reason": "",
@@ -467,15 +436,15 @@
     "trades_today": 7
   },
   "stats": {
-    "ticks": 2519,
+    "ticks": 2525,
     "opened": 52,
-    "closed": 46,
+    "closed": 47,
     "wins": 5,
-    "losses": 41,
-    "fees_paid": 74.43115061520949,
-    "realized_pnl": -152.677735753999
+    "losses": 42,
+    "fees_paid": 77.43400980574195,
+    "realized_pnl": -157.677735753999
   },
-  "updated": "2026-11-17T09:08:37+00:00",
+  "updated": "2026-11-17T09:14:14+00:00",
   "run1_final_equity": 322.5674,
   "last_scan": "2026-11-17T09:07:14+00:00"
 }
