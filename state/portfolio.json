@@ -2,8 +2,8 @@
   "started": "2026-09-22T16:04:55+00:00",
   "restarted": "2026-10-24",
   "run": 2,
-  "cash": 307.322264246001,
-  "equity": 337.4205,
+  "cash": 312.12598977245517,
+  "equity": 332.2271,
   "positions": {
     "base:0xa4CCdeaeB02e574aaF89EB39bCa73169327dcCcc": {
       "id": "30e0e0405b",
@@ -67,7 +67,7 @@
         "buzz": 0.6667,
         "paid_boost": 0.02
       },
-      "last_price": 0.0002123
+      "last_price": 0.0002006
     },
     "solana:2NWgu4fqN2AxS5pp5v3f3SH54qArP9JepQFJm58gpump": {
       "id": "eaf661114f",
@@ -99,7 +99,7 @@
         "buzz": 1.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.001193
+      "last_price": 0.001205
     },
     "solana:2cMcMEX3Eqo86tUrVe5dgHp5GZNwqQ6crqm22UeZpump": {
       "id": "7e959eaa88",
@@ -113,7 +113,7 @@
       "cost_usd": 5.0,
       "fees_usd": 0.0553,
       "realized_usd": 0.0,
-      "peak_gain": 0.03364969801553053,
+      "peak_gain": 0.05176876617773929,
       "tp_hit": [],
       "entry_liq": 79320.72,
       "score": 0.4554,
@@ -131,73 +131,7 @@
         "buzz": 0.0,
         "paid_boost": 0.2
       },
-      "last_price": 0.001179
-    },
-    "ethereum:0xeE2e865260FBB1B41a4741878FCC60BF2BBca886": {
-      "id": "af21410078",
-      "chain": "ethereum",
-      "address": "0xeE2e865260FBB1B41a4741878FCC60BF2BBca886",
-      "symbol": "GTAPEPE",
-      "opened": "2026-11-17T08:44:35+00:00",
-      "entry_price": 0.0001172,
-      "tokens": 12569.404947270461,
-      "tokens_initial": 16759.206596360615,
-      "cost_usd": 5.0,
-      "fees_usd": 6.041170622266816,
-      "realized_usd": 0.0,
-      "peak_gain": 1.4530716723549486,
-      "tp_hit": [
-        0
-      ],
-      "entry_liq": 27406.04,
-      "score": 0.6804,
-      "features": {
-        "liq_quality": 0.4062,
-        "turnover": 0.6528,
-        "buy_pressure": 0.8844,
-        "momentum_accel": 0.0,
-        "not_vertical": 1.0,
-        "age_sweet": 0.7361,
-        "socials": 0.0,
-        "fdv_sanity": 1.0,
-        "txn_depth": 0.9854,
-        "dip_in_uptrend": 0.5,
-        "buzz": 0.0,
-        "paid_boost": 0.0
-      },
-      "last_price": 0.0002875
-    },
-    "bsc:0x0f5a924288F85e4D417CCCd150e0dBEc98F02Ca8": {
-      "id": "e56eae7572",
-      "chain": "bsc",
-      "address": "0x0f5a924288F85e4D417CCCd150e0dBEc98F02Ca8",
-      "symbol": "BLG Champion",
-      "opened": "2026-11-17T09:20:35+00:00",
-      "entry_price": 7.1,
-      "tokens": 0.6922491237798705,
-      "tokens_initial": 0.6922491237798705,
-      "cost_usd": 5.0,
-      "fees_usd": 0.085,
-      "realized_usd": 0.0,
-      "peak_gain": 0.4380281690140846,
-      "tp_hit": [],
-      "entry_liq": 720665.02,
-      "score": 0.6659,
-      "features": {
-        "liq_quality": 0.4639,
-        "turnover": 0.9985,
-        "buy_pressure": 1.0,
-        "momentum_accel": 0.0,
-        "not_vertical": 1.0,
-        "age_sweet": 0.5032,
-        "socials": 0.35,
-        "fdv_sanity": 0.0162,
-        "txn_depth": 0.6644,
-        "dip_in_uptrend": 1.0,
-        "buzz": 0.0,
-        "paid_boost": 0.0
-      },
-      "last_price": 8.91
+      "last_price": 0.001219
     },
     "ethereum:0xbCc061C85232Fb7653CD27a182Eb4ce1141bD40f": {
       "id": "7aaeebd2f8",
@@ -211,7 +145,7 @@
       "cost_usd": 5.0,
       "fees_usd": 3.0357,
       "realized_usd": 0.0,
-      "peak_gain": 0.2746042670337232,
+      "peak_gain": 0.2869924294562971,
       "tp_hit": [],
       "entry_liq": 30677.7,
       "score": 0.8195,
@@ -229,7 +163,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0001722
+      "last_price": 0.0001581
     }
   },
   "blacklist": {
@@ -271,7 +205,8 @@
     "solana:9cmXfuC26anZtH9AUWVzpUxU1UJ7PPogYxftYTepump": "2026-11-17T00:37:20+00:00",
     "bsc:0x09127Ecb8B7345b04a8b07F3933c53f636197777": "2026-11-17T02:37:20+00:00",
     "ethereum:0xF9233998F9ad14B5677c2C59F60462E51625EDab": "2026-11-17T07:43:14+00:00",
-    "ethereum:0x028470f23F52511823A713756c14dE8b754D81E4": "2026-11-17T09:09:14+00:00"
+    "ethereum:0x028470f23F52511823A713756c14dE8b754D81E4": "2026-11-17T09:09:14+00:00",
+    "ethereum:0xeE2e865260FBB1B41a4741878FCC60BF2BBca886": "2026-11-17T10:18:14+00:00"
   },
   "halted": false,
   "halt_reason": "",
@@ -502,15 +437,15 @@
     "trades_today": 9
   },
   "stats": {
-    "ticks": 2580,
+    "ticks": 2585,
     "opened": 54,
-    "closed": 47,
+    "closed": 49,
     "wins": 5,
-    "losses": 42,
-    "fees_paid": 83.56014508094786,
-    "realized_pnl": -157.677735753999
+    "losses": 44,
+    "fees_paid": 89.65191372630555,
+    "realized_pnl": -162.87401022754483
   },
-  "updated": "2026-11-17T10:14:14+00:00",
+  "updated": "2026-11-17T10:20:36+00:00",
   "run1_final_equity": 322.5674,
-  "last_scan": "2026-11-17T10:07:14+00:00"
+  "last_scan": "2026-11-17T10:19:14+00:00"
 }
