@@ -1,31 +1,31 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-17T03:20:28+00:00`
+Updated `2026-11-17T03:32:30+00:00`
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$350.54** |
-| Return | **-29.89%** (start $500.00) |
+| Equity | **$348.35** |
+| Return | **-30.33%** (start $500.00) |
 | Cash | $327.65 |
-| Deployed | $22.89 (6.5%) |
+| Deployed | $20.70 (5.9%) |
 | Open positions | 5 / 8 |
 | Closed trades | 44 (5W / 39L, WR 11%) |
 | Profit factor | 0.35 |
 | Fees + slippage paid | $65.25 |
-| Ticks run | 2478 |
+| Ticks run | 2489 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| GTA | solana | $5.00 | $5.53 | +12% | +39% | 20.2h |
-| TE | base | $5.00 | $3.75 | -24% | +10% | 5.0h |
-| ETF | solana | $5.00 | $4.37 | -12% | +19% | 2.6h |
-| GTA | solana | $5.00 | $4.24 | -14% | +1% | 2.0h |
-| BAWSAQ | ethereum | $5.00 | $1.96 | +0% | +0% | 0.0h |
+| GTA | solana | $5.00 | $5.50 | +11% | +39% | 20.4h |
+| TE | base | $5.00 | $3.75 | -24% | +10% | 5.2h |
+| ETF | solana | $5.00 | $4.61 | -7% | +19% | 2.8h |
+| GTA | solana | $5.00 | $4.90 | -1% | +1% | 2.2h |
+| BAWSAQ | ethereum | $5.00 | $1.94 | -1% | +4% | 0.2h |
 
 ## Last closed trades
 
@@ -68,42 +68,42 @@ _refit on 1836 observations (1717 shadow, 119 real), 503 winners (27% base rate)
 
 ## Last run log
 ```
-  tick bar 0.66 (top 10% of 7, floor 0.45)
+  BUY[exploit] BAWSAQ     $5.00 @ $0.0001262  score 0.83  ethereum  liq $28,521
   skip HOGE: blacklisted (previously stopped out)
-  no entries this tick
-  shadow: tracking 34, closed 0 this tick (0 would have won)
+  shadow: tracking 35, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
-done. equity $350.02 (-30.00% since start)
-tick #2468  equity $350.02  cash $332.65  open 4
-exits-only pass. equity $350.09 (next scan in 10 min)
-tick #2469  equity $350.09  cash $332.65  open 4
-exits-only pass. equity $350.36 (next scan in 9 min)
-tick #2470  equity $350.36  cash $332.65  open 4
-exits-only pass. equity $350.44 (next scan in 8 min)
-tick #2471  equity $350.44  cash $332.65  open 4
-exits-only pass. equity $350.55 (next scan in 7 min)
-tick #2472  equity $350.55  cash $332.65  open 4
-exits-only pass. equity $350.61 (next scan in 6 min)
-tick #2473  equity $350.61  cash $332.65  open 4
-exits-only pass. equity $350.82 (next scan in 5 min)
-tick #2474  equity $350.82  cash $332.65  open 4
-exits-only pass. equity $350.61 (next scan in 4 min)
-tick #2475  equity $350.61  cash $332.65  open 4
-exits-only pass. equity $350.35 (next scan in 3 min)
-tick #2476  equity $350.35  cash $332.65  open 4
-exits-only pass. equity $350.54 (next scan in 2 min)
-tick #2477  equity $350.54  cash $332.65  open 4
-exits-only pass. equity $350.66 (next scan in 1 min)
-tick #2478  equity $350.66  cash $332.65  open 4
+done. equity $350.54 (-29.89% since start)
+tick #2479  equity $350.54  cash $327.65  open 5
+exits-only pass. equity $347.72 (next scan in 10 min)
+tick #2480  equity $347.72  cash $327.65  open 5
+exits-only pass. equity $347.86 (next scan in 9 min)
+tick #2481  equity $347.86  cash $327.65  open 5
+exits-only pass. equity $347.97 (next scan in 8 min)
+tick #2482  equity $347.97  cash $327.65  open 5
+exits-only pass. equity $347.70 (next scan in 7 min)
+tick #2483  equity $347.70  cash $327.65  open 5
+exits-only pass. equity $348.09 (next scan in 6 min)
+tick #2484  equity $348.09  cash $327.65  open 5
+exits-only pass. equity $348.22 (next scan in 5 min)
+tick #2485  equity $348.22  cash $327.65  open 5
+exits-only pass. equity $348.27 (next scan in 4 min)
+tick #2486  equity $348.27  cash $327.65  open 5
+exits-only pass. equity $348.23 (next scan in 3 min)
+tick #2487  equity $348.23  cash $327.65  open 5
+exits-only pass. equity $348.59 (next scan in 2 min)
+tick #2488  equity $348.59  cash $327.65  open 5
+exits-only pass. equity $348.58 (next scan in 1 min)
+tick #2489  equity $348.58  cash $327.65  open 5
   scanning chains + news...
   193 raw candidates across 8 chains, 159 headlines/posts
-  7 passed gates | rejected: liquidity too thin x106, no h1 volume x63, too old x9, unknown age x4, already discovered x4
-  top: BAWSAQ 0.83 | HOGE 0.79 | BAWSAQ 0.66 | ETF 0.55 | GTA 0.49
+  7 passed gates | rejected: liquidity too thin x100, no h1 volume x68, too old x9, already discovered x5, unknown age x3
+  top: BAWSAQ 0.83 | BAWSAQ 0.69 | HOGE 0.62 | GTA 0.60 | ETF 0.53
   tick bar 0.66 (top 10% of 7, floor 0.45)
-  BUY[exploit] BAWSAQ     $5.00 @ $0.0001262  score 0.83  ethereum  liq $28,521
-  skip HOGE: blacklisted (previously stopped out)
+  skip BAWSAQ: already held
+  skip BAWSAQ: solana concentration cap
+  no entries this tick
   shadow: tracking 35, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
