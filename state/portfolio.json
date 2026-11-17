@@ -3,7 +3,7 @@
   "restarted": "2026-10-24",
   "run": 2,
   "cash": 315.19119903850793,
-  "equity": 316.8956,
+  "equity": 316.8499,
   "positions": {
     "ethereum:0xbCc061C85232Fb7653CD27a182Eb4ce1141bD40f": {
       "id": "7aaeebd2f8",
@@ -37,7 +37,7 @@
         "buzz": 0.0,
         "paid_boost": 0.0
       },
-      "last_price": 0.0001681
+      "last_price": 0.0001636
     }
   },
   "blacklist": {
@@ -328,7 +328,7 @@
     "trades_today": 10
   },
   "stats": {
-    "ticks": 2720,
+    "ticks": 2726,
     "opened": 55,
     "closed": 54,
     "wins": 5,
@@ -336,7 +336,7 @@
     "fees_paid": 92.94047660069502,
     "realized_pnl": -179.80880096149212
   },
-  "updated": "2026-11-17T22:22:57+00:00",
+  "updated": "2026-11-17T22:28:56+00:00",
   "run1_final_equity": 322.5674,
   "last_scan": "2026-11-17T22:21:56+00:00"
 }
