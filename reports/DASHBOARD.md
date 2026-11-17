@@ -1,32 +1,32 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-17T12:32:36+00:00`
+Updated `2026-11-17T12:44:36+00:00`
 
-> 🛑 **HALTED** — KILL SWITCH: equity $324.09 below $325.00. Manual reset required.
+> 🛑 **HALTED** — KILL SWITCH: equity $324.37 below $325.00. Manual reset required.
 
 ## Equity
 
 | | |
 |---|---|
-| Equity | **$324.09** |
-| Return | **-35.18%** (start $500.00) |
+| Equity | **$324.37** |
+| Return | **-35.13%** (start $500.00) |
 | Cash | $306.16 |
-| Deployed | $17.92 (5.5%) |
+| Deployed | $18.21 (5.6%) |
 | Open positions | 4 / 8 |
 | Closed trades | 53 (5W / 48L, WR 9%) |
 | Profit factor | 0.34 |
 | Fees + slippage paid | $95.99 |
-| Ticks run | 2706 |
+| Ticks run | 2717 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| TE | base | $5.00 | $3.60 | -27% | +10% | 14.2h |
-| GTA | solana | $5.00 | $5.56 | +12% | +17% | 11.2h |
-| LEOSTAR | solana | $5.00 | $6.54 | +32% | +36% | 4.8h |
-| GTA6 | ethereum | $5.00 | $2.23 | +13% | +39% | 2.8h |
+| TE | base | $5.00 | $3.88 | -21% | +10% | 14.4h |
+| GTA | solana | $5.00 | $5.82 | +18% | +26% | 11.4h |
+| LEOSTAR | solana | $5.00 | $6.09 | +23% | +36% | 5.0h |
+| GTA6 | ethereum | $5.00 | $2.41 | +23% | +39% | 3.0h |
 
 ## Last closed trades
 
@@ -69,39 +69,6 @@ _refit on 1836 observations (1717 shadow, 119 real), 503 winners (27% base rate)
 
 ## Last run log
 ```
-  BUY[exploit] BAWSAQ     $5.00 @ $0.001763  score 0.66  solana  liq $101,604
-  shadow: tracking 37, closed 0 this tick (0 would have won)
-    MISSED NI         peak +277296%  (scored 0.21)
-    MISSED GTAX       peak +11365%  (scored 0.25)
-    MISSED e/acc      peak +5180%  (scored 0.58)
-done. equity $326.55 (-34.69% since start)
-tick #2696  equity $326.55  cash $303.14  open 6
-exits-only pass. equity $326.82 (next scan in 10 min)
-tick #2697  equity $326.82  cash $303.14  open 6
-exits-only pass. equity $327.17 (next scan in 9 min)
-tick #2698  equity $327.17  cash $303.14  open 6
-exits-only pass. equity $326.58 (next scan in 8 min)
-tick #2699  equity $326.58  cash $303.14  open 6
-  SELL POPO       100% @ $6.095e-05  ->  $0.00   [stop loss -39%]
-exits-only pass. equity $324.41 (next scan in 7 min)
-tick #2700  equity $324.41  cash $303.14  open 5
-  SELL BAWSAQ     100% @ $0.001092  ->  $3.02   [stop loss -38%]
-exits-only pass. equity $323.67 (next scan in 6 min)
-tick #2701  equity $323.67  cash $306.16  open 4
-exits-only pass. equity $323.68 (next scan in 5 min)
-tick #2702  equity $323.68  cash $306.16  open 4
-exits-only pass. equity $323.76 (next scan in 4 min)
-tick #2703  equity $323.76  cash $306.16  open 4
-exits-only pass. equity $323.65 (next scan in 3 min)
-tick #2704  equity $323.65  cash $306.16  open 4
-exits-only pass. equity $323.96 (next scan in 2 min)
-tick #2705  equity $323.96  cash $306.16  open 4
-exits-only pass. equity $323.81 (next scan in 1 min)
-tick #2706  equity $323.81  cash $306.16  open 4
-  scanning chains + news...
-  103 raw candidates across 8 chains, 159 headlines/posts
-  3 passed gates | rejected: liquidity too thin x66, no h1 volume x28, too old x5, sell pressure x1
-  top: BAWSAQ 0.54 | LEOSTAR 0.36 | GROKIA 0.36
   tick bar 0.54 (top 10% of 3, floor 0.45)
   no entries this tick
   shadow: tracking 37, closed 0 this tick (0 would have won)
@@ -109,4 +76,37 @@ tick #2706  equity $323.81  cash $306.16  open 4
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
   entries blocked: KILL SWITCH: equity $324.09 below $325.00. Manual reset required.
+done. equity $324.09 (-35.18% since start)
+tick #2707  equity $324.09  cash $306.16  open 4
+exits-only pass. equity $324.19 (next scan in 10 min)
+tick #2708  equity $324.19  cash $306.16  open 4
+exits-only pass. equity $323.85 (next scan in 9 min)
+tick #2709  equity $323.85  cash $306.16  open 4
+exits-only pass. equity $323.99 (next scan in 8 min)
+tick #2710  equity $323.99  cash $306.16  open 4
+exits-only pass. equity $324.21 (next scan in 7 min)
+tick #2711  equity $324.21  cash $306.16  open 4
+exits-only pass. equity $324.10 (next scan in 6 min)
+tick #2712  equity $324.10  cash $306.16  open 4
+exits-only pass. equity $324.32 (next scan in 5 min)
+tick #2713  equity $324.32  cash $306.16  open 4
+exits-only pass. equity $324.42 (next scan in 4 min)
+tick #2714  equity $324.42  cash $306.16  open 4
+exits-only pass. equity $324.49 (next scan in 3 min)
+tick #2715  equity $324.49  cash $306.16  open 4
+exits-only pass. equity $324.49 (next scan in 2 min)
+tick #2716  equity $324.49  cash $306.16  open 4
+exits-only pass. equity $324.62 (next scan in 1 min)
+tick #2717  equity $324.62  cash $306.16  open 4
+  scanning chains + news...
+  102 raw candidates across 8 chains, 159 headlines/posts
+  4 passed gates | rejected: liquidity too thin x66, no h1 volume x27, too old x4, sell pressure x1
+  top: HOGE 0.49 | LEOSTAR 0.39 | GROKIA 0.37 | BAWSAQ 0.31
+  tick bar 0.49 (top 10% of 4, floor 0.45)
+  no entries this tick
+  shadow: tracking 37, closed 0 this tick (0 would have won)
+    MISSED NI         peak +277296%  (scored 0.21)
+    MISSED GTAX       peak +11365%  (scored 0.25)
+    MISSED e/acc      peak +5180%  (scored 0.58)
+  entries blocked: KILL SWITCH: equity $324.37 below $325.00. Manual reset required.
 ```
