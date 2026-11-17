@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-17T12:44:36+00:00`
+Updated `2026-11-17T12:56:37+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $324.37 below $325.00. Manual reset required.
 
@@ -9,24 +9,24 @@ Updated `2026-11-17T12:44:36+00:00`
 
 | | |
 |---|---|
-| Equity | **$324.37** |
-| Return | **-35.13%** (start $500.00) |
-| Cash | $306.16 |
-| Deployed | $18.21 (5.6%) |
+| Equity | **$325.60** |
+| Return | **-34.88%** (start $500.00) |
+| Cash | $307.99 |
+| Deployed | $17.61 (5.4%) |
 | Open positions | 4 / 8 |
 | Closed trades | 53 (5W / 48L, WR 9%) |
 | Profit factor | 0.34 |
-| Fees + slippage paid | $95.99 |
-| Ticks run | 2717 |
+| Fees + slippage paid | $96.02 |
+| Ticks run | 2728 |
 
 ## Open positions
 
 | Token | Chain | Cost | Now | P&L | Peak | Held |
 |---|---|---|---|---|---|---|
-| TE | base | $5.00 | $3.88 | -21% | +10% | 14.4h |
-| GTA | solana | $5.00 | $5.82 | +18% | +26% | 11.4h |
-| LEOSTAR | solana | $5.00 | $6.09 | +23% | +36% | 5.0h |
-| GTA6 | ethereum | $5.00 | $2.41 | +23% | +39% | 3.0h |
+| TE | base | $5.00 | $4.03 | -18% | +10% | 14.6h |
+| GTA | solana | $5.00 | $6.31 | +28% | +29% | 11.6h |
+| LEOSTAR | solana | $5.00 | $5.00 | +35% | +50% | 5.2h |
+| GTA6 | ethereum | $5.00 | $2.27 | +16% | +39% | 3.2h |
 
 ## Last closed trades
 
@@ -69,40 +69,40 @@ _refit on 1836 observations (1717 shadow, 119 real), 503 winners (27% base rate)
 
 ## Last run log
 ```
-  tick bar 0.54 (top 10% of 3, floor 0.45)
   no entries this tick
   shadow: tracking 37, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
-  entries blocked: KILL SWITCH: equity $324.09 below $325.00. Manual reset required.
-done. equity $324.09 (-35.18% since start)
-tick #2707  equity $324.09  cash $306.16  open 4
-exits-only pass. equity $324.19 (next scan in 10 min)
-tick #2708  equity $324.19  cash $306.16  open 4
-exits-only pass. equity $323.85 (next scan in 9 min)
-tick #2709  equity $323.85  cash $306.16  open 4
-exits-only pass. equity $323.99 (next scan in 8 min)
-tick #2710  equity $323.99  cash $306.16  open 4
-exits-only pass. equity $324.21 (next scan in 7 min)
-tick #2711  equity $324.21  cash $306.16  open 4
-exits-only pass. equity $324.10 (next scan in 6 min)
-tick #2712  equity $324.10  cash $306.16  open 4
-exits-only pass. equity $324.32 (next scan in 5 min)
-tick #2713  equity $324.32  cash $306.16  open 4
-exits-only pass. equity $324.42 (next scan in 4 min)
-tick #2714  equity $324.42  cash $306.16  open 4
-exits-only pass. equity $324.49 (next scan in 3 min)
-tick #2715  equity $324.49  cash $306.16  open 4
-exits-only pass. equity $324.49 (next scan in 2 min)
-tick #2716  equity $324.49  cash $306.16  open 4
-exits-only pass. equity $324.62 (next scan in 1 min)
-tick #2717  equity $324.62  cash $306.16  open 4
+  entries blocked: KILL SWITCH: equity $324.37 below $325.00. Manual reset required.
+done. equity $324.37 (-35.13% since start)
+tick #2718  equity $324.37  cash $306.16  open 4
+exits-only pass. equity $324.93 (next scan in 10 min)
+tick #2719  equity $324.93  cash $306.16  open 4
+exits-only pass. equity $325.44 (next scan in 9 min)
+tick #2720  equity $325.44  cash $306.16  open 4
+exits-only pass. equity $324.49 (next scan in 8 min)
+tick #2721  equity $324.49  cash $306.16  open 4
+exits-only pass. equity $323.94 (next scan in 7 min)
+tick #2722  equity $323.94  cash $306.16  open 4
+exits-only pass. equity $325.48 (next scan in 6 min)
+tick #2723  equity $325.48  cash $306.16  open 4
+  SELL LEOSTAR    25% @ $0.00174  ->  $1.82   [take profit +50% (sold 25%)]
+exits-only pass. equity $325.98 (next scan in 5 min)
+tick #2724  equity $325.98  cash $307.99  open 4
+exits-only pass. equity $325.79 (next scan in 4 min)
+tick #2725  equity $325.79  cash $307.99  open 4
+exits-only pass. equity $325.52 (next scan in 3 min)
+tick #2726  equity $325.52  cash $307.99  open 4
+exits-only pass. equity $325.48 (next scan in 2 min)
+tick #2727  equity $325.48  cash $307.99  open 4
+exits-only pass. equity $325.13 (next scan in 1 min)
+tick #2728  equity $325.13  cash $307.99  open 4
   scanning chains + news...
-  102 raw candidates across 8 chains, 159 headlines/posts
-  4 passed gates | rejected: liquidity too thin x66, no h1 volume x27, too old x4, sell pressure x1
-  top: HOGE 0.49 | LEOSTAR 0.39 | GROKIA 0.37 | BAWSAQ 0.31
-  tick bar 0.49 (top 10% of 4, floor 0.45)
+  100 raw candidates across 8 chains, 159 headlines/posts
+  4 passed gates | rejected: liquidity too thin x63, no h1 volume x27, too old x5, sell pressure x1
+  top: LEOSTAR 0.63 | HOGE 0.50 | GROKIA 0.46 | BAWSAQ 0.34
+  tick bar 0.63 (top 10% of 4, floor 0.45)
   no entries this tick
   shadow: tracking 37, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
