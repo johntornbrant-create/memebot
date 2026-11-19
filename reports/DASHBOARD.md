@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-19T02:14:48+00:00`
+Updated `2026-11-19T07:10:30+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $315.19 below $325.00. Manual reset required.
 
@@ -17,7 +17,7 @@ Updated `2026-11-19T02:14:48+00:00`
 | Closed trades | 55 (5W / 50L, WR 9%) |
 | Profit factor | 0.33 |
 | Fees + slippage paid | $95.95 |
-| Ticks run | 3349 |
+| Ticks run | 3350 |
 
 ## Open positions
 
@@ -43,35 +43,35 @@ _flat_
 | WISHMAS | $-1.36 | -27% | 24.0h | time stop 24h, only -25% |
 | Trader | $-1.97 | -39% | 3.6h | stop loss -38% |
 
-## Learned weights (v173)
+## Learned weights (v174)
 
-_refit on 1935 observations (1798 shadow, 137 real), 524 winners (27% base rate)_
+_refit on 1962 observations (1825 shadow, 137 real), 532 winners (27% base rate)_
 
 | Feature | Weight |
 |---|---|
-| txn_depth | +0.134 |
-| liq_quality | +0.133 |
-| turnover | +0.128 |
-| momentum_accel | +0.067 |
-| buy_pressure | +0.052 |
-| not_vertical | -0.044 |
-| fdv_sanity | +0.040 |
+| txn_depth | +0.152 |
+| liq_quality | +0.132 |
+| turnover | +0.127 |
+| momentum_accel | +0.064 |
+| buy_pressure | +0.049 |
+| not_vertical | -0.048 |
+| fdv_sanity | +0.041 |
 | dip_in_uptrend | +0.032 |
-| buzz | +0.030 |
-| paid_boost | +0.024 |
-| socials | +0.011 |
-| age_sweet | +0.006 |
+| buzz | +0.026 |
+| paid_boost | +0.025 |
+| socials | +0.019 |
+| age_sweet | +0.012 |
 
 ## Last run log
 ```
-tick #3349  equity $315.19  cash $315.19  open 0
+tick #3350  equity $315.19  cash $315.19  open 0
   scanning chains + news...
-  95 raw candidates across 6 chains, 157 headlines/posts
-  7 passed gates | rejected: liquidity too thin x61, no h1 volume x23, too old x2, sell pressure x1, unknown age x1
-  top: ANT 0.82 | Mandy 0.67 | FNDR 0.60 | GTASZN 0.57 | DCTY 0.48
-  tick bar 0.69 (top 10% of 7, floor 0.45)
+  94 raw candidates across 7 chains, 157 headlines/posts
+  6 passed gates | rejected: liquidity too thin x54, no h1 volume x28, too old x4, unknown age x1, already discovered x1
+  top: GRAND 0.56 | GTASZN 0.55 | APCY 0.52 | GTA 0.44 | Leonida 0.43
+  tick bar 0.56 (top 10% of 6, floor 0.45)
   no entries this tick
-  shadow: tracking 41, closed 4 this tick (0 would have won)
+  shadow: tracking 36, closed 7 this tick (2 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
