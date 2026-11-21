@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-21T12:45:43+00:00`
+Updated `2026-11-21T17:39:48+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $315.19 below $325.00. Manual reset required.
 
@@ -17,7 +17,7 @@ Updated `2026-11-21T12:45:43+00:00`
 | Closed trades | 55 (5W / 50L, WR 9%) |
 | Profit factor | 0.33 |
 | Fees + slippage paid | $95.95 |
-| Ticks run | 4199 |
+| Ticks run | 4200 |
 
 ## Open positions
 
@@ -43,35 +43,35 @@ _flat_
 | WISHMAS | $-1.36 | -27% | 24.0h | time stop 24h, only -25% |
 | Trader | $-1.97 | -39% | 3.6h | stop loss -38% |
 
-## Learned weights (v177)
+## Learned weights (v178)
 
-_refit on 2034 observations (1897 shadow, 137 real), 551 winners (27% base rate)_
+_refit on 2056 observations (1919 shadow, 137 real), 555 winners (27% base rate)_
 
 | Feature | Weight |
 |---|---|
-| txn_depth | +0.136 |
-| liq_quality | +0.132 |
-| turnover | +0.130 |
-| momentum_accel | +0.060 |
-| buy_pressure | +0.056 |
-| not_vertical | -0.047 |
-| fdv_sanity | +0.042 |
-| dip_in_uptrend | +0.034 |
-| paid_boost | +0.020 |
-| socials | +0.020 |
-| buzz | +0.020 |
-| age_sweet | +0.007 |
+| liq_quality | +0.136 |
+| turnover | +0.134 |
+| txn_depth | +0.130 |
+| momentum_accel | +0.059 |
+| not_vertical | -0.052 |
+| buy_pressure | +0.052 |
+| fdv_sanity | +0.045 |
+| dip_in_uptrend | +0.033 |
+| socials | +0.025 |
+| buzz | +0.024 |
+| paid_boost | +0.019 |
+| age_sweet | +0.009 |
 
 ## Last run log
 ```
-tick #4199  equity $315.19  cash $315.19  open 0
+tick #4200  equity $315.19  cash $315.19  open 0
   scanning chains + news...
-  89 raw candidates across 7 chains, 157 headlines/posts
-  4 passed gates | rejected: liquidity too thin x55, no h1 volume x24, already discovered x4, too old x2
-  top: XV 0.53 | PUNANI 0.43 | JENSEN 0.42 | MAYA 0.40
-  tick bar 0.53 (top 10% of 4, floor 0.45)
+  106 raw candidates across 6 chains, 157 headlines/posts
+  7 passed gates | rejected: liquidity too thin x65, no h1 volume x22, too old x9, unknown age x2, already discovered x1
+  top: RIEMANN 0.84 | SLC 0.59 | ROCKET 0.58 | NOHR 0.57 | PUNANI 0.57
+  tick bar 0.72 (top 10% of 7, floor 0.45)
   no entries this tick
-  shadow: tracking 26, closed 8 this tick (3 would have won)
+  shadow: tracking 25, closed 5 this tick (1 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
