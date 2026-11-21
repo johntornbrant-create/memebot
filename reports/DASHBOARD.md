@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-21T17:39:48+00:00`
+Updated `2026-11-21T19:05:29+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $315.19 below $325.00. Manual reset required.
 
@@ -17,7 +17,7 @@ Updated `2026-11-21T17:39:48+00:00`
 | Closed trades | 55 (5W / 50L, WR 9%) |
 | Profit factor | 0.33 |
 | Fees + slippage paid | $95.95 |
-| Ticks run | 4200 |
+| Ticks run | 4201 |
 
 ## Open positions
 
@@ -64,14 +64,14 @@ _refit on 2056 observations (1919 shadow, 137 real), 555 winners (27% base rate)
 
 ## Last run log
 ```
-tick #4200  equity $315.19  cash $315.19  open 0
+tick #4201  equity $315.19  cash $315.19  open 0
   scanning chains + news...
-  106 raw candidates across 6 chains, 157 headlines/posts
-  7 passed gates | rejected: liquidity too thin x65, no h1 volume x22, too old x9, unknown age x2, already discovered x1
-  top: RIEMANN 0.84 | SLC 0.59 | ROCKET 0.58 | NOHR 0.57 | PUNANI 0.57
-  tick bar 0.72 (top 10% of 7, floor 0.45)
+  92 raw candidates across 6 chains, 157 headlines/posts
+  3 passed gates | rejected: liquidity too thin x50, no h1 volume x28, too old x5, already discovered x5, unknown age x1
+  top: PUNANI 0.77 | MAYA 0.45 | JENSEN 0.38
+  tick bar 0.72 (top 10% of 3, floor 0.45)
   no entries this tick
-  shadow: tracking 25, closed 5 this tick (1 would have won)
+  shadow: tracking 25, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
