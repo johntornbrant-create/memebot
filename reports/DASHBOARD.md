@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-23T03:51:06+00:00`
+Updated `2026-11-23T07:21:42+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $315.19 below $325.00. Manual reset required.
 
@@ -17,7 +17,7 @@ Updated `2026-11-23T03:51:06+00:00`
 | Closed trades | 55 (5W / 50L, WR 9%) |
 | Profit factor | 0.33 |
 | Fees + slippage paid | $95.95 |
-| Ticks run | 4804 |
+| Ticks run | 4805 |
 
 ## Open positions
 
@@ -43,35 +43,35 @@ _flat_
 | WISHMAS | $-1.36 | -27% | 24.0h | time stop 24h, only -25% |
 | Trader | $-1.97 | -39% | 3.6h | stop loss -38% |
 
-## Learned weights (v180)
+## Learned weights (v181)
 
-_refit on 2081 observations (1944 shadow, 137 real), 566 winners (27% base rate)_
+_refit on 2100 observations (1963 shadow, 137 real), 571 winners (27% base rate)_
 
 | Feature | Weight |
 |---|---|
-| liq_quality | +0.135 |
-| txn_depth | +0.134 |
-| turnover | +0.130 |
-| momentum_accel | +0.055 |
-| buy_pressure | +0.052 |
-| fdv_sanity | +0.046 |
-| not_vertical | -0.046 |
-| dip_in_uptrend | +0.035 |
-| buzz | +0.031 |
-| socials | +0.017 |
-| paid_boost | +0.016 |
-| age_sweet | +0.000 |
+| liq_quality | +0.136 |
+| txn_depth | +0.135 |
+| turnover | +0.129 |
+| momentum_accel | +0.057 |
+| buy_pressure | +0.051 |
+| not_vertical | -0.045 |
+| fdv_sanity | +0.039 |
+| dip_in_uptrend | +0.033 |
+| buzz | +0.028 |
+| socials | +0.018 |
+| paid_boost | +0.017 |
+| age_sweet | +0.002 |
 
 ## Last run log
 ```
-tick #4804  equity $315.19  cash $315.19  open 0
+tick #4805  equity $315.19  cash $315.19  open 0
   scanning chains + news...
-  109 raw candidates across 7 chains, 157 headlines/posts
-  8 passed gates | rejected: liquidity too thin x63, no h1 volume x30, already discovered x5, too old x3
-  top: Fly 0.63 | PEACH 0.57 | UCASH 0.56 | BIRDMAGA 0.52 | FSDV15 0.50
-  tick bar 0.63 (top 10% of 8, floor 0.45)
+  91 raw candidates across 7 chains, 157 headlines/posts
+  7 passed gates | rejected: liquidity too thin x51, no h1 volume x21, too old x5, unknown age x3, already discovered x3
+  top: NOHR 0.69 | PumpMeme 0.64 | UCASH 0.59 | WOJACK 0.58 | COPIUM 0.57
+  tick bar 0.69 (top 10% of 7, floor 0.45)
   no entries this tick
-  shadow: tracking 30, closed 2 this tick (1 would have won)
+  shadow: tracking 28, closed 5 this tick (3 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
