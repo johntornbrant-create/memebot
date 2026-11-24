@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-24T01:59:49+00:00`
+Updated `2026-11-24T02:11:37+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $315.19 below $325.00. Manual reset required.
 
@@ -17,7 +17,7 @@ Updated `2026-11-24T01:59:49+00:00`
 | Closed trades | 55 (5W / 50L, WR 9%) |
 | Profit factor | 0.33 |
 | Fees + slippage paid | $95.95 |
-| Ticks run | 5247 |
+| Ticks run | 5258 |
 
 ## Open positions
 
@@ -66,40 +66,40 @@ _refit on 2105 observations (1968 shadow, 137 real), 574 winners (27% base rate)
 ```
   tick bar 0.67 (top 10% of 5, floor 0.45)
   no entries this tick
-  shadow: tracking 27, closed 0 this tick (0 would have won)
+  shadow: tracking 28, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
   entries blocked: KILL SWITCH: equity $315.19 below $325.00. Manual reset required.
 done. equity $315.19 (-36.96% since start)
-tick #5237  equity $315.19  cash $315.19  open 0
+tick #5248  equity $315.19  cash $315.19  open 0
 exits-only pass. equity $315.19 (next scan in 10 min)
-tick #5238  equity $315.19  cash $315.19  open 0
+tick #5249  equity $315.19  cash $315.19  open 0
 exits-only pass. equity $315.19 (next scan in 9 min)
-tick #5239  equity $315.19  cash $315.19  open 0
+tick #5250  equity $315.19  cash $315.19  open 0
 exits-only pass. equity $315.19 (next scan in 8 min)
-tick #5240  equity $315.19  cash $315.19  open 0
+tick #5251  equity $315.19  cash $315.19  open 0
 exits-only pass. equity $315.19 (next scan in 7 min)
-tick #5241  equity $315.19  cash $315.19  open 0
+tick #5252  equity $315.19  cash $315.19  open 0
 exits-only pass. equity $315.19 (next scan in 6 min)
-tick #5242  equity $315.19  cash $315.19  open 0
+tick #5253  equity $315.19  cash $315.19  open 0
 exits-only pass. equity $315.19 (next scan in 5 min)
-tick #5243  equity $315.19  cash $315.19  open 0
+tick #5254  equity $315.19  cash $315.19  open 0
 exits-only pass. equity $315.19 (next scan in 4 min)
-tick #5244  equity $315.19  cash $315.19  open 0
+tick #5255  equity $315.19  cash $315.19  open 0
 exits-only pass. equity $315.19 (next scan in 3 min)
-tick #5245  equity $315.19  cash $315.19  open 0
+tick #5256  equity $315.19  cash $315.19  open 0
 exits-only pass. equity $315.19 (next scan in 2 min)
-tick #5246  equity $315.19  cash $315.19  open 0
+tick #5257  equity $315.19  cash $315.19  open 0
 exits-only pass. equity $315.19 (next scan in 1 min)
-tick #5247  equity $315.19  cash $315.19  open 0
+tick #5258  equity $315.19  cash $315.19  open 0
   scanning chains + news...
-  130 raw candidates across 9 chains, 157 headlines/posts
-  5 passed gates | rejected: liquidity too thin x94, no h1 volume x25, too old x6
-  top: UCASH 0.67 | Flatulence 0.56 | JENSEN 0.53 | Jesus 0.51 | CLAUDIO 0.42
-  tick bar 0.67 (top 10% of 5, floor 0.45)
+  201 raw candidates across 10 chains, 157 headlines/posts
+  5 passed gates | rejected: liquidity too thin x108, no h1 volume x59, too old x13, already discovered x9, unknown age x6
+  top: UCASH 0.71 | HAJ 0.56 | JENSEN 0.55 | Jesus 0.52 | Flatulence 0.49
+  tick bar 0.71 (top 10% of 5, floor 0.45)
   no entries this tick
-  shadow: tracking 28, closed 0 this tick (0 would have won)
+  shadow: tracking 29, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
