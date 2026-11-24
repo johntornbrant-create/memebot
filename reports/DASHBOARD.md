@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-24T15:32:56+00:00`
+Updated `2026-11-24T21:10:15+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $315.19 below $325.00. Manual reset required.
 
@@ -17,7 +17,7 @@ Updated `2026-11-24T15:32:56+00:00`
 | Closed trades | 55 (5W / 50L, WR 9%) |
 | Profit factor | 0.33 |
 | Fees + slippage paid | $95.95 |
-| Ticks run | 5278 |
+| Ticks run | 5279 |
 
 ## Open positions
 
@@ -43,35 +43,35 @@ _flat_
 | WISHMAS | $-1.36 | -27% | 24.0h | time stop 24h, only -25% |
 | Trader | $-1.97 | -39% | 3.6h | stop loss -38% |
 
-## Learned weights (v182)
+## Learned weights (v183)
 
-_refit on 2105 observations (1968 shadow, 137 real), 574 winners (27% base rate)_
+_refit on 2142 observations (2005 shadow, 137 real), 589 winners (27% base rate)_
 
 | Feature | Weight |
 |---|---|
-| liq_quality | +0.135 |
-| txn_depth | +0.135 |
-| turnover | +0.130 |
-| momentum_accel | +0.054 |
-| buy_pressure | +0.051 |
-| not_vertical | -0.048 |
-| fdv_sanity | +0.036 |
+| liq_quality | +0.139 |
+| turnover | +0.128 |
+| txn_depth | +0.128 |
+| momentum_accel | +0.055 |
+| buy_pressure | +0.053 |
+| fdv_sanity | +0.040 |
+| not_vertical | -0.039 |
 | dip_in_uptrend | +0.035 |
-| buzz | +0.031 |
-| socials | +0.017 |
-| paid_boost | +0.015 |
-| age_sweet | +0.002 |
+| buzz | +0.024 |
+| socials | +0.015 |
+| paid_boost | +0.014 |
+| age_sweet | -0.001 |
 
 ## Last run log
 ```
-tick #5278  equity $315.19  cash $315.19  open 0
+tick #5279  equity $315.19  cash $315.19  open 0
   scanning chains + news...
-  85 raw candidates across 8 chains, 157 headlines/posts
-  4 passed gates | rejected: liquidity too thin x44, no h1 volume x32, too old x4, unknown age x1
-  top: Memeployed 0.67 | DONJENSEN 0.36 | cateball 0.35 | JENSEN 0.30
-  tick bar 0.67 (top 10% of 4, floor 0.45)
+  124 raw candidates across 9 chains, 118 headlines/posts
+  2 passed gates | rejected: liquidity too thin x58, no h1 volume x50, already discovered x7, too old x6, unknown age x1
+  top: cateball 0.47 | DONJENSEN 0.33
+  tick bar 0.47 (top 10% of 2, floor 0.45)
   no entries this tick
-  shadow: tracking 18, closed 5 this tick (1 would have won)
+  shadow: tracking 18, closed 0 this tick (0 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
