@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-25T14:36:14+00:00`
+Updated `2026-11-25T21:36:26+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $315.19 below $325.00. Manual reset required.
 
@@ -17,7 +17,7 @@ Updated `2026-11-25T14:36:14+00:00`
 | Closed trades | 55 (5W / 50L, WR 9%) |
 | Profit factor | 0.33 |
 | Fees + slippage paid | $95.95 |
-| Ticks run | 5921 |
+| Ticks run | 5922 |
 
 ## Open positions
 
@@ -43,35 +43,35 @@ _flat_
 | WISHMAS | $-1.36 | -27% | 24.0h | time stop 24h, only -25% |
 | Trader | $-1.97 | -39% | 3.6h | stop loss -38% |
 
-## Learned weights (v183)
+## Learned weights (v184)
 
-_refit on 2142 observations (2005 shadow, 137 real), 589 winners (27% base rate)_
+_refit on 2157 observations (2020 shadow, 137 real), 594 winners (28% base rate)_
 
 | Feature | Weight |
 |---|---|
-| liq_quality | +0.139 |
-| turnover | +0.128 |
-| txn_depth | +0.128 |
-| momentum_accel | +0.055 |
-| buy_pressure | +0.053 |
-| fdv_sanity | +0.040 |
-| not_vertical | -0.039 |
+| liq_quality | +0.140 |
+| turnover | +0.126 |
+| txn_depth | +0.123 |
+| momentum_accel | +0.052 |
+| buy_pressure | +0.051 |
+| fdv_sanity | +0.039 |
+| not_vertical | -0.038 |
 | dip_in_uptrend | +0.035 |
-| buzz | +0.024 |
-| socials | +0.015 |
-| paid_boost | +0.014 |
+| socials | +0.016 |
+| buzz | +0.016 |
+| paid_boost | +0.008 |
 | age_sweet | -0.001 |
 
 ## Last run log
 ```
-tick #5921  equity $315.19  cash $315.19  open 0
+tick #5922  equity $315.19  cash $315.19  open 0
   scanning chains + news...
-  121 raw candidates across 7 chains, 156 headlines/posts
-  8 passed gates | rejected: liquidity too thin x69, no h1 volume x31, too old x10, too new (bot war) x1, already discovered x1
-  top: NEX Ai 0.82 | Jensen 0.81 | 4CHAN 0.73 | BASKET 0.65 | PERRO 0.60
-  tick bar 0.76 (top 10% of 8, floor 0.45)
+  147 raw candidates across 9 chains, 158 headlines/posts
+  6 passed gates | rejected: liquidity too thin x81, no h1 volume x39, too old x7, unknown age x7, already discovered x4
+  top: TALK 0.94 | NORFEATH 0.67 | Pompompurin 0.58 | Pompom 0.53 | Pnut 0.49
+  tick bar 0.77 (top 10% of 6, floor 0.45)
   no entries this tick
-  shadow: tracking 39, closed 0 this tick (0 would have won)
+  shadow: tracking 41, closed 3 this tick (1 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
