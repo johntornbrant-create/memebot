@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-27T03:14:37+00:00`
+Updated `2026-11-27T08:03:01+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $315.19 below $325.00. Manual reset required.
 
@@ -17,7 +17,7 @@ Updated `2026-11-27T03:14:37+00:00`
 | Closed trades | 55 (5W / 50L, WR 9%) |
 | Profit factor | 0.33 |
 | Fees + slippage paid | $95.95 |
-| Ticks run | 6473 |
+| Ticks run | 6474 |
 
 ## Open positions
 
@@ -64,14 +64,14 @@ _refit on 2196 observations (2059 shadow, 137 real), 609 winners (28% base rate)
 
 ## Last run log
 ```
-tick #6473  equity $315.19  cash $315.19  open 0
+tick #6474  equity $315.19  cash $315.19  open 0
   scanning chains + news...
-  55 raw candidates across 5 chains, 155 headlines/posts
-  5 passed gates | rejected: liquidity too thin x35, no h1 volume x9, already discovered x4, too old x2
-  top: Santaball 0.62 | Snowball 0.62 | SpaceXCoin 0.62 | DragonRiders 0.57 | DragonRiders 0.50
-  tick bar 0.62 (top 10% of 5, floor 0.45)
+  113 raw candidates across 7 chains, 155 headlines/posts
+  2 passed gates | rejected: liquidity too thin x73, no h1 volume x22, already discovered x6, too old x5, unknown age x4
+  top: Kibo 0.52 | Snowball 0.35
+  tick bar 0.52 (top 10% of 2, floor 0.45)
   no entries this tick
-  shadow: tracking 36, closed 0 this tick (0 would have won)
+  shadow: tracking 28, closed 9 this tick (4 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
