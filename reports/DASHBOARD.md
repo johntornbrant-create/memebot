@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-27T08:03:01+00:00`
+Updated `2026-11-27T08:16:04+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $315.19 below $325.00. Manual reset required.
 
@@ -17,7 +17,7 @@ Updated `2026-11-27T08:03:01+00:00`
 | Closed trades | 55 (5W / 50L, WR 9%) |
 | Profit factor | 0.33 |
 | Fees + slippage paid | $95.95 |
-| Ticks run | 6474 |
+| Ticks run | 6485 |
 
 ## Open positions
 
@@ -64,14 +64,34 @@ _refit on 2196 observations (2059 shadow, 137 real), 609 winners (28% base rate)
 
 ## Last run log
 ```
-tick #6474  equity $315.19  cash $315.19  open 0
+tick #6475  equity $315.19  cash $315.19  open 0
+exits-only pass. equity $315.19 (next scan in 9 min)
+tick #6476  equity $315.19  cash $315.19  open 0
+exits-only pass. equity $315.19 (next scan in 8 min)
+tick #6477  equity $315.19  cash $315.19  open 0
+exits-only pass. equity $315.19 (next scan in 7 min)
+tick #6478  equity $315.19  cash $315.19  open 0
+exits-only pass. equity $315.19 (next scan in 6 min)
+tick #6479  equity $315.19  cash $315.19  open 0
+exits-only pass. equity $315.19 (next scan in 5 min)
+tick #6480  equity $315.19  cash $315.19  open 0
+exits-only pass. equity $315.19 (next scan in 4 min)
+tick #6481  equity $315.19  cash $315.19  open 0
+exits-only pass. equity $315.19 (next scan in 3 min)
+tick #6482  equity $315.19  cash $315.19  open 0
+exits-only pass. equity $315.19 (next scan in 2 min)
+tick #6483  equity $315.19  cash $315.19  open 0
+exits-only pass. equity $315.19 (next scan in 1 min)
+tick #6484  equity $315.19  cash $315.19  open 0
+exits-only pass. equity $315.19 (next scan in 0 min)
+tick #6485  equity $315.19  cash $315.19  open 0
   scanning chains + news...
-  113 raw candidates across 7 chains, 155 headlines/posts
-  2 passed gates | rejected: liquidity too thin x73, no h1 volume x22, already discovered x6, too old x5, unknown age x4
-  top: Kibo 0.52 | Snowball 0.35
-  tick bar 0.52 (top 10% of 2, floor 0.45)
+  108 raw candidates across 7 chains, 155 headlines/posts
+  1 passed gates | rejected: liquidity too thin x68, no h1 volume x23, already discovered x6, too old x5, unknown age x4
+  top: Snowball 0.36
+  tick bar 0.45 (top 10% of 1, floor 0.45)
   no entries this tick
-  shadow: tracking 28, closed 9 this tick (4 would have won)
+  shadow: tracking 27, closed 1 this tick (1 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
