@@ -1,7 +1,7 @@
 {
-  "at": "2026-11-27T15:54:17+00:00",
+  "at": "2026-11-28T00:54:32+00:00",
   "n_trades": 137,
-  "n_shadow": 2092,
+  "n_shadow": 2106,
   "actions": [
     "stop set -35% but filling -58% - gapping, not a stop. Reduce size rather than tighten."
   ],
@@ -11,6 +11,6 @@
   "stop_slippage_pp": -23.4,
   "suggest_size_mult": 0.75,
   "capture_of_peak": 0.163,
-  "idle_hours": 245.0,
+  "idle_hours": 254.0,
   "halted": true
 }
