@@ -1,7 +1,7 @@
 # MEMEBOT — paper trading dashboard
 
 _Fake money. No broker, no keys, no real orders._  
-Updated `2026-11-28T13:23:29+00:00`
+Updated `2026-11-28T17:41:36+00:00`
 
 > 🛑 **HALTED** — KILL SWITCH: equity $315.19 below $325.00. Manual reset required.
 
@@ -17,7 +17,7 @@ Updated `2026-11-28T13:23:29+00:00`
 | Closed trades | 55 (5W / 50L, WR 9%) |
 | Profit factor | 0.33 |
 | Fees + slippage paid | $95.95 |
-| Ticks run | 7131 |
+| Ticks run | 7132 |
 
 ## Open positions
 
@@ -43,35 +43,35 @@ _flat_
 | WISHMAS | $-1.36 | -27% | 24.0h | time stop 24h, only -25% |
 | Trader | $-1.97 | -39% | 3.6h | stop loss -38% |
 
-## Learned weights (v186)
+## Learned weights (v187)
 
-_refit on 2229 observations (2092 shadow, 137 real), 622 winners (28% base rate)_
+_refit on 2261 observations (2124 shadow, 137 real), 630 winners (28% base rate)_
 
 | Feature | Weight |
 |---|---|
-| liq_quality | +0.138 |
-| turnover | +0.128 |
-| txn_depth | +0.118 |
-| buy_pressure | +0.054 |
-| momentum_accel | +0.053 |
-| not_vertical | -0.038 |
-| dip_in_uptrend | +0.035 |
-| fdv_sanity | +0.031 |
-| buzz | +0.023 |
-| socials | +0.013 |
-| age_sweet | +0.008 |
-| paid_boost | +0.003 |
+| liq_quality | +0.134 |
+| turnover | +0.131 |
+| txn_depth | +0.119 |
+| momentum_accel | +0.056 |
+| buy_pressure | +0.055 |
+| not_vertical | -0.042 |
+| dip_in_uptrend | +0.036 |
+| fdv_sanity | +0.028 |
+| buzz | +0.022 |
+| socials | +0.021 |
+| age_sweet | +0.011 |
+| paid_boost | +0.004 |
 
 ## Last run log
 ```
-tick #7131  equity $315.19  cash $315.19  open 0
+tick #7132  equity $315.19  cash $315.19  open 0
   scanning chains + news...
-  78 raw candidates across 7 chains, 155 headlines/posts
-  2 passed gates | rejected: liquidity too thin x63, no h1 volume x12, too old x1
-  top: Fireball 0.47 | BITCOINU 0.43
-  tick bar 0.47 (top 10% of 2, floor 0.45)
+  53 raw candidates across 3 chains, 156 headlines/posts
+  5 passed gates | rejected: liquidity too thin x34, no h1 volume x9, already discovered x3, too old x2
+  top: STEADY 0.60 | TIMMY 0.57 | BITCOINU 0.46 | MoonGirl 0.32 | Zhaki 0.31
+  tick bar 0.60 (top 10% of 5, floor 0.45)
   no entries this tick
-  shadow: tracking 28, closed 11 this tick (2 would have won)
+  shadow: tracking 27, closed 4 this tick (1 would have won)
     MISSED NI         peak +277296%  (scored 0.21)
     MISSED GTAX       peak +11365%  (scored 0.25)
     MISSED e/acc      peak +5180%  (scored 0.58)
